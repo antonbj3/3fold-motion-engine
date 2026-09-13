@@ -1,0 +1,5 @@
+{
+  "status": "OWN-GATE-FAIL",
+  "executions": 0,
+  "reason": "Isolated snapshot omitted declared example sources; contract refused before numerical execution."
+}

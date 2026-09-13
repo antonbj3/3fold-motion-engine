@@ -1,0 +1,13 @@
+{
+ "robot": "UR10e (robot-agnostic path)",
+ "planner": "pinocchio+coal RRT-Connect",
+ "n_geoms": 8,
+ "plan_s": 0.11,
+ "path_nodes": 88,
+ "collision_works": true,
+ "rrt_solved": true,
+ "dense_edge_free": true,
+ "discriminates": true,
+ "validated": true,
+ "composes": "pinocchio + hppfcl(coal); hot-swappable planner backend"
+}

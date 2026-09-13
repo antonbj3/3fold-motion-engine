@@ -1,0 +1,20 @@
+{
+  "source": "3fold-field-engine/reports/field_csg_curved_arrays.npz",
+  "source_file_sha256": "e556438cd7df5264de00c025a91c3025babc7de32c358707738a382c641834f5",
+  "source_array_sha256": {
+    "bracket_plate_rectangular_holes_0.5_0_field": "93cd03976b4bb3f4516165f5749c6ef556209a1e5df368194a7392d82d2a8e1d",
+    "bracket_plate_rectangular_holes_0.25_0_field": "e4dc28dced530d683a35af57851603d0aeced9d297d7615d42baaa2f24749ca3"
+  },
+  "convention": "negative_inside",
+  "representation": "CSG_level_set_not_Euclidean_distance",
+  "origin": [
+    -2,
+    -2,
+    -4
+  ],
+  "pitches": [
+    0.5,
+    0.25
+  ],
+  "units": "arbitrary_common_units"
+}

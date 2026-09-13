@@ -1,0 +1,41 @@
+[
+  {
+    "engine": "pair_chunks",
+    "step": 3,
+    "phase": "kernel:1:_build_colored_kernels__locals__k_chunk_vel_r",
+    "differences": [
+      {
+        "field": "w",
+        "count": 1,
+        "max_abs": 2.7939677238464355e-09
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09
+      },
+      {
+        "field": "jt2",
+        "count": 1,
+        "max_abs": 3.725290298461914e-09
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 8,
+    "phase": "kernel:3:build_fixed_frame__locals__k_fixed_frame",
+    "differences": [
+      {
+        "field": "v",
+        "count": 1,
+        "max_abs": 1.4551915228366852e-11
+      },
+      {
+        "field": "jt1",
+        "count": 1,
+        "max_abs": 2.3283064365386963e-10
+      }
+    ]
+  }
+]

@@ -1,0 +1,481 @@
+{
+  "initial_background": {
+    "gpu_utilization": "3 %",
+    "memory_used": "1154 MiB"
+  },
+  "rows": [
+    {
+      "engine": "baseline",
+      "friction": 0.5,
+      "position_iterations": 10,
+      "primary_case": true,
+      "legs": [
+        {
+          "m5": {
+            "max_pen_over_R": 1.412588655948639,
+            "max_pen_m": 0.07062943279743195,
+            "drift_class": "secular",
+            "drift_slope_m_per_step": 0.00012692247662001555,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.1343705654144287,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.134 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 4.4099555015563965,
+          "peak_angle_radians": 0.34221091866493225,
+          "finite": true,
+          "sha256": "885f98e3929a61299f2224544ede787cde14e9dd47b43479660373820e326c21"
+        },
+        {
+          "m5": {
+            "max_pen_over_R": 1.412588655948639,
+            "max_pen_m": 0.07062943279743195,
+            "drift_class": "secular",
+            "drift_slope_m_per_step": 0.00012692247662001555,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.1343705654144287,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.134 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 4.4099555015563965,
+          "peak_angle_radians": 0.34221091866493225,
+          "finite": true,
+          "sha256": "885f98e3929a61299f2224544ede787cde14e9dd47b43479660373820e326c21"
+        }
+      ],
+      "bit_identical": true
+    },
+    {
+      "engine": "baseline",
+      "friction": 0.5,
+      "position_iterations": 40,
+      "primary_case": false,
+      "legs": [
+        {
+          "m5": {
+            "max_pen_over_R": 1.2996450066566467,
+            "max_pen_m": 0.06498225033283234,
+            "drift_class": "secular",
+            "drift_slope_m_per_step": 9.993042741508337e-05,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.14001774787902832,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.140 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 6.57697868347168,
+          "peak_angle_radians": 0.7381990551948547,
+          "finite": true,
+          "sha256": "7e18033c541afc9b2d5527d5d2d84b966ea4f996f9fc778b5a5098cc6eae8f1d"
+        },
+        {
+          "m5": {
+            "max_pen_over_R": 1.2996450066566467,
+            "max_pen_m": 0.06498225033283234,
+            "drift_class": "secular",
+            "drift_slope_m_per_step": 9.993042741508337e-05,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.14001774787902832,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.140 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 6.57697868347168,
+          "peak_angle_radians": 0.7381990551948547,
+          "finite": true,
+          "sha256": "7e18033c541afc9b2d5527d5d2d84b966ea4f996f9fc778b5a5098cc6eae8f1d"
+        }
+      ],
+      "bit_identical": true
+    },
+    {
+      "engine": "baseline",
+      "friction": 0.0,
+      "position_iterations": 10,
+      "primary_case": false,
+      "legs": [
+        {
+          "m5": {
+            "max_pen_over_R": 4.099999368190765,
+            "max_pen_m": 0.20499996840953827,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 3.5641655643921138e-09,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 1.6838312149047852e-06,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.000 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 23.471933364868164,
+          "peak_angle_radians": 3.1415927410125732,
+          "finite": true,
+          "sha256": "095e146d39b38427ff3e6d970d0e3ae6f1ab6b1c66bf93bce1bea9a905165f4b"
+        },
+        {
+          "m5": {
+            "max_pen_over_R": 4.099999368190765,
+            "max_pen_m": 0.20499996840953827,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 3.5641655643921138e-09,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 1.6838312149047852e-06,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.000 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 23.471933364868164,
+          "peak_angle_radians": 3.1415927410125732,
+          "finite": true,
+          "sha256": "095e146d39b38427ff3e6d970d0e3ae6f1ab6b1c66bf93bce1bea9a905165f4b"
+        }
+      ],
+      "bit_identical": true
+    },
+    {
+      "engine": "baseline",
+      "friction": 0.0,
+      "position_iterations": 40,
+      "primary_case": false,
+      "legs": [
+        {
+          "m5": {
+            "max_pen_over_R": 4.099997878074646,
+            "max_pen_m": 0.2049998939037323,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 5.2529057722634e-08,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 1.169741153717041e-06,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.000 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 22.631019592285156,
+          "peak_angle_radians": 3.1415927410125732,
+          "finite": true,
+          "sha256": "b0c208d1825e3556a09d2cd3e244cbec1dedb29607500d79434a5d84982e02fb"
+        },
+        {
+          "m5": {
+            "max_pen_over_R": 4.099997878074646,
+            "max_pen_m": 0.2049998939037323,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 5.2529057722634e-08,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 1.169741153717041e-06,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.000 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 22.631019592285156,
+          "peak_angle_radians": 3.1415927410125732,
+          "finite": true,
+          "sha256": "b0c208d1825e3556a09d2cd3e244cbec1dedb29607500d79434a5d84982e02fb"
+        }
+      ],
+      "bit_identical": true
+    },
+    {
+      "engine": "coarse",
+      "friction": 0.5,
+      "position_iterations": 10,
+      "primary_case": true,
+      "legs": [
+        {
+          "m5": {
+            "max_pen_over_R": 1.1857262253761292,
+            "max_pen_m": 0.05928631126880646,
+            "drift_class": "secular",
+            "drift_slope_m_per_step": 8.415429159980856e-05,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.14807510375976562,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.148 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 4.875475883483887,
+          "peak_angle_radians": 0.27468448877334595,
+          "finite": true,
+          "sha256": "5a5dfa07d13dcb3b50ed23a1a704deb7b8ef708fc2454a6c6f68ce92dcc02208"
+        },
+        {
+          "m5": {
+            "max_pen_over_R": 1.1857262253761292,
+            "max_pen_m": 0.05928631126880646,
+            "drift_class": "secular",
+            "drift_slope_m_per_step": 8.415429159980856e-05,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.14807510375976562,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.148 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 4.875475883483887,
+          "peak_angle_radians": 0.27468448877334595,
+          "finite": true,
+          "sha256": "5a5dfa07d13dcb3b50ed23a1a704deb7b8ef708fc2454a6c6f68ce92dcc02208"
+        }
+      ],
+      "bit_identical": true
+    },
+    {
+      "engine": "coarse",
+      "friction": 0.5,
+      "position_iterations": 40,
+      "primary_case": false,
+      "legs": [
+        {
+          "m5": {
+            "max_pen_over_R": 1.0472360253334045,
+            "max_pen_m": 0.05236180126667023,
+            "drift_class": "secular",
+            "drift_slope_m_per_step": 6.319792641882261e-05,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.15783703327178955,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.158 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 4.815882205963135,
+          "peak_angle_radians": 0.3575615882873535,
+          "finite": true,
+          "sha256": "5cabb377c5b1f14e56722d3616b739e7f7bdcb91f5fdce0f83bf2d0b4677cab0"
+        },
+        {
+          "m5": {
+            "max_pen_over_R": 1.0472360253334045,
+            "max_pen_m": 0.05236180126667023,
+            "drift_class": "secular",
+            "drift_slope_m_per_step": 6.319792641882261e-05,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.15783703327178955,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.158 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 4.815882205963135,
+          "peak_angle_radians": 0.3575615882873535,
+          "finite": true,
+          "sha256": "5cabb377c5b1f14e56722d3616b739e7f7bdcb91f5fdce0f83bf2d0b4677cab0"
+        }
+      ],
+      "bit_identical": true
+    },
+    {
+      "engine": "coarse",
+      "friction": 0.0,
+      "position_iterations": 10,
+      "primary_case": false,
+      "legs": [
+        {
+          "m5": {
+            "max_pen_over_R": 4.099999666213989,
+            "max_pen_m": 0.20499998331069946,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 6.063683650095345e-08,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 3.427267074584961e-07,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.000 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 22.785160064697266,
+          "peak_angle_radians": 3.1415927410125732,
+          "finite": true,
+          "sha256": "ee67924c1f44fe672aac762368d8cd45310653514f996052e5f1bb313cdf2264"
+        },
+        {
+          "m5": {
+            "max_pen_over_R": 4.099999666213989,
+            "max_pen_m": 0.20499998331069946,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 6.063683650095345e-08,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 3.427267074584961e-07,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.000 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 22.785160064697266,
+          "peak_angle_radians": 3.1415927410125732,
+          "finite": true,
+          "sha256": "ee67924c1f44fe672aac762368d8cd45310653514f996052e5f1bb313cdf2264"
+        }
+      ],
+      "bit_identical": true
+    },
+    {
+      "engine": "coarse",
+      "friction": 0.0,
+      "position_iterations": 40,
+      "primary_case": false,
+      "legs": [
+        {
+          "m5": {
+            "max_pen_over_R": 4.099996984004974,
+            "max_pen_m": 0.20499984920024872,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 8.872524802454377e-09,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 1.4901161193847656e-06,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.000 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 16.28574562072754,
+          "peak_angle_radians": 3.1415927410125732,
+          "finite": true,
+          "sha256": "4f39d2cf5594a1fee883f9bde13c7b930e8b52bc87a476f2b6579a2ce8549e3a"
+        },
+        {
+          "m5": {
+            "max_pen_over_R": 4.099996984004974,
+            "max_pen_m": 0.20499984920024872,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 8.872524802454377e-09,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 1.4901161193847656e-06,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": false,
+            "status": "INVALID",
+            "valid": false,
+            "invalid_reasons": [
+              "spacing 0.000 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+            ],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "peak_angular_speed": 16.28574562072754,
+          "peak_angle_radians": 3.1415927410125732,
+          "finite": true,
+          "sha256": "4f39d2cf5594a1fee883f9bde13c7b930e8b52bc87a476f2b6579a2ce8549e3a"
+        }
+      ],
+      "bit_identical": true
+    }
+  ],
+  "instrument_pass": true
+}

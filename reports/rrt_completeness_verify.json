@@ -1,0 +1,58 @@
+{
+ "rows": [
+  {
+   "scene": 0,
+   "planner_high": false,
+   "rrt": false,
+   "start_goal_free": false
+  },
+  {
+   "scene": 1,
+   "planner_high": true,
+   "rrt": false,
+   "start_goal_free": false
+  },
+  {
+   "scene": 2,
+   "planner_high": true,
+   "rrt": true,
+   "start_goal_free": true
+  },
+  {
+   "scene": 3,
+   "planner_high": false,
+   "rrt": false,
+   "start_goal_free": false
+  },
+  {
+   "scene": 4,
+   "planner_high": false,
+   "rrt": false,
+   "start_goal_free": false
+  },
+  {
+   "scene": 5,
+   "planner_high": true,
+   "rrt": true,
+   "start_goal_free": true
+  },
+  {
+   "scene": 6,
+   "planner_high": true,
+   "rrt": true,
+   "start_goal_free": true
+  },
+  {
+   "scene": 7,
+   "planner_high": true,
+   "rrt": true,
+   "start_goal_free": true
+  }
+ ],
+ "planner_misses": 0,
+ "false_infeasible": 0,
+ "genuine_hard": 0,
+ "scenes_file": "mppi_completeness_scenes.npz",
+ "solved_field": "mppi_high",
+ "producer": "mppi_completeness_audit.py (CUDA)"
+}

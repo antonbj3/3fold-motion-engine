@@ -1,0 +1,161 @@
+{
+  "legs": [
+    {
+      "m5": {
+        "max_pen_over_R": 1.32211834192276,
+        "max_pen_m": 0.066105917096138,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 8.504117724246421e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.14306789636611938,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.143 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "m1": {
+        "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+        "value_worst_relerr": 0.022125653088639573,
+        "per_body_relerr": [
+          0.006534609143887045,
+          0.013842525932402363,
+          0.01618066508471048,
+          0.022125653088639573
+        ],
+        "value_worst_relerr_final_sample": 0.001126631319705064,
+        "tail_frac": 0.2,
+        "tail_steps": 80,
+        "min_spacing_m": 0.19991248846054077,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "threshold": 0.1,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless"
+      },
+      "trajectory_sha256": "0950270690c85870f0454caa6e21dbd2f2a67c17f90a56f5d0156527abef030b",
+      "force_error": 5.89994844668711e-06,
+      "timing": {
+        "bodies": 10000,
+        "ms_per_step": 6.353,
+        "steps_per_s": 157.41,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      }
+    },
+    {
+      "m5": {
+        "max_pen_over_R": 1.32211834192276,
+        "max_pen_m": 0.066105917096138,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 8.504117724246421e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.14306789636611938,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.143 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "m1": {
+        "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+        "value_worst_relerr": 0.022125653088639573,
+        "per_body_relerr": [
+          0.006534609143887045,
+          0.013842525932402363,
+          0.01618066508471048,
+          0.022125653088639573
+        ],
+        "value_worst_relerr_final_sample": 0.001126631319705064,
+        "tail_frac": 0.2,
+        "tail_steps": 80,
+        "min_spacing_m": 0.19991248846054077,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "threshold": 0.1,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless"
+      },
+      "trajectory_sha256": "0950270690c85870f0454caa6e21dbd2f2a67c17f90a56f5d0156527abef030b",
+      "force_error": 5.89994844668711e-06,
+      "timing": {
+        "bodies": 10000,
+        "ms_per_step": 6.334,
+        "steps_per_s": 157.88,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      }
+    }
+  ],
+  "backgrounds": [
+    {
+      "before": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    },
+    {
+      "before": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    }
+  ],
+  "gates": {
+    "exact_repeats": true,
+    "k16_m5": false,
+    "k4_m1": true,
+    "resting_force": true,
+    "original_speed": false
+  },
+  "day_plan_speed": false,
+  "execution": {
+    "gpu": "NVIDIA L4",
+    "driver": "580.95.05",
+    "warp": "1.13.0",
+    "date": "2026-09-13",
+    "provider": "Modal"
+  }
+}

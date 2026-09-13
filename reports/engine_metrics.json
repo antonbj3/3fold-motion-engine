@@ -1,0 +1,567 @@
+{
+  "schema": "engine_metrics_v1",
+  "quick": false,
+  "engine_content_hash": "2f00572710263f70",
+  "skipped": [],
+  "engines": {
+    "gpu": {
+      "M4_iters_to_tol": [
+        {
+          "mass_ratio": 1.0,
+          "iters_to_tol_PRIMARY": 2,
+          "tol": 0.1,
+          "residual_PRIMARY": 6.707800995163706e-08,
+          "residual_final_sample": 6.707800995163706e-08,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 1.5821661052562884e-07,
+            "4": 1.5821661052562884e-07,
+            "6": 1.5821661052562884e-07,
+            "8": 1.5821661052562884e-07,
+            "10": 6.707800995163706e-08,
+            "20": 6.707800995163706e-08,
+            "40": 6.707800995163706e-08
+          },
+          "final_spacing_m": 0.19989991188049316,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "REACHED",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        },
+        {
+          "mass_ratio": 1000.0,
+          "iters_to_tol_PRIMARY": null,
+          "tol": 0.1,
+          "residual_PRIMARY": 1.0,
+          "residual_final_sample": 1.0,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 1.0,
+            "4": 1.0,
+            "6": 1.0,
+            "8": 1.0,
+            "10": 1.0,
+            "20": 1.0,
+            "40": 1.0
+          },
+          "final_spacing_m": 2493809.0,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "NOT REACHED",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        }
+      ],
+      "M1_stack_load_K4": {
+        "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+        "value_worst_relerr": 1.1328528046369033e-07,
+        "per_body_relerr": [
+          1.1328528046369033e-07,
+          1.0125498515251294e-07,
+          8.51234529184032e-08,
+          1.0189295539194133e-07
+        ],
+        "value_worst_relerr_final_sample": 6.707800995163706e-08,
+        "tail_frac": 0.2,
+        "tail_steps": 80,
+        "min_spacing_m": 0.19985784590244293,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "threshold": 0.1,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless"
+      },
+      "M5_stack8_pen": {
+        "max_pen_over_R": 0.14594942331314087,
+        "max_pen_m": 0.0072974711656570435,
+        "drift_class": "bounded",
+        "drift_slope_m_per_step": 1.6115024212006842e-20,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.19906684756278992,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "M6_determinism": {
+        "eps_nondet_max_dxc_m": 0.0,
+        "repeats": 4,
+        "steps": 100,
+        "bit_deterministic": true,
+        "class": "bit-deterministic",
+        "threshold": 0.01,
+        "pass": true,
+        "units": "m"
+      },
+      "wall_s": 8.2
+    },
+    "gpu_colored": {
+      "M4_iters_to_tol": [
+        {
+          "mass_ratio": 1.0,
+          "iters_to_tol_PRIMARY": 2,
+          "tol": 0.1,
+          "residual_PRIMARY": 4.4898520188341784e-07,
+          "residual_final_sample": 1.251879817298561e-06,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 0.01598494674452213,
+            "4": 0.009756556873292356,
+            "6": 0.0025098457978041653,
+            "8": 1.680931184634454e-05,
+            "10": 1.3510021594385485e-06,
+            "20": 1.2258141777115668e-06,
+            "40": 4.4898520188341784e-07
+          },
+          "final_spacing_m": 0.19989997148513794,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "REACHED",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        },
+        {
+          "mass_ratio": 1000.0,
+          "iters_to_tol_PRIMARY": null,
+          "tol": 0.1,
+          "residual_PRIMARY": 7.277781810087689e-07,
+          "residual_final_sample": 2.4935521098465165e-07,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 2.7296256731591817,
+            "4": 1.0386900296634125,
+            "6": 1.6970706794786892,
+            "8": 7.277781810087689e-07,
+            "10": 3.4308032523420944e-06,
+            "20": 1.4566317975009999e-06,
+            "40": 0.00015552238951400545
+          },
+          "final_spacing_m": 0.05000724643468857,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "INVALID",
+          "valid": false,
+          "invalid_reasons": [
+            "spacing 0.050 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+          ],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        }
+      ],
+      "M1_stack_load_K4": {
+        "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+        "value_worst_relerr": 0.0019492081181354255,
+        "per_body_relerr": [
+          0.0013617214168612421,
+          0.0014742139191437817,
+          0.0016970970397331055,
+          0.0019492081181354255
+        ],
+        "value_worst_relerr_final_sample": 0.002468920628958815,
+        "tail_frac": 0.2,
+        "tail_steps": 80,
+        "min_spacing_m": 0.19990143179893494,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "threshold": 0.1,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless"
+      },
+      "M5_stack8_pen": {
+        "max_pen_over_R": 0.17414242029190063,
+        "max_pen_m": 0.008707121014595032,
+        "drift_class": "bounded",
+        "drift_slope_m_per_step": 3.5879455975283613e-07,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.19974923133850098,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "M6_determinism": {
+        "eps_nondet_max_dxc_m": 0.0,
+        "repeats": 4,
+        "steps": 100,
+        "bit_deterministic": true,
+        "class": "bit-deterministic",
+        "threshold": 0.01,
+        "pass": true,
+        "units": "m"
+      },
+      "wall_s": 82.6
+    },
+    "gpu_manifold": {
+      "M4_iters_to_tol": [
+        {
+          "mass_ratio": 1.0,
+          "iters_to_tol_PRIMARY": 2,
+          "tol": 0.1,
+          "residual_PRIMARY": 2.4228285576326693e-06,
+          "residual_final_sample": 9.089799466776823e-06,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 0.022070198011690016,
+            "4": 0.025371076353463938,
+            "6": 0.008181090912687681,
+            "8": 0.0033337127360364835,
+            "10": 0.0025104644648526026,
+            "20": 2.614766450466674e-05,
+            "40": 2.4228285576326693e-06
+          },
+          "final_spacing_m": 0.19994989037513733,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "REACHED",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        },
+        {
+          "mass_ratio": 1000.0,
+          "iters_to_tol_PRIMARY": null,
+          "tol": 0.1,
+          "residual_PRIMARY": 0.12453794700836915,
+          "residual_final_sample": 0.5512238700820037,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 0.27347005982100053,
+            "4": 0.175293233288902,
+            "6": 0.19503016160168776,
+            "8": 0.22117019919991857,
+            "10": 0.17044959020906267,
+            "20": 0.12453794700836915,
+            "40": 0.16448656106396184
+          },
+          "final_spacing_m": 0.0614490807056427,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "INVALID",
+          "valid": false,
+          "invalid_reasons": [
+            "spacing 0.061 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+          ],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        }
+      ],
+      "M1_stack_load_K4": {
+        "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+        "value_worst_relerr": 0.0005210411475703138,
+        "per_body_relerr": [
+          0.0005210411475703138,
+          0.0004657498011166406,
+          0.00043235614394561536,
+          0.00032585594085379527
+        ],
+        "value_worst_relerr_final_sample": 1.5560640107530237e-05,
+        "tail_frac": 0.2,
+        "tail_steps": 80,
+        "min_spacing_m": 0.19990506768226624,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "threshold": 0.1,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless"
+      },
+      "M5_stack8_pen": {
+        "max_pen_over_R": 0.16937404870986938,
+        "max_pen_m": 0.00846870243549347,
+        "drift_class": "bounded",
+        "drift_slope_m_per_step": 3.288184263029129e-06,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.19873130321502686,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "M6_determinism": {
+        "eps_nondet_max_dxc_m": 0.0,
+        "repeats": 4,
+        "steps": 100,
+        "bit_deterministic": true,
+        "class": "bit-deterministic",
+        "threshold": 0.01,
+        "pass": true,
+        "units": "m"
+      },
+      "wall_s": 36.7
+    },
+    "gpu_graph": {
+      "M4_iters_to_tol": [
+        {
+          "mass_ratio": 1.0,
+          "iters_to_tol_PRIMARY": 2,
+          "tol": 0.1,
+          "residual_PRIMARY": 2.4228285576326693e-06,
+          "residual_final_sample": 9.089799466776823e-06,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 0.022070198011690016,
+            "4": 0.025371076353463938,
+            "6": 0.008181090912687681,
+            "8": 0.0033337127360364835,
+            "10": 0.0025104644648526026,
+            "20": 2.614766450466674e-05,
+            "40": 2.4228285576326693e-06
+          },
+          "final_spacing_m": 0.19994989037513733,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "REACHED",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        },
+        {
+          "mass_ratio": 1000.0,
+          "iters_to_tol_PRIMARY": null,
+          "tol": 0.1,
+          "residual_PRIMARY": 0.12453794700836915,
+          "residual_final_sample": 0.5512238700820037,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 0.27347005982100053,
+            "4": 0.175293233288902,
+            "6": 0.19503016160168776,
+            "8": 0.22117019919991857,
+            "10": 0.17044959020906267,
+            "20": 0.12453794700836915,
+            "40": 0.16448656106396184
+          },
+          "final_spacing_m": 0.0614490807056427,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "INVALID",
+          "valid": false,
+          "invalid_reasons": [
+            "spacing 0.061 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+          ],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        }
+      ],
+      "M1_stack_load_K4": {
+        "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+        "value_worst_relerr": 0.0005210411475703138,
+        "per_body_relerr": [
+          0.0005210411475703138,
+          0.0004657498011166406,
+          0.00043235614394561536,
+          0.00032585594085379527
+        ],
+        "value_worst_relerr_final_sample": 1.5560640107530237e-05,
+        "tail_frac": 0.2,
+        "tail_steps": 80,
+        "min_spacing_m": 0.19990506768226624,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "threshold": 0.1,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless"
+      },
+      "M5_stack8_pen": {
+        "max_pen_over_R": 0.16937404870986938,
+        "max_pen_m": 0.00846870243549347,
+        "drift_class": "bounded",
+        "drift_slope_m_per_step": 3.288184263029129e-06,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.19873130321502686,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "M6_determinism": {
+        "eps_nondet_max_dxc_m": 0.0,
+        "repeats": 4,
+        "steps": 100,
+        "bit_deterministic": true,
+        "class": "bit-deterministic",
+        "threshold": 0.01,
+        "pass": true,
+        "units": "m"
+      },
+      "wall_s": 12.2
+    },
+    "gpu_chunks": {
+      "M4_iters_to_tol": [
+        {
+          "mass_ratio": 1.0,
+          "iters_to_tol_PRIMARY": 2,
+          "tol": 0.1,
+          "residual_PRIMARY": 4.59996567585347e-06,
+          "residual_final_sample": 3.0746518287783967e-06,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 0.09573792561843121,
+            "4": 0.06132384365487172,
+            "6": 0.027383298173956953,
+            "8": 0.018338079973827456,
+            "10": 0.009721786676926015,
+            "20": 4.59996567585347e-06,
+            "40": 4.896293721789823e-06
+          },
+          "final_spacing_m": 0.19994553923606873,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "REACHED",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        },
+        {
+          "mass_ratio": 1000.0,
+          "iters_to_tol_PRIMARY": null,
+          "tol": 0.1,
+          "residual_PRIMARY": 0.14319901408040922,
+          "residual_final_sample": 0.08845618522130742,
+          "tail_frac": 0.2,
+          "steps": 200,
+          "residual_vs_vit": {
+            "2": 0.35334524998971084,
+            "4": 0.1907353397356261,
+            "6": 0.14319901408040922,
+            "8": 0.16852152805080473,
+            "10": 0.17868407979288595,
+            "20": 0.19731523296154965,
+            "40": 0.2279685326672475
+          },
+          "final_spacing_m": 0.049702487885951996,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "status": "INVALID",
+          "valid": false,
+          "invalid_reasons": [
+            "spacing 0.050 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+          ],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "iters"
+        }
+      ],
+      "M1_stack_load_K4": {
+        "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+        "value_worst_relerr": 0.01339109780591558,
+        "per_body_relerr": [
+          0.0073911731943077565,
+          0.01055891332458643,
+          0.012799668667513248,
+          0.01339109780591558
+        ],
+        "value_worst_relerr_final_sample": 0.0015433170015292394,
+        "tail_frac": 0.2,
+        "tail_steps": 80,
+        "min_spacing_m": 0.19992762804031372,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "threshold": 0.1,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless"
+      },
+      "M5_stack8_pen": {
+        "max_pen_over_R": 0.17032772302627563,
+        "max_pen_m": 0.008516386151313782,
+        "drift_class": "bounded",
+        "drift_slope_m_per_step": 6.427000507497627e-06,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.19774776697158813,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "M6_determinism": {
+        "eps_nondet_max_dxc_m": 0.0,
+        "repeats": 4,
+        "steps": 100,
+        "bit_deterministic": true,
+        "class": "bit-deterministic",
+        "threshold": 0.01,
+        "pass": true,
+        "units": "m"
+      },
+      "wall_s": 8.4
+    }
+  },
+  "wall_s": 148.1
+}

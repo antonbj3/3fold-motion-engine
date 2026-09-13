@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "bodies": 10000,
+      "pairs": 10000,
+      "components": 5041,
+      "body_size_histogram": {
+        "1": 82,
+        "2": 4959
+      },
+      "max_pairs_per_component": 2,
+      "ground_pairs": 5041,
+      "labels_sha256": "9c54cef291fb4b34583919f0ef93341f5c9fe52a7ab14b00f6a2a2f0e30766ee"
+    },
+    {
+      "bodies": 10000,
+      "pairs": 10000,
+      "components": 5041,
+      "body_size_histogram": {
+        "1": 82,
+        "2": 4959
+      },
+      "max_pairs_per_component": 2,
+      "ground_pairs": 5041,
+      "labels_sha256": "9c54cef291fb4b34583919f0ef93341f5c9fe52a7ab14b00f6a2a2f0e30766ee"
+    }
+  ],
+  "exact": true,
+  "scope": "All bodies dynamic in the saved N10000 benchmark; ground excluded from connectivity"
+}

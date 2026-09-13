@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "device": "l4",
+      "arrays": 60,
+      "bytes": 23592960,
+      "exact": true
+    },
+    {
+      "device": "a10g",
+      "arrays": 60,
+      "bytes": 23592960,
+      "exact": true
+    },
+    {
+      "device": "h100",
+      "arrays": 60,
+      "bytes": 23592960,
+      "exact": true
+    },
+    {
+      "device": "local",
+      "arrays": 60,
+      "bytes": 23592960,
+      "exact": true
+    }
+  ],
+  "boundary_repeat_exact": true
+}

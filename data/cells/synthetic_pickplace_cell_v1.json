@@ -1,0 +1,76 @@
+{
+ "_doc": "Synthetic pick-and-place cell: a feed table with three in-feed nests and three out-feed nests, and a rectangular workpiece. Replaces the customer cell definition; all dimensions are invented, none are measured on any machine.",
+ "schema": "pickplace_cell_v1",
+ "verktygslangd_mm": 120.0,
+ "hem_pose_deg": [
+  0.0,
+  -90.0,
+  90.0,
+  -90.0,
+  -90.0,
+  0.0
+ ],
+ "arbetsstycke": {
+  "namn": "amne_platta",
+  "storlek_mm": [
+   80.0,
+   80.0,
+   12.0
+  ],
+  "massa_kg": 0.45
+ },
+ "stationer": {
+  "in": [
+   {
+    "nest": "inmatning_nest_0",
+    "centrum_xy": [
+     620.0,
+     -220.0
+    ],
+    "topp_z": 300.0
+   },
+   {
+    "nest": "inmatning_nest_1",
+    "centrum_xy": [
+     620.0,
+     0.0
+    ],
+    "topp_z": 300.0
+   },
+   {
+    "nest": "inmatning_nest_2",
+    "centrum_xy": [
+     620.0,
+     220.0
+    ],
+    "topp_z": 300.0
+   }
+  ],
+  "ut": [
+   {
+    "nest": "utmatning_nest_0",
+    "centrum_xy": [
+     880.0,
+     -220.0
+    ],
+    "topp_z": 300.0
+   },
+   {
+    "nest": "utmatning_nest_1",
+    "centrum_xy": [
+     880.0,
+     0.0
+    ],
+    "topp_z": 300.0
+   },
+   {
+    "nest": "utmatning_nest_2",
+    "centrum_xy": [
+     880.0,
+     220.0
+    ],
+    "topp_z": 300.0
+   }
+  ]
+ }
+}

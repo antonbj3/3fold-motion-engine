@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="motoman_hc10dt_b10">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.010919746 0.00048264264 0.072574449" rpy="0 0 0" /><mass value="6.9346224" /><inertia ixx="0.039718432" iyy="0.043314697" izz="0.055402798" ixy="0.00046879465" ixz="-0.00025326205" iyz="7.1830951e-05" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/visual/base_link.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1_s">
+    <inertial><origin xyz="-1.4605237e-05 -0.014137256 -0.014147497" rpy="0 0 0" /><mass value="6.4765707" /><inertia ixx="0.039206261" iyy="0.037644966" izz="0.037641803" ixy="4.5776406e-06" ixz="-2.4267192e-06" iyz="0.002342814" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/visual/link_1_s.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/collision/link_1_s.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2_l">
+    <inertial><origin xyz="-6.0865393e-06 -0.18645571 0.32145632" rpy="0 0 0" /><mass value="19.099308" /><inertia ixx="1.1128637" iyy="1.1059477" izz="0.081798967" ixy="2.7552291e-05" ixz="-7.2073395e-05" iyz="-0.023811161" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/visual/link_2_l.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/collision/link_2_l.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3_u">
+    <inertial><origin xyz="0.014267261 -0.014528699 -0.007690129" rpy="0 0 0" /><mass value="4.5474587" /><inertia ixx="0.020387874" iyy="0.021189882" izz="0.02188776" ixy="-0.0014590035" ixz="-0.00088532057" iyz="9.5454949e-05" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/visual/link_3_u.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/collision/link_3_u.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4_r">
+    <inertial><origin xyz="-0.16815456 0.0014357713 -1.7985289e-05" rpy="0 0 0" /><mass value="5.2199627" /><inertia ixx="0.011258629" iyy="0.085285414" izz="0.085556538" ixy="-0.00041963063" ixz="-3.0167736e-06" iyz="-6.4796225e-06" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/visual/link_4_r.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/collision/link_4_r.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5_b">
+    <inertial><origin xyz="-0.027561099 -0.012624522 -0.00042960896" rpy="0 0 0" /><mass value="3.6750223" /><inertia ixx="0.01312572" iyy="0.015568031" izz="0.017731165" ixy="0.0014398831" ixz="3.8088345e-06" iyz="-3.9931858e-05" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/visual/link_5_b.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/collision/link_5_b.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6_t">
+    <inertial><origin xyz="0.11355229 -4.3199868e-05 -0.00071855612" rpy="0 0 0" /><mass value="1.0470556" /><inertia ixx="0.0019652266" iyy="0.0017061446" izz="0.0019371449" ixy="-6.0420902e-06" ixz="1.089661e-05" iyz="2.0517687e-05" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/visual/link_6_t.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_hc10_support/meshes/hc10dt_b10/collision/link_6_t.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  
+  <joint name="joint_1_s" type="revolute">
+    <parent link="base_link" />
+    <child link="link_1_s" />
+    <origin rpy="0 0 0" xyz="0 0 0.275" />
+    <axis xyz="0 0 1" />
+    <limit effort="368.48" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.2689280275926285" />
+  </joint>
+  <joint name="joint_2_l" type="revolute">
+    <parent link="link_1_s" />
+    <child link="link_2_l" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="414.54" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.2689280275926285" />
+  </joint>
+  <joint name="joint_3_u" type="revolute">
+    <parent link="link_2_l" />
+    <child link="link_3_u" />
+    <origin rpy="0 0 0" xyz="0 0 0.700" />
+    <axis xyz="0 -1 0" />
+    <limit effort="158.76" lower="-1.6580627893946132" upper="4.625122517784973" velocity="3.141592653589793" />
+  </joint>
+  <joint name="joint_4_r" type="revolute">
+    <parent link="link_3_u" />
+    <child link="link_4_r" />
+    <origin rpy="0 0 0" xyz="0.500 0 0" />
+    <axis xyz="-1 0 0" />
+    <limit effort="41.16" lower="-3.141592653589793" upper="3.141592653589793" velocity="3.141592653589793" />
+  </joint>
+  <joint name="joint_5_b" type="revolute">
+    <parent link="link_4_r" />
+    <child link="link_5_b" />
+    <origin rpy="0 0 0" xyz="0 0.162 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="33.32" lower="-3.141592653589793" upper="3.141592653589793" velocity="4.363323129985824" />
+  </joint>
+  <joint name="joint_6_t" type="revolute">
+    <parent link="link_5_b" />
+    <child link="link_6_t" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="-1 0 0" />
+    <limit effort="31.36" lower="-3.141592653589793" upper="3.141592653589793" velocity="4.363323129985824" />
+  </joint>
+  
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_6_t-flange" type="fixed">
+    <origin rpy="0 0 0" xyz="0.170 0 0" />
+    <parent link="link_6_t" />
+    <child link="flange" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="flange-tool0" type="fixed">
+    <origin rpy="3.141592653589793 -1.5707963267948966 0" xyz="0 0 0" />
+    <parent link="flange" />
+    <child link="tool0" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.275" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+</robot>

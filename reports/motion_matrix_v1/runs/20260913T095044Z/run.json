@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260913T095044Z",
+  "transport": [],
+  "labels": [
+    "l4",
+    "a10g",
+    "h100",
+    "local"
+  ],
+  "returncode": 1,
+  "warp": "1.13.0",
+  "numpy": "2.5.3"
+}

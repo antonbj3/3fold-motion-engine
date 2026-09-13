@@ -1,0 +1,299 @@
+{
+  "legs": [
+    {
+      "20": {
+        "m5": {
+          "max_pen_over_R": 0.6990757584571838,
+          "max_pen_m": 0.03495378792285919,
+          "drift_class": "secular",
+          "drift_slope_m_per_step": 3.678503741192703e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.1709340512752533,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": false,
+          "status": "FAIL",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "m1": {
+          "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+          "value_worst_relerr": 9.749096097413476e-08,
+          "per_body_relerr": [
+            9.340795166310836e-08,
+            9.749096097413476e-08,
+            9.534009000335932e-08,
+            9.306162499332086e-08
+          ],
+          "value_worst_relerr_final_sample": 2.4935521098465165e-07,
+          "tail_frac": 0.2,
+          "tail_steps": 80,
+          "min_spacing_m": 0.19990000128746033,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "threshold": 0.1,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless"
+        },
+        "trajectory_sha256": "a629817762b2c699aa906c0cb42a52537c6d090a84b50993962aecdf02da0480",
+        "force_error": 6.707800995163706e-08,
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 4.779,
+          "steps_per_s": 209.27,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 86011,
+          "contacts_solved_final": 40000,
+          "vel_iters": 20,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "finite": true,
+        "large_state_sha256": "de1726df7f28fbaa488c0814f8fbe56d93898c9d149b591ee2f6a149fdfaa773"
+      },
+      "40": {
+        "m5": {
+          "max_pen_over_R": 0.19563645124435425,
+          "max_pen_m": 0.009781822562217712,
+          "drift_class": "bounded",
+          "drift_slope_m_per_step": 2.651196943192888e-06,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.19521817564964294,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "m1": {
+          "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+          "value_worst_relerr": 1.0258560874445039e-07,
+          "per_body_relerr": [
+            8.932494235208197e-08,
+            1.003071437301006e-07,
+            1.003071437301006e-07,
+            1.0258560874445039e-07
+          ],
+          "value_worst_relerr_final_sample": 6.707800995163706e-08,
+          "tail_frac": 0.2,
+          "tail_steps": 80,
+          "min_spacing_m": 0.19991150498390198,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "threshold": 0.1,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless"
+        },
+        "trajectory_sha256": "484cbc316ec9dd2e048392200d031f746d96900e3d8613f0007d2f0285571768",
+        "force_error": 6.707800995163706e-08,
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 5.494,
+          "steps_per_s": 182.02,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "finite": true,
+        "large_state_sha256": "dbcc40e89fb59b00560594d48ae4a72b53949de8e88d6b9213f0c0e2aac3c038"
+      }
+    },
+    {
+      "20": {
+        "m5": {
+          "max_pen_over_R": 0.6990757584571838,
+          "max_pen_m": 0.03495378792285919,
+          "drift_class": "secular",
+          "drift_slope_m_per_step": 3.678503741192703e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.1709340512752533,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": false,
+          "status": "FAIL",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "m1": {
+          "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+          "value_worst_relerr": 9.749096097413476e-08,
+          "per_body_relerr": [
+            9.340795166310836e-08,
+            9.749096097413476e-08,
+            9.534009000335932e-08,
+            9.306162499332086e-08
+          ],
+          "value_worst_relerr_final_sample": 2.4935521098465165e-07,
+          "tail_frac": 0.2,
+          "tail_steps": 80,
+          "min_spacing_m": 0.19990000128746033,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "threshold": 0.1,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless"
+        },
+        "trajectory_sha256": "a629817762b2c699aa906c0cb42a52537c6d090a84b50993962aecdf02da0480",
+        "force_error": 6.707800995163706e-08,
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 4.9,
+          "steps_per_s": 204.07,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 86011,
+          "contacts_solved_final": 40000,
+          "vel_iters": 20,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "finite": true,
+        "large_state_sha256": "de1726df7f28fbaa488c0814f8fbe56d93898c9d149b591ee2f6a149fdfaa773"
+      },
+      "40": {
+        "m5": {
+          "max_pen_over_R": 0.19563645124435425,
+          "max_pen_m": 0.009781822562217712,
+          "drift_class": "bounded",
+          "drift_slope_m_per_step": 2.651196943192888e-06,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.19521817564964294,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "m1": {
+          "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+          "value_worst_relerr": 1.0258560874445039e-07,
+          "per_body_relerr": [
+            8.932494235208197e-08,
+            1.003071437301006e-07,
+            1.003071437301006e-07,
+            1.0258560874445039e-07
+          ],
+          "value_worst_relerr_final_sample": 6.707800995163706e-08,
+          "tail_frac": 0.2,
+          "tail_steps": 80,
+          "min_spacing_m": 0.19991150498390198,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "threshold": 0.1,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless"
+        },
+        "trajectory_sha256": "484cbc316ec9dd2e048392200d031f746d96900e3d8613f0007d2f0285571768",
+        "force_error": 6.707800995163706e-08,
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 5.316,
+          "steps_per_s": 188.12,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "finite": true,
+        "large_state_sha256": "dbcc40e89fb59b00560594d48ae4a72b53949de8e88d6b9213f0c0e2aac3c038"
+      }
+    }
+  ],
+  "backgrounds": [
+    {
+      "before": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    },
+    {
+      "before": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after": {
+        "gpu_utilization": "15 %",
+        "memory_used": "3 MiB"
+      }
+    }
+  ],
+  "gates": {
+    "20": {
+      "exact_repeats": true,
+      "k16_m5": false,
+      "k4_m1": true,
+      "resting_force": true,
+      "finite": true,
+      "original_speed": false
+    },
+    "40": {
+      "exact_repeats": true,
+      "k16_m5": true,
+      "k4_m1": true,
+      "resting_force": true,
+      "finite": true,
+      "original_speed": false
+    }
+  },
+  "day_plan_speed": {
+    "20": true,
+    "40": false
+  },
+  "execution": {
+    "gpu": "NVIDIA L4",
+    "driver": "580.95.05",
+    "warp": "1.13.0",
+    "date": "2026-09-13",
+    "provider": "Modal"
+  }
+}

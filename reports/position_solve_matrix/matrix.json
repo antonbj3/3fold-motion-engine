@@ -1,0 +1,127 @@
+{
+  "scope": "Candidate matrix only; original solver captures remain unchanged.",
+  "hardware": {
+    "l4": "NVIDIA L4, 580.95.05",
+    "a10g": "NVIDIA A10G, 580.95.05",
+    "h100": "NVIDIA H100 80GB HBM3, 580.95.05",
+    "local": "NVIDIA GeForce RTX 5070, 580.178.04"
+  },
+  "rows": [
+    {
+      "module": "jacobi",
+      "backend": "l4",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "a10g",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "h100",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "local",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "l4",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "a10g",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "h100",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "local",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "l4",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "a10g",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "h100",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "local",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    }
+  ],
+  "variant": "unfused_velocity_position",
+  "gates": {
+    "capture_gates": true,
+    "initial_exact": true,
+    "all_exact": true,
+    "repeat": true
+  },
+  "status": "VERIFIED-FRESH"
+}

@@ -1,0 +1,127 @@
+{
+  "scope": "Candidate matrix only; original solver captures remain unchanged.",
+  "hardware": {
+    "prepared_l4": "NVIDIA L4, 580.95.05",
+    "prepared_a10g": "NVIDIA A10, 580.95.05",
+    "prepared_h100": "NVIDIA H100 80GB HBM3, 580.95.05",
+    "prepared_local": "NVIDIA GeForce RTX 5070, 580.178.04"
+  },
+  "rows": [
+    {
+      "module": "jacobi",
+      "backend": "prepared_l4",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "prepared_a10g",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "prepared_h100",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "prepared_local",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "prepared_l4",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "prepared_a10g",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "prepared_h100",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "prepared_local",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "prepared_l4",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "prepared_a10g",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "prepared_h100",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "prepared_local",
+      "reference": "prepared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    }
+  ],
+  "variant": "prepared_noncontracting",
+  "gates": {
+    "capture_gates": true,
+    "initial_exact": true,
+    "all_exact": true,
+    "repeat": true
+  },
+  "status": "VERIFIED-FRESH"
+}

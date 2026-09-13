@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="motoman_gp70l">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.086604082 -0.000626597 0.11509984" rpy="0 0 0" /><mass value="106.54422" /><inertia ixx="1.7988152" iyy="3.4091331" izz="4.130863" ixy="-0.0096540798" ixz="0.093059222" iyz="-0.0024790612" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/visual/base_link.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1_s">
+    <inertial><origin xyz="0.088724196 0.0071775988 -0.083105148" rpy="0 0 0" /><mass value="220.80248" /><inertia ixx="6.160011" iyy="10.792717" izz="11.012759" ixy="-0.10359049" ixz="-1.4931258" iyz="-0.19861385" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/visual/link_1_s.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/collision/link_1_s.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2_l">
+    <inertial><origin xyz="-0.0011417221 -0.13880991 0.53440515" rpy="0 0 0" /><mass value="124.30172" /><inertia ixx="18.260783" iyy="18.746462" izz="1.0526052" ixy="0.0050479738" ixz="0.037816445" iyz="0.10249658" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/visual/link_2_l.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/collision/link_2_l.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3_u">
+    <inertial><origin xyz="0.11759609 -0.0031994911 0.15938906" rpy="0 0 0" /><mass value="161.13248" /><inertia ixx="4.5441101" iyy="6.2981488" izz="5.1497689" ixy="-0.0098527419" ixz="-0.86087274" iyz="-0.015175138" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/visual/link_3_u.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/collision/link_3_u.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4_r">
+    <inertial><origin xyz="-0.34652009 -0.012170102 3.0235334e-05" rpy="0 0 0" /><mass value="24.980735" /><inertia ixx="0.069841509" iyy="1.197291" izz="1.1905002" ixy="0.041200615" ixz="-0.0033995081" iyz="-0.00054506833" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/visual/link_4_r.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/collision/link_4_r.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5_b">
+    <inertial><origin xyz="0.034779706 -0.021028129 0.00031132788" rpy="0 0 0" /><mass value="11.943584" /><inertia ixx="0.059259095" iyy="0.06268084" izz="0.082776529" ixy="-0.0092600501" ixz="-0.00014767259" iyz="-0.00014080533" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/visual/link_5_b.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/collision/link_5_b.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6_t">
+    <inertial><origin xyz="0.16642036 0.00055513686 -1.2768313e-06" rpy="0 0 0" /><mass value="0.29478717" /><inertia ixx="0.00042920516" iyy="0.00022528893" izz="0.00021687656" ixy="4.0017104e-07" ixz="1.4901297e-09" iyz="2.4206713e-08" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/visual/link_6_t.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.8 0.8 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp70l_support/meshes/gp70l/collision/link_6_t.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  
+  <joint name="joint_1_s" type="revolute">
+    <parent link="base_link" />
+    <child link="link_1_s" />
+    <origin rpy="0 0 0" xyz="0 0 0.540" />
+    <axis xyz="0 0 1" />
+    <limit effort="3983.9" lower="-3.141592653589793" upper="3.141592653589793" velocity="3.141592653589793" />
+  </joint>
+  <joint name="joint_2_l" type="revolute">
+    <parent link="link_1_s" />
+    <child link="link_2_l" />
+    <origin rpy="0 0 0" xyz="0.320 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="10174.4" lower="-1.5707963267948966" upper="2.705260340591211" velocity="2.1467549799530254" />
+  </joint>
+  <joint name="joint_3_u" type="revolute">
+    <parent link="link_2_l" />
+    <child link="link_3_u" />
+    <origin rpy="0 0 0" xyz="0 0 1.165" />
+    <axis xyz="0 -1 0" />
+    <limit effort="5148.4" lower="-1.3962634015954636" upper="1.5707963267948966" velocity="2.792526803190927" />
+  </joint>
+  <joint name="joint_4_r" type="revolute">
+    <parent link="link_3_u" />
+    <child link="link_4_r" />
+    <origin rpy="0 0 0" xyz="1.225 0 0.235" />
+    <axis xyz="-1 0 0" />
+    <limit effort="823.7" lower="-6.283185307179586" upper="6.283185307179586" velocity="4.014257279586958" />
+  </joint>
+  <joint name="joint_5_b" type="revolute">
+    <parent link="link_4_r" />
+    <child link="link_5_b" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="794.3" lower="-2.181661564992912" upper="2.181661564992912" velocity="4.014257279586958" />
+  </joint>
+  <joint name="joint_6_t" type="revolute">
+    <parent link="link_5_b" />
+    <child link="link_6_t" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="-1 0 0" />
+    <limit effort="333.4" lower="-6.283185307179586" upper="6.283185307179586" velocity="6.1086523819801535" />
+  </joint>
+  
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_6_t-flange" type="fixed">
+    <origin rpy="0 0 0" xyz="0.175 0 0" />
+    <parent link="link_6_t" />
+    <child link="flange" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="flange-tool0" type="fixed">
+    <origin rpy="3.141592653589793 -1.5707963267948966 0" xyz="0 0 0" />
+    <parent link="flange" />
+    <child link="tool0" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.540" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+</robot>

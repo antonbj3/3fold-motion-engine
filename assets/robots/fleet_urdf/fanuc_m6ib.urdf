@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="fanuc_m6ib">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.017360773 0.0013379707 0.11180141" rpy="0 0 0" /><mass value="38.33515" /><inertia ixx="0.41389157" iyy="0.48221904" izz="0.54523914" ixy="0.0042101103" ixz="0.019147931" iyz="0.0014671521" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/visual/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.34 0.35 0.36 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="0.05463142 -0.023876728 -0.068690202" rpy="0 0 0" /><mass value="42.7894" /><inertia ixx="0.55202716" iyy="0.64692451" izz="0.56588769" ixy="-0.016699842" ixz="-0.11650174" iyz="0.044374227" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/visual/link_1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/collision/link_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="-0.0022148161 0.11383144 0.28208389" rpy="0 0 0" /><mass value="20.170194" /><inertia ixx="0.75187366" iyy="0.76802669" izz="0.053569632" ixy="-0.0021226805" ixz="0.0016339201" iyz="-0.0025526548" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/visual/link_2.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/collision/link_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="0.041167466 -0.019914515 0.070869057" rpy="0 0 0" /><mass value="19.419744" /><inertia ixx="0.153638" iyy="0.1566224" izz="0.14762316" ixy="0.004581307" ixz="-0.014471278" iyz="0.0081964627" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/visual/link_3.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/collision/link_3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="0.42327149 -0.0030843777 -0.00017884249" rpy="0 0 0" /><mass value="11.783086" /><inertia ixx="0.028059959" iyy="0.21796202" izz="0.22874033" ixy="0.0042534845" ixz="-3.430196e-06" iyz="-1.4601596e-06" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/visual/link_4.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/collision/link_4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="0.0050363633 0.0013602493 -0.0048522342" rpy="0 0 0" /><mass value="2.4242705" /><inertia ixx="0.0032455429" iyy="0.0071212029" izz="0.0066972632" ixy="9.0671399e-05" ixz="-1.5796963e-05" iyz="-4.3749468e-07" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/visual/link_5.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/collision/link_5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="-0.0082183738 -2.6953301e-05 -0.00017940994" rpy="0 0 0" /><mass value="0.078156731" /><inertia ixx="4.3999593e-05" iyy="2.2922815e-05" izz="2.2932204e-05" ixy="-2.7856119e-10" ixz="5.744262e-15" iyz="4.678129e-14" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/visual/link_6.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m6ib_support/meshes/m6ib/collision/link_6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.450" />
+    <parent link="base_link" />
+    <child link="link_1" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-2.9670" upper="2.9670" velocity="2.6179" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.150 0 0" />
+    <parent link="link_1" />
+    <child link="link_2" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-1.5707" upper="2.7925" velocity="2.7925" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.600" />
+    <parent link="link_2" />
+    <child link="link_3" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-2.9670" upper="2.9670" velocity="2.9670" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.100" />
+    <parent link="link_3" />
+    <child link="link_4" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-3.3161" upper="3.3161" velocity="6.9813" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="0.615 0 0" />
+    <parent link="link_4" />
+    <child link="link_5" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-2.4434" upper="2.4434" velocity="6.9813" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.100 0 0" />
+    <parent link="link_5" />
+    <child link="link_6" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-6.2831" upper="6.2831" velocity="9.0757" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.450" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_6-flange" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_6" />
+    <child link="flange" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link_6-tool0" type="fixed">
+    <origin rpy="3.141592653589793 -1.5707963267948966 0" xyz="0 0 0" />
+    <parent link="flange" />
+    <child link="tool0" />
+  </joint>
+</robot>

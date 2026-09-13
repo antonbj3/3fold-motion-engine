@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="fanuc_m900ia260l">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.047954661 0.00059235678 0.18384768" rpy="0 0 0" /><mass value="312.22891" /><inertia ixx="13.184782" iyy="18.426497" izz="24.225217" ixy="0.0010275577" ixz="-0.51893108" iyz="0.013561315" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/visual/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.30980392156862746 0.30980392156862746 0.30980392156862746 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="0.25080562 -0.0039480133 -0.18763938" rpy="0 0 0" /><mass value="745.00226" /><inertia ixx="79.906076" iyy="63.655788" izz="77.799954" ixy="-0.89509057" ixz="-13.352766" iyz="0.0094513915" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/visual/link_1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/collision/link_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="0.02080019 -0.032152364 0.4698709" rpy="0 0 0" /><mass value="254.51674" /><inertia ixx="32.725058" iyy="32.395475" izz="5.4187034" ixy="-0.27141923" ixz="0.50740916" iyz="-1.6457806" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/visual/link_2.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/collision/link_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="0.39409282 -0.0020985372 0.14852005" rpy="0 0 0" /><mass value="358.55897" /><inertia ixx="6.9546086" iyy="98.283703" izz="97.777127" ixy="0.050171344" ixz="-4.2924542" iyz="-0.036208667" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/visual/link_3.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/collision/link_3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="1.5984119 -0.0070509672 -2.0194683e-06" rpy="0 0 0" /><mass value="19.896041" /><inertia ixx="0.11691293" iyy="0.24570269" izz="0.22706943" ixy="0.010176637" ixz="-2.5687704e-06" iyz="-1.1203798e-07" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/visual/link_4.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/collision/link_4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="0.041906179 -0.027871011 -7.3507314e-07" rpy="0 0 0" /><mass value="35.539162" /><inertia ixx="0.388492" iyy="0.43449026" izz="0.51115446" ixy="-0.049960752" ixz="8.9243335e-07" iyz="1.1173676e-06" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/visual/link_5.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/collision/link_5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="-0.027494195 6.041401e-18 7.1967702e-13" rpy="0 0 0" /><mass value="4.1864981" /><inertia ixx="0.027060425" iyy="0.014786583" izz="0.014786492" ixy="-6.2172488e-19" ixz="-8.2086189e-14" iyz="4.2440862e-18" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/visual/link_6.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/collision/link_6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.950" />
+    <parent link="base_link" />
+    <child link="link_1" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.141593" upper="3.141593" velocity="1.745329" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.370 0 0" />
+    <parent link="link_1" />
+    <child link="link_2" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-1.308997" upper="1.308997" velocity="1.832596" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 1.050" />
+    <parent link="link_2" />
+    <child link="link_3" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-2.116665" upper="1.570796" velocity="1.658063" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.200" />
+    <parent link="link_3" />
+    <child link="link_4" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-6.283185" upper="6.283185" velocity="2.094395" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="1.705 0 0" />
+    <parent link="link_4" />
+    <child link="link_5" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-2.181662" upper="2.181662" velocity="2.094395" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.270 0 0" />
+    <parent link="link_5" />
+    <child link="link_6" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-6.283185" upper="6.283185" velocity="3.490658" />
+  </joint>
+  
+  <link name="plink_1">
+    <inertial><origin xyz="-0.10431244 -0.050437863 -0.014541798" rpy="0 0 0" /><mass value="47.970418" /><inertia ixx="0.57314008" iyy="1.7013643" izz="1.2849674" ixy="-0.033241001" ixz="-0.022126134" iyz="0.0044156064" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/visual/plink_1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/collision/plink_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="plink_2">
+    <inertial><origin xyz="-0.028539123 0.0022350527 -0.54228979" rpy="0 0 0" /><mass value="22.100997" /><inertia ixx="2.0090795" iyy="2.0600148" izz="0.068222033" ixy="-0.00048007716" ixz="-0.031013517" iyz="-0.00038718963" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/visual/plink_2.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ia_support/meshes/m900ia260l/collision/plink_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="pjoint_1" type="continuous">
+    <origin rpy="0 0 0" xyz="0 0.17 0" />
+    <parent link="link_2" />
+    <child link="plink_1" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_3" multiplier="-1" offset="0" />
+  </joint>
+  <joint name="pjoint_2" type="continuous">
+    <origin rpy="0 0 0" xyz="-0.4 0.096 0" />
+    <parent link="link_3" />
+    <child link="plink_2" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_3" multiplier="1" offset="0" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.950" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_6-flange" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_6" />
+    <child link="flange" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link_6-tool0" type="fixed">
+    <origin rpy="3.141592653589793 -1.5707963267948966 0" xyz="0 0 0" />
+    <parent link="flange" />
+    <child link="tool0" />
+  </joint>
+</robot>

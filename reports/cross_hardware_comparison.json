@@ -1,0 +1,476 @@
+{
+  "labels": [
+    "l4",
+    "local",
+    "a10g"
+  ],
+  "gates": {
+    "three_backends": true,
+    "local_gates": true,
+    "initial_exact": true,
+    "all_output_bytes_exact": false
+  },
+  "comparisons": [
+    {
+      "reference": "l4",
+      "other": "local",
+      "initial_exact": true,
+      "differences": [
+        {
+          "array": "pair_chunks__stack8__0__xc",
+          "changed_values": 2400,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.00038526393473148346,
+          "max_bit_pattern_distance": 2125185729
+        },
+        {
+          "array": "pair_chunks__stack8__0__Rm",
+          "changed_values": 5841,
+          "first_index": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "max_absolute": 0.0007383488118648529,
+          "max_bit_pattern_distance": 2222464771
+        },
+        {
+          "array": "pair_chunks__stack8__0__vc",
+          "changed_values": 2537,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.01001193793490529,
+          "max_bit_pattern_distance": 2207077320
+        },
+        {
+          "array": "pair_chunks__stack8__0__om",
+          "changed_values": 2543,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.11893835663795471,
+          "max_bit_pattern_distance": 2185030420
+        },
+        {
+          "array": "pair_chunks__stack8__0__force",
+          "changed_values": 2533,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 34.90674488246441,
+          "max_bit_pattern_distance": 9253754866237440000
+        },
+        {
+          "array": "pair_chunks__stack8__1__xc",
+          "changed_values": 2400,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.00038526393473148346,
+          "max_bit_pattern_distance": 2125185729
+        },
+        {
+          "array": "pair_chunks__stack8__1__Rm",
+          "changed_values": 5841,
+          "first_index": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "max_absolute": 0.0007383488118648529,
+          "max_bit_pattern_distance": 2222464771
+        },
+        {
+          "array": "pair_chunks__stack8__1__vc",
+          "changed_values": 2537,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.01001193793490529,
+          "max_bit_pattern_distance": 2207077320
+        },
+        {
+          "array": "pair_chunks__stack8__1__om",
+          "changed_values": 2543,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.11893835663795471,
+          "max_bit_pattern_distance": 2185030420
+        },
+        {
+          "array": "pair_chunks__stack8__1__force",
+          "changed_values": 2533,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 34.90674488246441,
+          "max_bit_pattern_distance": 9253754866237440000
+        },
+        {
+          "array": "pair_chunks__lattice1000__0__xc",
+          "changed_values": 5786,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 2.5033950805664062e-05,
+          "max_bit_pattern_distance": 1394
+        },
+        {
+          "array": "pair_chunks__lattice1000__0__Rm",
+          "changed_values": 205037,
+          "first_index": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "max_absolute": 0.0004985564438015899,
+          "max_bit_pattern_distance": 2292630320
+        },
+        {
+          "array": "pair_chunks__lattice1000__0__vc",
+          "changed_values": 102794,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.0062235214308827835,
+          "max_bit_pattern_distance": 2285803924
+        },
+        {
+          "array": "pair_chunks__lattice1000__0__om",
+          "changed_values": 102904,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.11963578364247951,
+          "max_bit_pattern_distance": 2276476229
+        },
+        {
+          "array": "pair_chunks__lattice1000__0__force",
+          "changed_values": 98058,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 36.183686658740044,
+          "max_bit_pattern_distance": 9317601416969191424
+        },
+        {
+          "array": "pair_chunks__lattice1000__1__xc",
+          "changed_values": 5786,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 2.5033950805664062e-05,
+          "max_bit_pattern_distance": 1394
+        },
+        {
+          "array": "pair_chunks__lattice1000__1__Rm",
+          "changed_values": 205037,
+          "first_index": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "max_absolute": 0.0004985564438015899,
+          "max_bit_pattern_distance": 2292630320
+        },
+        {
+          "array": "pair_chunks__lattice1000__1__vc",
+          "changed_values": 102794,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.0062235214308827835,
+          "max_bit_pattern_distance": 2285803924
+        },
+        {
+          "array": "pair_chunks__lattice1000__1__om",
+          "changed_values": 102904,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 0.11963578364247951,
+          "max_bit_pattern_distance": 2276476229
+        },
+        {
+          "array": "pair_chunks__lattice1000__1__force",
+          "changed_values": 98058,
+          "first_index": [
+            3,
+            0,
+            0
+          ],
+          "max_absolute": 36.183686658740044,
+          "max_bit_pattern_distance": 9317601416969191424
+        },
+        {
+          "array": "color_cache__stack8__0__xc",
+          "changed_values": 2346,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 0.000912646297365427,
+          "max_bit_pattern_distance": 2117727307
+        },
+        {
+          "array": "color_cache__stack8__0__Rm",
+          "changed_values": 6257,
+          "first_index": [
+            8,
+            0,
+            0,
+            1
+          ],
+          "max_absolute": 0.00126027746591717,
+          "max_bit_pattern_distance": 2252520386
+        },
+        {
+          "array": "color_cache__stack8__0__vc",
+          "changed_values": 2523,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 0.0400963444262743,
+          "max_bit_pattern_distance": 2229001179
+        },
+        {
+          "array": "color_cache__stack8__0__om",
+          "changed_values": 2522,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 0.16453448310494423,
+          "max_bit_pattern_distance": 2227779698
+        },
+        {
+          "array": "color_cache__stack8__0__force",
+          "changed_values": 2483,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 58.80304938554764,
+          "max_bit_pattern_distance": 9257119207177322496
+        },
+        {
+          "array": "color_cache__stack8__1__xc",
+          "changed_values": 2346,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 0.000912646297365427,
+          "max_bit_pattern_distance": 2117727307
+        },
+        {
+          "array": "color_cache__stack8__1__Rm",
+          "changed_values": 6257,
+          "first_index": [
+            8,
+            0,
+            0,
+            1
+          ],
+          "max_absolute": 0.00126027746591717,
+          "max_bit_pattern_distance": 2252520386
+        },
+        {
+          "array": "color_cache__stack8__1__vc",
+          "changed_values": 2523,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 0.0400963444262743,
+          "max_bit_pattern_distance": 2229001179
+        },
+        {
+          "array": "color_cache__stack8__1__om",
+          "changed_values": 2522,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 0.16453448310494423,
+          "max_bit_pattern_distance": 2227779698
+        },
+        {
+          "array": "color_cache__stack8__1__force",
+          "changed_values": 2483,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 58.80304938554764,
+          "max_bit_pattern_distance": 9257119207177322496
+        },
+        {
+          "array": "color_cache__lattice1000__0__xc",
+          "changed_values": 3333,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 2.9802322387695312e-08,
+          "max_bit_pattern_distance": 305
+        },
+        {
+          "array": "color_cache__lattice1000__0__Rm",
+          "changed_values": 76846,
+          "first_index": [
+            8,
+            0,
+            0,
+            1
+          ],
+          "max_absolute": 1.8387800082564354e-07,
+          "max_bit_pattern_distance": 167365
+        },
+        {
+          "array": "color_cache__lattice1000__0__vc",
+          "changed_values": 38798,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 6.081485480535775e-06,
+          "max_bit_pattern_distance": 2271908926
+        },
+        {
+          "array": "color_cache__lattice1000__0__om",
+          "changed_values": 38785,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 3.9224721604114166e-05,
+          "max_bit_pattern_distance": 2235590800
+        },
+        {
+          "array": "color_cache__lattice1000__0__force",
+          "changed_values": 31483,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 0.019149946499965154,
+          "max_bit_pattern_distance": 9286068672453935104
+        },
+        {
+          "array": "color_cache__lattice1000__1__xc",
+          "changed_values": 3333,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 2.9802322387695312e-08,
+          "max_bit_pattern_distance": 305
+        },
+        {
+          "array": "color_cache__lattice1000__1__Rm",
+          "changed_values": 76846,
+          "first_index": [
+            8,
+            0,
+            0,
+            1
+          ],
+          "max_absolute": 1.8387800082564354e-07,
+          "max_bit_pattern_distance": 167365
+        },
+        {
+          "array": "color_cache__lattice1000__1__vc",
+          "changed_values": 38798,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 6.081485480535775e-06,
+          "max_bit_pattern_distance": 2271908926
+        },
+        {
+          "array": "color_cache__lattice1000__1__om",
+          "changed_values": 38785,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 3.9224721604114166e-05,
+          "max_bit_pattern_distance": 2235590800
+        },
+        {
+          "array": "color_cache__lattice1000__1__force",
+          "changed_values": 31483,
+          "first_index": [
+            8,
+            0,
+            0
+          ],
+          "max_absolute": 0.019149946499965154,
+          "max_bit_pattern_distance": 9286068672453935104
+        }
+      ]
+    },
+    {
+      "reference": "l4",
+      "other": "a10g",
+      "initial_exact": true,
+      "differences": []
+    }
+  ]
+}

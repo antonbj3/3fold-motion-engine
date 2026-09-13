@@ -1,0 +1,30 @@
+{
+  "status": "OWN-GATE-FAIL",
+  "pytest": {
+    "passed": 27,
+    "failed": 1,
+    "skipped": 1,
+    "errors": 0,
+    "seconds": 442.17,
+    "exit_code": 1,
+    "stop_on_first_failure": true,
+    "failed_test": "tests/test_gpu_cells.py::test_gpu_module_imports_clean[motion_engine.torch_gravity]",
+    "failure": "FileNotFoundError while writing data/ur10e_gravparams.npz: parent data directory absent in isolated source-only test payload.",
+    "skipped_test": "tests/test_compose_example.py::test_compose_field_sdf_to_contacts_to_graph",
+    "skip_reason": "Sibling repositories absent in isolated payload.",
+    "remaining_tests": "Not run after first failure."
+  },
+  "scope": "Final pytest on Modal L4 with core and optional GPU dependencies installed. Source-only runner omitted data. No numerical implementation or retry after the stop directive; no green-suite claim.",
+  "graph_attempt": "OWN-GATE-FAIL 0/1, CUDA906 on contact-count readback, same failure in two independent processes",
+  "source_commit": "3593b48",
+  "scrub": {
+    "files": [
+      ".gitignore",
+      "docs/RUNNING.md",
+      "reports/whole_step_graph_attempt_l4.json",
+      "reports/session_c_final_check.json"
+    ],
+    "forbidden_matches": 0
+  },
+  "push": false
+}

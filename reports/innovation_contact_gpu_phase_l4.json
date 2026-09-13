@@ -1,0 +1,224 @@
+{
+  "legs": [
+    [
+      {
+        "bodies": 1000,
+        "points": 18000,
+        "baseline_count": 8772,
+        "candidate_count": 8772,
+        "max_neighbours": 1,
+        "timings_ms": {
+          "baseline_raw": 0.2173019333332841,
+          "candidate_canonical": 0.3849073666666906
+        },
+        "phase_timings": {
+          "grid_build": {
+            "wall_ms": 0.06213556666665454,
+            "event_ms": 0.06109866698582967
+          },
+          "maximum_reset": {
+            "wall_ms": 0.004351499999917981,
+            "event_ms": 0.003925333420435588
+          },
+          "neighbour_count": {
+            "wall_ms": 0.09499506666680683,
+            "event_ms": 0.09454933007558187
+          },
+          "exclusive_scan": {
+            "wall_ms": 0.014049700000147899,
+            "event_ms": 0.013619200388590495
+          },
+          "summary": {
+            "wall_ms": 0.022560800000093195,
+            "event_ms": 0.022152533133824665
+          },
+          "host_readback": {
+            "wall_ms": 0.04197629999988332,
+            "event_ms": 0.04147306680679321
+          },
+          "canonical_emit": {
+            "wall_ms": 0.09553639999992924,
+            "event_ms": 0.09506133397420248
+          }
+        },
+        "instrumentation_preserves_output": true,
+        "exact_reference": true,
+        "candidate_sha256": "4fe9c4829e6fd7958be094099aa8f173c4161d00abababa32171a5923c9380c2",
+        "fixture_sha256": "d48cfe5934818c3ef1d7eb501061da8d581cf16d4e9c7ea6d4c7874657dbcc6e",
+        "canonical_features": true
+      },
+      {
+        "bodies": 10000,
+        "points": 180000,
+        "baseline_count": 85427,
+        "candidate_count": 85427,
+        "max_neighbours": 1,
+        "timings_ms": {
+          "baseline_raw": 1.463357199999867,
+          "candidate_canonical": 3.4088744999998255
+        },
+        "phase_timings": {
+          "grid_build": {
+            "wall_ms": 0.06890343333338933,
+            "event_ms": 0.06833493709564209
+          },
+          "maximum_reset": {
+            "wall_ms": 0.0041769333333737295,
+            "event_ms": 0.0037888000408808392
+          },
+          "neighbour_count": {
+            "wall_ms": 1.3671765000000373,
+            "event_ms": 1.3664234161376954
+          },
+          "exclusive_scan": {
+            "wall_ms": 0.014534699999776043,
+            "event_ms": 0.014028799533843995
+          },
+          "summary": {
+            "wall_ms": 0.023535800000000034,
+            "event_ms": 0.023040000597635904
+          },
+          "host_readback": {
+            "wall_ms": 0.042715533333155996,
+            "event_ms": 0.0421887993812561
+          },
+          "canonical_emit": {
+            "wall_ms": 1.6681579333334657,
+            "event_ms": 1.6671061197916666
+          }
+        },
+        "instrumentation_preserves_output": true,
+        "exact_reference": true,
+        "candidate_sha256": "4b912fb10f20dd7668c55546de18b2ffc346fa785594f28a6f1512fd94482f0e",
+        "fixture_sha256": "e6af482b99eebe059ce12f35bc5a1667bbd09c6ce725adffdc1119ba28aae1bf",
+        "canonical_features": true
+      }
+    ],
+    [
+      {
+        "bodies": 1000,
+        "points": 18000,
+        "baseline_count": 8772,
+        "candidate_count": 8772,
+        "max_neighbours": 1,
+        "timings_ms": {
+          "baseline_raw": 0.22026489999997048,
+          "candidate_canonical": 0.38695096666666967
+        },
+        "phase_timings": {
+          "grid_build": {
+            "wall_ms": 0.0618634999999775,
+            "event_ms": 0.06109866698582967
+          },
+          "maximum_reset": {
+            "wall_ms": 0.004254666666507016,
+            "event_ms": 0.0038570667306582133
+          },
+          "neighbour_count": {
+            "wall_ms": 0.09516303333327869,
+            "event_ms": 0.09461759726206462
+          },
+          "exclusive_scan": {
+            "wall_ms": 0.015475033333463747,
+            "event_ms": 0.014984533190727234
+          },
+          "summary": {
+            "wall_ms": 0.023051333333512503,
+            "event_ms": 0.022563199202219646
+          },
+          "host_readback": {
+            "wall_ms": 0.04195206666655812,
+            "event_ms": 0.04140373468399048
+          },
+          "canonical_emit": {
+            "wall_ms": 0.0956511333335186,
+            "event_ms": 0.09492479960123698
+          }
+        },
+        "instrumentation_preserves_output": true,
+        "exact_reference": true,
+        "candidate_sha256": "4fe9c4829e6fd7958be094099aa8f173c4161d00abababa32171a5923c9380c2",
+        "fixture_sha256": "d48cfe5934818c3ef1d7eb501061da8d581cf16d4e9c7ea6d4c7874657dbcc6e",
+        "canonical_features": true
+      },
+      {
+        "bodies": 10000,
+        "points": 180000,
+        "baseline_count": 85427,
+        "candidate_count": 85427,
+        "max_neighbours": 1,
+        "timings_ms": {
+          "baseline_raw": 1.4751273666666027,
+          "candidate_canonical": 3.30919576666678
+        },
+        "phase_timings": {
+          "grid_build": {
+            "wall_ms": 0.07035113333344611,
+            "event_ms": 0.06973439852396647
+          },
+          "maximum_reset": {
+            "wall_ms": 0.0041936999998881674,
+            "event_ms": 0.0038229333857695263
+          },
+          "neighbour_count": {
+            "wall_ms": 1.370592199999976,
+            "event_ms": 1.3697706858317058
+          },
+          "exclusive_scan": {
+            "wall_ms": 0.01480036666663409,
+            "event_ms": 0.014301866292953491
+          },
+          "summary": {
+            "wall_ms": 0.022867466666790886,
+            "event_ms": 0.022425599892934165
+          },
+          "host_readback": {
+            "wall_ms": 0.04352376666669026,
+            "event_ms": 0.042973868052164715
+          },
+          "canonical_emit": {
+            "wall_ms": 1.6741702333334274,
+            "event_ms": 1.6732159932454427
+          }
+        },
+        "instrumentation_preserves_output": true,
+        "exact_reference": true,
+        "candidate_sha256": "4b912fb10f20dd7668c55546de18b2ffc346fa785594f28a6f1512fd94482f0e",
+        "fixture_sha256": "e6af482b99eebe059ce12f35bc5a1667bbd09c6ce725adffdc1119ba28aae1bf",
+        "canonical_features": true
+      }
+    ]
+  ],
+  "backgrounds": [
+    {
+      "before_worker": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after_worker": {
+        "gpu_utilization": "10 %",
+        "memory_used": "3 MiB"
+      }
+    },
+    {
+      "before_worker": {
+        "gpu_utilization": "10 %",
+        "memory_used": "3 MiB"
+      },
+      "after_worker": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    }
+  ],
+  "gates": {
+    "exact_reference": true,
+    "instrumentation_preserves_output": true,
+    "canonical_features": true,
+    "two_run_identity": true,
+    "no_slower_than_raw": false
+  },
+  "warm": 10,
+  "timed": 30,
+  "scope": "individually warmed phases plus frozen full stages; not additive asynchronous-pipeline costs"
+}

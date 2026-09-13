@@ -1,0 +1,202 @@
+{
+  "input_tree_sha256": "6bc31f2669a67bb4b566b9cfa412d14a148f9d5bbe60f240ad083a623ea4c90e",
+  "recipes": [
+    {
+      "argv": [
+        "probes/contact_normal_schur_probe.py"
+      ],
+      "declarations": {
+        "probes/contact_normal_schur_probe.py": "495d07633c473fe53b20d6c303380adbcc11dac779e907a74857c314badcd42e",
+        "src/motion_engine/contact_normal_schur.py": "732de781030656f4e4349366d1a533d38e77d21bdf781fbb296bf34a1dfce2a4"
+      },
+      "id": "normal_static",
+      "reports": [
+        {
+          "gate_pointer": "/gates",
+          "gates": [
+            "exact_repeats",
+            "kkt",
+            "independent_oracle",
+            "controls",
+            "refusals",
+            "budget"
+          ],
+          "path": "reports/contact_normal_schur_probe.json",
+          "sha256": "55ed65d5c4d969e14e4bc9b817ed39761bffb0f7ab53defbfb1803e887ad5216"
+        }
+      ],
+      "timeout": 120
+    },
+    {
+      "argv": [
+        "probes/complement_normal_guards_probe.py"
+      ],
+      "declarations": {
+        "probes/complement_normal_guards_probe.py": "063fa6e5e147f522ff876ba12ddc609559109203a868922dc74fba5b1a7488ec"
+      },
+      "id": "normal_guards",
+      "reports": [
+        {
+          "gate_pointer": "/gates",
+          "gates": [
+            "body_capacity",
+            "contact_capacity",
+            "fixed_point_range",
+            "budget"
+          ],
+          "path": "reports/complement_normal_guards_probe.json",
+          "sha256": "0821e54b4e337472adc557ffba1e5de77a2fd01ada3b04fa328372a66e2f41ca"
+        }
+      ],
+      "timeout": 120
+    },
+    {
+      "argv": [
+        "probes/cross_impulse_rounding_model.py"
+      ],
+      "declarations": {
+        "probes/cross_impulse_rounding_model.py": "82a86a21b8447312662480776255aac23cb563d6541de5e8621edeeaca07116c"
+      },
+      "id": "rounding_model",
+      "reports": [
+        {
+          "gate_pointer": "/gates",
+          "gates": [
+            "repeat",
+            "both_endpoints_explained",
+            "distinct_rounding_outcomes"
+          ],
+          "path": "reports/cross_impulse_rounding_model.json",
+          "sha256": "048a30e28861c0cb78b40d4ee8f42dba7075aea8f905d372d7eaa4ced11ff5b0"
+        }
+      ],
+      "timeout": 120
+    },
+    {
+      "argv": [
+        "probes/cross_scalar_compare.py"
+      ],
+      "declarations": {
+        "probes/cross_scalar_compare.py": "a376c97e1484fa19f44c0487d8872db397f4f15d6d44cfa5b4243b71fe44dc3c"
+      },
+      "id": "scalar_attribution",
+      "reports": [
+        {
+          "gate_pointer": "/gates",
+          "gates": [
+            "observers_pass",
+            "presence_exact",
+            "coverage",
+            "repeat"
+          ],
+          "path": "reports/cross_scalar_comparison.json",
+          "sha256": "c056221f3fe16b569599776e4edb33e7a1cc7f52d00c9667c97f804e13ac4ef6"
+        }
+      ],
+      "timeout": 120
+    },
+    {
+      "argv": [
+        "probes/cross_unfused_phase_compare.py"
+      ],
+      "declarations": {
+        "probes/cross_unfused_phase_compare.py": "1c58295b0788f075a81efcdf038c7fb2afb5dc04a9fb218bb6ff8ebdb0c9c8ff"
+      },
+      "id": "phase_attribution",
+      "reports": [
+        {
+          "gate_pointer": "/gates",
+          "gates": [
+            "observer_gates",
+            "coverage",
+            "repeat"
+          ],
+          "path": "reports/cross_unfused_phase_comparison.json",
+          "sha256": "fa5690e72597d4f5f3ec49803594661585adb554970da5de532049786218b106"
+        }
+      ],
+      "timeout": 120
+    },
+    {
+      "argv": [
+        "probes/verification_contract_probe.py"
+      ],
+      "declarations": {
+        "probes/verification_contract_probe.py": "9f6719392c17b1029c13e092d7686c987f3a373d0e17282d4f2754dd57e4a041",
+        "src/motion_engine/verification_contract.py": "08d2030c694a6d3f4da1b21b12081b245e17639e666cb095213a09a304329401"
+      },
+      "id": "contract",
+      "reports": [
+        {
+          "gate_pointer": "/gates",
+          "gates": [
+            "declaration_refusals",
+            "fresh_output",
+            "full_report_integrity",
+            "independent_isolation",
+            "manifest_refusals",
+            "process_refusal",
+            "typed_gate_refusals",
+            "valid_receipt"
+          ],
+          "path": "reports/verification_contract_probe.json",
+          "sha256": "47c4dd71201f23b989429b0ff0c002b97506c37d68e709f40dec08476ac41393"
+        }
+      ],
+      "timeout": 120
+    },
+    {
+      "argv": [
+        "probes/cross_ordered_compare.py",
+        "--position",
+        "l4",
+        "a10g",
+        "h100",
+        "local"
+      ],
+      "declarations": {
+        "probes/cross_ordered_compare.py": "5591f2f23c0d3201f52febbc3f8c13a83593bbc80ade8642cfdcabe70939bd07"
+      },
+      "id": "position_matrix",
+      "reports": [
+        {
+          "gate_pointer": "/gates",
+          "gates": [
+            "capture_gates",
+            "initial_exact",
+            "all_exact",
+            "repeat"
+          ],
+          "path": "reports/position_solve_matrix/matrix.json",
+          "sha256": "bad18b2c1743f4b71f5727d2ad68288c4796bff6a17e852c923eab52ef964fb3"
+        }
+      ],
+      "timeout": 120
+    },
+    {
+      "argv": [
+        "probes/innovation_pair_axis_filter.py"
+      ],
+      "declarations": {
+        "probes/innovation_pair_axis_filter.py": "31da34d02b31049372ce7ceced76bde6f1a1125cd5082ba943dbd72499f38517"
+      },
+      "id": "axis_filter",
+      "reports": [
+        {
+          "gate_pointer": "/gates",
+          "gates": [
+            "exact_repeats",
+            "captured_legs_exact",
+            "no_missed_contacts",
+            "finite_complete"
+          ],
+          "path": "reports/innovation_pair_axis_filter.json",
+          "sha256": "65d16772ba2ca62e56e0f02b457bee3780f2977c2e332687b20d7e4894196ac1"
+        }
+      ],
+      "timeout": 120
+    }
+  ],
+  "schema": 1,
+  "source_tree_sha256": "b30ff584c93bb36b7eea5cb449636e549310a69a83e12170d522684d9f35f49e"
+}

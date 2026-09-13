@@ -1,0 +1,35 @@
+{
+  "rows": [
+    {
+      "baseline": "src/motion_engine/contact_engine_gpu_colored.py",
+      "baseline_kernel": "k_chunk_vel_r",
+      "candidate": "src/motion_engine/contact_engine_gpu_unfused_solve.py",
+      "candidate_kernel": "unfused_pair",
+      "expressions_identical": true,
+      "baseline_sha256": "0509acaeffb4de4072e116dc7fbbfbf0b395431d94d5607ea5026864f20554ff",
+      "candidate_sha256": "02f054ba49a109bd71af39079d68126581f922ebe17231260eea50dd8673c0f9",
+      "module_options": "fuse_fp=False"
+    },
+    {
+      "baseline": "src/motion_engine/contact_engine_gpu_fixed_frame.py",
+      "baseline_kernel": "k_fixed_frame",
+      "candidate": "src/motion_engine/contact_engine_gpu_unfused_solve.py",
+      "candidate_kernel": "unfused_fixed",
+      "expressions_identical": true,
+      "baseline_sha256": "330009feeddc1fe4ffce34889d8a2612cba315df600587e712588aa9934c944b",
+      "candidate_sha256": "02f054ba49a109bd71af39079d68126581f922ebe17231260eea50dd8673c0f9",
+      "module_options": "fuse_fp=False"
+    },
+    {
+      "baseline": "src/motion_engine/contact_engine_gpu_colored.py",
+      "baseline_kernel": "k_chunk_pos_r",
+      "candidate": "src/motion_engine/contact_engine_gpu_unfused_position.py",
+      "candidate_kernel": "unfused_position",
+      "expressions_identical": true,
+      "baseline_sha256": "0509acaeffb4de4072e116dc7fbbfbf0b395431d94d5607ea5026864f20554ff",
+      "candidate_sha256": "9e7c1f87e69c103f334f4aadc6b29346a68463b1eed5d1155f484b102906c4cc",
+      "module_options": "fuse_fp=False"
+    }
+  ],
+  "scope": "Static kernel AST check excluding function name and decorator; numerical claims require separate matrix and physical reports."
+}

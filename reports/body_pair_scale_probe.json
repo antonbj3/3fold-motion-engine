@@ -1,0 +1,235 @@
+{
+  "gates": {
+    "exact_reference": true,
+    "exact_repeats": true,
+    "nonempty_expected_pairs": true,
+    "finite_complete": true
+  },
+  "results": [
+    {
+      "10000": {
+        "bodies": 10000,
+        "width": 18,
+        "points": 180000,
+        "pairs": 10000,
+        "ground_pairs": 5041,
+        "expected_ground": 5041,
+        "expected_body_pairs": 4959,
+        "sphere_candidates": 44302,
+        "exact_reference": true,
+        "finite": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              180000,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "2d962d7a5db6f447181a08a455cc6621fc1e452d9f439194225279f687992040"
+          },
+          "lower": {
+            "shape": [
+              10000,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "10161173d024f199f851f407e207992fef584cf36131251bd05f27e3d6a82b4d"
+          },
+          "upper": {
+            "shape": [
+              10000,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "4bbcd3d3f371647843cb3f4bc71de321a09eb9240620e71110b6c7b3ffd37a0a"
+          },
+          "pairs": {
+            "shape": [
+              10000,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "041788bf0e564f578eb414cbea09e7ab9e22eef06828f070cc2cd9b914f5b210"
+          },
+          "oracle": {
+            "shape": [
+              10000,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "041788bf0e564f578eb414cbea09e7ab9e22eef06828f070cc2cd9b914f5b210"
+          }
+        },
+        "rebuild_ms": 0.4921900999999451
+      },
+      "100000": {
+        "bodies": 100000,
+        "width": 18,
+        "points": 1800000,
+        "pairs": 100000,
+        "ground_pairs": 50176,
+        "expected_ground": 50176,
+        "expected_body_pairs": 49824,
+        "sphere_candidates": 447556,
+        "exact_reference": true,
+        "finite": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              1800000,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "d8f3277b11a25a560b82cc21f8c31a3c06b85aea730fee6283ea4bedb7f8b695"
+          },
+          "lower": {
+            "shape": [
+              100000,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "e92fabd0f3280034572009f4663b574130dbbba7bb59a08d2b7f44c659ef83a9"
+          },
+          "upper": {
+            "shape": [
+              100000,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "c3a81dc04693f1c03563e65fa56b1d2ff7a39069353fd4fb97460ea466f54c2a"
+          },
+          "pairs": {
+            "shape": [
+              100000,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "c9df3e79a579f148b1a985ace49a3483a15f10c1f09760719d97b23bf021594d"
+          },
+          "oracle": {
+            "shape": [
+              100000,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "c9df3e79a579f148b1a985ace49a3483a15f10c1f09760719d97b23bf021594d"
+          }
+        },
+        "rebuild_ms": 0.7620486499998691
+      }
+    },
+    {
+      "100000": {
+        "bodies": 100000,
+        "width": 18,
+        "points": 1800000,
+        "pairs": 100000,
+        "ground_pairs": 50176,
+        "expected_ground": 50176,
+        "expected_body_pairs": 49824,
+        "sphere_candidates": 447556,
+        "exact_reference": true,
+        "finite": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              1800000,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "d8f3277b11a25a560b82cc21f8c31a3c06b85aea730fee6283ea4bedb7f8b695"
+          },
+          "lower": {
+            "shape": [
+              100000,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "e92fabd0f3280034572009f4663b574130dbbba7bb59a08d2b7f44c659ef83a9"
+          },
+          "upper": {
+            "shape": [
+              100000,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "c3a81dc04693f1c03563e65fa56b1d2ff7a39069353fd4fb97460ea466f54c2a"
+          },
+          "pairs": {
+            "shape": [
+              100000,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "c9df3e79a579f148b1a985ace49a3483a15f10c1f09760719d97b23bf021594d"
+          },
+          "oracle": {
+            "shape": [
+              100000,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "c9df3e79a579f148b1a985ace49a3483a15f10c1f09760719d97b23bf021594d"
+          }
+        },
+        "rebuild_ms": 0.768368850000023
+      },
+      "10000": {
+        "bodies": 10000,
+        "width": 18,
+        "points": 180000,
+        "pairs": 10000,
+        "ground_pairs": 5041,
+        "expected_ground": 5041,
+        "expected_body_pairs": 4959,
+        "sphere_candidates": 44302,
+        "exact_reference": true,
+        "finite": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              180000,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "2d962d7a5db6f447181a08a455cc6621fc1e452d9f439194225279f687992040"
+          },
+          "lower": {
+            "shape": [
+              10000,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "10161173d024f199f851f407e207992fef584cf36131251bd05f27e3d6a82b4d"
+          },
+          "upper": {
+            "shape": [
+              10000,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "4bbcd3d3f371647843cb3f4bc71de321a09eb9240620e71110b6c7b3ffd37a0a"
+          },
+          "pairs": {
+            "shape": [
+              10000,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "041788bf0e564f578eb414cbea09e7ab9e22eef06828f070cc2cd9b914f5b210"
+          },
+          "oracle": {
+            "shape": [
+              10000,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "041788bf0e564f578eb414cbea09e7ab9e22eef06828f070cc2cd9b914f5b210"
+          }
+        },
+        "rebuild_ms": 0.46152029999984023
+      }
+    }
+  ],
+  "scope": "Full unchanged hash-grid rebuild; synthetic contacted two-layer fixtures; no dynamics or RT speed claim."
+}

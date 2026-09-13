@@ -1,0 +1,69 @@
+{
+  "legs": [
+    {
+      "records": [
+        {
+          "colors": 1,
+          "dimension": 8192,
+          "calls": {
+            "build_warm__locals__apply_warm": 1,
+            "unfused_fixed": 40,
+            "unfused_position": 20
+          },
+          "total": 61
+        },
+        {
+          "colors": 2,
+          "dimension": 16384,
+          "calls": {
+            "build_warm__locals__apply_warm": 2,
+            "unfused_fixed": 80,
+            "unfused_position": 40
+          },
+          "total": 122
+        }
+      ],
+      "final_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+      "finite": true,
+      "graphs": 2,
+      "islands": 5041,
+      "max_island_pairs": 2
+    },
+    {
+      "records": [
+        {
+          "colors": 1,
+          "dimension": 8192,
+          "calls": {
+            "build_warm__locals__apply_warm": 1,
+            "unfused_fixed": 40,
+            "unfused_position": 20
+          },
+          "total": 61
+        },
+        {
+          "colors": 2,
+          "dimension": 16384,
+          "calls": {
+            "build_warm__locals__apply_warm": 2,
+            "unfused_fixed": 80,
+            "unfused_position": 40
+          },
+          "total": 122
+        }
+      ],
+      "final_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+      "finite": true,
+      "graphs": 2,
+      "islands": 5041,
+      "max_island_pairs": 2
+    }
+  ],
+  "gates": {
+    "repeat": true,
+    "baseline_hash": true,
+    "coverage": true,
+    "finite": true
+  },
+  "scope": "Observed Python kernel calls while building actual solve graphs; this does not isolate device launch latency from execution time."
+}

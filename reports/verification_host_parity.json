@@ -1,0 +1,14 @@
+{
+  "commands": 6,
+  "covered": 8,
+  "declared": 162,
+  "gates": {
+    "cloud_repeat": true,
+    "cross_host_exact": true,
+    "full_refusal_exact": true,
+    "local_repeat": true
+  },
+  "scope": "Complete CPU selected-verifier JSON exact under requested per-child Haswell profile; archived device analysis is not fresh GPU execution.",
+  "selected_sha256": "a75862484132431b3cac9f343701aaa9defdf07a639eb503659a6b0299228226",
+  "unmapped": 154
+}

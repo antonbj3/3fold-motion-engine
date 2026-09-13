@@ -1,0 +1,10 @@
+{
+  "gates": {
+    "body_capacity": true,
+    "contact_capacity": true,
+    "fixed_point_range": true,
+    "budget": true
+  },
+  "exact_repeats": true,
+  "status": "VERIFIED-FRESH"
+}

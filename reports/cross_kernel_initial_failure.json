@@ -1,0 +1,1 @@
+{"status":"OWN-GATE-FAIL","complete_reports":0,"error_code":906,"cause":"ColorCache deferred-force step always captures despite graph_capture flag; observer attempted host readback inside capture"}

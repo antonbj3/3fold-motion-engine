@@ -1,0 +1,111 @@
+{
+ "role": "physics/sim-readiness quality gate for fleet URDF inertials",
+ "n_urdf": 165,
+ "n_loaded": 165,
+ "n_clean": 160,
+ "n_flagged": 5,
+ "frac_clean": 0.97,
+ "violation_types": {
+  "mass>0 but": 8,
+  "effort unphysical:": 1
+ },
+ "flagged": [
+  {
+   "robot": "kuka_kr16_r1610_2",
+   "total_mass": 190.06,
+   "n_violations": 2,
+   "mass_plausible": true,
+   "violations": [
+    {
+     "link": "joint_5",
+     "issues": [
+      "mass>0 but zero inertia"
+     ]
+    },
+    {
+     "link": "joint_6",
+     "issues": [
+      "mass>0 but zero inertia"
+     ]
+    }
+   ]
+  },
+  {
+   "robot": "kuka_kr20_r1810_2",
+   "total_mass": 191.69,
+   "n_violations": 2,
+   "mass_plausible": true,
+   "violations": [
+    {
+     "link": "joint_5",
+     "issues": [
+      "mass>0 but zero inertia"
+     ]
+    },
+    {
+     "link": "joint_6",
+     "issues": [
+      "mass>0 but zero inertia"
+     ]
+    }
+   ]
+  },
+  {
+   "robot": "kuka_kr240_r3330",
+   "total_mass": 1802.6,
+   "n_violations": 2,
+   "mass_plausible": true,
+   "violations": [
+    {
+     "link": "joint_5",
+     "issues": [
+      "mass>0 but zero inertia"
+     ]
+    },
+    {
+     "link": "joint_6",
+     "issues": [
+      "mass>0 but zero inertia"
+     ]
+    }
+   ]
+  },
+  {
+   "robot": "kuka_kr360_r2830",
+   "total_mass": 1760.42,
+   "n_violations": 2,
+   "mass_plausible": true,
+   "violations": [
+    {
+     "link": "joint_5",
+     "issues": [
+      "mass>0 but zero inertia"
+     ]
+    },
+    {
+     "link": "joint_6",
+     "issues": [
+      "mass>0 but zero inertia"
+     ]
+    }
+   ]
+  },
+  {
+   "robot": "motoman_motomini",
+   "total_mass": 5.06,
+   "n_violations": 1,
+   "mass_plausible": true,
+   "violations": [
+    {
+     "link": "<effort_limits>",
+     "issues": [
+      "effort unphysical: gravity torque 47.6x the effort limit (joint 1); the robot cannot hold against gravity"
+     ]
+    }
+   ]
+  }
+ ],
+ "gate_binds": true,
+ "note": "industrial relevance is not physics validity; inertia errors poison RNEA -> residual -> transfer silently wherever there is no real data",
+ "validated": true
+}

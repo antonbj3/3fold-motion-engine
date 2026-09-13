@@ -1,0 +1,145 @@
+{
+  "legs": [
+    {
+      "False": {
+        "ms": 1.50337080000007,
+        "hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true,
+        "stats": {
+          "cnt": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "dflags": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "_layout_changed": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "_graph_mismatch": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "other": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          }
+        }
+      },
+      "True": {
+        "ms": 1.5401157333333988,
+        "hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true,
+        "stats": {
+          "cnt": {
+            "calls": 30,
+            "ms": 3.2119039999862764,
+            "bytes": 120
+          },
+          "dflags": {
+            "calls": 30,
+            "ms": 1.18538399999224,
+            "bytes": 480
+          },
+          "_layout_changed": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "_graph_mismatch": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "other": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          }
+        }
+      }
+    },
+    {
+      "True": {
+        "ms": 1.5473405333333783,
+        "hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true,
+        "stats": {
+          "cnt": {
+            "calls": 30,
+            "ms": 3.2243460000174196,
+            "bytes": 120
+          },
+          "dflags": {
+            "calls": 30,
+            "ms": 1.1711530000368953,
+            "bytes": 480
+          },
+          "_layout_changed": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "_graph_mismatch": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "other": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          }
+        }
+      },
+      "False": {
+        "ms": 1.5087990333332375,
+        "hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true,
+        "stats": {
+          "cnt": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "dflags": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "_layout_changed": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "_graph_mismatch": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          },
+          "other": {
+            "calls": 0,
+            "ms": 0.0,
+            "bytes": 0
+          }
+        }
+      }
+    }
+  ],
+  "gates": {
+    "parity": true,
+    "repeat": true,
+    "finite": true,
+    "counts_repeat": true,
+    "one_readback_removed": true
+  },
+  "worker_sha256": "0839c7f8137268bdce2f091c954ecce1644019dc05db81317fb770f2c6c947e0",
+  "scope": "30 original steps after10warm,N10000,40V20P. Array.numpy time includes preceding queued device work; not unique PCIe transfer latency. Reversed independent workers, original arrays returned."
+}

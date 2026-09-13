@@ -1,0 +1,356 @@
+{
+  "legs": [
+    {
+      "applied_warm": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 5.501,
+          "steps_per_s": 181.8,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.497,
+          "sort": 0.365,
+          "select": 1.18,
+          "pairs": 0.351,
+          "colour": 0.711,
+          "solve": 1.351,
+          "warm_store": 0.063,
+          "integrate": 1.101,
+          "total_profiled_ms_per_step": 5.879,
+          "bodies": 10000,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "profiled_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "finite": true
+      },
+      "deferred_force": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 4.253,
+          "steps_per_s": 235.1,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.437,
+          "sort": 0.344,
+          "select": 1.174,
+          "pairs": 0.348,
+          "colour": 0.709,
+          "solve": 1.317,
+          "warm_store": 0.063,
+          "integrate": 0.056,
+          "total_profiled_ms_per_step": 4.574,
+          "bodies": 10000,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "profiled_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "finite": true
+      },
+      "color_cache": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 3.673,
+          "steps_per_s": 272.23,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.437,
+          "sort": 0.349,
+          "select": 1.176,
+          "pairs": 0.343,
+          "colour": 0.124,
+          "solve": 1.349,
+          "warm_store": 0.065,
+          "integrate": 0.057,
+          "total_profiled_ms_per_step": 4.026,
+          "bodies": 10000,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "profiled_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "finite": true
+      },
+      "noncontracting": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 3.717,
+          "steps_per_s": 269.05,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.415,
+          "sort": 0.306,
+          "select": 1.16,
+          "pairs": 0.319,
+          "colour": 0.127,
+          "solve": 1.386,
+          "warm_store": 0.059,
+          "integrate": 0.054,
+          "total_profiled_ms_per_step": 3.945,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "prepared_planar": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 2.453,
+          "steps_per_s": 407.65,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.412,
+          "sort": 0.302,
+          "select": 0.536,
+          "pairs": 0.131,
+          "colour": 0.005,
+          "solve": 0.991,
+          "warm_store": 0.058,
+          "integrate": 0.053,
+          "total_profiled_ms_per_step": 2.597,
+          "bodies": 10000,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "profiled_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "finite": true
+      }
+    },
+    {
+      "prepared_planar": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 2.418,
+          "steps_per_s": 413.59,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.411,
+          "sort": 0.3,
+          "select": 0.529,
+          "pairs": 0.125,
+          "colour": 0.005,
+          "solve": 0.985,
+          "warm_store": 0.059,
+          "integrate": 0.055,
+          "total_profiled_ms_per_step": 2.584,
+          "bodies": 10000,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "profiled_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "finite": true
+      },
+      "noncontracting": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 3.709,
+          "steps_per_s": 269.6,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.414,
+          "sort": 0.304,
+          "select": 1.173,
+          "pairs": 0.317,
+          "colour": 0.132,
+          "solve": 1.352,
+          "warm_store": 0.063,
+          "integrate": 0.056,
+          "total_profiled_ms_per_step": 3.939,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "color_cache": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 3.673,
+          "steps_per_s": 272.23,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.408,
+          "sort": 0.298,
+          "select": 1.154,
+          "pairs": 0.311,
+          "colour": 0.124,
+          "solve": 1.332,
+          "warm_store": 0.06,
+          "integrate": 0.051,
+          "total_profiled_ms_per_step": 3.859,
+          "bodies": 10000,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "profiled_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "finite": true
+      },
+      "deferred_force": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 4.25,
+          "steps_per_s": 235.29,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.414,
+          "sort": 0.303,
+          "select": 1.16,
+          "pairs": 0.315,
+          "colour": 0.678,
+          "solve": 1.339,
+          "warm_store": 0.061,
+          "integrate": 0.055,
+          "total_profiled_ms_per_step": 4.452,
+          "bodies": 10000,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "profiled_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "finite": true
+      },
+      "applied_warm": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 5.341,
+          "steps_per_s": 187.23,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.473,
+          "sort": 0.324,
+          "select": 1.159,
+          "pairs": 0.319,
+          "colour": 0.683,
+          "solve": 1.361,
+          "warm_store": 0.061,
+          "integrate": 1.037,
+          "total_profiled_ms_per_step": 5.656,
+          "bodies": 10000,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "profiled_hash": "14cadfdd295457a02dd0ed00ee864ef7b7ce007388aaafeab2c35f3bc3156ca5",
+        "finite": true
+      }
+    }
+  ],
+  "gates": {
+    "coverage": true,
+    "repeat": true,
+    "profile_parity": true,
+    "finite": true
+  },
+  "worker_sha256": "f66adaaa6ceef7563c27611455d360601e3f8691c980ec5ffb0dc83256952686",
+  "scope": "Existing synchronized stage/timing functions; original N10000 lattice, 40 velocity/20 position rounds, 10 warm/30 measured steps. Profiled timing includes extra synchronization; no predicted speedup."
+}

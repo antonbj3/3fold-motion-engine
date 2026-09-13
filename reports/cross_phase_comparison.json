@@ -1,0 +1,5266 @@
+[
+  {
+    "engine": "pair_chunks",
+    "step": 3,
+    "phase": "solve",
+    "differences": [
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 2.9802322387695312e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 8.940696716308594e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 2,
+        "max_abs": 4.0978193283081055e-08,
+        "first": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 3,
+    "phase": "warm_store",
+    "differences": [
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 2.9802322387695312e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 8.940696716308594e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 2,
+        "max_abs": 4.0978193283081055e-08,
+        "first": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 3,
+    "phase": "integrate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 2.9802322387695312e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 8.940696716308594e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 2,
+        "max_abs": 4.0978193283081055e-08,
+        "first": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 4,
+    "phase": "generate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 2.9802322387695312e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 4,
+    "phase": "sort",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 2.9802322387695312e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 4,
+    "phase": "select",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 2.9802322387695312e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 8.940696716308594e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 2,
+        "max_abs": 4.0978193283081055e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 4,
+    "phase": "pairs",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 2.9802322387695312e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 8.940696716308594e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 2,
+        "max_abs": 4.0978193283081055e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 4,
+    "phase": "colour",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 2.9802322387695312e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 8.940696716308594e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 2,
+        "max_abs": 4.0978193283081055e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 4,
+    "phase": "solve",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 2.5972290984555e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 5.470988995170956e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "po",
+        "count": 1,
+        "max_abs": 9.094947017729282e-13,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 4,
+    "phase": "warm_store",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 2.5972290984555e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 5.470988995170956e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "po",
+        "count": 1,
+        "max_abs": 9.094947017729282e-13,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 4,
+    "phase": "integrate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 2.5972290984555e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 5.470988995170956e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 5,
+    "phase": "generate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 2.5972290984555e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 5.470988995170956e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 3,
+        "max_abs": 9.313225746154785e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "cpA",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          2,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 5,
+    "phase": "sort",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 2.5972290984555e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 5.470988995170956e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 3,
+        "max_abs": 9.313225746154785e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "tpA",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          2,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 5,
+    "phase": "select",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 2.5972290984555e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 5.470988995170956e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 3,
+        "max_abs": 9.313225746154785e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 5,
+    "phase": "pairs",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 2.5972290984555e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 5.470988995170956e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 3,
+        "max_abs": 9.313225746154785e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 5,
+    "phase": "colour",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 2.5972290984555e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 5.470988995170956e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 3,
+        "max_abs": 9.313225746154785e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 2,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 5,
+    "phase": "solve",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 2.0571985226425227e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.9151386254634417e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 3,
+        "max_abs": 9.313225746154785e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 3.91155481338501e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "po",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 5,
+    "phase": "warm_store",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 2.0571985226425227e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.9151386254634417e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 3,
+        "max_abs": 9.313225746154785e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 3.91155481338501e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "po",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 5,
+    "phase": "integrate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 2.0571985226425227e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.9151386254634417e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 3,
+        "max_abs": 9.313225746154785e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 3.91155481338501e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 6,
+    "phase": "generate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 9.152531510459028e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.9151386254634417e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "cpA",
+        "count": 4,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 6,
+    "phase": "sort",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 9.152531510459028e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.9151386254634417e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "tpA",
+        "count": 4,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 6,
+    "phase": "select",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 9.152531510459028e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.9151386254634417e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          2,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 3.91155481338501e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 3,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 6,
+    "phase": "pairs",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 9.152531510459028e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.9151386254634417e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          2,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 3.91155481338501e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 3,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 6,
+    "phase": "colour",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 9.152531510459028e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.9151386254634417e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          2,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 3.91155481338501e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 3,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 6,
+    "phase": "solve",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 8.149072527885437e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          2,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 4.190951585769653e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "po",
+        "count": 1,
+        "max_abs": 9.094947017729282e-13,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 6,
+    "phase": "warm_store",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 5.820766091346741e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 8.149072527885437e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          2,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 4.190951585769653e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "po",
+        "count": 1,
+        "max_abs": 9.094947017729282e-13,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 6,
+    "phase": "integrate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 8.149072527885437e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 1,
+        "max_abs": 3.637978807091713e-12,
+        "first": [
+          2,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 4.190951585769653e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 7,
+    "phase": "generate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 5.238689482212067e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "cpA",
+        "count": 5,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1,
+          0
+        ]
+      },
+      {
+        "field": "cpen",
+        "count": 1,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 7,
+    "phase": "sort",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 5.238689482212067e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "tpA",
+        "count": 5,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1,
+          0
+        ]
+      },
+      {
+        "field": "tpen",
+        "count": 1,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 7,
+    "phase": "select",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 5.238689482212067e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1,
+          2
+        ]
+      },
+      {
+        "field": "spen",
+        "count": 1,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 4.190951585769653e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 7,
+    "phase": "pairs",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 5.238689482212067e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1,
+          2
+        ]
+      },
+      {
+        "field": "spen",
+        "count": 1,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 4.190951585769653e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 7,
+    "phase": "colour",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 2,
+        "max_abs": 5.238689482212067e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1,
+          2
+        ]
+      },
+      {
+        "field": "spen",
+        "count": 1,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 1,
+        "max_abs": 5.960464477539063e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 3,
+        "max_abs": 4.190951585769653e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 3,
+        "max_abs": 5.21540641784668e-08,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 7,
+    "phase": "solve",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1,
+          2
+        ]
+      },
+      {
+        "field": "spen",
+        "count": 1,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 7.450580596923828e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 1,
+        "max_abs": 1.30385160446167e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jp",
+        "count": 2,
+        "max_abs": 1.210719347000122e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "pv",
+        "count": 1,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          2
+        ]
+      },
+      {
+        "field": "po",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 7,
+    "phase": "warm_store",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 1,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "q",
+        "count": 2,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1,
+          2
+        ]
+      },
+      {
+        "field": "spen",
+        "count": 1,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 7.450580596923828e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 1,
+        "max_abs": 1.30385160446167e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jp",
+        "count": 2,
+        "max_abs": 1.210719347000122e-08,
+        "first": [
+          2
+        ]
+      },
+      {
+        "field": "pv",
+        "count": 1,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          2
+        ]
+      },
+      {
+        "field": "po",
+        "count": 2,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 7,
+    "phase": "integrate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 2,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 3,
+        "max_abs": 1.4551915228366852e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 4,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1,
+          2
+        ]
+      },
+      {
+        "field": "spen",
+        "count": 1,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 7.450580596923828e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 1,
+        "max_abs": 1.30385160446167e-08,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jp",
+        "count": 2,
+        "max_abs": 1.210719347000122e-08,
+        "first": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 8,
+    "phase": "generate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 2,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 3,
+        "max_abs": 1.4551915228366852e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 6,
+        "max_abs": 1.0477378964424133e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "cpA",
+        "count": 9,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "cn",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          8,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 8,
+    "phase": "sort",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 2,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 3,
+        "max_abs": 1.4551915228366852e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 6,
+        "max_abs": 1.0477378964424133e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "tpA",
+        "count": 9,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "tn",
+        "count": 4,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          8,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 8,
+    "phase": "select",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 2,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 3,
+        "max_abs": 1.4551915228366852e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 6,
+        "max_abs": 1.0477378964424133e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          5,
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 7.450580596923828e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 1,
+        "max_abs": 1.30385160446167e-08,
+        "first": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 8,
+    "phase": "pairs",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 2,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 3,
+        "max_abs": 1.4551915228366852e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 6,
+        "max_abs": 1.0477378964424133e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          5,
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 7.450580596923828e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 1,
+        "max_abs": 1.30385160446167e-08,
+        "first": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 8,
+    "phase": "colour",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 2,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 3,
+        "max_abs": 1.4551915228366852e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 3,
+        "max_abs": 3.725290298461914e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 3,
+        "max_abs": 4.470348358154297e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 6,
+        "max_abs": 1.0477378964424133e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          5,
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 2,
+        "max_abs": 7.450580596923828e-08,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 1,
+        "max_abs": 1.30385160446167e-08,
+        "first": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 8,
+    "phase": "solve",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 2,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 3,
+        "max_abs": 1.4551915228366852e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 9.313225746154785e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.7881393432617188e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 6,
+        "max_abs": 1.0477378964424133e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          5,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 5,
+        "max_abs": 4.76837158203125e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 5.289912223815918e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 6,
+        "max_abs": 3.501772880554199e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "pv",
+        "count": 2,
+        "max_abs": 2.2737367544323206e-13,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "po",
+        "count": 1,
+        "max_abs": 4.547473508864641e-13,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 8,
+    "phase": "warm_store",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 2,
+        "max_abs": 7.275957614183426e-12,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 3,
+        "max_abs": 1.4551915228366852e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 9.313225746154785e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.7881393432617188e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 6,
+        "max_abs": 1.0477378964424133e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          5,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 5,
+        "max_abs": 4.76837158203125e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 5.289912223815918e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 6,
+        "max_abs": 3.501772880554199e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "pv",
+        "count": 2,
+        "max_abs": 2.2737367544323206e-13,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "po",
+        "count": 1,
+        "max_abs": 4.547473508864641e-13,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 8,
+    "phase": "integrate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 3.4924596548080444e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 9.313225746154785e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.7881393432617188e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 6,
+        "max_abs": 1.0477378964424133e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          5,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 5,
+        "max_abs": 4.76837158203125e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 5.289912223815918e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 6,
+        "max_abs": 3.501772880554199e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 9,
+    "phase": "generate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 3.4924596548080444e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 9.313225746154785e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.7881393432617188e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 12,
+        "max_abs": 3.259629011154175e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "cpA",
+        "count": 10,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "cpB",
+        "count": 5,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          7,
+          0
+        ]
+      },
+      {
+        "field": "cn",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-10,
+        "first": [
+          7,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 9,
+    "phase": "sort",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 3.4924596548080444e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 9.313225746154785e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.7881393432617188e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 12,
+        "max_abs": 3.259629011154175e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "tpA",
+        "count": 10,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "tpB",
+        "count": 5,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          7,
+          0
+        ]
+      },
+      {
+        "field": "tn",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-10,
+        "first": [
+          7,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 9,
+    "phase": "select",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 3.4924596548080444e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 9.313225746154785e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.7881393432617188e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 12,
+        "max_abs": 3.259629011154175e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 5,
+        "max_abs": 4.76837158203125e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 5.289912223815918e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 6,
+        "max_abs": 3.501772880554199e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 9,
+    "phase": "pairs",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 3.4924596548080444e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 9.313225746154785e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.7881393432617188e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 12,
+        "max_abs": 3.259629011154175e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 5,
+        "max_abs": 4.76837158203125e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 5.289912223815918e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 6,
+        "max_abs": 3.501772880554199e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 9,
+    "phase": "colour",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 3.4924596548080444e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 9.313225746154785e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.7881393432617188e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 12,
+        "max_abs": 3.259629011154175e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 5,
+        "max_abs": 4.76837158203125e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 5.289912223815918e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 6,
+        "max_abs": 3.501772880554199e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 9,
+    "phase": "solve",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 3.4924596548080444e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 1.0548774298513308e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.00000761449337e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 12,
+        "max_abs": 3.259629011154175e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 6,
+        "max_abs": 5.960464477539062e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 7,
+        "max_abs": 2.980232238769531e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 8,
+        "max_abs": 4.172325134277344e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "pv",
+        "count": 2,
+        "max_abs": 1.8189894035458565e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "po",
+        "count": 2,
+        "max_abs": 3.637978807091713e-11,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 9,
+    "phase": "warm_store",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 4.3655745685100555e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 3.4924596548080444e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 1.0548774298513308e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.00000761449337e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 12,
+        "max_abs": 3.259629011154175e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 6,
+        "max_abs": 5.960464477539062e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 7,
+        "max_abs": 2.980232238769531e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 8,
+        "max_abs": 4.172325134277344e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "pv",
+        "count": 2,
+        "max_abs": 1.8189894035458565e-12,
+        "first": [
+          0,
+          1
+        ]
+      },
+      {
+        "field": "po",
+        "count": 2,
+        "max_abs": 3.637978807091713e-11,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "pair_chunks",
+    "step": 9,
+    "phase": "integrate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 7.275957614183426e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 1.0548774298513308e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.00000761449337e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 12,
+        "max_abs": 3.259629011154175e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 4,
+        "max_abs": 2.1827872842550278e-11,
+        "first": [
+          1,
+          1
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 6,
+        "max_abs": 5.960464477539062e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 7,
+        "max_abs": 2.980232238769531e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 8,
+        "max_abs": 4.172325134277344e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 8,
+    "phase": "solve",
+    "differences": [
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 5,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 4,
+        "max_abs": 3.5762786865234375e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 2.384185791015625e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 5,
+        "max_abs": 2.980232238769531e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 8,
+    "phase": "warm_store",
+    "differences": [
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 5,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 4,
+        "max_abs": 3.5762786865234375e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 2.384185791015625e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 5,
+        "max_abs": 2.980232238769531e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 8,
+    "phase": "integrate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 5,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 5,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 4,
+        "max_abs": 3.5762786865234375e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 2.384185791015625e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 5,
+        "max_abs": 2.980232238769531e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 9,
+    "phase": "generate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 5,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 5,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 9,
+        "max_abs": 5.587935447692871e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "cpA",
+        "count": 9,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          3,
+          0
+        ]
+      },
+      {
+        "field": "cpB",
+        "count": 5,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          8,
+          0
+        ]
+      },
+      {
+        "field": "cn",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-10,
+        "first": [
+          8,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 9,
+    "phase": "sort",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 5,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 5,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 9,
+        "max_abs": 5.587935447692871e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "tpA",
+        "count": 9,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          3,
+          0
+        ]
+      },
+      {
+        "field": "tpB",
+        "count": 5,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          8,
+          0
+        ]
+      },
+      {
+        "field": "tn",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-10,
+        "first": [
+          8,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 9,
+    "phase": "select",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 5,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 5,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 9,
+        "max_abs": 5.587935447692871e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 4,
+        "max_abs": 3.5762786865234375e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 2.384185791015625e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 5,
+        "max_abs": 2.980232238769531e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 9,
+    "phase": "pairs",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 5,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 5,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 9,
+        "max_abs": 5.587935447692871e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 4,
+        "max_abs": 3.5762786865234375e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 2.384185791015625e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 5,
+        "max_abs": 2.980232238769531e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 9,
+    "phase": "colour",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 5,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 5,
+        "max_abs": 7.450580596923828e-09,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 5,
+        "max_abs": 1.1920928955078125e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 9,
+        "max_abs": 5.587935447692871e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 4,
+        "max_abs": 3.5762786865234375e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 5,
+        "max_abs": 2.384185791015625e-07,
+        "first": [
+          0
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 5,
+        "max_abs": 2.980232238769531e-07,
+        "first": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 9,
+    "phase": "solve",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 5,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.695007085800171e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 9,
+        "max_abs": 5.587935447692871e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 4,
+        "max_abs": 7.748603820800781e-07,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 4,
+        "max_abs": 2.682209014892578e-07,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 7.599592208862305e-07,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "po",
+        "count": 2,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 9,
+    "phase": "warm_store",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 5,
+        "max_abs": 4.656612873077393e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.695007085800171e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 9,
+        "max_abs": 5.587935447692871e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 4,
+        "max_abs": 7.748603820800781e-07,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 4,
+        "max_abs": 2.682209014892578e-07,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 7.599592208862305e-07,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "po",
+        "count": 2,
+        "max_abs": 2.9103830456733704e-11,
+        "first": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "color_cache",
+    "step": 9,
+    "phase": "integrate",
+    "differences": [
+      {
+        "field": "xc",
+        "count": 4,
+        "max_abs": 8.731149137020111e-11,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "q",
+        "count": 6,
+        "max_abs": 6.984919309616089e-10,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "v",
+        "count": 6,
+        "max_abs": 1.4901161193847656e-08,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "w",
+        "count": 6,
+        "max_abs": 1.695007085800171e-07,
+        "first": [
+          0,
+          0
+        ]
+      },
+      {
+        "field": "invIw",
+        "count": 9,
+        "max_abs": 5.587935447692871e-09,
+        "first": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "field": "spA",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "spB",
+        "count": 2,
+        "max_abs": 1.4551915228366852e-11,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "sn",
+        "count": 2,
+        "max_abs": 2.3283064365386963e-10,
+        "first": [
+          4,
+          0
+        ]
+      },
+      {
+        "field": "jn",
+        "count": 4,
+        "max_abs": 7.748603820800781e-07,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt1",
+        "count": 4,
+        "max_abs": 2.682209014892578e-07,
+        "first": [
+          1
+        ]
+      },
+      {
+        "field": "jt2",
+        "count": 4,
+        "max_abs": 7.599592208862305e-07,
+        "first": [
+          1
+        ]
+      }
+    ]
+  }
+]

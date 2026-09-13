@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="fanuc_m430ia2p">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.0018172281 0.0012907479 0.13848657" rpy="0 0 0" /><mass value="20.505575" /><inertia ixx="0.24859847" iyy="0.25713025" izz="0.20322334" ixy="8.020142e-05" ixz="-0.0012596459" iyz="0.0016308267" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/visual/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9019607843137255 0.9019607843137255 0.9019607843137255 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="-0.00011468004 0.022443132 -0.037277816" rpy="0 0 0" /><mass value="4.4149265" /><inertia ixx="0.020385119" iyy="0.021888231" izz="0.017804862" ixy="-2.8242458e-05" ixz="-2.384258e-05" iyz="-0.0041304863" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/visual/link_1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9019607843137255 0.9019607843137255 0.9019607843137255 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/collision/link_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="-4.3947476e-06 0.15331381 0.15581531" rpy="0 0 0" /><mass value="10.981095" /><inertia ixx="0.21591706" iyy="0.22470779" izz="0.03720501" ixy="-1.0934142e-06" ixz="2.52999e-06" iyz="-0.00080674447" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/visual/link_2.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9019607843137255 0.9019607843137255 0.9019607843137255 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/collision/link_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="7.1294188e-07 0.0053808939 -0.01678952" rpy="0 0 0" /><mass value="5.0570892" /><inertia ixx="0.030724774" iyy="0.028801956" izz="0.015844198" ixy="2.8140904e-08" ixz="-3.8172136e-07" iyz="-0.00059690586" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/visual/link_3.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9019607843137255 0.9019607843137255 0.9019607843137255 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/collision/link_3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="0.00045003379 -0.0077093821 0.22939118" rpy="0 0 0" /><mass value="3.4442354" /><inertia ixx="0.024380747" iyy="0.024189658" izz="0.0063905248" ixy="4.8907688e-05" ixz="-2.3403771e-05" iyz="0.001304274" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/visual/link_4.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9019607843137255 0.9019607843137255 0.9019607843137255 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/collision/link_4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="0.0014764661 -0.084308256 0.011250812" rpy="0 0 0" /><mass value="0.53690537" /><inertia ixx="0.00053354412" iyy="0.00064544438" izz="0.00057024071" ixy="-6.0573549e-06" ixz="2.4988767e-06" iyz="9.6696681e-05" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/visual/link_5.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9019607843137255 0.9019607843137255 0.9019607843137255 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/collision/link_5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="-8.1206809e-20 -1.6241362e-19 -0.0081799155" rpy="0 0 0" /><mass value="0.060173258" /><inertia ixx="1.7552171e-05" iyy="1.7549229e-05" izz="3.2576001e-05" ixy="0" ixz="0" iyz="5.2849695e-21" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/visual/link_6.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9019607843137255 0.9019607843137255 0.9019607843137255 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m430ia_support/meshes/m430ia2p/collision/link_6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.410" />
+    <parent link="base_link" />
+    <child link="link_1" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.14" upper="3.14" velocity="5.24" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_1" />
+    <child link="link_2" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-2.01" upper="2.01" velocity="5.59" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.350" />
+    <parent link="link_2" />
+    <child link="link_3" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-3.49" upper="3.49" velocity="5.93" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_3" />
+    <child link="link_4" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.32" upper="3.32" velocity="5.24" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.350" />
+    <parent link="link_4" />
+    <child link="link_5" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-2.62" upper="2.62" velocity="5.24" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0 -0.095 0.065" />
+    <parent link="link_5" />
+    <child link="link_6" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-4.71" upper="4.71" velocity="12.57" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.410" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_6-flange" type="fixed">
+    <origin rpy="0 -1.5707963267948966 0" xyz="0 0 0" />
+    <parent link="link_6" />
+    <child link="flange" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  
+  <joint name="link_6-tool0" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_6" />
+    <child link="tool0" />
+  </joint>
+</robot>

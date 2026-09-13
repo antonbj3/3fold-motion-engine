@@ -1,0 +1,91 @@
+{
+  "rows": [
+    {
+      "scene": "stack4",
+      "points": 72,
+      "all_point_pairs": 2556,
+      "legs": [
+        {
+          "contacts": 36,
+          "raw_sha256": "7ef433ddeeecf9b08d86b06e9efa99a8be353dd1c3e73b70223610cf4299c1d8",
+          "canonical_sha256": "0e18c004008ee88ca4df5ef9d72d016fbde8c00c115738c02b65daa94e53c323",
+          "unique_features": true,
+          "raw_feature_order": false,
+          "finite_geometry": true
+        },
+        {
+          "contacts": 36,
+          "raw_sha256": "7ef433ddeeecf9b08d86b06e9efa99a8be353dd1c3e73b70223610cf4299c1d8",
+          "canonical_sha256": "0e18c004008ee88ca4df5ef9d72d016fbde8c00c115738c02b65daa94e53c323",
+          "unique_features": true,
+          "raw_feature_order": false,
+          "finite_geometry": true
+        }
+      ],
+      "canonical_bit_identical": true,
+      "raw_bit_identical": true,
+      "cpu_only_endpoints": 0,
+      "gpu_only_endpoints": 0
+    },
+    {
+      "scene": "stack16",
+      "points": 288,
+      "all_point_pairs": 41328,
+      "legs": [
+        {
+          "contacts": 144,
+          "raw_sha256": "99eb38129a21a86fe2b2b6300517b426caa9fc7600395c28fbcbf7128536d391",
+          "canonical_sha256": "a73403a182d428a660b65f44b527a5e23bb91aa1e76a2b88283f5ce234a298c4",
+          "unique_features": true,
+          "raw_feature_order": false,
+          "finite_geometry": true
+        },
+        {
+          "contacts": 144,
+          "raw_sha256": "9fde1dc2b55bfd08d2585c86bebcdca78c080c062fbc00c9dca1a3be25d3fb3f",
+          "canonical_sha256": "a73403a182d428a660b65f44b527a5e23bb91aa1e76a2b88283f5ce234a298c4",
+          "unique_features": true,
+          "raw_feature_order": false,
+          "finite_geometry": true
+        }
+      ],
+      "canonical_bit_identical": true,
+      "raw_bit_identical": false,
+      "cpu_only_endpoints": 0,
+      "gpu_only_endpoints": 0
+    },
+    {
+      "scene": "lattice50",
+      "points": 900,
+      "all_point_pairs": 404550,
+      "legs": [
+        {
+          "contacts": 450,
+          "raw_sha256": "8e380334d859427b3ca4e2b0f9e7b3cd57daf7433b3ca548795552d827f4fdb6",
+          "canonical_sha256": "05a969f95675e58b12a9a44b94a6e6a77771a7e19bce7deb5acb097a526c8bbc",
+          "unique_features": true,
+          "raw_feature_order": false,
+          "finite_geometry": true
+        },
+        {
+          "contacts": 450,
+          "raw_sha256": "ea5de14e9332ddc55abc7ff94aabc8bf703d0b7ee35b3aa6c98360865d33eb0f",
+          "canonical_sha256": "05a969f95675e58b12a9a44b94a6e6a77771a7e19bce7deb5acb097a526c8bbc",
+          "unique_features": true,
+          "raw_feature_order": false,
+          "finite_geometry": true
+        }
+      ],
+      "canonical_bit_identical": true,
+      "raw_bit_identical": false,
+      "cpu_only_endpoints": 0,
+      "gpu_only_endpoints": 0
+    }
+  ],
+  "gates": {
+    "canonical_bit_identical": true,
+    "unique_features": true,
+    "finite_geometry": true
+  },
+  "performance_measured": false
+}

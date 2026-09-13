@@ -1,0 +1,51 @@
+{
+  "matrix_rows": [
+    {
+      "backend": "l4",
+      "arrays": 60,
+      "bytes": 23592960,
+      "exact": true
+    },
+    {
+      "backend": "a10g",
+      "arrays": 60,
+      "bytes": 23592960,
+      "exact": true
+    },
+    {
+      "backend": "h100",
+      "arrays": 60,
+      "bytes": 23592960,
+      "exact": true
+    },
+    {
+      "backend": "local",
+      "arrays": 60,
+      "bytes": 23592960,
+      "exact": true
+    }
+  ],
+  "boundaries": [
+    {
+      "bodies": 64,
+      "baseline_calls": [
+        255
+      ],
+      "candidate_calls": [
+        6
+      ],
+      "repeat_bytes": 147456
+    },
+    {
+      "bodies": 65,
+      "baseline_calls": [
+        255
+      ],
+      "candidate_calls": [
+        255
+      ],
+      "repeat_bytes": 149760
+    }
+  ],
+  "scope": "Complete captured arrays match the prior prepared candidate per device; full boundary JSON/arrays repeat exactly across independent test processes."
+}

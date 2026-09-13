@@ -1,0 +1,213 @@
+{
+  "gates": {
+    "dense_reference": true,
+    "exact_force": true,
+    "finite": true,
+    "independent_colors": true
+  },
+  "rows": [
+    {
+      "dense_reference_error": 0.0,
+      "exact_force_error": 0.0,
+      "first_sweep_nonzero": 3,
+      "impulse_relative_error": 0.75,
+      "independent_colors": true,
+      "iterations": 1,
+      "k": 4,
+      "order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "sha256": "8ab7147dab3b8bae914ff82b3f3698b7eee885d43b1870ec38a8d55bdd468fe4",
+      "worst_body_force_error": 1.0
+    },
+    {
+      "dense_reference_error": 0.0,
+      "exact_force_error": 0.0,
+      "first_sweep_nonzero": 3,
+      "impulse_relative_error": 0.0015151595430289433,
+      "independent_colors": true,
+      "iterations": 40,
+      "k": 4,
+      "order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "sha256": "fa9514558e991789bd939f842bd3a0566eb2a85d3f9a4f614f72b3be9d55fd0a",
+      "worst_body_force_error": 0.00214275917491058
+    },
+    {
+      "dense_reference_error": 0.0,
+      "exact_force_error": 0.0,
+      "first_sweep_nonzero": 3,
+      "impulse_relative_error": 8.475109503081057e-12,
+      "independent_colors": true,
+      "iterations": 160,
+      "k": 4,
+      "order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "sha256": "e2f0b5391809d6230ed115ab56fc0c4fb2a405fbe250cba327d2770c3b688daa",
+      "worst_body_force_error": 1.1985634706945802e-11
+    },
+    {
+      "dense_reference_error": 0.0,
+      "exact_force_error": 0.0,
+      "first_sweep_nonzero": 3,
+      "impulse_relative_error": 0.875,
+      "independent_colors": true,
+      "iterations": 1,
+      "k": 8,
+      "order": [
+        0,
+        3,
+        6,
+        1,
+        4,
+        7,
+        2,
+        5
+      ],
+      "sha256": "37791ca6e2b6b53a0f61812b2ee51f7abef7bef3b6044d7618e18de652894605",
+      "worst_body_force_error": 1.0
+    },
+    {
+      "dense_reference_error": 0.0,
+      "exact_force_error": 0.0,
+      "first_sweep_nonzero": 3,
+      "impulse_relative_error": 0.17389769116869025,
+      "independent_colors": true,
+      "iterations": 40,
+      "k": 8,
+      "order": [
+        0,
+        3,
+        6,
+        1,
+        4,
+        7,
+        2,
+        5
+      ],
+      "sha256": "5365c23b711b9fbfeb44b6ce3e916154c4209ea4ed93338e63c085a04c766a56",
+      "worst_body_force_error": 0.2560596095338925
+    },
+    {
+      "dense_reference_error": 0.0,
+      "exact_force_error": 0.0,
+      "first_sweep_nonzero": 3,
+      "impulse_relative_error": 0.0016521107638596266,
+      "independent_colors": true,
+      "iterations": 160,
+      "k": 8,
+      "order": [
+        0,
+        3,
+        6,
+        1,
+        4,
+        7,
+        2,
+        5
+      ],
+      "sha256": "c82ad2e4498d48abf57292421a4e9f158d79afd04ac0ef1168b93cab133132c3",
+      "worst_body_force_error": 0.0024326895599188214
+    },
+    {
+      "dense_reference_error": 0.0,
+      "exact_force_error": 0.0,
+      "first_sweep_nonzero": 3,
+      "impulse_relative_error": 0.9375,
+      "independent_colors": true,
+      "iterations": 1,
+      "k": 16,
+      "order": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        1,
+        4,
+        7,
+        10,
+        13,
+        2,
+        5,
+        8,
+        11,
+        14
+      ],
+      "sha256": "57a979774a99a5b920bb9245ccf0137ae1e9bbbdec6a44b4b6156dfbbaf539f8",
+      "worst_body_force_error": 1.0
+    },
+    {
+      "dense_reference_error": 0.0,
+      "exact_force_error": 0.0,
+      "first_sweep_nonzero": 3,
+      "impulse_relative_error": 0.5554333419972985,
+      "independent_colors": true,
+      "iterations": 40,
+      "k": 16,
+      "order": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        1,
+        4,
+        7,
+        10,
+        13,
+        2,
+        5,
+        8,
+        11,
+        14
+      ],
+      "sha256": "18d3845eccf7f52d420699e194b8cfbd0534c6244461ec4d63edbe4bf36e7258",
+      "worst_body_force_error": 0.83589156907133
+    },
+    {
+      "dense_reference_error": 0.0,
+      "exact_force_error": 0.0,
+      "first_sweep_nonzero": 3,
+      "impulse_relative_error": 0.17352851495418375,
+      "independent_colors": true,
+      "iterations": 160,
+      "k": 16,
+      "order": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        1,
+        4,
+        7,
+        10,
+        13,
+        2,
+        5,
+        8,
+        11,
+        14
+      ],
+      "sha256": "d81be597460abdd995b381a29ba3947d2db72a150efb759eef82de24ab929a49",
+      "worst_body_force_error": 0.2656505763399859
+    }
+  ],
+  "scope": "normal-only fixed linear system; no engine or timing claim",
+  "status": "SYNTHETIC-ONLY"
+}

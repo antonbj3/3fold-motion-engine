@@ -1,0 +1,209 @@
+{
+  "legs": [
+    {
+      "m5": {
+        "max_pen_over_R": 1.3415160775184631,
+        "max_pen_m": 0.06707580387592316,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 7.978431414145351e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.1379241943359375,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "rows": [
+        {
+          "call": 1,
+          "contacts": 4,
+          "normal_rank": 3,
+          "tangent_rank": 3,
+          "intersection_rank": 0,
+          "max_normalized_cross_coupling": 0.33436692458529277,
+          "normal_velocity_before_norm": 0.3270000219345093,
+          "normal_velocity_after_norm": 0.06548008381629411,
+          "induced_tangent_velocity_norm": 0.06548008381629412,
+          "tangent_velocity_before_norm": 0.0,
+          "basis_error": 0.0,
+          "normal_kkt": 2.584893782271652e-17,
+          "snapshot_sha256": "ea07d5badf633f2607c04e409929e1b625028bac13b4210e170d21d8f9a45c10"
+        },
+        {
+          "call": 20,
+          "contacts": 32,
+          "normal_rank": 31,
+          "tangent_rank": 47,
+          "intersection_rank": 30,
+          "max_normalized_cross_coupling": 0.21508663912005183,
+          "normal_velocity_before_norm": 1.7841111689638662,
+          "normal_velocity_after_norm": 3.613041717541196e-08,
+          "induced_tangent_velocity_norm": 0.08200493011626953,
+          "tangent_velocity_before_norm": 0.06493982539982045,
+          "basis_error": 1.4272286608107976e-07,
+          "normal_kkt": 1.750871199943662e-13,
+          "snapshot_sha256": "2d7eeeea40748e36a70d3bebccf1331e5a4e311a38d85f3e60739f5825ef6955"
+        },
+        {
+          "call": 100,
+          "contacts": 64,
+          "normal_rank": 63,
+          "tangent_rank": 95,
+          "intersection_rank": 62,
+          "max_normalized_cross_coupling": 0.4081208166986907,
+          "normal_velocity_before_norm": 0.13659671234612297,
+          "normal_velocity_after_norm": 0.006105148652632678,
+          "induced_tangent_velocity_norm": 0.33544274750857406,
+          "tangent_velocity_before_norm": 0.021153141801375317,
+          "basis_error": 1.4466262987511413e-07,
+          "normal_kkt": 3.073440899024285e-11,
+          "snapshot_sha256": "e542af6e02569268cf0e76edb51615952b2d0f19a5e18267a00fb7f01c184dad"
+        },
+        {
+          "call": 300,
+          "contacts": 60,
+          "normal_rank": 59,
+          "tangent_rank": 94,
+          "intersection_rank": 57,
+          "max_normalized_cross_coupling": 0.8978661130465079,
+          "normal_velocity_before_norm": 0.34882017502069784,
+          "normal_velocity_after_norm": 0.00930753879593474,
+          "induced_tangent_velocity_norm": 0.39987297582518827,
+          "tangent_velocity_before_norm": 0.3774851648222604,
+          "basis_error": 1.2592114928544618e-07,
+          "normal_kkt": 6.961050289489327e-11,
+          "snapshot_sha256": "24eeb12961cc32ce747a36111acb96c3ebdd2b6aa43a15a0c7c06713b58017ac"
+        },
+        {
+          "call": 590,
+          "contacts": 64,
+          "normal_rank": 63,
+          "tangent_rank": 95,
+          "intersection_rank": 62,
+          "max_normalized_cross_coupling": 0.9187190311085275,
+          "normal_velocity_before_norm": 0.231878671000304,
+          "normal_velocity_after_norm": 0.0347089401101531,
+          "induced_tangent_velocity_norm": 0.2806694216481039,
+          "tangent_velocity_before_norm": 0.22234206897566686,
+          "basis_error": 1.5768734229482106e-07,
+          "normal_kkt": 1.646081458729081e-11,
+          "snapshot_sha256": "deedf0a84843b442ed7ed17898095fa80fb86d15ffdcdbd8c6303beab401bf13"
+        }
+      ]
+    },
+    {
+      "m5": {
+        "max_pen_over_R": 1.3415160775184631,
+        "max_pen_m": 0.06707580387592316,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 7.978431414145351e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.1379241943359375,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "rows": [
+        {
+          "call": 1,
+          "contacts": 4,
+          "normal_rank": 3,
+          "tangent_rank": 3,
+          "intersection_rank": 0,
+          "max_normalized_cross_coupling": 0.33436692458529277,
+          "normal_velocity_before_norm": 0.3270000219345093,
+          "normal_velocity_after_norm": 0.06548008381629411,
+          "induced_tangent_velocity_norm": 0.06548008381629412,
+          "tangent_velocity_before_norm": 0.0,
+          "basis_error": 0.0,
+          "normal_kkt": 2.584893782271652e-17,
+          "snapshot_sha256": "ea07d5badf633f2607c04e409929e1b625028bac13b4210e170d21d8f9a45c10"
+        },
+        {
+          "call": 20,
+          "contacts": 32,
+          "normal_rank": 31,
+          "tangent_rank": 47,
+          "intersection_rank": 30,
+          "max_normalized_cross_coupling": 0.21508663912005183,
+          "normal_velocity_before_norm": 1.7841111689638662,
+          "normal_velocity_after_norm": 3.613041717541196e-08,
+          "induced_tangent_velocity_norm": 0.08200493011626953,
+          "tangent_velocity_before_norm": 0.06493982539982045,
+          "basis_error": 1.4272286608107976e-07,
+          "normal_kkt": 1.750871199943662e-13,
+          "snapshot_sha256": "2d7eeeea40748e36a70d3bebccf1331e5a4e311a38d85f3e60739f5825ef6955"
+        },
+        {
+          "call": 100,
+          "contacts": 64,
+          "normal_rank": 63,
+          "tangent_rank": 95,
+          "intersection_rank": 62,
+          "max_normalized_cross_coupling": 0.4081208166986907,
+          "normal_velocity_before_norm": 0.13659671234612297,
+          "normal_velocity_after_norm": 0.006105148652632678,
+          "induced_tangent_velocity_norm": 0.33544274750857406,
+          "tangent_velocity_before_norm": 0.021153141801375317,
+          "basis_error": 1.4466262987511413e-07,
+          "normal_kkt": 3.073440899024285e-11,
+          "snapshot_sha256": "e542af6e02569268cf0e76edb51615952b2d0f19a5e18267a00fb7f01c184dad"
+        },
+        {
+          "call": 300,
+          "contacts": 60,
+          "normal_rank": 59,
+          "tangent_rank": 94,
+          "intersection_rank": 57,
+          "max_normalized_cross_coupling": 0.8978661130465079,
+          "normal_velocity_before_norm": 0.34882017502069784,
+          "normal_velocity_after_norm": 0.00930753879593474,
+          "induced_tangent_velocity_norm": 0.39987297582518827,
+          "tangent_velocity_before_norm": 0.3774851648222604,
+          "basis_error": 1.2592114928544618e-07,
+          "normal_kkt": 6.961050289489327e-11,
+          "snapshot_sha256": "24eeb12961cc32ce747a36111acb96c3ebdd2b6aa43a15a0c7c06713b58017ac"
+        },
+        {
+          "call": 590,
+          "contacts": 64,
+          "normal_rank": 63,
+          "tangent_rank": 95,
+          "intersection_rank": 62,
+          "max_normalized_cross_coupling": 0.9187190311085275,
+          "normal_velocity_before_norm": 0.231878671000304,
+          "normal_velocity_after_norm": 0.0347089401101531,
+          "induced_tangent_velocity_norm": 0.2806694216481039,
+          "tangent_velocity_before_norm": 0.22234206897566686,
+          "basis_error": 1.5768734229482106e-07,
+          "normal_kkt": 1.646081458729081e-11,
+          "snapshot_sha256": "deedf0a84843b442ed7ed17898095fa80fb86d15ffdcdbd8c6303beab401bf13"
+        }
+      ]
+    }
+  ],
+  "gates": {
+    "two_full_results_identical": true,
+    "unchanged_frozen_m5": true,
+    "all_samples": true,
+    "finite_and_basis": true,
+    "normal_kkt": true
+  },
+  "physical_k16_pass": false,
+  "scope": "nonperturbing synthetic snapshot coupling; no new solver or timing claim"
+}

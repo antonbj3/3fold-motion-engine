@@ -1,0 +1,14 @@
+{
+ "layer": "IK (cartesian goal -> collision-free joint config)",
+ "ee_frame": "tool0",
+ "converged": true,
+ "pos_err_mm": 0.076,
+ "rot_err_mrad": 0.027,
+ "within_limits": true,
+ "collision_free": true,
+ "honest_on_unreachable": true,
+ "generalizes_2nd_target": true,
+ "restarts": 3,
+ "note": "cartesian-goal layer: damped-LS IK, limit- and collision-aware; local solver with multi-restart",
+ "validated": true
+}

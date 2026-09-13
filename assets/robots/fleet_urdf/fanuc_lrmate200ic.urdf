@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="fanuc_lrmate200ic">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.024004803 4.9863622e-05 0.072736091" rpy="0 0 0" /><mass value="5.7469211" /><inertia ixx="0.02624017" iyy="0.035816043" izz="0.040000295" ixy="-3.9459914e-07" ixz="-0.00056472569" iyz="4.4714349e-06" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/visual/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.23921568627450981 0.23921568627450981 0.23921568627450981 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="0.037455298 0.0016309736 -0.062389541" rpy="0 0 0" /><mass value="7.5385248" /><inertia ixx="0.06276862" iyy="0.049307363" izz="0.053996817" ixy="7.3892329e-05" ixz="-0.011462602" iyz="4.836887e-05" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/visual/link_1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/collision/link_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="-4.0671428e-05 0.0079701458 0.14513795" rpy="0 0 0" /><mass value="8.1065951" /><inertia ixx="0.12636385" iyy="0.10610458" izz="0.036430636" ixy="6.7724132e-06" ixz="-2.4891363e-05" iyz="-0.000577763" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/visual/link_2.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/collision/link_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="0.0024971891 0.0016121736 0.037654051" rpy="0 0 0" /><mass value="2.6317396" /><inertia ixx="0.0084869041" iyy="0.010058208" izz="0.0085383324" ixy="-7.8214488e-05" ixz="-0.0015773314" iyz="-1.5528328e-05" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/visual/link_3.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/collision/link_3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="0.21251148 0.0036145753 0.0013415657" rpy="0 0 0" /><mass value="2.4997388" /><inertia ixx="0.0042324574" iyy="0.016203835" izz="0.016583114" ixy="-3.235919e-06" ixz="3.9828047e-05" iyz="1.3890675e-05" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/visual/link_4.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/collision/link_4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="0.017384328 0.0014812255 1.4101721e-06" rpy="0 0 0" /><mass value="0.46277106" /><inertia ixx="0.00034715373" iyy="0.00063868142" izz="0.00057983788" ixy="1.3361431e-05" ixz="-1.1227632e-08" iyz="5.0001708e-09" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/visual/link_5.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/collision/link_5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="-0.0040061115 -6.6309314e-06 1.5643051e-07" rpy="0 0 0" /><mass value="0.013709613" /><inertia ixx="2.7355253e-06" iyy="1.5319559e-06" izz="1.5319131e-06" ixy="-2.5959836e-16" ixz="-6.3930091e-12" iyz="-5.5061282e-16" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/visual/link_6.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_lrmate200ic_support/meshes/lrmate200ic/collision/link_6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.330" />
+    <parent link="base_link" />
+    <child link="link_1" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-2.9671" upper="2.9671" velocity="6.1087" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.075 0 0" />
+    <parent link="link_1" />
+    <child link="link_2" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-1.0472" upper="2.4435" velocity="6.1087" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.300" />
+    <parent link="link_2" />
+    <child link="link_3" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-2.4784" upper="4.0143" velocity="6.9813" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.075" />
+    <parent link="link_3" />
+    <child link="link_4" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-3.3161" upper="3.3161" velocity="7.8540" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="0.320 0 0" />
+    <parent link="link_4" />
+    <child link="link_5" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-2.0944" upper="2.0944" velocity="7.8540" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.080 0 0" />
+    <parent link="link_5" />
+    <child link="link_6" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-6.2832" upper="6.2832" velocity="12.5664" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.330" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_6-flange" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_6" />
+    <child link="flange" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link_6-tool0" type="fixed">
+    <origin rpy="3.141592653589793 -1.5707963267948966 0" xyz="0 0 0" />
+    <parent link="flange" />
+    <child link="tool0" />
+  </joint>
+</robot>

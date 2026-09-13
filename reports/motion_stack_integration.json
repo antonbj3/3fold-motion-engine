@@ -1,0 +1,17 @@
+{
+ "robot": "7-DOF arm",
+ "layer": "motion-stack integration (core loop)",
+ "plan_ms": 4.19,
+ "waypoints": 6,
+ "collisions": 0,
+ "segments": 5,
+ "total_time_s": 1.439,
+ "max_peak_ratio": 0.8,
+ "aggressive_4x_peak_ratio": 16.059,
+ "collision_free": true,
+ "moment_feasible": true,
+ "both": true,
+ "dynamics_gate_load_bearing": true,
+ "validated": true,
+ "composes": "vamp_collision_planner, joint_trajectory_planner, moment_gate"
+}

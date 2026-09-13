@@ -1,0 +1,30 @@
+{
+ "robots": [
+  {
+   "robot": "franka_panda",
+   "reach": 1.17,
+   "n_robot_points": 1252,
+   "n_env": 150,
+   "false_free": 0,
+   "false_free_pct": 0.0
+  },
+  {
+   "robot": "ur10e",
+   "reach": 1.38,
+   "n_robot_points": 896,
+   "n_env": 150,
+   "false_free": 4,
+   "false_free_pct": 2.7
+  }
+ ],
+ "mean_false_free_pct": 1.4,
+ "worst": {
+  "robot": "ur10e",
+  "reach": 1.38,
+  "n_robot_points": 896,
+  "n_env": 150,
+  "false_free": 4,
+  "false_free_pct": 2.7
+ },
+ "all_under_20pct": true
+}

@@ -1,0 +1,173 @@
+{
+  "legs": [
+    {
+      "m5": {
+        "40": {
+          "max_pen_over_R": 1.3415160775184631,
+          "max_pen_m": 0.06707580387592316,
+          "drift_class": "secular",
+          "drift_slope_m_per_step": 7.978431414145351e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.1379241943359375,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": false,
+          "status": "INVALID",
+          "valid": false,
+          "invalid_reasons": [
+            "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+          ],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "160": {
+          "max_pen_over_R": 0.2733662724494934,
+          "max_pen_m": 0.01366831362247467,
+          "drift_class": "bounded",
+          "drift_slope_m_per_step": 1.3732127247164647e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.191331684589386,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        }
+      },
+      "trajectory_sha256": "982505ffc79f86ab5a767f64660bffefd710b343e7a50254ef0789373f19abc3",
+      "timing": {
+        "bodies": 10000,
+        "ms_per_step": 6.597,
+        "steps_per_s": 151.59,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      },
+      "stages": {
+        "generate": 1.57,
+        "sort": 0.337,
+        "select": 1.134,
+        "pairs": 0.318,
+        "colour": 0.688,
+        "solve": 1.345,
+        "warm_store": 0.061,
+        "integrate": 1.078,
+        "total_profiled_ms_per_step": 6.774,
+        "bodies": 10000,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      }
+    },
+    {
+      "m5": {
+        "40": {
+          "max_pen_over_R": 1.3415160775184631,
+          "max_pen_m": 0.06707580387592316,
+          "drift_class": "secular",
+          "drift_slope_m_per_step": 7.978431414145351e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.1379241943359375,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": false,
+          "status": "INVALID",
+          "valid": false,
+          "invalid_reasons": [
+            "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+          ],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "160": {
+          "max_pen_over_R": 0.2733662724494934,
+          "max_pen_m": 0.01366831362247467,
+          "drift_class": "bounded",
+          "drift_slope_m_per_step": 1.3732127247164647e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.191331684589386,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        }
+      },
+      "trajectory_sha256": "982505ffc79f86ab5a767f64660bffefd710b343e7a50254ef0789373f19abc3",
+      "timing": {
+        "bodies": 10000,
+        "ms_per_step": 6.362,
+        "steps_per_s": 157.17,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      },
+      "stages": {
+        "generate": 1.563,
+        "sort": 0.332,
+        "select": 1.128,
+        "pairs": 0.312,
+        "colour": 0.67,
+        "solve": 1.343,
+        "warm_store": 0.058,
+        "integrate": 1.037,
+        "total_profiled_ms_per_step": 6.677,
+        "bodies": 10000,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      }
+    }
+  ],
+  "backgrounds": [
+    {
+      "before_worker": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after_worker": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    },
+    {
+      "before_worker": {
+        "gpu_utilization": "8 %",
+        "memory_used": "3 MiB"
+      },
+      "after_worker": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    }
+  ],
+  "gates": {
+    "trajectory_bit_identical": true,
+    "m5_bit_identical": true,
+    "k16_40": false,
+    "each_wall_ms_le_4": false
+  },
+  "guard": "frozen guard in CPU supervisor before and after each isolated worker"
+}

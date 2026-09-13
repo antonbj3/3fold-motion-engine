@@ -1,0 +1,28 @@
+{
+  "before": {
+    "python_pid": 35,
+    "namespace_ids": [
+      "Pid:\t35"
+    ],
+    "compute_processes": []
+  },
+  "after": {
+    "python_pid": 35,
+    "namespace_ids": [
+      "Pid:\t35"
+    ],
+    "compute_processes": [
+      "1, /bin/dumb-init"
+    ]
+  },
+  "readbacks": [
+    [
+      0.0
+    ],
+    [
+      0.0
+    ]
+  ],
+  "readback_identity": true,
+  "timing_samples": 0
+}

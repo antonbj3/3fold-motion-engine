@@ -1,0 +1,34 @@
+{
+ "device": "cuda:0",
+ "rows": [
+  {
+   "robot": "ur10e",
+   "nq": 6,
+   "hard": false,
+   "n": 6,
+   "fast": 5,
+   "fallback": 1,
+   "failed": 0,
+   "solved": 6,
+   "fast_ms": 234
+  },
+  {
+   "robot": "ur10e",
+   "nq": 6,
+   "hard": true,
+   "n": 6,
+   "fast": 5,
+   "fallback": 1,
+   "failed": 0,
+   "solved": 6,
+   "fast_ms": 1194
+  }
+ ],
+ "total": 12,
+ "solved": 12,
+ "fast_path": 10,
+ "fallback": 2,
+ "failed": 0,
+ "fast_path_med_ms": 714,
+ "plannable_fleet_wide": true
+}

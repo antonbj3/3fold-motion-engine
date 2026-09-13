@@ -1,0 +1,32 @@
+{
+ "robot": "UR10e",
+ "test": "electrical twin characterization vs real UR10e (held-out)",
+ "source": "public SDU UR10e current/power recordings (real robot)",
+ "n_train": 46478,
+ "n_heldout": 5997,
+ "power_r2": 0.8,
+ "power_nrmse": 0.447,
+ "ecbot_benchmark": "published pipeline benchmark: power NRMSE 0.017 R2 0.98",
+ "tight_door_passed": false,
+ "median_current_nrmse": 0.281,
+ "per_joint_nrmse_full": [
+  0.426,
+  0.29,
+  0.175,
+  0.272,
+  0.295,
+  0.243
+ ],
+ "friction_current_joints": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "friction_load_bearing": true,
+ "anti_artifact": true,
+ "tier": "reality-touched (structure validated, tight door NOT passed)",
+ "validated": true
+}

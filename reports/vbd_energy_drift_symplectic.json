@@ -1,0 +1,33 @@
+{
+  "cell": "vbd_energy_drift_symplectic",
+  "item": "energy-drift / symplecticity gate for the midpoint-VBD engine",
+  "facet1": {
+    "periods": 400,
+    "h": 0.004166666666666667,
+    "midpoint_secular": 5.148151601582803e-12,
+    "midpoint_peaktopeak": 6.249175074738406e-12,
+    "impl_euler_secular": 0.08847600704701206,
+    "expl_euler_secular": 3.2543845827644737e+27
+  },
+  "facet2": {
+    "status": "GRADED",
+    "e_drift": 5.819816960178378e-16,
+    "f_res": 4.35272526833283e-13,
+    "z_creep": 0.0,
+    "fN": 82.40400000003588,
+    "Mg": 82.40400000000001
+  },
+  "gates": {
+    "G1_midpoint_no_secular_drift": true,
+    "G2_midpoint_beats_dissipative_baseline": true,
+    "G3_eulers_DO_drift_null": true,
+    "G4_engine_resting_no_drift": true
+  },
+  "all_pass": true,
+  "verdict": "ENERGY-DRIFT GATE PASSES for the midpoint-VBD engine. The VBD-midpoint update is the implicit midpoint rule (symplectic): on a conservative oscillator its secular energy drift is 5.15e-12 over 400 periods (bounded, peak-to-peak 6.25e-12) vs implicit-Euler 8.85e-02 (decays) and explicit-Euler 3.25e+27 (grows) = a 17185975452x / 632146221522285897016144980821254602752x improvement; and the full engine's resting energy/force/position stay bounded (drift 5.82e-16, force-residual 4.35e-13, creep 0.00e+00) over 3000 steps. This is the CORE property that motivated adopting midpoint over implicit-Euler for long-horizon simulation, now machine-verified.",
+  "cross_checks": {
+    "known_reference": "FACET1 (conservative oscillator w=2pi, 400 periods, h=1/240): SECULAR energy-drift/E0 midpoint=5.15e-12, implicit-Euler=8.85e-02, explicit-Euler=3.25e+27. The VBD-midpoint scheme == implicit midpoint (Gauss-Legendre order-2, symplectic; Hairer-Lubich-Wanner GNI Ch.VI conserves quadratic invariants exactly) -> midpoint peak-to-peak 6.25e-12 is bounded with near-zero secular trend. FACET2 (MidpointVBDEngine, body resting 3000 steps): secular energy-drift/Mgh=5.82e-16, contact-force residual |f-Mg|/Mg=4.35e-13 (f=82.4040 vs Mg=82.4040), position creep/h=0.00e+00.",
+    "null_falsifier": "the null is EXHIBITED not assumed: implicit-Euler DECAYS (drift/E0=8.85e-02) and explicit-Euler GROWS (3.25e+27) over the SAME horizon \u2014 both >>1e-2 (G3) \u2014 so 'no drift' is a real property of the midpoint scheme, not a horizon too short to show drift. A non-symplectic integrator FAILS G1; a symplectic one that did NOT beat the dissipative baseline (G2: midpoint < 5% of implicit-Euler's drift) would be flagged. FACET2 null: if the once-at-end endpoint-contact placement injected secular impulse drift, the resting energy/force/position would creep (e_drift 5.82e-16, f_res 4.35e-13, creep 0.00e+00 all <thr = no such artifact).",
+    "over_determination": "The gate is over-determined on TWO independent facets a scheme must BOTH pass: (1) the bare INTEGRATOR's symplecticity on a conservative oscillator (no contact), and (2) the full ENGINE's resting no-drift WITH AL contact over 3000 steps. Facet 1 isolates the integrator; facet 2 isolates the endpoint-contact coupling in the resting regime. Both bounded -> the bounded energy is the integrator's symplectic property AND survives the contact solver, not a coincidence of one test."
+  }
+}

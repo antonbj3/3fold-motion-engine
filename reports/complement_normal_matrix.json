@@ -1,0 +1,47 @@
+{
+  "scope": "Hybrid normal correction, original ratio1/1000 fixtures only",
+  "hardware": {
+    "l4": "NVIDIA L4, 580.95.05",
+    "a10g": "NVIDIA A10G, 580.95.05",
+    "h100": "NVIDIA H100 80GB HBM3, 580.95.05",
+    "local": "NVIDIA GeForce RTX 5070, 580.178.04"
+  },
+  "rows": [
+    {
+      "module": "complement_normal",
+      "backend": "l4",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "complement_normal",
+      "backend": "a10g",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "complement_normal",
+      "backend": "h100",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "complement_normal",
+      "backend": "local",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    }
+  ]
+}

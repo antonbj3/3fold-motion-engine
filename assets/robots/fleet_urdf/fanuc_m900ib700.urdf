@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="fanuc_m900ib700">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.055060983 -0.010233154 0.13905263" rpy="0 0 0" /><mass value="304.11122" /><inertia ixx="13.599635" iyy="20.409592" izz="29.168703" ixy="-0.034261692" ixz="0.43667329" iyz="0.017006539" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.34 0.35 0.36 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="0.24288903 -0.0013537472 -0.19774306" rpy="0 0 0" /><mass value="1017.3616" /><inertia ixx="136.50851" iyy="104.93945" izz="133.60234" ixy="-0.3031719" ixz="-21.901791" iyz="0.16122926" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/link_1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/link_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="0.041273121 -0.037868981 0.54821575" rpy="0 0 0" /><mass value="428.09219" /><inertia ixx="63.067449" iyy="60.701211" izz="15.312818" ixy="-0.94537794" ixz="0.3226876" iyz="-3.9344743" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/link_2.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/link_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="0.002229852 -0.0013628422 0.20287895" rpy="0 0 0" /><mass value="465.29242" /><inertia ixx="13.103406" iyy="103.10646" izz="100.54036" ixy="0.75187685" ixz="-3.8599979" iyz="0.11811665" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/link_3.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/link_3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="1.1743575 -0.0075206098 -2.9468182e-05" rpy="0 0 0" /><mass value="25.685945" /><inertia ixx="0.17083173" iyy="0.38127867" izz="0.36473831" ixy="0.018492174" ixz="7.4264858e-06" iyz="1.3720477e-05" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/link_4.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/link_4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="0.066721661 -0.026242333 -3.1552361e-06" rpy="0 0 0" /><mass value="53.326588" /><inertia ixx="0.72872245" iyy="0.87513692" izz="1.0621836" ixy="-0.097501188" ixz="2.6393214e-05" iyz="-8.0721089e-06" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/link_5.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/link_5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="-0.013484406 5.7183838e-07 -3.0183532e-06" rpy="0 0 0" /><mass value="3.5594597" /><inertia ixx="0.042194417" iyy="0.02132104" izz="0.021319662" ixy="2.6323488e-08" ixz="3.2763795e-08" iyz="-3.1927791e-08" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/link_6.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/link_6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.940" />
+    <parent link="base_link" />
+    <child link="link_1" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.1415" upper="3.1415" velocity="1.3962" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.410 0 0" />
+    <parent link="link_1" />
+    <child link="link_2" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-1.1170" upper="1.5707" velocity="1.3962" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 1.120" />
+    <parent link="link_2" />
+    <child link="link_3" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-2.2689" upper="0.5235" velocity="1.3962" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.250" />
+    <parent link="link_3" />
+    <child link="link_4" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-6.2831" upper="6.2831" velocity="1.7453" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="1.285 0 0" />
+    <parent link="link_4" />
+    <child link="link_5" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-2.1293" upper="2.1293" velocity="1.7453" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.300 0 0" />
+    <parent link="link_5" />
+    <child link="link_6" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-6.2831" upper="6.2831" velocity="2.7925" />
+  </joint>
+  <link name="plink_1">
+    <inertial><origin xyz="-0.58192355 0.064703806 0.052949108" rpy="0 0 0" /><mass value="338.96187" /><inertia ixx="10.21594" iyy="49.791806" izz="51.724984" ixy="-3.9837334" ixz="2.7875573" iyz="0.44879852" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/counterweight.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/counterweight.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="plink_2">
+    <inertial><origin xyz="-1.6191388e-10 -8.6995175e-06 -0.55999999" rpy="0 0 0" /><mass value="12.329268" /><inertia ixx="1.494335" iyy="1.5042326" izz="0.015634814" ixy="1.0363663e-17" ixz="0.0026920488" iyz="-3.350016e-16" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/bar.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/bar.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="pjoint_1" type="continuous">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_2" />
+    <child link="plink_1" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_3" multiplier="-1" offset="0" />
+  </joint>
+  <joint name="pjoint_2" type="continuous">
+    <origin rpy="0 0 0" xyz="-0.75 0.08 0" />
+    <parent link="link_3" />
+    <child link="plink_2" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_3" multiplier="1" offset="0" />
+  </joint>
+  <link name="balancer_left">
+    <inertial><origin xyz="3.0121407e-06 0.38606031 -0.40414235" rpy="0 0 0" /><mass value="71.338427" /><inertia ixx="3.5901614" iyy="3.5623241" izz="0.62452087" ixy="3.5389306e-05" ixz="-7.9696244e-05" iyz="-0.048280266" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/balancer.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/balancer.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="piston_left">
+    <inertial><origin xyz="3.4485633e-13 0.39492259 0.23708358" rpy="0 0 0" /><mass value="4.3012685" /><inertia ixx="0.15710546" iyy="0.15812308" izz="0.0030079076" ixy="-1.5762027e-12" ixz="4.0510159e-12" iyz="0.00021279821" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/piston.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/piston.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="balancer_right">
+    <inertial><origin xyz="3.0121407e-06 0.38606031 -0.40414235" rpy="0 0 0" /><mass value="71.338427" /><inertia ixx="3.5901614" iyy="3.5623241" izz="0.62452087" ixy="3.5389306e-05" ixz="-7.9696244e-05" iyz="-0.048280266" /></inertial><visual>
+      <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/balancer.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/balancer.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="piston_right">
+    <inertial><origin xyz="3.4485633e-13 0.39492259 0.23708358" rpy="0 0 0" /><mass value="4.3012685" /><inertia ixx="0.15710546" iyy="0.15812308" izz="0.0030079076" ixy="-1.5762027e-12" ixz="4.0510159e-12" iyz="0.00021279821" /></inertial><visual>
+      <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/visual/piston.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_m900ib_support/meshes/m900ib700/collision/piston.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="balancer_left_joint" type="continuous">
+    <origin rpy="0 0 0" xyz="0 0 1.120" />
+    <parent link="link_2" />
+    <child link="balancer_left" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_2" multiplier="0.18" offset="0" />
+  </joint>
+  <joint name="piston_left_joint" type="continuous">
+    <origin rpy="0 0 0" xyz="0.410 0 0.235" />
+    <parent link="link_1" />
+    <child link="piston_left" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_2" multiplier="1.18" offset="0" />
+  </joint>
+  <joint name="balancer_right_joint" type="continuous">
+    <origin rpy="0 0 0" xyz="0 0 1.120" />
+    <parent link="link_2" />
+    <child link="balancer_right" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_2" multiplier="0.18" offset="0" />
+  </joint>
+  <joint name="piston_right_joint" type="continuous">
+    <origin rpy="0 0 0" xyz="0.410 0 0.235" />
+    <parent link="link_1" />
+    <child link="piston_right" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_2" multiplier="1.18" offset="0" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.940" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_6-flange" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_6" />
+    <child link="flange" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link_6-tool0" type="fixed">
+    <origin rpy="3.141592653589793 -1.5707963267948966 0" xyz="0 0 0" />
+    <parent link="flange" />
+    <child link="tool0" />
+  </joint>
+</robot>

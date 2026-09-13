@@ -1,0 +1,275 @@
+{
+  "legs": [
+    {
+      "40": {
+        "cache_controls": [
+          {
+            "label": "unchanged",
+            "invalidated": false,
+            "candidate_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "reference_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "pass": true
+          },
+          {
+            "label": "endpoint",
+            "invalidated": true,
+            "candidate_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "reference_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "pass": true
+          },
+          {
+            "label": "mass",
+            "invalidated": true,
+            "candidate_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "reference_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "pass": true
+          },
+          {
+            "label": "unchanged_again",
+            "invalidated": false,
+            "candidate_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "reference_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "pass": true
+          }
+        ],
+        "stack_hits": 581,
+        "stack_misses": 16,
+        "large_hits": 35,
+        "large_misses": 2,
+        "force_sha256": "e66906d8c12e56e951840448d366413167835b2bf7eea7550571214c6907b0d2",
+        "baseline_force_sha256": "e66906d8c12e56e951840448d366413167835b2bf7eea7550571214c6907b0d2",
+        "baseline_state_sha256": "dbcc40e89fb59b00560594d48ae4a72b53949de8e88d6b9213f0c0e2aac3c038",
+        "baseline_timing": {
+          "bodies": 10000,
+          "ms_per_step": 4.186,
+          "steps_per_s": 238.87,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "m5": {
+          "max_pen_over_R": 0.19563645124435425,
+          "max_pen_m": 0.009781822562217712,
+          "drift_class": "bounded",
+          "drift_slope_m_per_step": 2.651196943192888e-06,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.19521817564964294,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "m1": {
+          "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+          "value_worst_relerr": 1.0258560874445039e-07,
+          "per_body_relerr": [
+            8.932494235208197e-08,
+            1.003071437301006e-07,
+            1.003071437301006e-07,
+            1.0258560874445039e-07
+          ],
+          "value_worst_relerr_final_sample": 6.707800995163706e-08,
+          "tail_frac": 0.2,
+          "tail_steps": 80,
+          "min_spacing_m": 0.19991150498390198,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "threshold": 0.1,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless"
+        },
+        "trajectory_sha256": "484cbc316ec9dd2e048392200d031f746d96900e3d8613f0007d2f0285571768",
+        "force_error": 6.707800995163706e-08,
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 3.684,
+          "steps_per_s": 271.41,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "finite": true,
+        "large_state_sha256": "dbcc40e89fb59b00560594d48ae4a72b53949de8e88d6b9213f0c0e2aac3c038"
+      }
+    },
+    {
+      "40": {
+        "cache_controls": [
+          {
+            "label": "unchanged",
+            "invalidated": false,
+            "candidate_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "reference_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "pass": true
+          },
+          {
+            "label": "endpoint",
+            "invalidated": true,
+            "candidate_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "reference_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "pass": true
+          },
+          {
+            "label": "mass",
+            "invalidated": true,
+            "candidate_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "reference_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "pass": true
+          },
+          {
+            "label": "unchanged_again",
+            "invalidated": false,
+            "candidate_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "reference_sha256": "53435c7a2c21cd103895964c2036061d60a4b1eea9effbd73beb1ed488419ce6",
+            "pass": true
+          }
+        ],
+        "stack_hits": 581,
+        "stack_misses": 16,
+        "large_hits": 35,
+        "large_misses": 2,
+        "force_sha256": "e66906d8c12e56e951840448d366413167835b2bf7eea7550571214c6907b0d2",
+        "baseline_force_sha256": "e66906d8c12e56e951840448d366413167835b2bf7eea7550571214c6907b0d2",
+        "baseline_state_sha256": "dbcc40e89fb59b00560594d48ae4a72b53949de8e88d6b9213f0c0e2aac3c038",
+        "baseline_timing": {
+          "bodies": 10000,
+          "ms_per_step": 4.327,
+          "steps_per_s": 231.09,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "m5": {
+          "max_pen_over_R": 0.19563645124435425,
+          "max_pen_m": 0.009781822562217712,
+          "drift_class": "bounded",
+          "drift_slope_m_per_step": 2.651196943192888e-06,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.19521817564964294,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "m1": {
+          "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+          "value_worst_relerr": 1.0258560874445039e-07,
+          "per_body_relerr": [
+            8.932494235208197e-08,
+            1.003071437301006e-07,
+            1.003071437301006e-07,
+            1.0258560874445039e-07
+          ],
+          "value_worst_relerr_final_sample": 6.707800995163706e-08,
+          "tail_frac": 0.2,
+          "tail_steps": 80,
+          "min_spacing_m": 0.19991150498390198,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "threshold": 0.1,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless"
+        },
+        "trajectory_sha256": "484cbc316ec9dd2e048392200d031f746d96900e3d8613f0007d2f0285571768",
+        "force_error": 6.707800995163706e-08,
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 3.798,
+          "steps_per_s": 263.29,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87716,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "finite": true,
+        "large_state_sha256": "dbcc40e89fb59b00560594d48ae4a72b53949de8e88d6b9213f0c0e2aac3c038"
+      }
+    }
+  ],
+  "backgrounds": [
+    {
+      "before": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    },
+    {
+      "before": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    }
+  ],
+  "gates": {
+    "40": {
+      "cache_controls": true,
+      "cache_exercised": true,
+      "unchanged_physics": true,
+      "exact_force": true,
+      "exact_reference_state": true,
+      "exact_repeats": true,
+      "k16_m5": true,
+      "k4_m1": true,
+      "resting_force": true,
+      "finite": true,
+      "original_speed": true
+    }
+  },
+  "day_plan_speed": {
+    "40": true
+  },
+  "execution": {
+    "gpu": "NVIDIA L4",
+    "driver": "580.95.05",
+    "warp": "1.13.0",
+    "date": "2026-09-13",
+    "provider": "Modal"
+  }
+}

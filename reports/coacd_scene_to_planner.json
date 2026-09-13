@@ -1,0 +1,13 @@
+{
+ "scene": "3-part link assembly (real mesh)",
+ "coacd_pieces": 8,
+ "coacd_s": 15.4,
+ "coverage": 1.0,
+ "union_vol_ratio": 1.11,
+ "solved": true,
+ "plan_ms": 98.65,
+ "waypoints": 9,
+ "double_oracle_collisions": 0,
+ "validated": true,
+ "composes": "coacd + vamp-planner"
+}

@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="motoman_sia5d">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.02806567 0.0003242164 0.075800467" rpy="0 0 0" /><mass value="8.9758927" /><inertia ixx="0.045358074" iyy="0.047054086" izz="0.052135712" ixy="4.7646696e-05" ixz="-0.001778027" iyz="8.3497597e-05" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/visual/base.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/collision/base.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_s">
+    <inertial><origin xyz="0.00011157292 0.0094125593 -0.05218764" rpy="0 0 0" /><mass value="5.0814214" /><inertia ixx="0.022576094" iyy="0.022763702" izz="0.013769526" ixy="-1.0049105e-05" ixz="-1.0459293e-05" iyz="-0.001642161" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/visual/link_s.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/collision/link_s.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_s" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.31" />
+    
+    <parent link="base_link" />
+    <child link="link_s" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.14159274" upper="3.14159274" velocity="3.4906586" />
+  </joint>
+  <link name="link_l">
+    <inertial><origin xyz="-0.0001187577 -0.016312959 0.06781626" rpy="0 0 0" /><mass value="4.9270848" /><inertia ixx="0.026327659" iyy="0.026716543" izz="0.011360867" ixy="2.9954488e-06" ixz="-1.6048033e-05" iyz="-0.0037205306" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/visual/link_l.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/collision/link_l.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_l" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_s" />
+    <child link="link_l" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-1.9198622300000001" upper="1.9198622300000001" velocity="3.4906586" />
+  </joint>
+  <link name="link_e">
+    <inertial><origin xyz="0.039805723 0.011181224 -0.040412243" rpy="0 0 0" /><mass value="3.9215775" /><inertia ixx="0.011473468" iyy="0.016063853" izz="0.013590024" ixy="-0.00068047735" ixz="-0.0044031137" iyz="-0.0010354289" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/visual/link_e.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/collision/link_e.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_e" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.27" />
+    <parent link="link_l" />
+    <child link="link_e" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-2.9670598100000003" upper="2.9670598100000003" velocity="3.4906586" />
+  </joint>
+  <link name="link_u">
+    <inertial><origin xyz="0.051129406 -0.01638558 0.033456548" rpy="0 0 0" /><mass value="3.2006402" /><inertia ixx="0.0075317944" iyy="0.012710324" izz="0.010656525" ixy="-0.0017586983" ixz="-0.0030718822" iyz="-0.00096105965" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/visual/link_u.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/collision/link_u.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_u" type="revolute">
+    <origin rpy="0 0 0" xyz="0.085 0 0" />
+    <parent link="link_e" />
+    <child link="link_u" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-1.57079637" upper="2.007128695" velocity="3.4906586" />
+  </joint>
+  <link name="link_r">
+    <inertial><origin xyz="-0.055036673 -0.0063030057 -7.3529086e-07" rpy="0 0 0" /><mass value="2.2453582" /><inertia ixx="0.0031133756" iyy="0.0064984521" izz="0.0069495346" ixy="0.00029611178" ixz="4.3721142e-08" iyz="2.4940187e-08" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/visual/link_r.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/collision/link_r.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_r" type="revolute">
+    <origin rpy="0 0 0" xyz="0.27 0 0.06" />
+    <parent link="link_u" />
+    <child link="link_r" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-1.57079637" upper="1.57079637" velocity="3.4906586" />
+  </joint>
+  <link name="link_b">
+    <inertial><origin xyz="0.052290199 0.01389059 -0.00022326915" rpy="0 0 0" /><mass value="1.5607465" /><inertia ixx="0.0016552068" iyy="0.0040180199" izz="0.0041662536" ixy="0.00069085699" ixz="-7.1577001e-06" iyz="2.0146904e-06" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/visual/link_b.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/collision/link_b.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_b" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_r" />
+    <child link="link_b" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-1.9198622300000001" upper="1.9198622300000001" velocity="4.01425739" />
+  </joint>
+  <link name="link_t">
+    <inertial><origin xyz="0.005476624 -0.00035629723 0.00062876803" rpy="0 0 0" /><mass value="0.087278684" /><inertia ixx="7.059417e-05" iyy="3.7049204e-05" izz="3.5296231e-05" ixy="-4.2129254e-08" ixz="7.2415074e-08" iyz="1.0343568e-06" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/visual/link_t.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia5d_support/meshes/sia5d/collision/link_t.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_t" type="revolute">
+    <origin rpy="0 0 0" xyz="0.134 0 0" />
+    <parent link="link_b" />
+    <child link="link_t" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-1.57079637" upper="1.57079637" velocity="6.10865255" />
+  </joint>
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link_t-tool0" type="fixed">
+    <origin rpy="-1.57079637 -1.57079637 -1.57079637" xyz="0.011 0 0" />
+    <parent link="link_t" />
+    <child link="tool0" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.310" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+</robot>

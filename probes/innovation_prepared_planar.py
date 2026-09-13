@@ -1,0 +1,95 @@
+"""Certify planar-coordinate reuse and priority trimming independently."""
+
+import sys as _probe_sys
+from pathlib import Path as _ProbePath
+_probe_root = _ProbePath(__file__).resolve().parents[1]
+_probe_sys.path[:0] = [str(_probe_root/"probes"), str(_probe_root/"scripts"), str(_probe_root/"src")]
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import sys
+import numpy as np
+from cross_hardware_state_probe import ROOT
+from innovation_stack_probe import idle
+
+
+def digest(e):
+    state=e.get_state();h=hashlib.sha256();finite=True
+    arrays=[np.ascontiguousarray(getattr(state,k)) for k in ('xc','Rm','vc','om')]
+    arrays.append(np.ascontiguousarray(e.contact_forces()))
+    c=e.n_contacts_solved
+    for field in ('ckeys','sbi','sbj','spA','spB','sn','spen','jn','jt1','jt2','jp'):
+        arrays.append(getattr(e,field).numpy()[:c].copy())
+    for a in arrays:h.update(a.tobytes());finite &= bool(np.isfinite(a).all())
+    return h.hexdigest(),finite
+
+
+class Trace:
+    def __init__(self,engine):self.engine=engine;self.sha=hashlib.sha256();self.finite=True
+    def __getattr__(self,key):return getattr(self.engine,key)
+    def step(self,*args,**kw):
+        self.engine.step(*args,**kw)
+        h,finite=digest(self.engine);self.sha.update(bytes.fromhex(h));self.finite &= finite
+
+
+def worker(reverse=False):
+    from motion_engine.contact_engine_gpu_pair_layout_cache import PairLayoutCacheContactEngine
+    from motion_engine.contact_engine_gpu_prepared_planar import PreparedPlanarContactEngine
+    from engine_metrics import DIMS,m5_penetration,m1_stack_load
+    from colored_vs_jacobi import lattice,timed_steps
+    constructors=[('baseline',PairLayoutCacheContactEngine),
+        ('prepared_only',lambda **kw: PreparedPlanarContactEngine(trim_unused_priorities=False,**kw)),
+        ('prepared_trim',PreparedPlanarContactEngine)]
+    rows={}
+    for name,cls in (constructors[::-1] if reverse else constructors):
+        traces=[];last=[]
+        def make(**kw):
+            e=cls(dims=DIMS,mu=.5,**kw);last[:]=[e];return e
+        def traced(**kw):
+            e=Trace(make(**(dict(vit=40,pit=10)|kw)));traces.append(e);return e
+        m5=m5_penetration(traced,'gpu',16,600)
+        m1=m1_stack_load(traced,'gpu',4,400)
+        rest=traced();rest.add_body([0,0,.101])
+        for _ in range(200):rest.step(1/240,substeps=1)
+        force_error=abs(float(rest.contact_forces()[0,2])-rest._M[0]*9.81)/(rest._M[0]*9.81)
+        timing=timed_steps(make,lattice(10000),warm=10,timed=30,vit=40,pit=20)
+        h,finite=digest(last[0])
+        rows[name]=dict(m5=m5,m1=m1,force_error=force_error,timing=timing,
+                       traces=[t.sha.hexdigest() for t in traces],large_sha=h,
+                       finite=finite and all(t.finite for t in traces))
+        print('ENGINE '+name+' complete',flush=True)
+    print('RESULT '+json.dumps(rows),flush=True)
+
+
+def main():
+    if len(sys.argv)==3 and sys.argv[1]=='--worker':worker(sys.argv[2]=='1');return 0
+    legs=[];background=[]
+    for leg in range(2):
+        before=idle()
+        p=subprocess.run([sys.executable,__file__,'--worker',str(leg)],cwd=ROOT,capture_output=True,text=True)
+        if p.returncode:print(p.stdout);print(p.stderr);raise RuntimeError('Worker failed')
+        lines=[s[7:] for s in p.stdout.splitlines() if s.startswith('RESULT ')]
+        if len(lines)!=1:raise RuntimeError('Missing worker receipt')
+        legs.append(json.loads(lines[0]));background.append(dict(before=before,after=idle()))
+        print(lines[0],flush=True)
+    def numeric(row):return {k:v for k,v in row.items() if k!='timing'}
+    candidates={}
+    for name in ('prepared_only','prepared_trim'):
+        gates=dict(exact_reference=all(numeric(r['baseline'])==numeric(r[name]) for r in legs),
+            exact_repeats=all(numeric(legs[0][k])==numeric(legs[1][k]) for k in ('baseline',name)),
+            k16=all(r[name]['m5']['pass'] for r in legs),k4=all(r[name]['m1']['pass'] for r in legs),
+            rest=all(r[name]['force_error']<.01 for r in legs),finite=all(r[name]['finite'] for r in legs),
+            no_timing_regression=all(r[name]['timing']['ms_per_step']<=r['baseline']['timing']['ms_per_step'] for r in legs),
+            original_speed=all(r[name]['timing']['ms_per_step']<=4 for r in legs))
+        candidates[name]=dict(gates=gates,status='VERIFIED-FRESH' if all(gates.values()) else 'OWN-GATE-FAIL',
+            passed=sum(gates.values()),total=len(gates),
+            submillisecond_goal=all(r[name]['timing']['ms_per_step']<1 for r in legs))
+    report=dict(legs=legs,background=background,candidates=candidates)
+    (ROOT/'reports/innovation_prepared_planar.json').write_text(json.dumps(report,indent=2)+'\n')
+    print(json.dumps(candidates),flush=True)
+    return 0 if all(candidates['prepared_trim']['gates'].values()) else 1
+
+
+
+if __name__=='__main__':raise SystemExit(main())

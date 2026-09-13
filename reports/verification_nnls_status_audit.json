@@ -1,0 +1,16 @@
+{
+  "gates": {
+    "bit_identical": true,
+    "box_force": true,
+    "m1": true,
+    "m5": false
+  },
+  "module": "src/motion_engine/contact_engine_gpu_normal_nnls.py",
+  "passed": 3,
+  "previous_status": "VERIFIED-FRESH",
+  "report": "reports/innovation_stack_normal_nnls.json",
+  "report_sha256": "6774de3db4ef6117b16ed137bb8169e25e8dcbfa132c894e1f7b4f53c2b6cc0d",
+  "required": 4,
+  "scope": "Status correction from retained own-gate receipt; no new numerical execution or source modification.",
+  "status": "OWN-GATE-FAIL"
+}

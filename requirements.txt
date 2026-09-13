@@ -1,0 +1,18 @@
+# core (CPU): motion_stack, planners, world model, dynamics twin, contact engine
+numpy>=2.0
+scipy>=1.11
+pin>=4.0            # pinocchio wheels (provides `pinocchio`, and `hppfcl` via coal)
+coal>=3.0           # exact-mesh collision (hpp-fcl successor)
+pytest>=8.0
+
+# optional
+# pyyaml            # motion_engine.manip.profiles (data/robot_profiles.yaml)
+# newton            # motion_engine.manip scene/grip/servo/sensors, probe_friction_grip, newton_friction_pick
+#                   (newton 1.2.1 pins warp-lang 1.13.0 and needs mujoco 3.8.0 + mujoco-warp 3.8.0.3)
+# trimesh           # newton URDF mesh import, coacd_scene_to_planner
+# vamp-planner      # SIMD planner backend (Apache-2.0) - vamp_collision_planner, motion_stack_integration
+# coacd             # convex decomposition (coacd_scene_to_planner)
+# OCP / cadquery-ocp  # robotlaster_v1 exact BRep inertia route, only when a manifest entry carries a `step` key
+# warp-lang>=1.13   # GPU kernels: fk_warp, rnea_warp, trajopt_warp, contact_engine_gpu/_sdf (CUDA required)
+# pandas            # lip4rid_loader (public LIP4RID recordings)
+# torch             # torch_dynamics / torch_gravity, newton_friction_pick, probe_friction_grip

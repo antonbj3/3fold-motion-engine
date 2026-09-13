@@ -1,0 +1,56 @@
+{
+  "rows": [
+    {
+      "scene": "stack4",
+      "contacts": 36,
+      "max_neighbours": 1,
+      "exact_frozen_reference": false,
+      "bit_identical": true,
+      "canonical_features": true,
+      "finite": true,
+      "sha256": "a9086c92d7fae6fe225469b3e5fe87cd2141d0b42e5a67c52f2529d74d7ef950"
+    },
+    {
+      "scene": "stack16",
+      "contacts": 144,
+      "max_neighbours": 1,
+      "exact_frozen_reference": false,
+      "bit_identical": true,
+      "canonical_features": true,
+      "finite": true,
+      "sha256": "8724187002778b3bed4769579fdc11721c0c383118016df98e30296c29c600e4"
+    },
+    {
+      "scene": "lattice50",
+      "contacts": 450,
+      "max_neighbours": 1,
+      "exact_frozen_reference": false,
+      "bit_identical": true,
+      "canonical_features": true,
+      "finite": true,
+      "sha256": "54b28d19db0206658fee7ca59d39f109f4330d04907dc7da455ec2928e7b8fa6"
+    },
+    {
+      "scene": "cutoff_coincidence",
+      "contacts": 7,
+      "max_neighbours": 2,
+      "exact_frozen_reference": false,
+      "bit_identical": true,
+      "canonical_features": true,
+      "finite": true,
+      "sha256": "f7aa355891a76659246487c766f4fee27f2227f30d4723bbc9b70dd3ca7a279d"
+    }
+  ],
+  "overflow": [
+    "Neighbour capacity exceeded: 33 > 32",
+    "Neighbour capacity exceeded: 33 > 32"
+  ],
+  "gates": {
+    "exact_frozen_reference": false,
+    "bit_identical": true,
+    "canonical_features": true,
+    "finite": true,
+    "overflow_rejected": true
+  },
+  "performance_measured": false
+}

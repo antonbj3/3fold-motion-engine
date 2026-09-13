@@ -1,0 +1,28 @@
+{
+ "role": "full motion-stack hot-swap contract (three gated layers behind one swappable surface)",
+ "protocols": [
+  "IKBackend",
+  "Planner",
+  "EffortBackend"
+ ],
+ "full_plan_via_contract": {
+  "ok": true,
+  "ik_pos_err_mm": 0.03,
+  "waypoints": 44,
+  "effort": {
+   "executable": true,
+   "metric": "rnea_peak_ratio",
+   "value": 0.365
+  }
+ },
+ "hot_swap_effort": {
+  "backend_a": "rnea_torque",
+  "metric_a": "rnea_peak_ratio",
+  "backend_b": "velocity_bound",
+  "metric_b": "vel_ratio",
+  "both_ran": true
+ },
+ "planner_swappable": true,
+ "note": "a different physics engine is a new IKBackend/EffortBackend/Planner adapter with zero consumer change; shown by 2 distinct effort backends via the same plan_cartesian()",
+ "validated": true
+}

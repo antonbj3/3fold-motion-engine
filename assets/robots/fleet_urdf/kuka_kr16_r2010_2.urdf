@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="kr16_r2010_2">
+  
+  <ros2_control name="kr16_r2010_2" type="system">
+    <hardware>
+      <plugin>kuka_rsi_driver::KukaEkiRsiHardwareInterface</plugin>
+      <param name="controller_ip">0.0.0.0</param>
+      <param name="client_ip">0.0.0.0</param>
+      <param name="client_port">59152</param>
+      <param name="name">kr16_r2010_2</param>
+      <param name="verify_robot_model">True</param>
+    </hardware>
+    <joint name="joint_1">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_2">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">-1.5708</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_3">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">1.5708</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_4">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_5">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_6">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <gpio name="gpio" />
+  </ros2_control>
+  
+  <link name="world"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.029937002 -0.0015427367 0.14039526" rpy="0 0 0" /><mass value="84.011775" /><inertia ixx="1.2537923" iyy="1.6470624" izz="1.8151064" ixy="-0.030875867" ixz="-0.015294961" iyz="-0.00044562373" /></inertial><collision>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/collision/base_link.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/visual/base_link.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="0.039807153 -0.024632945 -0.4414294" rpy="0 0 0" /><mass value="61.404851" /><inertia ixx="1.1909315" iyy="1.2955631" izz="1.2540465" ixy="-0.13868562" ixz="0.15013947" iyz="-0.10009861" /></inertial><collision>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/collision/link_1.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/visual/link_1.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="0.43875569 -0.011487481 -0.18120546" rpy="0 0 0" /><mass value="34.573588" /><inertia ixx="0.10823272" iyy="3.1662815" izz="3.1826006" ixy="0.01696895" ixz="0.063124622" iyz="-0.0043852074" /></inertial><collision>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/collision/link_2.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/visual/link_2.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="0.073247257 0.036845309 0.0040973766" rpy="0 0 0" /><mass value="38.761277" /><inertia ixx="0.708362" iyy="0.44625627" izz="0.70666204" ixy="-0.052172436" ixz="0.017115829" iyz="0.030639151" /></inertial><collision>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/collision/link_3.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/visual/link_3.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="-4.1941935e-08 0.0055889091 -0.57937201" rpy="0 0 0" /><mass value="13.572436" /><inertia ixx="0.45951984" iyy="0.45641198" izz="0.024018383" ixy="-6.7109997e-06" ixz="8.3025981e-05" iyz="0.021119102" /></inertial><collision>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/collision/link_4.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/visual/link_4.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="-2.2531434e-05 0.061849616 -0.018658957" rpy="0 0 0" /><mass value="2.6760253" /><inertia ixx="0.014407359" iyy="0.0095841419" izz="0.0070561247" ixy="5.7008867e-06" ixz="-8.5488168e-06" iyz="-0.0014347969" /></inertial><collision>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/collision/link_5.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/visual/link_5.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="-1.8507708e-06 0 -0.14007547" rpy="0 0 0" /><mass value="4.8581419e-05" /><inertia ixx="1.0489303e-10" iyy="1.0510391e-10" izz="2.0458484e-10" ixy="2.6881894e-38" ixz="1.8413139e-22" iyz="4.4802683e-26" /></inertial><collision>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/collision/link_6.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_cybertech_support/meshes/kr16_r2010_2/visual/link_6.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_1" />
+    <limit effort="1905.3" lower="-3.2288591162E0" upper="3.2288591161895095E0" velocity="3.490658503988659" />
+    <origin rpy="-3.141592653589793 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    <parent link="base_link" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_2" />
+    <limit effort="1633.6259859" lower="-3.2288591161895095E0" upper="1.1344640137963142E0" velocity="3.0543261909900767" />
+    <origin rpy="1.5707963267948966 0.0 -0.0" xyz="0.16 0.0 -0.52" />
+    <parent link="link_1" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_3" />
+    <limit effort="850.58019869" lower="-2.4085543677521746E0" upper="3.0543261909900767E0" velocity="3.3161255787892263" />
+    <origin rpy="0.0 0.0 -1.5707963267948966" xyz="0.98 0.0 0.0" />
+    <parent link="link_2" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_4" />
+    <limit effort="266.21043332" lower="-6.1086523819801535E0" upper="6.1086523819801535E0" velocity="7.504915783575617" />
+    <origin rpy="1.5707963267948966 0.0 -0.0" xyz="0.15 0.0 0.0" />
+    <parent link="link_3" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_5" />
+    <limit effort="255.43776663" lower="-2.268928027593E0" upper="2.2689280275926285E0" velocity="7.504915783575617" />
+    <origin rpy="-1.5707963267948966 0.0 -0.0" xyz="0.0 0.0 -0.86" />
+    <parent link="link_4" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_6" />
+    <limit effort="111.65796" lower="-6.1086523819801535E0" upper="6.1086523819801535E0" velocity="10.995574287564276" />
+    <origin rpy="1.5707963267948966 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    <parent link="link_5" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link6-flange" type="fixed">
+    <child link="flange" />
+    <origin rpy="0 1.5707963267948966 -0.0" xyz="0.0 0.0 -0.153" />
+    <parent link="link_6" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link6-tool0" type="fixed">
+    <child link="tool0" />
+    <origin rpy="0 3.141592653589793 -0.0" xyz="0.0 0.0 -0.153" />
+    <parent link="link_6" />
+  </joint>
+  
+  <joint name="world-base_link" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+</robot>

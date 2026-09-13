@@ -1,0 +1,60 @@
+{
+ "layer": "cartesian -> plan across the fleet + effort provenance gating",
+ "pipeline_robots": [
+  {
+   "robot": "franka_panda",
+   "vendor": "franka_description",
+   "loaded": true,
+   "dof": 9,
+   "ee_frame": "panda_hand",
+   "effort_provenance": "real",
+   "ik_conv": true,
+   "ik_pos_err_mm": 0.015,
+   "ik_collision_free": true,
+   "rrt_ms": 3.5,
+   "waypoints": 24,
+   "collision_free": true,
+   "effort_feasible": true,
+   "total_time_s": 3.089,
+   "max_peak_ratio": 0.8,
+   "infeasible_segments": 0
+  },
+  {
+   "robot": "ur10e",
+   "vendor": "ur_description",
+   "loaded": true,
+   "dof": 6,
+   "ee_frame": "tool0",
+   "effort_provenance": "real",
+   "ik_conv": true,
+   "ik_pos_err_mm": 0.048,
+   "ik_collision_free": true,
+   "rrt_ms": 26.6,
+   "waypoints": 57,
+   "collision_free": true,
+   "effort_feasible": true,
+   "total_time_s": 11.312,
+   "max_peak_ratio": 0.8,
+   "infeasible_segments": 0
+  }
+ ],
+ "fleet_scan": {
+  "n": 165,
+  "real": 89,
+  "placeholder_uniform": 4,
+  "missing": 72,
+  "placeholder_robots": [
+   "abb_irb1200_5_90",
+   "abb_irb5400",
+   "motoman_sia10d",
+   "motoman_sia20d"
+  ]
+ },
+ "effort_provenance_gated": true,
+ "cartesian_plan": true,
+ "real_effort_feasible": true,
+ "provenance_guard": true,
+ "placeholder_detected": true,
+ "note": "effort feasibility ONLY where effort limits are real; placeholder/missing -> N/A",
+ "validated": true
+}

@@ -1,0 +1,15 @@
+{
+  "status": "OWN-GATE-FAIL",
+  "block_dim": 512,
+  "l4": {
+    "rc": 1,
+    "seconds": 50.6
+  },
+  "h100": {
+    "rc": 1,
+    "seconds": 37.0
+  },
+  "reason": "Graph creation error: Warp CUDA error 701: too many resources requested for launch",
+  "completed_sweep": false,
+  "followup": "Independent complete sweep at 16,32,64,128,256; unsupported512 retained as failure."
+}

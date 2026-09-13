@@ -1,0 +1,12 @@
+{
+  "gates": {
+    "exact_json": true,
+    "exact_arrays": true,
+    "memory_check": true
+  },
+  "array_count": 120,
+  "array_bytes": 3224,
+  "visible_zero_error_summaries": 1,
+  "scope": "Target-processes all; errors cause child exit77 and a failed probe. Child stdout is captured; only the root summary is visible.",
+  "report_sha256": "e2742e1fdd2827bf40ac69b5d66bdea22c1179b5ee9dc3d2d4688bb5f69d02e2"
+}

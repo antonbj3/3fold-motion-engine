@@ -1,0 +1,40 @@
+{
+ "layer": "multi-robot movement-stack exercise",
+ "representatives": [
+  "assets/robots/franka_description/franka_panda.urdf",
+  "assets/robots/ur_description/ur10e.urdf"
+ ],
+ "results": [
+  {
+   "robot": "franka_panda",
+   "vendor": "franka_description",
+   "loaded": true,
+   "ngeoms": 11,
+   "nq": 9,
+   "planned": true,
+   "nodes": 24,
+   "plan_s": 0.0,
+   "collision_free": true,
+   "collision_binds": true
+  },
+  {
+   "robot": "ur10e",
+   "vendor": "ur_description",
+   "loaded": true,
+   "ngeoms": 7,
+   "nq": 6,
+   "planned": true,
+   "nodes": 30,
+   "plan_s": 0.01,
+   "collision_free": true,
+   "collision_binds": true
+  }
+ ],
+ "n_planned_free": 2,
+ "vendors_exercised": [
+  "franka_description",
+  "ur_description"
+ ],
+ "note": "planning + collision exercised per vendor description that ships collision meshes; per-robot dynamics (torque gate) still structural (effort-limit and validated-friction gaps)",
+ "validated": true
+}

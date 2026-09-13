@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="fanuc_crx10ial">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.0066076208 -7.7134793e-06 0.039377331" rpy="0 0 0" /><mass value="2.2254362" /><inertia ixx="0.0056839506" iyy="0.0064873866" izz="0.009637451" ixy="-1.355989e-06" ixz="7.0258643e-05" iyz="-5.7671365e-07" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/visual/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.23921568627450981 0.23921568627450981 0.23921568627450981 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="-4.2293529e-08 -0.021663499 -0.038397615" rpy="0 0 0" /><mass value="5.9033214" /><inertia ixx="0.03955687" iyy="0.034031376" izz="0.025688152" ixy="-8.187499e-09" ixz="2.7987282e-08" iyz="0.0025897269" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/visual/link_1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.86 0.85 0.81 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/collision/link_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="4.0613776e-07 -0.18640583 0.3524347" rpy="0 0 0" /><mass value="21.436193" /><inertia ixx="1.2595391" iyy="1.2308482" izz="0.096447735" ixy="-2.5745847e-07" ixz="-1.5284983e-06" iyz="-0.041056118" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/visual/link_2.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.86 0.85 0.81 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/collision/link_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="0.038499591 -0.0085255107 -4.3350787e-07" rpy="0 0 0" /><mass value="3.0245409" /><inertia ixx="0.0072016893" iyy="0.013468093" izz="0.013752639" ixy="-0.00049399088" ixz="1.3745062e-07" iyz="-3.0998551e-09" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/visual/link_3.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.86 0.85 0.81 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/collision/link_3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="0.37763599 -0.0045519555 -1.0110616e-06" rpy="0 0 0" /><mass value="4.412924" /><inertia ixx="0.0074198786" iyy="0.068652919" izz="0.069212453" ixy="0.0011914645" ixz="2.4260314e-07" iyz="6.13748e-08" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/visual/link_4.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.86 0.85 0.81 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/collision/link_4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="0.022657146 0.014676989 -3.6854564e-07" rpy="0 0 0" /><mass value="1.6230877" /><inertia ixx="0.0031627186" iyy="0.003600901" izz="0.0044866612" ixy="0.00029239468" ixz="7.3907455e-08" iyz="1.7468466e-08" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/visual/link_5.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.86 0.85 0.81 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/collision/link_5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="-0.030925619 1.8641897e-19 6.9010329e-10" rpy="0 0 0" /><mass value="0.37449718" /><inertia ixx="0.00038509964" iyy="0.00029549203" izz="0.00029549203" ixy="7.1812421e-21" ixz="-7.2117477e-12" iyz="1.5357844e-19" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/visual/link_6.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.23921568627450981 0.23921568627450981 0.23921568627450981 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://fanuc_crx10ia_support/meshes/crx10ial/collision/link_6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.245" />
+    <parent link="base_link" />
+    <child link="link_1" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.0943951023931953" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_1" />
+    <child link="link_2" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.0943951023931953" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.710" />
+    <parent link="link_2" />
+    <child link="link_3" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-4.71238898038469" upper="4.71238898038469" velocity="3.141592653589793" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_3" />
+    <child link="link_4" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-3.3161255787892263" upper="3.3161255787892263" velocity="3.141592653589793" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="0.540 -0.150 0" />
+    <parent link="link_4" />
+    <child link="link_5" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="3.141592653589793" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.160 0 0" />
+    <parent link="link_5" />
+    <child link="link_6" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-3.3161255787892263" upper="3.3161255787892263" velocity="3.141592653589793" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.245" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_6-flange" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_6" />
+    <child link="flange" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link_6-tool0" type="fixed">
+    <origin rpy="3.141592653589793 -1.5707963267948966 0" xyz="0 0 0" />
+    <parent link="flange" />
+    <child link="tool0" />
+  </joint>
+</robot>

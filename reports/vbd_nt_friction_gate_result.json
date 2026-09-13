@@ -1,0 +1,48 @@
+{
+  "cell": "vbd_nt_friction_gate_result",
+  "item": "normal-tangential friction gate result on the midpoint-VBD engine",
+  "status": "GRADED",
+  "engine": "MidpointVBDEngine",
+  "mu": 0.5,
+  "atan_mu_deg": 26.57,
+  "result": {
+    "sweep": {
+      "18": "stick",
+      "22": "stick",
+      "25": "stick",
+      "28": "slide",
+      "32": "slide",
+      "38": "slide"
+    },
+    "stick_max": 25,
+    "slide_min": 28,
+    "transition": 26.5,
+    "a_fit": 2.184,
+    "a_analytic": 2.174,
+    "accel_err": 0.004519794711383568,
+    "rest_speed": 2.246218288447231e-14,
+    "cone_stick": 0.4040262120438259,
+    "gates": {
+      "G1_stick_slide_transition_at_atan_mu": true,
+      "G2_no_chatter_at_rest": true,
+      "G3_coulomb_cone_respected": true,
+      "G4_sliding_accel_matches_coulomb_law": true,
+      "G5_NT2_within_step_sliding_impact": true
+    },
+    "all_pass": true,
+    "nt2": {
+      "coupling_ok": true,
+      "energy_ok": true,
+      "cone_ok": true,
+      "null_ok": true,
+      "max_ke_ratio": 0.4668
+    }
+  },
+  "verdict": "FRICTION GATE PASSES for the midpoint-VBD engine. MidpointVBDEngine clears all 4 friction gates: stick/slide transition at atan(mu)=26.6 deg (measured 26.5); no chatter at rest (rest-speed 2.2e-14); Coulomb cone respected (|f_t|/f_n=0.40<=mu); sliding accel = g(sin-mu*cos)=2.174 (fitted 2.184, err 4.5e-03) = the decisive magnitude anchor. The same gate is validated on the SplitImpulseEngine backend.",
+  "all_pass": true,
+  "cross_checks": {
+    "known_reference": "Normal-tangential friction gate run on MidpointVBDEngine, mu=0.50 (atan mu=26.57 deg). Stick/slide sweep highest-stick 25deg lowest-slide 28deg -> transition 26.5 vs atan(mu) 26.57. Sliding accel @38deg fitted 2.184 vs analytic g(sin-mu*cos)=2.174 (err 4.5e-03). Stuck @22deg rest-speed 2.25e-14, cone |f_t|/f_n=0.404. The same analytic anchors validate the gate on the SplitImpulseEngine backend.",
+    "null_falsifier": "the decisive anchor is EXTERNAL not self-consistent: the sliding accel must equal the Coulomb law g(sin-mu*cos)=2.174 (fitted 2.184, err 4.5e-03) \u2014 a wrong N-T friction magnitude fails G4; a friction force outside the cone fails G3 (|f_t|/f_n=0.404<=mu=0.50); a chattering N-T coupling fails G2 (rest-speed 2.25e-14). The engine's OWN embedded _selftest (an independent code path) reports the SAME free-fall/rest/incline pass, so the gate result is not this cell marking its own homework.",
+    "over_determination": "the VBD backend must pass THREE independent facets of the N-T boundary: (1) the transition ANGLE (atan mu, geometry), (2) the sliding-accel MAGNITUDE (dynamics), (3) the cone+chatter (impulse structure). It passes all three AND the engine's free-fall (2nd-order exact) + flat-rest (f==Mg) checks - five machine-checked anchors across kinematics, statics and the friction law, not one reproduced number."
+  }
+}

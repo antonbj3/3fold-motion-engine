@@ -1,0 +1,541 @@
+# =============================================================================
+# robot_profiles.yaml — the robot-branch constants as DATA
+# =============================================================================
+# The per-robot values used by the manipulation cells, one block per (script, robot) pair. The values
+# under scripts.<script>.robots.<robot> are the EFFECTIVE values after all branches have been applied
+# in order; there is no inheritance logic here, deliberately redundant so every (script, robot) cell
+# is auditable on its own.
+# =============================================================================
+meta:
+  source: "scripts/newton_{stack,friction_pick,friction_stack,tower,tower5,sort,hybrid_pick,pick_payload,collision_lift}.py"
+  robots:
+    - ur10e
+    - abb_irb2400
+    - fanuc_m10ia
+    - motoman_gp12
+    - kuka_lbr_iiwa14_r820
+  # Environment mapping used by the smoke harness.
+  # report templates: {seed} = PLANT_SEED, {robot} = robot name.
+  env_mapping:
+    # scripts/manip_contact_pick.py (bibliotekskonsument av
+    manip_contact_pick:
+      w_env: PICK_W
+      robot_env: ROBOT
+      report_ur10e: "contact_pick_s{seed}.json"
+      report_other: "contact_pick_{robot}_s{seed}.json"
+    # (bibliotekskonsument av scripts.newton_push-cellen nedan; paritet
+    # kedjenamnet newton_push.
+    manip_push:
+      w_env: PUSH_W
+      robot_env: ROBOT
+      report_ur10e: "push_manipulation.json"          # baseline report name for ur10e
+      report_other: "push_{robot}_s{seed}.json"
+    newton_stack:
+      w_env: PICK_W
+      robot_env: ROBOT
+      report_ur10e: "stack_s{seed}.json"
+      report_other: "stack_{robot}_s{seed}.json"
+    newton_friction_pick:
+      w_env: FG_W
+      robot_env: FG_ROBOT
+      report_ur10e: "friction_pick_ur10e_s{seed}.json"   # robotnamn ALLTID med
+      report_other: "friction_pick_{robot}_s{seed}.json"
+    newton_friction_stack:
+      w_env: FG_W
+      robot_env: null                                  # ur10e-only, ingen robot-env
+      report_ur10e: "friction_stack_s{seed}.json"
+      report_other: null
+    newton_tower:
+      w_env: PICK_W
+      robot_env: ROBOT
+      report_ur10e: "tower_s{seed}.json"
+      report_other: "tower_{robot}_s{seed}.json"
+    newton_tower5:
+      w_env: PICK_W
+      robot_env: ROBOT
+      report_ur10e: "tower5_s{seed}.json"
+      report_other: "tower5_{robot}_s{seed}.json"
+    newton_sort:
+      w_env: PICK_W
+      robot_env: ROBOT
+      report_ur10e: "sort_s{seed}.json"
+      report_other: "sort_{robot}_s{seed}.json"
+    # Three scripts with no W environment variable (W=256 fixed; argparse --robot/--plant-seed):
+    newton_hybrid_pick:    {w_env: null, robot_env: null, report_ur10e: "hybrid_pick_{robot}.json", report_other: "hybrid_pick_{robot}.json"}
+    newton_pick_payload:   {w_env: null, robot_env: null, report_ur10e: "pick_payload.json", report_other: null}
+    newton_collision_lift: {w_env: null, robot_env: null, report_ur10e: "collision_lift_{robot}.json", report_other: "collision_lift_{robot}.json"}
+
+# =============================================================================
+# Effektiva konstanter per (skript, robot).
+# Nycklar: arm_pattern (ArticulationView-glob), home (rad, arm-leder),
+# tau_max (Nm; friction-skripten inkluderar fingrarnas [200, 200] sist),
+# kp_p/kd_p/ki_p (kartesisk positionsloop), kp_o/kd_o (orienteringsloop),
+# fmax/mmax (task-space kraft-/momenttak N/Nm), ierr_clip (integralclip m;
+# push-abb is a VECTOR [x, y, z]), depth_win (in-jaw depth window, m),
+# n_desc (descend-steg), maxk (FSM-stegtak), obj (scen-fixturens kubcentrum),
+# settle_park (true = the arm is servo-parked during settling instead of open gravity compensation),
+# kp_y/kd_y (wrist-yaw lock, friction_stack only).
+# =============================================================================
+scripts:
+
+  newton_contact_pick:
+    phases: {n_wp: 100, n_desc: 280, n_lift: 110}
+    robots:
+      ur10e:
+        arm_pattern: "*ur10e*"
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        tau_max: [150.0, 150.0, 150.0, 28.0, 28.0, 28.0]
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05
+      abb_irb2400:
+        arm_pattern: "*irb2400*"
+        home: [0.0, 0.4, 0.95, 0.0, 1.79, 0.0]
+        tau_max: [400.0, 800.0, 400.0, 60.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 400.0
+        mmax: 40.0
+        ierr_clip: 0.15
+    coverage:
+      fanuc_m10ia: missing       # no HOME/TAU branch; arm_pat falls through to *iiwa* (wrong pattern)
+      motoman_gp12: missing
+      kuka_lbr_iiwa14_r820: broken_fallback  # an *iiwa* pattern exists but HOME is a 6-vector against NJ=7 (no shape assert)
+
+  newton_push:
+    phases: {}                   # push har inga N_*-faskonstanter (ramp 90+160 steg inline)
+    robots:
+      ur10e:
+        arm_pattern: "*ur10e*"
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        tau_max: [150.0, 150.0, 150.0, 28.0, 28.0, 28.0]
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05
+      abb_irb2400:
+        arm_pattern: "*irb2400*"
+        home: [0.0, 0.4, 0.95, 0.0, 1.79, 0.0]
+        tau_max: [400.0, 800.0, 400.0, 60.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 400.0
+        mmax: 40.0
+        ierr_clip: [0.005, 0.005, 0.15]
+    coverage:
+      fanuc_m10ia: missing
+      motoman_gp12: missing
+      kuka_lbr_iiwa14_r820: broken_fallback
+
+  newton_stack:
+    phases: {n_wp: 100, n_desc: 280, n_lift: 110, n_tran: 120, n_place: 240, n_set: 60}
+    robots:
+      ur10e:
+        arm_pattern: "*ur10e*"
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        tau_max: [150.0, 150.0, 150.0, 28.0, 28.0, 28.0]
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05
+      abb_irb2400:
+        arm_pattern: "*irb2400*"
+        home: [0.0, 0.4, 0.95, 0.0, 1.79, 0.0]
+        tau_max: [400.0, 800.0, 400.0, 60.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 400.0
+        mmax: 40.0
+        ierr_clip: 0.15
+      fanuc_m10ia:
+        arm_pattern: "*m10ia*"
+        home: [0.0, 0.1, -1.0, 0.0, -2.0, 0.0]
+        tau_max: [250.0, 300.0, 200.0, 40.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 60.0
+        mmax: 40.0
+        ierr_clip: 0.15
+      motoman_gp12:
+        arm_pattern: "*gp12*"
+        home: [0.0, 0.0, -1.1, 0.0, -2.0, 0.0]
+        tau_max: [250.0, 300.0, 200.0, 40.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 150.0      # gp12 limit-cycle vid ur10e-gains → IRB-loop + FMAX 150 (DIAG4)
+        mmax: 40.0
+        ierr_clip: 0.15
+      kuka_lbr_iiwa14_r820:
+        arm_pattern: "*iiwa*"
+        home: [0.0, 0.6, 0.0, -1.4, 0.0, 0.8, 0.0]
+        tau_max: [150.0, 150.0, 80.0, 60.0, 40.0, 20.0, 20.0]
+        kp_p: 1400.0
+        kd_p: 120.0
+        ki_p: 900.0
+        kp_o: 18.0       # ori-loop AVSIKTLIGT kvar i ur10e-klass (KP_O 120 saturerade iiwa-handleden, run2/3)
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.10
+    coverage: {}
+
+  newton_friction_pick:
+    phases: {n_wp: 110, n_close: 70, n_lift: 120, n_set: 80}
+    robots:
+      ur10e:
+        arm_pattern: "*ur10e*"
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        tau_max: [150.0, 150.0, 150.0, 28.0, 28.0, 28.0, 200.0, 200.0]   # + 2 finger-dofs
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05
+        depth_win: 0.025
+        n_desc: 240
+      abb_irb2400:
+        arm_pattern: "*irb2400*"
+        home: [0.0, 0.4, 0.95, 0.0, 1.79, 0.0]
+        tau_max: [400.0, 800.0, 400.0, 60.0, 40.0, 28.0, 200.0, 200.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 400.0
+        mmax: 40.0
+        ierr_clip: 0.15
+        depth_win: 0.010
+        n_desc: 240
+      fanuc_m10ia:
+        arm_pattern: "*m10ia*"
+        home: [0.0, 0.1, -1.0, 0.0, -2.0, 0.0]
+        tau_max: [250.0, 300.0, 200.0, 40.0, 40.0, 28.0, 200.0, 200.0]
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 60.0
+        mmax: 40.0
+        ierr_clip: 0.05
+        depth_win: 0.025
+        n_desc: 240
+      motoman_gp12:
+        arm_pattern: "*gp12*"
+        home: [0.0, 0.0, -1.1, 0.0, -2.0, 0.0]
+        tau_max: [250.0, 300.0, 200.0, 40.0, 40.0, 28.0, 200.0, 200.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 150.0
+        mmax: 40.0
+        ierr_clip: 0.15
+        depth_win: 0.025
+        n_desc: 240
+      kuka_lbr_iiwa14_r820:
+        arm_pattern: "*iiwa*"
+        home: [0.0, 0.6, 0.0, -1.4, 0.0, 0.8, 0.0]   # q5=0,8 (1,14/rakt-ned FALSIFIERAD 54%)
+        tau_max: [150.0, 150.0, 80.0, 60.0, 40.0, 20.0, 20.0, 200.0, 200.0]
+        kp_p: 1400.0
+        kd_p: 120.0
+        ki_p: 900.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.10
+        depth_win: 0.025
+        n_desc: 1200
+    coverage: {}
+
+  newton_friction_stack:
+    phases: {n_wp: 110, n_desc: 240, n_close: 70, n_lift: 120, n_set: 80, n_tran: 120, n_place: 520, n_set2: 80}
+    robots:
+      ur10e:
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        tau_max: [150.0, 150.0, 150.0, 28.0, 28.0, 28.0, 200.0, 200.0]
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05    # inline-clip (ingen IERR_CLIP-variabel)
+        kp_y: 40.0
+        kd_y: 4.0
+    coverage:
+      abb_irb2400: missing            # friction_stack aldrig vendor-porterad
+      fanuc_m10ia: missing
+      motoman_gp12: missing
+      kuka_lbr_iiwa14_r820: missing
+
+  newton_tower:
+    phases: {maxk: 2600}
+    robots:
+      ur10e:
+        arm_pattern: "*ur10e*"
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        tau_max: [150.0, 150.0, 150.0, 28.0, 28.0, 28.0]
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05
+        settle_park: true
+      abb_irb2400:
+        arm_pattern: "*irb2400*"
+        home: [0.0, 0.4, 0.95, 0.0, 1.79, 0.0]
+        tau_max: [400.0, 800.0, 400.0, 60.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 400.0
+        mmax: 40.0
+        ierr_clip: 0.15
+        settle_park: true
+      fanuc_m10ia:
+        arm_pattern: "*m10ia*"
+        home: [0.0, 0.1, -1.0, 0.0, -2.0, 0.0]
+        tau_max: [250.0, 300.0, 200.0, 40.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 60.0
+        mmax: 40.0
+        ierr_clip: 0.15
+        settle_park: true
+      motoman_gp12:
+        arm_pattern: "*gp12*"
+        home: [0.0, 0.0, -1.1, 0.0, -2.0, 0.0]
+        tau_max: [250.0, 300.0, 200.0, 40.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 150.0
+        mmax: 40.0
+        ierr_clip: 0.15
+        settle_park: true
+      kuka_lbr_iiwa14_r820:
+        arm_pattern: "*iiwa*"
+        home: [0.0, 0.6, 0.0, -1.4, 0.0, 0.8, 0.0]
+        tau_max: [150.0, 150.0, 80.0, 60.0, 40.0, 20.0, 20.0]
+        kp_p: 1400.0
+        kd_p: 120.0
+        ki_p: 900.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.10
+        maxk: 4200
+        settle_park: true
+    coverage: {}
+
+  newton_tower5:
+    phases: {maxk: 5600}
+    robots:
+      ur10e:
+        arm_pattern: "*ur10e*"
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        tau_max: [150.0, 150.0, 150.0, 28.0, 28.0, 28.0]
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05
+        obj: [0.6, 0.0, 0.375]
+        settle_park: true
+      abb_irb2400:
+        arm_pattern: "*irb2400*"
+        home: [0.0, 0.4, 0.95, 0.0, 1.79, 0.0]
+        tau_max: [400.0, 800.0, 400.0, 60.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 400.0
+        mmax: 40.0
+        ierr_clip: 0.15
+        obj: [0.72, 0.0, 0.375]
+        settle_park: true
+    coverage:
+      fanuc_m10ia: missing             # xfail i test_robot_profiles (stack/tower har grenar, tower5 inte)
+      motoman_gp12: missing            # xfail
+      kuka_lbr_iiwa14_r820: missing
+
+  newton_sort:
+    phases: {maxk: 4200}
+    robots:
+      ur10e:
+        arm_pattern: "*ur10e*"
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        tau_max: [150.0, 150.0, 150.0, 28.0, 28.0, 28.0]
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05
+        obj: [0.6, 0.0, 0.375]
+        settle_park: true
+      abb_irb2400:
+        arm_pattern: "*irb2400*"
+        home: [0.0, 0.4, 0.95, 0.0, 1.79, 0.0]
+        tau_max: [400.0, 800.0, 400.0, 60.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 400.0
+        mmax: 40.0
+        ierr_clip: 0.15
+        obj: [0.72, 0.0, 0.375]
+        settle_park: true
+      kuka_lbr_iiwa14_r820:
+        arm_pattern: "*iiwa*"
+        home: [0.0, 0.6, 0.0, -1.4, 0.0, 0.8, 0.0]
+        tau_max: [150.0, 150.0, 80.0, 60.0, 40.0, 20.0, 20.0]
+        kp_p: 1400.0
+        kd_p: 120.0
+        ki_p: 900.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.10
+        obj: [0.6, 0.0, 0.375]
+        maxk: 6300
+        settle_park: true
+    coverage:
+      fanuc_m10ia: missing    # xfail: stack/tower har fanuc-grenar, sort inte
+      motoman_gp12: missing   # xfail
+
+  # --- the argparse scripts (W=256 fixed) -----------
+
+  newton_hybrid_pick:
+    phases: {}
+    robots:
+      ur10e:
+        arm_pattern: "*"
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        # tau_max is DYNAMIC: clip(0.5 * URDF effort, 5, 200) when the URDF declares effort > 0
+        # (fallback [150,150,80,60,40,20,20]+[20]*NJ); not frozen here.
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05        # inline-clip
+      abb_irb2400:
+        arm_pattern: "*irb2400*"
+        home: [0.0, 0.4, 0.95, 0.0, 1.79, 0.0]
+        tau_max: [400.0, 800.0, 400.0, 60.0, 40.0, 28.0]
+        kp_p: 1400.0
+        kd_p: 300.0
+        ki_p: 900.0
+        kp_o: 120.0
+        kd_o: 8.0
+        fmax: 60.0
+        mmax: 15.0
+        ierr_clip: 0.05
+    coverage:
+      fanuc_m10ia: missing
+      motoman_gp12: missing
+      kuka_lbr_iiwa14_r820: fallback_zeros
+
+  newton_pick_payload:
+    phases: {}
+    robots:
+      ur10e:
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        # arm_pattern: "*" (literal i ArticulationView-anropet, ingen variabel)
+        # tau_max dynamisk (samma formel som hybrid)
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 120.0
+        mmax: 15.0
+        ierr_clip: 0.20
+    coverage:
+      abb_irb2400: fallback_zeros
+      fanuc_m10ia: missing
+      motoman_gp12: missing
+      kuka_lbr_iiwa14_r820: fallback_zeros
+
+  newton_collision_lift:
+    phases: {}
+    robots:
+      ur10e:
+        home: [0.0, -1.2, 1.5, -1.8, -1.57, 0.0]
+        # arm_pattern: "*" (literal); tau_max dynamisk (samma formel som hybrid)
+        kp_p: 900.0
+        kd_p: 90.0
+        ki_p: 600.0
+        kp_o: 18.0
+        kd_o: 1.8
+        fmax: 120.0
+        mmax: 15.0
+        ierr_clip: 0.12   # inline
+    coverage:
+      abb_irb2400: missing
+      fanuc_m10ia: missing
+      motoman_gp12: missing
+      kuka_lbr_iiwa14_r820: fallback_zeros   # pass 111 (fasgrind ×2,5 @steg 49-59 — men ingen HOME-gren)
+
+# Known inconsistencies between the (script, robot) branches were recorded in the platform as a
+# history log; that log is not part of this extraction. The effective values above are the data.

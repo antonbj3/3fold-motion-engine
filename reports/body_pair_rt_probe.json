@@ -1,0 +1,666 @@
+{
+  "gates": {
+    "exact_baseline": true,
+    "exact_repeats": true,
+    "refusals": true,
+    "finite_complete": true,
+    "faster_full_rebuild": false
+  },
+  "results": [
+    {
+      "rows": {
+        "10000": {
+          "count": 10000,
+          "exact": true,
+          "timing_ms": {
+            "baseline": 0.471293350000046,
+            "candidate": 0.8657921499999333
+          },
+          "hashes": {
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  10000,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "041788bf0e564f578eb414cbea09e7ab9e22eef06828f070cc2cd9b914f5b210"
+              },
+              "lower": {
+                "shape": [
+                  10000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "10161173d024f199f851f407e207992fef584cf36131251bd05f27e3d6a82b4d"
+              },
+              "upper": {
+                "shape": [
+                  10000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "4bbcd3d3f371647843cb3f4bc71de321a09eb9240620e71110b6c7b3ffd37a0a"
+              }
+            },
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  10000,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "041788bf0e564f578eb414cbea09e7ab9e22eef06828f070cc2cd9b914f5b210"
+              },
+              "lower": {
+                "shape": [
+                  10000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "10161173d024f199f851f407e207992fef584cf36131251bd05f27e3d6a82b4d"
+              },
+              "upper": {
+                "shape": [
+                  10000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "4bbcd3d3f371647843cb3f4bc71de321a09eb9240620e71110b6c7b3ffd37a0a"
+              }
+            }
+          }
+        },
+        "100000": {
+          "count": 100000,
+          "exact": true,
+          "timing_ms": {
+            "baseline": 0.77527220000011,
+            "candidate": 1.3674340499999715
+          },
+          "hashes": {
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  100000,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "c9df3e79a579f148b1a985ace49a3483a15f10c1f09760719d97b23bf021594d"
+              },
+              "lower": {
+                "shape": [
+                  100000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "e92fabd0f3280034572009f4663b574130dbbba7bb59a08d2b7f44c659ef83a9"
+              },
+              "upper": {
+                "shape": [
+                  100000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "c3a81dc04693f1c03563e65fa56b1d2ff7a39069353fd4fb97460ea466f54c2a"
+              }
+            },
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  100000,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "c9df3e79a579f148b1a985ace49a3483a15f10c1f09760719d97b23bf021594d"
+              },
+              "lower": {
+                "shape": [
+                  100000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "e92fabd0f3280034572009f4663b574130dbbba7bb59a08d2b7f44c659ef83a9"
+              },
+              "upper": {
+                "shape": [
+                  100000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "c3a81dc04693f1c03563e65fa56b1d2ff7a39069353fd4fb97460ea466f54c2a"
+              }
+            }
+          }
+        },
+        "boundary": {
+          "count": 28,
+          "exact": true,
+          "timing_ms": {
+            "baseline": 0.4039554000000223,
+            "candidate": 0.6634574000001336
+          },
+          "hashes": {
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  28,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "64960230105138999d801c2d7007fd722953dde87f752d88c90e9f1afd0a21fa"
+              },
+              "lower": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "357956da8c3f0c5492e162930aae0ce8bee1d7b53a9e627b8df0b862ed99c885"
+              },
+              "upper": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "2aa6785bce35d14fd113d92aa3675716d9da5ea9836f8792a595e0eea2c32fe0"
+              }
+            },
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  28,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "64960230105138999d801c2d7007fd722953dde87f752d88c90e9f1afd0a21fa"
+              },
+              "lower": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "357956da8c3f0c5492e162930aae0ce8bee1d7b53a9e627b8df0b862ed99c885"
+              },
+              "upper": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "2aa6785bce35d14fd113d92aa3675716d9da5ea9836f8792a595e0eea2c32fe0"
+              }
+            }
+          }
+        },
+        "translated": {
+          "count": 23,
+          "exact": true,
+          "timing_ms": {
+            "baseline": 0.4184357499999791,
+            "candidate": 0.6608223000000635
+          },
+          "hashes": {
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  23,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "27084ff3f388c39298b56d8a0caa27a8f518eeae6b96f9d61619da9cd381ed8f"
+              },
+              "lower": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "0c29af695eb9bdabaac397db2247efb710872a8f417c7ef0980a0db32fe73521"
+              },
+              "upper": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "ec8f1e1c1279daf1abaa554a07f5fa9b1eefe99c8aac63d647c5707e6adcb090"
+              }
+            },
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  23,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "27084ff3f388c39298b56d8a0caa27a8f518eeae6b96f9d61619da9cd381ed8f"
+              },
+              "lower": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "0c29af695eb9bdabaac397db2247efb710872a8f417c7ef0980a0db32fe73521"
+              },
+              "upper": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "ec8f1e1c1279daf1abaa554a07f5fa9b1eefe99c8aac63d647c5707e6adcb090"
+              }
+            }
+          }
+        },
+        "empty": {
+          "count": 0,
+          "exact": true,
+          "timing_ms": {
+            "baseline": 0.27242859999994096,
+            "candidate": 0.49986405000002065
+          },
+          "hashes": {
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  0,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              "lower": {
+                "shape": [
+                  2,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "775662d5d727736bfed7dd22bc8b2b3c5a304e52bb25540c72a9047c93c01680"
+              },
+              "upper": {
+                "shape": [
+                  2,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "b1f397b8c3c7b08f7b591367fbdd95ca2042fa54a4976167f31965ad10cab6bd"
+              }
+            },
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  0,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              "lower": {
+                "shape": [
+                  2,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "775662d5d727736bfed7dd22bc8b2b3c5a304e52bb25540c72a9047c93c01680"
+              },
+              "upper": {
+                "shape": [
+                  2,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "b1f397b8c3c7b08f7b591367fbdd95ca2042fa54a4976167f31965ad10cab6bd"
+              }
+            }
+          }
+        }
+      },
+      "refused": {
+        "capacity": true,
+        "slot_capacity": true,
+        "radius": true,
+        "coordinate": true,
+        "nonfinite": true,
+        "layout": true,
+        "closed": true,
+        "body_limit": true,
+        "slot_limit": true,
+        "spatial_contract": true,
+        "coordinate_contract": true
+      }
+    },
+    {
+      "rows": {
+        "empty": {
+          "count": 0,
+          "exact": true,
+          "timing_ms": {
+            "candidate": 0.6885238999998933,
+            "baseline": 0.2692575000001085
+          },
+          "hashes": {
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  0,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              "lower": {
+                "shape": [
+                  2,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "775662d5d727736bfed7dd22bc8b2b3c5a304e52bb25540c72a9047c93c01680"
+              },
+              "upper": {
+                "shape": [
+                  2,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "b1f397b8c3c7b08f7b591367fbdd95ca2042fa54a4976167f31965ad10cab6bd"
+              }
+            },
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  0,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              "lower": {
+                "shape": [
+                  2,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "775662d5d727736bfed7dd22bc8b2b3c5a304e52bb25540c72a9047c93c01680"
+              },
+              "upper": {
+                "shape": [
+                  2,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "b1f397b8c3c7b08f7b591367fbdd95ca2042fa54a4976167f31965ad10cab6bd"
+              }
+            }
+          }
+        },
+        "translated": {
+          "count": 23,
+          "exact": true,
+          "timing_ms": {
+            "candidate": 0.6396321000000427,
+            "baseline": 0.37979344999996556
+          },
+          "hashes": {
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  23,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "27084ff3f388c39298b56d8a0caa27a8f518eeae6b96f9d61619da9cd381ed8f"
+              },
+              "lower": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "0c29af695eb9bdabaac397db2247efb710872a8f417c7ef0980a0db32fe73521"
+              },
+              "upper": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "ec8f1e1c1279daf1abaa554a07f5fa9b1eefe99c8aac63d647c5707e6adcb090"
+              }
+            },
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  23,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "27084ff3f388c39298b56d8a0caa27a8f518eeae6b96f9d61619da9cd381ed8f"
+              },
+              "lower": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "0c29af695eb9bdabaac397db2247efb710872a8f417c7ef0980a0db32fe73521"
+              },
+              "upper": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "ec8f1e1c1279daf1abaa554a07f5fa9b1eefe99c8aac63d647c5707e6adcb090"
+              }
+            }
+          }
+        },
+        "boundary": {
+          "count": 28,
+          "exact": true,
+          "timing_ms": {
+            "candidate": 0.6912917999997603,
+            "baseline": 0.3829238499999832
+          },
+          "hashes": {
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  28,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "64960230105138999d801c2d7007fd722953dde87f752d88c90e9f1afd0a21fa"
+              },
+              "lower": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "357956da8c3f0c5492e162930aae0ce8bee1d7b53a9e627b8df0b862ed99c885"
+              },
+              "upper": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "2aa6785bce35d14fd113d92aa3675716d9da5ea9836f8792a595e0eea2c32fe0"
+              }
+            },
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  28,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "64960230105138999d801c2d7007fd722953dde87f752d88c90e9f1afd0a21fa"
+              },
+              "lower": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "357956da8c3f0c5492e162930aae0ce8bee1d7b53a9e627b8df0b862ed99c885"
+              },
+              "upper": {
+                "shape": [
+                  8,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "2aa6785bce35d14fd113d92aa3675716d9da5ea9836f8792a595e0eea2c32fe0"
+              }
+            }
+          }
+        },
+        "100000": {
+          "count": 100000,
+          "exact": true,
+          "timing_ms": {
+            "candidate": 1.3786390500001744,
+            "baseline": 0.7393005000000841
+          },
+          "hashes": {
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  100000,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "c9df3e79a579f148b1a985ace49a3483a15f10c1f09760719d97b23bf021594d"
+              },
+              "lower": {
+                "shape": [
+                  100000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "e92fabd0f3280034572009f4663b574130dbbba7bb59a08d2b7f44c659ef83a9"
+              },
+              "upper": {
+                "shape": [
+                  100000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "c3a81dc04693f1c03563e65fa56b1d2ff7a39069353fd4fb97460ea466f54c2a"
+              }
+            },
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  100000,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "c9df3e79a579f148b1a985ace49a3483a15f10c1f09760719d97b23bf021594d"
+              },
+              "lower": {
+                "shape": [
+                  100000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "e92fabd0f3280034572009f4663b574130dbbba7bb59a08d2b7f44c659ef83a9"
+              },
+              "upper": {
+                "shape": [
+                  100000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "c3a81dc04693f1c03563e65fa56b1d2ff7a39069353fd4fb97460ea466f54c2a"
+              }
+            }
+          }
+        },
+        "10000": {
+          "count": 10000,
+          "exact": true,
+          "timing_ms": {
+            "candidate": 0.8700690000001288,
+            "baseline": 0.46096019999986027
+          },
+          "hashes": {
+            "candidate": {
+              "pairs": {
+                "shape": [
+                  10000,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "041788bf0e564f578eb414cbea09e7ab9e22eef06828f070cc2cd9b914f5b210"
+              },
+              "lower": {
+                "shape": [
+                  10000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "10161173d024f199f851f407e207992fef584cf36131251bd05f27e3d6a82b4d"
+              },
+              "upper": {
+                "shape": [
+                  10000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "4bbcd3d3f371647843cb3f4bc71de321a09eb9240620e71110b6c7b3ffd37a0a"
+              }
+            },
+            "baseline": {
+              "pairs": {
+                "shape": [
+                  10000,
+                  2
+                ],
+                "dtype": "<i4",
+                "sha256": "041788bf0e564f578eb414cbea09e7ab9e22eef06828f070cc2cd9b914f5b210"
+              },
+              "lower": {
+                "shape": [
+                  10000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "10161173d024f199f851f407e207992fef584cf36131251bd05f27e3d6a82b4d"
+              },
+              "upper": {
+                "shape": [
+                  10000,
+                  3
+                ],
+                "dtype": "<f8",
+                "sha256": "4bbcd3d3f371647843cb3f4bc71de321a09eb9240620e71110b6c7b3ffd37a0a"
+              }
+            }
+          }
+        }
+      },
+      "refused": {
+        "capacity": true,
+        "slot_capacity": true,
+        "radius": true,
+        "coordinate": true,
+        "nonfinite": true,
+        "layout": true,
+        "closed": true,
+        "body_limit": true,
+        "slot_limit": true,
+        "spatial_contract": true,
+        "coordinate_contract": true
+      }
+    }
+  ],
+  "scope": "Full BVH rebuild and canonical pairs; bounded synthetic fixtures; no full-step or cross-device claim."
+}

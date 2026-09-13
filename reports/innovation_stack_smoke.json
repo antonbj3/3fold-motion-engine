@@ -1,0 +1,15 @@
+{
+  "steps_per_run": 20,
+  "bodies": 4,
+  "initial_background": {
+    "gpu_utilization": "8 %",
+    "memory_used": "1255 MiB"
+  },
+  "hashes": [
+    "39551e8687f09c33fad4bb045c37965e71e1c6d0bab6901f6ad665e652637368",
+    "39551e8687f09c33fad4bb045c37965e71e1c6d0bab6901f6ad665e652637368"
+  ],
+  "finite": true,
+  "bit_identical": true,
+  "pass": true
+}

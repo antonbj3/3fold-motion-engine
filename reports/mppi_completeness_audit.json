@@ -1,0 +1,67 @@
+{
+ "device": "cuda:0",
+ "budgets": [
+  {
+   "name": "low",
+   "K": 128,
+   "iters": 20
+  },
+  {
+   "name": "med",
+   "K": 512,
+   "iters": 50
+  },
+  {
+   "name": "high",
+   "K": 1024,
+   "iters": 90
+  }
+ ],
+ "n_scenes": 8,
+ "low_miss": 6,
+ "recovered_by_high": 3,
+ "unsolved_at_high": 3,
+ "per_scene": [
+  {
+   "low": false,
+   "med": true,
+   "high": false
+  },
+  {
+   "low": false,
+   "med": false,
+   "high": true
+  },
+  {
+   "low": true,
+   "med": true,
+   "high": true
+  },
+  {
+   "low": false,
+   "med": false,
+   "high": false
+  },
+  {
+   "low": false,
+   "med": false,
+   "high": false
+  },
+  {
+   "low": true,
+   "med": true,
+   "high": true
+  },
+  {
+   "low": false,
+   "med": true,
+   "high": true
+  },
+  {
+   "low": false,
+   "med": true,
+   "high": true
+  }
+ ],
+ "infeasible_budget_recoverable": false
+}

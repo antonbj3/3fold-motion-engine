@@ -1,0 +1,1117 @@
+{
+  "gates": {
+    "exact_expected": true,
+    "actual_boundary": true,
+    "complete_repeat": true
+  },
+  "records": [
+    {
+      "0_below": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "a6b4e0be3a15d73e9466ccad0efd9e8c493a0b21358743b9279751dff8f73836"
+          },
+          "pairs": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "expected": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "c29234eb2d3bb621d988780ccea0ddce7327db450c3810aa8e7f08d5eab01a27"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "8f27991e6dea44bd2644fffb24d8b0b3734588b07fccf7173e181950f94e7df1"
+          }
+        }
+      },
+      "0_equal": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "82808b850253cfa9d65c19aa9ccf41f1630c1797e47c3a9b487d188e96cc16ad"
+          },
+          "pairs": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "expected": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "a6c0de9f24d8cb06235b32df941b067358954d2236781bd1fb8b0c3d17739eb4"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "be27bc0f6e98330085add28c3472a5acef07088f09f6a66496d8aba96e4f1a2f"
+          }
+        }
+      },
+      "0_above": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "2bc8efdd9535eb0bcf3a87aa8eb0f88f35bc27c2c96ff097a3c6a47143eb5462"
+          },
+          "pairs": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "436cb44211f38427a44ef723d6e957ebc7e6bd4d1e0d13485a9ec999cb53accf"
+          },
+          "expected": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "436cb44211f38427a44ef723d6e957ebc7e6bd4d1e0d13485a9ec999cb53accf"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "3941f0ba9242106c6c3b4f9f32c7a598328c5d2e26bb279455a8c4c757db920c"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "2ce8bb4b6128cf06094c741648726f0fa5b3a1e408eff934587d63aff99e3caf"
+          }
+        }
+      },
+      "1_below": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "62f074aa00e2e86c1c8764e48ce553545a0c82764041d878f0d92f5c5535e21d"
+          },
+          "pairs": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "expected": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "e04755734f46d2230126940b3250ce35799342fa460790da2e917268bfa67a58"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "d31d0e42ddfcadde27f504adb10e2f94b02fd3f522c675d5f7f7f05ad41bff42"
+          }
+        }
+      },
+      "1_equal": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "784462c942a86ee3397f2253c9e7ffb52380aa0131bb43defb3a56ef2acb5fd4"
+          },
+          "pairs": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "expected": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "5b7a169c80ae0cdd468e2d4ff95d68f0a50216754ba99ebce15b6858a0b011d2"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "53caed2051e20af69e14943b99b9ab6e44eb5c597e064e353a787175851fed2e"
+          }
+        }
+      },
+      "1_above": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "66500ab5fadf444cc443f012a8be729dff28322f94600a9b528addb59a94af52"
+          },
+          "pairs": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "436cb44211f38427a44ef723d6e957ebc7e6bd4d1e0d13485a9ec999cb53accf"
+          },
+          "expected": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "436cb44211f38427a44ef723d6e957ebc7e6bd4d1e0d13485a9ec999cb53accf"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "583c33d7dd30912f390c3c850c998cb158dddc9a2032ceaf56b3dd4fd9bfd3d7"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "8ea9b048d9ac726a45cf3a3466be907b2ec9b0849ad824cc00f9774e51ffb72c"
+          }
+        }
+      },
+      "2_below": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "19b6a56a43b40fde97aaa46e83efc845c70d5cafdd7a9ea954dd0fab576254d0"
+          },
+          "pairs": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "db9497531f0a39d8aadfd0cc228a5d4a798a6884d668a66afbfa7cd31d0b3bad"
+          },
+          "expected": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "db9497531f0a39d8aadfd0cc228a5d4a798a6884d668a66afbfa7cd31d0b3bad"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "9e97075cc512288b506403c17aff7a2eb3ddb164297054a2a3f8f28e25bd78ef"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "b5795c6e74c148de5966ec4724cfe45a549319232ff693bf378174e0cb9397e3"
+          }
+        }
+      },
+      "2_equal": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "325d6076338d6ba154907ffffbd07e5554434e1d102cb9ebd6ed33631ef3ddb0"
+          },
+          "pairs": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "db9497531f0a39d8aadfd0cc228a5d4a798a6884d668a66afbfa7cd31d0b3bad"
+          },
+          "expected": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "db9497531f0a39d8aadfd0cc228a5d4a798a6884d668a66afbfa7cd31d0b3bad"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "d49881696d111151fca453ade0d41707e56dd525cc94a46458937a1fc9dc0dad"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "b1ef06c828b4835e56696aad0f103d7d3d5cbd94ece5f3e78f8ae10f787897ca"
+          }
+        }
+      },
+      "2_above": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "fd2e47efe38b1ff35afd8014cdc71cfac3dfd7cfc663d6b8d7ceabc8d472f13f"
+          },
+          "pairs": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "5981693c8df83eea16da42a0f748facb299546688544a0c2887ed5ffbf086e86"
+          },
+          "expected": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "5981693c8df83eea16da42a0f748facb299546688544a0c2887ed5ffbf086e86"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "c212453858b450f162284b8e407c08ca145544c5e53e128cc9890fbd37fe2ce4"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "b2325e054e18d05a860263cd2079bb9df84518c109d1b79c0c59e0ed6d96987f"
+          }
+        }
+      },
+      "ground_below": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "02ba3afdfec5e163d19fb5974bf2aa448ab86eb297340c962352d5d9a6206787"
+          },
+          "pairs": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "5981693c8df83eea16da42a0f748facb299546688544a0c2887ed5ffbf086e86"
+          },
+          "expected": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "5981693c8df83eea16da42a0f748facb299546688544a0c2887ed5ffbf086e86"
+          },
+          "lower": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "38548b2bb13d5ce666b2ee195dd25724f2fad14450379bd0b33f6fc693c7dcbc"
+          },
+          "upper": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "b21b847701224d5c0cf51e1398750660c3315df3b4535d2898772834c07360b9"
+          }
+        }
+      },
+      "ground_equal": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "07beff13bac22a6c49d1c68dd9c687b75a1f625ce0fecd305aeab418d7073810"
+          },
+          "pairs": {
+            "shape": [
+              0,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "expected": {
+            "shape": [
+              0,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "lower": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "515897750943cecfa27dba9c48c2b00ea43e6f1faa9f6c302aea1db4c85ee6f0"
+          },
+          "upper": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "f17a9cb114a7f3d200e1d7a51ab6dfb0965ada5d54180560ff87ff1ad228a29b"
+          }
+        }
+      },
+      "ground_above": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "e1506218e260670dca91bcb8daf3a4b35f0a12e5a8a8d8982f7ffb95cfbdcc46"
+          },
+          "pairs": {
+            "shape": [
+              0,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "expected": {
+            "shape": [
+              0,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "lower": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "51d84c6b6d7b0f6123ce7997b563299318dc9b8886ead5fa4fea910e4724ee2b"
+          },
+          "upper": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "4ad70fbaed1570d9c40332d7bc6fa782f2eaed5a3da465124a7be8c05a996afa"
+          }
+        }
+      }
+    },
+    {
+      "ground_above": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "e1506218e260670dca91bcb8daf3a4b35f0a12e5a8a8d8982f7ffb95cfbdcc46"
+          },
+          "pairs": {
+            "shape": [
+              0,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "expected": {
+            "shape": [
+              0,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "lower": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "51d84c6b6d7b0f6123ce7997b563299318dc9b8886ead5fa4fea910e4724ee2b"
+          },
+          "upper": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "4ad70fbaed1570d9c40332d7bc6fa782f2eaed5a3da465124a7be8c05a996afa"
+          }
+        }
+      },
+      "ground_equal": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "07beff13bac22a6c49d1c68dd9c687b75a1f625ce0fecd305aeab418d7073810"
+          },
+          "pairs": {
+            "shape": [
+              0,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "expected": {
+            "shape": [
+              0,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "lower": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "515897750943cecfa27dba9c48c2b00ea43e6f1faa9f6c302aea1db4c85ee6f0"
+          },
+          "upper": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "f17a9cb114a7f3d200e1d7a51ab6dfb0965ada5d54180560ff87ff1ad228a29b"
+          }
+        }
+      },
+      "ground_below": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "02ba3afdfec5e163d19fb5974bf2aa448ab86eb297340c962352d5d9a6206787"
+          },
+          "pairs": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "5981693c8df83eea16da42a0f748facb299546688544a0c2887ed5ffbf086e86"
+          },
+          "expected": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "5981693c8df83eea16da42a0f748facb299546688544a0c2887ed5ffbf086e86"
+          },
+          "lower": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "38548b2bb13d5ce666b2ee195dd25724f2fad14450379bd0b33f6fc693c7dcbc"
+          },
+          "upper": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "b21b847701224d5c0cf51e1398750660c3315df3b4535d2898772834c07360b9"
+          }
+        }
+      },
+      "2_above": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "fd2e47efe38b1ff35afd8014cdc71cfac3dfd7cfc663d6b8d7ceabc8d472f13f"
+          },
+          "pairs": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "5981693c8df83eea16da42a0f748facb299546688544a0c2887ed5ffbf086e86"
+          },
+          "expected": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "5981693c8df83eea16da42a0f748facb299546688544a0c2887ed5ffbf086e86"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "c212453858b450f162284b8e407c08ca145544c5e53e128cc9890fbd37fe2ce4"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "b2325e054e18d05a860263cd2079bb9df84518c109d1b79c0c59e0ed6d96987f"
+          }
+        }
+      },
+      "2_equal": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "325d6076338d6ba154907ffffbd07e5554434e1d102cb9ebd6ed33631ef3ddb0"
+          },
+          "pairs": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "db9497531f0a39d8aadfd0cc228a5d4a798a6884d668a66afbfa7cd31d0b3bad"
+          },
+          "expected": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "db9497531f0a39d8aadfd0cc228a5d4a798a6884d668a66afbfa7cd31d0b3bad"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "d49881696d111151fca453ade0d41707e56dd525cc94a46458937a1fc9dc0dad"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "b1ef06c828b4835e56696aad0f103d7d3d5cbd94ece5f3e78f8ae10f787897ca"
+          }
+        }
+      },
+      "2_below": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "19b6a56a43b40fde97aaa46e83efc845c70d5cafdd7a9ea954dd0fab576254d0"
+          },
+          "pairs": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "db9497531f0a39d8aadfd0cc228a5d4a798a6884d668a66afbfa7cd31d0b3bad"
+          },
+          "expected": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "db9497531f0a39d8aadfd0cc228a5d4a798a6884d668a66afbfa7cd31d0b3bad"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "9e97075cc512288b506403c17aff7a2eb3ddb164297054a2a3f8f28e25bd78ef"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "b5795c6e74c148de5966ec4724cfe45a549319232ff693bf378174e0cb9397e3"
+          }
+        }
+      },
+      "1_above": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "66500ab5fadf444cc443f012a8be729dff28322f94600a9b528addb59a94af52"
+          },
+          "pairs": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "436cb44211f38427a44ef723d6e957ebc7e6bd4d1e0d13485a9ec999cb53accf"
+          },
+          "expected": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "436cb44211f38427a44ef723d6e957ebc7e6bd4d1e0d13485a9ec999cb53accf"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "583c33d7dd30912f390c3c850c998cb158dddc9a2032ceaf56b3dd4fd9bfd3d7"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "8ea9b048d9ac726a45cf3a3466be907b2ec9b0849ad824cc00f9774e51ffb72c"
+          }
+        }
+      },
+      "1_equal": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "784462c942a86ee3397f2253c9e7ffb52380aa0131bb43defb3a56ef2acb5fd4"
+          },
+          "pairs": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "expected": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "5b7a169c80ae0cdd468e2d4ff95d68f0a50216754ba99ebce15b6858a0b011d2"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "53caed2051e20af69e14943b99b9ab6e44eb5c597e064e353a787175851fed2e"
+          }
+        }
+      },
+      "1_below": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "62f074aa00e2e86c1c8764e48ce553545a0c82764041d878f0d92f5c5535e21d"
+          },
+          "pairs": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "expected": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "e04755734f46d2230126940b3250ce35799342fa460790da2e917268bfa67a58"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "d31d0e42ddfcadde27f504adb10e2f94b02fd3f522c675d5f7f7f05ad41bff42"
+          }
+        }
+      },
+      "0_above": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "2bc8efdd9535eb0bcf3a87aa8eb0f88f35bc27c2c96ff097a3c6a47143eb5462"
+          },
+          "pairs": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "436cb44211f38427a44ef723d6e957ebc7e6bd4d1e0d13485a9ec999cb53accf"
+          },
+          "expected": {
+            "shape": [
+              2,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "436cb44211f38427a44ef723d6e957ebc7e6bd4d1e0d13485a9ec999cb53accf"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "3941f0ba9242106c6c3b4f9f32c7a598328c5d2e26bb279455a8c4c757db920c"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "2ce8bb4b6128cf06094c741648726f0fa5b3a1e408eff934587d63aff99e3caf"
+          }
+        }
+      },
+      "0_equal": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "82808b850253cfa9d65c19aa9ccf41f1630c1797e47c3a9b487d188e96cc16ad"
+          },
+          "pairs": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "expected": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "a6c0de9f24d8cb06235b32df941b067358954d2236781bd1fb8b0c3d17739eb4"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "be27bc0f6e98330085add28c3472a5acef07088f09f6a66496d8aba96e4f1a2f"
+          }
+        }
+      },
+      "0_below": {
+        "exact": true,
+        "radius_exact": true,
+        "hashes": {
+          "points": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f4",
+            "sha256": "a6b4e0be3a15d73e9466ccad0efd9e8c493a0b21358743b9279751dff8f73836"
+          },
+          "pairs": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "expected": {
+            "shape": [
+              3,
+              2
+            ],
+            "dtype": "<i4",
+            "sha256": "7fd9a001aaa73d48309370bc0797cd3fcc909a6be300a0449d71bc14be3beb66"
+          },
+          "lower": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "c29234eb2d3bb621d988780ccea0ddce7327db450c3810aa8e7f08d5eab01a27"
+          },
+          "upper": {
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": "<f8",
+            "sha256": "8f27991e6dea44bd2644fffb24d8b0b3734588b07fccf7173e181950f94e7df1"
+          }
+        }
+      }
+    }
+  ]
+}

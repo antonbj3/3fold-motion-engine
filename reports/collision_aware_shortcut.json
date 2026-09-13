@@ -1,0 +1,15 @@
+{
+ "layer": "collision-aware shortcut (path post-processing)",
+ "raw_nodes": 88,
+ "raw_len": 25.595,
+ "shortcut_nodes": 4,
+ "shortcut_len": 17.057,
+ "pct_shorter": 33.4,
+ "shortcut_collision_free": true,
+ "safety_check_binds": true,
+ "blind_spline_dense_collisions": 0,
+ "blind_spline_sparse_collisions": 0,
+ "spline_samples": 300,
+ "note": "core: collision-CHECKED shortcutting is shorter AND safe + safety-check binds (not vacuous). blind-spline collision NOT reproduced this scenario/seed (reported honestly); checked smoothing is the right defense regardless (blind smoothing CAN corner-cut, density/scenario-dependent)",
+ "validated": true
+}

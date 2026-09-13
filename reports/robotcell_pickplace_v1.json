@@ -1,0 +1,827 @@
+{
+ "cell": "robotcell_pickplace_v1",
+ "urdf": "assets/robots/ur_description/ur10e.urdf",
+ "cellfil": "data/cells/synthetic_pickplace_cell_v1.json",
+ "robot": {
+  "verktygslangd_mm": 120.0,
+  "axelgranser_deg": [
+   [
+    -360.0,
+    360.0
+   ],
+   [
+    -360.0,
+    360.0
+   ],
+   [
+    -180.0,
+    180.0
+   ],
+   [
+    -360.0,
+    360.0
+   ],
+   [
+    -360.0,
+    360.0
+   ],
+   [
+    -360.0,
+    360.0
+   ]
+  ],
+  "axis_speed_dps": [
+   119.99999999999999,
+   119.99999999999999,
+   180.0,
+   180.0,
+   180.0,
+   180.0
+  ],
+  "programhastighet_andel_av_datablad": 0.3
+ },
+ "ansatshojd": {
+  "vald_mm": 150.0,
+  "prov": [
+   {
+    "hojd_mm": 150.0,
+    "nabar": true,
+    "ledmarginal_per_station_deg": [
+     74.9876,
+     71.6596,
+     74.9876,
+     102.138,
+     98.6624,
+     102.138
+    ]
+   }
+  ],
+  "motiv": "highest candidate with IK residual < 1e-6 mm for all stations"
+ },
+ "sekvens": {
+  "n_faser": 25,
+  "n_vagpunkter": 20,
+  "n_cykler": 3,
+  "n_sampel": 899,
+  "langd_s": 17.914,
+  "hz": 50.0,
+  "faser_sammanfattning": [
+   {
+    "index": 0,
+    "fran": "hem_start",
+    "till": "ansats_plock_0",
+    "typ": "LIN",
+    "t0_s": 0.0,
+    "t1_s": 1.817017
+   },
+   {
+    "index": 1,
+    "fran": "ansats_plock_0",
+    "till": "plock_0",
+    "typ": "LIN",
+    "t0_s": 1.817017,
+    "t1_s": 2.376557
+   },
+   {
+    "index": 2,
+    "fran": "plock_0",
+    "till": "plock_0",
+    "typ": "dwell",
+    "t0_s": 2.376557,
+    "t1_s": 2.776557
+   },
+   {
+    "index": 3,
+    "fran": "plock_0",
+    "till": "lyft_0",
+    "typ": "LIN",
+    "t0_s": 2.776557,
+    "t1_s": 3.336097
+   },
+   {
+    "index": 4,
+    "fran": "lyft_0",
+    "till": "ansats_lagg_0",
+    "typ": "LIN",
+    "t0_s": 3.336097,
+    "t1_s": 4.576211
+   },
+   {
+    "index": 5,
+    "fran": "ansats_lagg_0",
+    "till": "lagg_0",
+    "typ": "LIN",
+    "t0_s": 4.576211,
+    "t1_s": 5.067914
+   },
+   {
+    "index": 6,
+    "fran": "lagg_0",
+    "till": "lagg_0",
+    "typ": "dwell",
+    "t0_s": 5.067914,
+    "t1_s": 5.467914
+   },
+   {
+    "index": 7,
+    "fran": "lagg_0",
+    "till": "retur_0",
+    "typ": "LIN",
+    "t0_s": 5.467914,
+    "t1_s": 5.959617
+   },
+   {
+    "index": 8,
+    "fran": "retur_0",
+    "till": "ansats_plock_1",
+    "typ": "LIN",
+    "t0_s": 5.959617,
+    "t1_s": 7.396659
+   },
+   {
+    "index": 9,
+    "fran": "ansats_plock_1",
+    "till": "plock_1",
+    "typ": "LIN",
+    "t0_s": 7.396659,
+    "t1_s": 7.967877
+   },
+   {
+    "index": 10,
+    "fran": "plock_1",
+    "till": "plock_1",
+    "typ": "dwell",
+    "t0_s": 7.967877,
+    "t1_s": 8.367877
+   },
+   {
+    "index": 11,
+    "fran": "plock_1",
+    "till": "lyft_1",
+    "typ": "LIN",
+    "t0_s": 8.367877,
+    "t1_s": 8.939095
+   },
+   {
+    "index": 12,
+    "fran": "lyft_1",
+    "till": "ansats_lagg_1",
+    "typ": "LIN",
+    "t0_s": 8.939095,
+    "t1_s": 10.240618
+   },
+   {
+    "index": 13,
+    "fran": "ansats_lagg_1",
+    "till": "lagg_1",
+    "typ": "LIN",
+    "t0_s": 10.240618,
+    "t1_s": 10.737501
+   },
+   {
+    "index": 14,
+    "fran": "lagg_1",
+    "till": "lagg_1",
+    "typ": "dwell",
+    "t0_s": 10.737501,
+    "t1_s": 11.137501
+   },
+   {
+    "index": 15,
+    "fran": "lagg_1",
+    "till": "retur_1",
+    "typ": "LIN",
+    "t0_s": 11.137501,
+    "t1_s": 11.634384
+   },
+   {
+    "index": 16,
+    "fran": "retur_1",
+    "till": "ansats_plock_2",
+    "typ": "LIN",
+    "t0_s": 11.634384,
+    "t1_s": 12.761431
+   },
+   {
+    "index": 17,
+    "fran": "ansats_plock_2",
+    "till": "plock_2",
+    "typ": "LIN",
+    "t0_s": 12.761431,
+    "t1_s": 13.320971
+   },
+   {
+    "index": 18,
+    "fran": "plock_2",
+    "till": "plock_2",
+    "typ": "dwell",
+    "t0_s": 13.320971,
+    "t1_s": 13.720971
+   },
+   {
+    "index": 19,
+    "fran": "plock_2",
+    "till": "lyft_2",
+    "typ": "LIN",
+    "t0_s": 13.720971,
+    "t1_s": 14.280511
+   },
+   {
+    "index": 20,
+    "fran": "lyft_2",
+    "till": "ansats_lagg_2",
+    "typ": "LIN",
+    "t0_s": 14.280511,
+    "t1_s": 15.520625
+   },
+   {
+    "index": 21,
+    "fran": "ansats_lagg_2",
+    "till": "lagg_2",
+    "typ": "LIN",
+    "t0_s": 15.520625,
+    "t1_s": 16.012328
+   },
+   {
+    "index": 22,
+    "fran": "lagg_2",
+    "till": "lagg_2",
+    "typ": "dwell",
+    "t0_s": 16.012328,
+    "t1_s": 16.412328
+   },
+   {
+    "index": 23,
+    "fran": "lagg_2",
+    "till": "retur_2",
+    "typ": "LIN",
+    "t0_s": 16.412328,
+    "t1_s": 16.904031
+   },
+   {
+    "index": 24,
+    "fran": "retur_2",
+    "till": "hem_slut",
+    "typ": "LIN",
+    "t0_s": 16.904031,
+    "t1_s": 17.91373
+   }
+  ],
+  "lin_singularitetsmatt": {
+   "n_halveringar_totalt": 3,
+   "n_golvsteg_totalt": 0
+  }
+ },
+ "vagpunkter": [
+  {
+   "namn": "hem_start",
+   "typ": "pose",
+   "q_deg": [
+    0.0,
+    -90.0,
+    90.0,
+    -90.0,
+    -90.0,
+    0.0
+   ],
+   "tcp_mm": [
+    691.4,
+    174.15,
+    556.85
+   ],
+   "ik_res_mm": 0.0,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 90.0
+  },
+  {
+   "namn": "ansats_plock_0",
+   "typ": "ansats",
+   "q_deg": [
+    -34.886721,
+    -94.423957,
+    105.012445,
+    -100.588488,
+    -90.0,
+    -34.886721
+   ],
+   "tcp_mm": [
+    620.0,
+    -220.0,
+    450.0
+   ],
+   "ik_res_mm": 3.606310639398066e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 74.98755503351627
+  },
+  {
+   "namn": "plock_0",
+   "typ": "kontakt",
+   "q_deg": [
+    -34.886721,
+    -89.629239,
+    116.332482,
+    -116.703243,
+    -90.0,
+    -34.886721
+   ],
+   "tcp_mm": [
+    620.0,
+    -220.0,
+    300.0
+   ],
+   "ik_res_mm": 6.456171315449266e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 63.6675180898054
+  },
+  {
+   "namn": "lyft_0",
+   "typ": "ansats",
+   "q_deg": [
+    -34.886721,
+    -94.423957,
+    105.012445,
+    -100.588488,
+    -90.0,
+    -34.886721
+   ],
+   "tcp_mm": [
+    620.0,
+    -220.0,
+    450.0
+   ],
+   "ik_res_mm": 1.6077746776921858e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 74.98755503351505
+  },
+  {
+   "namn": "ansats_lagg_0",
+   "typ": "ansats",
+   "q_deg": [
+    -25.105126,
+    -70.613775,
+    77.861999,
+    -97.248223,
+    -90.0,
+    -25.105126
+   ],
+   "tcp_mm": [
+    880.0,
+    -220.0,
+    450.0
+   ],
+   "ik_res_mm": 2.1457920056692358e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 102.13800149072581
+  },
+  {
+   "namn": "lagg_0",
+   "typ": "kontakt",
+   "q_deg": [
+    -25.105126,
+    -67.117113,
+    88.526389,
+    -111.409277,
+    -90.0,
+    -25.105126
+   ],
+   "tcp_mm": [
+    880.0,
+    -220.0,
+    300.0
+   ],
+   "ik_res_mm": 5.51117393276437e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 91.47361073260839
+  },
+  {
+   "namn": "retur_0",
+   "typ": "ansats",
+   "q_deg": [
+    -25.105126,
+    -70.613775,
+    77.861999,
+    -97.248223,
+    -90.0,
+    -25.105126
+   ],
+   "tcp_mm": [
+    880.0,
+    -220.0,
+    450.0
+   ],
+   "ik_res_mm": 5.691442878088761e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 102.13800149072627
+  },
+  {
+   "namn": "ansats_plock_1",
+   "typ": "ansats",
+   "q_deg": [
+    -16.313157,
+    -98.204983,
+    108.340363,
+    -100.13538,
+    -90.0,
+    -16.313157
+   ],
+   "tcp_mm": [
+    620.0,
+    0.0,
+    450.0
+   ],
+   "ik_res_mm": 1.6377314007189343e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 71.65963732312525
+  },
+  {
+   "namn": "plock_1",
+   "typ": "kontakt",
+   "q_deg": [
+    -16.313157,
+    -93.361407,
+    119.947862,
+    -116.586455,
+    -90.0,
+    -16.313157
+   ],
+   "tcp_mm": [
+    620.0,
+    0.0,
+    300.0
+   ],
+   "ik_res_mm": 7.398456409616037e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 60.052138455038786
+  },
+  {
+   "namn": "lyft_1",
+   "typ": "ansats",
+   "q_deg": [
+    -16.313157,
+    -98.204983,
+    108.340363,
+    -100.13538,
+    -90.0,
+    -16.313157
+   ],
+   "tcp_mm": [
+    620.0,
+    0.0,
+    450.0
+   ],
+   "ik_res_mm": 8.170996907366508e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 71.65963732312561
+  },
+  {
+   "namn": "ansats_lagg_1",
+   "typ": "ansats",
+   "q_deg": [
+    -11.414051,
+    -73.215731,
+    81.337618,
+    -98.121888,
+    -90.0,
+    -11.414051
+   ],
+   "tcp_mm": [
+    880.0,
+    0.0,
+    450.0
+   ],
+   "ik_res_mm": 3.054871539622753e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 98.66238158212715
+  },
+  {
+   "namn": "lagg_1",
+   "typ": "kontakt",
+   "q_deg": [
+    -11.414051,
+    -69.5128,
+    91.94492,
+    -112.43212,
+    -90.0,
+    -11.414051
+   ],
+   "tcp_mm": [
+    880.0,
+    0.0,
+    300.0
+   ],
+   "ik_res_mm": 5.618663175668232e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 88.05508040821661
+  },
+  {
+   "namn": "retur_1",
+   "typ": "ansats",
+   "q_deg": [
+    -11.414051,
+    -73.215731,
+    81.337618,
+    -98.121888,
+    -90.0,
+    -11.414051
+   ],
+   "tcp_mm": [
+    880.0,
+    0.0,
+    450.0
+   ],
+   "ik_res_mm": 5.956020983109875e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 98.66238158213575
+  },
+  {
+   "namn": "ansats_plock_2",
+   "typ": "ansats",
+   "q_deg": [
+    4.186589,
+    -94.423957,
+    105.012445,
+    -100.588488,
+    -90.0,
+    4.186589
+   ],
+   "tcp_mm": [
+    620.0,
+    220.0,
+    450.0
+   ],
+   "ik_res_mm": 4.898108710339695e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 74.98755503818049
+  },
+  {
+   "namn": "plock_2",
+   "typ": "kontakt",
+   "q_deg": [
+    4.186589,
+    -89.629239,
+    116.332482,
+    -116.703243,
+    -90.0,
+    4.186589
+   ],
+   "tcp_mm": [
+    620.0,
+    220.0,
+    300.0
+   ],
+   "ik_res_mm": 4.696037092872503e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 63.66751809427777
+  },
+  {
+   "namn": "lyft_2",
+   "typ": "ansats",
+   "q_deg": [
+    4.186589,
+    -94.423957,
+    105.012445,
+    -100.588488,
+    -90.0,
+    4.186589
+   ],
+   "tcp_mm": [
+    620.0,
+    220.0,
+    450.0
+   ],
+   "ik_res_mm": 4.62671908852022e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 74.9875550381807
+  },
+  {
+   "namn": "ansats_lagg_2",
+   "typ": "ansats",
+   "q_deg": [
+    2.967361,
+    -70.613775,
+    77.861999,
+    -97.248223,
+    -90.0,
+    2.967361
+   ],
+   "tcp_mm": [
+    880.0,
+    220.0,
+    450.0
+   ],
+   "ik_res_mm": 2.5421149729252077e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 102.13800149500261
+  },
+  {
+   "namn": "lagg_2",
+   "typ": "kontakt",
+   "q_deg": [
+    2.967361,
+    -67.117113,
+    88.526389,
+    -111.409277,
+    -90.0,
+    2.967361
+   ],
+   "tcp_mm": [
+    880.0,
+    220.0,
+    300.0
+   ],
+   "ik_res_mm": 5.060341497586722e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 91.47361073644907
+  },
+  {
+   "namn": "retur_2",
+   "typ": "ansats",
+   "q_deg": [
+    2.967361,
+    -70.613775,
+    77.861999,
+    -97.248223,
+    -90.0,
+    2.967361
+   ],
+   "tcp_mm": [
+    880.0,
+    220.0,
+    450.0
+   ],
+   "ik_res_mm": 2.6812987050722663e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 102.13800149500216
+  },
+  {
+   "namn": "hem_slut",
+   "typ": "pose",
+   "q_deg": [
+    0.0,
+    -90.0,
+    90.0,
+    -90.0,
+    -90.0,
+    0.0
+   ],
+   "tcp_mm": [
+    691.4,
+    174.15,
+    556.85
+   ],
+   "ik_res_mm": 1.632702903446565e-13,
+   "ik_res_deg": 0.0,
+   "ledmarginal_deg": 90.00000000000006
+  }
+ ],
+ "gods": [
+  {
+   "instans": "amne_0",
+   "del": "amne_platta",
+   "massa_kg": 0.45,
+   "storlek_mm": [
+    80.0,
+    80.0,
+    12.0
+   ],
+   "t_grepp_s": 2.376557,
+   "t_slapp_s": 5.467914,
+   "foralder_fore": "inmatning_nest_0",
+   "foralder_efter": "utmatning_nest_0",
+   "vilo_topp_centrum_fore_mm": [
+    620.0,
+    -220.0,
+    300.0
+   ],
+   "vilo_topp_centrum_efter_mm": [
+    880.0,
+    -220.0,
+    300.0
+   ]
+  },
+  {
+   "instans": "amne_1",
+   "del": "amne_platta",
+   "massa_kg": 0.45,
+   "storlek_mm": [
+    80.0,
+    80.0,
+    12.0
+   ],
+   "t_grepp_s": 7.967877,
+   "t_slapp_s": 11.137501,
+   "foralder_fore": "inmatning_nest_1",
+   "foralder_efter": "utmatning_nest_1",
+   "vilo_topp_centrum_fore_mm": [
+    620.0,
+    0.0,
+    300.0
+   ],
+   "vilo_topp_centrum_efter_mm": [
+    880.0,
+    0.0,
+    300.0
+   ]
+  },
+  {
+   "instans": "amne_2",
+   "del": "amne_platta",
+   "massa_kg": 0.45,
+   "storlek_mm": [
+    80.0,
+    80.0,
+    12.0
+   ],
+   "t_grepp_s": 13.320971,
+   "t_slapp_s": 16.412328,
+   "foralder_fore": "inmatning_nest_2",
+   "foralder_efter": "utmatning_nest_2",
+   "vilo_topp_centrum_fore_mm": [
+    620.0,
+    220.0,
+    300.0
+   ],
+   "vilo_topp_centrum_efter_mm": [
+    880.0,
+    220.0,
+    300.0
+   ]
+  }
+ ],
+ "grindar": {
+  "grind1_ik": {
+   "max_ik_residual_mm": 8.170996907366508e-13,
+   "max_ik_residual_deg": 0.0,
+   "min_ledmarginal_deg": 60.052138455038786,
+   "varsta_axel": 2,
+   "gron": true
+  },
+  "grind2_kollision": {
+   "n_kollisioner": 0,
+   "kollisioner": [],
+   "positiv_kontroll_forskjutning_mm": -200.0,
+   "positiv_kontroll_n_kollisioner": 1325,
+   "diskriminerande": true,
+   "gron": true
+  },
+  "grind3_hastighet": {
+   "vmax_uppmatt_dps": [
+    35.99710190429453,
+    35.99431992997477,
+    41.835272385107494,
+    53.95720908663117,
+    5.770749920895567e-09,
+    35.99710190435618
+   ],
+   "vmax_datablad_dps": [
+    119.99999999999999,
+    119.99999999999999,
+    180.0,
+    180.0,
+    180.0,
+    180.0
+   ],
+   "kvot": [
+    0.29997584920245446,
+    0.29995266608312315,
+    0.23241817991726385,
+    0.29976227270350647,
+    3.205972178275315e-11,
+    0.19998389946864542
+   ],
+   "tak": 0.3,
+   "amax_uppmatt_dps2": [
+    98.24693320513435,
+    145.59713469460246,
+    288.2343574625425,
+    335.68734922772427,
+    2.484458347162372e-08,
+    98.24693320266003
+   ],
+   "gron": true
+  }
+ },
+ "alla_grindar_grona": true,
+ "sanningsmarkning": {
+  "MATT": [
+   "joint origins, axes, limits and velocity limits (URDF)",
+   "the approach height (the highest reachable candidate for all stations)",
+   "collision geometry (URDF collision meshes, per-part AABB)"
+  ],
+  "HARLEDD": [
+   "every waypoint (Newton IK on the same fk)",
+   "the LIN paths and the quintic time law",
+   "the singularity measure (step halvings and floor steps)"
+  ],
+  "KONSTRUERAT": [
+   "V_FRAC=0.3",
+   "DWELL_S=0.4",
+   "HZ=50.0",
+   "LIN_STEG_MM=20.0",
+   "LIN_MAX_DQ_RAD=0.209440",
+   "FALLBEVIS_MM=200.0",
+   "the cell definition (synthetic)"
+  ]
+ },
+ "sekunder": 1.49
+}

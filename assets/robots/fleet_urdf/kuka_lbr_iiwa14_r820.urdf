@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="lbr_iiwa14_r820">
+  
+  <ros2_control name="lbr_iiwa14_r820" type="system">
+    <hardware>
+      <plugin>kuka_sunrise_fri_driver::KukaFRIHardwareInterface</plugin>
+      <param name="controller_ip">0.0.0.0</param>
+      <param name="client_ip">0.0.0.0</param>
+      <param name="client_port">30200</param>
+    </hardware>
+    
+    <joint name="joint_1">
+      <command_interface name="position" />
+      <command_interface name="stiffness" />
+      <command_interface name="damping" />
+      <command_interface name="effort" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="effort">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="external_torque">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="commanded_position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_2">
+      <command_interface name="position" />
+      <command_interface name="stiffness" />
+      <command_interface name="damping" />
+      <command_interface name="effort" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="effort">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="external_torque">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="commanded_position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_3">
+      <command_interface name="position" />
+      <command_interface name="stiffness" />
+      <command_interface name="damping" />
+      <command_interface name="effort" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="effort">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="external_torque">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="commanded_position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_4">
+      <command_interface name="position" />
+      <command_interface name="stiffness" />
+      <command_interface name="damping" />
+      <command_interface name="effort" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="effort">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="external_torque">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="commanded_position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_5">
+      <command_interface name="position" />
+      <command_interface name="stiffness" />
+      <command_interface name="damping" />
+      <command_interface name="effort" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="effort">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="external_torque">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="commanded_position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_6">
+      <command_interface name="position" />
+      <command_interface name="stiffness" />
+      <command_interface name="damping" />
+      <command_interface name="effort" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="effort">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="external_torque">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="commanded_position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_7">
+      <command_interface name="position" />
+      <command_interface name="stiffness" />
+      <command_interface name="damping" />
+      <command_interface name="effort" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="effort">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="external_torque">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="commanded_position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <gpio name="gpio" />
+  </ros2_control>
+  
+  <link name="world"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.0129666 -2.9326505e-06 0.072276553" rpy="0 0 0" /><mass value="7.1097514" /><inertia ixx="0.029411411" iyy="0.037492418" izz="0.040648634" ixy="-1.3890043e-05" ixz="0.00077970996" iyz="1.9272955e-06" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/visual/base_link.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+    <collision>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="-2.8863063e-06 -0.033767045 0.1217942" rpy="0 0 0" /><mass value="5.3968277" /><inertia ixx="0.041991714" iyy="0.04224486" izz="0.01530404" ixy="3.1317478e-07" ixz="1.7888224e-06" iyz="0.0062949588" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/visual/link_1.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+    <collision>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/collision/link_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="-0.00020328281 0.041852183 0.058858145" rpy="0 0 0" /><mass value="5.1709175" /><inertia ixx="0.038685553" iyy="0.038452771" izz="0.013664051" ixy="-1.923912e-05" ixz="3.4483924e-05" iyz="0.0060734701" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/visual/link_2.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+    <collision>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/collision/link_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="-1.2423761e-05 0.02975628 0.12494782" rpy="0 0 0" /><mass value="4.0617795" /><inertia ixx="0.03082441" iyy="0.029156877" izz="0.0091290179" ixy="1.7189407e-06" ixz="-1.5602341e-06" iyz="-0.0062084687" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/visual/link_3.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+    <collision>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/collision/link_3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="-4.628225e-05 -0.034432384 0.068276746" rpy="0 0 0" /><mass value="3.502162" /><inertia ixx="0.021072905" iyy="0.020019707" izz="0.0073045343" ixy="1.6379037e-06" ixz="7.3524535e-06" iyz="-0.003560299" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/visual/link_4.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+    <collision>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/collision/link_4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="-7.9147057e-05 -0.019115239 0.06906452" rpy="0 0 0" /><mass value="2.0390754" /><inertia ixx="0.01028392" iyy="0.008753005" izz="0.0048808275" ixy="4.4809732e-06" ixz="-4.4226998e-06" iyz="0.0031685079" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/visual/link_5.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+    <collision>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/collision/link_5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="3.8496645e-05 0.00016269502 0.0010344509" rpy="0 0 0" /><mass value="2.2891206" /><inertia ixx="0.0058508385" iyy="0.0055803562" izz="0.0042180852" ixy="-1.1316792e-06" ixz="4.9194124e-06" iyz="0.0002973712" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/visual/link_6.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+    <collision>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/collision/link_6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_7">
+    <inertial><origin xyz="3.0828085e-05 -1.3263593e-05 0.016513557" rpy="0 0 0" /><mass value="0.33036582" /><inertia ixx="0.00018968497" iyy="0.0001899034" izz="0.00027814716" ixy="3.8928722e-07" ixz="2.5564858e-08" iyz="1.3103791e-07" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/visual/link_7.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+    <collision>
+      <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="package://kuka_lbr_iiwa_support/meshes/lbr_iiwa14_r820/collision/link_7.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="joint_1" type="revolute">
+    <parent link="base_link" />
+    <child link="link_1" />
+    <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.1575" />
+    <axis xyz="0.0 0.0 1.0" />
+    <limit effort="0" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="1.4835298641951802" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <parent link="link_1" />
+    <child link="link_2" />
+    <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.2025" />
+    <axis xyz="0.0 1.0 0.0" />
+    <limit effort="0" lower="-2.0943951023931953" upper="2.0943951023931953" velocity="1.4835298641951802" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <parent link="link_2" />
+    <child link="link_3" />
+    <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.2045" />
+    <axis xyz="0.0 0.0 1.0" />
+    <limit effort="0" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="1.7453292519943295" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <parent link="link_3" />
+    <child link="link_4" />
+    <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.2155" />
+    <axis xyz="0.0 -1.0 0.0" />
+    <limit effort="0" lower="-2.0943951023931953" upper="2.0943951023931953" velocity="1.3089969389957472" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <parent link="link_4" />
+    <child link="link_5" />
+    <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.1845" />
+    <axis xyz="0.0 0.0 1.0" />
+    <limit effort="0" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="2.2689280275926285" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <parent link="link_5" />
+    <child link="link_6" />
+    <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.2155" />
+    <axis xyz="0.0 1.0 0.0" />
+    <limit effort="0" lower="-2.0943951023931953" upper="2.0943951023931953" velocity="2.356194490192345" />
+  </joint>
+  <joint name="joint_7" type="revolute">
+    <parent link="link_6" />
+    <child link="link_7" />
+    <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.081" />
+    <axis xyz="0.0 0.0 1.0" />
+    <limit effort="0" lower="-3.0543261909900767" upper="3.0543261909900767" velocity="2.356194490192345" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link7-flange" type="fixed">
+    <parent link="link_7" />
+    <child link="flange" />
+    <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.071" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link7-tool0" type="fixed">
+    <parent link="link_7" />
+    <child link="tool0" />
+    <origin rpy="-0.0 0.0 0.0" xyz="0.0 0.0 0.071" />
+  </joint>
+  
+  <joint name="world-base_link" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+</robot>

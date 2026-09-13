@@ -1,0 +1,23 @@
+{
+ "layer": "smooth (C2) AND collision-validated trajectory (independently gated layer)",
+ "robot": "UR10e",
+ "rrt_waypoints": 43,
+ "shortcut_waypoints": 3,
+ "naive_blend_collides": true,
+ "naive_collision_samples": 64,
+ "final_knots": 4,
+ "knots_inserted": 1,
+ "final_collision_free": true,
+ "final_collision_samples": 0,
+ "time_s": 5.943,
+ "effort_real": true,
+ "min_interior_knot_speed": 1.1915,
+ "peak_vel_ratio": 0.652,
+ "smooth_C2": true,
+ "collision_validated": true,
+ "time_parametrizable": true,
+ "genuinely_smooth": true,
+ "corner_cut_fix_binds": true,
+ "note": "combines collision_aware_shortcut (safe) + cubic blend (smooth) + dense collision RE-validation + knot-insertion until smooth path collision-free; closes the smooth+safe gap",
+ "validated": true
+}

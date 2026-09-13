@@ -1,0 +1,1679 @@
+{
+  "pair_trace": [
+    {
+      "slot": 0,
+      "target": "nrm",
+      "component": 0,
+      "expression": "cn[c]",
+      "source_line": 441
+    },
+    {
+      "slot": 1,
+      "target": "nrm",
+      "component": 1,
+      "expression": "cn[c]",
+      "source_line": 441
+    },
+    {
+      "slot": 2,
+      "target": "nrm",
+      "component": 2,
+      "expression": "cn[c]",
+      "source_line": 441
+    },
+    {
+      "slot": 3,
+      "target": "rA",
+      "component": 0,
+      "expression": "cpA[c] - xc[bi]",
+      "source_line": 441
+    },
+    {
+      "slot": 4,
+      "target": "rA",
+      "component": 1,
+      "expression": "cpA[c] - xc[bi]",
+      "source_line": 441
+    },
+    {
+      "slot": 5,
+      "target": "rA",
+      "component": 2,
+      "expression": "cpA[c] - xc[bi]",
+      "source_line": 441
+    },
+    {
+      "slot": 6,
+      "target": "va",
+      "component": 0,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 442
+    },
+    {
+      "slot": 7,
+      "target": "va",
+      "component": 1,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 442
+    },
+    {
+      "slot": 8,
+      "target": "va",
+      "component": 2,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 442
+    },
+    {
+      "slot": 9,
+      "target": "vb",
+      "component": 0,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 443
+    },
+    {
+      "slot": 10,
+      "target": "vb",
+      "component": 1,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 443
+    },
+    {
+      "slot": 11,
+      "target": "vb",
+      "component": 2,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 443
+    },
+    {
+      "slot": 12,
+      "target": "rB",
+      "component": 0,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 443
+    },
+    {
+      "slot": 13,
+      "target": "rB",
+      "component": 1,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 443
+    },
+    {
+      "slot": 14,
+      "target": "rB",
+      "component": 2,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 443
+    },
+    {
+      "slot": 15,
+      "target": "rB",
+      "component": 0,
+      "expression": "cpB[c] - xc[bj]",
+      "source_line": 445
+    },
+    {
+      "slot": 16,
+      "target": "rB",
+      "component": 1,
+      "expression": "cpB[c] - xc[bj]",
+      "source_line": 445
+    },
+    {
+      "slot": 17,
+      "target": "rB",
+      "component": 2,
+      "expression": "cpB[c] - xc[bj]",
+      "source_line": 445
+    },
+    {
+      "slot": 18,
+      "target": "vb",
+      "component": 0,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 445
+    },
+    {
+      "slot": 19,
+      "target": "vb",
+      "component": 1,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 445
+    },
+    {
+      "slot": 20,
+      "target": "vb",
+      "component": 2,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 445
+    },
+    {
+      "slot": 21,
+      "target": "vrel",
+      "component": 0,
+      "expression": "va - vb",
+      "source_line": 446
+    },
+    {
+      "slot": 22,
+      "target": "vrel",
+      "component": 1,
+      "expression": "va - vb",
+      "source_line": 446
+    },
+    {
+      "slot": 23,
+      "target": "vrel",
+      "component": 2,
+      "expression": "va - vb",
+      "source_line": 446
+    },
+    {
+      "slot": 24,
+      "target": "vn",
+      "component": 0,
+      "expression": "wp.dot(vrel, nrm)",
+      "source_line": 446
+    },
+    {
+      "slot": 25,
+      "target": "vt",
+      "component": 0,
+      "expression": "vrel - vn * nrm",
+      "source_line": 446
+    },
+    {
+      "slot": 26,
+      "target": "vt",
+      "component": 1,
+      "expression": "vrel - vn * nrm",
+      "source_line": 446
+    },
+    {
+      "slot": 27,
+      "target": "vt",
+      "component": 2,
+      "expression": "vrel - vn * nrm",
+      "source_line": 446
+    },
+    {
+      "slot": 28,
+      "target": "mt",
+      "component": 0,
+      "expression": "wp.length(vt)",
+      "source_line": 446
+    },
+    {
+      "slot": 29,
+      "target": "t1",
+      "component": 0,
+      "expression": "vt / mt",
+      "source_line": 447
+    },
+    {
+      "slot": 30,
+      "target": "t1",
+      "component": 1,
+      "expression": "vt / mt",
+      "source_line": 447
+    },
+    {
+      "slot": 31,
+      "target": "t1",
+      "component": 2,
+      "expression": "vt / mt",
+      "source_line": 447
+    },
+    {
+      "slot": 32,
+      "target": "aa",
+      "component": 0,
+      "expression": "wp.vec3(1.0, 0.0, 0.0)",
+      "source_line": 449
+    },
+    {
+      "slot": 33,
+      "target": "aa",
+      "component": 1,
+      "expression": "wp.vec3(1.0, 0.0, 0.0)",
+      "source_line": 449
+    },
+    {
+      "slot": 34,
+      "target": "aa",
+      "component": 2,
+      "expression": "wp.vec3(1.0, 0.0, 0.0)",
+      "source_line": 449
+    },
+    {
+      "slot": 35,
+      "target": "aa",
+      "component": 0,
+      "expression": "wp.vec3(0.0, 1.0, 0.0)",
+      "source_line": 451
+    },
+    {
+      "slot": 36,
+      "target": "aa",
+      "component": 1,
+      "expression": "wp.vec3(0.0, 1.0, 0.0)",
+      "source_line": 451
+    },
+    {
+      "slot": 37,
+      "target": "aa",
+      "component": 2,
+      "expression": "wp.vec3(0.0, 1.0, 0.0)",
+      "source_line": 451
+    },
+    {
+      "slot": 38,
+      "target": "t1",
+      "component": 0,
+      "expression": "wp.normalize(aa - wp.dot(aa, nrm) * nrm)",
+      "source_line": 452
+    },
+    {
+      "slot": 39,
+      "target": "t1",
+      "component": 1,
+      "expression": "wp.normalize(aa - wp.dot(aa, nrm) * nrm)",
+      "source_line": 452
+    },
+    {
+      "slot": 40,
+      "target": "t1",
+      "component": 2,
+      "expression": "wp.normalize(aa - wp.dot(aa, nrm) * nrm)",
+      "source_line": 452
+    },
+    {
+      "slot": 41,
+      "target": "t2",
+      "component": 0,
+      "expression": "wp.cross(nrm, t1)",
+      "source_line": 453
+    },
+    {
+      "slot": 42,
+      "target": "t2",
+      "component": 1,
+      "expression": "wp.cross(nrm, t1)",
+      "source_line": 453
+    },
+    {
+      "slot": 43,
+      "target": "t2",
+      "component": 2,
+      "expression": "wp.cross(nrm, t1)",
+      "source_line": 453
+    },
+    {
+      "slot": 44,
+      "target": "rnA",
+      "component": 0,
+      "expression": "wp.cross(rA, nrm)",
+      "source_line": 454
+    },
+    {
+      "slot": 45,
+      "target": "rnA",
+      "component": 1,
+      "expression": "wp.cross(rA, nrm)",
+      "source_line": 454
+    },
+    {
+      "slot": 46,
+      "target": "rnA",
+      "component": 2,
+      "expression": "wp.cross(rA, nrm)",
+      "source_line": 454
+    },
+    {
+      "slot": 47,
+      "target": "meff",
+      "component": 0,
+      "expression": "iMA + wp.dot(rnA, IA * rnA)",
+      "source_line": 454
+    },
+    {
+      "slot": 48,
+      "target": "rnB",
+      "component": 0,
+      "expression": "wp.cross(rB, nrm)",
+      "source_line": 456
+    },
+    {
+      "slot": 49,
+      "target": "rnB",
+      "component": 1,
+      "expression": "wp.cross(rB, nrm)",
+      "source_line": 456
+    },
+    {
+      "slot": 50,
+      "target": "rnB",
+      "component": 2,
+      "expression": "wp.cross(rB, nrm)",
+      "source_line": 456
+    },
+    {
+      "slot": 51,
+      "target": "meff",
+      "component": 0,
+      "expression": "meff + iMB + wp.dot(rnB, IB * rnB)",
+      "source_line": 456
+    },
+    {
+      "slot": 52,
+      "target": "dj",
+      "component": 0,
+      "expression": "-vn / meff",
+      "source_line": 458
+    },
+    {
+      "slot": 53,
+      "target": "nw",
+      "component": 0,
+      "expression": "wp.max(0.0, jn[c] + dj)",
+      "source_line": 458
+    },
+    {
+      "slot": 54,
+      "target": "dj",
+      "component": 0,
+      "expression": "nw - jn[c]",
+      "source_line": 458
+    },
+    {
+      "slot": 55,
+      "target": "Jn",
+      "component": 0,
+      "expression": "dj * nrm",
+      "source_line": 458
+    },
+    {
+      "slot": 56,
+      "target": "Jn",
+      "component": 1,
+      "expression": "dj * nrm",
+      "source_line": 458
+    },
+    {
+      "slot": 57,
+      "target": "Jn",
+      "component": 2,
+      "expression": "dj * nrm",
+      "source_line": 458
+    },
+    {
+      "slot": 58,
+      "target": "vA",
+      "component": 0,
+      "expression": "vA + Jn * iMA",
+      "source_line": 460
+    },
+    {
+      "slot": 59,
+      "target": "vA",
+      "component": 1,
+      "expression": "vA + Jn * iMA",
+      "source_line": 460
+    },
+    {
+      "slot": 60,
+      "target": "vA",
+      "component": 2,
+      "expression": "vA + Jn * iMA",
+      "source_line": 460
+    },
+    {
+      "slot": 61,
+      "target": "wA",
+      "component": 0,
+      "expression": "wA + IA * wp.cross(rA, Jn)",
+      "source_line": 460
+    },
+    {
+      "slot": 62,
+      "target": "wA",
+      "component": 1,
+      "expression": "wA + IA * wp.cross(rA, Jn)",
+      "source_line": 460
+    },
+    {
+      "slot": 63,
+      "target": "wA",
+      "component": 2,
+      "expression": "wA + IA * wp.cross(rA, Jn)",
+      "source_line": 460
+    },
+    {
+      "slot": 64,
+      "target": "vB",
+      "component": 0,
+      "expression": "vB - Jn * iMB",
+      "source_line": 463
+    },
+    {
+      "slot": 65,
+      "target": "vB",
+      "component": 1,
+      "expression": "vB - Jn * iMB",
+      "source_line": 463
+    },
+    {
+      "slot": 66,
+      "target": "vB",
+      "component": 2,
+      "expression": "vB - Jn * iMB",
+      "source_line": 463
+    },
+    {
+      "slot": 67,
+      "target": "wB",
+      "component": 0,
+      "expression": "wB - IB * wp.cross(rB, Jn)",
+      "source_line": 463
+    },
+    {
+      "slot": 68,
+      "target": "wB",
+      "component": 1,
+      "expression": "wB - IB * wp.cross(rB, Jn)",
+      "source_line": 463
+    },
+    {
+      "slot": 69,
+      "target": "wB",
+      "component": 2,
+      "expression": "wB - IB * wp.cross(rB, Jn)",
+      "source_line": 463
+    },
+    {
+      "slot": 70,
+      "target": "va",
+      "component": 0,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 464
+    },
+    {
+      "slot": 71,
+      "target": "va",
+      "component": 1,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 464
+    },
+    {
+      "slot": 72,
+      "target": "va",
+      "component": 2,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 464
+    },
+    {
+      "slot": 73,
+      "target": "vb",
+      "component": 0,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 464
+    },
+    {
+      "slot": 74,
+      "target": "vb",
+      "component": 1,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 464
+    },
+    {
+      "slot": 75,
+      "target": "vb",
+      "component": 2,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 464
+    },
+    {
+      "slot": 76,
+      "target": "vb",
+      "component": 0,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 466
+    },
+    {
+      "slot": 77,
+      "target": "vb",
+      "component": 1,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 466
+    },
+    {
+      "slot": 78,
+      "target": "vb",
+      "component": 2,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 466
+    },
+    {
+      "slot": 79,
+      "target": "vrel",
+      "component": 0,
+      "expression": "va - vb",
+      "source_line": 467
+    },
+    {
+      "slot": 80,
+      "target": "vrel",
+      "component": 1,
+      "expression": "va - vb",
+      "source_line": 467
+    },
+    {
+      "slot": 81,
+      "target": "vrel",
+      "component": 2,
+      "expression": "va - vb",
+      "source_line": 467
+    },
+    {
+      "slot": 82,
+      "target": "rtA1",
+      "component": 0,
+      "expression": "wp.cross(rA, t1)",
+      "source_line": 468
+    },
+    {
+      "slot": 83,
+      "target": "rtA1",
+      "component": 1,
+      "expression": "wp.cross(rA, t1)",
+      "source_line": 468
+    },
+    {
+      "slot": 84,
+      "target": "rtA1",
+      "component": 2,
+      "expression": "wp.cross(rA, t1)",
+      "source_line": 468
+    },
+    {
+      "slot": 85,
+      "target": "meft1",
+      "component": 0,
+      "expression": "iMA + wp.dot(rtA1, IA * rtA1)",
+      "source_line": 468
+    },
+    {
+      "slot": 86,
+      "target": "rtA2",
+      "component": 0,
+      "expression": "wp.cross(rA, t2)",
+      "source_line": 469
+    },
+    {
+      "slot": 87,
+      "target": "rtA2",
+      "component": 1,
+      "expression": "wp.cross(rA, t2)",
+      "source_line": 469
+    },
+    {
+      "slot": 88,
+      "target": "rtA2",
+      "component": 2,
+      "expression": "wp.cross(rA, t2)",
+      "source_line": 469
+    },
+    {
+      "slot": 89,
+      "target": "meft2",
+      "component": 0,
+      "expression": "iMA + wp.dot(rtA2, IA * rtA2)",
+      "source_line": 469
+    },
+    {
+      "slot": 90,
+      "target": "rtB1",
+      "component": 0,
+      "expression": "wp.cross(rB, t1)",
+      "source_line": 471
+    },
+    {
+      "slot": 91,
+      "target": "rtB1",
+      "component": 1,
+      "expression": "wp.cross(rB, t1)",
+      "source_line": 471
+    },
+    {
+      "slot": 92,
+      "target": "rtB1",
+      "component": 2,
+      "expression": "wp.cross(rB, t1)",
+      "source_line": 471
+    },
+    {
+      "slot": 93,
+      "target": "meft1",
+      "component": 0,
+      "expression": "meft1 + iMB + wp.dot(rtB1, IB * rtB1)",
+      "source_line": 471
+    },
+    {
+      "slot": 94,
+      "target": "rtB2",
+      "component": 0,
+      "expression": "wp.cross(rB, t2)",
+      "source_line": 472
+    },
+    {
+      "slot": 95,
+      "target": "rtB2",
+      "component": 1,
+      "expression": "wp.cross(rB, t2)",
+      "source_line": 472
+    },
+    {
+      "slot": 96,
+      "target": "rtB2",
+      "component": 2,
+      "expression": "wp.cross(rB, t2)",
+      "source_line": 472
+    },
+    {
+      "slot": 97,
+      "target": "meft2",
+      "component": 0,
+      "expression": "meft2 + iMB + wp.dot(rtB2, IB * rtB2)",
+      "source_line": 472
+    },
+    {
+      "slot": 98,
+      "target": "o1",
+      "component": 0,
+      "expression": "jt1[c]",
+      "source_line": 475
+    },
+    {
+      "slot": 99,
+      "target": "o2",
+      "component": 0,
+      "expression": "jt2[c]",
+      "source_line": 475
+    },
+    {
+      "slot": 100,
+      "target": "a1",
+      "component": 0,
+      "expression": "o1 - wp.dot(vrel, t1) / meft1",
+      "source_line": 476
+    },
+    {
+      "slot": 101,
+      "target": "a2",
+      "component": 0,
+      "expression": "o2 - wp.dot(vrel, t2) / meft2",
+      "source_line": 476
+    },
+    {
+      "slot": 102,
+      "target": "mag",
+      "component": 0,
+      "expression": "wp.sqrt(a1 * a1 + a2 * a2)",
+      "source_line": 477
+    },
+    {
+      "slot": 103,
+      "target": "lim",
+      "component": 0,
+      "expression": "mu * jn[c]",
+      "source_line": 477
+    },
+    {
+      "slot": 104,
+      "target": "a1",
+      "component": 0,
+      "expression": "a1 * lim / mag",
+      "source_line": 479
+    },
+    {
+      "slot": 105,
+      "target": "a2",
+      "component": 0,
+      "expression": "a2 * lim / mag",
+      "source_line": 479
+    },
+    {
+      "slot": 106,
+      "target": "Jt",
+      "component": 0,
+      "expression": "(a1 - o1) * t1 + t2d * (a2 - o2) * t2",
+      "source_line": 480
+    },
+    {
+      "slot": 107,
+      "target": "Jt",
+      "component": 1,
+      "expression": "(a1 - o1) * t1 + t2d * (a2 - o2) * t2",
+      "source_line": 480
+    },
+    {
+      "slot": 108,
+      "target": "Jt",
+      "component": 2,
+      "expression": "(a1 - o1) * t1 + t2d * (a2 - o2) * t2",
+      "source_line": 480
+    },
+    {
+      "slot": 109,
+      "target": "vA",
+      "component": 0,
+      "expression": "vA + Jt * iMA",
+      "source_line": 482
+    },
+    {
+      "slot": 110,
+      "target": "vA",
+      "component": 1,
+      "expression": "vA + Jt * iMA",
+      "source_line": 482
+    },
+    {
+      "slot": 111,
+      "target": "vA",
+      "component": 2,
+      "expression": "vA + Jt * iMA",
+      "source_line": 482
+    },
+    {
+      "slot": 112,
+      "target": "wA",
+      "component": 0,
+      "expression": "wA + IA * wp.cross(rA, Jt)",
+      "source_line": 482
+    },
+    {
+      "slot": 113,
+      "target": "wA",
+      "component": 1,
+      "expression": "wA + IA * wp.cross(rA, Jt)",
+      "source_line": 482
+    },
+    {
+      "slot": 114,
+      "target": "wA",
+      "component": 2,
+      "expression": "wA + IA * wp.cross(rA, Jt)",
+      "source_line": 482
+    },
+    {
+      "slot": 115,
+      "target": "vB",
+      "component": 0,
+      "expression": "vB - Jt * iMB",
+      "source_line": 485
+    },
+    {
+      "slot": 116,
+      "target": "vB",
+      "component": 1,
+      "expression": "vB - Jt * iMB",
+      "source_line": 485
+    },
+    {
+      "slot": 117,
+      "target": "vB",
+      "component": 2,
+      "expression": "vB - Jt * iMB",
+      "source_line": 485
+    },
+    {
+      "slot": 118,
+      "target": "wB",
+      "component": 0,
+      "expression": "wB - IB * wp.cross(rB, Jt)",
+      "source_line": 485
+    },
+    {
+      "slot": 119,
+      "target": "wB",
+      "component": 1,
+      "expression": "wB - IB * wp.cross(rB, Jt)",
+      "source_line": 485
+    },
+    {
+      "slot": 120,
+      "target": "wB",
+      "component": 2,
+      "expression": "wB - IB * wp.cross(rB, Jt)",
+      "source_line": 485
+    }
+  ],
+  "fixed_trace": [
+    {
+      "slot": 0,
+      "target": "nrm",
+      "component": 0,
+      "expression": "cn[c]",
+      "source_line": 30
+    },
+    {
+      "slot": 1,
+      "target": "nrm",
+      "component": 1,
+      "expression": "cn[c]",
+      "source_line": 30
+    },
+    {
+      "slot": 2,
+      "target": "nrm",
+      "component": 2,
+      "expression": "cn[c]",
+      "source_line": 30
+    },
+    {
+      "slot": 3,
+      "target": "rA",
+      "component": 0,
+      "expression": "cpA[c] - xc[bi]",
+      "source_line": 30
+    },
+    {
+      "slot": 4,
+      "target": "rA",
+      "component": 1,
+      "expression": "cpA[c] - xc[bi]",
+      "source_line": 30
+    },
+    {
+      "slot": 5,
+      "target": "rA",
+      "component": 2,
+      "expression": "cpA[c] - xc[bi]",
+      "source_line": 30
+    },
+    {
+      "slot": 6,
+      "target": "va",
+      "component": 0,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 31
+    },
+    {
+      "slot": 7,
+      "target": "va",
+      "component": 1,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 31
+    },
+    {
+      "slot": 8,
+      "target": "va",
+      "component": 2,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 31
+    },
+    {
+      "slot": 9,
+      "target": "vb",
+      "component": 0,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 32
+    },
+    {
+      "slot": 10,
+      "target": "vb",
+      "component": 1,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 32
+    },
+    {
+      "slot": 11,
+      "target": "vb",
+      "component": 2,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 32
+    },
+    {
+      "slot": 12,
+      "target": "rB",
+      "component": 0,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 32
+    },
+    {
+      "slot": 13,
+      "target": "rB",
+      "component": 1,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 32
+    },
+    {
+      "slot": 14,
+      "target": "rB",
+      "component": 2,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 32
+    },
+    {
+      "slot": 15,
+      "target": "rB",
+      "component": 0,
+      "expression": "cpB[c] - xc[bj]",
+      "source_line": 34
+    },
+    {
+      "slot": 16,
+      "target": "rB",
+      "component": 1,
+      "expression": "cpB[c] - xc[bj]",
+      "source_line": 34
+    },
+    {
+      "slot": 17,
+      "target": "rB",
+      "component": 2,
+      "expression": "cpB[c] - xc[bj]",
+      "source_line": 34
+    },
+    {
+      "slot": 18,
+      "target": "vb",
+      "component": 0,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 34
+    },
+    {
+      "slot": 19,
+      "target": "vb",
+      "component": 1,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 34
+    },
+    {
+      "slot": 20,
+      "target": "vb",
+      "component": 2,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 34
+    },
+    {
+      "slot": 21,
+      "target": "vrel",
+      "component": 0,
+      "expression": "va - vb",
+      "source_line": 35
+    },
+    {
+      "slot": 22,
+      "target": "vrel",
+      "component": 1,
+      "expression": "va - vb",
+      "source_line": 35
+    },
+    {
+      "slot": 23,
+      "target": "vrel",
+      "component": 2,
+      "expression": "va - vb",
+      "source_line": 35
+    },
+    {
+      "slot": 24,
+      "target": "vn",
+      "component": 0,
+      "expression": "wp.dot(vrel, nrm)",
+      "source_line": 35
+    },
+    {
+      "slot": 25,
+      "target": "vt",
+      "component": 0,
+      "expression": "vrel - vn * nrm",
+      "source_line": 35
+    },
+    {
+      "slot": 26,
+      "target": "vt",
+      "component": 1,
+      "expression": "vrel - vn * nrm",
+      "source_line": 35
+    },
+    {
+      "slot": 27,
+      "target": "vt",
+      "component": 2,
+      "expression": "vrel - vn * nrm",
+      "source_line": 35
+    },
+    {
+      "slot": 28,
+      "target": "mt",
+      "component": 0,
+      "expression": "wp.length(vt)",
+      "source_line": 35
+    },
+    {
+      "slot": 29,
+      "target": "aa",
+      "component": 0,
+      "expression": "wp.vec3(1.0, 0.0, 0.0)",
+      "source_line": 36
+    },
+    {
+      "slot": 30,
+      "target": "aa",
+      "component": 1,
+      "expression": "wp.vec3(1.0, 0.0, 0.0)",
+      "source_line": 36
+    },
+    {
+      "slot": 31,
+      "target": "aa",
+      "component": 2,
+      "expression": "wp.vec3(1.0, 0.0, 0.0)",
+      "source_line": 36
+    },
+    {
+      "slot": 32,
+      "target": "aa",
+      "component": 0,
+      "expression": "wp.vec3(0.0, 1.0, 0.0)",
+      "source_line": 38
+    },
+    {
+      "slot": 33,
+      "target": "aa",
+      "component": 1,
+      "expression": "wp.vec3(0.0, 1.0, 0.0)",
+      "source_line": 38
+    },
+    {
+      "slot": 34,
+      "target": "aa",
+      "component": 2,
+      "expression": "wp.vec3(0.0, 1.0, 0.0)",
+      "source_line": 38
+    },
+    {
+      "slot": 35,
+      "target": "t1",
+      "component": 0,
+      "expression": "wp.normalize(aa - wp.dot(aa, nrm) * nrm)",
+      "source_line": 39
+    },
+    {
+      "slot": 36,
+      "target": "t1",
+      "component": 1,
+      "expression": "wp.normalize(aa - wp.dot(aa, nrm) * nrm)",
+      "source_line": 39
+    },
+    {
+      "slot": 37,
+      "target": "t1",
+      "component": 2,
+      "expression": "wp.normalize(aa - wp.dot(aa, nrm) * nrm)",
+      "source_line": 39
+    },
+    {
+      "slot": 38,
+      "target": "t2",
+      "component": 0,
+      "expression": "wp.cross(nrm, t1)",
+      "source_line": 40
+    },
+    {
+      "slot": 39,
+      "target": "t2",
+      "component": 1,
+      "expression": "wp.cross(nrm, t1)",
+      "source_line": 40
+    },
+    {
+      "slot": 40,
+      "target": "t2",
+      "component": 2,
+      "expression": "wp.cross(nrm, t1)",
+      "source_line": 40
+    },
+    {
+      "slot": 41,
+      "target": "rnA",
+      "component": 0,
+      "expression": "wp.cross(rA, nrm)",
+      "source_line": 41
+    },
+    {
+      "slot": 42,
+      "target": "rnA",
+      "component": 1,
+      "expression": "wp.cross(rA, nrm)",
+      "source_line": 41
+    },
+    {
+      "slot": 43,
+      "target": "rnA",
+      "component": 2,
+      "expression": "wp.cross(rA, nrm)",
+      "source_line": 41
+    },
+    {
+      "slot": 44,
+      "target": "meff",
+      "component": 0,
+      "expression": "iMA + wp.dot(rnA, IA * rnA)",
+      "source_line": 41
+    },
+    {
+      "slot": 45,
+      "target": "rnB",
+      "component": 0,
+      "expression": "wp.cross(rB, nrm)",
+      "source_line": 43
+    },
+    {
+      "slot": 46,
+      "target": "rnB",
+      "component": 1,
+      "expression": "wp.cross(rB, nrm)",
+      "source_line": 43
+    },
+    {
+      "slot": 47,
+      "target": "rnB",
+      "component": 2,
+      "expression": "wp.cross(rB, nrm)",
+      "source_line": 43
+    },
+    {
+      "slot": 48,
+      "target": "meff",
+      "component": 0,
+      "expression": "meff + iMB + wp.dot(rnB, IB * rnB)",
+      "source_line": 43
+    },
+    {
+      "slot": 49,
+      "target": "dj",
+      "component": 0,
+      "expression": "-vn / meff",
+      "source_line": 45
+    },
+    {
+      "slot": 50,
+      "target": "nw",
+      "component": 0,
+      "expression": "wp.max(0.0, jn[c] + dj)",
+      "source_line": 45
+    },
+    {
+      "slot": 51,
+      "target": "dj",
+      "component": 0,
+      "expression": "nw - jn[c]",
+      "source_line": 45
+    },
+    {
+      "slot": 52,
+      "target": "Jn",
+      "component": 0,
+      "expression": "dj * nrm",
+      "source_line": 45
+    },
+    {
+      "slot": 53,
+      "target": "Jn",
+      "component": 1,
+      "expression": "dj * nrm",
+      "source_line": 45
+    },
+    {
+      "slot": 54,
+      "target": "Jn",
+      "component": 2,
+      "expression": "dj * nrm",
+      "source_line": 45
+    },
+    {
+      "slot": 55,
+      "target": "vA",
+      "component": 0,
+      "expression": "vA + Jn * iMA",
+      "source_line": 47
+    },
+    {
+      "slot": 56,
+      "target": "vA",
+      "component": 1,
+      "expression": "vA + Jn * iMA",
+      "source_line": 47
+    },
+    {
+      "slot": 57,
+      "target": "vA",
+      "component": 2,
+      "expression": "vA + Jn * iMA",
+      "source_line": 47
+    },
+    {
+      "slot": 58,
+      "target": "wA",
+      "component": 0,
+      "expression": "wA + IA * wp.cross(rA, Jn)",
+      "source_line": 47
+    },
+    {
+      "slot": 59,
+      "target": "wA",
+      "component": 1,
+      "expression": "wA + IA * wp.cross(rA, Jn)",
+      "source_line": 47
+    },
+    {
+      "slot": 60,
+      "target": "wA",
+      "component": 2,
+      "expression": "wA + IA * wp.cross(rA, Jn)",
+      "source_line": 47
+    },
+    {
+      "slot": 61,
+      "target": "vB",
+      "component": 0,
+      "expression": "vB - Jn * iMB",
+      "source_line": 50
+    },
+    {
+      "slot": 62,
+      "target": "vB",
+      "component": 1,
+      "expression": "vB - Jn * iMB",
+      "source_line": 50
+    },
+    {
+      "slot": 63,
+      "target": "vB",
+      "component": 2,
+      "expression": "vB - Jn * iMB",
+      "source_line": 50
+    },
+    {
+      "slot": 64,
+      "target": "wB",
+      "component": 0,
+      "expression": "wB - IB * wp.cross(rB, Jn)",
+      "source_line": 50
+    },
+    {
+      "slot": 65,
+      "target": "wB",
+      "component": 1,
+      "expression": "wB - IB * wp.cross(rB, Jn)",
+      "source_line": 50
+    },
+    {
+      "slot": 66,
+      "target": "wB",
+      "component": 2,
+      "expression": "wB - IB * wp.cross(rB, Jn)",
+      "source_line": 50
+    },
+    {
+      "slot": 67,
+      "target": "va",
+      "component": 0,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 51
+    },
+    {
+      "slot": 68,
+      "target": "va",
+      "component": 1,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 51
+    },
+    {
+      "slot": 69,
+      "target": "va",
+      "component": 2,
+      "expression": "vA + wp.cross(wA, rA)",
+      "source_line": 51
+    },
+    {
+      "slot": 70,
+      "target": "vb",
+      "component": 0,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 51
+    },
+    {
+      "slot": 71,
+      "target": "vb",
+      "component": 1,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 51
+    },
+    {
+      "slot": 72,
+      "target": "vb",
+      "component": 2,
+      "expression": "wp.vec3(0.0, 0.0, 0.0)",
+      "source_line": 51
+    },
+    {
+      "slot": 73,
+      "target": "vb",
+      "component": 0,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 53
+    },
+    {
+      "slot": 74,
+      "target": "vb",
+      "component": 1,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 53
+    },
+    {
+      "slot": 75,
+      "target": "vb",
+      "component": 2,
+      "expression": "vB + wp.cross(wB, rB)",
+      "source_line": 53
+    },
+    {
+      "slot": 76,
+      "target": "vrel",
+      "component": 0,
+      "expression": "va - vb",
+      "source_line": 54
+    },
+    {
+      "slot": 77,
+      "target": "vrel",
+      "component": 1,
+      "expression": "va - vb",
+      "source_line": 54
+    },
+    {
+      "slot": 78,
+      "target": "vrel",
+      "component": 2,
+      "expression": "va - vb",
+      "source_line": 54
+    },
+    {
+      "slot": 79,
+      "target": "rtA1",
+      "component": 0,
+      "expression": "wp.cross(rA, t1)",
+      "source_line": 55
+    },
+    {
+      "slot": 80,
+      "target": "rtA1",
+      "component": 1,
+      "expression": "wp.cross(rA, t1)",
+      "source_line": 55
+    },
+    {
+      "slot": 81,
+      "target": "rtA1",
+      "component": 2,
+      "expression": "wp.cross(rA, t1)",
+      "source_line": 55
+    },
+    {
+      "slot": 82,
+      "target": "meft1",
+      "component": 0,
+      "expression": "iMA + wp.dot(rtA1, IA * rtA1)",
+      "source_line": 55
+    },
+    {
+      "slot": 83,
+      "target": "rtA2",
+      "component": 0,
+      "expression": "wp.cross(rA, t2)",
+      "source_line": 56
+    },
+    {
+      "slot": 84,
+      "target": "rtA2",
+      "component": 1,
+      "expression": "wp.cross(rA, t2)",
+      "source_line": 56
+    },
+    {
+      "slot": 85,
+      "target": "rtA2",
+      "component": 2,
+      "expression": "wp.cross(rA, t2)",
+      "source_line": 56
+    },
+    {
+      "slot": 86,
+      "target": "meft2",
+      "component": 0,
+      "expression": "iMA + wp.dot(rtA2, IA * rtA2)",
+      "source_line": 56
+    },
+    {
+      "slot": 87,
+      "target": "rtB1",
+      "component": 0,
+      "expression": "wp.cross(rB, t1)",
+      "source_line": 58
+    },
+    {
+      "slot": 88,
+      "target": "rtB1",
+      "component": 1,
+      "expression": "wp.cross(rB, t1)",
+      "source_line": 58
+    },
+    {
+      "slot": 89,
+      "target": "rtB1",
+      "component": 2,
+      "expression": "wp.cross(rB, t1)",
+      "source_line": 58
+    },
+    {
+      "slot": 90,
+      "target": "meft1",
+      "component": 0,
+      "expression": "meft1 + iMB + wp.dot(rtB1, IB * rtB1)",
+      "source_line": 58
+    },
+    {
+      "slot": 91,
+      "target": "rtB2",
+      "component": 0,
+      "expression": "wp.cross(rB, t2)",
+      "source_line": 59
+    },
+    {
+      "slot": 92,
+      "target": "rtB2",
+      "component": 1,
+      "expression": "wp.cross(rB, t2)",
+      "source_line": 59
+    },
+    {
+      "slot": 93,
+      "target": "rtB2",
+      "component": 2,
+      "expression": "wp.cross(rB, t2)",
+      "source_line": 59
+    },
+    {
+      "slot": 94,
+      "target": "meft2",
+      "component": 0,
+      "expression": "meft2 + iMB + wp.dot(rtB2, IB * rtB2)",
+      "source_line": 59
+    },
+    {
+      "slot": 95,
+      "target": "o1",
+      "component": 0,
+      "expression": "jt1[c]",
+      "source_line": 62
+    },
+    {
+      "slot": 96,
+      "target": "o2",
+      "component": 0,
+      "expression": "jt2[c]",
+      "source_line": 62
+    },
+    {
+      "slot": 97,
+      "target": "a1",
+      "component": 0,
+      "expression": "o1 - wp.dot(vrel, t1) / meft1",
+      "source_line": 63
+    },
+    {
+      "slot": 98,
+      "target": "a2",
+      "component": 0,
+      "expression": "o2 - wp.dot(vrel, t2) / meft2",
+      "source_line": 63
+    },
+    {
+      "slot": 99,
+      "target": "mag",
+      "component": 0,
+      "expression": "wp.sqrt(a1 * a1 + a2 * a2)",
+      "source_line": 64
+    },
+    {
+      "slot": 100,
+      "target": "lim",
+      "component": 0,
+      "expression": "mu * jn[c]",
+      "source_line": 64
+    },
+    {
+      "slot": 101,
+      "target": "a1",
+      "component": 0,
+      "expression": "a1 * lim / mag",
+      "source_line": 66
+    },
+    {
+      "slot": 102,
+      "target": "a2",
+      "component": 0,
+      "expression": "a2 * lim / mag",
+      "source_line": 66
+    },
+    {
+      "slot": 103,
+      "target": "Jt",
+      "component": 0,
+      "expression": "(a1 - o1) * t1 + t2d * (a2 - o2) * t2",
+      "source_line": 67
+    },
+    {
+      "slot": 104,
+      "target": "Jt",
+      "component": 1,
+      "expression": "(a1 - o1) * t1 + t2d * (a2 - o2) * t2",
+      "source_line": 67
+    },
+    {
+      "slot": 105,
+      "target": "Jt",
+      "component": 2,
+      "expression": "(a1 - o1) * t1 + t2d * (a2 - o2) * t2",
+      "source_line": 67
+    },
+    {
+      "slot": 106,
+      "target": "vA",
+      "component": 0,
+      "expression": "vA + Jt * iMA",
+      "source_line": 69
+    },
+    {
+      "slot": 107,
+      "target": "vA",
+      "component": 1,
+      "expression": "vA + Jt * iMA",
+      "source_line": 69
+    },
+    {
+      "slot": 108,
+      "target": "vA",
+      "component": 2,
+      "expression": "vA + Jt * iMA",
+      "source_line": 69
+    },
+    {
+      "slot": 109,
+      "target": "wA",
+      "component": 0,
+      "expression": "wA + IA * wp.cross(rA, Jt)",
+      "source_line": 69
+    },
+    {
+      "slot": 110,
+      "target": "wA",
+      "component": 1,
+      "expression": "wA + IA * wp.cross(rA, Jt)",
+      "source_line": 69
+    },
+    {
+      "slot": 111,
+      "target": "wA",
+      "component": 2,
+      "expression": "wA + IA * wp.cross(rA, Jt)",
+      "source_line": 69
+    },
+    {
+      "slot": 112,
+      "target": "vB",
+      "component": 0,
+      "expression": "vB - Jt * iMB",
+      "source_line": 72
+    },
+    {
+      "slot": 113,
+      "target": "vB",
+      "component": 1,
+      "expression": "vB - Jt * iMB",
+      "source_line": 72
+    },
+    {
+      "slot": 114,
+      "target": "vB",
+      "component": 2,
+      "expression": "vB - Jt * iMB",
+      "source_line": 72
+    },
+    {
+      "slot": 115,
+      "target": "wB",
+      "component": 0,
+      "expression": "wB - IB * wp.cross(rB, Jt)",
+      "source_line": 72
+    },
+    {
+      "slot": 116,
+      "target": "wB",
+      "component": 1,
+      "expression": "wB - IB * wp.cross(rB, Jt)",
+      "source_line": 72
+    },
+    {
+      "slot": 117,
+      "target": "wB",
+      "component": 2,
+      "expression": "wB - IB * wp.cross(rB, Jt)",
+      "source_line": 72
+    }
+  ]
+}

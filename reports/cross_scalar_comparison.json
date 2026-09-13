@@ -1,0 +1,92 @@
+{
+  "rows": [
+    {
+      "leg": 0,
+      "engine": "pair_chunks",
+      "presence_exact": true,
+      "differing_values": 33,
+      "first_per_thread": [
+        {
+          "thread": 0,
+          "contact": 1,
+          "slot": 101,
+          "target": "a2",
+          "component": 0,
+          "expression": "o2 - wp.dot(vrel, t2) / meft2",
+          "source_line": 476,
+          "cloud": -0.06181439384818077,
+          "local": -0.06181439757347107,
+          "delta": -3.725290298461914e-09
+        }
+      ]
+    },
+    {
+      "leg": 0,
+      "engine": "color_cache",
+      "presence_exact": true,
+      "differing_values": 6,
+      "first_per_thread": [
+        {
+          "thread": 0,
+          "contact": 2,
+          "slot": 97,
+          "target": "a1",
+          "component": 0,
+          "expression": "o1 - wp.dot(vrel, t1) / meft1",
+          "source_line": 63,
+          "cloud": 0.0032636946998536587,
+          "local": 0.003263694467023015,
+          "delta": -2.3283064365386963e-10
+        }
+      ]
+    },
+    {
+      "leg": 1,
+      "engine": "pair_chunks",
+      "presence_exact": true,
+      "differing_values": 33,
+      "first_per_thread": [
+        {
+          "thread": 0,
+          "contact": 1,
+          "slot": 101,
+          "target": "a2",
+          "component": 0,
+          "expression": "o2 - wp.dot(vrel, t2) / meft2",
+          "source_line": 476,
+          "cloud": -0.06181439384818077,
+          "local": -0.06181439757347107,
+          "delta": -3.725290298461914e-09
+        }
+      ]
+    },
+    {
+      "leg": 1,
+      "engine": "color_cache",
+      "presence_exact": true,
+      "differing_values": 6,
+      "first_per_thread": [
+        {
+          "thread": 0,
+          "contact": 2,
+          "slot": 97,
+          "target": "a1",
+          "component": 0,
+          "expression": "o1 - wp.dot(vrel, t1) / meft1",
+          "source_line": 63,
+          "cloud": 0.0032636946998536587,
+          "local": 0.003263694467023015,
+          "delta": -2.3283064365386963e-10
+        }
+      ]
+    }
+  ],
+  "gates": {
+    "observers_pass": true,
+    "presence_exact": true,
+    "coverage": true,
+    "repeat": true
+  },
+  "status": "VERIFIED-FRESH",
+  "scope": "First differing assignment on each active pair thread. Compound expressions are not yet individual machine instructions; frozen matrix remains10/12exact."
+}

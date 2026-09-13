@@ -1,0 +1,18 @@
+{
+ "robot": "UR10e (fleet)",
+ "finding": "HONEST FALSIFICATION: naive cubic-spline blending does NOT preserve collision-safety (corner-cuts)",
+ "waypoints": 67,
+ "T_s": 13.433,
+ "smooth_within_limits": true,
+ "peak_vel_ratio": 0.699,
+ "peak_torque_ratio": 0.775,
+ "blend_env_collisions": 49,
+ "blend_self_collisions": 95,
+ "blend_collision_safe": false,
+ "genuine_approach": "collision-aware shortcutting (stays in free space)",
+ "friction_ff_sim_circular": true,
+ "tracking_mrad_nocomp": 331.7,
+ "tracking_mrad_fric_ff": 1.74,
+ "characterization_sound": true,
+ "composes": "fleet_agnostic_planner (self+env) + CubicSpline"
+}

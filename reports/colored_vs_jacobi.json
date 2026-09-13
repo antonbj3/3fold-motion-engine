@@ -1,0 +1,1635 @@
+{
+  "schema": "colored_vs_jacobi_v5",
+  "quick": false,
+  "engines": {
+    "A": "relaxed_jacobi_gpu (contact_engine_gpu.py)",
+    "B": "graph_colored_gpu (contact_engine_gpu_colored.py)",
+    "C": "graph_colored_gpu, manifold_reduce=True, manifold_on_host=True (numpy stage)",
+    "D": "graph_colored_gpu, manifold_reduce=True (the stage as GPU kernels, default)",
+    "E": "graph_colored_gpu, manifold_reduce=True, graph_capture=True (solve loop as a CUDA graph)",
+    "F": "graph_colored_gpu, manifold_reduce=True, graph_capture=True, pair_chunks=True (the body-pair graph is coloured and a pair's contacts are one sequential chunk in one thread)"
+  },
+  "a_iters_to_M5_tol": {
+    "jacobi": [
+      {
+        "K": 8,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 6,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 0.9641864895820618,
+            "drift_class": "bounded",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 2.657260000705719,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 0.3797975182533264,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 0.3067058324813843,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 0.26288121938705444,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 0.17561495304107666,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 0.14093071222305298,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 0.15070825815200806,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.15550285577774048,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.15966325998306274,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.16116291284561157,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "K": 16,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 40,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 4.099999964237213,
+            "drift_class": "bounded",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 4.099999666213989,
+            "drift_class": "bounded",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 4.006659686565399,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 4.099989235401154,
+            "drift_class": "bounded",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 1.4131096005439758,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 0.7434579730033875,
+            "drift_class": "bounded",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 0.4090350866317749,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 0.2979835867881775,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.5245205760002136,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.38697272539138794,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.20337730646133423,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      }
+    ],
+    "colored": [
+      {
+        "K": 8,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 20,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 0.7381322979927063,
+            "drift_class": "bounded",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 0.7179775834083557,
+            "drift_class": "bounded",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 0.6970527768135071,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 0.426766574382782,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 0.2932056784629822,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 0.17161518335342407,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 0.17310291528701782,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 0.1731768250465393,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.17317920923233032,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.1731744408607483,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.1731744408607483,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "K": 16,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 60,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 4.099999368190765,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 1.2083551287651062,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 1.429983675479889,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 1.2514439225196838,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 1.2305060029029846,
+            "drift_class": "bounded",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 1.1028662323951721,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 0.8488526940345764,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 0.23371607065200806,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.17317920923233032,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.1731744408607483,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.1731744408607483,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      }
+    ],
+    "colored_manifold": [
+      {
+        "K": 8,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 40,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 4.099998474121094,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 4.099983870983124,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 4.095537960529327,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 2.0145025849342346,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 1.2185266613960266,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 0.3518107533454895,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 0.165349543094635,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 0.16617685556411743,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.16811758279800415,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.1597157120704651,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.16702324151992798,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "K": 16,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 80,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 4.099997580051422,
+            "drift_class": "bounded",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 4.099969565868378,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 4.099989831447601,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 4.099809229373932,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 4.099887311458588,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 3.9413514733314514,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 0.8005526661872864,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 0.8269563317298889,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.3222540020942688,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.2751460671424866,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.1924625039100647,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      }
+    ],
+    "colored_manifold_device": [
+      {
+        "K": 8,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 40,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 4.099998474121094,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 4.099983870983124,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 4.095537960529327,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 2.0145025849342346,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 1.2185266613960266,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 0.3518107533454895,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 0.165349543094635,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 0.16617685556411743,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.16811758279800415,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.1597157120704651,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.16702324151992798,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "K": 16,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 80,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 4.099997580051422,
+            "drift_class": "bounded",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 4.099969565868378,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 4.099989831447601,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 4.099809229373932,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 4.099887311458588,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 3.9413514733314514,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 0.8005526661872864,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 0.8269563317298889,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.3222540020942688,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.2751460671424866,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.1924625039100647,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      }
+    ],
+    "colored_manifold_chunks": [
+      {
+        "K": 8,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 40,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 4.099997282028198,
+            "drift_class": "bounded",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 4.099999368190765,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 4.099745750427246,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 1.7896726727485657,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 1.2583532929420471,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 0.568448007106781,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 0.16426712274551392,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 0.1642504334449768,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.16938596963882446,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.1670876145362854,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.16733795404434204,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "K": 16,
+        "pos_iters": 10,
+        "steps": 600,
+        "vel_iters_to_M5_tol": 160,
+        "sweep": [
+          {
+            "vit": 2,
+            "max_pen_over_R": 4.099996984004974,
+            "drift_class": "bounded",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 4,
+            "max_pen_over_R": 4.0999919176101685,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 6,
+            "max_pen_over_R": 4.099969565868378,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 8,
+            "max_pen_over_R": 4.099981188774109,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 10,
+            "max_pen_over_R": 4.099996387958527,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 20,
+            "max_pen_over_R": 4.099685251712799,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 40,
+            "max_pen_over_R": 1.412588655948639,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 60,
+            "max_pen_over_R": 1.0615316033363342,
+            "drift_class": "secular",
+            "status": "INVALID",
+            "pass": false
+          },
+          {
+            "vit": 80,
+            "max_pen_over_R": 0.6821790337562561,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 120,
+            "max_pen_over_R": 0.3362026810646057,
+            "drift_class": "secular",
+            "status": "FAIL",
+            "pass": false
+          },
+          {
+            "vit": 160,
+            "max_pen_over_R": 0.2763667702674866,
+            "drift_class": "bounded",
+            "status": "PASS",
+            "pass": true
+          }
+        ]
+      }
+    ]
+  },
+  "c_colours_per_scene": {
+    "M1_stack_K4": {
+      "colored": {
+        "bodies": 4,
+        "colours_max": 24,
+        "colours_final": 23,
+        "contacts_max": 36,
+        "contacts_final": 35,
+        "contacts_solved_final": 35,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold": {
+        "bodies": 4,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 36,
+        "contacts_final": 34,
+        "contacts_solved_final": 16,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold_device": {
+        "bodies": 4,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 36,
+        "contacts_final": 34,
+        "contacts_solved_final": 16,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold_graph": {
+        "bodies": 4,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 36,
+        "contacts_final": 34,
+        "contacts_solved_final": 16,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold_chunks": {
+        "bodies": 4,
+        "colours_max": 3,
+        "colours_final": 3,
+        "contacts_max": 35,
+        "contacts_final": 34,
+        "contacts_solved_final": 16,
+        "pairs_final": 4,
+        "steps": 200
+      }
+    },
+    "stack_K8": {
+      "colored": {
+        "bodies": 8,
+        "colours_max": 28,
+        "colours_final": 26,
+        "contacts_max": 72,
+        "contacts_final": 68,
+        "contacts_solved_final": 68,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold": {
+        "bodies": 8,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 72,
+        "contacts_final": 72,
+        "contacts_solved_final": 32,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold_device": {
+        "bodies": 8,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 72,
+        "contacts_final": 72,
+        "contacts_solved_final": 32,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold_graph": {
+        "bodies": 8,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 72,
+        "contacts_final": 72,
+        "contacts_solved_final": 32,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold_chunks": {
+        "bodies": 8,
+        "colours_max": 3,
+        "colours_final": 3,
+        "contacts_max": 72,
+        "contacts_final": 71,
+        "contacts_solved_final": 32,
+        "pairs_final": 8,
+        "steps": 200
+      }
+    },
+    "stack_K16": {
+      "colored": {
+        "bodies": 16,
+        "colours_max": 34,
+        "colours_final": 30,
+        "contacts_max": 144,
+        "contacts_final": 131,
+        "contacts_solved_final": 131,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold": {
+        "bodies": 16,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 144,
+        "contacts_final": 143,
+        "contacts_solved_final": 64,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold_device": {
+        "bodies": 16,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 144,
+        "contacts_final": 143,
+        "contacts_solved_final": 64,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold_graph": {
+        "bodies": 16,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 144,
+        "contacts_final": 143,
+        "contacts_solved_final": 64,
+        "pairs_final": 0,
+        "steps": 200
+      },
+      "colored_manifold_chunks": {
+        "bodies": 16,
+        "colours_max": 3,
+        "colours_final": 3,
+        "contacts_max": 144,
+        "contacts_final": 132,
+        "contacts_solved_final": 64,
+        "pairs_final": 16,
+        "steps": 200
+      }
+    },
+    "lattice_1e3": {
+      "colored": {
+        "bodies": 1000,
+        "colours_max": 18,
+        "colours_final": 18,
+        "contacts_max": 9000,
+        "contacts_final": 9000,
+        "contacts_solved_final": 9000,
+        "pairs_final": 0,
+        "steps": 10
+      },
+      "colored_manifold": {
+        "bodies": 1000,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 8160,
+        "contacts_final": 8160,
+        "contacts_solved_final": 4000,
+        "pairs_final": 0,
+        "steps": 10
+      },
+      "colored_manifold_device": {
+        "bodies": 1000,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 8160,
+        "contacts_final": 8160,
+        "contacts_solved_final": 4000,
+        "pairs_final": 0,
+        "steps": 10
+      },
+      "colored_manifold_graph": {
+        "bodies": 1000,
+        "colours_max": 8,
+        "colours_final": 8,
+        "contacts_max": 8160,
+        "contacts_final": 8160,
+        "contacts_solved_final": 4000,
+        "pairs_final": 0,
+        "steps": 10
+      },
+      "colored_manifold_chunks": {
+        "bodies": 1000,
+        "colours_max": 2,
+        "colours_final": 2,
+        "contacts_max": 8160,
+        "contacts_final": 8160,
+        "contacts_solved_final": 4000,
+        "pairs_final": 1000,
+        "steps": 10
+      }
+    }
+  },
+  "d_wall_time": {
+    "jacobi": [
+      {
+        "bodies": 1000,
+        "ms_per_step": 2.823,
+        "steps_per_s": 354.23,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "contacts_final": -1,
+        "contacts_solved_final": -1,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 1
+      },
+      {
+        "bodies": 1000,
+        "ms_per_step": 2.796,
+        "steps_per_s": 357.72,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "contacts_final": -1,
+        "contacts_solved_final": -1,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 2
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 5.591,
+        "steps_per_s": 178.86,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "contacts_final": -1,
+        "contacts_solved_final": -1,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 1
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 5.586,
+        "steps_per_s": 179.01,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "contacts_final": -1,
+        "contacts_solved_final": -1,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 2
+      }
+    ],
+    "colored": [
+      {
+        "bodies": 1000,
+        "ms_per_step": 18.881,
+        "steps_per_s": 52.96,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 18,
+        "contacts_final": 8999,
+        "contacts_solved_final": 8999,
+        "vel_iters": 20,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 1
+      },
+      {
+        "bodies": 1000,
+        "ms_per_step": 18.873,
+        "steps_per_s": 52.99,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 18,
+        "contacts_final": 8999,
+        "contacts_solved_final": 8999,
+        "vel_iters": 20,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 2
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 29.412,
+        "steps_per_s": 34.0,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 18,
+        "contacts_final": 89997,
+        "contacts_solved_final": 89997,
+        "vel_iters": 20,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 1
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 29.361,
+        "steps_per_s": 34.06,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 18,
+        "contacts_final": 89997,
+        "contacts_solved_final": 89997,
+        "vel_iters": 20,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 2
+      }
+    ],
+    "colored_manifold": [
+      {
+        "bodies": 1000,
+        "ms_per_step": 17.081,
+        "steps_per_s": 58.54,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 1
+      },
+      {
+        "bodies": 1000,
+        "ms_per_step": 17.008,
+        "steps_per_s": 58.8,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 2
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 51.826,
+        "steps_per_s": 19.3,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 1
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 51.902,
+        "steps_per_s": 19.27,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 2
+      }
+    ],
+    "colored_manifold_device": [
+      {
+        "bodies": 1000,
+        "ms_per_step": 11.955,
+        "steps_per_s": 83.65,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 1
+      },
+      {
+        "bodies": 1000,
+        "ms_per_step": 11.783,
+        "steps_per_s": 84.87,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 2
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 14.603,
+        "steps_per_s": 68.48,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 1
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 14.856,
+        "steps_per_s": 67.31,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 0,
+        "run": 2
+      }
+    ],
+    "colored_manifold_graph": [
+      {
+        "bodies": 1000,
+        "ms_per_step": 3.644,
+        "steps_per_s": 274.45,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 2,
+        "run": 1
+      },
+      {
+        "bodies": 1000,
+        "ms_per_step": 3.666,
+        "steps_per_s": 272.81,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 2,
+        "run": 2
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 6.396,
+        "steps_per_s": 156.34,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 2,
+        "run": 1
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 6.401,
+        "steps_per_s": 156.23,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 8,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 0,
+        "graph_captures": 2,
+        "run": 2
+      }
+    ],
+    "colored_manifold_chunks": [
+      {
+        "bodies": 1000,
+        "ms_per_step": 2.318,
+        "steps_per_s": 431.49,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "vel_iters": 40,
+        "pairs_final": 1000,
+        "graph_captures": 2,
+        "run": 1
+      },
+      {
+        "bodies": 1000,
+        "ms_per_step": 2.306,
+        "steps_per_s": 433.58,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "vel_iters": 40,
+        "pairs_final": 1000,
+        "graph_captures": 2,
+        "run": 2
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 4.931,
+        "steps_per_s": 202.81,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2,
+        "run": 1
+      },
+      {
+        "bodies": 10000,
+        "ms_per_step": 4.944,
+        "steps_per_s": 202.27,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2,
+        "run": 2
+      }
+    ]
+  },
+  "e_stage_profile": {
+    "1000": {
+      "colored_manifold_device": {
+        "generate": 0.245,
+        "sort": 0.193,
+        "select": 0.293,
+        "colour": 1.05,
+        "solve": 9.87,
+        "warm_store": 0.06,
+        "integrate": 0.166,
+        "total_profiled_ms_per_step": 11.987,
+        "bodies": 1000,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "pairs_final": 0,
+        "graph_captures": 0
+      },
+      "colored_manifold_graph": {
+        "generate": 0.225,
+        "sort": 0.186,
+        "select": 0.275,
+        "colour": 0.773,
+        "solve": 1.946,
+        "warm_store": 0.185,
+        "integrate": 0.213,
+        "total_profiled_ms_per_step": 3.893,
+        "bodies": 1000,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "pairs_final": 0,
+        "graph_captures": 2
+      },
+      "colored_manifold_chunks": {
+        "generate": 0.202,
+        "sort": 0.189,
+        "select": 0.267,
+        "pairs": 0.142,
+        "colour": 0.306,
+        "solve": 1.019,
+        "warm_store": 0.118,
+        "integrate": 0.171,
+        "total_profiled_ms_per_step": 2.501,
+        "bodies": 1000,
+        "contacts_final": 8772,
+        "contacts_solved_final": 4000,
+        "pairs_final": 1000,
+        "graph_captures": 2
+      }
+    },
+    "10000": {
+      "colored_manifold_device": {
+        "generate": 1.445,
+        "sort": 0.319,
+        "select": 0.907,
+        "colour": 1.519,
+        "solve": 9.881,
+        "warm_store": 0.051,
+        "integrate": 0.637,
+        "total_profiled_ms_per_step": 14.901,
+        "bodies": 10000,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "pairs_final": 0,
+        "graph_captures": 0
+      },
+      "colored_manifold_graph": {
+        "generate": 1.428,
+        "sort": 0.389,
+        "select": 0.916,
+        "colour": 0.82,
+        "solve": 2.242,
+        "warm_store": 0.07,
+        "integrate": 0.62,
+        "total_profiled_ms_per_step": 6.607,
+        "bodies": 10000,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "pairs_final": 0,
+        "graph_captures": 2
+      },
+      "colored_manifold_chunks": {
+        "generate": 1.471,
+        "sort": 0.297,
+        "select": 0.949,
+        "pairs": 0.152,
+        "colour": 0.337,
+        "solve": 1.128,
+        "warm_store": 0.144,
+        "integrate": 0.648,
+        "total_profiled_ms_per_step": 5.255,
+        "bodies": 10000,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      }
+    }
+  },
+  "b_engine_metrics": {
+    "cmd": "scripts/engine_metrics.py --gpu-engine all --gpu-only",
+    "returncode": 0,
+    "stdout_tail": [
+      "------------  ------------------------  ----------------------------------  -------------------------------------  ----------------------  ---------------------",
+      "gpu           0.000 PASS                1:2 REACHED, 1000:None NOT REACHED  1:0.000/0.200, 1000:1.000/2493809.000  0.146 bounded PASS      0.0e+00 PASS         ",
+      "gpu_colored   0.002 PASS                1:2 REACHED, 1000:None INVALID      1:0.000/0.200, 1000:0.000/0.050        0.174 bounded PASS      0.0e+00 PASS         ",
+      "gpu_manifold  0.001 PASS                1:2 REACHED, 1000:None INVALID      1:0.000/0.200, 1000:0.125/0.061        0.169 bounded PASS      0.0e+00 PASS         ",
+      "gpu_graph     0.001 PASS                1:2 REACHED, 1000:None INVALID      1:0.000/0.200, 1000:0.125/0.061        0.169 bounded PASS      0.0e+00 PASS         ",
+      "gpu_chunks    0.013 PASS                1:2 REACHED, 1000:None INVALID      1:0.000/0.200, 1000:0.143/0.050        0.170 bounded PASS      0.0e+00 PASS         ",
+      "wall 148.1 s",
+      "-> reports/engine_metrics.json"
+    ],
+    "engines": {
+      "gpu": {
+        "M1_stack_load_K4": {
+          "value_worst_relerr": 1.1328528046369033e-07,
+          "status": "PASS",
+          "min_spacing_m": 0.19985784590244293
+        },
+        "M5_stack8_pen": {
+          "max_pen_over_R": 0.14594942331314087,
+          "drift_class": "bounded",
+          "status": "PASS"
+        },
+        "M6_determinism": {
+          "eps_nondet_max_dxc_m": 0.0,
+          "bit_deterministic": true,
+          "pass": true
+        },
+        "wall_s": 8.2
+      },
+      "gpu_colored": {
+        "M1_stack_load_K4": {
+          "value_worst_relerr": 0.0019492081181354255,
+          "status": "PASS",
+          "min_spacing_m": 0.19990143179893494
+        },
+        "M5_stack8_pen": {
+          "max_pen_over_R": 0.17414242029190063,
+          "drift_class": "bounded",
+          "status": "PASS"
+        },
+        "M6_determinism": {
+          "eps_nondet_max_dxc_m": 0.0,
+          "bit_deterministic": true,
+          "pass": true
+        },
+        "wall_s": 82.6
+      },
+      "gpu_manifold": {
+        "M1_stack_load_K4": {
+          "value_worst_relerr": 0.0005210411475703138,
+          "status": "PASS",
+          "min_spacing_m": 0.19990506768226624
+        },
+        "M5_stack8_pen": {
+          "max_pen_over_R": 0.16937404870986938,
+          "drift_class": "bounded",
+          "status": "PASS"
+        },
+        "M6_determinism": {
+          "eps_nondet_max_dxc_m": 0.0,
+          "bit_deterministic": true,
+          "pass": true
+        },
+        "wall_s": 36.7
+      },
+      "gpu_graph": {
+        "M1_stack_load_K4": {
+          "value_worst_relerr": 0.0005210411475703138,
+          "status": "PASS",
+          "min_spacing_m": 0.19990506768226624
+        },
+        "M5_stack8_pen": {
+          "max_pen_over_R": 0.16937404870986938,
+          "drift_class": "bounded",
+          "status": "PASS"
+        },
+        "M6_determinism": {
+          "eps_nondet_max_dxc_m": 0.0,
+          "bit_deterministic": true,
+          "pass": true
+        },
+        "wall_s": 12.2
+      },
+      "gpu_chunks": {
+        "M1_stack_load_K4": {
+          "value_worst_relerr": 0.01339109780591558,
+          "status": "PASS",
+          "min_spacing_m": 0.19992762804031372
+        },
+        "M5_stack8_pen": {
+          "max_pen_over_R": 0.17032772302627563,
+          "drift_class": "bounded",
+          "status": "PASS"
+        },
+        "M6_determinism": {
+          "eps_nondet_max_dxc_m": 0.0,
+          "bit_deterministic": true,
+          "pass": true
+        },
+        "wall_s": 8.4
+      }
+    }
+  },
+  "wall_s": 1172.4
+}

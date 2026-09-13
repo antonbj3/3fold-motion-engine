@@ -1,0 +1,47 @@
+{
+ "device": "cuda:0",
+ "m_scenes": 4,
+ "modes": {
+  "single": {
+   "mode": "single",
+   "rows": [
+    {
+     "robot": "ur10e",
+     "nq": 6,
+     "mode": "single",
+     "n": 4,
+     "succ": 4,
+     "mean_clear_mm": 71.9,
+     "plan_ms": 1625.0,
+     "eval_cfg_s": 1094577
+    }
+   ],
+   "total_solved": 4,
+   "total_scenes": 4,
+   "robots_full": 1,
+   "n_robots": 1
+  },
+  "clutter": {
+   "mode": "clutter",
+   "rows": [
+    {
+     "robot": "ur10e",
+     "nq": 6,
+     "mode": "clutter",
+     "n": 4,
+     "succ": 4,
+     "mean_clear_mm": 56.7,
+     "plan_ms": 5078.0,
+     "eval_cfg_s": 1081583
+    }
+   ],
+   "total_solved": 4,
+   "total_scenes": 4,
+   "robots_full": 1,
+   "n_robots": 1
+  }
+ },
+ "total_solved": 8,
+ "total_scenes": 8,
+ "all_solved": true
+}

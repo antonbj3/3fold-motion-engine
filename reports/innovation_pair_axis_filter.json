@@ -1,0 +1,268 @@
+{
+  "results": [
+    {
+      "bound": 0.10000000894069672,
+      "rows": {
+        "first": [
+          {
+            "scene": "stack16",
+            "step": 19,
+            "exhaustive_tests": 1620,
+            "axis_survivors": 120,
+            "current_grid_distance_tests": 7138,
+            "actual_contacts": 44,
+            "missed_contacts": 0,
+            "mask_sha256": "7bc7745f1326655797acf677c8263ab21578b5ab1c6dcbc2f546629b9070bd7e"
+          },
+          {
+            "scene": "stack16",
+            "step": 199,
+            "exhaustive_tests": 4860,
+            "axis_survivors": 265,
+            "current_grid_distance_tests": 7276,
+            "actual_contacts": 114,
+            "missed_contacts": 0,
+            "mask_sha256": "dad4e2b3155bb79e63757135829a33c569843aabfe1bb689665950c10f711415"
+          },
+          {
+            "scene": "stack16",
+            "step": 599,
+            "exhaustive_tests": 4860,
+            "axis_survivors": 276,
+            "current_grid_distance_tests": 7364,
+            "actual_contacts": 107,
+            "missed_contacts": 0,
+            "mask_sha256": "d89d1c6a55829a7b8a70fcc0875792079b3261dee0561e5a9528446f78e42644"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 9,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 114088,
+            "current_grid_distance_tests": 576252,
+            "actual_contacts": 35805,
+            "missed_contacts": 0,
+            "mask_sha256": "cba853d26ba63f4c9049b37d5fd375fe558e5596ca2bcd8e5f202ce1a5c85d36"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 19,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 116461,
+            "current_grid_distance_tests": 611001,
+            "actual_contacts": 43792,
+            "missed_contacts": 0,
+            "mask_sha256": "c81f8353abd2cc82bb6c22dbd7bcf1392241cec5f2d7a8f64ff1a375fd5a1ae4"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 39,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 112203,
+            "current_grid_distance_tests": 612540,
+            "actual_contacts": 44631,
+            "missed_contacts": 0,
+            "mask_sha256": "f790a273584b21c58981888d34c7991a7833ec8b3287cca0ab31f0547c6cffbc"
+          }
+        ],
+        "second": [
+          {
+            "scene": "stack16",
+            "step": 19,
+            "exhaustive_tests": 1620,
+            "axis_survivors": 120,
+            "current_grid_distance_tests": 7138,
+            "actual_contacts": 44,
+            "missed_contacts": 0,
+            "mask_sha256": "7bc7745f1326655797acf677c8263ab21578b5ab1c6dcbc2f546629b9070bd7e"
+          },
+          {
+            "scene": "stack16",
+            "step": 199,
+            "exhaustive_tests": 4860,
+            "axis_survivors": 265,
+            "current_grid_distance_tests": 7276,
+            "actual_contacts": 114,
+            "missed_contacts": 0,
+            "mask_sha256": "dad4e2b3155bb79e63757135829a33c569843aabfe1bb689665950c10f711415"
+          },
+          {
+            "scene": "stack16",
+            "step": 599,
+            "exhaustive_tests": 4860,
+            "axis_survivors": 276,
+            "current_grid_distance_tests": 7364,
+            "actual_contacts": 107,
+            "missed_contacts": 0,
+            "mask_sha256": "d89d1c6a55829a7b8a70fcc0875792079b3261dee0561e5a9528446f78e42644"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 9,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 114088,
+            "current_grid_distance_tests": 576252,
+            "actual_contacts": 35805,
+            "missed_contacts": 0,
+            "mask_sha256": "cba853d26ba63f4c9049b37d5fd375fe558e5596ca2bcd8e5f202ce1a5c85d36"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 19,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 116461,
+            "current_grid_distance_tests": 611001,
+            "actual_contacts": 43792,
+            "missed_contacts": 0,
+            "mask_sha256": "c81f8353abd2cc82bb6c22dbd7bcf1392241cec5f2d7a8f64ff1a375fd5a1ae4"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 39,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 112203,
+            "current_grid_distance_tests": 612540,
+            "actual_contacts": 44631,
+            "missed_contacts": 0,
+            "mask_sha256": "f790a273584b21c58981888d34c7991a7833ec8b3287cca0ab31f0547c6cffbc"
+          }
+        ]
+      }
+    },
+    {
+      "bound": 0.10000000894069672,
+      "rows": {
+        "first": [
+          {
+            "scene": "stack16",
+            "step": 19,
+            "exhaustive_tests": 1620,
+            "axis_survivors": 120,
+            "current_grid_distance_tests": 7138,
+            "actual_contacts": 44,
+            "missed_contacts": 0,
+            "mask_sha256": "7bc7745f1326655797acf677c8263ab21578b5ab1c6dcbc2f546629b9070bd7e"
+          },
+          {
+            "scene": "stack16",
+            "step": 199,
+            "exhaustive_tests": 4860,
+            "axis_survivors": 265,
+            "current_grid_distance_tests": 7276,
+            "actual_contacts": 114,
+            "missed_contacts": 0,
+            "mask_sha256": "dad4e2b3155bb79e63757135829a33c569843aabfe1bb689665950c10f711415"
+          },
+          {
+            "scene": "stack16",
+            "step": 599,
+            "exhaustive_tests": 4860,
+            "axis_survivors": 276,
+            "current_grid_distance_tests": 7364,
+            "actual_contacts": 107,
+            "missed_contacts": 0,
+            "mask_sha256": "d89d1c6a55829a7b8a70fcc0875792079b3261dee0561e5a9528446f78e42644"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 9,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 114088,
+            "current_grid_distance_tests": 576252,
+            "actual_contacts": 35805,
+            "missed_contacts": 0,
+            "mask_sha256": "cba853d26ba63f4c9049b37d5fd375fe558e5596ca2bcd8e5f202ce1a5c85d36"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 19,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 116461,
+            "current_grid_distance_tests": 611001,
+            "actual_contacts": 43792,
+            "missed_contacts": 0,
+            "mask_sha256": "c81f8353abd2cc82bb6c22dbd7bcf1392241cec5f2d7a8f64ff1a375fd5a1ae4"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 39,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 112203,
+            "current_grid_distance_tests": 612540,
+            "actual_contacts": 44631,
+            "missed_contacts": 0,
+            "mask_sha256": "f790a273584b21c58981888d34c7991a7833ec8b3287cca0ab31f0547c6cffbc"
+          }
+        ],
+        "second": [
+          {
+            "scene": "stack16",
+            "step": 19,
+            "exhaustive_tests": 1620,
+            "axis_survivors": 120,
+            "current_grid_distance_tests": 7138,
+            "actual_contacts": 44,
+            "missed_contacts": 0,
+            "mask_sha256": "7bc7745f1326655797acf677c8263ab21578b5ab1c6dcbc2f546629b9070bd7e"
+          },
+          {
+            "scene": "stack16",
+            "step": 199,
+            "exhaustive_tests": 4860,
+            "axis_survivors": 265,
+            "current_grid_distance_tests": 7276,
+            "actual_contacts": 114,
+            "missed_contacts": 0,
+            "mask_sha256": "dad4e2b3155bb79e63757135829a33c569843aabfe1bb689665950c10f711415"
+          },
+          {
+            "scene": "stack16",
+            "step": 599,
+            "exhaustive_tests": 4860,
+            "axis_survivors": 276,
+            "current_grid_distance_tests": 7364,
+            "actual_contacts": 107,
+            "missed_contacts": 0,
+            "mask_sha256": "d89d1c6a55829a7b8a70fcc0875792079b3261dee0561e5a9528446f78e42644"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 9,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 114088,
+            "current_grid_distance_tests": 576252,
+            "actual_contacts": 35805,
+            "missed_contacts": 0,
+            "mask_sha256": "cba853d26ba63f4c9049b37d5fd375fe558e5596ca2bcd8e5f202ce1a5c85d36"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 19,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 116461,
+            "current_grid_distance_tests": 611001,
+            "actual_contacts": 43792,
+            "missed_contacts": 0,
+            "mask_sha256": "c81f8353abd2cc82bb6c22dbd7bcf1392241cec5f2d7a8f64ff1a375fd5a1ae4"
+          },
+          {
+            "scene": "lattice10000",
+            "step": 39,
+            "exhaustive_tests": 1606716,
+            "axis_survivors": 112203,
+            "current_grid_distance_tests": 612540,
+            "actual_contacts": 44631,
+            "missed_contacts": 0,
+            "mask_sha256": "f790a273584b21c58981888d34c7991a7833ec8b3287cca0ab31f0547c6cffbc"
+          }
+        ]
+      }
+    }
+  ],
+  "gates": {
+    "exact_repeats": true,
+    "captured_legs_exact": true,
+    "no_missed_contacts": true,
+    "finite_complete": true
+  }
+}

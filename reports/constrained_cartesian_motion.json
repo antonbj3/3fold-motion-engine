@@ -1,0 +1,14 @@
+{
+ "layer": "constrained Cartesian motion (orientation-locked task-space motion)",
+ "robot": "UR10e",
+ "ee_frame": "tool0",
+ "steps": 25,
+ "max_rot_err_constrained_mrad": 0.0,
+ "end_pos_err_mm": 0.618,
+ "collision_free": true,
+ "orientation_maintained": true,
+ "constraint_binds": true,
+ "binds_proof": "p1 reachable at a +30deg-rotated orientation (collision-free) too -> R_fix is one of several reachable orientations -> constraint does real work",
+ "note": "task-space interpolation (linear position, fixed orientation) + per-step full-pose IK; EE orientation held within tol throughout (dense-FK verified); p1 reachable at other orientations so the constraint binds",
+ "validated": true
+}

@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="motoman_sia50">
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.079172487 -0.000640712 0.13316432" rpy="0 0 0" /><mass value="141.56824" /><inertia ixx="2.6401195" iyy="4.6383165" izz="5.2858853" ixy="-0.010570304" ixz="0.0063261943" iyz="-0.0037968424" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/visual/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/collision/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0 1 1 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_s">
+    <inertial><origin xyz="0.020598243 0.005208672 -0.091280641" rpy="0 0 0" /><mass value="200.1363" /><inertia ixx="5.6038167" iyy="6.9335131" izz="6.97983" ixy="-0.26218279" ixz="-0.67778349" iyz="-0.2531157" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/visual/link_1_s.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/collision/link_1_s.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0 1 1 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_l">
+    <inertial><origin xyz="-8.7519457e-06 -0.063932015 0.26717454" rpy="0 0 0" /><mass value="115.75837" /><inertia ixx="5.2769242" iyy="5.2066258" izz="1.5353258" ixy="1.4568192e-05" ixz="-6.6089945e-05" iyz="-0.93747724" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/visual/link_2_l.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/collision/link_2_l.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0 1 1 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_e">
+    <inertial><origin xyz="1.4265198e-07 -0.024161632 -0.079803117" rpy="0 0 0" /><mass value="65.799889" /><inertia ixx="1.2476758" iyy="1.1705671" izz="0.73632702" ixy="-6.9765016e-06" ixz="-2.3887206e-05" iyz="0.020869761" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/visual/link_3_e.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/collision/link_3_e.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0 1 1 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_u">
+    <inertial><origin xyz="0.10220986 0.062400825 7.1428558e-05" rpy="0 0 0" /><mass value="49.889947" /><inertia ixx="0.49672166" iyy="0.89062813" izz="0.84212906" ixy="0.15882363" ixz="-0.00031534206" iyz="-1.9929323e-05" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/visual/link_4_u.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/collision/link_4_u.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0 1 1 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_r">
+    <inertial><origin xyz="-0.12095553 0.018329326 8.9336334e-05" rpy="0 0 0" /><mass value="39.034714" /><inertia ixx="0.25855393" iyy="0.64112553" izz="0.64680067" ixy="-0.03525826" ixz="-0.00023048175" iyz="0.00014620034" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/visual/link_5_r.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/collision/link_5_r.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0 1 1 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_b">
+    <inertial><origin xyz="0.11463531 -0.037567036 0.001351076" rpy="0 0 0" /><mass value="26.522803" /><inertia ixx="0.13974856" iyy="0.40934015" izz="0.38973345" ixy="-0.062218273" ixz="-0.0031060954" iyz="-0.00073362265" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/visual/link_6_b.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/collision/link_6_b.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0 1 1 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_t">
+    <inertial><origin xyz="-0.020483051 9.1290828e-05 0.0040261433" rpy="0 0 0" /><mass value="1.2897299" /><inertia ixx="0.0034264732" iyy="0.0018272724" izz="0.0018293206" ixy="-2.7891076e-07" ixz="1.9952546e-05" iyz="2.0282932e-05" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/visual/link_7_t.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_sia50_support/meshes/sia50/collision/link_7_t.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0 1 1 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  
+  
+  <joint name="joint_s" type="revolute">
+    <parent link="base_link" />
+    <child link="link_s" />
+    <origin rpy="0 0 0" xyz="0 0 0.540" />
+    <axis xyz="0 0 1" />
+    <limit effort="4903.32" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="joint_l" type="revolute">
+    <parent link="link_s" />
+    <child link="link_l" />
+    <origin rpy="0 0 0" xyz="0.145 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="5883.99" lower="-1.0471975511965976" upper="2.181661564992912" velocity="2.2689280275926285" />
+  </joint>
+  <joint name="joint_e" type="revolute">
+    <parent link="link_l" />
+    <child link="link_e" />
+    <origin rpy="0 0 0" xyz="0 0 0.875" />
+    <axis xyz="0 0 1" />
+    <limit effort="2549.73" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="2.2689280275926285" />
+  </joint>
+  <joint name="joint_u" type="revolute">
+    <parent link="link_e" />
+    <child link="link_u" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="2549.73" lower="-0.6108652381980153" upper="3.7524578917878086" velocity="2.2689280275926285" />
+  </joint>
+  <joint name="joint_r" type="revolute">
+    <parent link="link_u" />
+    <child link="link_r" />
+    <origin rpy="0 0 0" xyz="0.61 0 0" />
+    <axis xyz="-1 0 0" />
+    <limit effort="720.2" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="2.2689280275926285" />
+  </joint>
+  <joint name="joint_b" type="revolute">
+    <parent link="link_r" />
+    <child link="link_b" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="720.2" lower="-2.181661564992912" upper="2.181661564992912" velocity="2.2689280275926285" />
+  </joint>
+  <joint name="joint_t" type="revolute">
+    <parent link="link_b" />
+    <child link="link_t" />
+    <origin rpy="0 0 0" xyz="0.35 0 0" />
+    <axis xyz="-1 0 0" />
+    <limit effort="255.76" lower="-3.141592653589793" upper="3.141592653589793" velocity="3.490658503988659" />
+  </joint>
+  <joint name="link_t-tool0" type="fixed">
+    <origin rpy="0 0 -3.141592653589793" xyz="0 0 0.0" />
+    <parent link="link_t" />
+    <child link="tool0" />
+  </joint>
+  
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.540" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+</robot>

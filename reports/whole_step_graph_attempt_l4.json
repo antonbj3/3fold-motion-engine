@@ -1,0 +1,117 @@
+{
+  "legs": [
+    {
+      "baseline": {
+        "bodies": 10000,
+        "ms_per_step": 2.065,
+        "steps_per_s": 484.37,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 87697,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      },
+      "baseline_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+      "baseline_finite": true,
+      "capture_succeeded": false,
+      "error": "Warp copy error: Warp CUDA error 906: operation would make the legacy stream depend on a capturing blocking stream (in function wp_memcpy_d2h, <path>)",
+      "frames": [
+        {
+          "file": "<string>",
+          "line": 21,
+          "function": "<module>"
+        },
+        {
+          "file": "contact_engine_gpu_deferred_force.py",
+          "line": 31,
+          "function": "step"
+        },
+        {
+          "file": "types.py",
+          "line": 4109,
+          "function": "numpy"
+        },
+        {
+          "file": "types.py",
+          "line": 4196,
+          "function": "to"
+        },
+        {
+          "file": "context.py",
+          "line": 7420,
+          "function": "clone"
+        },
+        {
+          "file": "context.py",
+          "line": 10262,
+          "function": "copy"
+        }
+      ],
+      "attempt_ms": 6.625538000001541,
+      "concurrent_island_streams_reached": false
+    },
+    {
+      "baseline": {
+        "bodies": 10000,
+        "ms_per_step": 2.137,
+        "steps_per_s": 467.98,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 87697,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      },
+      "baseline_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+      "baseline_finite": true,
+      "capture_succeeded": false,
+      "error": "Warp copy error: Warp CUDA error 906: operation would make the legacy stream depend on a capturing blocking stream (in function wp_memcpy_d2h, <path>)",
+      "frames": [
+        {
+          "file": "<string>",
+          "line": 21,
+          "function": "<module>"
+        },
+        {
+          "file": "contact_engine_gpu_deferred_force.py",
+          "line": 31,
+          "function": "step"
+        },
+        {
+          "file": "types.py",
+          "line": 4109,
+          "function": "numpy"
+        },
+        {
+          "file": "types.py",
+          "line": 4196,
+          "function": "to"
+        },
+        {
+          "file": "context.py",
+          "line": 7420,
+          "function": "clone"
+        },
+        {
+          "file": "context.py",
+          "line": 10262,
+          "function": "copy"
+        }
+      ],
+      "attempt_ms": 7.446708000003355,
+      "concurrent_island_streams_reached": false
+    }
+  ],
+  "attempt_gates": {
+    "whole_step_capture": false
+  },
+  "repeat": true,
+  "status": "OWN-GATE-FAIL",
+  "scope": "One direct capture design, two independent processes. Same original N10000,40V20P fixture. No fallback rewrite or concurrent-island claim after first capture refusal.",
+  "worker_sha256": "49da6426c1170951e48255bf7aba09cc4daf7479f24a90204ff09c3f65879688"
+}

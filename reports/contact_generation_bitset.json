@@ -1,0 +1,43 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "canonical_order": true,
+      "contacts": 36,
+      "distance_tests": 147,
+      "exact_reference": true,
+      "reverse_identity": true,
+      "scene": "stack4",
+      "sha256": "c0fc4aac502bdd9b76bdcf954e8a0aacf5c04942a1763e0558805270c10b2318"
+    },
+    {
+      "canonical_order": true,
+      "contacts": 144,
+      "distance_tests": 833,
+      "exact_reference": true,
+      "reverse_identity": true,
+      "scene": "stack16",
+      "sha256": "9611f8066de87cc6869db59d05ff942f229bcf98f1d7bd9e6af94cca2513fbcf"
+    },
+    {
+      "canonical_order": true,
+      "contacts": 450,
+      "distance_tests": 3249,
+      "exact_reference": true,
+      "reverse_identity": true,
+      "scene": "lattice50",
+      "sha256": "49a5bad1799902256dc2cc9a0a739cce0fb6059a5e8de6e3ab9755260e560a07"
+    },
+    {
+      "canonical_order": true,
+      "contacts": 6,
+      "distance_tests": 10,
+      "exact_reference": true,
+      "reverse_identity": true,
+      "scene": "cutoff_and_coincidence",
+      "sha256": "b2c98df850eaa6a67aee7e004b36eddade8a36e6e842e8022c6b75481abc4580"
+    }
+  ],
+  "scope": "CPU prototype only; no GPU arithmetic or speed claim",
+  "status": "SYNTHETIC-ONLY"
+}

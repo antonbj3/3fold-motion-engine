@@ -1,0 +1,17 @@
+{
+  "gates": {
+    "environment_ready": false
+  },
+  "numerical_executions": 0,
+  "requested": {
+    "warp-lang": "1.13.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "observed": {
+    "warp-lang": "1.17.0",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "reason": "Runtime package installer remained active for more than five minutes; stopped before numerical execution. Retry moves the identical pins into the image build."
+}

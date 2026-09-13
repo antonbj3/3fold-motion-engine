@@ -1,0 +1,55 @@
+{
+  "legs": [
+    {
+      "stages": {
+        "generate": 0.473,
+        "sort": 0.327,
+        "select": 1.16,
+        "pairs": 0.321,
+        "colour": 0.678,
+        "solve": 1.331,
+        "warm_store": 0.059,
+        "integrate": 1.064,
+        "total_profiled_ms_per_step": 5.664,
+        "bodies": 10000,
+        "contacts_final": 87716,
+        "contacts_solved_final": 40000,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      },
+      "sha256": "dbcc40e89fb59b00560594d48ae4a72b53949de8e88d6b9213f0c0e2aac3c038",
+      "finite": true
+    },
+    {
+      "stages": {
+        "generate": 0.472,
+        "sort": 0.33,
+        "select": 1.165,
+        "pairs": 0.326,
+        "colour": 0.684,
+        "solve": 1.332,
+        "warm_store": 0.061,
+        "integrate": 1.034,
+        "total_profiled_ms_per_step": 5.652,
+        "bodies": 10000,
+        "contacts_final": 87716,
+        "contacts_solved_final": 40000,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      },
+      "sha256": "dbcc40e89fb59b00560594d48ae4a72b53949de8e88d6b9213f0c0e2aac3c038",
+      "finite": true
+    }
+  ],
+  "gates": {
+    "exact_state": true,
+    "finite": true
+  },
+  "execution": {
+    "gpu": "NVIDIA L4",
+    "driver": "580.95.05",
+    "warp": "1.13.0",
+    "date": "2026-09-13",
+    "provider": "Modal"
+  }
+}

@@ -1,0 +1,51 @@
+{
+ "device": "cuda:0",
+ "rows": [
+  {
+   "robot": "ur10e",
+   "scene": "cage",
+   "n": 10,
+   "fast": 10,
+   "fallback": 0,
+   "failed": 0,
+   "solved": 10,
+   "med_ms": 354
+  },
+  {
+   "robot": "ur10e",
+   "scene": "cage_forced",
+   "n": 6,
+   "fast": 4,
+   "fallback": 2,
+   "failed": 0,
+   "solved": 6,
+   "med_ms": 1331
+  },
+  {
+   "robot": "ur10e",
+   "scene": "corridor",
+   "n": 10,
+   "fast": 10,
+   "fallback": 0,
+   "failed": 0,
+   "solved": 10,
+   "med_ms": 262
+  },
+  {
+   "robot": "ur10e",
+   "scene": "pillars",
+   "n": 10,
+   "fast": 8,
+   "fallback": 2,
+   "failed": 0,
+   "solved": 10,
+   "med_ms": 571
+  }
+ ],
+ "total": 36,
+ "solved": 36,
+ "fast": 32,
+ "fallback": 4,
+ "failed": 0,
+ "frontier_found": true
+}

@@ -1,0 +1,66 @@
+{
+  "legs": [
+    {
+      "rows": [
+        {
+          "steps": 60,
+          "z": 9.69343749999382,
+          "v": -2.45250000004944,
+          "position_error": 6.179945444273471e-12,
+          "energy_relative": 6.179766178904357e-13,
+          "force_max": 0.0,
+          "finite": true,
+          "full_trace_sha256": "361c98bd6b678c8740de60e5f334fac8550b12a5b59aed1993786c5b8429c026"
+        },
+        {
+          "steps": 120,
+          "z": 9.6934375000194,
+          "v": -2.452499999844804,
+          "position_error": 1.9399593043090135e-11,
+          "energy_relative": -1.939977230845925e-12,
+          "force_max": 0.0,
+          "finite": true,
+          "full_trace_sha256": "2a273d48b711e848f812744348f82627e917f4c1355fc66a2b7b540932356374"
+        }
+      ],
+      "observed_order": -1.6503603810689598
+    },
+    {
+      "rows": [
+        {
+          "steps": 60,
+          "z": 9.69343749999382,
+          "v": -2.45250000004944,
+          "position_error": 6.179945444273471e-12,
+          "energy_relative": 6.179766178904357e-13,
+          "force_max": 0.0,
+          "finite": true,
+          "full_trace_sha256": "361c98bd6b678c8740de60e5f334fac8550b12a5b59aed1993786c5b8429c026"
+        },
+        {
+          "steps": 120,
+          "z": 9.6934375000194,
+          "v": -2.452499999844804,
+          "position_error": 1.9399593043090135e-11,
+          "energy_relative": -1.939977230845925e-12,
+          "force_max": 0.0,
+          "finite": true,
+          "full_trace_sha256": "2a273d48b711e848f812744348f82627e917f4c1355fc66a2b7b540932356374"
+        }
+      ],
+      "observed_order": -1.6503603810689598
+    }
+  ],
+  "gates": {
+    "exact_repeats": true,
+    "finite": true,
+    "coverage": true,
+    "no_contact": true,
+    "requested_order": false
+  },
+  "passed": 4,
+  "total": 5,
+  "original_order_two": false,
+  "status": "OWN-GATE-FAIL",
+  "scope": "Existing CPU midpoint only; constant-acceleration exactness does not measure general convergence order."
+}

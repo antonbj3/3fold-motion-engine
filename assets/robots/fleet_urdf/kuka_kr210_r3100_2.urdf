@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="kr210_r3100_2">
+  
+  <ros2_control name="kr210_r3100_2" type="system">
+    <hardware>
+      <plugin>kuka_rsi_driver::KukaRSIHardwareInterface</plugin>
+      <param name="client_ip">0.0.0.0</param>
+      <param name="client_port">59152</param>
+    </hardware>
+    <joint name="joint_1">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_2">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">-1.5708</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_3">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">1.5708</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_4">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_5">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_6">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <gpio name="gpio" />
+  </ros2_control>
+  
+  <link name="world" />
+  
+  <link name="base_link">
+    <collision>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/collision/base_link.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <inertial>
+      <inertia ixx="12.8308803908269" ixy="0.0" ixz="0.0" iyy="9.01196989503174" iyz="0.0" izz="14.2958860155811" />
+      <mass value="2.2596E2" />
+      <origin rpy="-0.050860131411839364 -0.0019883389878402632 1.5231487443995257" xyz="-0.0594893335103558 0.0021559506107275703 0.20325069304301702" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/visual/base_link.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_1">
+    <collision>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/collision/link_1.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <inertial>
+      <inertia ixx="31.7863155713632" ixy="0.0" ixz="0.0" iyy="13.3310318632879" iyz="0.0" izz="34.1806723147254" />
+      <mass value="3.6737E2" />
+      <origin rpy="-0.351197441830708 -1.2748494702774995 -1.4514723788195059" xyz="0.0282630046002668 0.011134569507580901 -0.235336739526907" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/visual/link_1.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_2">
+    <collision>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/collision/link_2.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <inertial>
+      <inertia ixx="6.11156632969732" ixy="0.0" ixz="0.0" iyy="82.7509302435823" iyz="0.0" izz="83.2585967164398" />
+      <mass value="2.5056E2" />
+      <origin rpy="0.5376277345260776 0.09067448308201614 0.007191247120022789" xyz="0.577871168582376 -0.0013846982758620701 -0.125571679438059" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/visual/link_2.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_3">
+    <collision>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/collision/link_3.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <inertial>
+      <inertia ixx="3.682159161562" ixy="0.0" ixz="0.0" iyy="33.5342001702104" iyz="0.0" izz="34.5572935050498" />
+      <mass value="2.0653E2" />
+      <origin rpy="2.1573989163353855 -0.05591461513404206 -0.051760900676735326" xyz="0.245752626737036 -0.0785722655304314 0.139793974725222" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/visual/link_3.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_4">
+    <collision>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/collision/link_4.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <inertial>
+      <inertia ixx="0.201148018312786" ixy="0.0" ixz="0.0" iyy="1.61560245160953" iyz="0.0" izz="1.64041744739939" />
+      <mass value="4.7942845677E1" />
+      <origin rpy="1.570992251106443 -1.3912820307912874 -1.5710550346492322" xyz="-8.82769985166503E-6 0.030038038468557102 -0.22035014882022402" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/visual/link_4.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_5">
+    <collision>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/collision/link_5.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <inertial>
+      <inertia ixx="0.34306033744263" ixy="0.0" ixz="0.0" iyy="0.19689279813435" iyz="0.0" izz="0.347976409834227" />
+      <mass value="2.3687644624E1" />
+      <origin rpy="1.6224506086845345 -0.9319967320369543 -0.06488528019058366" xyz="0.062409087507207 2.1098685344562402E-4 -0.0640578845918283" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/visual/link_5.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <link name="link_6">
+    <collision>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/collision/link_6.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </collision>
+    <inertial>
+      <inertia ixx="0.0369411271609063" ixy="0.0" ixz="0.0" iyy="0.0369531532955219" iyz="0.0" izz="0.0482510013261814" />
+      <mass value="1.2245718539E1" />
+      <origin rpy="1.0758644105165322E-4 -9.812464461473523E-5 -0.03310542818383201" xyz="4.5958226185134805E-6 -5.59089459126197E-6 -0.0254361898182505" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://kuka_quantec_support/meshes/kr210_r3100_2/visual/link_6.stl" />
+      </geometry>
+      <origin rpy="-0.0 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    </visual>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_1" />
+    <limit effort="7290" lower="-3.2288591161895095E0" upper="3.2288591161895095E0" velocity="1.8325957145940461" />
+    <origin rpy="-3.141592653589793 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    <parent link="base_link" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_2" />
+    <limit effort="8910" lower="-2.443460952792061E0" upper="-8.726646259971647E-2" velocity="1.6406094968746698" />
+    <origin rpy="1.5707963267948963 0.0 -0.0" xyz="0.33 0.0 -0.645" />
+    <parent link="link_1" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_3" />
+    <limit effort="7251.2876" lower="-2.0943951023931953E0" upper="2.9321531433504737E0" velocity="1.7453292519943295" />
+    <origin rpy="0.0 0.0 -1.5707963267948963" xyz="1.35 0.0 0.0" />
+    <parent link="link_2" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_4" />
+    <limit effort="2356.12598" lower="-6.1086523819801535E0" upper="6.1086523819801535E0" velocity="2.3736477827122884" />
+    <origin rpy="1.5707963267948963 0.0 -0.0" xyz="0.115 0.0 0.0" />
+    <parent link="link_3" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_5" />
+    <limit effort="2358.44531" lower="-2.138028333693054E0" upper="2.138028333693054E0" velocity="2.251474735072685" />
+    <origin rpy="-1.5707963267948963 0.0 -0.0" xyz="0.0 0.0 -1.42" />
+    <parent link="link_4" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <axis xyz="0.0 0.0 1.0" />
+    <child link="link_6" />
+    <limit effort="1508.75476" lower="-6.1086523819801535E0" upper="6.1086523819801535E0" velocity="3.595378259108319" />
+    <origin rpy="1.5707963267948963 0.0 -0.0" xyz="0.0 0.0 0.0" />
+    <parent link="link_5" />
+  </joint>
+  
+  <link name="base" />
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange" />
+  <joint name="link6-flange" type="fixed">
+    <child link="flange" />
+    <origin rpy="0 1.5707963267948966 -0.0" xyz="0.0 0.0 -0.240" />
+    <parent link="link_6" />
+  </joint>
+  
+  <link name="tool0" />
+  <joint name="link6-tool0" type="fixed">
+    <child link="tool0" />
+    <origin rpy="0 3.141592653589793 -0.0" xyz="0.0 0.0 -0.240" />
+    <parent link="link_6" />
+  </joint>
+  
+  <joint name="world-base_link" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+</robot>

@@ -1,0 +1,108 @@
+{
+  "legs": [
+    [
+      {
+        "bodies": 1000,
+        "points": 18000,
+        "cache_bytes": 2304000,
+        "baseline_count": 8772,
+        "candidate_count": 8772,
+        "max_neighbours": 1,
+        "timings_ms": {
+          "baseline_canonical_prefix": 0.31309436666677,
+          "candidate_canonical": 0.26904556666676643
+        },
+        "exact_reference": true,
+        "prefix_exact": true,
+        "candidate_sha256": "4fe9c4829e6fd7958be094099aa8f173c4161d00abababa32171a5923c9380c2",
+        "fixture_sha256": "d48cfe5934818c3ef1d7eb501061da8d581cf16d4e9c7ea6d4c7874657dbcc6e",
+        "canonical_features": true
+      },
+      {
+        "bodies": 10000,
+        "points": 180000,
+        "cache_bytes": 23040000,
+        "baseline_count": 85427,
+        "candidate_count": 85427,
+        "max_neighbours": 1,
+        "timings_ms": {
+          "baseline_canonical_prefix": 1.5660562000000766,
+          "candidate_canonical": 1.7623894999999834
+        },
+        "exact_reference": true,
+        "prefix_exact": true,
+        "candidate_sha256": "4b912fb10f20dd7668c55546de18b2ffc346fa785594f28a6f1512fd94482f0e",
+        "fixture_sha256": "e6af482b99eebe059ce12f35bc5a1667bbd09c6ce725adffdc1119ba28aae1bf",
+        "canonical_features": true
+      }
+    ],
+    [
+      {
+        "bodies": 1000,
+        "points": 18000,
+        "cache_bytes": 2304000,
+        "baseline_count": 8772,
+        "candidate_count": 8772,
+        "max_neighbours": 1,
+        "timings_ms": {
+          "baseline_canonical_prefix": 0.3157477999999732,
+          "candidate_canonical": 0.25914119999998303
+        },
+        "exact_reference": true,
+        "prefix_exact": true,
+        "candidate_sha256": "4fe9c4829e6fd7958be094099aa8f173c4161d00abababa32171a5923c9380c2",
+        "fixture_sha256": "d48cfe5934818c3ef1d7eb501061da8d581cf16d4e9c7ea6d4c7874657dbcc6e",
+        "canonical_features": true
+      },
+      {
+        "bodies": 10000,
+        "points": 180000,
+        "cache_bytes": 23040000,
+        "baseline_count": 85427,
+        "candidate_count": 85427,
+        "max_neighbours": 1,
+        "timings_ms": {
+          "baseline_canonical_prefix": 1.6046394666666686,
+          "candidate_canonical": 1.801562400000023
+        },
+        "exact_reference": true,
+        "prefix_exact": true,
+        "candidate_sha256": "4b912fb10f20dd7668c55546de18b2ffc346fa785594f28a6f1512fd94482f0e",
+        "fixture_sha256": "e6af482b99eebe059ce12f35bc5a1667bbd09c6ce725adffdc1119ba28aae1bf",
+        "canonical_features": true
+      }
+    ]
+  ],
+  "backgrounds": [
+    {
+      "before_worker": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after_worker": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    },
+    {
+      "before_worker": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after_worker": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    }
+  ],
+  "gates": {
+    "exact_reference": true,
+    "prefix_exact": true,
+    "canonical_features": true,
+    "two_run_identity": true,
+    "no_slower_than_canonical_prefix": false
+  },
+  "warm": 10,
+  "timed": 30,
+  "scope": "frozen raw generation plus feature sort/gather versus cached canonical generation; excludes downstream pair grouping"
+}

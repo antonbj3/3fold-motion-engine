@@ -1,0 +1,16 @@
+{
+ "device": "cuda:0",
+ "rows": [
+  {
+   "robot": "ur10e",
+   "nq": 6,
+   "n": 4,
+   "solved": 3,
+   "ms": 554
+  }
+ ],
+ "total_solved": 3,
+ "total": 4,
+ "worst_ms": 554,
+ "generalizes": false
+}

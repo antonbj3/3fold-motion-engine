@@ -1,0 +1,153 @@
+{
+  "legs": [
+    {
+      "m5": {
+        "max_pen_over_R": 1.3415160775184631,
+        "max_pen_m": 0.06707580387592316,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 7.978431414145351e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.1379241943359375,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "rows": [
+        {
+          "call": 1,
+          "contacts": 4,
+          "cached_normal_max": 0.0,
+          "cached_normal_sum": 0.0,
+          "cached_tangent_norm": 0.0,
+          "velocity_change_max": 0.0,
+          "finite": true
+        },
+        {
+          "call": 20,
+          "contacts": 32,
+          "cached_normal_max": 33.703147888183594,
+          "cached_normal_sum": 272.90711465477943,
+          "cached_tangent_norm": 7.839057784079638,
+          "velocity_change_max": 0.0,
+          "finite": true
+        },
+        {
+          "call": 100,
+          "contacts": 64,
+          "cached_normal_max": 578.1925659179688,
+          "cached_normal_sum": 4872.694434285164,
+          "cached_tangent_norm": 125.5500890472161,
+          "velocity_change_max": 0.0,
+          "finite": true
+        },
+        {
+          "call": 300,
+          "contacts": 60,
+          "cached_normal_max": 950.3851928710938,
+          "cached_normal_sum": 4605.491673201323,
+          "cached_tangent_norm": 256.70757959106624,
+          "velocity_change_max": 0.0,
+          "finite": true
+        },
+        {
+          "call": 590,
+          "contacts": 64,
+          "cached_normal_max": 465.7346496582031,
+          "cached_normal_sum": 2387.6468870937824,
+          "cached_tangent_norm": 35.39618433653241,
+          "velocity_change_max": 0.0,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "m5": {
+        "max_pen_over_R": 1.3415160775184631,
+        "max_pen_m": 0.06707580387592316,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 7.978431414145351e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.1379241943359375,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "rows": [
+        {
+          "call": 1,
+          "contacts": 4,
+          "cached_normal_max": 0.0,
+          "cached_normal_sum": 0.0,
+          "cached_tangent_norm": 0.0,
+          "velocity_change_max": 0.0,
+          "finite": true
+        },
+        {
+          "call": 20,
+          "contacts": 32,
+          "cached_normal_max": 33.703147888183594,
+          "cached_normal_sum": 272.90711465477943,
+          "cached_tangent_norm": 7.839057784079638,
+          "velocity_change_max": 0.0,
+          "finite": true
+        },
+        {
+          "call": 100,
+          "contacts": 64,
+          "cached_normal_max": 578.1925659179688,
+          "cached_normal_sum": 4872.694434285164,
+          "cached_tangent_norm": 125.5500890472161,
+          "velocity_change_max": 0.0,
+          "finite": true
+        },
+        {
+          "call": 300,
+          "contacts": 60,
+          "cached_normal_max": 950.3851928710938,
+          "cached_normal_sum": 4605.491673201323,
+          "cached_tangent_norm": 256.70757959106624,
+          "velocity_change_max": 0.0,
+          "finite": true
+        },
+        {
+          "call": 590,
+          "contacts": 64,
+          "cached_normal_max": 465.7346496582031,
+          "cached_normal_sum": 2387.6468870937824,
+          "cached_tangent_norm": 35.39618433653241,
+          "velocity_change_max": 0.0,
+          "finite": true
+        }
+      ]
+    }
+  ],
+  "gates": {
+    "exact_repeats": true,
+    "unchanged_m5": true,
+    "samples": true,
+    "finite": true
+  },
+  "execution": {
+    "gpu": "NVIDIA L4",
+    "driver": "580.95.05",
+    "warp": "1.13.0",
+    "date": "2026-09-13",
+    "provider": "Modal"
+  }
+}

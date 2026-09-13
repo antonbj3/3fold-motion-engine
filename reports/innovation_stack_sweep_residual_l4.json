@@ -1,0 +1,364 @@
+{
+  "legs": [
+    {
+      "40": {
+        "m5": {
+          "max_pen_over_R": 1.3415160775184631,
+          "max_pen_m": 0.06707580387592316,
+          "drift_class": "secular",
+          "drift_slope_m_per_step": 7.978431414145351e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.1379241943359375,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": false,
+          "status": "INVALID",
+          "valid": false,
+          "invalid_reasons": [
+            "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+          ],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "rows": [
+          {
+            "call": 1,
+            "contacts": 4,
+            "normal_update_max": 1.58106114866996e-08,
+            "normal_update_l2": 1.891887971993604e-08,
+            "tangent_update_max": 9.837024776474904e-09,
+            "tangent_update_l2": 1.0400170629902665e-08,
+            "closing_velocity_max": 2.6236946018554086e-09,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "534ade603db0f1758b1bf1a76527b45a7cbd04171db5da165009b1c0f7d06d9d"
+          },
+          {
+            "call": 20,
+            "contacts": 32,
+            "normal_update_max": 0.04716288827361481,
+            "normal_update_l2": 0.12367375402901047,
+            "tangent_update_max": 0.022307114116107068,
+            "tangent_update_l2": 0.03911019763797711,
+            "closing_velocity_max": 0.02059925127329184,
+            "minimum_normal_impulse": 2.685115337371826,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "717975d7943f4130467989e303db569b4554ace95407109c2f7096c0071c7eb0"
+          },
+          {
+            "call": 100,
+            "contacts": 64,
+            "normal_update_max": 0.07427930014063477,
+            "normal_update_l2": 0.1581080849540149,
+            "tangent_update_max": 0.019208074291721472,
+            "tangent_update_l2": 0.05528973985705866,
+            "closing_velocity_max": 0.024635340191835768,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 1.344751421328283e-08,
+            "finite": true,
+            "snapshot_sha256": "55b565347d9c8ffba2985f94cbff59332de55540811d51e6e4b91e6330bb4275"
+          },
+          {
+            "call": 300,
+            "contacts": 60,
+            "normal_update_max": 0.12041129852082122,
+            "normal_update_l2": 0.25807872170984436,
+            "tangent_update_max": 0.06238368866073625,
+            "tangent_update_l2": 0.16254540690239877,
+            "closing_velocity_max": 0.033496751750247696,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 9.097477331465598e-07,
+            "finite": true,
+            "snapshot_sha256": "a9d1cd1ba1de0c7d69605e4d8a00798352d44f2181c19a9c62118852d6117286"
+          },
+          {
+            "call": 590,
+            "contacts": 64,
+            "normal_update_max": 0.06845642356580584,
+            "normal_update_l2": 0.1291161115731701,
+            "tangent_update_max": 0.0677819323937668,
+            "tangent_update_l2": 0.11464974154679017,
+            "closing_velocity_max": 0.017240209585398264,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 9.561184732831407e-08,
+            "finite": true,
+            "snapshot_sha256": "2e4b064175382362ba6ad483a6a78998b41951ada04fb2578e2f81702f61fdb0"
+          }
+        ]
+      },
+      "160": {
+        "m5": {
+          "max_pen_over_R": 0.2733662724494934,
+          "max_pen_m": 0.01366831362247467,
+          "drift_class": "bounded",
+          "drift_slope_m_per_step": 1.3732127247164647e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.191331684589386,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "rows": [
+          {
+            "call": 1,
+            "contacts": 4,
+            "normal_update_max": 1.58106114866996e-08,
+            "normal_update_l2": 1.891887971993604e-08,
+            "tangent_update_max": 9.837024776474904e-09,
+            "tangent_update_l2": 1.0400170629902665e-08,
+            "closing_velocity_max": 2.6236946018554086e-09,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "534ade603db0f1758b1bf1a76527b45a7cbd04171db5da165009b1c0f7d06d9d"
+          },
+          {
+            "call": 20,
+            "contacts": 32,
+            "normal_update_max": 0.0025467410177313354,
+            "normal_update_l2": 0.004789840941774052,
+            "tangent_update_max": 0.0007965808059641439,
+            "tangent_update_l2": 0.0023253648501594818,
+            "closing_velocity_max": 0.000698838013448233,
+            "minimum_normal_impulse": 0.4867802560329437,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "43e0f659db2dee0da9f96174b72651afdb18942b9bce596b76490a1246c7d95c"
+          },
+          {
+            "call": 100,
+            "contacts": 64,
+            "normal_update_max": 0.011997291735099225,
+            "normal_update_l2": 0.028652257883221104,
+            "tangent_update_max": 0.003941596518033256,
+            "tangent_update_l2": 0.008184129282438836,
+            "closing_velocity_max": 0.004830199101450088,
+            "minimum_normal_impulse": 0.055095184594392776,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "cd31d7b72faaf6c711c1fc915c19c79ab2e761464602fd3e29f0ca35345f964a"
+          },
+          {
+            "call": 300,
+            "contacts": 64,
+            "normal_update_max": 0.009242535786825101,
+            "normal_update_l2": 0.0245642918582734,
+            "tangent_update_max": 0.0039151665662915495,
+            "tangent_update_l2": 0.008362700386222348,
+            "closing_velocity_max": 0.003913090386104199,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 2.4738744941465995e-09,
+            "finite": true,
+            "snapshot_sha256": "c87ca4309b4fc74dc43681a1af1fe87f9c83ccf07ffb1f99d1ebadf49adf8bc3"
+          },
+          {
+            "call": 590,
+            "contacts": 63,
+            "normal_update_max": 0.016220655335757783,
+            "normal_update_l2": 0.054760609673847584,
+            "tangent_update_max": 0.007412409946968183,
+            "tangent_update_l2": 0.019524541766727032,
+            "closing_velocity_max": 0.007027471565374982,
+            "minimum_normal_impulse": 0.15404348075389862,
+            "cone_violation": 1.6706828587231826e-08,
+            "finite": true,
+            "snapshot_sha256": "c0c3c87a9dbcb01ea52bb5436922bdc2dc06d689bcab3f8186bbe029aa18725a"
+          }
+        ]
+      }
+    },
+    {
+      "40": {
+        "m5": {
+          "max_pen_over_R": 1.3415160775184631,
+          "max_pen_m": 0.06707580387592316,
+          "drift_class": "secular",
+          "drift_slope_m_per_step": 7.978431414145351e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.1379241943359375,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": false,
+          "status": "INVALID",
+          "valid": false,
+          "invalid_reasons": [
+            "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+          ],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "rows": [
+          {
+            "call": 1,
+            "contacts": 4,
+            "normal_update_max": 1.58106114866996e-08,
+            "normal_update_l2": 1.891887971993604e-08,
+            "tangent_update_max": 9.837024776474904e-09,
+            "tangent_update_l2": 1.0400170629902665e-08,
+            "closing_velocity_max": 2.6236946018554086e-09,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "534ade603db0f1758b1bf1a76527b45a7cbd04171db5da165009b1c0f7d06d9d"
+          },
+          {
+            "call": 20,
+            "contacts": 32,
+            "normal_update_max": 0.04716288827361481,
+            "normal_update_l2": 0.12367375402901047,
+            "tangent_update_max": 0.022307114116107068,
+            "tangent_update_l2": 0.03911019763797711,
+            "closing_velocity_max": 0.02059925127329184,
+            "minimum_normal_impulse": 2.685115337371826,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "717975d7943f4130467989e303db569b4554ace95407109c2f7096c0071c7eb0"
+          },
+          {
+            "call": 100,
+            "contacts": 64,
+            "normal_update_max": 0.07427930014063477,
+            "normal_update_l2": 0.1581080849540149,
+            "tangent_update_max": 0.019208074291721472,
+            "tangent_update_l2": 0.05528973985705866,
+            "closing_velocity_max": 0.024635340191835768,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 1.344751421328283e-08,
+            "finite": true,
+            "snapshot_sha256": "55b565347d9c8ffba2985f94cbff59332de55540811d51e6e4b91e6330bb4275"
+          },
+          {
+            "call": 300,
+            "contacts": 60,
+            "normal_update_max": 0.12041129852082122,
+            "normal_update_l2": 0.25807872170984436,
+            "tangent_update_max": 0.06238368866073625,
+            "tangent_update_l2": 0.16254540690239877,
+            "closing_velocity_max": 0.033496751750247696,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 9.097477331465598e-07,
+            "finite": true,
+            "snapshot_sha256": "a9d1cd1ba1de0c7d69605e4d8a00798352d44f2181c19a9c62118852d6117286"
+          },
+          {
+            "call": 590,
+            "contacts": 64,
+            "normal_update_max": 0.06845642356580584,
+            "normal_update_l2": 0.1291161115731701,
+            "tangent_update_max": 0.0677819323937668,
+            "tangent_update_l2": 0.11464974154679017,
+            "closing_velocity_max": 0.017240209585398264,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 9.561184732831407e-08,
+            "finite": true,
+            "snapshot_sha256": "2e4b064175382362ba6ad483a6a78998b41951ada04fb2578e2f81702f61fdb0"
+          }
+        ]
+      },
+      "160": {
+        "m5": {
+          "max_pen_over_R": 0.2733662724494934,
+          "max_pen_m": 0.01366831362247467,
+          "drift_class": "bounded",
+          "drift_slope_m_per_step": 1.3732127247164647e-05,
+          "threshold_pen_over_R": 0.5,
+          "min_spacing_m": 0.191331684589386,
+          "max_pen_body_body_m": null,
+          "rest_pitch_m": 0.205,
+          "pass": true,
+          "status": "PASS",
+          "valid": true,
+          "invalid_reasons": [],
+          "spacing_floor_m": 0.164,
+          "pen_ceiling_m": 0.05,
+          "units": "dimensionless (pen/R)"
+        },
+        "rows": [
+          {
+            "call": 1,
+            "contacts": 4,
+            "normal_update_max": 1.58106114866996e-08,
+            "normal_update_l2": 1.891887971993604e-08,
+            "tangent_update_max": 9.837024776474904e-09,
+            "tangent_update_l2": 1.0400170629902665e-08,
+            "closing_velocity_max": 2.6236946018554086e-09,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "534ade603db0f1758b1bf1a76527b45a7cbd04171db5da165009b1c0f7d06d9d"
+          },
+          {
+            "call": 20,
+            "contacts": 32,
+            "normal_update_max": 0.0025467410177313354,
+            "normal_update_l2": 0.004789840941774052,
+            "tangent_update_max": 0.0007965808059641439,
+            "tangent_update_l2": 0.0023253648501594818,
+            "closing_velocity_max": 0.000698838013448233,
+            "minimum_normal_impulse": 0.4867802560329437,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "43e0f659db2dee0da9f96174b72651afdb18942b9bce596b76490a1246c7d95c"
+          },
+          {
+            "call": 100,
+            "contacts": 64,
+            "normal_update_max": 0.011997291735099225,
+            "normal_update_l2": 0.028652257883221104,
+            "tangent_update_max": 0.003941596518033256,
+            "tangent_update_l2": 0.008184129282438836,
+            "closing_velocity_max": 0.004830199101450088,
+            "minimum_normal_impulse": 0.055095184594392776,
+            "cone_violation": 0.0,
+            "finite": true,
+            "snapshot_sha256": "cd31d7b72faaf6c711c1fc915c19c79ab2e761464602fd3e29f0ca35345f964a"
+          },
+          {
+            "call": 300,
+            "contacts": 64,
+            "normal_update_max": 0.009242535786825101,
+            "normal_update_l2": 0.0245642918582734,
+            "tangent_update_max": 0.0039151665662915495,
+            "tangent_update_l2": 0.008362700386222348,
+            "closing_velocity_max": 0.003913090386104199,
+            "minimum_normal_impulse": 0.0,
+            "cone_violation": 2.4738744941465995e-09,
+            "finite": true,
+            "snapshot_sha256": "c87ca4309b4fc74dc43681a1af1fe87f9c83ccf07ffb1f99d1ebadf49adf8bc3"
+          },
+          {
+            "call": 590,
+            "contacts": 63,
+            "normal_update_max": 0.016220655335757783,
+            "normal_update_l2": 0.054760609673847584,
+            "tangent_update_max": 0.007412409946968183,
+            "tangent_update_l2": 0.019524541766727032,
+            "closing_velocity_max": 0.007027471565374982,
+            "minimum_normal_impulse": 0.15404348075389862,
+            "cone_violation": 1.6706828587231826e-08,
+            "finite": true,
+            "snapshot_sha256": "c0c3c87a9dbcb01ea52bb5436922bdc2dc06d689bcab3f8186bbe029aa18725a"
+          }
+        ]
+      }
+    }
+  ],
+  "gates": {
+    "two_results_identical": true,
+    "unchanged_m5": true,
+    "finite": true,
+    "impulse_feasible": true,
+    "all_snapshots": true
+  },
+  "scope": "post-solve isolated float64 update diagnostic, no engine correction"
+}

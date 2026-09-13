@@ -1,0 +1,235 @@
+{
+  "legs": [
+    [
+      {
+        "bodies": 1000,
+        "points": 18000,
+        "fixture_sha256": "d48cfe5934818c3ef1d7eb501061da8d581cf16d4e9c7ea6d4c7874657dbcc6e",
+        "grids": [
+          {
+            "shape": [
+              64,
+              64,
+              64
+            ],
+            "buckets": 262144,
+            "visits_total": 577355,
+            "visits_mean": 32.07527777777778,
+            "visits_max": 111,
+            "valid_total": 4239,
+            "contacts_with_ground": 8772,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "84a2fb6879f495ddf017defe15af7e92eabdcfe9cd42777b3d9d4d36ed4fe177"
+          },
+          {
+            "shape": [
+              128,
+              128,
+              128
+            ],
+            "buckets": 2097152,
+            "visits_total": 309720,
+            "visits_mean": 17.206666666666667,
+            "visits_max": 36,
+            "valid_total": 4239,
+            "contacts_with_ground": 8772,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "c49a47ddf6fc58afe765668ab84b305857be5c9622e8c86d60bad72d322a151a"
+          },
+          {
+            "shape": [
+              256,
+              256,
+              8
+            ],
+            "buckets": 524288,
+            "visits_total": 309720,
+            "visits_mean": 17.206666666666667,
+            "visits_max": 36,
+            "valid_total": 4239,
+            "contacts_with_ground": 8772,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "c49a47ddf6fc58afe765668ab84b305857be5c9622e8c86d60bad72d322a151a"
+          }
+        ]
+      },
+      {
+        "bodies": 10000,
+        "points": 180000,
+        "fixture_sha256": "e6af482b99eebe059ce12f35bc5a1667bbd09c6ce725adffdc1119ba28aae1bf",
+        "grids": [
+          {
+            "shape": [
+              64,
+              64,
+              64
+            ],
+            "buckets": 262144,
+            "visits_total": 46262638,
+            "visits_mean": 257.0146555555556,
+            "visits_max": 653,
+            "valid_total": 44631,
+            "contacts_with_ground": 85427,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "7498b91a33f6fa8fe88b15791195807d299b226523ae0e9dade5ee80934b13a7"
+          },
+          {
+            "shape": [
+              128,
+              128,
+              128
+            ],
+            "buckets": 2097152,
+            "visits_total": 11559570,
+            "visits_mean": 64.21983333333333,
+            "visits_max": 156,
+            "valid_total": 44631,
+            "contacts_with_ground": 85427,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "b26bdd3b8a052853fe0d0964cc2697ffe8504b4a8b8d1a61c02c6e433382756e"
+          },
+          {
+            "shape": [
+              256,
+              256,
+              8
+            ],
+            "buckets": 524288,
+            "visits_total": 3180004,
+            "visits_mean": 17.66668888888889,
+            "visits_max": 36,
+            "valid_total": 44631,
+            "contacts_with_ground": 85427,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "f302adde9bb9ebbe6a62710b5d29f14eb612c14853393f5e4449dcc118e8a314"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "bodies": 1000,
+        "points": 18000,
+        "fixture_sha256": "d48cfe5934818c3ef1d7eb501061da8d581cf16d4e9c7ea6d4c7874657dbcc6e",
+        "grids": [
+          {
+            "shape": [
+              64,
+              64,
+              64
+            ],
+            "buckets": 262144,
+            "visits_total": 577355,
+            "visits_mean": 32.07527777777778,
+            "visits_max": 111,
+            "valid_total": 4239,
+            "contacts_with_ground": 8772,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "84a2fb6879f495ddf017defe15af7e92eabdcfe9cd42777b3d9d4d36ed4fe177"
+          },
+          {
+            "shape": [
+              128,
+              128,
+              128
+            ],
+            "buckets": 2097152,
+            "visits_total": 309720,
+            "visits_mean": 17.206666666666667,
+            "visits_max": 36,
+            "valid_total": 4239,
+            "contacts_with_ground": 8772,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "c49a47ddf6fc58afe765668ab84b305857be5c9622e8c86d60bad72d322a151a"
+          },
+          {
+            "shape": [
+              256,
+              256,
+              8
+            ],
+            "buckets": 524288,
+            "visits_total": 309720,
+            "visits_mean": 17.206666666666667,
+            "visits_max": 36,
+            "valid_total": 4239,
+            "contacts_with_ground": 8772,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "c49a47ddf6fc58afe765668ab84b305857be5c9622e8c86d60bad72d322a151a"
+          }
+        ]
+      },
+      {
+        "bodies": 10000,
+        "points": 180000,
+        "fixture_sha256": "e6af482b99eebe059ce12f35bc5a1667bbd09c6ce725adffdc1119ba28aae1bf",
+        "grids": [
+          {
+            "shape": [
+              64,
+              64,
+              64
+            ],
+            "buckets": 262144,
+            "visits_total": 46262638,
+            "visits_mean": 257.0146555555556,
+            "visits_max": 653,
+            "valid_total": 44631,
+            "contacts_with_ground": 85427,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "7498b91a33f6fa8fe88b15791195807d299b226523ae0e9dade5ee80934b13a7"
+          },
+          {
+            "shape": [
+              128,
+              128,
+              128
+            ],
+            "buckets": 2097152,
+            "visits_total": 11559570,
+            "visits_mean": 64.21983333333333,
+            "visits_max": 156,
+            "valid_total": 44631,
+            "contacts_with_ground": 85427,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "b26bdd3b8a052853fe0d0964cc2697ffe8504b4a8b8d1a61c02c6e433382756e"
+          },
+          {
+            "shape": [
+              256,
+              256,
+              8
+            ],
+            "buckets": 524288,
+            "visits_total": 3180004,
+            "visits_mean": 17.66668888888889,
+            "visits_max": 36,
+            "valid_total": 44631,
+            "contacts_with_ground": 85427,
+            "same_valid_counts": true,
+            "visits_cover_valid": true,
+            "counts_sha256": "f302adde9bb9ebbe6a62710b5d29f14eb612c14853393f5e4449dcc118e8a314"
+          }
+        ]
+      }
+    ]
+  ],
+  "gates": {
+    "two_full_results_identical": true,
+    "valid_counts_grid_invariant": true,
+    "exact_canonical_count": true,
+    "visits_cover_valid": true
+  },
+  "performance_measured": false
+}

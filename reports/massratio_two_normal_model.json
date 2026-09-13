@@ -1,0 +1,43 @@
+{
+  "rows": [
+    {
+      "ratio": 1,
+      "H": [
+        [
+          0.07936507936507936,
+          -0.07936507936507936
+        ],
+        [
+          -0.07936507936507936,
+          0.15873015873015872
+        ]
+      ],
+      "diagonal_preconditioned_eigenvalues": [
+        0.2928932188134524,
+        1.7071067811865475
+      ],
+      "slow_mode_after_40": 0.0894050074770206,
+      "complement_schur": 0.03968253968253968
+    },
+    {
+      "ratio": 1000,
+      "H": [
+        [
+          0.07936507936507936,
+          -0.07936507936507936
+        ],
+        [
+          -0.07936507936507936,
+          0.07944444444444444
+        ]
+      ],
+      "diagonal_preconditioned_eigenvalues": [
+        0.000499625312226859,
+        1.9995003746877733
+      ],
+      "slow_mode_after_40": 0.9960107759676063,
+      "complement_schur": 7.928579357151244e-05
+    }
+  ],
+  "scope": "Analytic vertical two-contact control, not captured engine geometry, not a solver or convergence certificate."
+}

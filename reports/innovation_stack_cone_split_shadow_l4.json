@@ -1,0 +1,220 @@
+{
+  "legs": [
+    {
+      "m5": {
+        "max_pen_over_R": 1.3415160775184631,
+        "max_pen_m": 0.06707580387592316,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 7.978431414145351e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.1379241943359375,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "rows": [
+        {
+          "call": 1,
+          "contacts": 4,
+          "rho": 0.0673773211114098,
+          "iterations": 40,
+          "projected_residual": 6.666060731186363e-09,
+          "cone_violation": 0.0,
+          "finite": true,
+          "normal_only_energy": 2.5563614337224303,
+          "coupled_energy": 2.5508437100430474,
+          "normal_only_normal_velocity_norm": 0.06548008381629411,
+          "normal_only_tangent_velocity_norm": 0.06548008381629412,
+          "coupled_normal_velocity_norm": 0.053502016775186095,
+          "coupled_tangent_velocity_norm": 1.1961562891302612e-08,
+          "solution_sha256": "b409cb0c282b4bc78cd80f09640a2a5ec254b29ab8fc045b64530359ff02a3ba"
+        },
+        {
+          "call": 20,
+          "contacts": 32,
+          "rho": 0.18259382747208197,
+          "iterations": 6242,
+          "projected_residual": 9.985086535380105e-09,
+          "cone_violation": 0.0,
+          "finite": true,
+          "normal_only_energy": 44.55757081917823,
+          "coupled_energy": 44.54531041837483,
+          "normal_only_normal_velocity_norm": 3.613041455129957e-08,
+          "normal_only_tangent_velocity_norm": 0.10024940809431182,
+          "coupled_normal_velocity_norm": 3.2423782160464426e-08,
+          "coupled_tangent_velocity_norm": 3.864456873480706e-09,
+          "solution_sha256": "97d66ec78de5426c388e39dc84483df345c6091d3e5186232d4d9b995d6ea627"
+        },
+        {
+          "call": 100,
+          "contacts": 64,
+          "rho": 0.18207164821093336,
+          "iterations": 40000,
+          "projected_residual": 3.28624861056781e-05,
+          "cone_violation": 5.551115123125783e-17,
+          "finite": true,
+          "normal_only_energy": 1.5105136422716823,
+          "coupled_energy": 0.2969831383474678,
+          "normal_only_normal_velocity_norm": 0.006105148652615952,
+          "normal_only_tangent_velocity_norm": 0.35072740108923717,
+          "coupled_normal_velocity_norm": 0.026532827383481845,
+          "coupled_tangent_velocity_norm": 0.003123520840490782,
+          "solution_sha256": "95228a4a012e8627473038af270f3dface2a01ca3519de9590cd6dcc2c484c7a"
+        },
+        {
+          "call": 300,
+          "contacts": 60,
+          "rho": 0.20752805414170444,
+          "iterations": 40000,
+          "projected_residual": 0.00011155029328691057,
+          "cone_violation": 1.7763568394002505e-15,
+          "finite": true,
+          "normal_only_energy": 9.653277411274907,
+          "coupled_energy": 3.033089532754981,
+          "normal_only_normal_velocity_norm": 0.009307538795929132,
+          "normal_only_tangent_velocity_norm": 0.5878046686643377,
+          "coupled_normal_velocity_norm": 0.1461901427944726,
+          "coupled_tangent_velocity_norm": 0.1108369774688904,
+          "solution_sha256": "d44f4bfa19273eb6fdae444e8d4f8f25b697ce8a5cd5bce204b4d4341d349e0f"
+        },
+        {
+          "call": 590,
+          "contacts": 64,
+          "rho": 0.2050283662766611,
+          "iterations": 40000,
+          "projected_residual": 2.179952891978587e-05,
+          "cone_violation": 1.7763568394002505e-15,
+          "finite": true,
+          "normal_only_energy": 7.776699953700988,
+          "coupled_energy": 6.415451073305869,
+          "normal_only_normal_velocity_norm": 0.03470894011014779,
+          "normal_only_tangent_velocity_norm": 0.28346054507297336,
+          "coupled_normal_velocity_norm": 0.16754157894652993,
+          "coupled_tangent_velocity_norm": 0.17443866802706195,
+          "solution_sha256": "b395bb851e10193fd24bd4d18783c9bcf359414a4f1400c7041b7816e63db1da"
+        }
+      ]
+    },
+    {
+      "m5": {
+        "max_pen_over_R": 1.3415160775184631,
+        "max_pen_m": 0.06707580387592316,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 7.978431414145351e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.1379241943359375,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.138 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "rows": [
+        {
+          "call": 1,
+          "contacts": 4,
+          "rho": 0.0673773211114098,
+          "iterations": 40,
+          "projected_residual": 6.666060731186363e-09,
+          "cone_violation": 0.0,
+          "finite": true,
+          "normal_only_energy": 2.5563614337224303,
+          "coupled_energy": 2.5508437100430474,
+          "normal_only_normal_velocity_norm": 0.06548008381629411,
+          "normal_only_tangent_velocity_norm": 0.06548008381629412,
+          "coupled_normal_velocity_norm": 0.053502016775186095,
+          "coupled_tangent_velocity_norm": 1.1961562891302612e-08,
+          "solution_sha256": "b409cb0c282b4bc78cd80f09640a2a5ec254b29ab8fc045b64530359ff02a3ba"
+        },
+        {
+          "call": 20,
+          "contacts": 32,
+          "rho": 0.18259382747208197,
+          "iterations": 6242,
+          "projected_residual": 9.985086535380105e-09,
+          "cone_violation": 0.0,
+          "finite": true,
+          "normal_only_energy": 44.55757081917823,
+          "coupled_energy": 44.54531041837483,
+          "normal_only_normal_velocity_norm": 3.613041455129957e-08,
+          "normal_only_tangent_velocity_norm": 0.10024940809431182,
+          "coupled_normal_velocity_norm": 3.2423782160464426e-08,
+          "coupled_tangent_velocity_norm": 3.864456873480706e-09,
+          "solution_sha256": "97d66ec78de5426c388e39dc84483df345c6091d3e5186232d4d9b995d6ea627"
+        },
+        {
+          "call": 100,
+          "contacts": 64,
+          "rho": 0.18207164821093336,
+          "iterations": 40000,
+          "projected_residual": 3.28624861056781e-05,
+          "cone_violation": 5.551115123125783e-17,
+          "finite": true,
+          "normal_only_energy": 1.5105136422716823,
+          "coupled_energy": 0.2969831383474678,
+          "normal_only_normal_velocity_norm": 0.006105148652615952,
+          "normal_only_tangent_velocity_norm": 0.35072740108923717,
+          "coupled_normal_velocity_norm": 0.026532827383481845,
+          "coupled_tangent_velocity_norm": 0.003123520840490782,
+          "solution_sha256": "95228a4a012e8627473038af270f3dface2a01ca3519de9590cd6dcc2c484c7a"
+        },
+        {
+          "call": 300,
+          "contacts": 60,
+          "rho": 0.20752805414170444,
+          "iterations": 40000,
+          "projected_residual": 0.00011155029328691057,
+          "cone_violation": 1.7763568394002505e-15,
+          "finite": true,
+          "normal_only_energy": 9.653277411274907,
+          "coupled_energy": 3.033089532754981,
+          "normal_only_normal_velocity_norm": 0.009307538795929132,
+          "normal_only_tangent_velocity_norm": 0.5878046686643377,
+          "coupled_normal_velocity_norm": 0.1461901427944726,
+          "coupled_tangent_velocity_norm": 0.1108369774688904,
+          "solution_sha256": "d44f4bfa19273eb6fdae444e8d4f8f25b697ce8a5cd5bce204b4d4341d349e0f"
+        },
+        {
+          "call": 590,
+          "contacts": 64,
+          "rho": 0.2050283662766611,
+          "iterations": 40000,
+          "projected_residual": 2.179952891978587e-05,
+          "cone_violation": 1.7763568394002505e-15,
+          "finite": true,
+          "normal_only_energy": 7.776699953700988,
+          "coupled_energy": 6.415451073305869,
+          "normal_only_normal_velocity_norm": 0.03470894011014779,
+          "normal_only_tangent_velocity_norm": 0.28346054507297336,
+          "coupled_normal_velocity_norm": 0.16754157894652993,
+          "coupled_tangent_velocity_norm": 0.17443866802706195,
+          "solution_sha256": "b395bb851e10193fd24bd4d18783c9bcf359414a4f1400c7041b7816e63db1da"
+        }
+      ]
+    }
+  ],
+  "gates": {
+    "two_full_results_identical": true,
+    "unchanged_m5": true,
+    "finite_cone_feasible": true,
+    "projected_residual": false,
+    "energy_not_worse": true
+  },
+  "mu": 0.5,
+  "max_iterations": 40000,
+  "scope": "convex energy surrogate on frozen synthetic snapshots; no physical engine correction"
+}

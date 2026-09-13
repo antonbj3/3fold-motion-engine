@@ -1,0 +1,27 @@
+{
+ "cell": "robotcell_bansvep_v1",
+ "urdf": "assets/robots/ur_description/ur10e.urdf",
+ "metod": "joint-driven fk sweep; AABB clearance (disjoint -> mesh-disjoint, fail-closed); non-adjacent pairs + arm against static bodies; edge poses at the joint limits; every overlap escalated to an exact OBB/SAT test.",
+ "sveptathet": {
+  "steg_per_ledintervall": 13,
+  "kant_poser": [
+   "alla_min",
+   "alla_max"
+  ],
+  "slumpkombinationer": 400,
+  "n_poser": 1796,
+  "n_par_kontroller": 52600,
+  "n_disablade_strukturpar": 0
+ },
+ "adjacenskriterium": "non-adjacent = |i-j|>=2 (neighbouring links share a joint, skipped)",
+ "n_kandidater": 0,
+ "n_arm_sjalvkollision": 0,
+ "n_arm_mot_miljo": 0,
+ "arm_sjalvkollision_per_posetyp": {},
+ "arm_mot_miljo_per_posetyp": {},
+ "self_collision_ren": true,
+ "kandidater_arm_sjalvkollision": [],
+ "kandidater_arm_mot_miljo": [],
+ "verdict": "GREEN_BANA",
+ "note": "AABB-disjoint across the whole sweep proves mesh clearance (the box contains the body). Candidates, if any, must be escalated to an exact test before a verdict."
+}

@@ -1,0 +1,42 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "all_point_pairs": 2556,
+      "body_pairs": 4,
+      "contacts": 36,
+      "points": 72,
+      "raw_order_changes_when_emission_reversed": true,
+      "scene": "stack4",
+      "sha256": "c683bdd5ed74e778138a599f0e68e94ee7c6d85bc15a9af1f811e49c13b17e92",
+      "sorted_identity": true,
+      "strict_feature_order": true,
+      "unique_features": true
+    },
+    {
+      "all_point_pairs": 41328,
+      "body_pairs": 16,
+      "contacts": 144,
+      "points": 288,
+      "raw_order_changes_when_emission_reversed": true,
+      "scene": "stack16",
+      "sha256": "96678db2f0b88ecc9889cc220dfbbdcb3b2744de8d8302337be7213df7dc2b64",
+      "sorted_identity": true,
+      "strict_feature_order": true,
+      "unique_features": true
+    },
+    {
+      "all_point_pairs": 404550,
+      "body_pairs": 50,
+      "contacts": 450,
+      "points": 900,
+      "raw_order_changes_when_emission_reversed": true,
+      "scene": "lattice50",
+      "sha256": "5c4979ddcf400c55dd044280dba99b203cab7f67a94843433aec703a53ca9853",
+      "sorted_identity": true,
+      "strict_feature_order": true,
+      "unique_features": true
+    }
+  ],
+  "status": "SYNTHETIC-ONLY"
+}

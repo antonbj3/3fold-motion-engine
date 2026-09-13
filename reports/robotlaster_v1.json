@@ -1,0 +1,294 @@
+{
+ "cell": "robotlaster_v1",
+ "urdf": "assets/robots/ur_description/ur10e.urdf",
+ "n_sampel": 376,
+ "hz": 50.0,
+ "n_leder": 6,
+ "massa": {
+  "robot_kg": 32.7,
+  "arm_utan_bas_kg": 28.7,
+  "last_kg": 5.0
+ },
+ "troghet": {
+  "volymprov": {
+   "max_rel_volymavvikelse_mot_manifest": 0.0,
+   "varsta_delen": null,
+   "n_delar_provade": 0
+  },
+  "konventionsprov": {
+   "konvention": null,
+   "konvention_bevisad": null,
+   "skipped": "OCC not installed"
+  },
+  "per_lank_massa_kg": [
+   4.0,
+   7.778,
+   12.93,
+   3.87,
+   1.96,
+   1.96,
+   0.202
+  ]
+ },
+ "krysskoll": {
+  "rnea_pinocchio_vs_egen_newton_euler_max_Nm": 1.4210854715202004e-13,
+  "rnea_relativ": 3.7679227352739176e-14,
+  "fk_paritet_mm": 2.498001805406602e-13,
+  "statik_pinocchio_vs_virtuellt_arbete_procent": 5.5057766251880655e-14,
+  "statik_newton_euler_vs_virtuellt_arbete_procent": 1.8352851289430816e-14,
+  "energibalans_residual_J": 0.3617278707321816,
+  "energibalans_residual_procent_av_absolut_arbete": 0.2292539301019892,
+  "energibalans_per_intervall": [
+   {
+    "i0": 0,
+    "i1": 94,
+    "greppad": false,
+    "arbete_J": -32.07397874889236,
+    "delta_energi_J": -32.04173913135858,
+    "residual_procent": 0.038050936482491984
+   },
+   {
+    "i0": 94,
+    "i1": 283,
+    "greppad": true,
+    "arbete_J": 105.4764616442181,
+    "delta_energi_J": 106.07847321237577,
+    "residual_procent": 0.12303899435779243
+   },
+   {
+    "i0": 283,
+    "i1": 376,
+    "greppad": false,
+    "arbete_J": -147.72892311649179,
+    "delta_energi_J": -148.09065098722397,
+    "residual_procent": 0.2292539301019892
+   }
+  ],
+  "arbete_J": -75.44574005311324,
+  "delta_energi_J": -112.88170183380726,
+  "friktionsarbete_J": 297.52973181533525,
+  "derivat_brusfaktor_central_vs_savitzky_golay": 1.017176702862787
+ },
+ "moment": {
+  "tau_max_Nm": [
+   126.22135473596107,
+   313.70467800691335,
+   85.94608190917982,
+   16.123134792288866,
+   6.004742074609786,
+   0.24269098690892466
+  ],
+  "tau_kapacitetsenvelopp_Nm": [
+   389.5764590992137,
+   629.8521724697766,
+   263.29619438110916,
+   42.39181202584906,
+   22.898358585287504,
+   5.927975966379299e-14
+  ],
+  "kvot_mot_envelopp": [
+   0.3239963601184028,
+   0.4980608017541869,
+   0.326423563056809,
+   0.38033606071043946,
+   0.26223460743897653,
+   242690986908.92465
+  ],
+  "kvot_definierad": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "max_kvot_definierad": 0.4980608017541869,
+  "kvot_band": {
+   "lag": [
+    0.3239963601184028,
+    0.6225760021927337,
+    0.40802945382101125,
+    0.4754200758880493,
+    0.32779325929872066,
+    242690986908.92465
+   ],
+   "hog": [
+    0.3239963601184028,
+    0.4150506681284891,
+    0.2720196358806741,
+    0.3169467172586995,
+    0.21852883953248042,
+    242690986908.92465
+   ]
+  },
+  "effort_urdf_Nm": [
+   330.0,
+   330.0,
+   150.0,
+   56.0,
+   56.0,
+   56.0
+  ],
+  "kvot_mot_effort_urdf": [
+   0.3824889537453366,
+   0.9506202363845859,
+   0.5729738793945321,
+   0.2879131212908726,
+   0.10722753704660333,
+   0.004333767623373654
+  ],
+  "friktionsandel_medel_procent": [
+   50.62127165958836,
+   28.062059611667948,
+   23.32541084121077,
+   24.895357442873685,
+   25.58888184553125,
+   98.21504010908306
+  ],
+  "friktionsandel_vid_toppmoment_procent": [
+   24.619848034149854,
+   21.834423643003873,
+   23.02314683613424,
+   21.91728899360198,
+   22.147817888029646,
+   40.35731904934236
+  ]
+ },
+ "basreaktion": {
+  "Fv_max_N": 475.03989331553635,
+  "Mk_max_Nm": 278.627935972354
+ },
+ "fallbevis": {
+  "f1_planterad_lankmassa": {
+   "led": 3,
+   "svep": [
+    {
+     "faktor": 2.0,
+     "max_kvot": 0.9850625909614044,
+     "faller": false
+    },
+    {
+     "faktor": 5.0,
+     "max_kvot": 1.4691551675373151,
+     "faller": true
+    },
+    {
+     "faktor": 10.0,
+     "max_kvot": 2.2759761284971662,
+     "faller": true
+    },
+    {
+     "faktor": 15.0,
+     "max_kvot": 3.0827970894570176,
+     "faller": true
+    },
+    {
+     "faktor": 20.0,
+     "max_kvot": 3.8896180504168685,
+     "faller": true
+    },
+    {
+     "faktor": 30.0,
+     "max_kvot": 5.503259972336571,
+     "faller": true
+    },
+    {
+     "faktor": 40.0,
+     "max_kvot": 7.116901894256274,
+     "faller": true
+    }
+   ],
+   "faktor_som_faller": 5.0,
+   "kvot_vid_fall": 1.4691551675373151,
+   "faller": true
+  },
+  "f2_nollad_gravitation": {
+   "statik_avvikelse_procent_nominell": 5.5057766251880655e-14,
+   "statik_avvikelse_procent_planterad": 100.0,
+   "faller": true
+  },
+  "f3_planterad_last": {
+   "svep": [
+    {
+     "lastfaktor": 1.0,
+     "last_kg": 5.0,
+     "max_kvot": 0.8236983987694342,
+     "faller": false
+    },
+    {
+     "lastfaktor": 2.0,
+     "last_kg": 10.0,
+     "max_kvot": 1.0958914076436534,
+     "faller": true
+    },
+    {
+     "lastfaktor": 5.0,
+     "last_kg": 25.0,
+     "max_kvot": 1.9124704342663121,
+     "faller": true
+    },
+    {
+     "lastfaktor": 10.0,
+     "last_kg": 50.0,
+     "max_kvot": 3.27343547863741,
+     "faller": true
+    },
+    {
+     "lastfaktor": 20.0,
+     "last_kg": 100.0,
+     "max_kvot": 5.995365567379605,
+     "faller": true
+    },
+    {
+     "lastfaktor": 50.0,
+     "last_kg": 250.0,
+     "max_kvot": 14.161155833606186,
+     "faller": true
+    },
+    {
+     "lastfaktor": 100.0,
+     "last_kg": 500.0,
+     "max_kvot": 27.770806277317174,
+     "faller": true
+    },
+    {
+     "lastfaktor": 200.0,
+     "last_kg": 1000.0,
+     "max_kvot": 54.99010716473912,
+     "faller": true
+    }
+   ],
+   "kvot_nominell": 0.9506202363845859,
+   "lastfaktor_som_faller": 2.0,
+   "monoton_i_lastfaktor": true,
+   "faller": true
+  },
+  "f4_negativ_kontroll_paritet": {
+   "max_diff_Nm": 5.684341886080802e-14,
+   "paritet_bevarad": true
+  }
+ },
+ "sanningsmarkning": {
+  "MATT": [
+   "link mass / com / inertia (URDF inertial blocks, or exact BRep integrals when the manifest carries STEP paths)",
+   "joint origins, axes, limits, effort and velocity limits (URDF)",
+   "the path (given or generated)"
+  ],
+  "HARLEDD": [
+   "joint torques (RNEA, two implementations)",
+   "base reaction",
+   "capacity envelope tau_mark (static gravity envelope scaled by k_dyn)",
+   "energy balance residual"
+  ],
+  "KONSTRUERAT": [
+   "k_dyn=2.5 (band (2.0, 3.0))",
+   "eta_gear=0.8",
+   "K_C0=0.02",
+   "K_V=0.02",
+   "eps_w=0.05 rad/s",
+   "t_acc=0.2 s",
+   "payload_max=10.0 kg"
+  ]
+ },
+ "sekunder": 20.72
+}

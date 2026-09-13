@@ -1,0 +1,127 @@
+{
+  "scope": "Candidate matrix only; original solver captures remain unchanged.",
+  "hardware": {
+    "shared_l4": "NVIDIA L4, 580.95.05",
+    "shared_a10g": "NVIDIA A10G, 580.95.05",
+    "shared_h100": "NVIDIA H100 80GB HBM3, 580.95.05",
+    "shared_local": "NVIDIA GeForce RTX 5070, 580.178.04"
+  },
+  "rows": [
+    {
+      "module": "jacobi",
+      "backend": "shared_l4",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "shared_a10g",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "shared_h100",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "shared_local",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "shared_l4",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "shared_a10g",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "shared_h100",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "shared_local",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "shared_l4",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "shared_a10g",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "shared_h100",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "shared_local",
+      "reference": "shared_l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    }
+  ],
+  "variant": "shared_layout",
+  "gates": {
+    "capture_gates": true,
+    "initial_exact": true,
+    "all_exact": true,
+    "repeat": true
+  },
+  "status": "VERIFIED-FRESH"
+}

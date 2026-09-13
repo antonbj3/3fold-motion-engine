@@ -1,0 +1,14 @@
+{
+ "robot": "Franka_Panda_7DOF",
+ "layer": "collision-free geometric planning (SIMD backend, double oracle)",
+ "planner": "VAMP RRTC (KavrakiLab vamp-planner 0.6.4)",
+ "solved": true,
+ "plan_ms": 4.44,
+ "waypoints": 6,
+ "double_oracle_dense": 320,
+ "double_oracle_collisions": 0,
+ "oracle_discriminates": true,
+ "oracle_catches_invalid": true,
+ "validated": true,
+ "composes": "vamp-planner; feeds joint_trajectory_planner (dynamic-feasibility) for B5"
+}

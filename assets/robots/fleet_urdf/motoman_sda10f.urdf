@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="motoman_sda10f">
+  
+  <link name="torso_base_link">
+    <inertial><origin xyz="-0.059451219 -3.7123382e-07 -0.86560037" rpy="0 0 0" /><mass value="139.42896" /><inertia ixx="9.5949501" iyy="9.686479" izz="3.5912058" ixy="7.1895236e-05" ixz="-0.82530874" iyz="-2.5887513e-05" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/base.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/base.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="torso_link_b1">
+    <inertial><origin xyz="0.058282146 3.934917e-07 -0.094717634" rpy="0 0 0" /><mass value="30.497049" /><inertia ixx="0.56927162" iyy="0.60545763" izz="0.33166141" ixy="8.9873883e-07" ixz="-0.11916192" iyz="-7.9896893e-08" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_b1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_b1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="torso_link_b2"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  
+  <joint name="torso_joint_b1" type="revolute">
+    <parent link="torso_base_link" />
+    <child link="torso_link_b1" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="2.2689280275926285" />
+  </joint>
+  <joint name="torso_joint_b2" type="revolute">
+    <parent link="torso_base_link" />
+    <child link="torso_link_b2" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="2.2689280275926285" />
+    <mimic joint="torso_joint_b1" multiplier="1" offset="0" />
+  </joint>
+  
+  <link name="arm_left_link_1_s">
+    <inertial><origin xyz="-0.00029360355 -0.013038153 0.053027575" rpy="0 0 0" /><mass value="7.3289894" /><inertia ixx="0.05018174" iyy="0.049709654" izz="0.029390226" ixy="2.4065783e-05" ixz="2.5476231e-05" iyz="-0.0037186702" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_s.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_s.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_left_link_2_l">
+    <inertial><origin xyz="-2.2787196e-06 0.068526025 0.028976518" rpy="0 0 0" /><mass value="5.3383159" /><inertia ixx="0.036595315" iyy="0.016439216" izz="0.038147653" ixy="7.0719094e-07" ixz="-1.8639717e-07" iyz="0.0069763366" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_l.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_l.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_left_link_3_e">
+    <inertial><origin xyz="-9.4085757e-05 0.012541482 0.06668979" rpy="0 0 0" /><mass value="4.0964956" /><inertia ixx="0.022938038" iyy="0.022797932" izz="0.00966616" ixy="5.356077e-06" ixz="-4.8162986e-07" iyz="0.0017553128" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_e.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_e.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_left_link_4_u">
+    <inertial><origin xyz="-0.00014084073 0.085675464 -0.016110743" rpy="0 0 0" /><mass value="3.5962874" /><inertia ixx="0.024370356" iyy="0.00664334" izz="0.024746174" ixy="-3.4587131e-05" ixz="8.9917856e-06" iyz="-0.0028791524" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_u.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_u.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_left_link_5_r">
+    <inertial><origin xyz="-0.00047561526 -0.011772304 0.056948847" rpy="0 0 0" /><mass value="2.5517763" /><inertia ixx="0.010408764" iyy="0.010212337" izz="0.0044217827" ixy="-8.381676e-06" ixz="-1.8413571e-05" iyz="-0.00085743099" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_r.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_r.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_left_link_6_b">
+    <inertial><origin xyz="-9.783619e-05 0.053674186 0.013245476" rpy="0 0 0" /><mass value="2.0522208" /><inertia ixx="0.0070775575" iyy="0.0032013182" izz="0.007014718" ixy="-3.3026542e-06" ixz="-1.5802175e-07" iyz="0.0010701804" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_b.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_b.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_left_link_7_t">
+    <inertial><origin xyz="-4.1981882e-07 -8.5034353e-09 -0.0061374685" rpy="0 0 0" /><mass value="0.072910491" /><inertia ixx="2.8807645e-05" iyy="2.8814556e-05" izz="5.5758826e-05" ixy="9.2374978e-13" ixz="-5.7700831e-10" iyz="5.1633443e-13" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_t.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_t.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_left_link_tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="arm_left_joint_1_s" type="revolute">
+    <parent link="torso_link_b1" />
+    <child link="arm_left_link_1_s" />
+    <origin rpy="1.5707963267948966 0.0 0.0" xyz="0.100 0.265 0.0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="arm_left_joint_2_l" type="revolute">
+    <parent link="arm_left_link_1_s" />
+    <child link="arm_left_link_2_l" />
+    <origin rpy="-1.5707963267948966 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-1.9198621771937625" upper="1.9198621771937625" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="arm_left_joint_3_e" type="revolute">
+    <parent link="arm_left_link_2_l" />
+    <child link="arm_left_link_3_e" />
+    <origin rpy="1.5707963267948966 0.0 0.0" xyz="0.0 0.360 0.0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="arm_left_joint_4_u" type="revolute">
+    <parent link="arm_left_link_3_e" />
+    <child link="arm_left_link_4_u" />
+    <origin rpy="-1.5707963267948966 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-2.356194490192345" upper="2.356194490192345" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="arm_left_joint_5_r" type="revolute">
+    <parent link="arm_left_link_4_u" />
+    <child link="arm_left_link_5_r" />
+    <origin rpy="1.5707963267948966 0.0 0.0" xyz="0.0 0.360 0.0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="3.490658503988659" />
+  </joint>
+  <joint name="arm_left_joint_6_b" type="revolute">
+    <parent link="arm_left_link_5_r" />
+    <child link="arm_left_link_6_b" />
+    <origin rpy="-1.5707963267948966 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-1.9198621771937625" upper="1.9198621771937625" velocity="3.490658503988659" />
+  </joint>
+  <joint name="arm_left_joint_7_t" type="revolute">
+    <parent link="arm_left_link_6_b" />
+    <child link="arm_left_link_7_t" />
+    <origin rpy="-1.5707963267948966 0.0 0.0" xyz="0.0 0.155 0.0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="6.981317007977318" />
+  </joint>
+  <joint name="arm_left_joint_tool0" type="fixed">
+    <parent link="arm_left_link_7_t" />
+    <child link="arm_left_link_tool0" />
+    <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
+  </joint>
+  
+  <link name="arm_right_link_1_s">
+    <inertial><origin xyz="-0.00029360355 -0.013038153 0.053027575" rpy="0 0 0" /><mass value="7.3289894" /><inertia ixx="0.05018174" iyy="0.049709654" izz="0.029390226" ixy="2.4065783e-05" ixz="2.5476231e-05" iyz="-0.0037186702" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_s.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_s.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_right_link_2_l">
+    <inertial><origin xyz="-2.2787196e-06 0.068526025 0.028976518" rpy="0 0 0" /><mass value="5.3383159" /><inertia ixx="0.036595315" iyy="0.016439216" izz="0.038147653" ixy="7.0719094e-07" ixz="-1.8639717e-07" iyz="0.0069763366" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_l.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_l.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_right_link_3_e">
+    <inertial><origin xyz="-9.4085757e-05 0.012541482 0.06668979" rpy="0 0 0" /><mass value="4.0964956" /><inertia ixx="0.022938038" iyy="0.022797932" izz="0.00966616" ixy="5.356077e-06" ixz="-4.8162986e-07" iyz="0.0017553128" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_e.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_e.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_right_link_4_u">
+    <inertial><origin xyz="-0.00014084073 0.085675464 -0.016110743" rpy="0 0 0" /><mass value="3.5962874" /><inertia ixx="0.024370356" iyy="0.00664334" izz="0.024746174" ixy="-3.4587131e-05" ixz="8.9917856e-06" iyz="-0.0028791524" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_u.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_u.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_right_link_5_r">
+    <inertial><origin xyz="-0.00047561526 -0.011772304 0.056948847" rpy="0 0 0" /><mass value="2.5517763" /><inertia ixx="0.010408764" iyy="0.010212337" izz="0.0044217827" ixy="-8.381676e-06" ixz="-1.8413571e-05" iyz="-0.00085743099" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_r.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_r.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_right_link_6_b">
+    <inertial><origin xyz="-9.783619e-05 0.053674186 0.013245476" rpy="0 0 0" /><mass value="2.0522208" /><inertia ixx="0.0070775575" iyy="0.0032013182" izz="0.007014718" ixy="-3.3026542e-06" ixz="-1.5802175e-07" iyz="0.0010701804" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_b.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.99 0.99 0.99 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_b.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_right_link_7_t">
+    <inertial><origin xyz="-4.1981882e-07 -8.5034353e-09 -0.0061374685" rpy="0 0 0" /><mass value="0.072910491" /><inertia ixx="2.8807645e-05" iyy="2.8814556e-05" izz="5.5758826e-05" ixy="9.2374978e-13" ixz="-5.7700831e-10" iyz="5.1633443e-13" /></inertial><visual>
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_t.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.12941176470588237 0.14901960784313725 0.7490196078431373 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_t.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_right_link_tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="arm_right_joint_1_s" type="revolute">
+    <parent link="torso_link_b1" />
+    <child link="arm_right_link_1_s" />
+    <origin rpy="1.5707963267948966 0.0 -3.141592653589793" xyz="0.100 -0.265 0.0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="arm_right_joint_2_l" type="revolute">
+    <parent link="arm_right_link_1_s" />
+    <child link="arm_right_link_2_l" />
+    <origin rpy="-1.5707963267948966 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-1.9198621771937625" upper="1.9198621771937625" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="arm_right_joint_3_e" type="revolute">
+    <parent link="arm_right_link_2_l" />
+    <child link="arm_right_link_3_e" />
+    <origin rpy="1.5707963267948966 0.0 0.0" xyz="0.0 0.360 0.0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="arm_right_joint_4_u" type="revolute">
+    <parent link="arm_right_link_3_e" />
+    <child link="arm_right_link_4_u" />
+    <origin rpy="-1.5707963267948966 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-2.356194490192345" upper="2.356194490192345" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="arm_right_joint_5_r" type="revolute">
+    <parent link="arm_right_link_4_u" />
+    <child link="arm_right_link_5_r" />
+    <origin rpy="1.5707963267948966 0.0 0.0" xyz="0.0 0.360 0.0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="3.490658503988659" />
+  </joint>
+  <joint name="arm_right_joint_6_b" type="revolute">
+    <parent link="arm_right_link_5_r" />
+    <child link="arm_right_link_6_b" />
+    <origin rpy="-1.5707963267948966 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-1.9198621771937625" upper="1.9198621771937625" velocity="3.490658503988659" />
+  </joint>
+  <joint name="arm_right_joint_7_t" type="revolute">
+    <parent link="arm_right_link_6_b" />
+    <child link="arm_right_link_7_t" />
+    <origin rpy="-1.5707963267948966 0.0 0.0" xyz="0.0 0.155 0.0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="6.981317007977318" />
+  </joint>
+  <joint name="arm_right_joint_tool0" type="fixed">
+    <parent link="arm_right_link_7_t" />
+    <child link="arm_right_link_tool0" />
+    <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
+  </joint>
+  
+  
+  <link name="base_link"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  
+  <joint name="base_link_torso" type="fixed">
+    <parent link="base_link" />
+    <child link="torso_base_link" />
+    <origin rpy="0 0 0" xyz="0 0 1.2" />
+  </joint>
+</robot>

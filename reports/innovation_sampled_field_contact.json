@@ -1,0 +1,317 @@
+{
+  "results": [
+    {
+      "rows": {
+        "baseline": {
+          "m1": {
+            "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+            "value_worst_relerr": 1.0258560874445039e-07,
+            "per_body_relerr": [
+              8.932494235208197e-08,
+              1.003071437301006e-07,
+              1.003071437301006e-07,
+              1.0258560874445039e-07
+            ],
+            "value_worst_relerr_final_sample": 6.707800995163706e-08,
+            "tail_frac": 0.2,
+            "tail_steps": 80,
+            "min_spacing_m": 0.19991150498390198,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "threshold": 0.1,
+            "pass": true,
+            "status": "PASS",
+            "valid": true,
+            "invalid_reasons": [],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless"
+          },
+          "m5": {
+            "max_pen_over_R": 0.19563645124435425,
+            "max_pen_m": 0.009781822562217712,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 2.651196943192888e-06,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.19521817564964294,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": true,
+            "status": "PASS",
+            "valid": true,
+            "invalid_reasons": [],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "m6": {
+            "eps_nondet_max_dxc_m": 0.0,
+            "repeats": 4,
+            "steps": 100,
+            "bit_deterministic": true,
+            "class": "bit-deterministic",
+            "threshold": 0.01,
+            "pass": true,
+            "units": "m"
+          },
+          "force_error": 6.707800995163706e-08,
+          "traces": [
+            "9084cb87af70db4a49d166377dca42b9980313c34edd68accf13262bcc2be15a",
+            "c0175c1510abe3418b9e70eb4d4f42f0e35309114938d5f33ca9d7203c6ca5d1",
+            "d73225a38c994eb1376bf89d0c51bcbf36cf49e1b4769841ae3276255239aec5"
+          ],
+          "final": "171c186c7ff31f62a1b4806c40f7821b5d8a9e99fb7b71740d112f918bd2c15e",
+          "finite": true,
+          "ms_per_step": 4.420502000000208
+        },
+        "sampled": {
+          "m1": {
+            "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+            "value_worst_relerr": 1.0780785055977747e-07,
+            "per_body_relerr": [
+              8.53057300664355e-08,
+              1.031233264831922e-07,
+              1.0780785055977747e-07,
+              1.0103625254354514e-07
+            ],
+            "value_worst_relerr_final_sample": 1.5821661052562884e-07,
+            "tail_frac": 0.2,
+            "tail_steps": 80,
+            "min_spacing_m": 0.19992154836654663,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "threshold": 0.1,
+            "pass": true,
+            "status": "PASS",
+            "valid": true,
+            "invalid_reasons": [],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless"
+          },
+          "m5": {
+            "max_pen_over_R": 0.20690709352493286,
+            "max_pen_m": 0.010345354676246643,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 6.749770563416161e-06,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.194654643535614,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": true,
+            "status": "PASS",
+            "valid": true,
+            "invalid_reasons": [],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "m6": {
+            "eps_nondet_max_dxc_m": 0.0,
+            "repeats": 4,
+            "steps": 100,
+            "bit_deterministic": true,
+            "class": "bit-deterministic",
+            "threshold": 0.01,
+            "pass": true,
+            "units": "m"
+          },
+          "force_error": 6.707800995163706e-08,
+          "traces": [
+            "fb49760161b078df64c08bab7fab8f9c9fd9198ca0685063f0ae3f2a1beafba4",
+            "208c67d98ae807b464208b2d12f90df56b31a6b0469e2dbdf458fe73a14bbcd9",
+            "f1f53d114afc5b5af26a25b93a6bd97b8fe4ef33912535037d36ee4dbd25696a"
+          ],
+          "final": "eb01fd1a27d790d1dc27ccc7cecfc4dc8832647edb03776dc35cb7e5118ba1a4",
+          "finite": true,
+          "ms_per_step": 4.1806391666663485
+        }
+      },
+      "query_error": 0.0,
+      "geometry": true,
+      "invalid": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "rows": {
+        "sampled": {
+          "m1": {
+            "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+            "value_worst_relerr": 1.0780785055977747e-07,
+            "per_body_relerr": [
+              8.53057300664355e-08,
+              1.031233264831922e-07,
+              1.0780785055977747e-07,
+              1.0103625254354514e-07
+            ],
+            "value_worst_relerr_final_sample": 1.5821661052562884e-07,
+            "tail_frac": 0.2,
+            "tail_steps": 80,
+            "min_spacing_m": 0.19992154836654663,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "threshold": 0.1,
+            "pass": true,
+            "status": "PASS",
+            "valid": true,
+            "invalid_reasons": [],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless"
+          },
+          "m5": {
+            "max_pen_over_R": 0.20690709352493286,
+            "max_pen_m": 0.010345354676246643,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 6.749770563416161e-06,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.194654643535614,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": true,
+            "status": "PASS",
+            "valid": true,
+            "invalid_reasons": [],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "m6": {
+            "eps_nondet_max_dxc_m": 0.0,
+            "repeats": 4,
+            "steps": 100,
+            "bit_deterministic": true,
+            "class": "bit-deterministic",
+            "threshold": 0.01,
+            "pass": true,
+            "units": "m"
+          },
+          "force_error": 6.707800995163706e-08,
+          "traces": [
+            "fb49760161b078df64c08bab7fab8f9c9fd9198ca0685063f0ae3f2a1beafba4",
+            "208c67d98ae807b464208b2d12f90df56b31a6b0469e2dbdf458fe73a14bbcd9",
+            "f1f53d114afc5b5af26a25b93a6bd97b8fe4ef33912535037d36ee4dbd25696a"
+          ],
+          "final": "eb01fd1a27d790d1dc27ccc7cecfc4dc8832647edb03776dc35cb7e5118ba1a4",
+          "finite": true,
+          "ms_per_step": 4.177903700000248
+        },
+        "baseline": {
+          "m1": {
+            "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+            "value_worst_relerr": 1.0258560874445039e-07,
+            "per_body_relerr": [
+              8.932494235208197e-08,
+              1.003071437301006e-07,
+              1.003071437301006e-07,
+              1.0258560874445039e-07
+            ],
+            "value_worst_relerr_final_sample": 6.707800995163706e-08,
+            "tail_frac": 0.2,
+            "tail_steps": 80,
+            "min_spacing_m": 0.19991150498390198,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "threshold": 0.1,
+            "pass": true,
+            "status": "PASS",
+            "valid": true,
+            "invalid_reasons": [],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless"
+          },
+          "m5": {
+            "max_pen_over_R": 0.19563645124435425,
+            "max_pen_m": 0.009781822562217712,
+            "drift_class": "bounded",
+            "drift_slope_m_per_step": 2.651196943192888e-06,
+            "threshold_pen_over_R": 0.5,
+            "min_spacing_m": 0.19521817564964294,
+            "max_pen_body_body_m": null,
+            "rest_pitch_m": 0.205,
+            "pass": true,
+            "status": "PASS",
+            "valid": true,
+            "invalid_reasons": [],
+            "spacing_floor_m": 0.164,
+            "pen_ceiling_m": 0.05,
+            "units": "dimensionless (pen/R)"
+          },
+          "m6": {
+            "eps_nondet_max_dxc_m": 0.0,
+            "repeats": 4,
+            "steps": 100,
+            "bit_deterministic": true,
+            "class": "bit-deterministic",
+            "threshold": 0.01,
+            "pass": true,
+            "units": "m"
+          },
+          "force_error": 6.707800995163706e-08,
+          "traces": [
+            "9084cb87af70db4a49d166377dca42b9980313c34edd68accf13262bcc2be15a",
+            "c0175c1510abe3418b9e70eb4d4f42f0e35309114938d5f33ca9d7203c6ca5d1",
+            "d73225a38c994eb1376bf89d0c51bcbf36cf49e1b4769841ae3276255239aec5"
+          ],
+          "final": "171c186c7ff31f62a1b4806c40f7821b5d8a9e99fb7b71740d112f918bd2c15e",
+          "finite": true,
+          "ms_per_step": 4.204960866666833
+        }
+      },
+      "query_error": 0.0,
+      "geometry": true,
+      "invalid": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "gates": {
+    "query": true,
+    "repeat": true,
+    "m1": true,
+    "m5": true,
+    "rest": true,
+    "finite_timing": true,
+    "refusals": true,
+    "geometry": true
+  },
+  "status": "VERIFIED-FRESH",
+  "background": [
+    {
+      "before": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      },
+      "after": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    },
+    {
+      "before": {
+        "gpu_utilization": "20 %",
+        "memory_used": "3 MiB"
+      },
+      "after": {
+        "gpu_utilization": "0 %",
+        "memory_used": "3 MiB"
+      }
+    }
+  ]
+}

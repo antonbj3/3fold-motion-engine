@@ -1,0 +1,8 @@
+{
+  "arithmetic_ast_exact": {
+    "warm_pair": true,
+    "velocity_pair": true,
+    "position_pair": true
+  },
+  "candidate_sha256": "cbafcf81499a8840113b016d2c8bee3ccfe49f204437eaf8e9efcba821d9e09c"
+}

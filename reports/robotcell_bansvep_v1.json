@@ -1,0 +1,230 @@
+{
+ "cell": "robotcell_bansvep_v1",
+ "urdf": "assets/robots/ur_description/ur10e.urdf",
+ "metod": "joint-driven fk sweep; AABB clearance (disjoint -> mesh-disjoint, fail-closed); non-adjacent pairs + arm against static bodies; edge poses at the joint limits; every overlap escalated to an exact OBB/SAT test.",
+ "sveptathet": {
+  "steg_per_ledintervall": 7,
+  "kant_poser": [
+   "alla_min",
+   "alla_max"
+  ],
+  "slumpkombinationer": 40,
+  "n_poser": 84,
+  "n_par_kontroller": 1521,
+  "n_disablade_strukturpar": 0
+ },
+ "adjacenskriterium": "non-adjacent = |i-j|>=2 (neighbouring links share a joint, skipped)",
+ "n_kandidater": 15,
+ "n_arm_sjalvkollision": 8,
+ "n_arm_mot_miljo": 7,
+ "arm_sjalvkollision_per_posetyp": {
+  "perled": 4,
+  "combo": 4
+ },
+ "arm_mot_miljo_per_posetyp": {
+  "perled": 6,
+  "combo": 1
+ },
+ "self_collision_ren": false,
+ "kandidater_arm_sjalvkollision": [
+  [
+   "shoulder_link",
+   "forearm_link",
+   "perled",
+   [
+    0.0,
+    -90.0,
+    -180.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "upper_arm_link",
+   "wrist_1_link",
+   "perled",
+   [
+    0.0,
+    -90.0,
+    -180.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "upper_arm_link",
+   "wrist_2_link",
+   "perled",
+   [
+    0.0,
+    -90.0,
+    -180.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "upper_arm_link",
+   "wrist_3_link",
+   "perled",
+   [
+    0.0,
+    -90.0,
+    -180.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "forearm_link",
+   "wrist_2_link",
+   "combo",
+   [
+    -351.29,
+    -247.72,
+    -34.55,
+    -239.22,
+    -312.86,
+    -121.51
+   ]
+  ],
+  [
+   "shoulder_link",
+   "wrist_3_link",
+   "combo",
+   [
+    -314.88,
+    -1.8,
+    165.66,
+    63.92,
+    124.68,
+    -261.94
+   ]
+  ],
+  [
+   "forearm_link",
+   "wrist_3_link",
+   "combo",
+   [
+    -233.45,
+    253.71,
+    130.04,
+    -210.25,
+    -180.97,
+    -218.3
+   ]
+  ],
+  [
+   "wrist_1_link",
+   "wrist_3_link",
+   "combo",
+   [
+    -233.45,
+    253.71,
+    130.04,
+    -210.25,
+    -180.97,
+    -218.3
+   ]
+  ]
+ ],
+ "kandidater_arm_mot_miljo": [
+  [
+   "upper_arm_link",
+   "bord",
+   "perled",
+   [
+    0.0,
+    -360.0,
+    90.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "forearm_link",
+   "golv",
+   "perled",
+   [
+    0.0,
+    -360.0,
+    90.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "forearm_link",
+   "bord",
+   "perled",
+   [
+    0.0,
+    -360.0,
+    90.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "upper_arm_link",
+   "golv",
+   "perled",
+   [
+    0.0,
+    -240.0,
+    90.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "wrist_1_link",
+   "golv",
+   "perled",
+   [
+    0.0,
+    -240.0,
+    90.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "wrist_2_link",
+   "golv",
+   "perled",
+   [
+    0.0,
+    -240.0,
+    90.0,
+    -90.0,
+    -90.0,
+    0.0
+   ]
+  ],
+  [
+   "wrist_3_link",
+   "golv",
+   "combo",
+   [
+    210.03,
+    322.6,
+    172.34,
+    186.4,
+    -107.4,
+    -53.72
+   ]
+  ]
+ ],
+ "verdict": "FULLENVELOPP_EJ_KOLLISIONSFRI_VANTAT_6R",
+ "note": "AABB-disjoint across the whole sweep proves mesh clearance (the box contains the body). Candidates, if any, must be escalated to an exact test before a verdict."
+}

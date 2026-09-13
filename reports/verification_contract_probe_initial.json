@@ -1,0 +1,55 @@
+{
+  "exact_repeat": true,
+  "gates": {
+    "declaration_refusals": true,
+    "fresh_output": true,
+    "full_report_integrity": true,
+    "independent_isolation": true,
+    "manifest_refusals": true,
+    "process_refusal": true,
+    "typed_gate_refusals": true,
+    "valid_receipt": true
+  },
+  "records": [
+    {
+      "controls": {
+        "declarations": 4,
+        "integrity": 1,
+        "manifest": 8,
+        "process": 2,
+        "stale": 1,
+        "typed": 7
+      },
+      "gates": {
+        "declaration_refusals": true,
+        "fresh_output": true,
+        "full_report_integrity": true,
+        "independent_isolation": true,
+        "manifest_refusals": true,
+        "process_refusal": true,
+        "typed_gate_refusals": true,
+        "valid_receipt": true
+      }
+    },
+    {
+      "controls": {
+        "declarations": 4,
+        "integrity": 1,
+        "manifest": 8,
+        "process": 2,
+        "stale": 1,
+        "typed": 7
+      },
+      "gates": {
+        "declaration_refusals": true,
+        "fresh_output": true,
+        "full_report_integrity": true,
+        "independent_isolation": true,
+        "manifest_refusals": true,
+        "process_refusal": true,
+        "typed_gate_refusals": true,
+        "valid_receipt": true
+      }
+    }
+  ]
+}

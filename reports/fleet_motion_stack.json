@@ -1,0 +1,18 @@
+{
+ "robot": "UR10e",
+ "layer": "full fleet-agnostic motion stack",
+ "plan_s": 0.03,
+ "path_nodes": 45,
+ "collision_free": true,
+ "segments": 44,
+ "total_time_s": 7.45,
+ "max_peak_ratio": 0.8,
+ "aggressive_peak_ratio": 10.913,
+ "moment_gate": "nominal RNEA + URDF effortLimit (no validated friction)",
+ "full_stack": true,
+ "fleet_general": true,
+ "dynamics_load_bearing": true,
+ "margin_discipline": true,
+ "validated": true,
+ "composes": "fleet_agnostic_planner + joint_trajectory_planner; robot-parameterized"
+}

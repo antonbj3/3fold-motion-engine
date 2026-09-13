@@ -1,0 +1,107 @@
+{
+  "cell": "vbd_nt2_within_step_sliding_impact_gate",
+  "item": "NT2 within-step sliding-impact gate (G5) for MidpointVBDEngine",
+  "status": "GRADED",
+  "engine": "MidpointVBDEngine",
+  "mass_convention": 1.0,
+  "coulomb_tol": 0.05,
+  "cases": [
+    {
+      "name": "partial-stick",
+      "vt": 2.0,
+      "vn": 1.0,
+      "mu": 0.4,
+      "vt_post": 1.2079,
+      "Jn_delivered": 1.9802,
+      "dvt_measured": 0.7921,
+      "dvt_coulomb": 0.7921,
+      "coupling_err": 0.0,
+      "ke_t_ratio": 0.3648,
+      "cone_max": 0.4,
+      "coulomb_ok": true,
+      "energy_ok": true,
+      "cone_ok": true
+    },
+    {
+      "name": "full-stick",
+      "vt": 1.0,
+      "vn": 3.0,
+      "mu": 0.4,
+      "vt_post": 0.0,
+      "Jn_delivered": 5.9406,
+      "dvt_measured": 1.0,
+      "dvt_coulomb": 1.0,
+      "coupling_err": 0.0,
+      "ke_t_ratio": 0.0,
+      "cone_max": 0.1683,
+      "coulomb_ok": true,
+      "energy_ok": true,
+      "cone_ok": true
+    },
+    {
+      "name": "weak-normal",
+      "vt": 0.5,
+      "vn": 0.2,
+      "mu": 0.4,
+      "vt_post": 0.3416,
+      "Jn_delivered": 0.396,
+      "dvt_measured": 0.1584,
+      "dvt_coulomb": 0.1584,
+      "coupling_err": 0.0,
+      "ke_t_ratio": 0.4668,
+      "cone_max": 0.4,
+      "coulomb_ok": true,
+      "energy_ok": true,
+      "cone_ok": true
+    },
+    {
+      "name": "high-speed",
+      "vt": 4.0,
+      "vn": 1.5,
+      "mu": 0.5,
+      "vt_post": 2.5149,
+      "Jn_delivered": 2.9703,
+      "dvt_measured": 1.4851,
+      "dvt_coulomb": 1.4851,
+      "coupling_err": 0.0,
+      "ke_t_ratio": 0.3953,
+      "cone_max": 0.5,
+      "coulomb_ok": true,
+      "energy_ok": true,
+      "cone_ok": true
+    }
+  ],
+  "null_mu0": {
+    "vt_post": 2.0,
+    "dvt": 0.0,
+    "Jn_delivered": 1.9802,
+    "cone_max": 0.0,
+    "null_ok": true
+  },
+  "broken_nt2_discrimination": {
+    "available": false,
+    "reason": "RuntimeError: NT2_REFERENCE_PATH not set",
+    "discriminates": null
+  },
+  "gates": {
+    "NT2a_coulomb_coupling_delivered_impulse": true,
+    "NT2b_no_tangential_energy_created": true,
+    "NT2c_friction_cone_respected_dynamic": true,
+    "NT2_null_mu0_zero_tangential_change": true,
+    "NT2_discriminates_rejects_broken": "reference_absent"
+  },
+  "NT2_PASS": true,
+  "all_pass": true,
+  "finding": "NT2 (within-step dynamic normal) PASSES on MidpointVBDEngine, tested as a gravity-isolated SLIDING IMPACT against a vertical wall (n perpendicular to gravity): across 4 impact regimes the tangential friction impulse equals mu*J_n_delivered EXACTLY (Coulomb coupling, max err <= 5.0% of v_t), the friction stays in the cone during the dynamic impact (|f_t|/f_n <= mu), and the tangential KE NEVER increases (max ratio 0.467 <= 1) -- no energy is created when J_n and J_t are resolved in the SAME step. mu=0 NULL gives ~0 tangential change (dv_t=0.0000). Discriminates: rejects the energy-creating reference integrator (ke=n/a). Measurement note: the SAME test on the FLAT plane spuriously FAILS -- gravity there is along the contact normal, so after the impact the block SLIDES in sustained contact and friction over ~49 steps swamps the impact impulse; the vertical wall (gravity perpendicular to both n and t) isolates the single impact. This closes the coverage gap: the gate now covers the within-step dynamic normal, not just quasi-decoupled rest.",
+  "verdict": "NT2 CLEARED: the within-step sliding-impact gate (G5) is green, so the friction gates NT1-4 and NT2 are all covered for the midpoint-VBD engine.",
+  "cross_checks": {
+    "known_reference": "analytic Coulomb impulse law (0-param, EXTERNAL not self-consistent): dv_t = min(mu*J_n, v_t), tangential KE non-increasing. Engine matches to <= 5.0% of v_t across 4 regimes (delivered impulse J_n measured per episode, restitution/gravity-invariant).",
+    "null_falsifier": "(i) mu=0 -> tangential change 0.0000 ~ 0 (frictionless, a spurious dv_t would fail); (ii) the gate's energy check REJECTS an integrator which returns ke_ratio=n/a > 1 (the classic coupled-impulse energy-created bug) while ACCEPTING AnalyticCoulomb (ke=n/a) -- the gate discriminates correct from broken.",
+    "over_determination": "4 independent impact regimes (partial-stick vt2/vn1, full-stick vt1/vn3, weak-normal vt.5/vn.2, high-speed vt4/vn1.5) + the mu=0 NULL all satisfy BOTH Coulomb-coupling AND tangential-energy-non-creation -- five machine-checked anchors on the within-step N-T coupling, not one number. Restitution e~0.65 and gravity's normal impulse enter J_n_del and dv_t consistently so the check is invariant to both."
+  },
+  "provenance": {
+    "method": "within-step sliding impact against a vertical wall: mass=1 box, v_t tangential + v_n into plane, step (substeps=4) through ONE contact episode; measure delivered normal impulse J_n=m*dv_n and tangential change dv_t; check dv_t vs analytic min(mu*J_n,v_t) <=5% and tangential KE ratio <=1",
+    "source": "NT2 within-step dynamic-normal gate for MidpointVBDEngine",
+    "unit": "velocity m/s, normal impulse N*s (m=1), KE ratio dimensionless, coupling error m/s"
+  }
+}

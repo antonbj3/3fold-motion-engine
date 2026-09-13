@@ -1,0 +1,12 @@
+{
+  "action": "Stopped owned app after the setup bound; upload versus allocation cause unresolved.",
+  "covered": 10,
+  "declared": 161,
+  "elapsed_bound_seconds": 600,
+  "manifest_sha256": "39a477808f9c7b4cf1941ade05aae48386776653eb922c835b5021f26bee83b1",
+  "numerical_execution_observed": false,
+  "observed_running_containers": 0,
+  "requested_commands": 8,
+  "scope": "Cloud execution setup only; no numerical outcome inferred.",
+  "status": "OWN-GATE-FAIL"
+}

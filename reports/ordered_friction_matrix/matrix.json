@@ -1,0 +1,109 @@
+{
+  "scope": "Candidate matrix only; original solver captures remain unchanged.",
+  "hardware": {
+    "l4": "NVIDIA L4, 580.95.05",
+    "local": "NVIDIA GeForce RTX 5070, 580.178.04"
+  },
+  "rows": [
+    {
+      "module": "jacobi",
+      "backend": "l4",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "jacobi",
+      "backend": "local",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "l4",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "pair_chunks",
+      "backend": "local",
+      "reference": "l4",
+      "max_position_delta": 0.0003306139260530472,
+      "differing_arrays": [
+        "pair_chunks__stack8__0__xc",
+        "pair_chunks__stack8__0__Rm",
+        "pair_chunks__stack8__0__vc",
+        "pair_chunks__stack8__0__om",
+        "pair_chunks__stack8__0__force",
+        "pair_chunks__stack8__1__xc",
+        "pair_chunks__stack8__1__Rm",
+        "pair_chunks__stack8__1__vc",
+        "pair_chunks__stack8__1__om",
+        "pair_chunks__stack8__1__force",
+        "pair_chunks__lattice1000__0__Rm",
+        "pair_chunks__lattice1000__0__vc",
+        "pair_chunks__lattice1000__0__om",
+        "pair_chunks__lattice1000__0__force",
+        "pair_chunks__lattice1000__1__Rm",
+        "pair_chunks__lattice1000__1__vc",
+        "pair_chunks__lattice1000__1__om",
+        "pair_chunks__lattice1000__1__force"
+      ],
+      "initial_exact": true,
+      "status": "OWN-GATE-FAIL"
+    },
+    {
+      "module": "color_cache",
+      "backend": "l4",
+      "reference": "l4",
+      "max_position_delta": 0.0,
+      "differing_arrays": [],
+      "initial_exact": true,
+      "status": "VERIFIED-FRESH"
+    },
+    {
+      "module": "color_cache",
+      "backend": "local",
+      "reference": "l4",
+      "max_position_delta": 3.0258670449256897e-06,
+      "differing_arrays": [
+        "color_cache__stack8__0__xc",
+        "color_cache__stack8__0__Rm",
+        "color_cache__stack8__0__vc",
+        "color_cache__stack8__0__om",
+        "color_cache__stack8__0__force",
+        "color_cache__stack8__1__xc",
+        "color_cache__stack8__1__Rm",
+        "color_cache__stack8__1__vc",
+        "color_cache__stack8__1__om",
+        "color_cache__stack8__1__force",
+        "color_cache__lattice1000__0__Rm",
+        "color_cache__lattice1000__0__vc",
+        "color_cache__lattice1000__0__om",
+        "color_cache__lattice1000__0__force",
+        "color_cache__lattice1000__1__Rm",
+        "color_cache__lattice1000__1__vc",
+        "color_cache__lattice1000__1__om",
+        "color_cache__lattice1000__1__force"
+      ],
+      "initial_exact": true,
+      "status": "OWN-GATE-FAIL"
+    }
+  ],
+  "variant": "ordered_friction_dot",
+  "gates": {
+    "capture_gates": true,
+    "initial_exact": true,
+    "all_exact": false,
+    "repeat": true
+  },
+  "status": "OWN-GATE-FAIL"
+}

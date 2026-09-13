@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="abb_irb6700_235_265">
+  
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.1174058 -1.5222609e-05 0.14672536" rpy="0 0 0" /><mass value="292.08801" /><inertia ixx="12.005662" iyy="21.263728" izz="28.151207" ixy="-0.0038694972" ixz="0.081207955" iyz="-0.0014683742" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/visual/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9254902 0.9254902 0.9058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 0 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="0.065302199 -0.028495324 -0.18506133" rpy="0 0 0" /><mass value="405.68679" /><inertia ixx="23.335606" iyy="31.594781" izz="31.58099" ixy="-5.7972099" ixz="-4.2149021" iyz="-0.85759248" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/visual/link_1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9254902 0.9254902 0.9058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/link_1.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 0 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="cylinder">
+    <inertial><origin xyz="-0.091596342 0.0015652325 -0.018510933" rpy="0 0 0" /><mass value="93.805412" /><inertia ixx="1.5880195" iyy="3.1148731" izz="3.0786072" ixy="-0.0072286658" ixz="-0.33139958" iyz="-0.0042880768" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/visual/cylinder.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9254902 0.9254902 0.9058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/cylinder.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 0 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="piston">
+    <inertial><origin xyz="-1.8126257e-09 0.24381206 5.8103888e-06" rpy="0 0 0" /><mass value="4.4483849" /><inertia ixx="0.1485425" iyy="0.00372174" izz="0.14666633" ixy="7.907608e-12" ixz="5.4463295e-15" iyz="-5.8296974e-06" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/visual/piston.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9254902 0.9254902 0.9058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/piston.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 0 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="0.0089714618 -0.25425221 0.49066589" rpy="0 0 0" /><mass value="188.97645" /><inertia ixx="25.222895" iyy="26.438875" izz="3.3315423" ixy="0.11177203" ixz="-0.29237871" iyz="2.3450821" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/visual/link_2.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9254902 0.9254902 0.9058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/collision/link_2.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 0 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="-0.034737732 0.017062657 0.12478275" rpy="0 0 0" /><mass value="169.88125" /><inertia ixx="6.5118859" iyy="5.4232665" izz="6.9808018" ixy="0.55364129" ixz="0.36219103" iyz="-0.75816106" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/visual/link_3.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9254902 0.9254902 0.9058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/collision/link_3.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 0 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="0.67822518 -0.011512315 -3.0511374e-05" rpy="0 0 0" /><mass value="167.42873" /><inertia ixx="2.1303484" iyy="28.802964" izz="29.544332" ixy="0.39313273" ixz="-0.0010505879" iyz="-0.00052066126" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/visual/link_4.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9254902 0.9254902 0.9058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700_235_265/collision/link_4.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 0 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="0.011914297 0.0031564928 -0.005319625" rpy="0 0 0" /><mass value="15.9503" /><inertia ixx="0.079371768" iyy="0.16127031" izz="0.16906877" ixy="-2.498173e-05" ixz="0.0039980299" iyz="0.0021432864" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/visual/link_5.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9254902 0.9254902 0.9058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/link_5.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 0 1" />
+      </material>
+    </collision>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="-0.017157978 1.3235757e-06 1.0207272e-05" rpy="0 0 0" /><mass value="1.7346607" /><inertia ixx="0.0080991747" iyy="0.004229863" izz="0.0042284341" ixy="-2.6391762e-08" ixz="-9.8298296e-08" iyz="1.8734494e-08" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/visual/link_6.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9254902 0.9254902 0.9058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://abb_irb6700_support/meshes/irb6700/collision/link_6.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 0 1" />
+      </material>
+    </collision>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.78" />
+    <parent link="base_link" />
+    <child link="link_1" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="1.7453292519943295" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.32 0 0" />
+    <parent link="link_1" />
+    <child link="link_2" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-1.1344640137963142" upper="1.4835298641951802" velocity="1.5707963267948966" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 1.135" />
+    <parent link="link_2" />
+    <child link="link_3" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-3.141592653589793" upper="1.2217304763960306" velocity="1.5707963267948966" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.2" />
+    <parent link="link_3" />
+    <child link="link_4" />
+    <axis xyz="1 0 0" />
+    <limit effort="0" lower="-5.235987755982989" upper="5.235987755982989" velocity="2.9670597283903604" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="1.1825 0 0" />
+    <parent link="link_4" />
+    <child link="link_5" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-2.2689280275926285" upper="2.2689280275926285" velocity="2.0943951023931953" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.2 0 0" />
+    <parent link="link_5" />
+    <child link="link_6" />
+    <axis xyz="1 0 0" />
+    <limit effort="0" lower="-6.283185307179586" upper="6.283185307179586" velocity="3.3161255787892263" />
+  </joint>
+  <joint name="cylinder_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.349 -0.194 -0.142" />
+    <parent link="link_1" />
+    <child link="cylinder" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_2" multiplier="-0.25" />
+    <limit effort="0" lower="-0.28361600344907856" upper="0.37088246604879505" velocity="100" />
+  </joint>
+  <joint name="piston_joint" type="prismatic">
+    <origin rpy="0.20897 0 -1.5707963267948966" xyz="0 0 0" />
+    <parent link="cylinder" />
+    <child link="piston" />
+    <axis xyz="0 1 0" />
+    <mimic joint="joint_2" multiplier="0.15" />
+    <limit effort="0" lower="-0.25" upper="0.25" velocity="100" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_6-flange" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="link_6" />
+    <child link="flange" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="link_6-tool0" type="fixed">
+    <origin rpy="0 1.5707963267948966 0" xyz="0 0 0" />
+    <parent link="flange" />
+    <child link="tool0" />
+  </joint>
+</robot>

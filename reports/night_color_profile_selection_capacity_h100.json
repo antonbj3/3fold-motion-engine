@@ -1,0 +1,357 @@
+{
+  "legs": [
+    {
+      "8_256": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.584,
+          "steps_per_s": 631.29,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.264,
+          "sort": 0.262,
+          "select": 0.269,
+          "pairs": 0.076,
+          "colour": 0.004,
+          "solve": 0.75,
+          "warm_store": 0.039,
+          "integrate": 0.038,
+          "total_profiled_ms_per_step": 1.777,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "4_256": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.667,
+          "steps_per_s": 599.85,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.289,
+          "sort": 0.306,
+          "select": 0.289,
+          "pairs": 0.079,
+          "colour": 0.004,
+          "solve": 0.757,
+          "warm_store": 0.046,
+          "integrate": 0.04,
+          "total_profiled_ms_per_step": 1.892,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "4_128": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.785,
+          "steps_per_s": 560.24,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.294,
+          "sort": 0.311,
+          "select": 0.294,
+          "pairs": 0.08,
+          "colour": 0.004,
+          "solve": 0.763,
+          "warm_store": 0.046,
+          "integrate": 0.04,
+          "total_profiled_ms_per_step": 1.914,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "4_64": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.699,
+          "steps_per_s": 588.52,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.284,
+          "sort": 0.296,
+          "select": 0.277,
+          "pairs": 0.075,
+          "colour": 0.005,
+          "solve": 0.765,
+          "warm_store": 0.044,
+          "integrate": 0.038,
+          "total_profiled_ms_per_step": 1.864,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "8_128": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.628,
+          "steps_per_s": 614.26,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.261,
+          "sort": 0.26,
+          "select": 0.265,
+          "pairs": 0.074,
+          "colour": 0.004,
+          "solve": 0.773,
+          "warm_store": 0.038,
+          "integrate": 0.037,
+          "total_profiled_ms_per_step": 1.788,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      }
+    },
+    {
+      "8_128": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.667,
+          "steps_per_s": 600.05,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.286,
+          "sort": 0.31,
+          "select": 0.28,
+          "pairs": 0.076,
+          "colour": 0.005,
+          "solve": 0.751,
+          "warm_store": 0.045,
+          "integrate": 0.039,
+          "total_profiled_ms_per_step": 1.872,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "4_64": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.611,
+          "steps_per_s": 620.88,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.262,
+          "sort": 0.26,
+          "select": 0.262,
+          "pairs": 0.074,
+          "colour": 0.004,
+          "solve": 0.756,
+          "warm_store": 0.039,
+          "integrate": 0.037,
+          "total_profiled_ms_per_step": 1.77,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "4_128": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.739,
+          "steps_per_s": 575.05,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.26,
+          "sort": 0.26,
+          "select": 0.263,
+          "pairs": 0.074,
+          "colour": 0.004,
+          "solve": 0.762,
+          "warm_store": 0.038,
+          "integrate": 0.037,
+          "total_profiled_ms_per_step": 1.773,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "4_256": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.595,
+          "steps_per_s": 626.96,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.258,
+          "sort": 0.26,
+          "select": 0.262,
+          "pairs": 0.074,
+          "colour": 0.004,
+          "solve": 0.764,
+          "warm_store": 0.039,
+          "integrate": 0.037,
+          "total_profiled_ms_per_step": 1.772,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      },
+      "8_256": {
+        "timing": {
+          "bodies": 10000,
+          "ms_per_step": 1.731,
+          "steps_per_s": 577.8,
+          "warm_steps": 10,
+          "timed_steps": 30,
+          "colours_final": 2,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "vel_iters": 40,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "stages": {
+          "generate": 0.259,
+          "sort": 0.261,
+          "select": 0.262,
+          "pairs": 0.074,
+          "colour": 0.004,
+          "solve": 0.773,
+          "warm_store": 0.039,
+          "integrate": 0.037,
+          "total_profiled_ms_per_step": 1.783,
+          "bodies": 10000,
+          "contacts_final": 87697,
+          "contacts_solved_final": 40000,
+          "pairs_final": 10000,
+          "graph_captures": 2
+        },
+        "plain_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "profiled_hash": "2b3f2fa755e1620a125d6e9ed97fdc9080d85b6171bbd6dae7aafe653b7064d8",
+        "finite": true
+      }
+    }
+  ],
+  "gates": {
+    "coverage": true,
+    "repeat": true,
+    "profile_parity": true,
+    "finite": true,
+    "selection_parity": true
+  },
+  "worker_sha256": "1e95b4625b999381819c8b272dd6beeaf59df97c121d0d5e596d3d120eea8a6a",
+  "scope": "Existing synchronized stage/timing functions; original N10000 lattice, 40 velocity/20 position rounds, 10 warm/30 measured steps. Profiled timing includes extra synchronization; no predicted speedup."
+}

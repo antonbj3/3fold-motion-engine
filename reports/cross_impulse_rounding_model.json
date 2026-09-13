@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "expected": [
+        -0.06181439384818077,
+        -0.06181439757347107
+      ],
+      "dots": {
+        "separate": -0.0022071339190006256,
+        "fuse_first": -0.0022071339190006256,
+        "fuse_second": -0.002207133686169982,
+        "fuse_third": -0.0022071339190006256
+      },
+      "impulses": {
+        "separate": -0.06181439384818077,
+        "fuse_first": -0.06181439384818077,
+        "fuse_second": -0.06181439757347107,
+        "fuse_third": -0.06181439384818077
+      }
+    },
+    {
+      "expected": [
+        0.0032636946998536587,
+        0.003263694467023015
+      ],
+      "dots": {
+        "separate": -0.0006595182348974049,
+        "fuse_first": -0.0006595182931050658,
+        "fuse_second": -0.0006595182348974049,
+        "fuse_third": -0.0006595182348974049
+      },
+      "impulses": {
+        "separate": 0.003263694467023015,
+        "fuse_first": 0.0032636946998536587,
+        "fuse_second": 0.003263694467023015,
+        "fuse_third": 0.003263694467023015
+      }
+    }
+  ],
+  "gates": {
+    "repeat": true,
+    "both_endpoints_explained": true,
+    "distinct_rounding_outcomes": true
+  },
+  "scope": "Compatible fused/nonfused arithmetic explanations, not actual machine instruction attribution. Fraction arithmetic with nearest-even float32 rounding at explicit boundaries."
+}

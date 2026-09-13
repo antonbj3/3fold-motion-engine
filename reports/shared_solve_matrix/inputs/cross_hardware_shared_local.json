@@ -1,0 +1,2407 @@
+{
+  "label": "shared_local",
+  "hardware": "NVIDIA GeForce RTX 5070, 580.178.04",
+  "records": [
+    {
+      "engine": "jacobi",
+      "scene": "stack8",
+      "legs": [
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "jacobi",
+          "scene": "stack8",
+          "initial": {
+            "xc": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "d6be10b95de3998796912bd52b3a3c6237ebd2bdda06d74ed4eea56299d70372"
+            },
+            "q": {
+              "shape": [
+                8,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "df2a1e35e368561afee6fb9f65f22d102be5d2e79990e7b46ac6987e2d047a28"
+            },
+            "v": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "w": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "invM": {
+              "shape": [
+                8
+              ],
+              "dtype": "<f4",
+              "sha256": "f414b0311ad25b564faeb2ca247021736302a67c4bfa5c7685651d4f7746ddc6"
+            },
+            "IbInv": {
+              "shape": [
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "27ef12b25b4dda7cac6e862bd6973dafb0f632b042472f6dab6b2c6f1a9f474d"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "f63d804c73cf0798e290e6db10a2cedeb2ea4b7279bdf10adb5598f1be5fafff"
+            },
+            "Rm": {
+              "shape": [
+                120,
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "6ae5aa723c3082c2de1b1d3dd3acf39aee70be6ae4c9c561765aafb12f8d76d3"
+            },
+            "vc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "aadaa7183276f1fe5aaee4ff5f8ccffd75409589c4e9136f03c82da06f02a545"
+            },
+            "om": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ddbd07ddfda5d4f9b1c44c8ff16f7e38027d275af6bf57f317b136060d695a9"
+            },
+            "force": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "76aee2a7ccae0c53de5020ae5368c902709e1ea15174f797efc3eb1877bd0482"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            9,
+            9,
+            9,
+            9,
+            9,
+            18,
+            18,
+            18,
+            27,
+            27,
+            27,
+            36,
+            36,
+            45,
+            45,
+            54,
+            54,
+            63,
+            63,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        },
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "jacobi",
+          "scene": "stack8",
+          "initial": {
+            "xc": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "d6be10b95de3998796912bd52b3a3c6237ebd2bdda06d74ed4eea56299d70372"
+            },
+            "q": {
+              "shape": [
+                8,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "df2a1e35e368561afee6fb9f65f22d102be5d2e79990e7b46ac6987e2d047a28"
+            },
+            "v": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "w": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "invM": {
+              "shape": [
+                8
+              ],
+              "dtype": "<f4",
+              "sha256": "f414b0311ad25b564faeb2ca247021736302a67c4bfa5c7685651d4f7746ddc6"
+            },
+            "IbInv": {
+              "shape": [
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "27ef12b25b4dda7cac6e862bd6973dafb0f632b042472f6dab6b2c6f1a9f474d"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "f63d804c73cf0798e290e6db10a2cedeb2ea4b7279bdf10adb5598f1be5fafff"
+            },
+            "Rm": {
+              "shape": [
+                120,
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "6ae5aa723c3082c2de1b1d3dd3acf39aee70be6ae4c9c561765aafb12f8d76d3"
+            },
+            "vc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "aadaa7183276f1fe5aaee4ff5f8ccffd75409589c4e9136f03c82da06f02a545"
+            },
+            "om": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ddbd07ddfda5d4f9b1c44c8ff16f7e38027d275af6bf57f317b136060d695a9"
+            },
+            "force": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "76aee2a7ccae0c53de5020ae5368c902709e1ea15174f797efc3eb1877bd0482"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            9,
+            9,
+            9,
+            9,
+            9,
+            18,
+            18,
+            18,
+            27,
+            27,
+            27,
+            36,
+            36,
+            45,
+            45,
+            54,
+            54,
+            63,
+            63,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        }
+      ],
+      "exact": true
+    },
+    {
+      "engine": "jacobi",
+      "scene": "lattice1000",
+      "legs": [
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "jacobi",
+          "scene": "lattice1000",
+          "initial": {
+            "xc": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "44026ad01f01ac63b0f87537644ac287594f08cf270cd35f163e9d3bb9a1fdc2"
+            },
+            "q": {
+              "shape": [
+                1000,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "561a62d960c2043219df597029ff4891828c00fe1c32d223596daae5d5786cb8"
+            },
+            "v": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "w": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "invM": {
+              "shape": [
+                1000
+              ],
+              "dtype": "<f4",
+              "sha256": "6e7631ae7ef216c522b9a2f8210e10cfbdd5d06975b3d6fdfb9104fef7b7b2d7"
+            },
+            "IbInv": {
+              "shape": [
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "10333e5110d1d601639dcdc492a69da58d6b8a778d279ce962faf1ebc3c0b272"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "e87a589441096e2ea73ddf18107f413bdd67edd7865096a5eac6a154446a82dd"
+            },
+            "Rm": {
+              "shape": [
+                40,
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "0df6675736e5279fa56d93450d02a7b92293447251341f862982bcf3b510f41b"
+            },
+            "vc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "0881f9e5bd4780a5e2b3b897732bdf9de5359f2e7b50cf444c8b77b4b342adc4"
+            },
+            "om": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "a7f982cde2b7e175f2c4bca3bc435e65ae1da9c52708c2778d3a76760b3d8bf5"
+            },
+            "force": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "5ab8e0310cbfc5f844da752a4e5a3c5326cd0848374c802aac0b9368279e0501"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            4761,
+            4761,
+            4761,
+            4761,
+            4761,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        },
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "jacobi",
+          "scene": "lattice1000",
+          "initial": {
+            "xc": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "44026ad01f01ac63b0f87537644ac287594f08cf270cd35f163e9d3bb9a1fdc2"
+            },
+            "q": {
+              "shape": [
+                1000,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "561a62d960c2043219df597029ff4891828c00fe1c32d223596daae5d5786cb8"
+            },
+            "v": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "w": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "invM": {
+              "shape": [
+                1000
+              ],
+              "dtype": "<f4",
+              "sha256": "6e7631ae7ef216c522b9a2f8210e10cfbdd5d06975b3d6fdfb9104fef7b7b2d7"
+            },
+            "IbInv": {
+              "shape": [
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "10333e5110d1d601639dcdc492a69da58d6b8a778d279ce962faf1ebc3c0b272"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "e87a589441096e2ea73ddf18107f413bdd67edd7865096a5eac6a154446a82dd"
+            },
+            "Rm": {
+              "shape": [
+                40,
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "0df6675736e5279fa56d93450d02a7b92293447251341f862982bcf3b510f41b"
+            },
+            "vc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "0881f9e5bd4780a5e2b3b897732bdf9de5359f2e7b50cf444c8b77b4b342adc4"
+            },
+            "om": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "a7f982cde2b7e175f2c4bca3bc435e65ae1da9c52708c2778d3a76760b3d8bf5"
+            },
+            "force": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "5ab8e0310cbfc5f844da752a4e5a3c5326cd0848374c802aac0b9368279e0501"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            4761,
+            4761,
+            4761,
+            4761,
+            4761,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000,
+            9000
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        }
+      ],
+      "exact": true
+    },
+    {
+      "engine": "pair_chunks",
+      "scene": "stack8",
+      "legs": [
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "pair_chunks",
+          "scene": "stack8",
+          "initial": {
+            "xc": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "d6be10b95de3998796912bd52b3a3c6237ebd2bdda06d74ed4eea56299d70372"
+            },
+            "q": {
+              "shape": [
+                8,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "df2a1e35e368561afee6fb9f65f22d102be5d2e79990e7b46ac6987e2d047a28"
+            },
+            "v": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "w": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "invM": {
+              "shape": [
+                8
+              ],
+              "dtype": "<f4",
+              "sha256": "f414b0311ad25b564faeb2ca247021736302a67c4bfa5c7685651d4f7746ddc6"
+            },
+            "IbInv": {
+              "shape": [
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "27ef12b25b4dda7cac6e862bd6973dafb0f632b042472f6dab6b2c6f1a9f474d"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "f7a10732de2ac55f59196e53d12a5f224ae582943ed4d457e0066b01165ab591"
+            },
+            "Rm": {
+              "shape": [
+                120,
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "be3dd205a3b93fe55b48675981e42e12a662ea9204cff76ec67e4bf97d4f6fde"
+            },
+            "vc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "3c55477de535653a5a0deb7de45f7f5ed4ca8bed5228d23af5e178148f864dc8"
+            },
+            "om": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "6f031de506b18b68517e6d69195dd5d9f0984801c43ae94dc642d558f3d847e6"
+            },
+            "force": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "777c042034610d9b4973f62116ca9f521edff828b82f3eb3a64912f03b390f3c"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            9,
+            7,
+            7,
+            6,
+            6,
+            13,
+            14,
+            14,
+            18,
+            23,
+            24,
+            32,
+            28,
+            40,
+            42,
+            50,
+            51,
+            61,
+            60,
+            72,
+            72,
+            72,
+            71,
+            69,
+            72,
+            71,
+            70,
+            69,
+            71,
+            69,
+            69,
+            70,
+            69,
+            69,
+            66,
+            70,
+            70,
+            71,
+            71,
+            69,
+            71,
+            70,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            69,
+            71,
+            71,
+            67,
+            70,
+            69,
+            72,
+            69,
+            72,
+            72,
+            71,
+            69,
+            72,
+            71,
+            70,
+            66,
+            69,
+            72,
+            72,
+            71,
+            70,
+            69,
+            71,
+            71,
+            69,
+            68,
+            71,
+            67,
+            69,
+            71,
+            72,
+            69,
+            72,
+            72,
+            72,
+            69,
+            72,
+            70,
+            69,
+            68,
+            69,
+            68,
+            66,
+            68,
+            66,
+            68,
+            72,
+            72,
+            71,
+            70,
+            69,
+            72,
+            70,
+            69,
+            66,
+            68,
+            68,
+            66,
+            69,
+            69,
+            66,
+            68,
+            67,
+            67,
+            71,
+            70,
+            69,
+            71,
+            70
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        },
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "pair_chunks",
+          "scene": "stack8",
+          "initial": {
+            "xc": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "d6be10b95de3998796912bd52b3a3c6237ebd2bdda06d74ed4eea56299d70372"
+            },
+            "q": {
+              "shape": [
+                8,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "df2a1e35e368561afee6fb9f65f22d102be5d2e79990e7b46ac6987e2d047a28"
+            },
+            "v": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "w": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "invM": {
+              "shape": [
+                8
+              ],
+              "dtype": "<f4",
+              "sha256": "f414b0311ad25b564faeb2ca247021736302a67c4bfa5c7685651d4f7746ddc6"
+            },
+            "IbInv": {
+              "shape": [
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "27ef12b25b4dda7cac6e862bd6973dafb0f632b042472f6dab6b2c6f1a9f474d"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "f7a10732de2ac55f59196e53d12a5f224ae582943ed4d457e0066b01165ab591"
+            },
+            "Rm": {
+              "shape": [
+                120,
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "be3dd205a3b93fe55b48675981e42e12a662ea9204cff76ec67e4bf97d4f6fde"
+            },
+            "vc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "3c55477de535653a5a0deb7de45f7f5ed4ca8bed5228d23af5e178148f864dc8"
+            },
+            "om": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "6f031de506b18b68517e6d69195dd5d9f0984801c43ae94dc642d558f3d847e6"
+            },
+            "force": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "777c042034610d9b4973f62116ca9f521edff828b82f3eb3a64912f03b390f3c"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            9,
+            7,
+            7,
+            6,
+            6,
+            13,
+            14,
+            14,
+            18,
+            23,
+            24,
+            32,
+            28,
+            40,
+            42,
+            50,
+            51,
+            61,
+            60,
+            72,
+            72,
+            72,
+            71,
+            69,
+            72,
+            71,
+            70,
+            69,
+            71,
+            69,
+            69,
+            70,
+            69,
+            69,
+            66,
+            70,
+            70,
+            71,
+            71,
+            69,
+            71,
+            70,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            69,
+            71,
+            71,
+            67,
+            70,
+            69,
+            72,
+            69,
+            72,
+            72,
+            71,
+            69,
+            72,
+            71,
+            70,
+            66,
+            69,
+            72,
+            72,
+            71,
+            70,
+            69,
+            71,
+            71,
+            69,
+            68,
+            71,
+            67,
+            69,
+            71,
+            72,
+            69,
+            72,
+            72,
+            72,
+            69,
+            72,
+            70,
+            69,
+            68,
+            69,
+            68,
+            66,
+            68,
+            66,
+            68,
+            72,
+            72,
+            71,
+            70,
+            69,
+            72,
+            70,
+            69,
+            66,
+            68,
+            68,
+            66,
+            69,
+            69,
+            66,
+            68,
+            67,
+            67,
+            71,
+            70,
+            69,
+            71,
+            70
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        }
+      ],
+      "exact": true
+    },
+    {
+      "engine": "pair_chunks",
+      "scene": "lattice1000",
+      "legs": [
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "pair_chunks",
+          "scene": "lattice1000",
+          "initial": {
+            "xc": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "44026ad01f01ac63b0f87537644ac287594f08cf270cd35f163e9d3bb9a1fdc2"
+            },
+            "q": {
+              "shape": [
+                1000,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "561a62d960c2043219df597029ff4891828c00fe1c32d223596daae5d5786cb8"
+            },
+            "v": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "w": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "invM": {
+              "shape": [
+                1000
+              ],
+              "dtype": "<f4",
+              "sha256": "6e7631ae7ef216c522b9a2f8210e10cfbdd5d06975b3d6fdfb9104fef7b7b2d7"
+            },
+            "IbInv": {
+              "shape": [
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "10333e5110d1d601639dcdc492a69da58d6b8a778d279ce962faf1ebc3c0b272"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "d54cd73b74872bf983123fff0ed48e0d161ac1500a1e70e85d4c065799d7931c"
+            },
+            "Rm": {
+              "shape": [
+                40,
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "f45433dc049a1d40e792d798b55dd8083ad8549f3da13b2ddacb9464c0843115"
+            },
+            "vc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "1bde1d1bec2e3d9454a19e348f9dfd0ea64aec7a624a54e7d0813348e2e03a6c"
+            },
+            "om": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "89b5e46ecc400a5b8f01781f0a4807219e4e9683710d4525c856d9b257490b0f"
+            },
+            "force": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "17c5e4e15fcdab26f2352f8fd968a3ffe34e745c15fd03874e91c9cc06d92f6f"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            4761,
+            4329,
+            4329,
+            4113,
+            4113,
+            7956,
+            8160,
+            8160,
+            7956,
+            8160,
+            8160,
+            7956,
+            8045,
+            8362,
+            8552,
+            8564,
+            8564,
+            8562,
+            8563,
+            8566,
+            8566,
+            8565,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        },
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "pair_chunks",
+          "scene": "lattice1000",
+          "initial": {
+            "xc": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "44026ad01f01ac63b0f87537644ac287594f08cf270cd35f163e9d3bb9a1fdc2"
+            },
+            "q": {
+              "shape": [
+                1000,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "561a62d960c2043219df597029ff4891828c00fe1c32d223596daae5d5786cb8"
+            },
+            "v": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "w": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "invM": {
+              "shape": [
+                1000
+              ],
+              "dtype": "<f4",
+              "sha256": "6e7631ae7ef216c522b9a2f8210e10cfbdd5d06975b3d6fdfb9104fef7b7b2d7"
+            },
+            "IbInv": {
+              "shape": [
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "10333e5110d1d601639dcdc492a69da58d6b8a778d279ce962faf1ebc3c0b272"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "d54cd73b74872bf983123fff0ed48e0d161ac1500a1e70e85d4c065799d7931c"
+            },
+            "Rm": {
+              "shape": [
+                40,
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "f45433dc049a1d40e792d798b55dd8083ad8549f3da13b2ddacb9464c0843115"
+            },
+            "vc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "1bde1d1bec2e3d9454a19e348f9dfd0ea64aec7a624a54e7d0813348e2e03a6c"
+            },
+            "om": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "89b5e46ecc400a5b8f01781f0a4807219e4e9683710d4525c856d9b257490b0f"
+            },
+            "force": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "17c5e4e15fcdab26f2352f8fd968a3ffe34e745c15fd03874e91c9cc06d92f6f"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            4761,
+            4329,
+            4329,
+            4113,
+            4113,
+            7956,
+            8160,
+            8160,
+            7956,
+            8160,
+            8160,
+            7956,
+            8045,
+            8362,
+            8552,
+            8564,
+            8564,
+            8562,
+            8563,
+            8566,
+            8566,
+            8565,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568,
+            8568
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        }
+      ],
+      "exact": true
+    },
+    {
+      "engine": "color_cache",
+      "scene": "stack8",
+      "legs": [
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "color_cache",
+          "scene": "stack8",
+          "initial": {
+            "xc": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "d6be10b95de3998796912bd52b3a3c6237ebd2bdda06d74ed4eea56299d70372"
+            },
+            "q": {
+              "shape": [
+                8,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "df2a1e35e368561afee6fb9f65f22d102be5d2e79990e7b46ac6987e2d047a28"
+            },
+            "v": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "w": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "invM": {
+              "shape": [
+                8
+              ],
+              "dtype": "<f4",
+              "sha256": "f414b0311ad25b564faeb2ca247021736302a67c4bfa5c7685651d4f7746ddc6"
+            },
+            "IbInv": {
+              "shape": [
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "27ef12b25b4dda7cac6e862bd6973dafb0f632b042472f6dab6b2c6f1a9f474d"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "08617b0faf64c4bb7adc434d622a6adc3c5ec621f5f1b8438fd349ab9ecddc0d"
+            },
+            "Rm": {
+              "shape": [
+                120,
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "7a219b8125db9ba711d69ff95995a7deae300f4be50df0b10e50973a06278c92"
+            },
+            "vc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "6a58751d3016abfb3ab87b246e39a9806063caaba30c226d85b2fffaf5d9b43b"
+            },
+            "om": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "0f03c4a85ae6dcb59de6ab56e715aa9057553a4433aa0fecffa372acf1219db7"
+            },
+            "force": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "cf8754ac01042b0c89ad574b7a01f57463cf1e87b47ca76f83a3aed162824991"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            9,
+            7,
+            7,
+            6,
+            8,
+            14,
+            15,
+            12,
+            18,
+            21,
+            22,
+            31,
+            33,
+            42,
+            45,
+            54,
+            53,
+            63,
+            62,
+            71,
+            69,
+            72,
+            72,
+            72,
+            72,
+            72,
+            70,
+            71,
+            71,
+            71,
+            70,
+            70,
+            67,
+            70,
+            70,
+            70,
+            69,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            71,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            71,
+            72,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            70,
+            70,
+            70,
+            70,
+            70,
+            71,
+            71,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            71,
+            71,
+            71,
+            70,
+            70,
+            70,
+            71,
+            71,
+            71,
+            72
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        },
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "color_cache",
+          "scene": "stack8",
+          "initial": {
+            "xc": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "d6be10b95de3998796912bd52b3a3c6237ebd2bdda06d74ed4eea56299d70372"
+            },
+            "q": {
+              "shape": [
+                8,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "df2a1e35e368561afee6fb9f65f22d102be5d2e79990e7b46ac6987e2d047a28"
+            },
+            "v": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "w": {
+              "shape": [
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4"
+            },
+            "invM": {
+              "shape": [
+                8
+              ],
+              "dtype": "<f4",
+              "sha256": "f414b0311ad25b564faeb2ca247021736302a67c4bfa5c7685651d4f7746ddc6"
+            },
+            "IbInv": {
+              "shape": [
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "27ef12b25b4dda7cac6e862bd6973dafb0f632b042472f6dab6b2c6f1a9f474d"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "08617b0faf64c4bb7adc434d622a6adc3c5ec621f5f1b8438fd349ab9ecddc0d"
+            },
+            "Rm": {
+              "shape": [
+                120,
+                8,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "7a219b8125db9ba711d69ff95995a7deae300f4be50df0b10e50973a06278c92"
+            },
+            "vc": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "6a58751d3016abfb3ab87b246e39a9806063caaba30c226d85b2fffaf5d9b43b"
+            },
+            "om": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "0f03c4a85ae6dcb59de6ab56e715aa9057553a4433aa0fecffa372acf1219db7"
+            },
+            "force": {
+              "shape": [
+                120,
+                8,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "cf8754ac01042b0c89ad574b7a01f57463cf1e87b47ca76f83a3aed162824991"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            9,
+            7,
+            7,
+            6,
+            8,
+            14,
+            15,
+            12,
+            18,
+            21,
+            22,
+            31,
+            33,
+            42,
+            45,
+            54,
+            53,
+            63,
+            62,
+            71,
+            69,
+            72,
+            72,
+            72,
+            72,
+            72,
+            70,
+            71,
+            71,
+            71,
+            70,
+            70,
+            67,
+            70,
+            70,
+            70,
+            69,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            71,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            71,
+            72,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            71,
+            70,
+            70,
+            70,
+            70,
+            70,
+            71,
+            71,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            72,
+            71,
+            71,
+            71,
+            70,
+            70,
+            70,
+            71,
+            71,
+            71,
+            72
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        }
+      ],
+      "exact": true
+    },
+    {
+      "engine": "color_cache",
+      "scene": "lattice1000",
+      "legs": [
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "color_cache",
+          "scene": "lattice1000",
+          "initial": {
+            "xc": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "44026ad01f01ac63b0f87537644ac287594f08cf270cd35f163e9d3bb9a1fdc2"
+            },
+            "q": {
+              "shape": [
+                1000,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "561a62d960c2043219df597029ff4891828c00fe1c32d223596daae5d5786cb8"
+            },
+            "v": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "w": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "invM": {
+              "shape": [
+                1000
+              ],
+              "dtype": "<f4",
+              "sha256": "6e7631ae7ef216c522b9a2f8210e10cfbdd5d06975b3d6fdfb9104fef7b7b2d7"
+            },
+            "IbInv": {
+              "shape": [
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "10333e5110d1d601639dcdc492a69da58d6b8a778d279ce962faf1ebc3c0b272"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "eb4bb1be28280340823715b5021a983f5a4ee33e7db7941972e1b5a662552238"
+            },
+            "Rm": {
+              "shape": [
+                40,
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "0cf4a47bd58fb9aedcd2c84e8c75d5597670f3e440b372470d125b92a3fa82fb"
+            },
+            "vc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "59b597f708c5d33b69b5d3f22fc68d5458869d1010f79ed4db618399a0b3b8d0"
+            },
+            "om": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "cd05f92dc6bb20dd217ab9aeddb67ced510475867d85fcaeb6eacc252cf553c7"
+            },
+            "force": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "a930bb67ce631542f17d40d1ec35c5a29a399a845272f6688d321dd2305a80d7"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            4761,
+            4329,
+            4329,
+            4113,
+            4545,
+            8172,
+            8376,
+            7756,
+            8045,
+            7958,
+            8309,
+            8483,
+            8453,
+            8455,
+            8570,
+            8570,
+            8570,
+            8569,
+            8569,
+            8569,
+            8569,
+            8569,
+            8569,
+            8568,
+            8481,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        },
+        {
+          "variant": "unfused_velocity_position",
+          "engine": "color_cache",
+          "scene": "lattice1000",
+          "initial": {
+            "xc": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "44026ad01f01ac63b0f87537644ac287594f08cf270cd35f163e9d3bb9a1fdc2"
+            },
+            "q": {
+              "shape": [
+                1000,
+                4
+              ],
+              "dtype": "<f4",
+              "sha256": "561a62d960c2043219df597029ff4891828c00fe1c32d223596daae5d5786cb8"
+            },
+            "v": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "w": {
+              "shape": [
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "ff6698a6e831ffcf47af2fed388ffc262f319e72b26cd140929d1e19b1246ad4"
+            },
+            "invM": {
+              "shape": [
+                1000
+              ],
+              "dtype": "<f4",
+              "sha256": "6e7631ae7ef216c522b9a2f8210e10cfbdd5d06975b3d6fdfb9104fef7b7b2d7"
+            },
+            "IbInv": {
+              "shape": [
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "10333e5110d1d601639dcdc492a69da58d6b8a778d279ce962faf1ebc3c0b272"
+            },
+            "rest": {
+              "shape": [
+                18,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "c0e47a8af1a32c7ef238c2792b798ceefc6f1347c04d166a9fe7e0f49eb05e56"
+            }
+          },
+          "arrays": {
+            "xc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "eb4bb1be28280340823715b5021a983f5a4ee33e7db7941972e1b5a662552238"
+            },
+            "Rm": {
+              "shape": [
+                40,
+                1000,
+                3,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "0cf4a47bd58fb9aedcd2c84e8c75d5597670f3e440b372470d125b92a3fa82fb"
+            },
+            "vc": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "59b597f708c5d33b69b5d3f22fc68d5458869d1010f79ed4db618399a0b3b8d0"
+            },
+            "om": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f4",
+              "sha256": "cd05f92dc6bb20dd217ab9aeddb67ced510475867d85fcaeb6eacc252cf553c7"
+            },
+            "force": {
+              "shape": [
+                40,
+                1000,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "a930bb67ce631542f17d40d1ec35c5a29a399a845272f6688d321dd2305a80d7"
+            }
+          },
+          "contacts": [
+            0,
+            0,
+            0,
+            4761,
+            4329,
+            4329,
+            4113,
+            4545,
+            8172,
+            8376,
+            7756,
+            8045,
+            7958,
+            8309,
+            8483,
+            8453,
+            8455,
+            8570,
+            8570,
+            8570,
+            8569,
+            8569,
+            8569,
+            8569,
+            8569,
+            8569,
+            8568,
+            8481,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655,
+            8655
+          ],
+          "finite": true,
+          "warp": "1.13.0",
+          "numpy": "2.5.3"
+        }
+      ],
+      "exact": true
+    }
+  ],
+  "gates": {
+    "coverage": true,
+    "exact_repeats": true,
+    "finite": true,
+    "active_contacts": true
+  },
+  "archive_sha256": "23d0ee4df0d4f5d70a09108967e854456bdf88d5fb07c7f5a5d9cb9717bf7f2f"
+}

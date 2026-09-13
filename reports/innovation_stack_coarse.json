@@ -1,0 +1,142 @@
+{
+  "initial_background": {
+    "gpu_utilization": "8 %",
+    "memory_used": "1389 MiB"
+  },
+  "legs": [
+    {
+      "leg": 1,
+      "m5": {
+        "max_pen_over_R": 1.1857262253761292,
+        "max_pen_m": 0.05928631126880646,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 8.415429159980856e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.14807510375976562,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.148 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "coarse_counters_K16": {
+        "applied": 597,
+        "singular": 0
+      },
+      "trajectory_sha256": "274791dfc5cebcc5ca21f79803cbd5fd95cdafa2be4fc9de933341af4aa8d9ea",
+      "m1": {
+        "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+        "value_worst_relerr": 1.6074443082187042e-05,
+        "per_body_relerr": [
+          1.3841009650388372e-05,
+          1.4302462612833953e-05,
+          1.6074443082187042e-05,
+          1.2069092978046304e-05
+        ],
+        "value_worst_relerr_final_sample": 3.6570639420908024e-05,
+        "tail_frac": 0.2,
+        "tail_steps": 80,
+        "min_spacing_m": 0.19989994168281555,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "threshold": 0.1,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless"
+      },
+      "box_force_relative_error": 1.573416800495184e-06,
+      "timing": {
+        "bodies": 10000,
+        "ms_per_step": 5.079,
+        "steps_per_s": 196.89,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      },
+      "large_scene_skips": 37
+    },
+    {
+      "leg": 2,
+      "m5": {
+        "max_pen_over_R": 1.1857262253761292,
+        "max_pen_m": 0.05928631126880646,
+        "drift_class": "secular",
+        "drift_slope_m_per_step": 8.415429159980856e-05,
+        "threshold_pen_over_R": 0.5,
+        "min_spacing_m": 0.14807510375976562,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "pass": false,
+        "status": "INVALID",
+        "valid": false,
+        "invalid_reasons": [
+          "spacing 0.148 m < 0.164 m (0.8 x rest pitch 0.205 m)"
+        ],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless (pen/R)"
+      },
+      "coarse_counters_K16": {
+        "applied": 597,
+        "singular": 0
+      },
+      "trajectory_sha256": "274791dfc5cebcc5ca21f79803cbd5fd95cdafa2be4fc9de933341af4aa8d9ea",
+      "m1": {
+        "anchor": "K=4-stack per-body net contact = Mg (load propagation)",
+        "value_worst_relerr": 1.6074443082187042e-05,
+        "per_body_relerr": [
+          1.3841009650388372e-05,
+          1.4302462612833953e-05,
+          1.6074443082187042e-05,
+          1.2069092978046304e-05
+        ],
+        "value_worst_relerr_final_sample": 3.6570639420908024e-05,
+        "tail_frac": 0.2,
+        "tail_steps": 80,
+        "min_spacing_m": 0.19989994168281555,
+        "max_pen_body_body_m": null,
+        "rest_pitch_m": 0.205,
+        "threshold": 0.1,
+        "pass": true,
+        "status": "PASS",
+        "valid": true,
+        "invalid_reasons": [],
+        "spacing_floor_m": 0.164,
+        "pen_ceiling_m": 0.05,
+        "units": "dimensionless"
+      },
+      "box_force_relative_error": 1.573416800495184e-06,
+      "timing": {
+        "bodies": 10000,
+        "ms_per_step": 5.007,
+        "steps_per_s": 199.72,
+        "warm_steps": 10,
+        "timed_steps": 30,
+        "colours_final": 2,
+        "contacts_final": 85427,
+        "contacts_solved_final": 40000,
+        "vel_iters": 40,
+        "pairs_final": 10000,
+        "graph_captures": 2
+      },
+      "large_scene_skips": 37
+    }
+  ],
+  "bit_identical": true,
+  "pass": false
+}

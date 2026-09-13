@@ -1,0 +1,8 @@
+{
+  "selection_arithmetic_ast_exact": true,
+  "planar_ast_exact": true,
+  "source_sha256": {
+    "src/motion_engine/contact_engine_gpu_colored.py": "0509acaeffb4de4072e116dc7fbbfbf0b395431d94d5607ea5026864f20554ff",
+    "src/motion_engine/contact_engine_gpu_packed_select.py": "4ea55ff04f4763b1c4b41adc86d89395906157546ed29440c46538665d267b6e"
+  }
+}

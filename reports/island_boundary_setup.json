@@ -1,0 +1,7 @@
+{
+  "scope": "Initial test fixture setup only; no GPU boundary case executed.",
+  "cpu_passed": 2,
+  "gpu_setup_errors": 2,
+  "reason": "Missing parent directory for explicit pytest basetemp",
+  "correction": "Create the nested artifact parent and rerun both complete test processes; no code or assertion changes."
+}

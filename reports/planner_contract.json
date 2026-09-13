@@ -1,0 +1,14 @@
+{
+ "layer": "planner contract (hot-swap interface)",
+ "protocol_conformant": true,
+ "plan_via_contract_nodes": 96,
+ "plan_collision_free": true,
+ "dispatcher_hotswaps": true,
+ "vamp_available": false,
+ "backends": [
+  "pinocchio_coal",
+  "vamp"
+ ],
+ "note": "custom engine/solver = new adapter implementing Planner, zero consumer change = real hot-swap",
+ "validated": true
+}

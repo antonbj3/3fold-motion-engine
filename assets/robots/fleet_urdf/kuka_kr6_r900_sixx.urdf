@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="kr6_r900_sixx">
+  
+  <ros2_control name="kr6_r900_sixx" type="system">
+    <hardware>
+      <plugin>kuka_rsi_driver::KukaRSIHardwareInterface</plugin>
+      <param name="client_ip">0.0.0.0</param>
+      <param name="client_port">59152</param>
+    </hardware>
+    <joint name="joint_1">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_2">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">-1.5708</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_3">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">1.5708</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_4">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_5">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <joint name="joint_6">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+    </joint>
+    <gpio name="gpio" />
+  </ros2_control>
+  
+  <link name="world"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  
+  <link name="base_link">
+    <inertial><origin xyz="-0.046544927 0.00020218957 0.11338289" rpy="0 0 0" /><mass value="13.962362" /><inertia ixx="0.10227548" iyy="0.15921696" izz="0.14333497" ixy="0.00045465774" ixz="-0.00017446974" iyz="3.3669429e-06" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/visual/base_link.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.5058823529411764 0.47058823529411764 0.38823529411764707 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial><origin xyz="0.014688218 3.9485837e-05 -0.05574903" rpy="0 0 0" /><mass value="11.800001" /><inertia ixx="0.11388988" iyy="0.094144521" izz="0.08839057" ixy="0.00027058394" ixz="-0.0047480684" iyz="-0.00019312843" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_1.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9647058823529412 0.47058823529411764 0.1568627450980392 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <inertial><origin xyz="0.24078662 -0.0036710156 0.00023671209" rpy="0 0 0" /><mass value="18.474472" /><inertia ixx="0.096279873" iyy="0.54596459" izz="0.56945949" ixy="-0.0022116667" ixz="-5.5719395e-05" iyz="0.00011828075" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_2.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9647058823529412 0.47058823529411764 0.1568627450980392 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <inertial><origin xyz="0.017932852 0.00015106689 0.01028638" rpy="0 0 0" /><mass value="3.1615487" /><inertia ixx="0.0092983412" iyy="0.012501443" izz="0.011285531" ixy="2.714178e-06" ixz="-0.0014200647" iyz="-3.1276722e-05" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_3.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9647058823529412 0.47058823529411764 0.1568627450980392 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <inertial><origin xyz="0.27433438 3.2066804e-05 0.0036197889" rpy="0 0 0" /><mass value="4.0326588" /><inertia ixx="0.0074269471" iyy="0.040483149" izz="0.040692736" ixy="-0.00022013054" ixz="0.00040713001" iyz="7.4147781e-05" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_4.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9647058823529412 0.47058823529411764 0.1568627450980392 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <inertial><origin xyz="0.020634442 0.0015071774 -1.1924199e-05" rpy="0 0 0" /><mass value="0.55145078" /><inertia ixx="0.00043415656" iyy="0.00071920025" izz="0.00075825797" ixy="2.1289608e-05" ixz="-5.8251952e-10" iyz="4.426342e-09" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_5.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.9647058823529412 0.47058823529411764 0.1568627450980392 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <inertial><origin xyz="-0.0067626889 4.9632788e-07 -1.1261617e-05" rpy="0 0 0" /><mass value="0.017507269" /><inertia ixx="3.4967063e-06" iyy="2.0138148e-06" izz="2.0137345e-06" ixy="1.352144e-13" ixz="3.1639778e-12" iyz="-7.3427488e-12" /></inertial><visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_6.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.5058823529411764 0.47058823529411764 0.38823529411764707 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="flange"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.400" />
+    <parent link="base_link" />
+    <child link="link_1" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-2.9670597283903604" upper="2.9670597283903604" velocity="6.283185307179586" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.025 0 0" />
+    <parent link="link_1" />
+    <child link="link_2" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-3.3161255787892263" upper="0.7853981633974483" velocity="5.235987755982989" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0.455 0 0" />
+    <parent link="link_2" />
+    <child link="link_3" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-2.0943951023931953" upper="2.722713633111154" velocity="6.283185307179586" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.035" />
+    <parent link="link_3" />
+    <child link="link_4" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-3.2288591161895095" upper="3.2288591161895095" velocity="6.649704450098396" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="0.420 0 0" />
+    <parent link="link_4" />
+    <child link="link_5" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="-2.0943951023931953" upper="2.0943951023931953" velocity="6.771877497737998" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.080 0 0" />
+    <parent link="link_5" />
+    <child link="link_6" />
+    <axis xyz="-1 0 0" />
+    <limit effort="0" lower="-6.1086523819801535" upper="6.1086523819801535" velocity="10.733774899765127" />
+  </joint>
+  <joint name="joint_6-flange" type="fixed">
+    <parent link="link_6" />
+    <child link="flange" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+  
+  <link name="base"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="base_link-base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+  
+  <link name="tool0"><inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.01" /><inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0" ixz="0" iyz="0" /></inertial></link>
+  <joint name="flange-tool0" type="fixed">
+    <parent link="flange" />
+    <child link="tool0" />
+    <origin rpy="0 1.5707963267948966 0" xyz="0 0 0" />
+  </joint>
+  
+  <joint name="world-base_link" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+</robot>

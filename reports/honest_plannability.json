@@ -1,0 +1,29 @@
+{
+ "sample": [
+  "franka_panda",
+  "ur10e"
+ ],
+ "rows": [
+  {
+   "robot": "franka_panda",
+   "reach": 1.0,
+   "R1_soft": 25,
+   "R2_reachable_full6d": 25,
+   "R3_arbitrary": 16,
+   "N": 25
+  },
+  {
+   "robot": "ur10e",
+   "reach": 1.37,
+   "R1_soft": 25,
+   "R2_reachable_full6d": 25,
+   "R3_arbitrary": 23,
+   "N": 25
+  }
+ ],
+ "R1_soft_rate": 1.0,
+ "R2_reachable_full6d_rate": 1.0,
+ "R3_arbitrary_rate": 0.78,
+ "honest_verdict": "R1 and R2 (IK quality on REACHABLE targets) are high; R3 (arbitrary 6D poses) is lower, but the gap is largely GENUINE UNREACHABILITY - most random orientations at a random position lie outside a 6-DOF arm's workspace - rather than IK weakness. A plannability rate measured on reachable targets is therefore the right capability number, and calling the arbitrary-pose rate an IK failure rate conflates IK quality with reachability.",
+ "validated": true
+}

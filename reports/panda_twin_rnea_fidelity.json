@@ -1,0 +1,92 @@
+{
+ "robot": "Franka_Panda_7DOF",
+ "twin": "assets/robots/franka_description/franka_panda.urdf",
+ "source": "Zenodo-12516500 LIP4RID (real Franka)",
+ "method": "OUR twin RNEA (pinocchio) vs real torque, convention-gated, held-out friction",
+ "per_joint": [
+  {
+   "joint": 1,
+   "r2_nominal": 0.968,
+   "r2_with_friction": 0.971,
+   "gain": 0.003,
+   "shuffle_ratio": 0.034,
+   "Fc": 0.1815,
+   "Fv": 0.1289,
+   "T_std": 4.6,
+   "regime": "proximal"
+  },
+  {
+   "joint": 2,
+   "r2_nominal": 0.988,
+   "r2_with_friction": 0.989,
+   "gain": 0.0,
+   "shuffle_ratio": -0.207,
+   "Fc": 0.0682,
+   "Fv": 0.7374,
+   "T_std": 18.94,
+   "regime": "proximal"
+  },
+  {
+   "joint": 3,
+   "r2_nominal": 0.981,
+   "r2_with_friction": 0.983,
+   "gain": 0.002,
+   "shuffle_ratio": 0.001,
+   "Fc": 0.1779,
+   "Fv": 0.1259,
+   "T_std": 5.95,
+   "regime": "proximal"
+  },
+  {
+   "joint": 4,
+   "r2_nominal": 0.946,
+   "r2_with_friction": 0.947,
+   "gain": 0.001,
+   "shuffle_ratio": -0.034,
+   "Fc": 0.1828,
+   "Fv": 0.151,
+   "T_std": 8.1,
+   "regime": "proximal"
+  },
+  {
+   "joint": 5,
+   "r2_nominal": 0.586,
+   "r2_with_friction": 0.866,
+   "gain": 0.28,
+   "shuffle_ratio": -0.01,
+   "Fc": 0.2852,
+   "Fv": 0.1363,
+   "T_std": 0.67,
+   "regime": "distal"
+  },
+  {
+   "joint": 6,
+   "r2_nominal": 0.922,
+   "r2_with_friction": 0.964,
+   "gain": 0.042,
+   "shuffle_ratio": -0.013,
+   "Fc": 0.1854,
+   "Fv": 0.2158,
+   "T_std": 1.21,
+   "regime": "distal"
+  },
+  {
+   "joint": 7,
+   "r2_nominal": -0.002,
+   "r2_with_friction": 0.857,
+   "gain": 0.859,
+   "shuffle_ratio": -0.01,
+   "Fc": 0.2404,
+   "Fv": 0.0394,
+   "T_std": 0.28,
+   "regime": "distal"
+  }
+ ],
+ "mean_r2_nominal": 0.77,
+ "mean_r2_with_friction": 0.94,
+ "n_proximal_ok": 4,
+ "distal_friction_fixed": 2,
+ "max_shuffle_ratio": 0.01,
+ "gap_is_friction_not_mass": true,
+ "validated": true
+}
