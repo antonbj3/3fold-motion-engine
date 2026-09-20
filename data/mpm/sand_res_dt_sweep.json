@@ -1,0 +1,37 @@
+{
+  "what": "Triaxial compression in material-point Drucker-Prager sand: the recovered friction angle over grid resolution and time step. The anchor for the constitutive core and the source of the dt rule.",
+  "command": "OMP_NUM_THREADS=4 python sweep_res_dt.py --res <RES> --dt-us <DT_US>",
+  "phi_in_deg": 40.0,
+  "acceptance_gate_deg": 2.0,
+  "rows": [
+    {"res": 32,  "dx_mm": 6.250, "dt_us": 30.0, "phi_out_deg": 40.46, "M_mean": 1.6559, "band_mm": 27.71, "sha256": "74ab5960fd49ccdd3f57361c48d5a245ff9c81c2b220cd015b6e460f6a96ae53"},
+    {"res": 32,  "dx_mm": 6.250, "dt_us": 10.0, "phi_out_deg": 40.49, "M_mean": 1.6574, "band_mm": 27.71, "sha256": "c648f3a63f63d655f410940dc61c4e7f3d172aeef1c60b54fbf86d5252872bc9"},
+    {"res": 32,  "dx_mm": 6.250, "dt_us": 5.0,  "phi_out_deg": 40.49, "M_mean": 1.6572, "band_mm": 27.71, "sha256": "8ce62f5626acd4cd3d63cf106b001a141b21c4323eb3fa6e3dbe753975a5e3f8"},
+    {"res": 64,  "dx_mm": 3.125, "dt_us": 30.0, "phi_out_deg": 39.85, "M_mean": 1.6298, "band_mm": 13.36, "sha256": "2694a5353c589ae08d9ee7f9bc0eaedf99494373dee644d470011de3d5d6dc9b"},
+    {"res": 64,  "dx_mm": 3.125, "dt_us": 10.0, "phi_out_deg": 40.35, "M_mean": 1.6511, "band_mm": 28.45, "sha256": "7d2d4f486ca3414fd3ebaaecbbd6c5df5dfa14a70e8832c3ae9caae1bb7ff9e4"},
+    {"res": 64,  "dx_mm": 3.125, "dt_us": 5.0,  "phi_out_deg": 40.37, "M_mean": 1.6522, "band_mm": 28.45, "sha256": "087b686c371d9bc9995168bc47fdfd0b672a8fe4d49a37b3f9dd49405ce1e513"},
+    {"res": 96,  "dx_mm": 2.083, "dt_us": 20.0, "phi_out_deg": 38.53, "M_mean": 1.5722, "band_mm": 13.22, "sha256": "62c52f01e8ce30b0216fa6fdb7cd672305b0bfecb0b33f29cb125ad5f1d0a5ad"},
+    {"res": 96,  "dx_mm": 2.083, "dt_us": 10.0, "phi_out_deg": 40.38, "M_mean": 1.6525, "band_mm": 27.59, "sha256": "1f90ee1f5179328eb97e37256561f5f303f29237699317fe2c474bbd8e3bfae5"},
+    {"res": 96,  "dx_mm": 2.083, "dt_us": 5.0,  "phi_out_deg": 40.37, "M_mean": 1.6520, "band_mm": 27.59, "sha256": "dbc6c8bda915e09214713da321fe6aa80da47ba42a4220b33a82df2112e4f0dc"},
+    {"res": 128, "dx_mm": 1.562, "dt_us": 20.0, "phi_out_deg": null,  "M_mean": null,   "band_mm": null,  "sha256": "02059a2b4b0de3dee654b9d363b9ef2015fa258100dbd0aaebdf69df4caad24e", "note": "NaN: the step blew up"},
+    {"res": 128, "dx_mm": 1.562, "dt_us": 15.0, "phi_out_deg": 35.89, "M_mean": 1.4574, "band_mm": 15.48, "sha256": "0723e259656f73984670b76a094231cdbf002b3b6dbd74b3b9016c901ab6600c"},
+    {"res": 128, "dx_mm": 1.562, "dt_us": 10.0, "phi_out_deg": 40.22, "M_mean": 1.6458, "band_mm": 28.83, "sha256": "0b2cc5dbdf0478a2e519e917d23d8c11e74ebf4ffb4db239ba2e3195971a81dc"},
+    {"res": 128, "dx_mm": 1.562, "dt_us": 5.0,  "phi_out_deg": 40.22, "M_mean": 1.6456, "band_mm": 28.83, "sha256": "4c72d78301d303dad13155708be9c3b87910ff6aa92c578f77ea67268579ee5e"}
+  ],
+  "dt_rule": {"rule": "dt <= 10 us at res >= 96", "reason": "at 20-30 us the step exceeds the CFL limit on fine grids; res 96 falls to 38.53 deg and res 128 to NaN, and both recover at 10 us"},
+  "what_the_audit_overturned": {
+    "claim": "shear-band localisation makes the friction angle grid-dependent",
+    "verdict": "falls",
+    "evidence": "at a converged time step the angle is 40.49 / 40.35 / 40.38 / 40.22 deg over res 32-128, spread below 0.5 deg; the earlier fall at res 96 was a CFL artefact",
+    "band_width_spread_percent": 4.49,
+    "band_spread_reservation": "the 4.5 % band-width spread is not threshold-independent: doubling the threshold gives 336 %"
+  },
+  "nonlocal_regularisation": {
+    "verdict": "built, and it makes things worse where the grid is fine",
+    "ell_zero_is_bit_identical_to_local": true,
+    "res128_dt10_ell12.5mm_phi_out_deg": 31.2,
+    "repose_plateau_deg_with_ell": 28.73,
+    "repose_plateau_deg_without": 28.9,
+    "conclusion": "the repose plateau is not localisation, and the bearing capacity (0.72x Terzaghi) is unchanged by ell: both are material-model defects, not numerics"
+  }
+}

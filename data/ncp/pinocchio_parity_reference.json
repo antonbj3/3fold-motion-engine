@@ -1,0 +1,69 @@
+{
+  "what": "Exact-cone GPU contact step and its adjoint, compared against Pinocchio's analytical constrained-dynamics derivatives on two floating-base robots, plus the cross-device byte identity of the batched solver.",
+  "solver": "proximal ADMM on G + diag(eta), rho = lambda_min^+, tol 1e-13, cg_iters 4, chunk 10, max_inner 400, grad_cg 30",
+  "reference": "Pinocchio 4.0.0 analytical derivatives (ddq_dtau, ddq_dq, dlambda_dtau, dlambda_dq), CONTACT_3D in LOCAL_WORLD_ALIGNED, free-flyer base",
+  "units": "relative error, dimensionless",
+  "platforms": {
+    "anymal_c": {
+      "nq": 19, "nv": 18, "n_contacts": 4, "mass_kg": 52.13,
+      "cond_G": 27.97, "rank_J": "12/12", "composite_joints": 0,
+      "rho_lambda_min_plus": 0.272129, "admm_iterations": 170,
+      "natural_residual": 4.96e-14,
+      "rel_err_lambda": 1.89e-11, "rel_err_v_plus": 1.95e-11,
+      "dvplus_dtau": 1.27e-12, "dlam_dtau": 3.51e-13,
+      "dvplus_dq": 7.56e-10, "dlam_dq": 4.75e-10,
+      "dlam_dmu_vs_cpu_ift": 2.41e-13,
+      "slip_case": "LH_HFE:3, mu = 0.58",
+      "sha256_run1": {"lam": "06c28cf6b850171adb34d6b12a0cf15f13c9e9171ba14b465d5694c58d7aa4c5",
+                      "grad": "ca966ae76297c40e6deeed6b9adf5d52a94f951bea08742e24f7deb7c05bd02d",
+                      "gradq": "4c19acc2ed5645aeab34f4f891a2f4b2ac03b63cd3a84cad3f31ee75b78f0ecd",
+                      "lam_slip": "e848e622e029b395560b1a207ba179c238d0fc9d3bc357a0f98536fb77ac4391"},
+      "sha256_run2": {"lam": "06c28cf6b850171adb34d6b12a0cf15f13c9e9171ba14b465d5694c58d7aa4c5",
+                      "grad": "ca966ae76297c40e6deeed6b9adf5d52a94f951bea08742e24f7deb7c05bd02d",
+                      "gradq": "4c19acc2ed5645aeab34f4f891a2f4b2ac03b63cd3a84cad3f31ee75b78f0ecd",
+                      "lam_slip": "e848e622e029b395560b1a207ba179c238d0fc9d3bc357a0f98536fb77ac4391"}
+    },
+    "talos": {
+      "nq": 39, "nv": 38, "n_contacts": 2, "mass_kg": 90.27,
+      "cond_G": 6.19, "rank_J": "6/6", "composite_joints": 0,
+      "rho_lambda_min_plus": 0.062323, "admm_iterations": 400,
+      "natural_residual": 8.34e-12,
+      "rel_err_lambda": 4.82e-11, "rel_err_v_plus": 4.84e-11,
+      "dvplus_dtau": 1.75e-14, "dlam_dtau": 7.20e-12,
+      "dvplus_dq": 1.09e-09, "dlam_dq": 5.23e-10,
+      "dlam_dmu_vs_cpu_ift": 2.31e-11,
+      "slip_case": "leg_left_4_joint:10, mu = 0.3",
+      "sha256_run1": {"lam": "0157f45f9d21543479e2311017f4569c8c8ce507e0b91905e1925a7bc75598a1",
+                      "grad": "018e03440ffb0764adcf61ea163bf4579eb8f2b5a9fb8477c54a9959baf0b58a",
+                      "gradq": "e7e56b064e991a6c6ed3389af9d356dd176a60379bf3408e2737d3f8d6f4439b",
+                      "lam_slip": "f7f4075d98256a751cc781ecc0e3756cee1a1bf6e6032e840142a7e7cf90fc4e"},
+      "sha256_run2": {"lam": "0157f45f9d21543479e2311017f4569c8c8ce507e0b91905e1925a7bc75598a1",
+                      "grad": "018e03440ffb0764adcf61ea163bf4579eb8f2b5a9fb8477c54a9959baf0b58a",
+                      "gradq": "e7e56b064e991a6c6ed3389af9d356dd176a60379bf3408e2737d3f8d6f4439b",
+                      "lam_slip": "f7f4075d98256a751cc781ecc0e3756cee1a1bf6e6032e840142a7e7cf90fc4e"}
+    }
+  },
+  "bounds": {
+    "dvplus_dtau": 1e-11, "dlam_dtau": 1e-11,
+    "dvplus_dq": 5e-09, "dlam_dq": 5e-09,
+    "dlam_dmu_vs_cpu_ift": 1e-10,
+    "rel_err_lambda": 1e-10, "rel_err_v_plus": 1e-10
+  },
+  "batched_cross_device": {
+    "batch_size": 4096,
+    "devices": ["sm_120 local", "L4 sm_89", "A10G sm_86", "H100 sm_90"],
+    "envs_identical_alone_vs_in_batch": "8/8",
+    "sha256_stick_prefix": "4d5d4747",
+    "sha256_slip_prefix": "24a370fe",
+    "arrays_byte_identical_across_cloud_devices": "26/26",
+    "suites_byte_identical_across_cloud_devices": "5/5",
+    "env_steps_per_s_L4": 17047,
+    "adjoint_directions_per_s_L4": 120393,
+    "repeat_spread_percent": [0.04, 0.7]
+  },
+  "reservations": [
+    "The timings are from an uncontended cloud L4; the locally measured throughput on a shared device is 17561 env-steps/s and 82868 adjoint-directions/s and is not comparable.",
+    "Bit identity here is across devices for the batched solver; the coloured GPU PGS in ncp_gpu.py is bit-identical only for the same device and launch configuration.",
+    "The 3.47x ADMM win at n_c = 256 was a sweep artefact and is refuted: uncontended, PGS reaches 1e-8 in 200 sweeps at 72.44 ms against ADMM 188.66 ms, ratio 0.38x. The large-scale row stands: an N = 10000 lattice (40000 contacts) gives ADMM 84.09 ms against PGS 445.61 ms, 5.30x."
+  ]
+}

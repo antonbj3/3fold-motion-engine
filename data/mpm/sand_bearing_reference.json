@@ -1,0 +1,155 @@
+{
+  "what": "What the sand model gets wrong, measured from three independent directions: a crater law, a strip footing, and a discrete-element comparison on the same footing.",
+  "geostatic_initialisation": {
+    "command": "trials/bed with K0 (Jaky) and preserved elastic return, res 96, dt 10 us",
+    "without_initialisation": {
+      "surface_settlement_mm": 86.568551,
+      "bottom_over_weight": 1.000068549,
+      "note": "the bed carried its weight but collapsed in shape"
+    },
+    "with_K0_phi33": {
+      "surface_settlement_mm": 0.000708,
+      "ke_over_mgh": 7.649020668246104e-09,
+      "bottom_over_weight": 1.001592849
+    },
+    "jaky_mean_pressure_ratio": {
+      "phi21": 0.761088034,
+      "phi33": 0.63690731
+    },
+    "repose_deg": {
+      "without": 19.563315,
+      "K0_phi21": 20.974454,
+      "K0_phi33": 27.333091,
+      "gate": 30.0
+    },
+    "verdict": "the initialisation is solved; the bed went from too soft to too stiff"
+  },
+  "crater_prefactor": {
+    "reference": "Uehara et al., impact crater depth d = C H^(1/3) D_b^(2/3) (rho_b/rho_g)^(1/2)",
+    "exponents_measured_in_metres": {
+      "D_b": 0.7533,
+      "rho": 0.5511,
+      "H": 0.0714
+    },
+    "exponents_published": {
+      "D_b": 0.6666666666666666,
+      "rho": 0.5,
+      "H": 0.3333333333333333
+    },
+    "exponent_gate_abs": 0.1,
+    "r_squared": 0.8026,
+    "prefactor_sim_m": 0.8664,
+    "prefactor_published_m": 0.3298,
+    "prefactor_ratio": 2.63,
+    "prefactor_gate_rel": 0.3,
+    "unit_reservation": "the ratio is unit-dependent: 8.8 expressed in millimetres. It is reported in the law's own units, metres.",
+    "H_exponent_at_high_drop": {
+      "subset": "H >= 5 cm",
+      "value": 0.2315,
+      "per_material": [
+        0.2978,
+        0.3017
+      ]
+    },
+    "stiff_bed_ratio_to_uehara": {
+      "h_0.05_m": 0.196635666,
+      "h_0.2_m": 0.309137466,
+      "geometric_mean": 0.246551113,
+      "gate": [
+        0.7,
+        1.3
+      ]
+    },
+    "verdict": "fails from both sides: the soft bed overshoots by 2.63x and the stiff bed undershoots to 0.25x"
+  },
+  "strip_footing": {
+    "reference": "Vesic local failure, phi* = atan(2/3 tan phi)",
+    "B_mm": 12.7,
+    "L_mm": 79.166667,
+    "v_mm_per_s": 20.0,
+    "depth_mm": 11.4999,
+    "rows": [
+      {
+        "case": "no initialisation",
+        "force_N": 0.0,
+        "vesic_local_N": 0.857135149,
+        "ratio": 0.0,
+        "plateau": false
+      },
+      {
+        "case": "K0 phi21",
+        "force_N": 4.100370487,
+        "vesic_local_N": 0.857135149,
+        "ratio": 4.783808589,
+        "plateau": true
+      },
+      {
+        "case": "K0 phi33",
+        "force_N": 21.946674879,
+        "vesic_local_N": 2.353257775,
+        "ratio": 9.32608196,
+        "plateau": true
+      }
+    ],
+    "gate": [
+      0.8,
+      1.2
+    ],
+    "soft_bed_ratio_to_terzaghi": 0.722,
+    "verdict": "fails: 4.8 to 9.3x Vesic local on the stiff bed, 0.72x Terzaghi on the soft one"
+  },
+  "discrete_element_comparison": {
+    "terzaghi_N": 29.526331518163573,
+    "dem_rigid_ratio": 1.9740114010868701,
+    "dem_compliant_ratio": 2.412405566586874,
+    "mpm_norsand_ratio": 0.7411071660100582,
+    "mpm_drucker_prager_ratio": 0.6,
+    "grain_size_sweep": [
+      {
+        "d_mm": 16,
+        "w_over_d": 5,
+        "F_N": 175.3,
+        "ratio": 1.066
+      },
+      {
+        "d_mm": 8,
+        "w_over_d": 10,
+        "F_N": 128.3,
+        "ratio": 0.78
+      },
+      {
+        "d_mm": 4,
+        "w_over_d": 20,
+        "F_N": 93.9,
+        "ratio": 0.571
+      },
+      {
+        "d_mm": 2,
+        "w_over_d": 40,
+        "F_N": 68.7,
+        "ratio": 0.418
+      }
+    ],
+    "richardson_order": 0.45,
+    "richardson_limit_N": 0.0,
+    "side_wall_effect_percent": 63,
+    "verdict": "fails the 20 % agreement gate",
+    "what_it_settled": "the discrete-element excess was grain size: refining the grains moves the ratio DOWN towards the material-point side, not up towards Terzaghi. Loose sand fails locally, so the reference for both is Vesic local failure, not Terzaghi general shear. The two still do not meet within 20 %.",
+    "nq_ratio_vesic_over_hansen": {
+      "phi30": 1.49,
+      "phi35": 1.42,
+      "phi40": 1.38,
+      "reservation": "a brief that said 2x was wrong; the interval is 1.4-1.5x"
+    },
+    "local_failure_reduces_ngamma_by": [
+      3.5,
+      5.5
+    ],
+    "local_failure_reduction_measured": {
+      "phi30": 3.589,
+      "phi35": 4.401,
+      "phi40": 5.476,
+      "note": "the '3 to 5x' in the write-up is the rounded span over phi 30 to 40; the computed values are 3.59, 4.40 and 5.48"
+    }
+  }
+}

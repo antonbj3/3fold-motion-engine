@@ -1,0 +1,69 @@
+{
+  "what": "Multi-step GPU scene numbers for the exact-cone solver. Minutes per row on a shared GPU, so they are committed as measured values and checked against their bounds instead of being recomputed in the test suite.",
+  "solver": "motion_engine.ncp.ncp_gpu, coloured PGS, int64 fixed point, float32 unless stated",
+  "rows": {
+    "sliding_box_gliding_gap_m": {
+      "config": "0.20 m box, 1 kg, v0 = 1 m/s, mu = 0.3, dt = 1/240, 200 steps, 400 iterations/step",
+      "exact_cone_max_gap": 1.552204e-11,
+      "convex_relaxation_max_gap": 4.352523e-03,
+      "convex_relaxation_gap_step0": 1.132727e-03,
+      "bound_exact_cone_max_gap": 1e-08,
+      "bound_convex_relaxation_min_gap": 1e-04,
+      "note": "recomputed in tests/test_ncp_gpu_cone.py; kept here so the whole table is in one place"
+    },
+    "sliding_distance_vs_closed_form": {
+      "closed_form_m": 0.169895,
+      "exact_cone_dt_240_rel_err": -1.2227e-02,
+      "exact_cone_dt_960_rel_err": -3.0687e-03,
+      "convex_dt_240_rel_err": -1.2243e-02,
+      "convex_dt_960_rel_err": -3.0668e-03,
+      "first_order_refinement_factor": 3.99,
+      "cone_models_differ_rel": 1.2e-05
+    },
+    "massratio_column": {
+      "config": "3 boxes, H = 0.20 m, mu = 0.5, dt = 1/240, 240 steps",
+      "ratio_1_iters_200_final_pen_mm": 0.10272,
+      "ratio_1_iters_200_max_pen_mm": 0.17429,
+      "ratio_1_iters_800_final_pen_mm": 0.10004,
+      "ratio_1_iters_800_max_pen_mm": 0.13776,
+      "ratio_1000_iters_200_max_excursion_mm": 213.0,
+      "ratio_1000_iters_800_max_excursion_mm": 3.3,
+      "ratio_1000_iters_800_residual": 1.7e-02,
+      "measured_negative": "at 200 iterations the 1000:1 column is shot out (213 mm); at 800 it holds 3.3 mm but the residual is 1.7e-2. A first-order sweep is not enough in that regime.",
+      "substeps_S4_same_budget": {"penetration_factor": 2.3, "kinetic_energy_factor": 26.0, "residual_change": "none"}
+    },
+    "tower_k8": {
+      "config": "8 boxes, 400 steps, 200 iterations/step",
+      "penetration_over_radius": 0.104,
+      "independent_oracle_penetration_over_radius": 0.192,
+      "oracle": "Box3D, its own 5 mm slop",
+      "sleeping_at_1e-3": "never",
+      "jitter_floor_m_per_s": 2.7e-03,
+      "measured_negative": "the K8 tower never reaches v_sleep = 1e-3; the floor is set by the undamped Baumgarte term, not by the sleeper. Under the soft-step path at S = 4 the floor is 8.796e-04 m/s and the k_steps = 8 consecutive requirement is still not met."
+    },
+    "sleeping_lattice_n10000": {
+      "config": "two-layer lattice, 90 % of the bodies at rest",
+      "bodies_asleep": 9008,
+      "contacts_before": 40000,
+      "contacts_after": 3968,
+      "ms_before": 49.8,
+      "ms_after": 42.0,
+      "speedup": 1.18,
+      "reservation": "host-bound; the colour loop is launch-bound, so the win is small and does not scale with the contact reduction"
+    },
+    "int64_fixed_point_drift": {
+      "iterations": 80000,
+      "before_fix": 4.4e-06,
+      "after_fix": 1.4e-10,
+      "fix": "accumulate the absolute Minv J^T lambda, not the quantised velocity delta"
+    },
+    "colour_cache_and_graph_capture": {
+      "ms_at_n_c_4_32_256_4096_50it": [0.73, 1.44, 4.32, 47.5],
+      "cache_warm_ms": 0.074,
+      "cache_cold_ms_range": [0.46, 7.5],
+      "cache_speedup_at_4096": 82.0,
+      "graph_capture_speedup": 2.7,
+      "reservation": "timings measured on a shared GPU; the ratios hold, the absolute ms are upper bounds"
+    }
+  }
+}

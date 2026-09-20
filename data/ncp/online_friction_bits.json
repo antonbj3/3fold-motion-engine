@@ -1,0 +1,60 @@
+{
+  "B": 4096,
+  "n_iter": 200,
+  "seed": 80,
+  "h_batch1": "555bf88fa00d6a19d14c6e517822e7ccb886a32fb9852e5831c2ddefc19de9e8",
+  "h_batch2": "555bf88fa00d6a19d14c6e517822e7ccb886a32fb9852e5831c2ddefc19de9e8",
+  "batch_deterministic": true,
+  "env_check_count": 8,
+  "env_identical_count": 8,
+  "env_checks": [
+    {
+      "env_idx": 0,
+      "hash_in_batch": "4c03d27ab6e05f0657cc4123f13aba87acc8019efe4aba955d52ff3093a1dd44",
+      "hash_alone": "4c03d27ab6e05f0657cc4123f13aba87acc8019efe4aba955d52ff3093a1dd44",
+      "match": true
+    },
+    {
+      "env_idx": 1,
+      "hash_in_batch": "73ea044638fd5cda5350ef89ec8c561fd22836f2e7d589df47383e16d0154b99",
+      "hash_alone": "73ea044638fd5cda5350ef89ec8c561fd22836f2e7d589df47383e16d0154b99",
+      "match": true
+    },
+    {
+      "env_idx": 67,
+      "hash_in_batch": "77fab8ed015b47c0b4d77731c904562a01499815537f46358fa3420d8d733881",
+      "hash_alone": "77fab8ed015b47c0b4d77731c904562a01499815537f46358fa3420d8d733881",
+      "match": true
+    },
+    {
+      "env_idx": 167,
+      "hash_in_batch": "e2ca7eeb44e26994a583c7daaec4413385273a06ee971e05d370d48714db1b63",
+      "hash_alone": "e2ca7eeb44e26994a583c7daaec4413385273a06ee971e05d370d48714db1b63",
+      "match": true
+    },
+    {
+      "env_idx": 308,
+      "hash_in_batch": "4cfcc50f214a036c5647c72ce48d363afa2bdae004631cea466346e6e506be99",
+      "hash_alone": "4cfcc50f214a036c5647c72ce48d363afa2bdae004631cea466346e6e506be99",
+      "match": true
+    },
+    {
+      "env_idx": 1105,
+      "hash_in_batch": "0c5e4d4173b6c2ba3161decce346eb7a53e84795572d069242ed9ec53f4475a4",
+      "hash_alone": "0c5e4d4173b6c2ba3161decce346eb7a53e84795572d069242ed9ec53f4475a4",
+      "match": true
+    },
+    {
+      "env_idx": 2093,
+      "hash_in_batch": "fd61c5fe8c3219132016f9d75fa7ec045594e37489604ad94b34ccb60c3b889e",
+      "hash_alone": "fd61c5fe8c3219132016f9d75fa7ec045594e37489604ad94b34ccb60c3b889e",
+      "match": true
+    },
+    {
+      "env_idx": 4095,
+      "hash_in_batch": "dc39fc1b7d3c98cec30bb3b4d618d8206276a428a4eda4dd025a4d74c9cfe0f8",
+      "hash_alone": "dc39fc1b7d3c98cec30bb3b4d618d8206276a428a4eda4dd025a4d74c9cfe0f8",
+      "match": true
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+ "what": "Lagrangian cloth: the bending law read off a measured KES loop, the analytical anchors it reproduces, and the drape coefficient it does not.",
+ "source": "Matsudaira, Masuda, Wada, Yokura (2015), J. Textile Eng. 61(6) 69-73, table 1 (KES-FB2 B and 2HB) and table 2 (drape coefficients)",
+ "unit_conversion": {
+  "gf_to_N": 0.00980665,
+  "gf_cm2_per_cm_to_Nm": 9.80665e-05,
+  "gf_cm_per_cm_to_Nm_per_m": 0.00980665
+ },
+ "fabrics": {
+  "A": {
+   "name": "cotton broad",
+   "B_gf_cm2_per_cm": 0.118,
+   "twoHB_gf_cm_per_cm": 0.124,
+   "B_Nm": 1.1571847e-05,
+   "twoHB_Npm": 0.0012160246,
+   "kappa_res_per_m": 52.54237288135593,
+   "R_res_mm": 19.032,
+   "drape_coefficient_percent": 82.9
+  },
+  "B": {
+   "name": "wool tropical",
+   "B_gf_cm2_per_cm": 0.067,
+   "twoHB_gf_cm_per_cm": 0.033,
+   "B_Nm": 6.5704555e-06,
+   "twoHB_Npm": 0.00032361945,
+   "kappa_res_per_m": 24.62686567164179,
+   "R_res_mm": 40.606
+  },
+  "F": {
+   "name": "polyester faille",
+   "B_gf_cm2_per_cm": 0.019,
+   "twoHB_gf_cm_per_cm": 0.007,
+   "B_Nm": 1.8632635e-06,
+   "twoHB_Npm": 6.864655e-05,
+   "kappa_res_per_m": 18.42105263157895,
+   "R_res_mm": 54.286,
+   "drape_coefficient_percent": 28.3
+  }
+ },
+ "moment_law_verification": {
+  "A": {
+   "fabric": "A",
+   "ratio": 20.0,
+   "kappa_max_1pm": 100.0,
+   "slope_branch": 0.9999999999999991,
+   "B_from_slope_Nm": 1.157184699999999e-05,
+   "B_kes_Nm": 1.1571847e-05,
+   "B_err_pct": 8.881784197001252e-14,
+   "loop_width_at_plus_halfcm_1pm": 105.08474576271186,
+   "loop_width_at_minus_halfcm_1pm": 105.08474576271186,
+   "twoHB_from_loop_Npm": 0.0012160246,
+   "twoHB_kes_Npm": 0.0012160246,
+   "twoHB_from_loop_gf": 0.124,
+   "twoHB_kes_gf": 0.124,
+   "twoHB_err_pct": 0.0,
+   "kappa_res_from_unloading_1pm": 52.54237288135593,
+   "kappa_res_from_reloading_1pm": -52.54237288135593,
+   "kappa_res_analytic_1pm": 52.54237288135593,
+   "kappa_res_err_pct": 0.0,
+   "stick_band_1pm": 5.254237288135593
+  },
+  "B": {
+   "fabric": "B",
+   "ratio": 20.0,
+   "kappa_max_1pm": 100.0,
+   "slope_branch": 0.9999999999999997,
+   "B_from_slope_Nm": 6.570455499999998e-06,
+   "B_kes_Nm": 6.570455500000001e-06,
+   "B_err_pct": 3.3306690738754696e-14,
+   "loop_width_at_plus_halfcm_1pm": 49.25373134328359,
+   "loop_width_at_minus_halfcm_1pm": 49.25373134328359,
+   "twoHB_from_loop_Npm": 0.0003236194500000001,
+   "twoHB_kes_Npm": 0.00032361945,
+   "twoHB_from_loop_gf": 0.03300000000000001,
+   "twoHB_kes_gf": 0.033,
+   "twoHB_err_pct": 2.220446049250313e-14,
+   "kappa_res_from_unloading_1pm": 24.626865671641795,
+   "kappa_res_from_reloading_1pm": -24.626865671641795,
+   "kappa_res_analytic_1pm": 24.62686567164179,
+   "kappa_res_err_pct": 2.220446049250313e-14,
+   "stick_band_1pm": 2.4626865671641793
+  },
+  "F": {
+   "fabric": "F",
+   "ratio": 20.0,
+   "kappa_max_1pm": 100.0,
+   "slope_branch": 0.9999999999999999,
+   "B_from_slope_Nm": 1.8632634999999997e-06,
+   "B_kes_Nm": 1.8632635e-06,
+   "B_err_pct": 1.1102230246251565e-14,
+   "loop_width_at_plus_halfcm_1pm": 36.8421052631579,
+   "loop_width_at_minus_halfcm_1pm": 36.8421052631579,
+   "twoHB_from_loop_Npm": 6.864655e-05,
+   "twoHB_kes_Npm": 6.864655e-05,
+   "twoHB_from_loop_gf": 0.007,
+   "twoHB_kes_gf": 0.007,
+   "twoHB_err_pct": 0.0,
+   "kappa_res_from_unloading_1pm": 18.42105263157895,
+   "kappa_res_from_reloading_1pm": -18.42105263157895,
+   "kappa_res_analytic_1pm": 18.42105263157895,
+   "kappa_res_err_pct": 0.0,
+   "stick_band_1pm": 1.842105263157895
+  }
+ },
+ "green_anchors": {
+  "cantilever_tip_error_percent": {
+   "dx_1mm": 2.4063437476211202,
+   "dx_2mm": 2.75,
+   "gate": 5.0
+  },
+  "tension_strip_error_percent": {
+   "dx_2mm": 0.6143328020682404,
+   "dx_1mm": 0.5,
+   "gate": 5.0
+  },
+  "residual_curvature_error_percent_range": [
+   0.0002,
+   0.55
+  ],
+  "residual_curvature_measured_per_m": {
+   "A": [
+    52.54163,
+    52.54262
+   ],
+   "B": [
+    24.6269,
+    24.63077
+   ],
+   "F": [
+    18.42178,
+    18.52179
+   ]
+  },
+  "hinge_bit_identity_with_hysteresis_off": "byte for byte equal to the pre-hysteresis kernels, int64 accumulator maxdiff 0",
+  "contact_certificate_fabric_A": {
+   "contacts_below_minus_half_thickness": 0,
+   "max_self_penetration_m": 8.511672e-06,
+   "half_thickness_m": 0.0002485,
+   "ncp_residual": 4.160274764505442e-11,
+   "hinges_dropped": 0,
+   "min_triangle_area_m2": 3.185269410021191e-07
+  }
+ },
+ "drape_coefficient": {
+  "verdict": "fails, with two measured limits",
+  "fabric_A_without_hysteresis_percent": 24.769956733684083,
+  "fabric_A_target_percent": 82.9,
+  "fabric_A_with_hysteresis": {
+   "passes_target_at_s": 0.96,
+   "value_at_0.96_s_percent": 83.051,
+   "value_at_0.97_s_percent": 82.887,
+   "value_at_3_s_percent": 57.31703166843961,
+   "still_falling_pp_per_s": 9.89
+  },
+  "fabric_F_without_hysteresis_percent": 2.728295067638528,
+  "fabric_F_with_hysteresis_percent": 2.3195453646917623,
+  "fabric_F_target_percent": 28.3,
+  "fabric_F_is_the_solvers_number_not_the_models": {
+   "round5_percent": 11.3112104684351,
+   "round6_percent": 2.8022410546783005,
+   "difference_pp": 8.51,
+   "cause": "an area floor changes no force and no energy, only the Newton direction, and still moves the drape coefficient by 8.5 points; both runs are unconverged (Newton residual 1.6e6 to 2.0e6, triangles collapsed to 1e-9 m2)"
+  },
+  "two_measured_limits": "too elastic without the hysteresis term, too soft over time with it",
+  "what_is_refuted": "the hypothesis that the right physics without a background grid reproduces the drape coefficient. The grid version's stiffness was what lifted it."
+ },
+ "cost_ms_per_step_shared_gpu": {
+  "c1h1": 8.6122,
+  "c1h0": 54.5937,
+  "F2h0": 81.5646,
+  "F2h1": 104.0815,
+  "A2h0": 88.7853,
+  "A2h1": 142.8705,
+  "A2h1dt": 116.9709
+ }
+}
