@@ -1,6 +1,6 @@
 # Preprints
 
-Both manuscripts are under revision. The PDFs here are the first versions of 20 September 2026: the results are measured and locked to the tests and data in this repository, but the text is written as a measurement record and is being rewritten for readers. A revised version with a reproducibility package (scene definitions, one script per table) follows.
+Both manuscripts are under revision. The PDFs here are revision 2 of 21 September 2026: the results are unchanged from the first version and stay locked to the tests and data in this repository; the text was rewritten for readers, the measurement register was replaced by tables, and the convex-relaxation, adaptive-step, Laplacian-solver and Siconos baselines were added. Revision 3, with a reproducibility package (scene definitions, one script per table) and the matched accuracy, repeatability and cost measurements, follows.
 
 | | Title | Download |
 |---|---|---|

@@ -26,4 +26,4 @@ def test_pdf_matches_its_recorded_digest(digest, name):
     assert path.is_file(), f"{name} is listed in SHA256SUMS but not committed"
     assert hashlib.sha256(path.read_bytes()).hexdigest() == digest
     assert path.read_bytes()[:5] == b"%PDF-"
-    assert path.stat().st_size > 1_000_000
+    assert path.stat().st_size > 100_000
