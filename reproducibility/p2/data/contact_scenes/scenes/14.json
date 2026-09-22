@@ -1,0 +1,286 @@
+{
+  "b": [
+    0.0,
+    0.5,
+    0.0,
+    0.0,
+    -1.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    -1.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    -1.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    -1.0,
+    -1.0,
+    0.0
+  ],
+  "bodies": [
+    {
+      "dof": 3,
+      "id": 0,
+      "inv_mass": 0.001,
+      "mass": 1000.0
+    },
+    {
+      "dof": 3,
+      "id": 1,
+      "inv_mass": 1.0,
+      "mass": 1.0
+    },
+    {
+      "dof": 3,
+      "id": 2,
+      "inv_mass": 0.001,
+      "mass": 1000.0
+    },
+    {
+      "dof": 3,
+      "id": 3,
+      "inv_mass": 1.0,
+      "mass": 1.0
+    },
+    {
+      "dof": 3,
+      "id": 4,
+      "inv_mass": 0.001,
+      "mass": 1000.0
+    },
+    {
+      "dof": 3,
+      "id": 5,
+      "inv_mass": 1.0,
+      "mass": 1.0
+    },
+    {
+      "dof": 3,
+      "id": 6,
+      "inv_mass": 0.001,
+      "mass": 1000.0
+    },
+    {
+      "dof": 3,
+      "id": 7,
+      "inv_mass": 1.0,
+      "mass": 1.0
+    }
+  ],
+  "contact_note": null,
+  "contacts": [
+    {
+      "a": 0,
+      "b": -1,
+      "id": 0,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "id": 1,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "id": 2,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "id": 3,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "id": 4,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "a": 5,
+      "b": 4,
+      "id": 5,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "a": 6,
+      "b": 5,
+      "id": 6,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "a": 7,
+      "b": 6,
+      "id": 7,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "dof": 3,
+  "dt": 0.004,
+  "eta": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "index": 14,
+  "model": "body_contacts",
+  "mu": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "n_b": 8,
+  "n_c": 8,
+  "operator": null,
+  "provenance": {
+    "author": "Anton Björkegren",
+    "construction": "point-contact [D ; r x D] Jacobian blocks; scalar inverse masses 1/1000, 1 repeated",
+    "dataset": "ncp-contact-scenes",
+    "j_assembly": "J = per-contact block [D ; r x D] (rows n,t1,t2; cols v,omega); M^-1 = block diagonal of per-body inverse mass and inertia; W = G = J M^-1 J^T + diag(eta)",
+    "origin": "four point-mass pairs stacked with mass ratio 1000:1, Coulomb-cone contact",
+    "schema": "contact-scene-v1"
+  },
+  "scene": "stacked_mass_pairs_cone",
+  "schema": "contact-scene-v1"
+}

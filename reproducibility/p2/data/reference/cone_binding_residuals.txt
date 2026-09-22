@@ -1,0 +1,37 @@
+# envs_quadruped_sliding_stance_B4096.npz B=4096 nv=18 nc=4 mu=0.5 cg=8 chunk=25 probe_iter=200
+# GPU shared with one other agent -- ms carry a contention caveat.
+Warp 1.13.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5070" (11 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     .cache/warp/1.13.0
+Module batch_adjoint_gpu 9ab5516 load on device 'cuda:0' took 15.63 ms  (cached)
+# bilateral regime test: cone/sign binds in 4096/4096 envs (100.0 %)
+
+| rho mode | budget | frac<1e-8 | frac<1e-6 | frac<1e-4 | q10 | q50 | q90 | max | non-finite | ms |
+|---|---|---|---|---|---|---|---|---|---|---|
+| lmin | 250 | 0.0000 | 0.0002 | 0.0203 | 8.40e-04 | 2.10e-03 | 1.55e-02 | 2.00e-01 | 0 | 317.0 |
+| lmin | 1000 | 0.0000 | 0.0193 | 0.0334 | 8.52e-04 | 2.53e-03 | 2.60e-02 | 3.66e-01 | 0 | 1188.2 |
+| lmin | 2000 | 0.0156 | 0.0308 | 0.0381 | 8.25e-04 | 2.54e-03 | 2.67e-02 | 4.09e-01 | 0 | 2403.1 |
+| sqrt | 250 | 0.1616 | 0.1648 | 0.2217 | 8.94e-09 | 8.55e-04 | 3.53e-03 | 6.78e-02 | 0 | 310.7 |
+| sqrt | 1000 | 0.1689 | 0.1711 | 0.2161 | 8.82e-09 | 9.22e-04 | 3.85e-03 | 6.04e-02 | 0 | 1194.9 |
+| sqrt | 2000 | 0.1714 | 0.1731 | 0.2166 | 8.81e-09 | 9.18e-04 | 3.52e-03 | 7.33e-02 | 0 | 2392.8 |
+| lmax | 250 | 0.0000 | 0.0010 | 0.3928 | 4.35e-05 | 1.20e-04 | 2.58e-04 | 7.68e-04 | 0 | 298.3 |
+| lmax | 1000 | 0.1804 | 0.5479 | 0.9900 | 9.69e-09 | 7.05e-07 | 1.39e-05 | 5.46e-04 | 0 | 1229.6 |
+| lmax | 2000 | 0.7766 | 0.9565 | 0.9995 | 9.54e-09 | 9.86e-09 | 1.33e-07 | 1.09e-04 | 0 | 3862.3 |
+| regime | 250 | 0.0000 | 0.0010 | 0.3928 | 4.35e-05 | 1.20e-04 | 2.58e-04 | 7.68e-04 | 0 | 628.0 |
+| regime | 1000 | 0.1804 | 0.5479 | 0.9900 | 9.69e-09 | 7.05e-07 | 1.39e-05 | 5.46e-04 | 0 | 2462.1 |
+| regime | 2000 | 0.7766 | 0.9565 | 0.9995 | 9.54e-09 | 9.86e-09 | 1.33e-07 | 1.09e-04 | 0 | 4885.5 |
+| regime_probe | 250 | 0.0000 | 0.0010 | 0.2053 | 6.14e-05 | 4.96e-04 | 7.04e-03 | 2.00e-01 | 0 | 616.7 |
+| regime_probe | 1000 | 0.0427 | 0.2505 | 0.4958 | 1.23e-07 | 1.29e-04 | 8.89e-03 | 2.55e-01 | 0 | 2472.8 |
+| regime_probe | 2000 | 0.3713 | 0.4746 | 0.5046 | 9.71e-09 | 3.14e-05 | 9.02e-03 | 3.93e-01 | 0 | 4685.5 |
+
+## at budget 2000: does the regime split explain who converges?
+  lmin         : binding envs 0.0156 converged (4096),  non-binding nan (0)
+  sqrt         : binding envs 0.1714 converged (4096),  non-binding nan (0)
+  lmax         : binding envs 0.7766 converged (4096),  non-binding nan (0)
+  regime       : binding envs 0.7766 converged (4096),  non-binding nan (0)
+  regime_probe : binding envs 0.3713 converged (4096),  non-binding nan (0)
+  final labels open/stick/slip = 5094/8910/2380   n_slip per env: 0:1865 1:2082 2:149 3:0 4:0

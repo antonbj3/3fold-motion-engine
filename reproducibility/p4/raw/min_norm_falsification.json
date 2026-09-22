@@ -1,0 +1,23 @@
+{
+ "kind": "step-1 NCP impulse norms, scene A + ISO directions",
+ "multistart": {
+  "cold_norm_max": 0.30507617057436,
+  "cold_norm_min": 0.25196449620025735,
+  "lp_norm_max": 0.372865768655882,
+  "lp_norm_min": 0.3317030171717256,
+  "n_cases": 9,
+  "n_rand_below_cold": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   20,
+   20,
+   20
+  ],
+  "rand_max_max": 0.32717627384132525,
+  "rand_min_min": 0.1357005175387525
+ }
+}

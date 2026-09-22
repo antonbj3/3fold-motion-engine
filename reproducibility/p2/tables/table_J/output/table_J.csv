@@ -1,0 +1,46 @@
+Pushed cube,1,int64,measured,45,1.4067229714904685e-07,yes,0.24,10.4,15
+Pushed cube,1,float64,measured,45,1.4067241624665846e-07,yes,0.19,8.6,15
+Pushed cube,1,float32,measured,45,3.0882997383277415e-07,yes,0.19,8.6,15
+Pushed cube,256,int64,measured,45,1.4067229714904685e-07,yes,0.41,17.9,15
+Pushed cube,256,float64,measured,45,1.4067241624665846e-07,no,0.28,13.1,15
+Pushed cube,256,float32,measured,—,3.0882997383277415e-07,no,0.28,13.0,15
+Pushed cube,4096,int64,measured,45,1.4067229714904685e-07,yes,0.59,26.0,15
+Pushed cube,4096,float64,measured,45,1.4067241624665846e-07,no,0.43,20.3,15
+Pushed cube,4096,float32,measured,—,3.0882997383277415e-07,no,0.43,20.3,15
+Sticking tower,1,int64,measured,129,2.132165553695953e-12,yes,0.53,7.5,60
+Sticking tower,1,float64,measured,113,2.4181168516414557e-13,no,0.44,6.4,60
+Sticking tower,1,float32,measured,197,2.126204899885117e-06,no,0.44,6.3,—
+Sticking tower,256,int64,measured,129,2.132165553695953e-12,yes,3.05,41.9,60
+Sticking tower,256,float64,measured,113,2.41065091916049e-13,no,2.75,37.9,60
+Sticking tower,256,float32,measured,—,1.9568185794225756e-06,no,2.65,36.6,—
+Sticking tower,4096,int64,measured,129,2.132165553695953e-12,yes,56.09,762.1,60
+Sticking tower,4096,float64,measured,113,2.4157622323492356e-13,no,55.11,749.9,60
+Sticking tower,4096,float32,measured,—,2.174141903136779e-06,no,53.50,727.5,—
+Asymmetric tower,1,int64,measured,317,0.06953289378749306,yes,0.53,44.6,120
+Asymmetric tower,1,float64,measured,317,0.06953289393196563,no,0.45,38.1,120
+Asymmetric tower,1,float32,measured,—,42.63684827615212,no,0.44,37.6,—
+Asymmetric tower,256,int64,measured,317,0.06953289378749306,yes,3.05,249.5,120
+Asymmetric tower,256,float64,measured,317,0.06953289392767921,no,2.75,225.9,120
+Asymmetric tower,256,float32,measured,—,42.821346372687835,no,2.65,218.3,—
+Asymmetric tower,4096,int64,measured,317,0.06953289378749306,yes,56.24,4526.2,120
+Asymmetric tower,4096,float64,measured,317,0.06953289392821839,no,54.93,4449.1,120
+Asymmetric tower,4096,float32,measured,—,26.243171880768724,no,53.66,4321.3,—
+Lattice,1,int64,measured,25,8.480695195580329e-12,yes,0.66,9.4,15
+Lattice,1,float64,measured,25,1.063880440805438e-12,no,0.54,7.8,15
+Lattice,1,float32,measured,25,3.6674325755909198e-06,no,0.54,7.7,—
+Lattice,256,int64,measured,25,8.480695195580329e-12,yes,5.70,78.3,15
+Lattice,256,float64,measured,25,1.0644603782633021e-12,no,5.23,71.9,15
+Lattice,256,float32,measured,—,3.36357291329554e-06,no,5.03,69.2,—
+Lattice,4096,int64,measured,25,8.480695195580329e-12,yes,110.34,1499.4,15
+Lattice,4096,float64,measured,25,1.0640067858317158e-12,no,108.49,1470.3,15
+Lattice,4096,float32,measured,—,3.930262328563285e-06,no,105.25,1430.2,—
+Packing,1,int64,measured,—,0.3425623946907045,untested,119.46,104272.6,—
+Packing,1,float64,infeasible_budget,—,—,—,—,—,—
+Packing,1,float32,infeasible_budget,—,—,—,—,—,—
+Packing,256,int64,infeasible_memory,—,—,—,—,—,—
+Packing,256,float64,infeasible_memory,—,—,—,—,—,—
+Packing,256,float32,infeasible_memory,—,—,—,—,—,—
+Packing,4096,int64,infeasible_memory,—,—,—,—,—,—
+Packing,4096,float64,infeasible_memory,—,—,—,—,—,—
+Packing,4096,float32,infeasible_memory,—,—,—,—,—,—
+

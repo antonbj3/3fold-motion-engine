@@ -1,0 +1,5 @@
+# CPU-only table regeneration and package verification:
+numpy>=2.0,<3
+
+# GPU replay of the correctness and benchmark measurements (not required for the tables):
+warp-lang==1.13.0

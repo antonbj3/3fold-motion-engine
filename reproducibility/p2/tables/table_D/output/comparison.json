@@ -1,0 +1,10 @@
+{
+ "appendix": "D",
+ "checked_cells": 18,
+ "gap_cells": 1,
+ "gaps": [
+  "D Synthetic PGS r_nat (2.83e-9): the run that printed it did not archive the residual; the bundled L4 timing record carries only ms. Declared gap (see source_availability.json). The lattice residual is now regenerated from the archived producer stdout data/reference/lattice_producer_shared.txt (shared-GPU run of the same fixed budgets); the timings are the L4 record."
+ ],
+ "mismatches": [],
+ "ok": true
+}

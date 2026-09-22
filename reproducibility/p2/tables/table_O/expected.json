@@ -1,0 +1,83 @@
+{
+  "appendix": "O",
+  "title": "Standard-trajectory estimation",
+  "manuscript_tables": [
+    [
+      [
+        "Path",
+        "Mass error p50 [–]",
+        "Mass error p95 [–]",
+        "Friction error p50 [–]",
+        "Friction error p95 [–]",
+        "Mass CRB p50 [(N·m)⁻¹]",
+        "Friction CRB p50 [(N·m)⁻¹]",
+        "Mass ratio [–]",
+        "Friction ratio [–]"
+      ],
+      [
+        "GPU integer, corrected",
+        "3.859002e-2",
+        "1.575692e-1",
+        "4.112602e-2",
+        "1.632154e-1",
+        "5.725943e-2",
+        "5.941064e-2",
+        "0.9992",
+        "1.0263"
+      ],
+      [
+        "CPU reference",
+        "3.8590e-02",
+        "1.5173e-01",
+        "4.1072e-02",
+        "1.6086e-01",
+        "5.725943e-02",
+        "5.941064e-02",
+        "—",
+        "—"
+      ]
+    ],
+    [
+      [
+        "Standard corrected GPU diagnostic",
+        "Value",
+        "Unit"
+      ],
+      [
+        "Yaw inertia error p50",
+        "8.378583e-1",
+        "relative"
+      ],
+      [
+        "Yaw inertia error p95",
+        "1.352927e+1",
+        "relative"
+      ],
+      [
+        "Yaw inertia CRB p50",
+        "1.268415",
+        "(N·m)⁻¹"
+      ],
+      [
+        "Yaw inertia median-error / CRB prediction",
+        "0.9793",
+        "ratio"
+      ],
+      [
+        "Logged last-trial residual maximum",
+        "8.857108e-1",
+        "N·s"
+      ],
+      [
+        "Logged last-trial residual, final iteration",
+        "5.729944e-2",
+        "N·s"
+      ],
+      [
+        "Contact residual at true parameters",
+        "1.282599e-6",
+        "N·s"
+      ]
+    ]
+  ]
+}

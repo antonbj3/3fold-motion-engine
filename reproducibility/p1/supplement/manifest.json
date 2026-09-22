@@ -1,0 +1,130 @@
+{
+  "description": "Standalone inputs, generators and aggregation scripts for the patch-wrench systems, the load-ordering packings and the quasistatic ramp geometry.",
+  "environment": {
+    "numpy": ">=2.0",
+    "optional": {
+      "pyamg": ">=5.0 (Appendix C AMG recomputation)"
+    },
+    "python": "3.10+",
+    "scipy": ">=1.10"
+  },
+  "files": [
+    {
+      "bytes": 11411,
+      "path": "README.md",
+      "sha256": "e46bdceb6071afba58348c9d4b5d3dd3f574413068b9f4835f1f4b06488e116c"
+    },
+    {
+      "bytes": 457,
+      "path": "dependencies.txt",
+      "sha256": "56bd50ca39e5ccbb2293682df4d5af29b795956257fcd5c44c88b388dd16c5dd"
+    },
+    {
+      "bytes": 8322,
+      "path": "load_ordering/build_corrected.py",
+      "sha256": "192caf0ef9e4e84724864d8b4f92e7b743fdfe269f04236ad7db3f2beb717fd2"
+    },
+    {
+      "bytes": 11183,
+      "path": "load_ordering/measurements.json",
+      "sha256": "f6e6016683a25e5bf908874ba0fe0dd07848be7695e1961fc5d8afc19f4d7486"
+    },
+    {
+      "bytes": 146031,
+      "path": "load_ordering/measurements_corrected.json",
+      "sha256": "af540cfe225092554808656a2c72d5f0781e296bd6ada240efec526d5a410e85"
+    },
+    {
+      "bytes": 3375,
+      "path": "load_ordering/scenes.json",
+      "sha256": "299f75f89356aa672bf8cf63256fde53181871a7db871341f9a7d0ad21438727"
+    },
+    {
+      "bytes": 16431702,
+      "path": "load_ordering/scenes.npz",
+      "sha256": "aeec56db8d84ba477e92c8140d84af4a28cee545c6138348ab268c6bb4605403"
+    },
+    {
+      "bytes": 5169,
+      "path": "load_ordering/table_load_ordering.py",
+      "sha256": "21f0e7d9f17686e83d35ba5d69afa7f2563dce73ec18f5eabfd9116ef0ff9322"
+    },
+    {
+      "bytes": 19913,
+      "path": "loader.py",
+      "sha256": "2f7b872adbc08357e3abd07cea81180a3f0f4d9c05d45882ab1c7a686a9cae8c"
+    },
+    {
+      "bytes": 17947,
+      "path": "patch/generate_patch.py",
+      "sha256": "4e4ae39335cc5a6dc1668f69a040b7fb34c735fa5d9b6adc8d0cfcba7ff0b4d5"
+    },
+    {
+      "bytes": 1067678,
+      "path": "patch/incidence.npz",
+      "sha256": "702328644dad256438c45c4f4f8ffca1273887b467c4a6cd49f2f782a6de624b"
+    },
+    {
+      "bytes": 3745,
+      "path": "patch/incidence_scenes.json",
+      "sha256": "40b5eb8e3bea7f7b68f061ff0baa44ed278a7530e3df3d0aacf3b829bd57a391"
+    },
+    {
+      "bytes": 1013,
+      "path": "patch/measurements_appendix_b.json",
+      "sha256": "41ea534b464e1af6a23db0034ba0a8c90ac2c12a49d383f44bbae307d5b7c8c9"
+    },
+    {
+      "bytes": 33444,
+      "path": "patch/measurements_appendix_c.json",
+      "sha256": "0abfdab39375e28c23dcead52bb5a98fa8e89f717e64a60f2de368e2bda779fa"
+    },
+    {
+      "bytes": 622756,
+      "path": "patch/operators.npz",
+      "sha256": "c8b6e6c50cf14e2b8e8c148e6c1fa6080712fa62e58a4f7e0b4f5e35352466fb"
+    },
+    {
+      "bytes": 57170,
+      "path": "patch/scenes.json",
+      "sha256": "9b89db6d911658a97a38d8809c9b19e0091029b93d06261332a57e9c8b8c80cd"
+    },
+    {
+      "bytes": 1642,
+      "path": "patch/table_appendix_a.py",
+      "sha256": "fd7476913e3b33f931b670698ebbc04064779fee9bb565f5cab118166fcbfc6b"
+    },
+    {
+      "bytes": 2927,
+      "path": "patch/table_appendix_b.py",
+      "sha256": "198b3524f4c52fd9718f7d08d7d13cfc13904e1de0b4a070a4660def5d8bbd50"
+    },
+    {
+      "bytes": 2987,
+      "path": "patch/table_appendix_c.py",
+      "sha256": "ac69197868af885800279163214526d7f2a42073f59fc4515800e2019219290a"
+    },
+    {
+      "bytes": 5732,
+      "path": "ramp/geometry.json",
+      "sha256": "7f622f75991c6201ea57d88e8ce3dc80c6a059794de72abcb5d432ff48acdf56"
+    },
+    {
+      "bytes": 176023,
+      "path": "ramp/measurements.json",
+      "sha256": "d05aa97cab43954f4a5248e9ec5b96b5ffe06308e0a2789ec16b70629a248afe"
+    },
+    {
+      "bytes": 3074,
+      "path": "ramp/table_ramp.py",
+      "sha256": "84ac559c9e63691b8ebcf070cf3ef4eb2a659926113f5503a90be1556093034b"
+    },
+    {
+      "bytes": 4960,
+      "path": "verify.py",
+      "sha256": "ffc571416f3b150981cb8169f9fdcae4d9525c2660d18b76355bab1a1347590e"
+    }
+  ],
+  "name": "contact-graph reproduction supplement",
+  "provenance": "PROVENANCE.json (not part of the public package)"
+}

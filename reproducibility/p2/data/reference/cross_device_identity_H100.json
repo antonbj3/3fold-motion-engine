@@ -1,0 +1,117 @@
+{
+  "container_seconds": 135.06420016288757,
+  "data": {
+    "digests": {
+      "batch_adjoint": {
+        "slip": {
+          "batch_hash": "24a370fedefcc7a7b2a3dddb7ebe1bc2432a0259bc2c2265304cb4db1bfd9bf6",
+          "envs": {
+            "0": "a10538af4e5a6e14bfd2fa03f95b2d442644317b6c1459c97b09aba9395b891f",
+            "1": "8c96560152bc7f7f30bb43d3d6f8cc56bf3ed67ffe9aa7fb781c129a173d544f",
+            "1105": "5faa0b70737b27a57660d1d407b670021d1bdc74b773ef9cd2cc005ab4f5c0c4",
+            "1260": "18c7a4212e4eaa95a8ae4ab1d0143a23f2fd7beadd946c9a55167b34713a5353",
+            "167": "188924209f804970f5b15b2664fa2bd9a8c830ffa6fcffbcd18a012d49587789",
+            "2093": "0ee1833060ad612f8ef67394ad01ecfb7fe2038e33b17cdaf4c0b72bc7341564",
+            "308": "bfdedddc4bd7814f666583aea89ff971d5ca04088aa4f75b702a0424da156839",
+            "67": "fa87d7555c081185205cf5dc4a197a7682317b75a1bbcb04304e0e35968dd39d"
+          }
+        },
+        "stick": {
+          "batch_hash": "4d5d4747983a3de20aed4d49b12f453ced005275bce8edd94e956d4aa9c3c7d3",
+          "envs": {
+            "0": "88687d9ee5185e156a7addd1b24e64872118c15cc4b9c973363bc3daf44f769f",
+            "1": "54f8db5bc5e3a04e5cdee445e1a43af689352922c88f60cca07e2bec5a74922c",
+            "1105": "37d1d0d8d93f4370be5a4ed4dea0e182d1f18c92715ae1a2573c6d9eb4ab8327",
+            "1260": "be0153e87a99d0f73ecfb6ea30a819c33005085332b0085c7fa0b098121346a1",
+            "167": "29a93e97efeefdbebb767cb23be8e86742089b491abf9b280491dcaa1af35086",
+            "2093": "39a18a70d6b0dd8ca728dafb2f2e66ecfe7dbefb482d098ac75a8a6f12ac5cfd",
+            "308": "fd5a013a3b83729e0fd13ed43bb6de4ec146e6f2be57c6cfbbb9fce19e6210bd",
+            "67": "dfa51008751b2b6e4d183a4be67638570c250a6e38079afc1ef123399f1ddd5d"
+          }
+        }
+      },
+      "stance_controller": {
+        "n_solver_calls": 31,
+        "per_call_digests": [
+          "5599129c75ba4a5c375ab554d211646031daa46ef42b0047855ce5ce99c7d3c6",
+          "ca64e0c2806efeb189062ca3df91e327edb99f22b373874c03f0dbb9d9a4bbe6",
+          "863efc5fa58f9c826f11ea77ea0032dbdc9df5ab8b64c78aa60e1ace7e81e97d",
+          "4757e351643549c39951cc7ea5eecb32469d3669a6a3533e0f0bac5c13558472",
+          "43da9f79601ae05aab1076808371916ccf41b6cced1e731391cb8f1f4514e0da",
+          "7e9a918aec2d4f78aa738cc3b0fa7de23b70181d347068e35c5640b7be6f9b66",
+          "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+          "fbb5c9c369df8714675a6220b4484bd5d0288f2f89a31b67df4013105352c630",
+          "8a89c0accb8ac7e9aea6223104591c2ae064af0197ffb721579411e9bada2b2c",
+          "98381d673a0f14313fd1aad1d30518618f5049b218514044d8d2edd3fdfe5caf",
+          "96fa2325d14aab81edab4f360fd75969a78805229841811d494a05abdd0420a5",
+          "a0dbd970063a4a75c577e754b2130a0ac56a032e78e6286386121e12bc133820",
+          "b7e1603340e40e16e8fd487e4080594604c738ffdd6f7351322735d7938c8bf0",
+          "0099df6e7c8bb3217b53120c0344bf374cd00a64e65c1063d350cea68f29f666",
+          "4d384d1e6a7c0888332b5f56f6d1627231476b2c65ab4245c59e12a75519a4bd",
+          "dfca76d73b69b37501927cee3bfbbe7debeef2cf033698391715826f15dff2b0",
+          "37595c615bbfcab2c8ded40b78502d699c927c182b5645a8a2e5a82f28cbd1a7",
+          "effc0f5cc1167daad4aeefd35f869658c5e041b62e3dbba4095866de8dd85914",
+          "ccba3bc76bcd5e2ad7c3cff2edca9333ec5295f012ae5c3655c1c3c6cff0460b",
+          "510ac08915416d6091cd13b064714b6ebbdb928ed5e5109ca750980ee2543114",
+          "cb0109b68ffb8ca1cbff3aac13c9200e6d0e44d1a5415479ae18ea2fd43d5465",
+          "da67c7e737944067bb46b080947360dc6bcd548707c62dd588cc8658a19dfe3f",
+          "98655e21b21214e0c69d27a699b2bc2bc4bde8f0ff5709833842f6e1281406b8",
+          "cc318fe664e0ee27345e02448b130680048178bdc1a2c1e88dd6a48392adda52",
+          "2db39764982cb93a7e0ea067ae47333a049890b84621e4d45a0aee3be43c2e24",
+          "a5f6feabeaf1ad9ca915eba1925f936f4eb8e6768d21c1a8397370d2d91f62fa",
+          "3ad33df5309d62e49742c9c38ef5edb95ee0c4b956489c4c35ca6770fa152dad",
+          "03e387e47b687ad2e8e10d1460242ab8d0e3369e930e42e02d4f6035b022d374",
+          "3605b25b2c9aef0f7cf9d35a43d963a101b6418e4cfb3cbe45779b9a2534e9fe",
+          "be1b82a0d15f29e734eed572fab8aacd6549ac06dc75797db83406bd9b94911c",
+          "e91b6f7960da7673549d6032c5561c76e833221438c5ff32f5f6a3faa3c7256f"
+        ],
+        "rolling_digest": "9d4ce2cc2904e89912627c7dd5e0b06a5350b7a1295dd5ac5c13f195a8e60938"
+      },
+      "mpm": {
+        "cube_1e-3": "bdad4d5f2c4e6ad3bae83e4fda5ce0326b510b9b408f92f1abf8bc490a962809",
+        "cube_2e-2": "3c546b45478a4ae05a8db863ed08cc4acafaf797a701e37e61c60f6868dea551",
+        "foot": "62f08c1879821e72c27054e4c302e7f711380417b939664eff95c74474f14a25",
+        "foot_plastic_implicit": "46500fd50a2cc9263efd03f6ff3a8c82178249b5b53b2dc003b849f342e5e11a",
+        "foot_plastic_implicit_ncp": "021e0ed47d7b2195e9bbd6eb3ca555f75b489317e19a46f24f17d093a957b1d4",
+        "ground_impulse": "e2e8dc158405f12ecf90bd6e4d082c4bd004e17a7b79940a93f721f192482c3b",
+        "plates": "156f5a0eee25327449fac0b5542af84289dba5e833b64f19a1934a92140b8471",
+        "plates_ncp": "5279f15884d6d99bf2237b108f77771a2ee56ccfbb848c61d1681fa9c677fef0",
+        "slab": "24daa77f78e4e556869f449f9070a6059be9660ffe3ab8d1602062640de0aaa9",
+        "slab_ncp": "3dc3d0ad3608f40939a4d70257ef43ad345c2b77ba8ddca566b3c26724f28293"
+      },
+      "shape_study": {
+        "adjoint": [
+          0.0,
+          0.0040589439169540385,
+          -5.39254967773057e-08
+        ],
+        "bits_canonical": {
+          "0.3": "6ed04f9a166ea4fd773d243d8d56dd0046881f0b545bcbb78fd3d7960c305c5d",
+          "0.45": "de888501228da112fe7782e7e6f5791b83857d0f942c03087c5a7516d7f20127",
+          "0.6": "d435675933a31f5a17a0a19e495018547e51c1b29cf0b209f3589d1b6e8a096d"
+        },
+        "bits_fast": {
+          "0.3": "862586622e8e8541abd81cf64faccfbf37ed3d1269ebe0ef187daa7a12fce99b",
+          "0.45": "c022e48c2bde0e706162933d20b75c86a729c5037a6e4b0d7302c235ab84d18e",
+          "0.6": "9ca16f7f951c8198b77f2d05a04636773f3cf5f1470cd7b2091bb05f524b8f3c"
+        }
+      },
+      "coupled_contact": {
+        "scene_i_1kg": "2aa3d639b1eb002ebe95c3a149de92b45446094a804c2f4f5b6ce40c339a2e54",
+        "scene_i_20kg": "a165a20d99cb6fa6980fe67d26a98775d864c18bb8e28cf0c429aa3c1f54637e",
+        "scene_ii_clamp": "4931288fbb7e091242a932c662c1f0cd731cdece83712081a8604828ff2d20aa",
+        "scene_iii_1000to1": "4787779a527b2ad4b17832b5dec781f399ebc262f779936ca88596e05072613b"
+      }
+    },
+    "environment": {
+      "compute_cap": "9.0",
+      "gpu": "NVIDIA H100 80GB HBM3, 81559 MiB, 580.95.05",
+      "numpy": "2.2.6",
+      "python": "3.12.1"
+    },
+    "total_driver_wall_s": 131.723247051239
+  },
+  "rc": 0,
+  "stamp": "20260919T221955Z",
+  "stdout": "=== [1/5] Identity: batch_adjoint ===\nWarp 1.13.0 initialized:\n   CUDA Toolkit 12.9, Driver 13.0\n   Devices:\n     \"cpu\"      : \"x86_64\"\n     \"cuda:0\"   : \"NVIDIA H100 80GB HBM3\" (79 GiB, sm_90, mempool enabled)\n   Kernel cache:\n     $CACHE/warp/1.13.0\nModule batch_adjoint_gpu 9ab5516 load on device 'cuda:0' took 10726.29 ms  (compiled)\n  batch_adjoint stick: batch_hash=4d5d4747983a3de2 env0=88687d9ee5185e15\n  batch_adjoint slip: batch_hash=24a370fedefcc7a7 env0=a10538af4e5a6e14\n=== [2/5] Identity: stance_controller ===\n# Stance-controller controller  policy=circle  mu_seed=12 noise_seed=7  gn=1  k=8  tiebreak=rank  margin_mode=auto\nsolver copy sha256 stance_controller_gpu.py = 5b7b39707acf4f3d158ea20b2c67135e56da38a48e4f25e54a2b5d4715fb6ad4\n           orig    parity_gpu.py = 5b7b39707acf4f3d158ea20b2c67135e56da38a48e4f25e54a2b5d4715fb6ad4\nrho = 0.20*lam_max = 1.1172  tol 1e-11  sigma_v 0.001  sigma_f 0.001  margin 0.05  f pool (0.4, 0.5, 0.6, 0.7)  theta pool 4\nmu TRUE (unknown to the controller) = [0.40033  0.678701 0.375728 0.371717]\nnominal stance: |tau_nom|_inf = 0.02169 N m,  lam_n = [0.130959 0.129365 0.125246 0.123651]\nModule stance_controller_gpu 1305a19 load on device 'cuda:0' took 2682.48 ms  (compiled)\nModule contact operator GPU module 11344f7 load on device 'cuda:0' took 6913.06 ms  (compiled)\nnominal step: labels ['stick', 'stick', 'stick', 'stick']  |v+|_inf 1.597e-09  Batch-adjoint all-stick certificate {'ok': True, 'max_ratio': 0.3905388250041167, 'min_lamn': 0.12365125925084816}\n\nk=1  foot 0 (FL_toe)  f=0.5  th=0.0000  m=0.2444  dV=0.609066 bits (beliefs [0.5625 0.5625 0.5625 0.5625])  |tau|2=5.2135 N m  |tau|inf=3.9327 N m\n   labels ['slip', 'stick', 'stick', 'stick']  n_slip 1  res 5.90e-12 inner 500  slip speed 8.1371e-02 m/s\n   Batch-adjoint certificate ok=True  max cone ratio (other 3) 0.7950  bil-match 2.39e-09  de Saxce align -1.000000000  stick speed 7.60e-12\n   detected slip [True, False, False, False] (from v+ [True, False, False, False], from lam [True, False, False, False])  lift-off [False, False, False, False]  GN step ['-9.9468e-02']  Hjj 1.8757e+06\n   muhat [0.400532 0.5      0.5      0.5     ]   |muhat-mu| [0.000202 0.178701 0.124272 0.128283]\n   rank(F) 1/4  sigma_min 0.000000e+00  CRB [inf inf inf inf]\n   budget: sum|tau|2 5.2135 N m   torque impulse 0.021723 N m s   |dlam| 0.137965 N s   tangential at probed foot 0.026172 N s\n\nk=2  foot 1 (FR_toe)  f=0.5  th=0.0000  m=0.2474  dV=0.609066 bits (beliefs [1.     0.5625 0.5625 0.5625])  |tau|2=5.1670 N m  |tau|inf=3.8944 N m\n   labels ['stick', 'stick', 'stick', 'stick']  n_slip 0  res 9.80e-12 inner 1100  slip speed 1.3515e-11 m/s\n   Batch-adjoint certificate ok=False  max cone ratio (other 3) 0.7526  bil-match 4.00e-09  de Saxce align -0.008339827  stick speed 1.37e-11\n   detected slip [False, False, False, False] (from v+ [False, False, False, False], from lam [False, False, False, False])  lift-off [False, False, False, False]  GN step []  Hjj 0.0000e+00\n   muhat [0.400532 0.661841 0.5      0.5     ]   |muhat-mu| [0.000202 0.01686  0.124272 0.128283]\n   rank(F) 1/4  sigma_min 0.000000e+00  CRB [inf inf inf inf]\n   budget: sum|tau|2 10.3805 N m   torque impulse 0.043252 N m s   |dlam| 0.277898 N s   tangential at probed foot 0.066513 N s\n\nk=3  foot 2 (RL_toe)  f=0.4  th=3.1416  m=0.3194  dV=0.609066 bits (beliefs [1.     0.9336 0.5625 0.5625])  |tau|2=4.4467 N m  |tau|inf=3.1510 N m\n   labels ['stick', 'stick', 'slip', 'stick']  n_slip 1  res 4.10e-12 inner 475  slip speed 7.8760e-02 m/s\n   Batch-adjoint certificate ok=True  max cone ratio (other 3) 0.4594  bil-match 1.49e-09  de Saxce align -1.000000000  stick speed 5.49e-12\n   detected slip [False, False, True, False] (from v+ [False, False, True, False], from lam [False, False, True, False])  lift-off [False, False, False, False]  GN step ['-1.2349e-01']  Hjj 1.0743e+06\n   muhat [0.400532 0.661841 0.376513 0.5     ]   |muhat-mu| [0.000202 0.01686  0.000785 0.128283]\n   rank(F) 2/4  sigma_min 0.000000e+00  CRB [inf inf inf inf]\n   budget: sum|tau|2 14.8272 N m   torque impulse 0.061780 N m s   |dlam| 0.432217 N s   tangential at probed foot 0.085462 N s\n\nk=4  foot 3 (RR_toe)  f=0.4  th=3.1416  m=0.3235  dV=0.609066 bits (beliefs [1.     0.9336 1.     0.5625])  |tau|2=4.4070 N m  |tau|inf=3.1204 N m\n   labels ['stick', 'stick', 'stick', 'slip']  n_slip 1  res 7.13e-12 inner 475  slip speed 7.9428e-02 m/s\n   Batch-adjoint certificate ok=True  max cone ratio (other 3) 0.7412  bil-match 2.65e-09  de Saxce align -1.000000000  stick speed 9.15e-12\n   detected slip [False, False, False, True] (from v+ [False, False, False, True], from lam [False, False, False, True])  lift-off [False, False, False, False]  GN step ['-1.2819e-01']  Hjj 1.0473e+06\n   muhat [0.400532 0.661841 0.376513 0.37181 ]   |muhat-mu| [0.000202 0.01686  0.000785 0.000093]\n   rank(F) 3/4  sigma_min 0.000000e+00  CRB [inf inf inf inf]\n   budget: sum|tau|2 19.2342 N m   torque impulse 0.080143 N m s   |dlam| 0.584581 N s   tangential at probed foot 0.103973 N s\n\nk=5  foot 1 (FR_toe)  f=0.5  th=0.0000  m=0.1869  dV=0.128528 bits (beliefs [1.     0.9336 1.     1.    ])  |tau|2=6.3601 N m  |tau|inf=4.8994 N m\n   labels ['stick', 'slip', 'stick', 'stick']  n_slip 1  res 8.35e-12 inner 775  slip speed 3.8648e-02 m/s\n   Batch-adjoint certificate ok=True  max cone ratio (other 3) 0.8297  bil-match 3.23e-09  de Saxce align -1.000000000  stick speed 8.44e-12\n   detected slip [False, True, False, False] (from v+ [False, True, False, False], from lam [False, True, False, False])  lift-off [False, False, False, False]  GN step ['1.6404e-02']  Hjj 1.8330e+06\n   muhat [0.400532 0.678244 0.376513 0.37181 ]   |muhat-mu| [0.000202 0.000457 0.000785 0.000093]\n   rank(F) 4/4  sigma_min 1.060295e+06  CRB [0.000731 0.000739 0.000959 0.000971]\n   budget: sum|tau|2 25.5943 N m   torque impulse 0.106643 N m s   |dlam| 0.726944 N s   tangential at probed foot 0.147863 N s\n\nk=6  foot 0 (FL_toe)  f=0.4  th=0.0000  m=0.3813  dV=0.000002 bits (beliefs [1. 1. 1. 1.])  |tau|2=4.1627 N m  |tau|inf=2.8039 N m\n   labels ['slip', 'stick', 'stick', 'stick']  n_slip 1  res 5.34e-12 inner 575  slip speed 4.4848e-02 m/s\n   Batch-adjoint certificate ok=True  max cone ratio (other 3) 0.9556  bil-match 2.02e-09  de Saxce align -1.000000000  stick speed 6.76e-12\n   detected slip [True, False, False, False] (from v+ [True, False, False, False], from lam [True, False, False, False])  lift-off [False, False, False, False]  GN step ['-1.5567e-03']  Hjj 1.1991e+06\n   muhat [0.398975 0.678244 0.376513 0.37181 ]   |muhat-mu| [0.001355 0.000457 0.000785 0.000093]\n   rank(F) 4/4  sigma_min 1.060295e+06  CRB [0.000571 0.000739 0.000959 0.000971]\n   budget: sum|tau|2 29.7570 N m   torque impulse 0.123988 N m s   |dlam| 0.888399 N s   tangential at probed foot 0.168815 N s\n\nk=7  foot 0 (FL_toe)  f=0.4  th=0.0000  m=0.3828  dV=0.000002 bits (beliefs [1. 1. 1. 1.])  |tau|2=4.1559 N m  |tau|inf=2.7961 N m\n   labels ['slip', 'stick', 'stick', 'stick']  n_slip 1  res 5.62e-12 inner 575  slip speed 4.4391e-02 m/s\n   Batch-adjoint certificate ok=True  max cone ratio (other 3) 0.9550  bil-match 2.13e-09  de Saxce align -1.000000000  stick speed 7.39e-12\n   detected slip [True, False, False, False] (from v+ [True, False, False, False], from lam [True, False, False, False])  lift-off [False, False, False, False]  GN step ['8.9870e-04']  Hjj 1.1990e+06\n   muhat [0.399874 0.678244 0.376513 0.37181 ]   |muhat-mu| [0.000456 0.000457 0.000785 0.000093]\n   rank(F) 4/4  sigma_min 1.060295e+06  CRB [0.000484 0.000739 0.000959 0.000971]\n   budget: sum|tau|2 33.9130 N m   torque impulse 0.141304 N m s   |dlam| 1.049849 N s   tangential at probed foot 0.189768 N s\n\nk=8  foot 0 (FL_toe)  f=0.4  th=0.0000  m=0.3819  dV=0.000002 bits (beliefs [1. 1. 1. 1.])  |tau|2=4.1598 N m  |tau|inf=2.8006 N m\n   labels ['slip', 'stick', 'stick', 'stick']  n_slip 1  res 5.48e-12 inner 575  slip speed 4.4655e-02 m/s\n   Batch-adjoint certificate ok=True  max cone ratio (other 3) 0.9553  bil-match 2.07e-09  de Saxce align -1.000000000  stick speed 6.93e-12\n   detected slip [True, False, False, False] (from v+ [True, False, False, False], from lam [True, False, False, False])  lift-off [False, False, False, False]  GN step ['1.2236e-03']  Hjj 1.1990e+06\n   muhat [0.401097 0.678244 0.376513 0.37181 ]   |muhat-mu| [0.000767 0.000457 0.000785 0.000093]\n   rank(F) 4/4  sigma_min 1.060295e+06  CRB [0.000428 0.000739 0.000959 0.000971]\n   budget: sum|tau|2 38.0728 N m   torque impulse 0.158637 N m s   |dlam| 1.211302 N s   tangential at probed foot 0.210720 N s\n\n==============================================================================================================\nSUMMARY\n==============================================================================================================\nk=4: feet probed [0, 1, 2, 3]  rank(F) 3/4  sigma_min(F) 0.000000e+00\n      |muhat-mu| per foot [0.000202 0.01686  0.000785 0.000093]   max 1.686044e-02\n      CRB        per foot [inf inf inf inf]   max inf\n      sum|tau|2 19.2342 N m   torque impulse 0.080143 N m s   |dlam| 0.584581 N s   tangential 0.103973 N s\nk=8: feet probed [0, 1, 2, 3, 1, 0, 0, 0]  rank(F) 4/4  sigma_min(F) 1.060295e+06\n      |muhat-mu| per foot [0.000767 0.000457 0.000785 0.000093]   max 7.849735e-04\n      CRB        per foot [0.000428 0.000739 0.000959 0.000971]   max 9.711505e-04\n      sum|tau|2 38.0728 N m   torque impulse 0.158637 N m s   |dlam| 1.211302 N s   tangential 0.210720 N s\ncertificate confirmed 'only the chosen foot slipped' on 7/8 probes (the solver's own labels agree on 7/8)\nmu TRUE [0.40033  0.678701 0.375728 0.371717]\nmuhat   [0.401097 0.678244 0.376513 0.37181 ]\nprobes per foot [4, 2, 1, 1]  slips per foot [4, 1, 1, 1]\nblacklisted candidates (lifted a foot) []\ncontroller model screens (CPU ncp_ref PGS) 51\nlam-augmented Fisher (sigma_f=0.001): rank 4  CRB [0.000427 0.000738 0.000958 0.00097 ]\nagreement of the agreement_rule rule as WRITTEN (static prior + probe history) with the posterior form: 4/8\nsolver calls 16  GPU forward wall 15.07 s\nROLLING DIGEST over every solver output of this run: 9d4ce2cc2904e89912627c7dd5e0b06a5350b7a1295dd5ac5c13f195a8e60938\n  stance_controller rolling_digest=9d4ce2cc2904e89912627c7dd5e0b06a5350b7a1295dd5ac5c13f195a8e60938 (31 calls)\n=== [3/5] Identity: shape_study ===\n  shape_study: bits_0.3=6ed04f9a166ea4fd adjoint=[0.0, 0.0040589439169540385, -5.39254967773057e-08]\n=== [4/5] Identity: mpm_ncp_study ===\n  mpm_ncp_study scene_i_1kg       : sha256=2aa3d639b1eb002ebe95c3a149de92b45446094a804c2f4f5b6ce40c339a2e54\n  mpm_ncp_study scene_i_20kg      : sha256=a165a20d99cb6fa6980fe67d26a98775d864c18bb8e28cf0c429aa3c1f54637e\n  mpm_ncp_study scene_ii_clamp    : sha256=4931288fbb7e091242a932c662c1f0cd731cdece83712081a8604828ff2d20aa\n  mpm_ncp_study scene_iii_1000to1 : sha256=4787779a527b2ad4b17832b5dec781f399ebc262f779936ca88596e05072613b\n=== [5/5] Identity: mpm_implicit ===\n  mpm cube_1e-3                 : bdad4d5f2c4e6ad3 (bdad4d5f2c4e6ad3bae83e4fda5ce0326b510b9b408f92f1abf8bc490a962809)\n  mpm cube_2e-2                 : 3c546b45478a4ae0 (3c546b45478a4ae05a8db863ed08cc4acafaf797a701e37e61c60f6868dea551)\n  mpm slab                      : 24daa77f78e4e556 (24daa77f78e4e556869f449f9070a6059be9660ffe3ab8d1602062640de0aaa9)\n  mpm ground_impulse            : e2e8dc158405f12e (e2e8dc158405f12ecf90bd6e4d082c4bd004e17a7b79940a93f721f192482c3b)\n  mpm foot                      : 62f08c1879821e72 (62f08c1879821e72c27054e4c302e7f711380417b939664eff95c74474f14a25)\n  mpm plates                    : 156f5a0eee253274 (156f5a0eee25327449fac0b5542af84289dba5e833b64f19a1934a92140b8471)\n  mpm plates_ncp                : 5279f15884d6d99b (5279f15884d6d99bf2237b108f77771a2ee56ccfbb848c61d1681fa9c677fef0)\n  mpm foot_plastic_implicit     : 46500fd50a2cc926 (46500fd50a2cc9263efd03f6ff3a8c82178249b5b53b2dc003b849f342e5e11a)\n  mpm foot_plastic_implicit_ncp : 021e0ed47d7b2195 (021e0ed47d7b2195e9bbd6eb3ca555f75b489317e19a46f24f17d093a957b1d4)\n  mpm slab_ncp                  : 3dc3d0ad3608f409 (3dc3d0ad3608f40939a4d70257ef43ad345c2b77ba8ddca566b3c26724f28293)\n\nAll identity digests on NVIDIA H100 80GB HBM3 completed in 131.7 s\nWrote timing_study/identity_NVIDIA_H100_80GB_HBM3.json\n"
+}

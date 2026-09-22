@@ -3,6 +3,7 @@ numpy>=2.0
 scipy>=1.11
 pin>=4.0            # pinocchio wheels (provides `pinocchio`, and `hppfcl` via coal)
 coal>=3.0           # exact-mesh collision (hpp-fcl successor)
+h5py>=3.0           # data/ncp contact-scene package (JSON + packed HDF5 loader)
 pytest>=8.0
 
 # optional

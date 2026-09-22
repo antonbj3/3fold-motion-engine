@@ -1,0 +1,43 @@
+{
+  "all_ok": true,
+  "kind": "oracle_crosscheck",
+  "states": {
+    "new150": {
+      "brute_spot_ok": true,
+      "mine_eq_range_ref": true,
+      "mine_eq_this study": true,
+      "n": 151000,
+      "n_boxes": 74,
+      "zero_size_boxes_all_include_their_particle": true,
+      "zero_size_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "new160": {
+      "brute_spot_ok": true,
+      "mine_eq_range_ref": true,
+      "mine_eq_this study": true,
+      "n": 161000,
+      "n_boxes": 74,
+      "zero_size_boxes_all_include_their_particle": true,
+      "zero_size_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "record_origin": "independent verification"
+}

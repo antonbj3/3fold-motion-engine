@@ -1,0 +1,42 @@
+{
+  "series_nit300": {
+    "cpu_res_with_kernel_rho": 0.020014471769411648,
+    "cpu_res_with_textbook_rho": 0.020027520587044004,
+    "eta_max": 0.0,
+    "gpu_resenv": 0.020014471769410007,
+    "nit": 300,
+    "nit_mod_refresh": 0,
+    "rel_with_kernel_rho": 8.199309115828016e-14,
+    "rel_with_textbook_rho": 0.0006519691243583344
+  },
+  "smoke_nit48": {
+    "cpu_res_with_kernel_rho": 0.0002255034687304036,
+    "cpu_res_with_textbook_rho": 0.0002436697242461372,
+    "eta_max": 0.0,
+    "gpu_resenv": 0.00022550346873720373,
+    "nit": 48,
+    "nit_mod_refresh": 0,
+    "rel_with_kernel_rho": 3.015526130887935e-11,
+    "rel_with_textbook_rho": 0.0805586522046097
+  },
+  "smoke_nit50": {
+    "cpu_res_with_kernel_rho": 0.0001792315956374857,
+    "cpu_res_with_textbook_rho": 0.00019367023905197955,
+    "eta_max": 0.0,
+    "gpu_resenv": 0.00022550346873720373,
+    "nit": 50,
+    "nit_mod_refresh": 2,
+    "rel_with_kernel_rho": 0.20519362011961842,
+    "rel_with_textbook_rho": 0.1411651442147963
+  },
+  "smoke_nit52": {
+    "cpu_res_with_kernel_rho": 0.00014275420805409667,
+    "cpu_res_with_textbook_rho": 0.00015425428497300997,
+    "eta_max": 0.0,
+    "gpu_resenv": 0.00014275420806372785,
+    "nit": 52,
+    "nit_mod_refresh": 0,
+    "rel_with_kernel_rho": 6.746690601459336e-11,
+    "rel_with_textbook_rho": 0.08055858433362816
+  }
+}

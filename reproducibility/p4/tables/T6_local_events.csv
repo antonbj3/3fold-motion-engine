@@ -1,0 +1,5 @@
+case,kind,predicted_load,branch_low,branch_high,status
+"h = 0.15 m, phi = 0 deg",close,0.49320925178086744,0.4900000000000003,0.49500000000000033,confirmed
+"h = 0.15 m, phi = 270 deg",close,0.1455177636156032,0.14500000000000005,0.15000000000000005,confirmed
+"h = 0.30 m, phi = 15 deg",slip,0.6512463418837452,,,unconfirmed
+"h = 0.40 m, phi = 15 deg",slip,0.6233170875288442,,,unconfirmed

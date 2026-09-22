@@ -1,0 +1,71 @@
+{
+  "appendix": "P",
+  "title": "Identification parameter digests",
+  "manuscript_tables": [
+    [
+      [
+        "Record",
+        "SHA-256"
+      ],
+      [
+        "Corrected standard fit",
+        "`5e1fac9d8e9ff0658b28587d084fa78a650def50b3f216b33b4db4e417734057`"
+      ],
+      [
+        "Corrected selected fit",
+        "`c86539873c98e1068c08a7fc87b3a55cb49df41b78c662a61f466f3d19967bc9`"
+      ],
+      [
+        "Corrected derivative check, both processes",
+        "`658ffe86a40bb8587e46f3acbb2240b75e2ba0f7b537e328e79722b7437a909d`"
+      ]
+    ],
+    [
+      [
+        "Accumulation",
+        "Run [–]",
+        "SHA-256"
+      ],
+      [
+        "int64",
+        "1",
+        "`2b763253b03491ad33448fae6bdff386ddfe6a52cc3148f3199ae3f489a9b6e4`"
+      ],
+      [
+        "int64",
+        "2",
+        "`2b763253b03491ad33448fae6bdff386ddfe6a52cc3148f3199ae3f489a9b6e4`"
+      ],
+      [
+        "int64",
+        "3",
+        "`2b763253b03491ad33448fae6bdff386ddfe6a52cc3148f3199ae3f489a9b6e4`"
+      ],
+      [
+        "float32",
+        "1",
+        "`39dbda32ffbe2f9ab6245e980cab5575dbc577f8c00b432dc0273cb6ce452465`"
+      ],
+      [
+        "float32",
+        "2",
+        "`652611a7cbd928038cb7f5fc2db53f54aa760354483788613cc82dc6d3949d2c`"
+      ],
+      [
+        "float32",
+        "3",
+        "`d20638eebfd7197f47c451a765ab77d5a67c3c9e61dd4a59a56c6be3f8329b41`"
+      ],
+      [
+        "float32",
+        "4",
+        "`4fa4e7e108dd8c55f94cd1415b49f01ba8814156918e8d063c105ede6186b744`"
+      ],
+      [
+        "float32",
+        "5",
+        "`242f1fc734b5b866763ea52e9c74625d4affab529db4c8daf7b454356f23a82a`"
+      ]
+    ]
+  ]
+}

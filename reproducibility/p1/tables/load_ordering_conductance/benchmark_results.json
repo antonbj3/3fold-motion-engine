@@ -1,0 +1,365 @@
+{
+  "results": {
+    "granular_press_step": {
+      "name": "granular_press_step (frozen DEM foot, d/w=1/2, N=124)",
+      "N": 124,
+      "n_c": 441,
+      "active": 210,
+      "t_solve_s": 0.0019941329956054688,
+      "t_sketch_s": 0.012726306915283203,
+      "metrics": {
+        "Resistans (H13 1/m)": {
+          "spearman": 0.12612907766607595,
+          "prec_5": 0.13636363636363635,
+          "prec_10": 0.1590909090909091
+        },
+        "Resistans (unweighted)": {
+          "spearman": 0.14724462474151523,
+          "prec_5": 0.13636363636363635,
+          "prec_10": 0.1590909090909091
+        },
+        "Resistans (Hertz R)": {
+          "spearman": 0.15851453802854942,
+          "prec_5": 0.09090909090909091,
+          "prec_10": 0.1590909090909091
+        },
+        "ResistanceSketch (k=64)": {
+          "spearman": -0.008118015949522323,
+          "prec_5": 0.13636363636363635,
+          "prec_10": 0.13636363636363635
+        },
+        "Baseline: Kontakt-grad": {
+          "spearman": 0.1834011658173176,
+          "prec_5": 0.09090909090909091,
+          "prec_10": 0.13636363636363635
+        },
+        "Baseline: Avstånd last": {
+          "spearman": -0.0089587029586708,
+          "prec_5": 0.18181818181818182,
+          "prec_10": 0.20454545454545456
+        },
+        "Baseline: Slump": {
+          "spearman": 0.03557574471351391,
+          "prec_5": 0.045454545454545456,
+          "prec_10": 0.09090909090909091
+        }
+      }
+    },
+    "sphere_packing_50": {
+      "name": "sphere_packing_50 (settled packing under gravity, N=50)",
+      "N": 50,
+      "n_c": 176,
+      "active": 123,
+      "t_solve_s": 0.0002894401550292969,
+      "t_sketch_s": 0.00420379638671875,
+      "metrics": {
+        "Resistans (H13 1/m)": {
+          "spearman": 0.2767007466576749,
+          "prec_5": 0.2222222222222222,
+          "prec_10": 0.4444444444444444
+        },
+        "Resistans (unweighted)": {
+          "spearman": 0.28009990082930936,
+          "prec_5": 0.2222222222222222,
+          "prec_10": 0.4444444444444444
+        },
+        "Resistans (Hertz R)": {
+          "spearman": 0.27037782888470024,
+          "prec_5": 0.2222222222222222,
+          "prec_10": 0.3888888888888889
+        },
+        "ResistanceSketch (k=64)": {
+          "spearman": 0.144551095638321,
+          "prec_5": 0.2222222222222222,
+          "prec_10": 0.2777777777777778
+        },
+        "Baseline: Kontakt-grad": {
+          "spearman": 0.08173245196336074,
+          "prec_5": 0.0,
+          "prec_10": 0.1111111111111111
+        },
+        "Baseline: Avstånd last": {
+          "spearman": 0.17643525748638042,
+          "prec_5": 0.3333333333333333,
+          "prec_10": 0.2777777777777778
+        },
+        "Baseline: Slump": {
+          "spearman": 0.013255036832838216,
+          "prec_5": 0.0,
+          "prec_10": 0.05555555555555555
+        }
+      }
+    },
+    "sphere_packing_200": {
+      "name": "sphere_packing_200 (settled packing under gravity, N=200)",
+      "N": 200,
+      "n_c": 710,
+      "active": 494,
+      "t_solve_s": 0.005132436752319336,
+      "t_sketch_s": 0.025168895721435547,
+      "metrics": {
+        "Resistans (H13 1/m)": {
+          "spearman": 0.24500079786521808,
+          "prec_5": 0.25,
+          "prec_10": 0.29577464788732394
+        },
+        "Resistans (unweighted)": {
+          "spearman": 0.2579716019924358,
+          "prec_5": 0.2777777777777778,
+          "prec_10": 0.323943661971831
+        },
+        "Resistans (Hertz R)": {
+          "spearman": 0.2590487895579068,
+          "prec_5": 0.2777777777777778,
+          "prec_10": 0.3380281690140845
+        },
+        "ResistanceSketch (k=64)": {
+          "spearman": 0.029239983958106015,
+          "prec_5": 0.16666666666666666,
+          "prec_10": 0.18309859154929578
+        },
+        "Baseline: Kontakt-grad": {
+          "spearman": 0.06642355748538861,
+          "prec_5": 0.05555555555555555,
+          "prec_10": 0.14084507042253522
+        },
+        "Baseline: Avstånd last": {
+          "spearman": 0.250871316415978,
+          "prec_5": 0.2777777777777778,
+          "prec_10": 0.323943661971831
+        },
+        "Baseline: Slump": {
+          "spearman": 0.0704309425388492,
+          "prec_5": 0.08333333333333333,
+          "prec_10": 0.15492957746478872
+        }
+      }
+    },
+    "sphere_packing_800": {
+      "name": "sphere_packing_800 (settled packing under gravity, N=800)",
+      "N": 800,
+      "n_c": 3022,
+      "active": 1878,
+      "t_solve_s": 0.1562049388885498,
+      "t_sketch_s": 0.06669235229492188,
+      "metrics": {
+        "Resistans (H13 1/m)": {
+          "spearman": 0.16604099778207185,
+          "prec_5": 0.17218543046357615,
+          "prec_10": 0.22185430463576158
+        },
+        "Resistans (unweighted)": {
+          "spearman": 0.1605958058857231,
+          "prec_5": 0.19205298013245034,
+          "prec_10": 0.2152317880794702
+        },
+        "Resistans (Hertz R)": {
+          "spearman": 0.15513396705970234,
+          "prec_5": 0.18543046357615894,
+          "prec_10": 0.20198675496688742
+        },
+        "ResistanceSketch (k=64)": {
+          "spearman": 0.01819016092135088,
+          "prec_5": 0.026490066225165563,
+          "prec_10": 0.09271523178807947
+        },
+        "Baseline: Kontakt-grad": {
+          "spearman": 0.033526562222626545,
+          "prec_5": 0.13245033112582782,
+          "prec_10": 0.20198675496688742
+        },
+        "Baseline: Avstånd last": {
+          "spearman": 0.2033338796556006,
+          "prec_5": 0.11258278145695365,
+          "prec_10": 0.16556291390728478
+        },
+        "Baseline: Slump": {
+          "spearman": -0.00286755036724909,
+          "prec_5": 0.08609271523178808,
+          "prec_10": 0.1291390728476821
+        }
+      }
+    },
+    "hertz_dw2": {
+      "name": "Hertz-DEM foot (d/w=1/2, d=40 mm, N=124)",
+      "N": 124,
+      "n_c": 199,
+      "active": 199,
+      "t_solve_s": 0.7086389064788818,
+      "t_sketch_s": 0.02228856086730957,
+      "metrics": {
+        "Resistans (H13 1/m)": {
+          "spearman": 0.21404767325091725,
+          "prec_5": 0.5,
+          "prec_10": 0.3
+        },
+        "Resistans (unweighted)": {
+          "spearman": 0.22462489488163145,
+          "prec_5": 0.5,
+          "prec_10": 0.3
+        },
+        "Resistans (Hertz R)": {
+          "spearman": 0.2211862342013096,
+          "prec_5": 0.5,
+          "prec_10": 0.3
+        },
+        "ResistanceSketch (k=64)": {
+          "spearman": -0.020877112836911835,
+          "prec_5": 0.2,
+          "prec_10": 0.2
+        },
+        "Baseline: Kontakt-grad": {
+          "spearman": 0.45197364947550156,
+          "prec_5": 0.0,
+          "prec_10": 0.25
+        },
+        "Baseline: Avstånd last": {
+          "spearman": -0.10459722856707782,
+          "prec_5": 0.5,
+          "prec_10": 0.3
+        },
+        "Baseline: Slump": {
+          "spearman": -0.041953707933607434,
+          "prec_5": 0.1,
+          "prec_10": 0.1
+        }
+      }
+    },
+    "hertz_dw4": {
+      "name": "Hertz-DEM foot (d/w=1/4, d=20 mm, N=990)",
+      "N": 990,
+      "n_c": 1261,
+      "active": 1261,
+      "t_solve_s": 3.919076919555664,
+      "t_sketch_s": 0.034786224365234375,
+      "metrics": {
+        "Resistans (H13 1/m)": {
+          "spearman": 0.3309277418982298,
+          "prec_5": 0.2857142857142857,
+          "prec_10": 0.23809523809523808
+        },
+        "Resistans (unweighted)": {
+          "spearman": 0.34603315599016454,
+          "prec_5": 0.2857142857142857,
+          "prec_10": 0.24603174603174602
+        },
+        "Resistans (Hertz R)": {
+          "spearman": 0.35148301214627775,
+          "prec_5": 0.2857142857142857,
+          "prec_10": 0.2619047619047619
+        },
+        "ResistanceSketch (k=64)": {
+          "spearman": -0.0786613108744269,
+          "prec_5": 0.015873015873015872,
+          "prec_10": 0.06349206349206349
+        },
+        "Baseline: Kontakt-grad": {
+          "spearman": 0.30686184828082297,
+          "prec_5": 0.15873015873015872,
+          "prec_10": 0.2698412698412698
+        },
+        "Baseline: Avstånd last": {
+          "spearman": 0.04431337338357778,
+          "prec_5": 0.36507936507936506,
+          "prec_10": 0.2222222222222222
+        },
+        "Baseline: Slump": {
+          "spearman": -0.013143053677633059,
+          "prec_5": 0.07936507936507936,
+          "prec_10": 0.10317460317460317
+        }
+      }
+    },
+    "hertz_dw8": {
+      "name": "Hertz-DEM foot (d/w=1/8, d=10 mm, N=7921)",
+      "N": 7921,
+      "n_c": 10693,
+      "active": 10688,
+      "t_solve_s": 0.02342677116394043,
+      "t_sketch_s": 1.992933988571167,
+      "metrics": {
+        "Resistans (H13 1/m)": {
+          "spearman": 0.40076770055868494,
+          "prec_5": 0.14205607476635515,
+          "prec_10": 0.2469597754911132
+        },
+        "Resistans (unweighted)": {
+          "spearman": 0.3984513439852876,
+          "prec_5": 0.14205607476635515,
+          "prec_10": 0.24789522918615528
+        },
+        "Resistans (Hertz R)": {
+          "spearman": 0.39925673241517157,
+          "prec_5": 0.14392523364485982,
+          "prec_10": 0.2628624883068288
+        },
+        "ResistanceSketch (k=64)": {
+          "spearman": -0.04547942772133135,
+          "prec_5": 0.03551401869158879,
+          "prec_10": 0.08793264733395698
+        },
+        "Baseline: Kontakt-grad": {
+          "spearman": 0.3390078068264198,
+          "prec_5": 0.25981308411214954,
+          "prec_10": 0.27408793264733394
+        },
+        "Baseline: Avstånd last": {
+          "spearman": 0.10964070585935229,
+          "prec_5": 0.2672897196261682,
+          "prec_10": 0.21047708138447146
+        },
+        "Baseline: Slump": {
+          "spearman": -0.01004163901382904,
+          "prec_5": 0.05046728971962617,
+          "prec_10": 0.08044901777362021
+        }
+      }
+    },
+    "hertz_dw16": {
+      "name": "Hertz-DEM foot (d/w=1/16, d=5 mm, N=63365)",
+      "N": 63365,
+      "n_c": 124311,
+      "active": 124269,
+      "t_solve_s": 0.12169957160949707,
+      "t_sketch_s": 15.741267442703247,
+      "metrics": {
+        "Resistans (H13 1/m)": {
+          "spearman": 0.3898117529150006,
+          "prec_5": 0.1793758043758044,
+          "prec_10": 0.2583058482825195
+        },
+        "Resistans (unweighted)": {
+          "spearman": 0.36510126231108236,
+          "prec_5": 0.1969111969111969,
+          "prec_10": 0.2647413723755128
+        },
+        "Resistans (Hertz R)": {
+          "spearman": 0.35151922704361505,
+          "prec_5": 0.2018983268983269,
+          "prec_10": 0.26578714504062423
+        },
+        "ResistanceSketch (k=64)": {
+          "spearman": -0.04808340588111902,
+          "prec_5": 0.03523166023166023,
+          "prec_10": 0.08092671546939104
+        },
+        "Baseline: Kontakt-grad": {
+          "spearman": 0.3222303312005894,
+          "prec_5": 0.2311776061776062,
+          "prec_10": 0.2470436811197812
+        },
+        "Baseline: Avstånd last": {
+          "spearman": 0.14905855011949648,
+          "prec_5": 0.14076576576576577,
+          "prec_10": 0.13144557959938863
+        },
+        "Baseline: Slump": {
+          "spearman": -0.0007492960807138233,
+          "prec_5": 0.04681467181467181,
+          "prec_10": 0.09854396267396026
+        }
+      }
+    }
+  },
+  "sha256": "d07af481d4271751ec2cc5c65d0b375b2e61e2919b543b04e64e5d12d321a58f"
+}

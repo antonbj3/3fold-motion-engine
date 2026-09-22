@@ -1,0 +1,159 @@
+{
+  "frames_sha256": {
+    "state_frame_120.npz": "8fa91747f7c4f34b1fbe74b76c274eb79229f26d534e26ec51dbf175fcf4d1eb",
+    "state_frame_140.npz": "82947685794c660e525a2683016de1a53bdcdca13c84a27833df28217c483072",
+    "state_frame_150.npz": "b49841aa61f2ace959ecdba0865cb07e7e32148843ee373af489a192b687c4d2",
+    "state_frame_160.npz": "5c1691d13a4c2ad5f66512cb1c09bdf3891b4470287279d029f79e33be9cf763",
+    "state_frame_160_shifted.npz": "7b1d0d3cb52a9efe1384934f5d38d6fcdca749ad3b4f4e7f7e036fa0d54db2dd"
+  },
+  "kind": "freeze",
+  "manifest_all_members_ok": false,
+  "manifest_failures": [
+    "out_selftest.json"
+  ],
+  "manifest_member_check": {
+    "PRODUCER_PROVENANCE.md": {
+      "frozen": "efa02a1c20be9b35b13316825f7da81fec29663d276dae01e66edf7a101224e4",
+      "manifest": "efa02a1c20be9b35b13316825f7da81fec29663d276dae01e66edf7a101224e4",
+      "ok": true
+    },
+    "SOURCE_API_MAP.md": {
+      "frozen": "7867f745ea16381a9410aa8b8ee1c75e20e776987d4409c4eafa51cd7ec58918",
+      "manifest": "7867f745ea16381a9410aa8b8ee1c75e20e776987d4409c4eafa51cd7ec58918",
+      "ok": true
+    },
+    "baseline_cell_list.py": {
+      "frozen": "9dd782b804bb1b0d6ebac71222e9d5538f643ec2528c9d867821f43dab3a4ae3",
+      "manifest": "9dd782b804bb1b0d6ebac71222e9d5538f643ec2528c9d867821f43dab3a4ae3",
+      "ok": true
+    },
+    "baseline_sorted_key.py": {
+      "frozen": "a59c7bc8c4e80ebe5f771385146cbf75cecc2e94653e121a2e13799c8ac591a0",
+      "manifest": "a59c7bc8c4e80ebe5f771385146cbf75cecc2e94653e121a2e13799c8ac591a0",
+      "ok": true
+    },
+    "bench_common.py": {
+      "frozen": "acee3066c96135852984fa4ff534e02054e499c8dd3331e8e2fefb934fe3dd56",
+      "manifest": "acee3066c96135852984fa4ff534e02054e499c8dd3331e8e2fefb934fe3dd56",
+      "ok": true
+    },
+    "contribution_update.md": {
+      "frozen": "5589e33e348f7075e8dff286524c5aebed4fd5018e44108b78d0c2156fd4cc0f",
+      "manifest": "5589e33e348f7075e8dff286524c5aebed4fd5018e44108b78d0c2156fd4cc0f",
+      "ok": true
+    },
+    "matched_baseline.csv": {
+      "frozen": "d00698df2e5a2a7826212da2f1776294ec879b8d16599e2807b96c5d12030708",
+      "manifest": "d00698df2e5a2a7826212da2f1776294ec879b8d16599e2807b96c5d12030708",
+      "ok": true
+    },
+    "out_correctness.json": {
+      "frozen": "eadbc3299e2b23e858738d22aff5062795c36e56d36c9a4024acdff5f5f04171",
+      "manifest": "eadbc3299e2b23e858738d22aff5062795c36e56d36c9a4024acdff5f5f04171",
+      "ok": true
+    },
+    "out_selftest.json": {
+      "frozen": "e0302a0f69a4953e3e309d4029dcf4c788b717da1ad165d82a92d5ccf0fed693",
+      "manifest": "e6072208b4fa2f89a6ac7803fe375fcba52b2ca8f0fce45a5d26770cc5c544fe",
+      "ok": false
+    },
+    "out_time_p1.json": {
+      "frozen": "007ebdf1a24fd357cd519fac363a256a660bb17b728d3fad16fd6caf005d740a",
+      "manifest": "007ebdf1a24fd357cd519fac363a256a660bb17b728d3fad16fd6caf005d740a",
+      "ok": true
+    },
+    "out_time_p2.json": {
+      "frozen": "aadfa706bfc02e742fca6b87df11143dcb16426be2abadd21d48b56b9612fa0d",
+      "manifest": "aadfa706bfc02e742fca6b87df11143dcb16426be2abadd21d48b56b9612fa0d",
+      "ok": true
+    },
+    "out_time_q1.json": {
+      "frozen": "547143ad859b772ace361b73946e9735cd96b741fb0cf1d9687aed9c92642c83",
+      "manifest": "547143ad859b772ace361b73946e9735cd96b741fb0cf1d9687aed9c92642c83",
+      "ok": true
+    },
+    "out_time_q4.json": {
+      "frozen": "3d932a1b748dc6fcca17c0fabfb819b8a2c08e8d92150cb090267fdb9dba502a",
+      "manifest": "3d932a1b748dc6fcca17c0fabfb819b8a2c08e8d92150cb090267fdb9dba502a",
+      "ok": true
+    },
+    "out_time_r1.json": {
+      "frozen": "25330b83260c5d317d07fe28b6af8ea161bdc9f01325a342ddada02f7a4f9561",
+      "manifest": "25330b83260c5d317d07fe28b6af8ea161bdc9f01325a342ddada02f7a4f9561",
+      "ok": true
+    },
+    "out_time_r2.json": {
+      "frozen": "a51c5e84bbea6168a1bd0dec5fda96f23f5717d9bb6ba6266840c8871e8fe40c",
+      "manifest": "a51c5e84bbea6168a1bd0dec5fda96f23f5717d9bb6ba6266840c8871e8fe40c",
+      "ok": true
+    },
+    "replay_benchmark.py": {
+      "frozen": "ad52c5fe505a321eafb25fa1d8179aa9fa2abb0fc6319f9eb2717e690a4b52fc",
+      "manifest": "ad52c5fe505a321eafb25fa1d8179aa9fa2abb0fc6319f9eb2717e690a4b52fc",
+      "ok": true
+    },
+    "replay_correctness.py": {
+      "frozen": "14c3f6679f70a7584b19a05af10ad1dfd1a8a210b1f5c76554fdcd87b39e7309",
+      "manifest": "14c3f6679f70a7584b19a05af10ad1dfd1a8a210b1f5c76554fdcd87b39e7309",
+      "ok": true
+    },
+    "replay_selftest.py": {
+      "frozen": "79213b806a8e6065cc9540fbc2fd9428f150927bc525837f3aca61e2da84f3ab",
+      "manifest": "79213b806a8e6065cc9540fbc2fd9428f150927bc525837f3aca61e2da84f3ab",
+      "ok": true
+    },
+    "reproduce.sh": {
+      "frozen": "e02e1cb54a3eb2b4074419ae2211037068a9ba6510822b3470f2660183d69613",
+      "manifest": "e02e1cb54a3eb2b4074419ae2211037068a9ba6510822b3470f2660183d69613",
+      "ok": true
+    }
+  },
+  "n_files": 23,
+  "producer": "matched-baseline measurement",
+  "subject_pin_ok": {
+    "box_geometry_families.json": true,
+    "keepout_reference.py": true,
+    "owned_keepout_contract.py": true,
+    "producer_grid_keepout.py": true
+  },
+  "subject_reference_sha256": {
+    "box_geometry_families.json": "c6960cfe2f32e72ae08116fc7403c120edca12dc22cf51855145b64b9a16da4d",
+    "keepout_reference.py": "761f06ce377e789863872f828fb55b3b43ad69206de3b978cf79bb8fedf21172",
+    "owned_keepout_contract.py": "0ee85fb753fe32c61f175502f2af4f7e9192e5c93fb1c29737ff8c29c099e715",
+    "producer_grid_keepout.py": "e0ecabc41a8a12a455761e9075167c64949e1e1bf4150372f0784b66dad98101",
+    "range_reference.py": "5ec17d66f8b2f92937ac6b9945c173dd960534faacce8bf3585809fddffce33f"
+  },
+  "this study_sha256": {
+    "MANIFEST.sha256": "3e470ebd1b157d32e9a989c05c1379793632a735dccdfe287c2cb41bf0db07a7",
+    "PRODUCER_PROVENANCE.md": "efa02a1c20be9b35b13316825f7da81fec29663d276dae01e66edf7a101224e4",
+    "SOURCE_API_MAP.md": "7867f745ea16381a9410aa8b8ee1c75e20e776987d4409c4eafa51cd7ec58918",
+    "baseline_cell_list.py": "9dd782b804bb1b0d6ebac71222e9d5538f643ec2528c9d867821f43dab3a4ae3",
+    "baseline_sorted_key.py": "a59c7bc8c4e80ebe5f771385146cbf75cecc2e94653e121a2e13799c8ac591a0",
+    "bench_common.py": "acee3066c96135852984fa4ff534e02054e499c8dd3331e8e2fefb934fe3dd56",
+    "contribution_update.md": "5589e33e348f7075e8dff286524c5aebed4fd5018e44108b78d0c2156fd4cc0f",
+    "matched_baseline.csv": "d00698df2e5a2a7826212da2f1776294ec879b8d16599e2807b96c5d12030708",
+    "out_correctness.json": "eadbc3299e2b23e858738d22aff5062795c36e56d36c9a4024acdff5f5f04171",
+    "out_selftest.json": "e0302a0f69a4953e3e309d4029dcf4c788b717da1ad165d82a92d5ccf0fed693",
+    "out_time_p1.json": "007ebdf1a24fd357cd519fac363a256a660bb17b728d3fad16fd6caf005d740a",
+    "out_time_p2.json": "aadfa706bfc02e742fca6b87df11143dcb16426be2abadd21d48b56b9612fa0d",
+    "out_time_q1.json": "547143ad859b772ace361b73946e9735cd96b741fb0cf1d9687aed9c92642c83",
+    "out_time_q4.json": "3d932a1b748dc6fcca17c0fabfb819b8a2c08e8d92150cb090267fdb9dba502a",
+    "out_time_r1.json": "25330b83260c5d317d07fe28b6af8ea161bdc9f01325a342ddada02f7a4f9561",
+    "out_time_r2.json": "a51c5e84bbea6168a1bd0dec5fda96f23f5717d9bb6ba6266840c8871e8fe40c",
+    "replay_benchmark.py": "ad52c5fe505a321eafb25fa1d8179aa9fa2abb0fc6319f9eb2717e690a4b52fc",
+    "replay_correctness.py": "14c3f6679f70a7584b19a05af10ad1dfd1a8a210b1f5c76554fdcd87b39e7309",
+    "replay_selftest.py": "79213b806a8e6065cc9540fbc2fd9428f150927bc525837f3aca61e2da84f3ab",
+    "reproduce.sh": "e02e1cb54a3eb2b4074419ae2211037068a9ba6510822b3470f2660183d69613",
+    "historical study report (not bundled)": "d51c697d7e525a4ff8bf1cff9214b00e485ef3faf099fb3efbb80def39e98c07",
+    "historical empty run sentinel (not bundled)": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "historical readiness record (not bundled)": "57797413af543e112baf549a61403fa487a4b2f8e58785b9fc664748c1b82ab9"
+  },
+  "record_origin": "independent verification",
+  "historical_unlisted_artifacts": [
+    "MANIFEST.sha256",
+    "historical study report (not bundled)",
+    "historical empty run sentinel (not bundled)",
+    "historical readiness record (not bundled)"
+  ],
+  "historical_manifest_note": "The archived manifest check failed for out_selftest.json: the frozen and earlier-manifest digests differ. That failure remains false here. The current shipped package manifest is verified separately by scripts/verify_package.py."
+}

@@ -1,0 +1,8 @@
+duration_s,mean_abs_relative_error_pct,sample
+0.05,442.1627282276163,"72 directions, three scenes"
+0.2,94.22756545796028,"72 directions, three scenes"
+1.0,24.03462658136661,"72 directions, three scenes"
+5.0,7.490139889833444,"72 directions, three scenes"
+20.0,2.7313021461088667,"72 directions, three scenes"
+50,1.4589704383282314,one box direction
+100,0.8218654434250714,one box direction

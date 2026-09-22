@@ -1,0 +1,99 @@
+{
+  "appendix": "U",
+  "title": "Selected-excitation estimation and failure control",
+  "manuscript_tables": [
+    [
+      [
+        "Quantity",
+        "Corrected GPU",
+        "Missing-upload control",
+        "CPU reference",
+        "Unit"
+      ],
+      [
+        "Mass error p50",
+        "1.126366e-2",
+        "1.6705e-02",
+        "—",
+        "relative"
+      ],
+      [
+        "Mass error p95",
+        "3.818469e-2",
+        "4.5614e-01",
+        "3.818469e-02",
+        "relative"
+      ],
+      [
+        "Friction error p50",
+        "2.318681e-2",
+        "3.1448e-02",
+        "—",
+        "relative"
+      ],
+      [
+        "Friction error p95",
+        "8.413783e-2",
+        "9.3655e-01",
+        "8.413782e-02",
+        "relative"
+      ],
+      [
+        "Yaw inertia error p50",
+        "3.2942e-2",
+        "—",
+        "—",
+        "relative"
+      ],
+      [
+        "Yaw inertia error p95",
+        "1.0716e-1",
+        "—",
+        "—",
+        "relative"
+      ],
+      [
+        "Mass median-error / CRB prediction",
+        "0.9748",
+        "—",
+        "—",
+        "ratio"
+      ],
+      [
+        "Friction median-error / CRB prediction",
+        "1.0009",
+        "—",
+        "—",
+        "ratio"
+      ],
+      [
+        "Yaw inertia median-error / CRB prediction",
+        "1.0030",
+        "—",
+        "—",
+        "ratio"
+      ],
+      [
+        "Logged last-trial contact residual maximum",
+        "2.90e-2",
+        "—",
+        "—",
+        "N·s"
+      ],
+      [
+        "Logged last-trial residual, final iteration",
+        "—",
+        "4.092455e+5",
+        "—",
+        "N·s"
+      ],
+      [
+        "Logged last-trial residual maximum",
+        "—",
+        "3.326372e+29",
+        "—",
+        "N·s"
+      ]
+    ]
+  ]
+}

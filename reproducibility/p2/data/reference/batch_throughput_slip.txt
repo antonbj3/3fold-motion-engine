@@ -1,0 +1,31 @@
+# envs_quadruped_sliding_stance_B4096.npz nv=18 nc=4 mu=0.5 rho=regime iter=200 cg=8 grad_cg=60 chunk=25 reps=3
+# GPU shared with one other agent -- all ms carry a contention caveat.
+Warp 1.13.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5070" (11 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     .cache/warp/1.13.0
+Module batch_adjoint_gpu 9ab5516 load on device 'cuda:0' took 12.63 ms  (cached)
+B=    1  bind     1  launches/ADMM-it  133 (matvec 6)  graph nodes fwd  27108 grad   6254 both   33362  capture    518 ms
+        fwd    103.97 ms ->          9.6 env-steps/s | grad(2 dir)     15.17 ms ->        131.9 env-grads/s | fwd+grad    135.52 ms ->          7.4 env-steps/s
+        memory     0.01 MB =    13788 B/env   frac<1e-8 0.0000  res50 1.00e-04
+B=   64  bind    64  launches/ADMM-it  133 (matvec 6)  graph nodes fwd  27108 grad   6254 both   33362  capture    500 ms
+        fwd    129.88 ms ->        492.8 env-steps/s | grad(2 dir)     30.09 ms ->       4254.4 env-grads/s | fwd+grad    158.92 ms ->        402.7 env-steps/s
+        memory     0.88 MB =    13780 B/env   frac<1e-8 0.0000  res50 1.36e-04
+B= 1024  bind  1024  launches/ADMM-it  133 (matvec 6)  graph nodes fwd  27108 grad   8328 both   35436  capture    522 ms
+        fwd    205.59 ms ->       4980.7 env-steps/s | grad(2 dir)     57.10 ms ->      35866.8 env-grads/s | fwd+grad    271.00 ms ->       3778.6 env-steps/s
+        memory    14.11 MB =    13780 B/env   frac<1e-8 0.0000  res50 1.50e-04
+B= 4096  bind  4096  launches/ADMM-it  133 (matvec 6)  graph nodes fwd  27108 grad   8328 both   35436  capture    539 ms
+        fwd    428.49 ms ->       9559.2 env-steps/s | grad(2 dir)    119.61 ms ->      68487.5 env-grads/s | fwd+grad    530.10 ms ->       7726.9 env-steps/s
+        memory    56.44 MB =    13780 B/env   frac<1e-8 0.0000  res50 1.49e-04
+
+| B | launches/ADMM it | graph nodes | fwd ms | env-steps/s | fwd+grad ms | env-grads/s | B/env | frac<1e-8 |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 133 | 33362 | 103.97 | 10 | 135.52 | 132 | 13788 | 0.0000 |
+| 64 | 133 | 33362 | 129.88 | 493 | 158.92 | 4254 | 13780 | 0.0000 |
+| 1024 | 133 | 35436 | 205.59 | 4981 | 271.00 | 35867 | 13780 | 0.0000 |
+| 4096 | 133 | 35436 | 428.49 | 9559 | 530.10 | 68488 | 13780 | 0.0000 |
+
+scaling vs B=1: B=64: fwd x1.25 time for x64 work (=51x throughput)  B=1024: fwd x1.98 time for x1024 work (=518x throughput)  B=4096: fwd x4.12 time for x4096 work (=994x throughput)

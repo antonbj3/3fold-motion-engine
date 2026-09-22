@@ -1,0 +1,10 @@
+{
+ "appendix": "I",
+ "checked_cells": 18,
+ "gap_cells": 9,
+ "gaps": [
+  "I: the manuscript's headline sweep (40.45/93.39, 72.58/188.86, 1139.29/735.70 ms) comes from a consolidated cloud-L4 sweep table whose per-run stdout log is not in the package. The archive table (second table below) is the raw log of the same configurations (40.41/93.30, 72.44/188.66, 1137.06/735.02 ms), which the manuscript also states."
+ ],
+ "mismatches": [],
+ "ok": true
+}

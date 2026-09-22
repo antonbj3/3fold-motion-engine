@@ -1,0 +1,7 @@
+{
+  "scene_count": 21,
+  "numeric_datasets": 210,
+  "dtype_shape_bytes_equal": true,
+  "mismatches": [],
+  "comparison": "Each numeric HDF5 dataset compared to the frozen source by dtype, shape and C-order value bytes. Original source is retained in the private build record."
+}

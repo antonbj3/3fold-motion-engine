@@ -1,0 +1,27 @@
+Runs with pre-launch provenance before post-run provenance,16,runs
+Loaded module hashes equal to frozen hashes,80,bindings
+Canonical run records equal to per-run records,,records
+Saved parameter arrays equal to the recorded digest,,runs
+Floating-point fusion and fast math,disabled,–
+Series and benchmark runs loading the earlier solver module,9,runs
+Driver scripts in the per-run module provenance,,scripts
+
+"Kernel largest-eigenvalue estimate, relative error against dense eigenvalues",6.947e-04,relative
+Regularized operator agreement with the exact form,1.356e-16,relative
+"Kernel-scale natural residual, 300-iteration series state",2.001e-02,N·s
+"Reported residual change, dense scale vs kernel scale, 300-iteration series state",6.52e-04,relative
+"Absolute residual change, dense scale vs kernel scale, 300-iteration series state",1.30e-05,N·s
+"Reported residual change, dense scale vs kernel scale, smoke state (residual 2.255035e-4 N·s)",8.06,%
+"CPU natural residual with the kernel scale vs device residual, 300-iteration series state",8.199e-14,relative
+CPU branch sensitivity vs device branch sensitivity at the same state,4.29e-13 – 4.68e-13,relative
+
+"Verification pass, summed per series",20.4–23.5,s
+Total wall per series,32.2–37.2,s
+Earlier solver-module source hash,`3e9fdb13998f9a4c02d70318053d531f1489c4092ba3f76c06e7ccd533d05499`,–
+Final solver-module source hash,`eb1f9a51434ac6d023cf4e765fdf02dbca4ca5e07a2d190ea46ad0be6a499632`,–
+
+"Standard push, converged",27,5.380e-13,2.46e-08 – 2.32e-07
+"Standard push, not converged",0,2.001e-02,8.20e+03 – 9.46e+05
+"Selected excitation, converged",27,4.622e-12,5.13e-04 – 1.35e-02
+"Selected excitation, not converged",116,1.611e-02,2.35e+03 – 2.37e+03
+

@@ -1,0 +1,21 @@
+{
+  "index": 7,
+  "scene": "random_contact_graph_256",
+  "method": "he_structure",
+  "rho0": 2.3607740970594966,
+  "rho_oracle": 3.847139721754659,
+  "rho_structure": 2.3607740970594966,
+  "rho_trace_mean": 4.082022927588479,
+  "iterations": 354,
+  "rho_changes": 0,
+  "iteration_cap": 20000,
+  "rho_final": 2.3607740970594966,
+  "residual": 9.831280928240815e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "192e61290ddab368d8f9e647704d0bc189bba2c5a1ec333dcfcde339987ce3ae",
+  "n_c": 256,
+  "elapsed_seconds": 0.16242994205094874,
+  "command": "archived benchmark invocation: RUN 7 he_structure",
+  "record_sha256": "456047686c0e204dbfbd70f695e9565903a397ae6a6f5b5b7b7a54a250043bf5"
+}

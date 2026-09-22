@@ -1,0 +1,11 @@
+"GPU integer, corrected",3.859e-02,1.576e-01,4.113e-02,1.632e-01,5.726e-02,5.941e-02,0.9992,1.0263
+CPU reference,3.859e-02,1.517e-01,4.107e-02,1.609e-01,5.726e-02,5.941e-02,—,—
+
+Yaw inertia error p50,8.379e-01,relative
+Yaw inertia error p95,1.353e+01,relative
+Yaw inertia CRB p50,1.268415,(N·m)⁻¹
+Yaw inertia median-error / CRB prediction,0.9793,ratio
+Logged last-trial residual maximum,8.857e-01,N·s
+"Logged last-trial residual, final iteration",5.730e-02,N·s
+Contact residual at true parameters,1.283e-06,N·s
+

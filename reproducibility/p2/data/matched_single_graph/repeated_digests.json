@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "case": "Pushed cube, B=1, int64",
+      "digest": "14b5816cbb5d3e1081b3d911807f48c4190ff97e2280a6cc7d61c00b1d27d0af",
+      "equal": true,
+      "processes": 3
+    },
+    {
+      "case": "Sticking tower, B=256, int64",
+      "digest": "62ce9edbb5fee0e7b9f8d93f8aa1612e3cc485e55efad4899050fd355ac55ba7",
+      "equal": true,
+      "processes": 3
+    },
+    {
+      "case": "Asymmetric tower, B=256, int64",
+      "digest": "898ab699b37238eb79d46f0025a8ddd01cbb855d74516845497513ed52fe2d65",
+      "equal": true,
+      "processes": 3
+    },
+    {
+      "case": "Pushed cube, B=256, float32",
+      "digest": "586ec0ef3baae8e5129957607c5121d3ef7fba4874a9efdde759fc8f99f506bd",
+      "equal": false,
+      "processes": 3
+    }
+  ]
+}

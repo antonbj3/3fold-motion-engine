@@ -1,0 +1,94 @@
+{
+  "definition": "one row per contact, one column per dynamic body; ground column dropped; inv_mass is the body translational 1/m; the right-hand side is standard_normal from numpy default_rng(143*100003 + n_contacts)",
+  "description": "Scalar contact-graph incidence systems L = S diag(1/m) S^T",
+  "scenes": [
+    {
+      "L_sha256": "739426604fbcc78bfb377229c4f60818644fa41875ea4fac7b47ef0dbfd4306d",
+      "n_contacts": 3,
+      "name": "mass_ratio_patch_incidence",
+      "nnz": 7,
+      "rhs_sha256": "bfeb5a879b3784d3d7c5fa01afbe8ea936b304573a956f329300d34c2bc741a2",
+      "source": "box_column (patch chain)"
+    },
+    {
+      "L_sha256": "314d91da57a20be6312d916e8914af5c25f8f94705e0cd3da9f4b5816af771f0",
+      "n_contacts": 8,
+      "name": "eight_body_patch_incidence",
+      "nnz": 22,
+      "rhs_sha256": "c8d277e09b23d6f9adba4422314867b1e571367c72b7f1bfc84c9f88ecf5b1dd",
+      "source": "box_column (patch chain)"
+    },
+    {
+      "L_sha256": "21de22873165718f37162b099640be804409b9f1a78b19da152ddbb3140c6146",
+      "n_contacts": 8,
+      "name": "asymmetric_patch_incidence",
+      "nnz": 22,
+      "rhs_sha256": "c8d277e09b23d6f9adba4422314867b1e571367c72b7f1bfc84c9f88ecf5b1dd",
+      "source": "box_column (patch chain)"
+    },
+    {
+      "L_sha256": "bd0766c611cb4d087f7cf9e6107137bfa4b32af374fb6f2d89c65a7f43b7c41d",
+      "n_contacts": 3,
+      "name": "mass_ratio_point_chain",
+      "nnz": 7,
+      "rhs_sha256": "bfeb5a879b3784d3d7c5fa01afbe8ea936b304573a956f329300d34c2bc741a2",
+      "source": "column_pointmass (point chain)"
+    },
+    {
+      "L_sha256": "314d91da57a20be6312d916e8914af5c25f8f94705e0cd3da9f4b5816af771f0",
+      "n_contacts": 8,
+      "name": "eight_body_point_chain",
+      "nnz": 22,
+      "rhs_sha256": "c8d277e09b23d6f9adba4422314867b1e571367c72b7f1bfc84c9f88ecf5b1dd",
+      "source": "column_pointmass (point chain)"
+    },
+    {
+      "L_sha256": "b97a6cc1bac3bba94e3ea1f02c48470313c804d2902575ab78097f8465268fa6",
+      "n_contacts": 32,
+      "name": "eight_box_tower_incidence",
+      "nnz": 352,
+      "rhs_sha256": "d15d4d8b6ab7648a32678263009b3d37a0e77dc231c4184f667cdf6d5064707b",
+      "source": "eight-box tower point contacts"
+    },
+    {
+      "L_sha256": "c378d1895e498df284771d112caccd1588023d48fd1b4b61777f22ba5bce6e42",
+      "n_contacts": 32,
+      "name": "asymmetric_tower_incidence",
+      "nnz": 352,
+      "rhs_sha256": "d15d4d8b6ab7648a32678263009b3d37a0e77dc231c4184f667cdf6d5064707b",
+      "source": "asymmetric tower point contacts"
+    },
+    {
+      "L_sha256": "3003922dd2883948cb6cd75ef74241c5339fddb5c48d26efdb34509a893dec34",
+      "n_contacts": 176,
+      "name": "packing_50",
+      "nnz": 1810,
+      "rhs_sha256": "83686928b32be4ec718947ba54ab2d5ac293120cc82bf4c6f93328ab9eb46346",
+      "source": "settled sphere packing"
+    },
+    {
+      "L_sha256": "3118a4c0b6edf076288ebfea17f7a17dfced30d35c4bae5ee0b211c1fbea474c",
+      "n_contacts": 710,
+      "name": "packing_200",
+      "nnz": 8358,
+      "rhs_sha256": "b304664fe4b83b9a2a1d649616ad3cd5b6e415438858a9aca7a55d69fb3dc3c0",
+      "source": "settled sphere packing"
+    },
+    {
+      "L_sha256": "c544b319280e965dff0fb659f39ccfa56190dea26a3a8d1856ccfe7343865bcf",
+      "n_contacts": 3022,
+      "name": "packing_800",
+      "nnz": 40334,
+      "rhs_sha256": "fc6ea78fb0a46afee00a6d834949120c739d16bbf897cb98d7e0e1c0f0ecb69f",
+      "source": "settled sphere packing"
+    },
+    {
+      "L_sha256": "f7adb9e93c3c0c1f4f27f42d315f7074e49269f3b6b4646be8f41a1d42f60993",
+      "n_contacts": 441,
+      "name": "granular_step",
+      "nnz": 4743,
+      "rhs_sha256": "69e5cd13689d7de4653593ddc8d0b4e214d1285c7915b5d1643c313762fc1257",
+      "source": "frozen granular foot step"
+    }
+  ]
+}

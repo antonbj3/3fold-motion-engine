@@ -1,0 +1,70 @@
+{
+  "all_counts_exact": true,
+  "kind": "gate_stress",
+  "large_disp_fell_back": true,
+  "results": [
+    {
+      "D": 0.011250032112002373,
+      "counts_eq_oracle": true,
+      "gate_false_negatives": 0,
+      "n_flagged": 52,
+      "reason": "ok",
+      "route": "gated",
+      "scale_dx": 0.9,
+      "state_frame": 161,
+      "sum_counts": 15520,
+      "tag": "disp_0p90dx"
+    },
+    {
+      "D": 0.012500031851232052,
+      "counts_eq_oracle": true,
+      "gate_false_negatives": 0,
+      "n_flagged": 256,
+      "reason": "displacement_exceeds_bound",
+      "route": "direct",
+      "scale_dx": 1.0,
+      "state_frame": 161,
+      "sum_counts": 15563,
+      "tag": "disp_1p00dx"
+    },
+    {
+      "D": 0.01312503032386303,
+      "counts_eq_oracle": true,
+      "gate_false_negatives": 0,
+      "n_flagged": 256,
+      "reason": "displacement_exceeds_bound",
+      "route": "direct",
+      "scale_dx": 1.05,
+      "state_frame": 161,
+      "sum_counts": 15560,
+      "tag": "disp_1p05dx"
+    },
+    {
+      "D": 0.0,
+      "counts_eq_oracle": true,
+      "gate_false_negatives": 0,
+      "n_flagged": 256,
+      "reason": "stale_grid",
+      "route": "direct",
+      "scale_dx": 0.10000000000000002,
+      "state_frame": 162,
+      "sum_counts": 15680,
+      "tag": "stale_lag2"
+    },
+    {
+      "D": 0.0,
+      "counts_eq_oracle": true,
+      "gate_false_negatives": 0,
+      "n_flagged": 256,
+      "reason": "grid_newer_than_particles",
+      "route": "direct",
+      "scale_dx": 0.10000000000000002,
+      "state_frame": 159,
+      "sum_counts": 15680,
+      "tag": "grid_newer"
+    }
+  ],
+  "stale_fell_back": true,
+  "wrong_frame_grid_rejected": true,
+  "record_origin": "independent verification"
+}

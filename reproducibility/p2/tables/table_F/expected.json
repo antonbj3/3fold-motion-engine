@@ -1,0 +1,26 @@
+{
+  "appendix": "F",
+  "title": "Repeated batch bytes (cross-device)",
+  "manuscript_tables": [
+    [
+      [
+        "Batch case",
+        "Environments [–]",
+        "ADMM budget [–]",
+        "L4 = A10G = H100: SHA-256"
+      ],
+      [
+        "A1, nominal stick",
+        "4096",
+        "200",
+        "`4d5d4747983a3de20aed4d49b12f453ced005275bce8edd94e956d4aa9c3c7d3`"
+      ],
+      [
+        "A1, cone binding",
+        "4096",
+        "500",
+        "`24a370fedefcc7a7b2a3dddb7ebe1bc2432a0259bc2c2265304cb4db1bfd9bf6`"
+      ]
+    ]
+  ]
+}

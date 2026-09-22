@@ -1,0 +1,10 @@
+{
+ "appendix": "AA",
+ "checked_cells": 73,
+ "gap_cells": 3,
+ "gaps": [
+  "AA: 'canonical run records equal to per-run records' (13), 'saved parameter arrays equal to the recorded digest' (16) and 'driver scripts in the per-run module provenance' (0) were computed by the producer's audit over per-run records that are not bundled; declared gaps (see source_availability.json). The branch-sensitivity range and the pass/wall ranges are now regenerated from the bundled CPU-reference records and the two solver-module hashes from the bundled audit."
+ ],
+ "mismatches": [],
+ "ok": true
+}

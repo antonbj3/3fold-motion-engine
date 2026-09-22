@@ -1,0 +1,6 @@
+Mass CRB p50,5.726e-02,5.726e-02,1.713e-02,1.713e-02,(N·m)⁻¹
+Friction CRB p50,5.941e-02,5.941e-02,3.434e-02,3.434e-02,(N·m)⁻¹
+Yaw inertia CRB p50,—,1.268415,—,4.869e-02,(N·m)⁻¹
+Mass improvement,—,—,3.343,3.3426,ratio
+Friction improvement,—,—,1.730,1.7298,ratio
+

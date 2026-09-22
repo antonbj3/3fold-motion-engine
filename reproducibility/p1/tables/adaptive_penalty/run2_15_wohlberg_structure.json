@@ -1,0 +1,20 @@
+{
+  "index": 15,
+  "scene": "quadruped_sticking_stance",
+  "method": "wohlberg_structure",
+  "rho0": 0.30665892369047437,
+  "rho_oracle": 1.6834848153442517e-05,
+  "rho_structure": 0.30665892369047437,
+  "rho_trace_mean": 3.351821816095212,
+  "iterations": 9,
+  "rho_changes": 8,
+  "rho_final": 0.0011978864206659155,
+  "residual": 8.754327818216723e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "18147a9dad32b6e726034c13f8c2c324a7df760f62772c53bcffbeb835d42f68",
+  "n_c": 4,
+  "elapsed_seconds": 0.004483120981603861,
+  "command": "archived benchmark invocation: RUN 15 wohlberg_structure",
+  "record_sha256": "398dd6f774b49a65b5a86560890957e4db33d5d7b91f74dd607153f963d88b80"
+}

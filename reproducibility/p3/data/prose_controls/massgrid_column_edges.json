@@ -1,0 +1,217 @@
+{
+  "field_module_sha256": "5dd8831074c72ad3650c64371a4e38162262d62271362ff0206e14db26bd06ac",
+  "saved_grid_and_surface": {
+    "disappearance_at_half": {
+      "columns_particles_but_half_grid_empty": 150,
+      "particles_in_those_columns": 26500
+    },
+    "n_grids": 50,
+    "note": "ptop/cnt are the saved-grid family's saved per-column particle surface (real pair); domain = theta=0.5 grid nonempty (the saved-grid family's definition)",
+    "theta_sweep": [
+      {
+        "cols_over_one_cell": 66034,
+        "cols_under_half_cell": 0,
+        "cols_under_one_cell": 0,
+        "columns_in_domain": 75900,
+        "columns_theta_grid_empty": 0,
+        "diff_max_mm": 4.905549685160312,
+        "diff_mean_mm": 2.604565778078867,
+        "diff_min_mm": 1.1918634176254217,
+        "diff_p05_mm": 1.876693467299137,
+        "diff_p95_mm": 3.010986248652134,
+        "theta": 0.0
+      },
+      {
+        "cols_over_one_cell": 33052,
+        "cols_under_half_cell": 0,
+        "cols_under_one_cell": 0,
+        "columns_in_domain": 75900,
+        "columns_theta_grid_empty": 0,
+        "diff_max_mm": 2.8478632370630836,
+        "diff_mean_mm": 1.6848248909466792,
+        "diff_min_mm": 0.3626381357510894,
+        "diff_p05_mm": 0.637050097187361,
+        "diff_p95_mm": 2.6564213136831856,
+        "theta": 0.01
+      },
+      {
+        "cols_over_one_cell": 2221,
+        "cols_under_half_cell": 0,
+        "cols_under_one_cell": 0,
+        "columns_in_domain": 75900,
+        "columns_theta_grid_empty": 0,
+        "diff_max_mm": 2.319518228371939,
+        "diff_mean_mm": 0.8318934021456278,
+        "diff_min_mm": -0.12687246004740305,
+        "diff_p05_mm": 0.19344215591748648,
+        "diff_p95_mm": 2.0318473378817177,
+        "theta": 0.05
+      },
+      {
+        "cols_over_one_cell": 135,
+        "cols_under_half_cell": 0,
+        "cols_under_one_cell": 0,
+        "columns_in_domain": 75900,
+        "columns_theta_grid_empty": 0,
+        "diff_max_mm": 2.1975129842758125,
+        "diff_mean_mm": 0.552194236576898,
+        "diff_min_mm": -0.6799012422561701,
+        "diff_p05_mm": -0.14385233322779245,
+        "diff_p95_mm": 1.4188290884097448,
+        "theta": 0.1
+      },
+      {
+        "cols_over_one_cell": 0,
+        "cols_under_half_cell": 955,
+        "cols_under_one_cell": 0,
+        "columns_in_domain": 75900,
+        "columns_theta_grid_empty": 0,
+        "diff_max_mm": 1.1804213126500458,
+        "diff_mean_mm": 0.4142934899804993,
+        "diff_min_mm": -1.7252047856648745,
+        "diff_p05_mm": -0.30509966115156717,
+        "diff_p95_mm": 0.8817003419001908,
+        "theta": 0.25
+      },
+      {
+        "cols_over_one_cell": 0,
+        "cols_under_half_cell": 43139,
+        "cols_under_one_cell": 23,
+        "columns_in_domain": 75900,
+        "columns_theta_grid_empty": 0,
+        "diff_max_mm": 0.5264316995938628,
+        "diff_mean_mm": -0.7453463870506858,
+        "diff_min_mm": -3.266677757104236,
+        "diff_p05_mm": -1.564322784543043,
+        "diff_p95_mm": 0.4636989285548538,
+        "theta": 0.5
+      }
+    ]
+  },
+  "simulator_run_pair": {
+    "disappearance": {
+      "columns_grid_empty_at_half": 239,
+      "columns_with_particles": 8458,
+      "particles_in_vanished_columns": 7236
+    },
+    "sanity": {
+      "mass_nonzero_node_j_range": [
+        1,
+        18
+      ],
+      "mass_total_kg": 1.0655275002169668,
+      "n_particles": 628474,
+      "particle_node_j_range": [
+        2,
+        17
+      ]
+    },
+    "sub_threshold": {
+      "frac_mass_of_le_half_nodes": 0.05773509638775939,
+      "frac_particles_le_half": 0.03208724625044154,
+      "frac_particles_zero": 0.0,
+      "half_cell_mass_kg": 6.781684027777777e-06,
+      "particles_in_node_le_half": 20166,
+      "particles_in_node_zero": 0
+    },
+    "theta_sweep": [
+      {
+        "fn_cells": 0,
+        "fn_frac_of_particle_cells": 0.0,
+        "fp_cells": 39658,
+        "fp_frac_of_grid_cells": 0.3538491737749384,
+        "grid_occ_cells": 112076,
+        "particle_occ_cells": 72418,
+        "theta": 0.0,
+        "threshold_kg": 0.0
+      },
+      {
+        "fn_cells": 0,
+        "fn_frac_of_particle_cells": 0.0,
+        "fp_cells": 31062,
+        "fp_frac_of_grid_cells": 0.3001739466563587,
+        "grid_occ_cells": 103480,
+        "particle_occ_cells": 72418,
+        "theta": 0.01,
+        "threshold_kg": 1.3563368055555556e-07
+      },
+      {
+        "fn_cells": 0,
+        "fn_frac_of_particle_cells": 0.0,
+        "fp_cells": 26379,
+        "fp_frac_of_grid_cells": 0.26700203447473103,
+        "grid_occ_cells": 98797,
+        "particle_occ_cells": 72418,
+        "theta": 0.05,
+        "threshold_kg": 6.781684027777778e-07
+      },
+      {
+        "fn_cells": 0,
+        "fn_frac_of_particle_cells": 0.0,
+        "fp_cells": 22022,
+        "fp_frac_of_grid_cells": 0.23318509106310886,
+        "grid_occ_cells": 94440,
+        "particle_occ_cells": 72418,
+        "theta": 0.1,
+        "threshold_kg": 1.3563368055555556e-06
+      },
+      {
+        "fn_cells": 187,
+        "fn_frac_of_particle_cells": 0.002582230937059847,
+        "fp_cells": 13327,
+        "fp_frac_of_grid_cells": 0.1557656794221464,
+        "grid_occ_cells": 85558,
+        "particle_occ_cells": 72418,
+        "theta": 0.25,
+        "threshold_kg": 3.3908420138888887e-06
+      },
+      {
+        "fn_cells": 4802,
+        "fn_frac_of_particle_cells": 0.0663094810682427,
+        "fp_cells": 11115,
+        "fp_frac_of_grid_cells": 0.14117691887566525,
+        "grid_occ_cells": 78731,
+        "particle_occ_cells": 72418,
+        "theta": 0.5,
+        "threshold_kg": 6.781684027777777e-06
+      }
+    ],
+    "thin_slab_proxy": [
+      {
+        "n_particles": 628474,
+        "occ_0p1": 84460,
+        "occ_any": 84460,
+        "occ_half": 70440,
+        "stride": 1
+      },
+      {
+        "n_particles": 314237,
+        "occ_0p1": 82378,
+        "occ_any": 82378,
+        "occ_half": 25811,
+        "stride": 2
+      },
+      {
+        "n_particles": 157119,
+        "occ_0p1": 75947,
+        "occ_any": 75947,
+        "occ_half": 897,
+        "stride": 4
+      },
+      {
+        "n_particles": 78560,
+        "occ_0p1": 58461,
+        "occ_any": 58461,
+        "occ_half": 39,
+        "stride": 8
+      },
+      {
+        "n_particles": 39280,
+        "occ_0p1": 35255,
+        "occ_any": 35255,
+        "occ_half": 4,
+        "stride": 16
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+"A1, nominal stick",RTX 5070 (shared GPU),4096,200,1e-8,0.9985,18319,2,128350
+"A1, cone binding",RTX 5070 (shared GPU),4096,200,1e-8,—,9559,2,68487
+"A1, cone binding",RTX 5070 (shared GPU),4096,2000,1e-8,0.7766,—,—,—
+"ANYmal C, nominal stick",L4,4096,200,1e-8,0.9971,16703.5,2,79506.6
+"Talos, stick",L4,4096,200,1e-8,1.0000,4919.6,1,72009.8
+

@@ -1,0 +1,12 @@
+Trajectory population,512,environments
+Observation window,50,steps
+GPU chunk,1024,environment-steps
+Parameter iterations,8,iterations
+Forward budget,300,iterations
+Torque noise σ_τ,1,N·m
+Gaussian median absolute-error factor,0.6745,–
+Defective-driver integer repetitions,3,runs
+Defective-driver floating repetitions,5,runs
+Corrected derivative-check processes,2,processes
+Corrected derivative-check window,10,steps
+

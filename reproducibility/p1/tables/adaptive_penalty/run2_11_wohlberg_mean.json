@@ -1,0 +1,21 @@
+{
+  "index": 11,
+  "scene": "sphere_packing_800",
+  "method": "wohlberg_mean",
+  "rho0": 750.1860789500919,
+  "rho_oracle": 477.39068272409924,
+  "rho_structure": 150.72902180767414,
+  "rho_trace_mean": 750.1860789500919,
+  "iterations": 2000,
+  "rho_changes": 3,
+  "iteration_cap": 2000,
+  "rho_final": 375.09303947504594,
+  "residual": 8.66826118010698e-07,
+  "converged": false,
+  "status": "censored_2000",
+  "solution_sha256": "e616efc4e10f8b7165f8919bb8818eb2491d77661d1854ebe8d98d428879bbb2",
+  "n_c": 3022,
+  "elapsed_seconds": 16.84870221791789,
+  "command": "archived benchmark invocation: RUN 11 wohlberg_mean",
+  "record_sha256": "0c892c94ef06c552d64793825a489c0f4560583a0892e643a049f60660ab4042"
+}

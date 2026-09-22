@@ -1,0 +1,74 @@
+{
+  "appendix": "E",
+  "title": "Batch budgets and rates",
+  "manuscript_tables": [
+    [
+      [
+        "Population",
+        "Device",
+        "Environments [–]",
+        "ADMM budget [–]",
+        "r_nat gate [N·s]",
+        "Fraction below gate [–]",
+        "Forward [env-steps/s]",
+        "Directions/env [–]",
+        "Sensitivity [env-directions/s]"
+      ],
+      [
+        "A1, nominal stick",
+        "RTX 5070 (shared GPU)",
+        "4096",
+        "200",
+        "1e-8",
+        "0.9985",
+        "18 320",
+        "2",
+        "128 350"
+      ],
+      [
+        "A1, cone binding",
+        "RTX 5070 (shared GPU)",
+        "4096",
+        "200",
+        "1e-8",
+        "—",
+        "9 559",
+        "2",
+        "68 488"
+      ],
+      [
+        "A1, cone binding",
+        "RTX 5070 (shared GPU)",
+        "4096",
+        "2000",
+        "1e-8",
+        "0.7766",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "ANYmal C, nominal stick",
+        "L4",
+        "4096",
+        "200",
+        "1e-8",
+        "0.9971",
+        "16 703.5",
+        "2",
+        "79 506.6"
+      ],
+      [
+        "Talos, stick",
+        "L4",
+        "4096",
+        "200",
+        "1e-8",
+        "1.0000",
+        "4 919.6",
+        "1",
+        "72 009.8"
+      ]
+    ]
+  ]
+}

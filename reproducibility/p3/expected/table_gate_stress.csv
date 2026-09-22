@@ -1,0 +1,6 @@
+tag,scale_dx,state_frame,D,reason,route,n_flagged,sum_counts,counts_eq_oracle,gate_false_negatives
+disp_0p90dx,0.9,161,0.0112500321,ok,gated,52,15520,True,0
+disp_1p00dx,1,161,0.0125000319,displacement_exceeds_bound,direct,256,15563,True,0
+disp_1p05dx,1.05,161,0.0131250303,displacement_exceeds_bound,direct,256,15560,True,0
+grid_newer,0.1,159,0,grid_newer_than_particles,direct,256,15680,True,0
+stale_lag2,0.1,162,0,stale_grid,direct,256,15680,True,0

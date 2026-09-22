@@ -1,0 +1,18 @@
+{
+  "F": 25600,
+  "Hs_rel": 6.959271783122608e-12,
+  "acc": "int64",
+  "chunk": 1024,
+  "cost_rel": 0.0,
+  "dlam_I_rel": 1.6336560041387586e-08,
+  "dlam_m_rel": 1.0343363326198246e-08,
+  "dlam_mu_rel": 1.1068009833638079e-09,
+  "gs_rel": 5.1554505546421e-11,
+  "lam_rel": 0.0,
+  "ncp_res_gpu": 1.2825994220588832e-06,
+  "ncp_res_np": 1.2825994220588832e-06,
+  "sigma": 1.0,
+  "sim": "identification_sim_B512.npz",
+  "tag": "corrected_int64_w50_gcg200",
+  "window": 50
+}

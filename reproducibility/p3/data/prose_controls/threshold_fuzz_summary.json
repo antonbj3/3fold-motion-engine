@@ -1,0 +1,40 @@
+{
+  "by_kind": {
+    "dense": {
+      "D1_breach": 75,
+      "gated_breach": 75,
+      "n": 75
+    },
+    "face": {
+      "D1_breach": 71,
+      "gated_breach": 71,
+      "n": 75
+    },
+    "far": {
+      "D1_breach": 0,
+      "gated_breach": 0,
+      "n": 75
+    },
+    "sparse": {
+      "D1_breach": 24,
+      "gated_breach": 24,
+      "n": 75
+    }
+  },
+  "gated_FN": 0,
+  "gated_FP": 0,
+  "gpu_cpu_mismatch": 0,
+  "massgrid_FN": {
+    "0.0": 1,
+    "0.05": 22,
+    "0.25": 139,
+    "0.5": 170
+  },
+  "massgrid_FP": {
+    "0.0": 15,
+    "0.05": 1,
+    "0.25": 0,
+    "0.5": 0
+  },
+  "n_iter": 300
+}

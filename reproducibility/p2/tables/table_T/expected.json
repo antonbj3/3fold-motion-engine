@@ -1,0 +1,58 @@
+{
+  "appendix": "T",
+  "title": "Observation-derivative diagnostic",
+  "manuscript_tables": [
+    [
+      [
+        "Trajectory",
+        "Driver",
+        "Window [steps]",
+        "Hessian error [–]",
+        "Gradient error [–]",
+        "Mass direction error [–]",
+        "Inertia direction error [–]",
+        "Friction direction error [–]"
+      ],
+      [
+        "Standard",
+        "Missing upload",
+        "50",
+        "3.061e-2",
+        "3.084e-2",
+        "2.689e-2",
+        "3.386e-2",
+        "3.137e-2"
+      ],
+      [
+        "Standard",
+        "Corrected",
+        "50",
+        "6.959e-12",
+        "5.155e-11",
+        "1.034e-8",
+        "1.634e-8",
+        "1.107e-9"
+      ],
+      [
+        "Selected",
+        "Missing upload",
+        "50",
+        "13.46",
+        "3.745",
+        "1.518",
+        "2.401",
+        "0.6335"
+      ],
+      [
+        "Selected",
+        "Corrected",
+        "50",
+        "4.263e-12",
+        "2.084e-13",
+        "2.568e-12",
+        "3.006e-11",
+        "8.272e-13"
+      ]
+    ]
+  ]
+}

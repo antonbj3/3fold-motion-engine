@@ -1,0 +1,13 @@
+Mass error p50,1.126e-02,,,relative
+Mass error p95,3.818e-02,,3.818e-02,relative
+Friction error p50,2.319e-02,,,relative
+Friction error p95,8.414e-02,,8.414e-02,relative
+Yaw inertia error p50,3.294e-02,,,relative
+Yaw inertia error p95,1.072e-01,,,relative
+Mass median-error / CRB prediction,0.9748,,,ratio
+Friction median-error / CRB prediction,1.0009,,,ratio
+Yaw inertia median-error / CRB prediction,1.0030,,,ratio
+Logged last-trial contact residual maximum,2.900e-02,,,N·s
+"Logged last-trial residual, final iteration",,,,N·s
+Logged last-trial residual maximum,,,,N·s
+

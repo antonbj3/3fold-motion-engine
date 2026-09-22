@@ -1,0 +1,20 @@
+{
+  "index": 4,
+  "scene": "three_body_column_separating",
+  "method": "he_mean",
+  "rho0": 0.6676666666666665,
+  "rho_oracle": 0.001646356867799696,
+  "rho_structure": 0.0002927682519584372,
+  "rho_trace_mean": 0.6676666666666665,
+  "iterations": 1878,
+  "rho_changes": 3,
+  "rho_final": 0.08345833333333331,
+  "residual": 9.976020010071807e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "e82800af8221fffe55992e3b12db7a4c81eb87b5cd602cfbcd60d1e4f2420726",
+  "n_c": 3,
+  "elapsed_seconds": 0.18123349198140204,
+  "command": "archived benchmark invocation: RUN 4 he_mean",
+  "record_sha256": "b40c436647ab58be419477f3b3964b479485720d8d6a932e16c5279803f5f8a3"
+}

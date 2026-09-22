@@ -1,0 +1,45 @@
+{
+  "entries": [
+    {
+      "carried_in": [
+        "the keepout module docstring (simulator run, 287 s GPU)",
+        "cost probe constant at data/prose_controls/incremental_paired_ratio.json",
+        "reference_full_rebuild_ms in incremental_paired_ratio.json"
+      ],
+      "gap": "the original per-update timing raw was not retained; the value is carried in the module docstring and re-carried as a constant by later probes",
+      "median": true,
+      "quantity": "occupancy field rebuild, per update (200k particles)",
+      "replayable": false,
+      "source_kind": "archived_reported",
+      "unit": "ms",
+      "value": 84.66
+    },
+    {
+      "carried_in": [
+        "the keepout module docstring (17.47x cheaper than the field rebuild)",
+        "cad_ms in incremental_paired_ratio.json"
+      ],
+      "gap": "no per-update hull timing raw is retained; the value is carried as a constant",
+      "median": true,
+      "quantity": "static convex-hull keep-out test, per update",
+      "replayable": false,
+      "source_kind": "archived_reported",
+      "unit": "ms",
+      "value": 4.85
+    },
+    {
+      "carried_in": [
+        "the incremental study results table"
+      ],
+      "gap": "the retained frame-cost raw is a LATER reproduce pass (median 70.26 ms, 0.0352 within 10 ms); the first-pass raw was overwritten. The 3.5 % within 10 ms is reproduced by the retained raw and is separately asserted.",
+      "median": true,
+      "quantity": "exact incremental full flow, first pass, per frame",
+      "replayable": false,
+      "source_kind": "archived_reported",
+      "unit": "ms",
+      "value": 66.52
+    }
+  ],
+  "kind": "archived_reported_values",
+  "note": "Values retained in the comparative study whose original measurement raw is NOT retained in this package. They are archived reported values (carried in a module docstring and in cost/ratio probes), not replayable raw."
+}

@@ -1,0 +1,449 @@
+{
+  "author": "Anton Björkegren",
+  "count": 21,
+  "dataset": "ncp-contact-scenes",
+  "scenes": {
+    "00": {
+      "hdf5": "scenes/00.hdf5",
+      "hdf5_bytes": 19416,
+      "hdf5_sha256": "66550b9960b49cc12d35c16929ef2da46f6b2fea814cdf8f0afe290fddaca149",
+      "index": 0,
+      "json": "scenes/00.json",
+      "json_bytes": 2970,
+      "json_sha256": "ef795a54d33de40be2cc74442c496f62cc3146a308ac05c68fbf753911498ebb",
+      "model": "body_contacts",
+      "n_b": 1,
+      "n_c": 4,
+      "reference": "dense_rebuild",
+      "scene": "cube",
+      "verify": {
+        "G_abs": 5.551115123125783e-17,
+        "G_rel_fro": 2.110382192020081e-16,
+        "G_rel_max": 2.0816681711721685e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "01": {
+      "hdf5": "scenes/01.hdf5",
+      "hdf5_bytes": 21496,
+      "hdf5_sha256": "6683f454f940889bd4fdafdfc10e032b6e3da2b9534f694c078f59c7c6411f51",
+      "index": 1,
+      "json": "scenes/01.json",
+      "json_bytes": 19160,
+      "json_sha256": "e56e284d44cb5e67ea64b452b12a84565fc187f3078e4ad46c5c5d1a514b1722",
+      "model": "body_contacts",
+      "n_b": 8,
+      "n_c": 32,
+      "reference": "dense_rebuild",
+      "scene": "eight_box_tower",
+      "verify": {
+        "G_abs": 2.6645352591003757e-15,
+        "G_rel_fro": 2.4405676227769743e-16,
+        "G_rel_max": 3.330669073875469e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "02": {
+      "hdf5": "scenes/02.hdf5",
+      "hdf5_bytes": 19440,
+      "hdf5_sha256": "c8c7b2b15999b25cb9db2b0a902998bdf7d8651fc2c3d7679c32d236cfc801a0",
+      "index": 2,
+      "json": "scenes/02.json",
+      "json_bytes": 1966,
+      "json_sha256": "7e98279867e8d33e58bd1957128929b104607f7fe1ea6240f5c00b0716ef4673",
+      "model": "body_contacts",
+      "n_b": 3,
+      "n_c": 3,
+      "reference": "dense_rebuild",
+      "scene": "three_body_column_normal",
+      "verify": {
+        "G_abs": 0.0,
+        "G_rel_fro": 0.0,
+        "G_rel_max": 0.0,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "03": {
+      "hdf5": "scenes/03.hdf5",
+      "hdf5_bytes": 19488,
+      "hdf5_sha256": "3475e65930585910e8c4e6633e54284b37fe9ed655ee31d585b6af0888fb0928",
+      "index": 3,
+      "json": "scenes/03.json",
+      "json_bytes": 1999,
+      "json_sha256": "0c240293aa4ef0b81e9593c458daaeac2880e452f28efb2f5d2bc70931f8776a",
+      "model": "body_contacts",
+      "n_b": 3,
+      "n_c": 3,
+      "reference": "dense_rebuild",
+      "scene": "three_body_column_tangential_drive",
+      "verify": {
+        "G_abs": 0.0,
+        "G_rel_fro": 0.0,
+        "G_rel_max": 0.0,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "04": {
+      "hdf5": "scenes/04.hdf5",
+      "hdf5_bytes": 19472,
+      "hdf5_sha256": "4b044d78d2e4d907c16a23e3465bdfcb0e0ee852f984b6496e8123f0d8d5567b",
+      "index": 4,
+      "json": "scenes/04.json",
+      "json_bytes": 1984,
+      "json_sha256": "b12f788a5f23f17ecb586cc9b89382967c616087a80319073fff23371d088e98",
+      "model": "body_contacts",
+      "n_b": 3,
+      "n_c": 3,
+      "reference": "dense_rebuild",
+      "scene": "three_body_column_separating",
+      "verify": {
+        "G_abs": 0.0,
+        "G_rel_fro": 0.0,
+        "G_rel_max": 0.0,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "05": {
+      "hdf5": "scenes/05.hdf5",
+      "hdf5_bytes": 22288,
+      "hdf5_sha256": "001f0da28250bdd4452b2fa361c9c0b9faa73125c9c1e602c0603e67430f9dd7",
+      "index": 5,
+      "json": "scenes/05.json",
+      "json_bytes": 19385,
+      "json_sha256": "d1a82f337eef2b591b464a92b1e6e4b121f25f78ded82ca9f76295eca71e474b",
+      "model": "body_contacts",
+      "n_b": 8,
+      "n_c": 32,
+      "reference": "dense_rebuild",
+      "scene": "eight_box_tower_mass_imbalance",
+      "verify": {
+        "G_abs": 1.7763568394002505e-15,
+        "G_rel_fro": 2.6225434851488255e-16,
+        "G_rel_max": 4.436455642857766e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "06": {
+      "hdf5": "scenes/06.hdf5",
+      "hdf5_bytes": 27624,
+      "hdf5_sha256": "7fff024ff54812a640bd2d8078910831201f5f768da1872d875d41c3649d6602",
+      "index": 6,
+      "json": "scenes/06.json",
+      "json_bytes": 33930,
+      "json_sha256": "2e42ae03b32e58af927e7b06f480090958c620100fd5e7082eecf1f0647e0186",
+      "model": "body_contacts",
+      "n_b": 8,
+      "n_c": 64,
+      "reference": "dense_rebuild",
+      "scene": "lattice",
+      "verify": {
+        "G_abs": 3.552713678800501e-15,
+        "G_rel_fro": 2.6144900909666465e-16,
+        "G_rel_max": 4.440892098500626e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "07": {
+      "hdf5": "scenes/07.hdf5",
+      "hdf5_bytes": 181006,
+      "hdf5_sha256": "b4e5eed274e7aadd9d752e3e57d4c2992f7a35253ac4c9983724fed0d101904c",
+      "index": 7,
+      "json": "scenes/07.json",
+      "json_bytes": 204072,
+      "json_sha256": "708da916e0ceed92482943f0e7b492781d6cec8514042dad15dbeae9bcbdf4f0",
+      "model": "body_contacts",
+      "n_b": 64,
+      "n_c": 256,
+      "reference": "dense_rebuild",
+      "scene": "random_contact_graph_256",
+      "verify": {
+        "G_abs": 3.552713678800501e-15,
+        "G_rel_fro": 2.836193483343459e-16,
+        "G_rel_max": 4.861193855477032e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "08": {
+      "hdf5": "scenes/08.hdf5",
+      "hdf5_bytes": 208690,
+      "hdf5_sha256": "2c42a50267697a0408b7bcfede8d1140dd89df517b850c153a0db8d0d54184d7",
+      "index": 8,
+      "json": "scenes/08.json",
+      "json_bytes": 346584,
+      "json_sha256": "8fc3bfeff5c17e9200d2d5648488b46cf8d0c60d786fb8309947accd990f7421",
+      "model": "body_contacts",
+      "n_b": 125,
+      "n_c": 441,
+      "reference": "dense_rebuild",
+      "scene": "granular_press_step",
+      "verify": {
+        "G_abs": 1.7053025658242404e-13,
+        "G_rel_fro": 3.292867909532472e-16,
+        "G_rel_max": 1.0966091601735169e-15,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "09": {
+      "hdf5": "scenes/09.hdf5",
+      "hdf5_bytes": 90267,
+      "hdf5_sha256": "c32d077157707dcf186a22ef338c0d821cbf65c22ea64a270517874f7177ca6d",
+      "index": 9,
+      "json": "scenes/09.json",
+      "json_bytes": 136910,
+      "json_sha256": "be5dc867589ea294d9f831f0ba4d4cd2338bbe946cb57e1a9cf2a53542195a7b",
+      "model": "body_contacts",
+      "n_b": 50,
+      "n_c": 176,
+      "reference": "dense_rebuild",
+      "scene": "sphere_packing_50",
+      "verify": {
+        "G_abs": 9.094947017729282e-13,
+        "G_rel_fro": 3.240286821779506e-16,
+        "G_rel_max": 7.337250304994273e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "10": {
+      "hdf5": "scenes/10.hdf5",
+      "hdf5_bytes": 345775,
+      "hdf5_sha256": "88030f4ac682b6ab14ece27ecb263f744e44e4f493dc058d247360c45bb4439e",
+      "index": 10,
+      "json": "scenes/10.json",
+      "json_bytes": 572169,
+      "json_sha256": "828a97f6aec40ef99fd32a43aba998b32b277d103542ae7c9672421c31c89e52",
+      "model": "body_contacts",
+      "n_b": 200,
+      "n_c": 710,
+      "reference": "sparse_assembly",
+      "scene": "sphere_packing_200",
+      "verify": {
+        "G_abs": 1.1368683772161603e-12,
+        "G_rel_fro": 3.479432013462594e-16,
+        "G_rel_max": 9.124807786650131e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "11": {
+      "hdf5": "scenes/11.hdf5",
+      "hdf5_bytes": 1548893,
+      "hdf5_sha256": "efa4935c997795a68c7a2530681e652b1573346a9d15cd2d84b4023fb654ad43",
+      "index": 11,
+      "json": "scenes/11.json",
+      "json_bytes": 2475335,
+      "json_sha256": "1b788d413788d2d228e146e9ee19a4f192b39fc360842d198ab74bdf4d6b195e",
+      "model": "body_contacts",
+      "n_b": 800,
+      "n_c": 3022,
+      "reference": "sparse_assembly",
+      "scene": "sphere_packing_800",
+      "verify": {
+        "G_abs": 1.3642420526593924e-12,
+        "G_rel_fro": 3.4943664453739143e-16,
+        "G_rel_max": 1.0951787676331546e-15,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "12": {
+      "hdf5": "scenes/12.hdf5",
+      "hdf5_bytes": 2237613,
+      "hdf5_sha256": "fc65f8aa9ae6742f324179efdabc7c1092f8b2a23c4f7eee450ad668204292cb",
+      "index": 12,
+      "json": "scenes/12.json",
+      "json_bytes": 1601946,
+      "json_sha256": "192aad483a6e70fac3b7bc8c6aa2c7deae3ea2badafb933bdb25f9f08d0f2c4e",
+      "model": "operator",
+      "n_b": 32,
+      "n_c": 256,
+      "reference": "dense_rebuild",
+      "scene": "dense_random_contact_operator_256",
+      "verify": {
+        "G_abs": 3.552713678800501e-14,
+        "G_rel_fro": 1.3788242732769416e-16,
+        "G_rel_max": 1.0685078649655042e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "13": {
+      "hdf5": "scenes/13.hdf5",
+      "hdf5_bytes": 19496,
+      "hdf5_sha256": "4f56f14193923c08ca42ac53f5e09ba67a48c6b4ab55668d40187617a69fcae7",
+      "index": 13,
+      "json": "scenes/13.json",
+      "json_bytes": 2002,
+      "json_sha256": "7095220e9c3be07050b53484ad7929782b4f1bb7d06357b5050c5432af5fe3d5",
+      "model": "body_contacts",
+      "n_b": 3,
+      "n_c": 3,
+      "reference": "dense_rebuild",
+      "scene": "heavy_top_column_tangential_drive",
+      "verify": {
+        "G_abs": 0.0,
+        "G_rel_fro": 0.0,
+        "G_rel_max": 0.0,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "14": {
+      "hdf5": "scenes/14.hdf5",
+      "hdf5_bytes": 19456,
+      "hdf5_sha256": "517e469b21556d665ca355e57fb33919bd06d01862261557b96599eeb6e4aa2c",
+      "index": 14,
+      "json": "scenes/14.json",
+      "json_bytes": 3932,
+      "json_sha256": "050b4bf94733635fe324d64fd0f458a5903ebc7cf226cc5e2ddf1de286b4f2c5",
+      "model": "body_contacts",
+      "n_b": 8,
+      "n_c": 8,
+      "reference": "dense_rebuild",
+      "scene": "stacked_mass_pairs_cone",
+      "verify": {
+        "G_abs": 0.0,
+        "G_rel_fro": 0.0,
+        "G_rel_max": 0.0,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "15": {
+      "hdf5": "scenes/15.hdf5",
+      "hdf5_bytes": 19456,
+      "hdf5_sha256": "7e4190623dc31312a604d2e05c7f9a237fac68d2add5c3b90b3bd78b86b49730",
+      "index": 15,
+      "json": "scenes/15.json",
+      "json_bytes": 8366,
+      "json_sha256": "db3dff17d3a599854b7d01f80d06a03ac89d18e55572ffa62046e2b3027511bf",
+      "model": "operator",
+      "n_b": 1,
+      "n_c": 4,
+      "reference": "dense_rebuild",
+      "scene": "quadruped_sticking_stance",
+      "verify": {
+        "G_abs": 7.216449660063518e-16,
+        "G_rel_fro": 1.1191334602101721e-16,
+        "G_rel_max": 1.291921521213669e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "16": {
+      "hdf5": "scenes/16.hdf5",
+      "hdf5_bytes": 19496,
+      "hdf5_sha256": "669f8e57fd316c01275a177ac65c138252c5085ea21cefaec486dc78e21ca298",
+      "index": 16,
+      "json": "scenes/16.json",
+      "json_bytes": 8388,
+      "json_sha256": "bf97d7b9e71fef775476d90fd394e8300520df7185586f5a919a5b731ccb56fc",
+      "model": "operator",
+      "n_b": 1,
+      "n_c": 4,
+      "reference": "dense_rebuild",
+      "scene": "quadruped_sliding_stance",
+      "verify": {
+        "G_abs": 7.216449660063518e-16,
+        "G_rel_fro": 1.1191334602101721e-16,
+        "G_rel_max": 1.291921521213669e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "17": {
+      "hdf5": "scenes/17.hdf5",
+      "hdf5_bytes": 19408,
+      "hdf5_sha256": "62a80725c823cef497cbe99392d3640daaacf5c7a7b8afde365d9acc988b3e6f",
+      "index": 17,
+      "json": "scenes/17.json",
+      "json_bytes": 11251,
+      "json_sha256": "59e90ccdfb08f4682812da507cda4bb9ec3758add9f45560f81b82eca13c6d31",
+      "model": "operator",
+      "n_b": 1,
+      "n_c": 2,
+      "reference": "dense_rebuild",
+      "scene": "humanoid",
+      "verify": {
+        "G_abs": 3.8510861166685117e-16,
+        "G_rel_fro": 3.965551974403138e-16,
+        "G_rel_max": 6.530125482412533e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "18": {
+      "hdf5": "scenes/18.hdf5",
+      "hdf5_bytes": 19456,
+      "hdf5_sha256": "481e9c21612f0b471cb65ff23aae03a4353f3987ced6e01ce7a39b28217cae27",
+      "index": 18,
+      "json": "scenes/18.json",
+      "json_bytes": 8375,
+      "json_sha256": "dc0711a4404efea272748bf8478ccefe7a7974f79cad4d052a6b57df7255bd69",
+      "model": "operator",
+      "n_b": 1,
+      "n_c": 4,
+      "reference": "dense_rebuild",
+      "scene": "quadruped_unloading_probe",
+      "verify": {
+        "G_abs": 4.440892098500626e-16,
+        "G_rel_fro": 4.637254054370749e-17,
+        "G_rel_max": 7.769431698205043e-17,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "19": {
+      "hdf5": "scenes/19.hdf5",
+      "hdf5_bytes": 19472,
+      "hdf5_sha256": "023718e51aec0be199136c19ceffddb1daf2ad344f2e124c371d57ef12c6911e",
+      "index": 19,
+      "json": "scenes/19.json",
+      "json_bytes": 8988,
+      "json_sha256": "6b78dcaa136119bb85a5edbad5573f68fccf4f059dc237b0202e524eab1ba512",
+      "model": "operator",
+      "n_b": 1,
+      "n_c": 4,
+      "reference": "dense_rebuild",
+      "scene": "batched_quadruped_sticking",
+      "verify": {
+        "G_abs": 1.915134717478395e-15,
+        "G_rel_fro": 1.9865902340581598e-16,
+        "G_rel_max": 3.4286536620624315e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    },
+    "20": {
+      "hdf5": "scenes/20.hdf5",
+      "hdf5_bytes": 19472,
+      "hdf5_sha256": "41d98c15af0a26fc74f446d45f6b30ca92c4f79a34e28438a8298e9f97e41878",
+      "index": 20,
+      "json": "scenes/20.json",
+      "json_bytes": 8964,
+      "json_sha256": "06146ae2c563bd0fa6d96b6440f8e8d44e451dcf97c4f66b0bd70b6aa77bd467",
+      "model": "operator",
+      "n_b": 1,
+      "n_c": 4,
+      "reference": "dense_rebuild",
+      "scene": "batched_quadruped_sliding",
+      "verify": {
+        "G_abs": 5.828670879282072e-16,
+        "G_rel_fro": 9.494430092447547e-17,
+        "G_rel_max": 1.0434302522343595e-16,
+        "b_abs": 0.0,
+        "mu_abs": 0.0
+      }
+    }
+  },
+  "schema": "contact-scene-v1"
+}

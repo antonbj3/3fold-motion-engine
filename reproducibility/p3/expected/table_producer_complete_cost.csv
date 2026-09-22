@@ -1,0 +1,17 @@
+run,label,frame,dist,nb,Q,route,n,n_flagged_summed,amort_over_direct,complete_gain_vs_direct,full_over_direct,query_only_over_direct,tests_reported_eq_actual,device,time_boundary
+a,negative_corner,160,corner,256,16,gated,161000,1661,0.821274441,0.178725559,1.60356489,0.53782914,True,shared GPU,paired 5-repeat median
+a,negative_dense,160,allnear,256,16,gated,161000,2217,0.971017076,0.0289829237,1.77033982,0.670637119,True,shared GPU,paired 5-repeat median
+a,negative_known_dense,120,allnear,256,16,gated,121000,2058,1.08362447,-0.0836244712,2.07683149,0.74691901,True,shared GPU,paired 5-repeat median
+a,small_1,160,sparse,1,16,direct,161000,16,1.75370216,-0.753702158,4.67187883,0.737123429,True,shared GPU,paired 5-repeat median
+a,small_32,160,sparse,32,16,direct,161000,512,1.75590582,-0.755905823,4.66550557,0.731724533,True,shared GPU,paired 5-repeat median
+a,win_known_frame,150,sparse,1024,16,gated,151000,2985,0.353738677,0.646261323,0.618303253,0.273374694,True,shared GPU,paired 5-repeat median
+a,win_new_frame,160,sparse,1024,16,gated,161000,3037,0.352682462,0.647317538,0.56204366,0.249529077,True,shared GPU,paired 5-repeat median
+a,win_new_geometry,160,slab,1024,16,gated,161000,11577,0.944679635,0.0553203649,1.18222137,0.868344373,True,shared GPU,paired 5-repeat median
+b,negative_corner,160,corner,256,16,gated,161000,1661,0.856167908,0.143832092,1.64610401,0.551514029,True,shared GPU,paired 5-repeat median
+b,negative_dense,160,allnear,256,16,gated,161000,2217,0.961574758,0.0384252419,1.75421836,0.670726733,True,shared GPU,paired 5-repeat median
+b,negative_known_dense,120,allnear,256,16,gated,121000,2058,1.04089541,-0.0408954097,2.01322562,0.746849667,True,shared GPU,paired 5-repeat median
+b,small_1,160,sparse,1,16,direct,161000,16,1.80944591,-0.809445907,4.7874864,0.73720683,True,shared GPU,paired 5-repeat median
+b,small_32,160,sparse,32,16,direct,161000,512,1.78311655,-0.783116554,4.72070237,0.737201939,True,shared GPU,paired 5-repeat median
+b,win_known_frame,150,sparse,1024,16,gated,151000,2985,0.355701475,0.644298525,0.595928712,0.268082101,True,shared GPU,paired 5-repeat median
+b,win_new_frame,160,sparse,1024,16,gated,161000,3037,0.346605588,0.653394412,0.576623532,0.257873389,True,shared GPU,paired 5-repeat median
+b,win_new_geometry,160,slab,1024,16,gated,161000,11577,0.953859918,0.0461400821,1.18011584,0.867682295,True,shared GPU,paired 5-repeat median

@@ -1,0 +1,21 @@
+case,frame,n_particles,D1_strict,D2_raster,gate,D3_th0.0,D3_th0.05,D3_th0.25,D3_th0.5,gpu_grid_occ_th0.5,gpu_particle_strict,massgrid_declares,FP_massgrid,FN_massgrid,gated_declares,FP_gated,FN_gated,gpu_ok,note
+real_sim_f070,70,71000,0,13,1,101,11,2,0,0,0,0,0,0,0,0,0,1,simulator s.p2g() of the saved particles
+real_sim_f071,71,72000,0,15,1,99,11,2,0,0,0,0,0,0,0,0,0,1,simulator s.p2g() of the saved particles
+real_sim_f072,72,73000,0,17,1,98,12,3,0,0,0,0,0,0,0,0,0,1,simulator s.p2g() of the saved particles
+real_sim_f073,73,74000,1,19,1,98,13,3,0,0,1,0,0,1,1,0,0,1,simulator s.p2g() of the saved particles
+real_sim_f074,74,75000,1,19,1,102,13,4,0,0,1,0,0,1,1,0,0,1,simulator s.p2g() of the saved particles
+real_sim_f075,75,76000,2,20,1,107,14,5,0,0,2,0,0,1,1,0,0,1,simulator s.p2g() of the saved particles
+real_sim_f076,76,77000,2,22,1,109,17,5,0,0,2,0,0,1,1,0,0,1,simulator s.p2g() of the saved particles
+real_sim_f077,77,78000,2,22,1,115,18,5,0,0,2,0,0,1,1,0,0,1,simulator s.p2g() of the saved particles
+real_sim_f078,78,79000,2,22,1,119,20,5,0,0,2,0,0,1,1,0,0,1,simulator s.p2g() of the saved particles
+real_sim_f079,79,80000,2,22,1,115,21,5,0,0,2,0,0,1,1,0,0,1,simulator s.p2g() of the saved particles
+single_in,0,1,1,1,1,18,0,0,0,0,1,0,0,1,1,0,0,1,constructed feed
+single_far,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,constructed feed; gate must reject
+thin_beam,0,21,15,17,1,72,20,0,0,0,15,0,0,1,1,0,0,1,constructed feed; crosses x=x_lo
+small_cell_mass,0,30,30,30,1,488,0,0,0,0,30,0,0,1,1,0,0,1,constructed feed; total mass 0.2 of a half cell
+movement_s0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,constructed feed
+movement_s1,1,1,1,1,1,18,0,0,0,0,1,0,0,1,1,0,0,1,constructed feed
+movement_s2,2,1,1,1,1,18,0,0,0,0,1,0,0,1,1,0,0,1,constructed feed
+disappear_before,0,2,2,2,1,27,0,0,0,0,2,0,0,1,1,0,0,1,constructed feed
+disappear_after,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,constructed feed; empty
+box_face,0,2,0,2,1,24,0,0,0,0,0,0,0,0,0,0,0,1,inclusive lo face + 1e-9 outside

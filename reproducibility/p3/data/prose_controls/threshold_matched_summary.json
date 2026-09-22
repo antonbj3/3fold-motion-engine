@@ -1,0 +1,13 @@
+{
+  "gate_false_cases": [
+    "single_far",
+    "movement_s0",
+    "disappear_after"
+  ],
+  "gated_FN": 0,
+  "gated_FP": 0,
+  "gpu_matches_cpu": 20,
+  "massgrid_FN": 13,
+  "massgrid_FP": 0,
+  "n_cases": 20
+}

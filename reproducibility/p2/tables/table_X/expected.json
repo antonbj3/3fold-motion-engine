@@ -1,0 +1,62 @@
+{
+  "appendix": "X",
+  "title": "Chunk-state control",
+  "manuscript_tables": [
+    [
+      [
+        "Window [steps]",
+        "Environment-steps [–]",
+        "Chunks [–]",
+        "Missing-upload Hessian error [–]",
+        "Missing-upload mass direction error [–]",
+        "Corrected Hessian error [–]",
+        "Corrected mass direction error [–]"
+      ],
+      [
+        "1",
+        "512",
+        "1",
+        "5.101e-12",
+        "3.024e-12",
+        "5.101e-12",
+        "3.024e-12"
+      ],
+      [
+        "2",
+        "1024",
+        "1",
+        "5.941e-12",
+        "4.355e-12",
+        "5.941e-12",
+        "4.355e-12"
+      ],
+      [
+        "4",
+        "2048",
+        "2",
+        "1.769e-7",
+        "1.634e-4",
+        "2.123e-13",
+        "3.724e-12"
+      ],
+      [
+        "10",
+        "5120",
+        "5",
+        "5.352e-5",
+        "4.971e-4",
+        "2.333e-13",
+        "1.396e-12"
+      ],
+      [
+        "50",
+        "25600",
+        "25",
+        "3.061e-2",
+        "2.689e-2",
+        "6.959e-12",
+        "1.034e-8"
+      ]
+    ]
+  ]
+}

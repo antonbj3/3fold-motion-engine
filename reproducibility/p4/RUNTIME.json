@@ -1,0 +1,10 @@
+{
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "matplotlib": "3.10.9",
+  "source_date_epoch": "1700000000",
+  "omp_num_threads": 4,
+  "openblas_num_threads": 4,
+  "render_mode": "CPU Agg",
+  "pdf_page_proof_dpi": 150
+}

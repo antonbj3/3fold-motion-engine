@@ -1,0 +1,19 @@
+Standard push,cost-only,458,20,2.785e-02,3.978e-02
+Selected excitation,cost-only,493,76,1.828e-02,1.828e-02
+Standard push,residual gate,463,0,2.415e-06,4.430e-02
+Selected excitation,residual gate,475,0,9.931e-06,1.252e-02
+Standard push,"cost-only, single precision",453,15,2.132e-01,8.453e-02
+
+Standard push,cost-only,4.859e-02,7.754e-01,6.762e+00,4.412e-02,`4e746550280c46a29e2fe1f87b4cb166ced2924c2efa66d38f4a023e6ee72403`
+Standard push,residual gate,4.728e-02,7.407e-01,6.762e+00,4.310e-02,`e0f6be370effa7039033bfe70193015364c145f6be9f1d9edd8e74ab763e6c97`
+Selected excitation,cost-only,1.331e-02,3.489e-02,1.207e-01,2.561e-02,`b7eb521442b479c37e7acefb5f86cc5a26211bc7dd1386b79f3fc0c78aa30812`
+Selected excitation,residual gate,1.505e-02,3.890e-02,2.817e-01,2.768e-02,`c2b60e022e6d2eed5bdcb94260ddba3cc0674b0f1a72c572c87f6c0a49815829`
+
+Standard push,6,6,4
+Selected excitation,6,6,3
+
+Standard push,0,"6400, 2048, 1024, 512, 320",256,7/7/7/7/7,yes,0
+Standard push,3,"6400, 2048, 1024, 512, 320",256,7/7/7/7/7,yes,0
+Selected excitation,0,"6400, 2048, 1024, 512, 320",256,7/6/6/6/6,yes,0
+Selected excitation,3,"6400, 2048, 1024, 512, 320",256,7/6/6/6/6,yes,0
+

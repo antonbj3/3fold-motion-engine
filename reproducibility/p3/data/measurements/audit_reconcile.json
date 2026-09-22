@@ -1,0 +1,148 @@
+{
+  "best_baseline_errors": [],
+  "correctness": {
+    "all_paths_agree": true,
+    "claim_ok": true,
+    "n_cases": 16,
+    "recomputed_allagree": true,
+    "recomputed_zero": true,
+    "zero_count_mismatch": true
+  },
+  "csv_matches_raw": true,
+  "csv_n_rows": 17,
+  "csv_vs_raw_errors": [],
+  "decision_hash_check": {
+    "p1": {
+      "ok": true,
+      "recomputed": "093158984544ca117c373591208fdd290edee3505843e45dacd0b439c0e68bb0",
+      "stored": "093158984544ca117c373591208fdd290edee3505843e45dacd0b439c0e68bb0"
+    },
+    "p2": {
+      "ok": true,
+      "recomputed": "c8e03f11a928dd2eaddf8a0e7c9802395876df115f8ae05093d4d1716c165d24",
+      "stored": "c8e03f11a928dd2eaddf8a0e7c9802395876df115f8ae05093d4d1716c165d24"
+    },
+    "q1": {
+      "ok": true,
+      "recomputed": "e50554711ce4796b0af72d44f7b0efcd99851174b7c3e02610dd5aba35804e69",
+      "stored": "e50554711ce4796b0af72d44f7b0efcd99851174b7c3e02610dd5aba35804e69"
+    },
+    "q4": {
+      "ok": true,
+      "recomputed": "e50554711ce4796b0af72d44f7b0efcd99851174b7c3e02610dd5aba35804e69",
+      "stored": "e50554711ce4796b0af72d44f7b0efcd99851174b7c3e02610dd5aba35804e69"
+    },
+    "r1": {
+      "ok": true,
+      "recomputed": "7523410a912f4775e30e733266edac5842c12321332c13d5058db2927bc53bf6",
+      "stored": "7523410a912f4775e30e733266edac5842c12321332c13d5058db2927bc53bf6"
+    },
+    "r2": {
+      "ok": true,
+      "recomputed": "7523410a912f4775e30e733266edac5842c12321332c13d5058db2927bc53bf6",
+      "stored": "7523410a912f4775e30e733266edac5842c12321332c13d5058db2927bc53bf6"
+    }
+  },
+  "gain_errors": [],
+  "gain_vs_best_headline_negative_either_convention": true,
+  "gain_vs_best_label_check": {
+    "negative_corner256": {
+      "expected_A": 0.7641681348895631,
+      "expected_B": -3.240309084320364,
+      "matches_A": false,
+      "matches_B": true,
+      "readiness": -3.24
+    },
+    "negative_dense_allnear256": {
+      "expected_A": 0.7962246008541283,
+      "expected_B": -3.9073637160889785,
+      "matches_A": false,
+      "matches_B": true,
+      "readiness": -3.907
+    },
+    "negative_new_geometry_slab1024": {
+      "expected_A": 0.2610232657128606,
+      "expected_B": -0.353222576032328,
+      "matches_A": false,
+      "matches_B": false,
+      "readiness": -0.261
+    },
+    "small_sparse1": {
+      "expected_A": 0.614858780710703,
+      "expected_B": -1.5964502107702336,
+      "matches_A": false,
+      "matches_B": true,
+      "readiness": -1.596
+    },
+    "small_sparse32": {
+      "expected_A": 0.43617295227857333,
+      "expected_B": -0.7735935231224944,
+      "matches_A": false,
+      "matches_B": true,
+      "readiness": -0.774
+    },
+    "win_known_frame_sparse1024": {
+      "expected_A": 0.6027604917974534,
+      "expected_B": -1.517372968577221,
+      "matches_A": false,
+      "matches_B": false,
+      "readiness": -0.603
+    },
+    "win_new_frame_sparse1024": {
+      "expected_A": 0.619027663335916,
+      "expected_B": -1.6248624998768175,
+      "matches_A": false,
+      "matches_B": false,
+      "readiness": -0.619
+    }
+  },
+  "gain_vs_best_label_consistent": false,
+  "kind": "reconcile",
+  "ratio_errors": [],
+  "route_consistency_ok": true,
+  "route_consistency_violations": [],
+  "selftest": {
+    "all_pass": true,
+    "frame_sha256": "8fa91747f7c4f34b1fbe74b76c274eb79229f26d534e26ec51dbf175fcf4d1eb",
+    "recomputed": true
+  },
+  "two_process_replay": {
+    "count_fields_identical": true,
+    "per_label": {
+      "negative_dense_allnear256": {
+        "Q": 16,
+        "dist": "allnear",
+        "frame": "160",
+        "n": 161000,
+        "n_exact_boxes": 125,
+        "nb": 256,
+        "route": "gated",
+        "sum_counts_box0": 1
+      },
+      "small_sparse32": {
+        "Q": 16,
+        "dist": "sparse",
+        "frame": "160",
+        "n": 161000,
+        "n_exact_boxes": 32,
+        "nb": 32,
+        "route": "direct",
+        "sum_counts_box0": 3160
+      },
+      "win_new_frame_sparse1024": {
+        "Q": 16,
+        "dist": "sparse",
+        "frame": "160",
+        "n": 161000,
+        "n_exact_boxes": 169,
+        "nb": 1024,
+        "route": "gated",
+        "sum_counts_box0": 59115
+      }
+    },
+    "same_decision_hash": true,
+    "same_labels": true
+  },
+  "unit_errors": [],
+  "record_origin": "independent verification"
+}

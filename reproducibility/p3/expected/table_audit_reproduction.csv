@@ -1,0 +1,10 @@
+cell,source,run,t_gate_s,t_celllist_s,t_sortedkey_s,t_best_s,t_gate_over_best,t_gate_over_direct,device,time_boundary
+dense_allnear256,independent audit,a,0.035074872,0.00685608911,0.00783485605,0.00685608911,5.11587166,0.953131546,shared GPU,paired 5-repeat median
+dense_allnear256,independent audit,b,0.036390897,0.00738370197,0.00833970495,0.00738370197,4.92854359,0.966915566,shared GPU,paired 5-repeat median
+negative_new_geometry_slab1024,producer,a,0.121522899,0.089802595,0.728322063,0.089802595,1.35322258,0.950243023,shared GPU,paired 5-repeat median
+small_sparse1,independent audit,a,0.0178705,0.00709735404,0.00750868209,0.00709735404,2.51791018,1.75837079,shared GPU,paired 5-repeat median
+small_sparse1,independent audit,b,0.019064442,0.00708038697,0.00738292304,0.00708038697,2.69257063,1.93939491,shared GPU,paired 5-repeat median
+win_known_frame_sparse1024,producer,a,0.04046057,0.0160725369,0.0712770399,0.0160725369,2.51737297,0.340401721,shared GPU,paired 5-repeat median
+win_new_frame_sparse1024,producer,a,0.0426984021,0.01626691,0.070925251,0.01626691,2.6248625,0.330883514,shared GPU,paired 5-repeat median
+win_sparse1024,independent audit,a,0.0428317949,0.0163208699,0.074469998,0.0163208699,2.62435735,0.326105365,shared GPU,paired 5-repeat median
+win_sparse1024,independent audit,b,0.044086235,0.01660476,0.075678757,0.01660476,2.65503597,0.328637964,shared GPU,paired 5-repeat median

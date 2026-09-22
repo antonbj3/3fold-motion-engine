@@ -1,0 +1,56 @@
+{
+  "appendix": "M",
+  "title": "Packing exclusions",
+  "manuscript_tables": [
+    [
+      [
+        "Configuration",
+        "Count [cells]",
+        "Reason or measured value",
+        "Unit"
+      ],
+      [
+        "Single-environment integer run",
+        "1",
+        "3.426e-01 derivative error",
+        "relative"
+      ],
+      [
+        "Single-environment integer run",
+        "1",
+        "2.47e-5 forward residual",
+        "N·s"
+      ],
+      [
+        "Single-environment integer run",
+        "1",
+        "104272.6 per direction",
+        "ms"
+      ],
+      [
+        "Single-environment floating modes",
+        "2",
+        "projected direction exceeds 90",
+        "s budget"
+      ],
+      [
+        "Batch 256, all modes",
+        "3",
+        "45.3 estimated allocation",
+        "GB"
+      ],
+      [
+        "Batch 4096, all modes",
+        "3",
+        "725 estimated allocation",
+        "GB"
+      ],
+      [
+        "Allocation allowance",
+        "—",
+        "9",
+        "GB"
+      ]
+    ]
+  ]
+}

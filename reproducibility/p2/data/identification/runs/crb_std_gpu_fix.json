@@ -1,0 +1,13 @@
+{
+  "50": {
+    "H_lmin_p50": 12.34551008514476,
+    "crb_rel_per_sigma_I_zz_p50": 1.2684154319011247,
+    "crb_rel_per_sigma_I_zz_p95": 3.2618106790064716,
+    "crb_rel_per_sigma_m_p50": 0.05725943443044927,
+    "crb_rel_per_sigma_m_p95": 0.13642757244663004,
+    "crb_rel_per_sigma_mu_p50": 0.059410642227696535,
+    "crb_rel_per_sigma_mu_p95": 0.14809549499164765,
+    "ncp_res": 1.2825994220588832e-06,
+    "window": 50
+  }
+}

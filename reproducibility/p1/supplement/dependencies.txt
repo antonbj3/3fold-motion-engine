@@ -1,0 +1,10 @@
+# Runtime dependencies for the reproduction supplement.
+# Versions used to produce and verify the shipped files.
+numpy>=2.0          # 2.2.6 used
+scipy>=1.10         # 1.15.3 used; only for the sparse flow solve on large graphs
+
+# Optional: recompute the Appendix C AMG iteration counts instead of reading
+# them from patch/measurements_appendix_c.json.
+# pyamg>=5.0        # 5.3.0 used
+
+# No GPU, no compiled extensions and no network access are required.

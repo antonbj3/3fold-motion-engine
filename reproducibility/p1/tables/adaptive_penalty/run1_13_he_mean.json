@@ -1,0 +1,20 @@
+{
+  "index": 13,
+  "scene": "heavy_top_column_tangential_drive",
+  "method": "he_mean",
+  "rho0": 0.6676666666666665,
+  "rho_oracle": 0.01646356867799696,
+  "rho_structure": 0.0002927682519584372,
+  "rho_trace_mean": 0.6676666666666665,
+  "iterations": 690,
+  "rho_changes": 237,
+  "rho_final": 0.02086458333333333,
+  "residual": 9.868017514236271e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "25e2c9a0a53d973ab9390153bf756aad9a6b67b1efc4d42293024ddd812d459c",
+  "n_c": 3,
+  "elapsed_seconds": 0.1468838390428573,
+  "command": "archived benchmark invocation: RUN 13 he_mean",
+  "record_sha256": "c5f66b86a0af525e0c23fc612fd791d7588b14ef2c6b458e3d528ad559fd6ea1"
+}

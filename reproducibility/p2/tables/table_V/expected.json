@@ -1,0 +1,58 @@
+{
+  "appendix": "V",
+  "title": "Integrated pile failures",
+  "manuscript_tables": [
+    [
+      [
+        "Bodies [–]",
+        "Method",
+        "Substeps [–]",
+        "Sweeps [–]",
+        "Observation end [s]",
+        "Final energy [J]",
+        "Maximum r_nat [N·s]",
+        "Divergence time [s]"
+      ],
+      [
+        "300",
+        "PGS",
+        "4",
+        "400",
+        "1",
+        "0.0328229386",
+        "0.0034598158",
+        "—"
+      ],
+      [
+        "300",
+        "ADMM",
+        "4",
+        "—",
+        "—",
+        "—",
+        "—",
+        "0.345833333"
+      ],
+      [
+        "100",
+        "PGS",
+        "4",
+        "400",
+        "1",
+        "0.0030221998",
+        "—",
+        "—"
+      ],
+      [
+        "100",
+        "ADMM",
+        "4",
+        "—",
+        "—",
+        "—",
+        "—",
+        "0.3375"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,7 @@
+geometry,method,safe_cell_area,unsafe_cell_area,unresolved_cell_area
+g2,reduced scalar,364.25,69.8125,6.9375
+g2,"full LP, real-arithmetic witness",359.4375,69.8125,11.75
+g8,reduced scalar,410.6875,23.25,7.0625
+g8,"full LP, real-arithmetic witness",406.625,23.25,11.125
+g9,reduced scalar,392.6875,41.3125,7.0
+g9,"full LP, real-arithmetic witness",388.5625,41.3125,11.125

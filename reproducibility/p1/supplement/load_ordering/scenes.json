@@ -1,0 +1,112 @@
+{
+  "contact_law": "lam_n is the converged normal contact impulse of the delivered solver (per-contact row 0); lam_mag is the full impulse norm",
+  "description": "Contact graphs and converged contact loads used by the load-ordering experiment.",
+  "graph_convention": {
+    "edge": "one per contact, (grain, destination node)",
+    "load": "foot scenes: unit current foot -> floor; gravity scenes: unit current into every grain -> floor",
+    "nodes": "0..N-1 grains; then floor, foot, wall nodes as listed",
+    "weights": {
+      "hertz_stiffness": "sqrt(0.5) between two grains else 1",
+      "inverse_mass": "2 between two grains else 1",
+      "unweighted": "1"
+    }
+  },
+  "scenes": [
+    {
+      "contact_kind": "foot",
+      "lam_n_sha256": "ff94fec005120c99c47d7a95802b471d854219c4de212c255f9a02b57408ad7f",
+      "n_contacts": 441,
+      "n_grains": 124,
+      "name": "granular_step",
+      "node_floor": 124,
+      "node_foot": 125,
+      "node_wall": 126,
+      "num_nodes": 127,
+      "type": "foot"
+    },
+    {
+      "contact_kind": "gravity",
+      "lam_n_sha256": "c68f5465237aa01230734fca8f730bb459bad79799bad033d8c809d010a081fd",
+      "n_contacts": 176,
+      "n_grains": 50,
+      "name": "packing_50",
+      "node_floor": 50,
+      "node_foot": null,
+      "node_wall": 51,
+      "num_nodes": 52,
+      "type": "gravity"
+    },
+    {
+      "contact_kind": "gravity",
+      "lam_n_sha256": "001b26651d84e6b6a313bc68508d8f5c41fab713dd5df08ca56403b45cc33f49",
+      "n_contacts": 710,
+      "n_grains": 200,
+      "name": "packing_200",
+      "node_floor": 200,
+      "node_foot": null,
+      "node_wall": 201,
+      "num_nodes": 202,
+      "type": "gravity"
+    },
+    {
+      "contact_kind": "gravity",
+      "lam_n_sha256": "bed36a748aec68c945abf1e0992c44b55a312e8259ebf0791e09a6dc008f6f34",
+      "n_contacts": 3022,
+      "n_grains": 800,
+      "name": "packing_800",
+      "node_floor": 800,
+      "node_foot": null,
+      "node_wall": 801,
+      "num_nodes": 802,
+      "type": "gravity"
+    },
+    {
+      "contact_kind": "foot",
+      "lam_n_sha256": "a694805489cf443176f65c56ec7d80e21034e1e2512881580472e5dba36cabc1",
+      "n_contacts": 199,
+      "n_grains": 124,
+      "name": "hertz_foot_dw2",
+      "node_floor": 124,
+      "node_foot": 125,
+      "node_wall": 126,
+      "num_nodes": 127,
+      "type": "foot"
+    },
+    {
+      "contact_kind": "foot",
+      "lam_n_sha256": "ea65c355276d0404d1b9bd92491b182d8bf779d72b1d5c25c6fa29571b8739d4",
+      "n_contacts": 1261,
+      "n_grains": 990,
+      "name": "hertz_foot_dw4",
+      "node_floor": 990,
+      "node_foot": 991,
+      "node_wall": 992,
+      "num_nodes": 993,
+      "type": "foot"
+    },
+    {
+      "contact_kind": "foot",
+      "lam_n_sha256": "e32d0de216413d1c5bfcf1890027e508c6e5508afc558b3e58c5b669002c5b7a",
+      "n_contacts": 10693,
+      "n_grains": 7921,
+      "name": "hertz_foot_dw8",
+      "node_floor": 7921,
+      "node_foot": 7922,
+      "node_wall": 7923,
+      "num_nodes": 7924,
+      "type": "foot"
+    },
+    {
+      "contact_kind": "foot",
+      "lam_n_sha256": "860e7ed17af63972b79a44b468825ac177dc0e784205f9e043a14b8cf38ad9fa",
+      "n_contacts": 124311,
+      "n_grains": 63365,
+      "name": "hertz_foot_dw16",
+      "node_floor": 63365,
+      "node_foot": 63366,
+      "node_wall": 63367,
+      "num_nodes": 63368,
+      "type": "foot"
+    }
+  ]
+}

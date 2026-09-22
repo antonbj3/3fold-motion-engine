@@ -63,3 +63,17 @@ Layers are meant to be replaceable: three of them carry protocols with arrays in
   <source media="(prefers-color-scheme: dark)" srcset="docs/fig8/calib-dark.png">
   <img alt="UR3e calibration: tool position error before and after fitting the model to the machine's own logs" src="docs/fig8/calib-light.png" width="100%">
 </picture>
+
+---
+
+## Papers
+
+Four measured studies (P1–P3 revision 3; P4 revision 4) with their reproduction bundles: contact-operator
+structure and solver limits (P1), deterministic Coulomb-contact sensitivities on
+GPUs (P2), reusing a solver grid for an exact point-in-box particle count (P3),
+and static support boundaries with a full-LP witness (P4). The PDFs, exact
+titles, per-paper source-availability limits and reproduction commands are in
+[`docs/papers/`](docs/papers/README.md); the self-contained bundles are under
+[`reproducibility/`](reproducibility/README.md). The canonical contact-scene
+package is at [`data/ncp/scenes/`](data/ncp/scenes/) with its loader at
+[`data/ncp/loader.py`](data/ncp/loader.py).

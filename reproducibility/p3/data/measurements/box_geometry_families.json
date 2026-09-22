@@ -1,0 +1,103 @@
+{
+  "box_dists": {
+    "allnear": {
+      "max_frac": 0.3,
+      "min_frac": 0.15,
+      "region": [
+        [
+          0.45,
+          -0.25,
+          -0.03
+        ],
+        [
+          0.55,
+          0.1,
+          0.05
+        ]
+      ],
+      "shape": "box"
+    },
+    "corner": {
+      "max_frac": 0.25,
+      "min_frac": 0.1,
+      "region": [
+        [
+          0.0,
+          -0.4,
+          -0.05
+        ],
+        [
+          0.15,
+          -0.25,
+          0.09999999999999999
+        ]
+      ],
+      "shape": "corner"
+    },
+    "empty": {
+      "max_frac": 0.3,
+      "min_frac": 0.15,
+      "region": [
+        [
+          0.6,
+          -0.10000000000000003,
+          0.5
+        ],
+        [
+          0.72,
+          -0.020000000000000018,
+          0.6
+        ]
+      ],
+      "shape": "empty"
+    },
+    "slab": {
+      "max_frac": 0.6,
+      "min_frac": 0.3,
+      "region": [
+        [
+          0.0125,
+          -0.3875,
+          -0.037500000000000006
+        ],
+        [
+          0.7875000000000001,
+          0.38750000000000007,
+          0.7375
+        ]
+      ],
+      "shape": "slab",
+      "thin": 0.02
+    },
+    "sparse": {
+      "max_frac": 0.1,
+      "min_frac": 0.04,
+      "region": [
+        [
+          0.0125,
+          -0.3875,
+          -0.037500000000000006
+        ],
+        [
+          0.7875000000000001,
+          0.38750000000000007,
+          0.7375
+        ]
+      ],
+      "shape": "box"
+    }
+  },
+  "d1_definition": "particle CENTRE in [lo, hi] inclusive (float32 promoted to float64)",
+  "lattice": {
+    "dx": 0.0125,
+    "kernel_id": "quadratic_bspline_p2g_int64_scale1e11_round_half_away",
+    "origin": [
+      0.0,
+      -0.4,
+      -0.05
+    ],
+    "res": 64,
+    "rho": 1600.0,
+    "scale": 100000000000
+  }
+}

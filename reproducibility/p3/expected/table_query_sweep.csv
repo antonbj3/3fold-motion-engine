@@ -1,0 +1,6 @@
+cell,Q,run,t_gate_s,t_celllist_s,t_sortedkey_s,t_best_s,t_gate_over_best,t_gate_over_direct,t_gate_query_only_over_best_query_only,device,time_boundary
+negative_dense_allnear256,1,query1,0.0121876551,0.00390224205,0.00417924009,0.00390224205,3.12324426,2.2169805,7.15439179,shared GPU,paired 5-repeat median
+negative_dense_allnear256,4,query4,0.0166706661,0.00464706507,0.00485066499,0.00464706507,3.5873537,1.48068376,6.85304291,shared GPU,paired 5-repeat median
+win_new_frame_sparse1024,1,query1,0.013204477,0.004899994,0.00823162706,0.004899994,2.69479453,1.22923296,2.11318577,shared GPU,paired 5-repeat median
+win_new_frame_sparse1024,4,query4,0.0193139131,0.00735291198,0.021965581,0.00735291198,2.62670261,0.54904355,2.18923749,shared GPU,paired 5-repeat median
+win_new_frame_sparse1024,16,a,0.0426984021,0.01626691,0.070925251,0.01626691,2.6248625,0.330883514,2.49931362,shared GPU,paired 5-repeat median

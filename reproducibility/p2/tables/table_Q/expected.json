@@ -1,0 +1,57 @@
+{
+  "appendix": "Q",
+  "title": "Parameter spread between repetitions",
+  "manuscript_tables": [
+    [
+      [
+        "Accumulation",
+        "Parameter",
+        "Median [–]",
+        "p95 [–]",
+        "Maximum [–]"
+      ],
+      [
+        "int64",
+        "mass",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "int64",
+        "yaw inertia",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "int64",
+        "friction",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "float32",
+        "mass",
+        "2.66e-06",
+        "1.06e-03",
+        "2.26e-01"
+      ],
+      [
+        "float32",
+        "yaw inertia",
+        "3.79e-05",
+        "1.98e-02",
+        "3.64e+00"
+      ],
+      [
+        "float32",
+        "friction",
+        "3.12e-06",
+        "8.23e-04",
+        "4.36e-01"
+      ]
+    ]
+  ]
+}

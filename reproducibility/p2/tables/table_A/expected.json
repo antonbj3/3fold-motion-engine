@@ -1,0 +1,41 @@
+{
+  "appendix": "A",
+  "title": "Sliding contact gap under exact and relaxed laws",
+  "manuscript_tables": [
+    [
+      [
+        "Law",
+        "Box side [m]",
+        "Mass [kg]",
+        "Initial speed [m/s]",
+        "μ [–]",
+        "Δt [s]",
+        "Steps [–]",
+        "Sweeps/step [–]",
+        "Maximum gap [m]"
+      ],
+      [
+        "Coulomb",
+        "0.20",
+        "1",
+        "1",
+        "0.3",
+        "1/240",
+        "200",
+        "400",
+        "1.552204e-11"
+      ],
+      [
+        "Convex relaxation",
+        "0.20",
+        "1",
+        "1",
+        "0.3",
+        "1/240",
+        "200",
+        "400",
+        "4.352523e-3"
+      ]
+    ]
+  ]
+}

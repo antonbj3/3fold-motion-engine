@@ -1,0 +1,18 @@
+{
+  "F": 25600,
+  "Hs_rel": 4.26305846572795e-12,
+  "acc": "int64",
+  "chunk": 1024,
+  "cost_rel": 0.0,
+  "dlam_I_rel": 3.005921039775534e-11,
+  "dlam_m_rel": 2.567926835180771e-12,
+  "dlam_mu_rel": 8.271788434922422e-13,
+  "gs_rel": 2.084363556915249e-13,
+  "lam_rel": 0.0,
+  "ncp_res_gpu": 0.01481804063584262,
+  "ncp_res_np": 0.01481804063584262,
+  "sigma": 0.0,
+  "sim": "identification_sim_win7_B512.npz",
+  "tag": "corrected_win7_w50",
+  "window": 50
+}

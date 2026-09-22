@@ -1,0 +1,93 @@
+{
+  "appendix": "K",
+  "title": "Matched protocol",
+  "manuscript_tables": [
+    [
+      [
+        "Quantity",
+        "Value",
+        "Unit"
+      ],
+      [
+        "Batch sizes",
+        "1, 256, 4096",
+        "environments"
+      ],
+      [
+        "Compliance",
+        "η_c = 1e-2 eigmax(G_cc)",
+        "kg⁻¹"
+      ],
+      [
+        "Penalty",
+        "√(λ_min⁺(H) λ_max(H))",
+        "kg⁻¹"
+      ],
+      [
+        "Forward tolerance",
+        "1e-8",
+        "N·s"
+      ],
+      [
+        "Forward PCG budget",
+        "8",
+        "iterations"
+      ],
+      [
+        "Accuracy/captured correction refresh",
+        "4",
+        "ADMM iterations"
+      ],
+      [
+        "Crossing-probe correction refresh",
+        "1",
+        "ADMM iteration"
+      ],
+      [
+        "Retained eigenvalue cutoff",
+        "λ > 1e-12 max(λ_max, 1e-300)",
+        "kg⁻¹"
+      ],
+      [
+        "Forward budget, asymmetric tower",
+        "400",
+        "iterations"
+      ],
+      [
+        "Forward budget, other scenes",
+        "200",
+        "iterations"
+      ],
+      [
+        "Sensitivity PCG budget",
+        "60",
+        "iterations"
+      ],
+      [
+        "PCG sweep",
+        "15, 30, 60, 120, 240, 480",
+        "iterations"
+      ],
+      [
+        "PCG comparison threshold",
+        "1e-10",
+        "relative direction difference"
+      ],
+      [
+        "Repeatability launches",
+        "3",
+        "launches"
+      ],
+      [
+        "Timing repetitions",
+        "5",
+        "launches"
+      ],
+      [
+        "Captured forward block",
+        "25",
+        "iterations"
+      ]
+    ]
+  ]
+}

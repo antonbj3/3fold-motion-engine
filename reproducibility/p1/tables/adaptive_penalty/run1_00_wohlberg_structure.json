@@ -1,0 +1,20 @@
+{
+  "index": 0,
+  "scene": "cube",
+  "method": "wohlberg_structure",
+  "rho0": 0.3265986323710902,
+  "rho_oracle": 0.19862725176695975,
+  "rho_structure": 0.3265986323710902,
+  "rho_trace_mean": 0.26666666666666666,
+  "iterations": 118,
+  "rho_changes": 2,
+  "rho_final": 0.08164965809277255,
+  "residual": 9.585043869719811e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "d1fb8c7d6d8a795e59c006631b2aca8e31e7b62b9c518410ca6cf15ba8cbb48f",
+  "n_c": 4,
+  "elapsed_seconds": 0.016161531093530357,
+  "command": "archived benchmark invocation: RUN 0 wohlberg_structure",
+  "record_sha256": "f7e0c5e4bedc008376aea4aafd335df6b9a13205520bef702af492eb083ddd9a"
+}

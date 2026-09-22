@@ -1,0 +1,18 @@
+{
+  "F": 2048,
+  "Hs_rel": 1.7691020490634843e-07,
+  "acc": "int64",
+  "chunk": 1024,
+  "cost_rel": 0.0,
+  "dlam_I_rel": 0.005470810219655153,
+  "dlam_m_rel": 0.00016335753613384542,
+  "dlam_mu_rel": 4.967173265355579e-13,
+  "gs_rel": 9.56324682248054e-05,
+  "lam_rel": 0.0,
+  "ncp_res_gpu": 1.3009121141438484e-09,
+  "ncp_res_np": 1.3009121141438484e-09,
+  "sigma": 1.0,
+  "sim": "identification_sim_B512.npz",
+  "tag": "derivative_check_unfixed_w4",
+  "window": 4
+}

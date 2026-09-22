@@ -1,0 +1,18 @@
+{
+  "F": 5120,
+  "Hs_rel": 2.3325075661234633e-13,
+  "acc": "int64",
+  "chunk": 1024,
+  "cost_rel": 0.0,
+  "dlam_I_rel": 1.8007850850317153e-12,
+  "dlam_m_rel": 1.3962234303636651e-12,
+  "dlam_mu_rel": 9.084845345824431e-13,
+  "gs_rel": 2.2669266509087653e-13,
+  "lam_rel": 0.0,
+  "ncp_res_gpu": 6.528500004487903e-09,
+  "ncp_res_np": 6.528500004487903e-09,
+  "sigma": 1.0,
+  "sim": "identification_sim_B512.npz",
+  "tag": "corrected_int64_w10",
+  "window": 10
+}

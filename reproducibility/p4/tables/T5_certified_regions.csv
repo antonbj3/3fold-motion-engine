@@ -1,0 +1,10 @@
+geometry,method,safe,unsafe,unresolved
+left foot +60 deg,reduced scalar,410.6875,23.25,7.0625
+left foot +60 deg,"full LP, real-arithmetic witness",406.625,23.25,11.125
+left foot +60 deg,outward interval (not verified),406.625,18.625,15.75
+right foot +20 deg,reduced scalar,364.25,69.8125,6.9375
+right foot +20 deg,"full LP, real-arithmetic witness",359.4375,69.8125,11.75
+right foot +20 deg,outward interval (not verified),359.4375,64.625,16.9375
+right foot -70 deg,reduced scalar,392.6875,41.3125,7.0
+right foot -70 deg,"full LP, real-arithmetic witness",388.5625,41.3125,11.125
+right foot -70 deg,outward interval (not verified),388.5625,36.5,15.9375

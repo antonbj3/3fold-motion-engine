@@ -1,0 +1,20 @@
+{
+  "index": 5,
+  "scene": "eight_box_tower_mass_imbalance",
+  "method": "wohlberg_structure",
+  "rho0": 0.00952728729173076,
+  "rho_oracle": 3.778713139723853e-09,
+  "rho_structure": 0.00952728729173076,
+  "rho_trace_mean": 4.0035,
+  "iterations": 18,
+  "rho_changes": 16,
+  "rho_final": 1.4537486712235657e-07,
+  "residual": 6.656364348600619e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "1c7e7b08e804307a879536e3fb42052a9ebb80fc1f410d5822facd54031d1ce2",
+  "n_c": 32,
+  "elapsed_seconds": 0.012220162083394825,
+  "command": "archived benchmark invocation: RUN 5 wohlberg_structure",
+  "record_sha256": "1ff2cd4b732af7fd38f302f73c0028fc75132d0b3f1b4eea92271b2163e5b207"
+}

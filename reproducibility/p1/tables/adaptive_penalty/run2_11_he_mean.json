@@ -1,0 +1,21 @@
+{
+  "index": 11,
+  "scene": "sphere_packing_800",
+  "method": "he_mean",
+  "rho0": 750.1860789500919,
+  "rho_oracle": 477.39068272409924,
+  "rho_structure": 150.72902180767414,
+  "rho_trace_mean": 750.1860789500919,
+  "iterations": 2000,
+  "rho_changes": 6,
+  "iteration_cap": 2000,
+  "rho_final": 11.721657483595186,
+  "residual": 0.0018168878217505685,
+  "converged": false,
+  "status": "censored_2000",
+  "solution_sha256": "517652166848206979f4618bb4dd90f8d44d61484ba7195e3f79b3257e0156dc",
+  "n_c": 3022,
+  "elapsed_seconds": 23.127622284926474,
+  "command": "archived benchmark invocation: RUN 11 he_mean",
+  "record_sha256": "39d60a9eb886f07939a6aa7ce84bd8957f93fecac3016c543b7087f9d99948d1"
+}

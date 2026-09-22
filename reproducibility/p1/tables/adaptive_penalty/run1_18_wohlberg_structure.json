@@ -1,0 +1,20 @@
+{
+  "index": 18,
+  "scene": "quadruped_unloading_probe",
+  "method": "wohlberg_structure",
+  "rho0": 1.4390704426791834,
+  "rho_oracle": 2.7212869264656407,
+  "rho_structure": 1.4390704426791834,
+  "rho_trace_mean": 3.0674763937500753,
+  "iterations": 253,
+  "rho_changes": 40,
+  "rho_final": 0.35976761066979585,
+  "residual": 3.734662579191195e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "c0f8185a6fa59a3b1e8189ebbe8b4af210d02b03b32b59aac30c9eb71a5d699b",
+  "n_c": 4,
+  "elapsed_seconds": 0.04489837901201099,
+  "command": "archived benchmark invocation: RUN 18 wohlberg_structure",
+  "record_sha256": "a64055e87e3ab940154ff9a4b01162d0c83e354c991fc9d088c29f4e028c9b81"
+}

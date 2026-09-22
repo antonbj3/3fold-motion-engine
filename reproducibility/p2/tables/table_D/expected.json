@@ -1,0 +1,41 @@
+{
+  "appendix": "D",
+  "title": "Executed solve costs, PGS vs ADMM",
+  "manuscript_tables": [
+    [
+      [
+        "Scene",
+        "Contacts [–]",
+        "Stopping specification",
+        "PGS sweeps [–]",
+        "ADMM iterations [–]",
+        "PGS [ms]",
+        "ADMM [ms]",
+        "PGS r_nat [N·s]",
+        "ADMM r_nat [N·s]"
+      ],
+      [
+        "Synthetic",
+        "256",
+        "r_nat < 1e-8 N·s",
+        "200",
+        "275",
+        "72.44",
+        "188.66",
+        "2.83e-9",
+        "<1e-8"
+      ],
+      [
+        "Lattice",
+        "40000",
+        "Fixed budgets",
+        "1000",
+        "25",
+        "445.61",
+        "84.09",
+        "7.3e-17",
+        "2.4e-15"
+      ]
+    ]
+  ]
+}

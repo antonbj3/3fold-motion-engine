@@ -1,0 +1,71 @@
+{
+  "acceptance": {
+    "gate": "p95 < 0.05 for m and mu at sigma_tau = 1 N m over 50 steps",
+    "passes_at_sigma_tau": 0.1,
+    "reason": "the CRB itself is 5.726e-02 per N m at that window, so the gate is below the bound",
+    "verdict": "fails"
+  },
+  "adjoint_vs_central_difference": {
+    "h": 1e-05,
+    "largest_difference_quotient_on_non_sliding_rows": 4.5e-08,
+    "rel_p95_mass": 1.774e-07,
+    "rel_p95_mu": 2.044e-07
+  },
+  "baselines_median_m_error": {
+    "gauss_newton": 0.03859,
+    "note": "the recursive estimator beats Gauss-Newton on mu alone when it is handed the true mass",
+    "quasi_static_F_equals_ma": 0.34138,
+    "recursive_mu_with_quasi_static_mass": 0.26829,
+    "recursive_mu_with_true_mass": 0.013501
+  },
+  "error_vs_noise_50_steps_p95": {
+    "sigma_tau_0.0": {
+      "m": 2.5185e-06
+    },
+    "sigma_tau_0.1": {
+      "m": 0.015272,
+      "mu": 0.01634
+    },
+    "sigma_tau_1.0": {
+      "m": 0.15173,
+      "mu": 0.16086
+    },
+    "sigma_tau_5.0": {
+      "m": 0.68534
+    }
+  },
+  "fisher_roc": {
+    "crb_score_auc_100_steps": 0.8116,
+    "crb_score_auc_50_steps": 0.7157,
+    "lambda_min_score_auc_100_steps": 0.7828,
+    "lambda_min_score_auc_50_steps": 0.6108,
+    "note": "the oracle is below 0.8 at 50 steps, so an AUC of 0.9 is unreachable with this observable, not with this estimator",
+    "oracle_crb_at_true_parameters_auc_100_steps": 0.7949,
+    "oracle_crb_at_true_parameters_auc_50_steps": 0.7141,
+    "verdict": "fails"
+  },
+  "known_defects": [
+    "coplanar corner contacts give condition number 3e17; the fix is an epsilon = 0.02 compliance as virtual degrees of freedom",
+    "the first estimator has errors in variables and needs the total-least-squares form",
+    "earlier attempts that froze M, Minv, nle and J over the trajectory were rejected: the result was an artefact of the frozen stance"
+  ],
+  "on_the_cramer_rao_bound": {
+    "factor": 0.6745,
+    "half_normal_median_of_crb": 0.038621,
+    "measured_median_m": 0.03859,
+    "note": "the median of a zero-mean normal error of scale CRB is 0.6745 CRB; the measurement sits on it, so the error is information-bound, not a local minimum",
+    "sigma_tau": 1.0,
+    "steps": 50
+  },
+  "same_model_both_sides": {
+    "cost_at_true_parameters": 2.42e-06,
+    "note": "generator and estimator are one model, not two; the residual at the true parameters is the floor"
+  },
+  "setup": "512 envs, 100 steps, the robot's M, nle and J recomputed at the integrated state every step; 5 contacts, 15 virtual rows; NCP natural residual max 4.213074e-12 over 512 x 100 steps",
+  "truth_start_control": {
+    "conclusion": "Gauss-Newton is not stuck in local minima",
+    "p95_m_from_random_start": 0.15173,
+    "p95_m_from_truth": 0.14101
+  },
+  "what": "Object system identification (mass, yaw inertia, friction) on the full dynamics of a floating-base humanoid, by adjoint Gauss-Newton through the exact-cone contact step, against the Cramer-Rao bound computed from the same Fisher matrix."
+}

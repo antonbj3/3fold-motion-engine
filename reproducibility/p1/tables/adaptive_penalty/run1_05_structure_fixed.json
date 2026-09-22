@@ -1,0 +1,20 @@
+{
+  "index": 5,
+  "scene": "eight_box_tower_mass_imbalance",
+  "method": "structure_fixed",
+  "rho0": 0.00952728729173076,
+  "rho_oracle": 3.778713139723853e-09,
+  "rho_structure": 0.00952728729173076,
+  "rho_trace_mean": 4.0035,
+  "iterations": 25811,
+  "rho_changes": 0,
+  "rho_final": 0.00952728729173076,
+  "residual": 9.99804683488037e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "45ab65c41fd59291f43e8a3320ec5a496f1a66048e6d2f27fb9a1545dce5ba2b",
+  "n_c": 32,
+  "elapsed_seconds": 2.9300798519980162,
+  "command": "archived benchmark invocation: RUN 5 structure_fixed",
+  "record_sha256": "12c24af858fac209d52e9b2bcf405071be2e730b1f531c78f3b8387a8d5b156d"
+}

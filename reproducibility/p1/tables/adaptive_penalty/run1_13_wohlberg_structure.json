@@ -1,0 +1,20 @@
+{
+  "index": 13,
+  "scene": "heavy_top_column_tangential_drive",
+  "method": "wohlberg_structure",
+  "rho0": 0.0002927682519584372,
+  "rho_oracle": 0.01646356867799696,
+  "rho_structure": 0.0002927682519584372,
+  "rho_trace_mean": 0.6676666666666665,
+  "iterations": 1373,
+  "rho_changes": 353,
+  "rho_final": 0.00936858406266999,
+  "residual": 3.012701199622825e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "cdac920fdcba40883f753799c5a75f09bfadd8d651b9bd1ad678f6df558ba4aa",
+  "n_c": 3,
+  "elapsed_seconds": 0.25795394903980196,
+  "command": "archived benchmark invocation: RUN 13 wohlberg_structure",
+  "record_sha256": "87224b8da4604d8bd1da0ee501cba293c268aea40a6b39e510bdb8f7c4adb8c1"
+}

@@ -1,0 +1,47 @@
+{
+  "appendix": "H",
+  "title": "Excitation and model consistency",
+  "manuscript_tables": [
+    [
+      [
+        "Trajectory",
+        "Environments [–]",
+        "Window [steps]",
+        "σ_τ [N·m]",
+        "Mass error p95 [–]",
+        "Friction error p95 [–]",
+        "True-parameter squared torque cost [(N·m)²]",
+        "Estimator r_nat [N·s]",
+        "Generator r_nat [N·s]",
+        "No hand contact [fraction]",
+        "Peak joint torque / limit [–]"
+      ],
+      [
+        "Standard push",
+        "512",
+        "50",
+        "1.0",
+        "1.517289e-01",
+        "1.608568e-01",
+        "2.347430e-06",
+        "1.282599e-06",
+        "4.199e-12",
+        "0.0000",
+        "1.154"
+      ],
+      [
+        "Selected excitation",
+        "512",
+        "50",
+        "1.0",
+        "3.818469e-02",
+        "8.413782e-02",
+        "1.503296e+01",
+        "1.481804e-02",
+        "2.161e-08",
+        "0.7213",
+        "5.284"
+      ]
+    ]
+  ]
+}

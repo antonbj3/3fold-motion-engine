@@ -1,0 +1,69 @@
+{
+  "rows": [
+    {
+      "B": 1,
+      "digest": "6ca701249c58ca50f947ee9d9b662da6622088b293d95cd75c023dd6eb94c4d1",
+      "scene": "cube"
+    },
+    {
+      "B": 1,
+      "digest": "81005e51a433351cf881de3e2d4c20ba54e3bb0590983f952652319ca5396a7a",
+      "scene": "eight_box_tower"
+    },
+    {
+      "B": 1,
+      "digest": "e655a22d2c5716ff51e0a23828930d14d263398e296d13050dc0ec126eca3933",
+      "scene": "eight_box_tower_mass_imbalance"
+    },
+    {
+      "B": 1,
+      "digest": "6962a101ea3f91300e480d67b7d6c55486ecd9fe3ea7b0ab305ae416a9ea3ab6",
+      "scene": "lattice"
+    },
+    {
+      "B": 256,
+      "digest": "f2f8cea543d788dfcc01e89f117f6cad51e99588ae37aac29b76146ed105291d",
+      "scene": "cube"
+    },
+    {
+      "B": 256,
+      "digest": "bc2681c2faef6337f5c207e28ae2961c1354b8f0ae48f42d2251bb9e7239ebce",
+      "scene": "eight_box_tower"
+    },
+    {
+      "B": 256,
+      "digest": "e116ac58d7d65be3ba0fc561ad7a115dcdda2087f005501f4b629a12f02cf18b",
+      "scene": "eight_box_tower_mass_imbalance"
+    },
+    {
+      "B": 256,
+      "digest": "44b30344e881917381a15d1807d7b39c44ce204d89b8edbcec0011357befee85",
+      "scene": "lattice"
+    },
+    {
+      "B": 4096,
+      "digest": "4122ff6790ad228603e9632f9e7bc245ebde6e57088917e1ccf69b2158eec1e9",
+      "scene": "cube"
+    },
+    {
+      "B": 4096,
+      "digest": "014389bf8f1749726c977edb92820b227e078f90773ce7c7927564c537f3e032",
+      "scene": "eight_box_tower"
+    },
+    {
+      "B": 4096,
+      "digest": "f12dea6965cd942c4bf90829c0c0c67db390bb9b4e96e90f9befe82b97f71cb0",
+      "scene": "eight_box_tower_mass_imbalance"
+    },
+    {
+      "B": 4096,
+      "digest": "3c628b19c999fed5e1088c7ee97dc8b6ebaea6d99f24cdf1d3b6438fba58af7e",
+      "scene": "lattice"
+    },
+    {
+      "B": 1,
+      "digest": "0cea5f6a31df384cc900c9d92683c8d195914fb76116ada8f58ad50444bbb372",
+      "scene": "sphere_packing_200"
+    }
+  ]
+}

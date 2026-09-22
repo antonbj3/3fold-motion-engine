@@ -1,0 +1,44 @@
+{
+  "appendix": "W",
+  "title": "Single-contact slip validation",
+  "manuscript_tables": [
+    [
+      [
+        "Operator",
+        "Slip speed [m/s]",
+        "GPU–CPU [kg]",
+        "CPU–finite difference [kg]"
+      ],
+      [
+        "Identity in stated units",
+        "1e-6",
+        "1.11e-16",
+        "3.89e-11"
+      ],
+      [
+        "Identity in stated units",
+        "1e-4",
+        "1.11e-16",
+        "1.10e-10"
+      ],
+      [
+        "Identity in stated units",
+        "1e-2",
+        "1.11e-16",
+        "2.68e-11"
+      ],
+      [
+        "Identity in stated units",
+        "1e-1",
+        "2.22e-16",
+        "1.03e-10"
+      ],
+      [
+        "Random positive definite, bound over sweep",
+        "1e-6 … 1e-1",
+        "≤ 6.4e-16",
+        "≤ 2.3e-10"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "index": 10,
+  "scene": "sphere_packing_200",
+  "method": "oracle_fixed",
+  "rho0": 487.0694008658371,
+  "rho_oracle": 487.0694008658371,
+  "rho_structure": 146.16324886942905,
+  "rho_trace_mean": 722.0291186483316,
+  "iterations": 1398,
+  "rho_changes": 0,
+  "iteration_cap": 20000,
+  "rho_final": 487.0694008658371,
+  "residual": 9.938339279140507e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "664d2b35729bef3cff716047b29b13fef2799aee3cc017bff310ee55167cc7c3",
+  "n_c": 710,
+  "elapsed_seconds": 1.1800130269257352,
+  "command": "archived benchmark invocation: RUN 10 oracle_fixed",
+  "record_sha256": "603f577fc0282e63bbd6e7200a05ed83581b7bada9e2ff0091bbd617899fc7eb"
+}

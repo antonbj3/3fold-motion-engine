@@ -1,0 +1,16 @@
+index,scene,unit,arm,iterations,converged,cap,n_chol
+0,cube,SI,per_iter,57,True,30000,1
+0,cube,SI,block,75,True,30000,1
+0,cube,SI,norm_block,67,True,30000,1
+1,eight_box_tower,SI,per_iter,48,True,30000,1
+1,eight_box_tower,SI,block,48,True,30000,1
+1,eight_box_tower,SI,norm_block,48,True,30000,1
+2,three_body_column_normal,SI,per_iter,42,True,30000,1
+2,three_body_column_normal,SI,block,42,True,30000,1
+2,three_body_column_normal,SI,norm_block,42,True,30000,1
+9,sphere_packing_50,SI,per_iter,8000,False,8000,1
+9,sphere_packing_50,SI,block,8000,False,8000,1
+9,sphere_packing_50,SI,norm_block,8000,False,8000,1
+12,dense_random_contact_operator_256,SI,per_iter,3012,True,20000,1
+12,dense_random_contact_operator_256,SI,block,3017,True,20000,1
+12,dense_random_contact_operator_256,SI,norm_block,3613,True,20000,1

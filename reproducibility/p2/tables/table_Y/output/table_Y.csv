@@ -1,0 +1,33 @@
+Pushed cube,1,float32,7.112e-09,4.583e-07,no,yes,51.51
+Pushed cube,1,float64,8.773e-09,4.228e-07,no,yes,52.64
+Pushed cube,1,int64,8.773e-09,4.228e-07,no,yes,65.93
+Pushed cube,256,float32,2.167e-08,4.583e-07,no,no,66.09
+Pushed cube,256,float64,8.773e-09,4.228e-07,no,yes,64.68
+Pushed cube,256,int64,8.773e-09,4.228e-07,no,yes,92.43
+Sticking tower,1,float32,1.042e-08,7.946e-06,no,no,207.55
+Sticking tower,1,float64,9.752e-09,1.207e-12,yes,yes,205.69
+Sticking tower,1,int64,9.500e-09,3.002e-11,yes,yes,263.47
+Sticking tower,256,float32,1.464e-08,7.952e-06,no,no,1091.20
+Sticking tower,256,float64,9.995e-09,1.231e-12,yes,yes,1118.27
+Sticking tower,256,int64,9.500e-09,3.002e-11,yes,yes,1254.77
+Asymmetric tower,1,float32,5.365e-03,5.225e+01,no,no,319.13
+Asymmetric tower,1,float64,2.774e-05,7.327e-04,no,no,309.19
+Asymmetric tower,1,int64,2.774e-05,7.326e-04,no,no,394.95
+Asymmetric tower,256,float32,1.050e-01,7.344e-04,no,no,1683.43
+Asymmetric tower,256,float64,2.774e-05,7.327e-04,no,no,1710.18
+Asymmetric tower,256,int64,2.774e-05,7.326e-04,no,no,1911.77
+Lattice,1,float32,4.345e-09,1.280e-05,no,no,417.58
+Lattice,1,float64,2.161e-09,4.071e-12,yes,yes,405.44
+Lattice,1,int64,2.162e-09,1.562e-11,yes,yes,536.74
+Lattice,256,float32,7.984e-09,1.299e-05,no,no,3310.24
+Lattice,256,float64,2.161e-09,4.055e-12,yes,yes,3390.98
+Lattice,256,int64,2.162e-09,1.562e-11,yes,yes,3669.30
+Packing,1,float32,5.732e-06,1.544e+00,no,no,22029.61
+Packing,1,float64,5.732e-06,1.544e+00,no,no,36203.69
+Packing,1,int64,5.732e-06,1.544e+00,no,no,22031.16
+
+"Pushed cube, B=1, int64",3,yes,`14b5816cbb5d3e1081b3d911807f48c4190ff97e2280a6cc7d61c00b1d27d0af`
+"Sticking tower, B=256, int64",3,yes,`62ce9edbb5fee0e7b9f8d93f8aa1612e3cc485e55efad4899050fd355ac55ba7`
+"Asymmetric tower, B=256, int64",3,yes,`898ab699b37238eb79d46f0025a8ddd01cbb855d74516845497513ed52fe2d65`
+"Pushed cube, B=256, float32",3,no,`586ec0ef3baae8e5129957607c5121d3ef7fba4874a9efdde759fc8f99f506bd`
+

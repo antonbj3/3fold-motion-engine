@@ -1,0 +1,345 @@
+{
+  "build_regimes": {
+    "per_frame": "all complete paths rebuild capture/state/index for the frame before Q queries (end-to-end per-frame cost)",
+    "reusable": "the accelerator (or grid) is built once and Q query batches reuse it; query-only cost reported separately"
+  },
+  "checks": {
+    "all_paths_agree_box0": true,
+    "gated_beats_celllist_on_win_cells": {
+      "negative_dense_allnear256": -4.041601362477851,
+      "small_sparse32": -0.5927283874955462,
+      "win_new_frame_sparse1024": -1.745119912837768
+    },
+    "gated_beats_direct_on_win_cells": {
+      "negative_dense_allnear256": -0.008491364813996372,
+      "small_sparse32": -0.8277679572689176,
+      "win_new_frame_sparse1024": 0.672172538746333
+    },
+    "gated_beats_sortedkey_on_win_cells": {
+      "negative_dense_allnear256": -3.333035743439204,
+      "small_sparse32": 0.5340322806483163,
+      "win_new_frame_sparse1024": 0.39677878075959827
+    }
+  },
+  "d1_definition": "particle CENTRE in [lo, hi] inclusive (float32 promoted to float64)",
+  "decision_canonical_sha256": "7523410a912f4775e30e733266edac5842c12321332c13d5058db2927bc53bf6",
+  "gpu": "shared",
+  "lattice": {
+    "dx": 0.0125,
+    "origin": [
+      0.0,
+      -0.4,
+      -0.05
+    ],
+    "res": 64,
+    "rho": 1600.0
+  },
+  "paths": {
+    "A_gated_amort": "owned capture + owned state + bind_batch (extra P2G + validation + occupancy) + Q gated queries; reuses the producer grid",
+    "A_gated_full": "owned capture + owned state + Q x (bind_batch + query)",
+    "B_celllist": "state copy + histogram/prefix-scan/scatter cell-list build + Q exact range queries on the cell list",
+    "B_sortedkey": "state copy + radix-sort cell-key build (no prefix scan) + Q exact range queries by binary search",
+    "direct": "state copy + Q direct exact box counts (uncharged reference)"
+  },
+  "pinned_inputs": {
+    "box_geometry_families.json": "c6960cfe2f32e72ae08116fc7403c120edca12dc22cf51855145b64b9a16da4d",
+    "owned_keepout_contract.py": "0ee85fb753fe32c61f175502f2af4f7e9192e5c93fb1c29737ff8c29c099e715",
+    "producer_grid_keepout.py": "e0ecabc41a8a12a455761e9075167c64949e1e1bf4150372f0784b66dad98101",
+    "range_reference.py": "5ec17d66f8b2f92937ac6b9945c173dd960534faacce8bf3585809fddffce33f"
+  },
+  "python": "python",
+  "repeats": 5,
+  "scenarios": [
+    {
+      "Q": 16,
+      "agree": {
+        "celllist_eq_np": true,
+        "direct_eq_np": true,
+        "gated_amort_eq_np": true,
+        "gated_full_eq_np": true,
+        "sortedkey_eq_np": true
+      },
+      "all_paths_agree_box0": true,
+      "celllist_complete_s": 0.015592522104270756,
+      "celllist_over_direct": 0.11942190930186922,
+      "celllist_query_only_repeats_s": [
+        0.012301116017624736,
+        0.011780920904129744,
+        0.013756020925939083,
+        0.012091684970073402,
+        0.012372383032925427
+      ],
+      "celllist_query_only_s": 0.012301116017624736,
+      "celllist_repeats_s": [
+        0.015592522104270756,
+        0.016976226936094463,
+        0.015511507051996887,
+        0.016625090036541224,
+        0.015447668032720685
+      ],
+      "direct_complete_repeats_s": [
+        0.13085567497182637,
+        0.13168793602380902,
+        0.13056667905766517,
+        0.12826448306441307,
+        0.1287331369239837
+      ],
+      "direct_complete_s": 0.13056667905766517,
+      "dist": "sparse",
+      "frame": "160",
+      "gain_gated_amort_vs_celllist": -1.745119912837768,
+      "gain_gated_amort_vs_direct": 0.672172538746333,
+      "gain_gated_amort_vs_sortedkey": 0.39677878075959827,
+      "gated_amort_complete_s": 0.042803342919796705,
+      "gated_amort_over_celllist": 2.745119912837768,
+      "gated_amort_over_direct": 0.327827461253667,
+      "gated_amort_over_sortedkey": 0.6032212192404017,
+      "gated_amort_repeats_s": [
+        0.042803342919796705,
+        0.041769903036765754,
+        0.042357211001217365,
+        0.04288553597871214,
+        0.04317589499987662
+      ],
+      "gated_full_complete_s": 0.07079508295282722,
+      "gated_full_repeats_s": [
+        0.0707095640245825,
+        0.0711212910246104,
+        0.07079508295282722,
+        0.07125927903689444,
+        0.07073705201037228
+      ],
+      "gated_query_only_over_celllist_query_only": 2.559107233030273,
+      "gated_query_only_over_sortedkey_query_only": 0.45848815902612333,
+      "gated_query_only_repeats_s": [
+        0.031479874975048006,
+        0.032623773091472685,
+        0.031404782086610794,
+        0.03326698997989297,
+        0.03102077799849212
+      ],
+      "gated_query_only_s": 0.031479874975048006,
+      "gpu": "shared",
+      "gpu_mem_used_mib_after": 2306,
+      "gpu_mem_used_mib_before": 2305,
+      "label": "win_new_frame_sparse1024",
+      "n": 161000,
+      "n_exact_boxes": 169,
+      "nb": 1024,
+      "route": "gated",
+      "sortedkey_complete_s": 0.07095795299392194,
+      "sortedkey_over_direct": 0.5434614214441583,
+      "sortedkey_query_only_repeats_s": [
+        0.07095806195866317,
+        0.06847069400828332,
+        0.06866017007268965,
+        0.06839672196656466,
+        0.06876246398314834
+      ],
+      "sortedkey_query_only_s": 0.06866017007268965,
+      "sortedkey_repeats_s": [
+        0.06837373797316104,
+        0.07149510807357728,
+        0.07058823003899306,
+        0.07095795299392194,
+        0.07209750695619732
+      ],
+      "sum_counts_box0": 59115
+    },
+    {
+      "Q": 16,
+      "agree": {
+        "celllist_eq_np": true,
+        "direct_eq_np": true,
+        "gated_amort_eq_np": true,
+        "gated_full_eq_np": true,
+        "sortedkey_eq_np": true
+      },
+      "all_paths_agree_box0": true,
+      "celllist_complete_s": 0.007041665026918054,
+      "celllist_over_direct": 0.2000339361060356,
+      "celllist_query_only_repeats_s": [
+        0.0034840309526771307,
+        0.0033192189875990152,
+        0.0033181069884449244,
+        0.003304510028101504,
+        0.003341402974911034
+      ],
+      "celllist_query_only_s": 0.0033192189875990152,
+      "celllist_repeats_s": [
+        0.007936048088595271,
+        0.0069996550446376204,
+        0.00777457095682621,
+        0.007041665026918054,
+        0.006923206034116447
+      ],
+      "direct_complete_repeats_s": [
+        0.03520235198084265,
+        0.03572162508498877,
+        0.036134936031885445,
+        0.03498457092791796,
+        0.035141234984621406
+      ],
+      "direct_complete_s": 0.03520235198084265,
+      "dist": "allnear",
+      "frame": "160",
+      "gain_gated_amort_vs_celllist": -4.041601362477851,
+      "gain_gated_amort_vs_direct": -0.008491364813996372,
+      "gain_gated_amort_vs_sortedkey": -3.333035743439204,
+      "gated_amort_complete_s": 0.035501267993822694,
+      "gated_amort_over_celllist": 5.041601362477851,
+      "gated_amort_over_direct": 1.0084913648139964,
+      "gated_amort_over_sortedkey": 4.333035743439204,
+      "gated_amort_repeats_s": [
+        0.035501267993822694,
+        0.03564932395238429,
+        0.035729800001718104,
+        0.03546983399428427,
+        0.034627676010131836
+      ],
+      "gated_full_complete_s": 0.06492657703347504,
+      "gated_full_repeats_s": [
+        0.06477204093243927,
+        0.06492657703347504,
+        0.06612536089960486,
+        0.06525268196128309,
+        0.06228311103768647
+      ],
+      "gated_query_only_over_celllist_query_only": 7.2839041726966105,
+      "gated_query_only_over_sortedkey_query_only": 5.521567299759867,
+      "gated_query_only_repeats_s": [
+        0.024176873033866286,
+        0.02365747990552336,
+        0.02323085896205157,
+        0.02467880502808839,
+        0.025059008970856667
+      ],
+      "gated_query_only_s": 0.024176873033866286,
+      "gpu": "shared",
+      "gpu_mem_used_mib_after": 2338,
+      "gpu_mem_used_mib_before": 2306,
+      "label": "negative_dense_allnear256",
+      "n": 161000,
+      "n_exact_boxes": 125,
+      "nb": 256,
+      "route": "gated",
+      "sortedkey_complete_s": 0.00819316296838224,
+      "sortedkey_over_direct": 0.23274476014673715,
+      "sortedkey_query_only_repeats_s": [
+        0.006574576022103429,
+        0.004305223003029823,
+        0.004273015074431896,
+        0.00437862507533282,
+        0.004639780032448471
+      ],
+      "sortedkey_query_only_s": 0.00437862507533282,
+      "sortedkey_repeats_s": [
+        0.00819316296838224,
+        0.00864312401972711,
+        0.008113245945423841,
+        0.009807316004298627,
+        0.00810631096828729
+      ],
+      "sum_counts_box0": 1
+    },
+    {
+      "Q": 16,
+      "agree": {
+        "celllist_eq_np": true,
+        "direct_eq_np": true,
+        "gated_amort_eq_np": true,
+        "gated_full_eq_np": true,
+        "sortedkey_eq_np": true
+      },
+      "all_paths_agree_box0": true,
+      "celllist_complete_s": 0.011117054964415729,
+      "celllist_over_direct": 1.1475704028500142,
+      "celllist_query_only_repeats_s": [
+        0.010007580043748021,
+        0.00844409700948745,
+        0.007357781054452062,
+        0.009285391075536609,
+        0.006720853969454765
+      ],
+      "celllist_query_only_s": 0.00844409700948745,
+      "celllist_repeats_s": [
+        0.011117054964415729,
+        0.01046090095769614,
+        0.011270254966802895,
+        0.010895189945586026,
+        0.011737409979104996
+      ],
+      "direct_complete_repeats_s": [
+        0.009643103927373886,
+        0.009933836059644818,
+        0.00968747097067535,
+        0.009648377075791359,
+        0.01029514498077333
+      ],
+      "direct_complete_s": 0.00968747097067535,
+      "dist": "sparse",
+      "frame": "160",
+      "gain_gated_amort_vs_celllist": -0.5927283874955462,
+      "gain_gated_amort_vs_direct": -0.8277679572689176,
+      "gain_gated_amort_vs_sortedkey": 0.5340322806483163,
+      "gated_amort_complete_s": 0.01770644902717322,
+      "gated_amort_over_celllist": 1.5927283874955462,
+      "gated_amort_over_direct": 1.8277679572689176,
+      "gated_amort_over_sortedkey": 0.4659677193516837,
+      "gated_amort_repeats_s": [
+        0.017639366909861565,
+        0.018789186025969684,
+        0.017318049096502364,
+        0.019609290990047157,
+        0.01770644902717322
+      ],
+      "gated_full_complete_s": 0.04819549690000713,
+      "gated_full_repeats_s": [
+        0.04668500798288733,
+        0.046885155024938285,
+        0.050221928977407515,
+        0.04819549690000713,
+        0.0484506799839437
+      ],
+      "gated_query_only_over_celllist_query_only": 0.8397889074209793,
+      "gated_query_only_over_sortedkey_query_only": 0.19409747366385752,
+      "gated_query_only_repeats_s": [
+        0.007413260987959802,
+        0.007091259001754224,
+        0.0070121289463713765,
+        0.007747816038317978,
+        0.007020224002189934
+      ],
+      "gated_query_only_s": 0.007091259001754224,
+      "gpu": "shared",
+      "gpu_mem_used_mib_after": 2338,
+      "gpu_mem_used_mib_before": 2338,
+      "label": "small_sparse32",
+      "n": 161000,
+      "n_exact_boxes": 32,
+      "nb": 32,
+      "route": "direct",
+      "sortedkey_complete_s": 0.03799930401146412,
+      "sortedkey_over_direct": 3.9225205553121825,
+      "sortedkey_query_only_repeats_s": [
+        0.03597625601105392,
+        0.036534524988383055,
+        0.03723719995468855,
+        0.03599086799658835,
+        0.039823077036999166
+      ],
+      "sortedkey_query_only_s": 0.036534524988383055,
+      "sortedkey_repeats_s": [
+        0.03655415202956647,
+        0.03799930401146412,
+        0.028860218939371407,
+        0.03998370794579387,
+        0.03948391310404986
+      ],
+      "sum_counts_box0": 3160
+    }
+  ],
+  "tag": "r2",
+  "unit_note": "every *_s key is perf_counter seconds; *_ms = *_s*1e3; ratios dimensionless",
+  "record_origin": "matched-baseline measurement"
+}

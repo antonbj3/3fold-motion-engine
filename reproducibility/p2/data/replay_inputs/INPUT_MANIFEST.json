@@ -1,0 +1,23 @@
+{
+  "files": {
+    "branch_reference_cpu.npz": {
+      "bytes": 118038104,
+      "gz_bytes": 26916413,
+      "gz_sha256": "a356044eb9db9d60590d925f76d723cacef3910326e674bc0d87f9ca0bfc8f01",
+      "sha256": "a6fe3f4b75b976d0808126c4edf7ded67b5a82b3a5dfc01be6bbc3c25497aad5"
+    },
+    "branch_reference_sphere_packing_200.npz": {
+      "bytes": 116767800,
+      "gz_bytes": 26722001,
+      "gz_sha256": "f8bf8a1c4629a3aab9d7eed5a9a853335ac4c064f09260fcf070974b21b3ce23",
+      "sha256": "de8a74f9f02dbac8f91a8edf03dec951587dd728d19e91157a13d50f18096749"
+    },
+    "identification_sim_B512.npz": {
+      "bytes": 164339542,
+      "gz_bytes": 89685495,
+      "gz_sha256": "c8a449529d05cfc5962063132caaaa1c2981a8039588d22e2d4ee70a55b1abc0",
+      "sha256": "fae57961f5c016111bf3b495640be49657f258b25b389e141460bfd2dd4dc6c9"
+    }
+  },
+  "note": "Files above 100 MB are shipped as deterministic gzip members below 90 MB; reconstruct_inputs.py restores them and verifies the full sha256. Scene-key metadata uses public aliases; numeric NPY members are byte-identical to the archived inputs."
+}

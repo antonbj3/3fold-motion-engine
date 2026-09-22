@@ -1,0 +1,30 @@
+{
+  "note": "Aggregated outer-iteration counts and dense/block impulse differences from the delivered solver run (manuscript Appendix B). table_appendix_b.py recomputes the block-tridiagonal property and the dense-vs-block linear solve; it does not rerun the contact iteration.",
+  "scenes": {
+    "eight_box_tower": {
+      "block_updates": 140,
+      "dense_updates": 140,
+      "max_abs_impulse_difference": 1.67e-16,
+      "status": "converged"
+    },
+    "eight_box_tower_rolling": {
+      "block_updates": 1848,
+      "dense_updates": 1848,
+      "max_abs_impulse_difference": 2.37e-15,
+      "status": "converged"
+    },
+    "mass_ratio_column": {
+      "block_updates": 296,
+      "dense_updates": 296,
+      "max_abs_impulse_difference": 4.39e-12,
+      "status": "converged"
+    },
+    "mass_ratio_column_rolling": {
+      "block_updates": 30000,
+      "dense_updates": 30000,
+      "max_abs_impulse_difference": 12.2,
+      "status": "both capped; iterate difference"
+    }
+  },
+  "target_Ns": 1e-08
+}

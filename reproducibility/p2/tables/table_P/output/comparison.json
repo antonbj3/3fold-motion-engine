@@ -1,0 +1,10 @@
+{
+ "appendix": "P",
+ "checked_cells": 30,
+ "gap_cells": 1,
+ "gaps": [
+  "P: the derivative-check digest is content-addressed over the whole run record, whose `sim` field named an internal input file. Identifier cleanup changed those bytes, so the manuscript digest (658ffe86...) is not regenerable from the cleaned record; declared gap. The cleaned canonical digest is shown."
+ ],
+ "mismatches": [],
+ "ok": true
+}

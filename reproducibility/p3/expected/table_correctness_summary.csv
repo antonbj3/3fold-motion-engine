@@ -1,0 +1,12 @@
+check,value,source
+matched_correctness_n_cases,16,correctness_matrix.json
+matched_all_paths_agree,True,correctness_matrix.json
+matched_zero_count_mismatch,True,correctness_matrix.json
+audit_csv_matches_raw,True,audit_reconcile.json
+audit_unit_errors,0,audit_reconcile.json
+audit_route_consistency_ok,True,audit_reconcile.json
+audit_gain_vs_best_label_consistent,False,audit_reconcile.json
+audit_new_state_cases_pass,True,audit_new_state_cases.json
+audit_oracle_crosscheck_ok,True,audit_oracle_crosscheck.json
+audit_oracle_new150_n_boxes,74,audit_oracle_crosscheck.json
+audit_oracle_new160_n_boxes,74,audit_oracle_crosscheck.json

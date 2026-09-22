@@ -1,0 +1,6 @@
+scene,max_rel_error_pct,median_rel_error_pct,radius_ratio,control_kind
+anisotropic-A,7.2640655878997595,5.696910815026982,1.7055932945723296,anisotropic
+anisotropic-B,2.980434318799957,2.2073345105342916,1.5205083482076538,anisotropic
+"box (S1), 24 sampled LP radii",,,1.0,"four-contact box, friction-limited; sampled radii constant to 6.07e-10"
+"N12 platform (12 dirs, reached T=50 s)",1.2302390016130305,1.2302390016129463,1.019348523123106,genuine 12-contact elliptical 3-fold-perturbed ring; separate control
+N20 (exact 3D scalar LP),0.071274,,,not a 12-direction sample

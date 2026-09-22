@@ -1,0 +1,56 @@
+{
+  "appendix": "G",
+  "title": "Identification under observation noise",
+  "manuscript_tables": [
+    [
+      [
+        "Trajectory",
+        "Environments [–]",
+        "Window [steps]",
+        "σ_τ [N·m]",
+        "Mass error p50 [–]",
+        "Mass error p95 [–]",
+        "Friction error p50 [–]",
+        "Friction error p95 [–]",
+        "p95 threshold [–]",
+        "Both pass"
+      ],
+      [
+        "Standard push",
+        "512",
+        "50",
+        "0.1",
+        "4.0476e-03",
+        "1.5272e-02",
+        "4.3778e-03",
+        "1.6340e-02",
+        "0.05",
+        "pass"
+      ],
+      [
+        "Standard push",
+        "512",
+        "50",
+        "1.0",
+        "3.8590e-02",
+        "1.5173e-01",
+        "4.1072e-02",
+        "1.6086e-01",
+        "0.05",
+        "fail"
+      ],
+      [
+        "Standard push",
+        "512",
+        "100",
+        "1.0",
+        "2.2260e-02",
+        "8.9702e-02",
+        "1.9507e-02",
+        "8.3003e-02",
+        "0.05",
+        "fail"
+      ]
+    ]
+  ]
+}

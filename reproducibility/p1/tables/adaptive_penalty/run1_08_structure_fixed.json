@@ -1,0 +1,21 @@
+{
+  "index": 8,
+  "scene": "granular_press_step",
+  "method": "structure_fixed",
+  "rho0": 18.02085180374871,
+  "rho_oracle": 61.72496688862671,
+  "rho_structure": 18.02085180374871,
+  "rho_trace_mean": 87.30165101361874,
+  "iterations": 20000,
+  "rho_changes": 0,
+  "iteration_cap": 20000,
+  "rho_final": 18.02085180374871,
+  "residual": 0.003551352778775089,
+  "converged": false,
+  "status": "censored_20000",
+  "solution_sha256": "d892ff4922c71314eff902213146b40530c02dfde71a7cd93589b10f51329bd2",
+  "n_c": 441,
+  "elapsed_seconds": 8.838281494099647,
+  "command": "archived benchmark invocation: RUN 8 structure_fixed",
+  "record_sha256": "92f88b5d16ff4e37db3603bd61fd2a1cbfb7734f3e87e26a1be5e1a181d13f29"
+}

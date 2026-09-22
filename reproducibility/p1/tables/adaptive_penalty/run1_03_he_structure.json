@@ -1,0 +1,20 @@
+{
+  "index": 3,
+  "scene": "three_body_column_tangential_drive",
+  "method": "he_structure",
+  "rho0": 0.0002927682519584372,
+  "rho_oracle": 0.0009258145027747133,
+  "rho_structure": 0.0002927682519584372,
+  "rho_trace_mean": 0.6676666666666665,
+  "iterations": 818,
+  "rho_changes": 62,
+  "rho_final": 0.004684292031334995,
+  "residual": 9.57243173616007e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "2ec95c92641806beaf819e6e415b7cbb08071088a0f2c31663e7a379f71a71a1",
+  "n_c": 3,
+  "elapsed_seconds": 0.11781735392287374,
+  "command": "archived benchmark invocation: RUN 3 he_structure",
+  "record_sha256": "602cb163dfc33debf1d25b73307bf5b4af11c8a9142145bdc090a216a00ec845"
+}

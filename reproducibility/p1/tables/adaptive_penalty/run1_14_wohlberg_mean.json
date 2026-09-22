@@ -1,0 +1,20 @@
+{
+  "index": 14,
+  "scene": "stacked_mass_pairs_cone",
+  "method": "wohlberg_mean",
+  "rho0": 0.8759999999999999,
+  "rho_oracle": 0.013520088153604571,
+  "rho_structure": 7.602904288988335e-05,
+  "rho_trace_mean": 0.8759999999999999,
+  "iterations": 30000,
+  "rho_changes": 8433,
+  "rho_final": 0.10949999999999999,
+  "residual": 7.583672911315453e-06,
+  "converged": false,
+  "status": "censored_30000",
+  "solution_sha256": "53dd083750bb6893c7539ed25f0c97a84b94885804315d81ff38c25bd1a7d0ea",
+  "n_c": 8,
+  "elapsed_seconds": 5.896008342970163,
+  "command": "archived benchmark invocation: RUN 14 wohlberg_mean",
+  "record_sha256": "f92941cfad349662327a609ac846b2b0275da18b299fefdde33a941c69b83df2"
+}

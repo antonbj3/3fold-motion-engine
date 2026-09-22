@@ -1,0 +1,345 @@
+{
+  "build_regimes": {
+    "per_frame": "all complete paths rebuild capture/state/index for the frame before Q queries (end-to-end per-frame cost)",
+    "reusable": "the accelerator (or grid) is built once and Q query batches reuse it; query-only cost reported separately"
+  },
+  "checks": {
+    "all_paths_agree_box0": true,
+    "gated_beats_celllist_on_win_cells": {
+      "negative_dense_allnear256": -4.033417454829058,
+      "small_sparse32": -0.7931819066286478,
+      "win_new_frame_sparse1024": -1.7564291648456414
+    },
+    "gated_beats_direct_on_win_cells": {
+      "negative_dense_allnear256": 0.015988523142461797,
+      "small_sparse32": -0.9242212356984549,
+      "win_new_frame_sparse1024": 0.6572250340843451
+    },
+    "gated_beats_sortedkey_on_win_cells": {
+      "negative_dense_allnear256": -3.366473042937357,
+      "small_sparse32": 0.521855753053547,
+      "win_new_frame_sparse1024": 0.3768454267865462
+    }
+  },
+  "d1_definition": "particle CENTRE in [lo, hi] inclusive (float32 promoted to float64)",
+  "decision_canonical_sha256": "7523410a912f4775e30e733266edac5842c12321332c13d5058db2927bc53bf6",
+  "gpu": "shared",
+  "lattice": {
+    "dx": 0.0125,
+    "origin": [
+      0.0,
+      -0.4,
+      -0.05
+    ],
+    "res": 64,
+    "rho": 1600.0
+  },
+  "paths": {
+    "A_gated_amort": "owned capture + owned state + bind_batch (extra P2G + validation + occupancy) + Q gated queries; reuses the producer grid",
+    "A_gated_full": "owned capture + owned state + Q x (bind_batch + query)",
+    "B_celllist": "state copy + histogram/prefix-scan/scatter cell-list build + Q exact range queries on the cell list",
+    "B_sortedkey": "state copy + radix-sort cell-key build (no prefix scan) + Q exact range queries by binary search",
+    "direct": "state copy + Q direct exact box counts (uncharged reference)"
+  },
+  "pinned_inputs": {
+    "box_geometry_families.json": "c6960cfe2f32e72ae08116fc7403c120edca12dc22cf51855145b64b9a16da4d",
+    "owned_keepout_contract.py": "0ee85fb753fe32c61f175502f2af4f7e9192e5c93fb1c29737ff8c29c099e715",
+    "producer_grid_keepout.py": "e0ecabc41a8a12a455761e9075167c64949e1e1bf4150372f0784b66dad98101",
+    "range_reference.py": "5ec17d66f8b2f92937ac6b9945c173dd960534faacce8bf3585809fddffce33f"
+  },
+  "python": "python",
+  "repeats": 5,
+  "scenarios": [
+    {
+      "Q": 16,
+      "agree": {
+        "celllist_eq_np": true,
+        "direct_eq_np": true,
+        "gated_amort_eq_np": true,
+        "gated_full_eq_np": true,
+        "sortedkey_eq_np": true
+      },
+      "all_paths_agree_box0": true,
+      "celllist_complete_s": 0.01585958292707801,
+      "celllist_over_direct": 0.12435471598082952,
+      "celllist_query_only_repeats_s": [
+        0.013173553044907749,
+        0.011981154093518853,
+        0.01186894008424133,
+        0.014001469011418521,
+        0.011755454004742205
+      ],
+      "celllist_query_only_s": 0.011981154093518853,
+      "celllist_repeats_s": [
+        0.01585958292707801,
+        0.016270760097540915,
+        0.015440148999914527,
+        0.016843708930537105,
+        0.015563142020255327
+      ],
+      "direct_complete_repeats_s": [
+        0.12969353597145528,
+        0.12753503397107124,
+        0.12619676592294127,
+        0.1262206770479679,
+        0.12802153604570776
+      ],
+      "direct_complete_s": 0.12753503397107124,
+      "dist": "sparse",
+      "frame": "160",
+      "gain_gated_amort_vs_celllist": -1.7564291648456414,
+      "gain_gated_amort_vs_direct": 0.6572250340843451,
+      "gain_gated_amort_vs_sortedkey": 0.3768454267865462,
+      "gated_amort_complete_s": 0.04371581692248583,
+      "gated_amort_over_celllist": 2.7564291648456414,
+      "gated_amort_over_direct": 0.3427749659156549,
+      "gated_amort_over_sortedkey": 0.6231545732134538,
+      "gated_amort_repeats_s": [
+        0.044124837033450603,
+        0.04371581692248583,
+        0.04184122197329998,
+        0.04261515603866428,
+        0.043892767978832126
+      ],
+      "gated_full_complete_s": 0.07188428507652134,
+      "gated_full_repeats_s": [
+        0.07210893102455884,
+        0.07358044595457613,
+        0.07016182702500373,
+        0.07188428507652134,
+        0.07085409201681614
+      ],
+      "gated_query_only_over_celllist_query_only": 2.685070716467285,
+      "gated_query_only_over_sortedkey_query_only": 0.47401802864163856,
+      "gated_query_only_repeats_s": [
+        0.03225766192190349,
+        0.03202487307135016,
+        0.03217024600598961,
+        0.03401122894138098,
+        0.03090988891199231
+      ],
+      "gated_query_only_s": 0.03217024600598961,
+      "gpu": "shared",
+      "gpu_mem_used_mib_after": 2307,
+      "gpu_mem_used_mib_before": 2305,
+      "label": "win_new_frame_sparse1024",
+      "n": 161000,
+      "n_exact_boxes": 169,
+      "nb": 1024,
+      "route": "gated",
+      "sortedkey_complete_s": 0.07015244499780238,
+      "sortedkey_over_direct": 0.5500641103346947,
+      "sortedkey_query_only_repeats_s": [
+        0.0704458779655397,
+        0.06244499096646905,
+        0.06862211495172232,
+        0.06384865299332887,
+        0.06786713597830385
+      ],
+      "sortedkey_query_only_s": 0.06786713597830385,
+      "sortedkey_repeats_s": [
+        0.07058789895381778,
+        0.07015244499780238,
+        0.07033410691656172,
+        0.0700472480384633,
+        0.06980534095782787
+      ],
+      "sum_counts_box0": 59115
+    },
+    {
+      "Q": 16,
+      "agree": {
+        "celllist_eq_np": true,
+        "direct_eq_np": true,
+        "gated_amort_eq_np": true,
+        "gated_full_eq_np": true,
+        "sortedkey_eq_np": true
+      },
+      "all_paths_agree_box0": true,
+      "celllist_complete_s": 0.007052605971693993,
+      "celllist_over_direct": 0.19549570161590277,
+      "celllist_query_only_repeats_s": [
+        0.0034684970742091537,
+        0.0033387989969924092,
+        0.0033092029625549912,
+        0.004312110017053783,
+        0.0033218140015378594
+      ],
+      "celllist_query_only_s": 0.0033387989969924092,
+      "celllist_repeats_s": [
+        0.007052605971693993,
+        0.007362153963185847,
+        0.006890146993100643,
+        0.007159669068641961,
+        0.00695397995878011
+      ],
+      "direct_complete_repeats_s": [
+        0.03674722695723176,
+        0.03499439393635839,
+        0.03597713401541114,
+        0.036075504031032324,
+        0.036848198040388525
+      ],
+      "direct_complete_s": 0.036075504031032324,
+      "dist": "allnear",
+      "frame": "160",
+      "gain_gated_amort_vs_celllist": -4.033417454829058,
+      "gain_gated_amort_vs_direct": 0.015988523142461797,
+      "gain_gated_amort_vs_sortedkey": -3.366473042937357,
+      "gated_amort_complete_s": 0.03549870999995619,
+      "gated_amort_over_celllist": 5.033417454829058,
+      "gated_amort_over_direct": 0.9840114768575382,
+      "gated_amort_over_sortedkey": 4.366473042937357,
+      "gated_amort_repeats_s": [
+        0.033915392006747425,
+        0.037704132962971926,
+        0.03449080197606236,
+        0.03749353508464992,
+        0.03549870999995619
+      ],
+      "gated_full_complete_s": 0.0629550979938358,
+      "gated_full_repeats_s": [
+        0.0629550979938358,
+        0.06328504206612706,
+        0.06215075007639825,
+        0.06544921500608325,
+        0.061402769992128015
+      ],
+      "gated_query_only_over_celllist_query_only": 7.308520814021865,
+      "gated_query_only_over_sortedkey_query_only": 5.678097744216291,
+      "gated_query_only_repeats_s": [
+        0.025483874953351915,
+        0.02384313498623669,
+        0.023727247025817633,
+        0.02440168196335435,
+        0.024599479977041483
+      ],
+      "gated_query_only_s": 0.02440168196335435,
+      "gpu": "shared",
+      "gpu_mem_used_mib_after": 2339,
+      "gpu_mem_used_mib_before": 2307,
+      "label": "negative_dense_allnear256",
+      "n": 161000,
+      "n_exact_boxes": 125,
+      "nb": 256,
+      "route": "gated",
+      "sortedkey_complete_s": 0.008129836060106754,
+      "sortedkey_over_direct": 0.22535613232495463,
+      "sortedkey_query_only_repeats_s": [
+        0.005241501028649509,
+        0.0042975100222975016,
+        0.0045376940397545695,
+        0.004270099918358028,
+        0.004275158047676086
+      ],
+      "sortedkey_query_only_s": 0.0042975100222975016,
+      "sortedkey_repeats_s": [
+        0.008520673029124737,
+        0.008129836060106754,
+        0.008118842029944062,
+        0.008081395993940532,
+        0.008131842012517154
+      ],
+      "sum_counts_box0": 1
+    },
+    {
+      "Q": 16,
+      "agree": {
+        "celllist_eq_np": true,
+        "direct_eq_np": true,
+        "gated_amort_eq_np": true,
+        "gated_full_eq_np": true,
+        "sortedkey_eq_np": true
+      },
+      "all_paths_agree_box0": true,
+      "celllist_complete_s": 0.010203682002611458,
+      "celllist_over_direct": 1.0730764283229766,
+      "celllist_query_only_repeats_s": [
+        0.008621223038062453,
+        0.008921882952563465,
+        0.008285158080980182,
+        0.008324367925524712,
+        0.0077258499804884195
+      ],
+      "celllist_query_only_s": 0.008324367925524712,
+      "celllist_repeats_s": [
+        0.013110417989082634,
+        0.010203682002611458,
+        0.010151233989745378,
+        0.012886865995824337,
+        0.010170480003580451
+      ],
+      "direct_complete_repeats_s": [
+        0.01012847397942096,
+        0.009702060022391379,
+        0.00948549504391849,
+        0.009446421987377107,
+        0.009508811985142529
+      ],
+      "direct_complete_s": 0.009508811985142529,
+      "dist": "sparse",
+      "frame": "160",
+      "gain_gated_amort_vs_celllist": -0.7931819066286478,
+      "gain_gated_amort_vs_direct": -0.9242212356984549,
+      "gain_gated_amort_vs_sortedkey": 0.521855753053547,
+      "gated_amort_complete_s": 0.018297057948075235,
+      "gated_amort_over_celllist": 1.7931819066286478,
+      "gated_amort_over_direct": 1.924221235698455,
+      "gated_amort_over_sortedkey": 0.47814424694645297,
+      "gated_amort_repeats_s": [
+        0.018297057948075235,
+        0.01865074399393052,
+        0.017776857945136726,
+        0.01851322001311928,
+        0.017630289075896144
+      ],
+      "gated_full_complete_s": 0.04609129705931991,
+      "gated_full_repeats_s": [
+        0.045307614956982434,
+        0.04609129705931991,
+        0.047315798001363873,
+        0.04690154001582414,
+        0.04522841307334602
+      ],
+      "gated_query_only_over_celllist_query_only": 0.8460975096613175,
+      "gated_query_only_over_sortedkey_query_only": 0.19363520639802093,
+      "gated_query_only_repeats_s": [
+        0.007397649926133454,
+        0.007015613955445588,
+        0.0070210149278864264,
+        0.00770403107162565,
+        0.007043226971291006
+      ],
+      "gated_query_only_s": 0.007043226971291006,
+      "gpu": "shared",
+      "gpu_mem_used_mib_after": 2307,
+      "gpu_mem_used_mib_before": 2339,
+      "label": "small_sparse32",
+      "n": 161000,
+      "n_exact_boxes": 32,
+      "nb": 32,
+      "route": "direct",
+      "sortedkey_complete_s": 0.03826681606005877,
+      "sortedkey_over_direct": 4.024353002231034,
+      "sortedkey_query_only_repeats_s": [
+        0.034511707024648786,
+        0.03839202597737312,
+        0.035905942087993026,
+        0.03705777693539858,
+        0.03637369000352919
+      ],
+      "sortedkey_query_only_s": 0.03637369000352919,
+      "sortedkey_repeats_s": [
+        0.03741330897901207,
+        0.039102989016100764,
+        0.03826681606005877,
+        0.03322762402240187,
+        0.03979426494333893
+      ],
+      "sum_counts_box0": 3160
+    }
+  ],
+  "tag": "r1",
+  "unit_note": "every *_s key is perf_counter seconds; *_ms = *_s*1e3; ratios dimensionless",
+  "record_origin": "matched-baseline measurement"
+}

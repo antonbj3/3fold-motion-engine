@@ -1,0 +1,314 @@
+{
+  "methods": [
+    "oracle",
+    "structure",
+    "lmin",
+    "he_structure"
+  ],
+  "shifts": [
+    "on",
+    "off",
+    "fixed"
+  ],
+  "by_shift": {
+    "on": {
+      "oracle": {
+        "median_iterations": 278,
+        "converged": 21,
+        "converged_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "total_rho_changes": 0,
+        "max_elapsed_seconds": 11.968849216005765
+      },
+      "structure": {
+        "median_iterations": 354,
+        "converged": 15,
+        "converged_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          12,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "total_rho_changes": 0,
+        "max_elapsed_seconds": 18.18943724106066
+      },
+      "lmin": {
+        "median_iterations": 1537,
+        "converged": 14,
+        "converged_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "total_rho_changes": 0,
+        "max_elapsed_seconds": 24.09626236197073
+      },
+      "he_structure": {
+        "median_iterations": 376,
+        "converged": 16,
+        "converged_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "total_rho_changes": 368,
+        "max_elapsed_seconds": 22.71383760799654
+      }
+    },
+    "off": {
+      "oracle": {
+        "median_iterations": 20000,
+        "converged": 8,
+        "converged_indices": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          12,
+          15,
+          17
+        ],
+        "total_rho_changes": 0,
+        "max_elapsed_seconds": 15.286691149929538
+      },
+      "structure": {
+        "median_iterations": 20000,
+        "converged": 8,
+        "converged_indices": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          12,
+          15,
+          17
+        ],
+        "total_rho_changes": 0,
+        "max_elapsed_seconds": 15.649714417988434
+      },
+      "lmin": {
+        "median_iterations": 20000,
+        "converged": 8,
+        "converged_indices": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          12,
+          15,
+          17
+        ],
+        "total_rho_changes": 0,
+        "max_elapsed_seconds": 18.47889548994135
+      },
+      "he_structure": {
+        "median_iterations": 20000,
+        "converged": 8,
+        "converged_indices": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          12,
+          15,
+          17
+        ],
+        "total_rho_changes": 42795,
+        "max_elapsed_seconds": 22.846661880030297
+      }
+    },
+    "fixed": {
+      "oracle": {
+        "median_iterations": 20000,
+        "converged": 7,
+        "converged_indices": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          15,
+          17
+        ],
+        "total_rho_changes": 0,
+        "max_elapsed_seconds": 16.77198392304126
+      },
+      "structure": {
+        "median_iterations": 30000,
+        "converged": 4,
+        "converged_indices": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "total_rho_changes": 0,
+        "max_elapsed_seconds": 16.740110881975852
+      },
+      "lmin": {
+        "median_iterations": 30000,
+        "converged": 4,
+        "converged_indices": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "total_rho_changes": 0,
+        "max_elapsed_seconds": 18.40895803400781
+      },
+      "he_structure": {
+        "median_iterations": 30000,
+        "converged": 4,
+        "converged_indices": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "total_rho_changes": 63045,
+        "max_elapsed_seconds": 72.9262431130046
+      }
+    }
+  },
+  "common_off_all_four_converged": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    12,
+    15,
+    17
+  ],
+  "common_fixed_all_four_converged": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "ranking_identical_to_shift_on_off": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    15,
+    17
+  ],
+  "ranking_identical_to_shift_on_fixed": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "ranking_reversed_off": [
+    12
+  ],
+  "dense_random_contact_operator_256": {
+    "on": {
+      "oracle": 1105,
+      "structure": 3017,
+      "lmin": 20000,
+      "he_structure": 20000
+    },
+    "off": {
+      "oracle": 2529,
+      "structure": 6864,
+      "lmin": 1377,
+      "he_structure": 44
+    },
+    "fixed": {
+      "oracle": 20000,
+      "structure": 20000,
+      "lmin": 20000,
+      "he_structure": 20000
+    }
+  },
+  "bitidentical_pairs": 252,
+  "bitidentity_total": 252,
+  "prior_on_shared_cells_identical": 63,
+  "prior_on_shared_cells_total": 63,
+  "prior_on_mismatches": [],
+  "startvalue_check_identical": 32,
+  "startvalue_check_total": 32,
+  "startvalue_check_indices": [
+    0,
+    1,
+    3,
+    4,
+    8,
+    12,
+    17,
+    20
+  ],
+  "max_elapsed_all_runs": 72.9262431130046,
+  "runs_over_30s": [
+    [
+      9,
+      "he_structure",
+      "fixed",
+      72.9262431130046
+    ]
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "adaptive_penalty": {
+    "manuscript": [
+      "Appendix F",
+      "Section 4.2 medians"
+    ],
+    "status": "regenerated",
+    "study": "adaptive penalty (He/Wohlberg) comparison"
+  },
+  "dense_block": {
+    "manuscript": [
+      "Appendix B"
+    ],
+    "status": "recovered_rows",
+    "study": "dense vs block elimination (rows in supplement/patch)"
+  },
+  "gpu_adjoint_identification": {
+    "manuscript": [
+      "P2 identification"
+    ],
+    "status": "verified_export_only",
+    "study": "GPU-adjoint system identification"
+  },
+  "gpu_batch_accuracy": {
+    "manuscript": [
+      "P2 accuracy/repeatability/cost table"
+    ],
+    "status": "verified_export_only",
+    "study": "GPU batch-adjoint accuracy/repeatability/cost"
+  },
+  "incidence_solvers": {
+    "manuscript": [
+      "Appendix C",
+      "Appendix D"
+    ],
+    "status": "regenerated",
+    "study": "scalar incidence-system solvers"
+  },
+  "load_ordering_conductance": {
+    "manuscript": [
+      "Section 5"
+    ],
+    "status": "recovered_rows",
+    "study": "conductance ranking, iterative reference"
+  },
+  "shift_ablation": {
+    "manuscript": [
+      "Section 4.2"
+    ],
+    "status": "recovered_rows",
+    "study": "de Saxce shift ablation (252 cells)"
+  },
+  "siconos_external": {
+    "manuscript": [
+      "Appendix H"
+    ],
+    "status": "verified_export_only",
+    "study": "external friction-contact solver comparison"
+  },
+  "solver_relaxation": {
+    "manuscript": [
+      "Appendix G"
+    ],
+    "status": "regenerated",
+    "study": "convex relaxation vs exact-cone solvers"
+  },
+  "spectral_grid": {
+    "manuscript": [
+      "Appendix E"
+    ],
+    "status": "recovered_rows",
+    "study": "spectral penalty grid (21 scenes)"
+  },
+  "refresh_schedule": {
+    "manuscript": [
+      "Section 4.4 refresh-schedule table"
+    ],
+    "status": "measured_rows_included",
+    "study": "same-law de Saxce refresh comparison (5 scenes, 3 arms, 63 unit rows)",
+    "source_file": "tables/refresh_schedule/refresh_contrast.json",
+    "si_cells_file": "tables/refresh_schedule/refresh_schedule_si.csv"
+  },
+  "dimensionless_stop": {
+    "manuscript": [
+      "Section 4.4 stopping-convention table"
+    ],
+    "status": "measured_rows_included",
+    "study": "absolute, physical and dimensionless stops (3 scenes, 5 units, 45 rows)",
+    "source_file": "dimensionless_stop/dimensionless_stop.json"
+  }
+}

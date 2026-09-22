@@ -1,0 +1,20 @@
+{
+  "index": 6,
+  "scene": "lattice",
+  "method": "structure_fixed",
+  "rho0": 5.118749320769551,
+  "rho_oracle": 0.00040211196847168937,
+  "rho_structure": 5.118749320769551,
+  "rho_trace_mean": 7.0,
+  "iterations": 68,
+  "rho_changes": 0,
+  "rho_final": 5.118749320769551,
+  "residual": 9.981210649656624e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "0a3e9df38aa3ed2bbfbc6764aae9bd70c2d51be7ca2a37ef250d3887c4f7c1eb",
+  "n_c": 64,
+  "elapsed_seconds": 0.015090045053511858,
+  "command": "archived benchmark invocation: RUN 6 structure_fixed",
+  "record_sha256": "ed3d6d780d7156eb35ed382f64f3723f2728a8691c84eb0af94ecf0a06ce3bd6"
+}

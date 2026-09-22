@@ -1,0 +1,53 @@
+{
+ "durations_s": [
+  0.05,
+  0.2,
+  1.0,
+  5.0,
+  20.0
+ ],
+ "long_box_T_s": [
+  50.0,
+  100.0
+ ],
+ "long_box_rel_pct": [
+  1.4589704383282314,
+  0.8218654434250714
+ ],
+ "per_scene_mean_rel_poly": [
+  [
+   2.9946483182727044,
+   5.944444445183127,
+   4.325789083372658
+  ],
+  [
+   0.7289436800179478,
+   1.0291794089824091,
+   1.0687038747384514
+  ],
+  [
+   0.1993501529742212,
+   0.2630606525298668,
+   0.2586279919369103
+  ],
+  [
+   0.06542537382958212,
+   0.08148572896315205,
+   0.07779309390226918
+  ],
+  [
+   0.024146279365769244,
+   0.03051732936547773,
+   0.027275455652019026
+  ]
+ ],
+ "scalar_T50": {
+  "isotropic_n12_pct": 1.307006528,
+  "isotropic_n20_pct": 1.384684494
+ },
+ "source_status": {
+  "long_box_rel_pct": "raw_backed (long-horizon ramp payload)",
+  "per_scene_mean_rel_poly": "raw_backed (dynamic ramp payload)",
+  "scalar_T50": "archived_report (reported in the static-LP audit report; no raw field shipped)"
+ }
+}

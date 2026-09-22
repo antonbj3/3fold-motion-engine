@@ -1,0 +1,274 @@
+{
+  "description": "Quasistatic slip-boundary ramp scenes: one rectangular support patch per target body, loaded by a horizontal acceleration field of magnitude L in direction phi.",
+  "directions_rad": [
+    0.0,
+    0.2617993877991494,
+    0.5235987755982988,
+    0.7853981633974483,
+    1.0471975511965976,
+    1.3089969389957472,
+    1.5707963267948966,
+    1.832595714594046,
+    2.0943951023931953,
+    2.356194490192345,
+    2.6179938779914944,
+    2.8797932657906435,
+    3.141592653589793,
+    3.4033920413889427,
+    3.665191429188092,
+    3.926990816987241,
+    4.1887902047863905,
+    4.4505895925855405,
+    4.71238898038469,
+    4.974188368183839,
+    5.235987755982989,
+    5.497787143782138,
+    5.759586531581287,
+    6.021385919380436
+  ],
+  "gravity": 9.81,
+  "patch_model": "rect_tip = g/h * min((a_u - sign*u0)/|cos|, (a_v - sign*v0)/|sin|) in patch frame; rect_slide = mu*g; static radius = min over the interface and ground patch candidates",
+  "protocol": {
+    "acceleration_ladder_m_s2": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0,
+      32.0
+    ],
+    "bisections": 8,
+    "contact_residual_target_Ns": 1e-08,
+    "displacement_threshold_mm": 5.0,
+    "pgs_budget_per_step": 60,
+    "ramp": "L(s) = L_peak * (s+1)/N_steps; step uses constant L",
+    "step_horizon_s": 0.6,
+    "tilt_threshold_deg": 5.0,
+    "time_step_s": 0.005
+  },
+  "scenes": {
+    "box": {
+      "bodies": [
+        {
+          "half": [
+            0.15,
+            0.08,
+            0.1
+          ],
+          "mass": 2.0,
+          "pos": [
+            0.0,
+            0.0,
+            0.1
+          ],
+          "quat": [
+            0.9659258262890683,
+            0.0,
+            0.0,
+            0.25881904510252074
+          ]
+        }
+      ],
+      "drift_tol": 0.005,
+      "dt": 0.005,
+      "ground_patch": {
+        "a_u": 0.15,
+        "a_v": 0.08,
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "h": 0.1,
+        "mu": 0.5,
+        "phi0": 0.5235987755982988,
+        "u0": 0.0,
+        "v0": 0.0
+      },
+      "interface_patch": {
+        "a_u": 0.15,
+        "a_v": 0.08,
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "h": 0.1,
+        "mu": 0.5,
+        "phi0": 0.5235987755982988,
+        "u0": 0.0,
+        "v0": 0.0
+      },
+      "mu_ground": 0.5,
+      "mu_inter": 0.5,
+      "note": "single rectangular box on the ground plane, yawed, mu=0.50",
+      "scene": "box",
+      "steps": 120,
+      "support": -1,
+      "target": 0,
+      "tilt_tol": 0.08726646259971647
+    },
+    "pallet": {
+      "bodies": [
+        {
+          "half": [
+            0.19,
+            0.18,
+            0.12
+          ],
+          "mass": 4.0,
+          "pos": [
+            0.26095824194223854,
+            -0.8524448624099179,
+            0.12
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "half": [
+            0.19,
+            0.18,
+            0.12
+          ],
+          "mass": 4.0,
+          "pos": [
+            0.42388813793780766,
+            -0.8406027806663561,
+            0.36
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "drift_tol": 0.005,
+      "dt": 0.005,
+      "ground_patch": {
+        "a_u": 0.19,
+        "a_v": 0.18,
+        "center": [
+          0.26095824194223854,
+          -0.8524448624099179,
+          0.0
+        ],
+        "h": 0.24,
+        "mu": 0.4,
+        "phi0": 0.0,
+        "u0": 0.08146494799778453,
+        "v0": 0.005921040871780914
+      },
+      "interface_patch": {
+        "a_u": 0.10853505200221544,
+        "a_v": 0.17407895912821902,
+        "center": [
+          0.3424231899400231,
+          -0.846523821538137,
+          0.24
+        ],
+        "h": 0.12,
+        "mu": 0.4,
+        "phi0": 0.0,
+        "u0": 0.08146494799778459,
+        "v0": 0.005921040871780914
+      },
+      "mu_ground": 0.4,
+      "mu_inter": 0.4,
+      "note": "two stacked boxes with a lateral offset, mu=0.40",
+      "scene": "pallet",
+      "steps": 120,
+      "support": 0,
+      "target": 1,
+      "tilt_tol": 0.08726646259971647
+    },
+    "stack": {
+      "bodies": [
+        {
+          "half": [
+            0.1,
+            0.1,
+            0.06
+          ],
+          "mass": 2.0,
+          "pos": [
+            0.0,
+            0.0,
+            0.06
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "half": [
+            0.1,
+            0.1,
+            0.06
+          ],
+          "mass": 2.0,
+          "pos": [
+            0.0,
+            0.0,
+            0.18
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "drift_tol": 0.005,
+      "dt": 0.005,
+      "ground_patch": {
+        "a_u": 0.1,
+        "a_v": 0.1,
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "h": 0.12,
+        "mu": 0.6,
+        "phi0": 0.0,
+        "u0": 0.0,
+        "v0": 0.0
+      },
+      "interface_patch": {
+        "a_u": 0.1,
+        "a_v": 0.1,
+        "center": [
+          0.0,
+          0.0,
+          0.12
+        ],
+        "h": 0.06,
+        "mu": 0.25,
+        "phi0": 0.0,
+        "u0": 0.0,
+        "v0": 0.0
+      },
+      "mu_ground": 0.6,
+      "mu_inter": 0.25,
+      "note": "two stacked boxes, interface mu=0.25, ground mu=0.60",
+      "scene": "stack",
+      "steps": 120,
+      "support": 0,
+      "target": 1,
+      "tilt_tol": 0.08726646259971647
+    }
+  }
+}

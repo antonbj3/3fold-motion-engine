@@ -1,0 +1,6 @@
+{
+ "case": "h = 0.30 m, phi = 15 deg dynamic ramp",
+ "collapse_load": 2.782375,
+ "first_local_load": 0.6513125,
+ "macro_threshold_load": 2.985
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "B": 1,
+    "acc": "int64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "cube",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "float64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "cube",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "float32",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "cube",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "int64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "float64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "float32",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "int64",
+    "iter": 400,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower_mass_imbalance",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "float64",
+    "iter": 400,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower_mass_imbalance",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "float32",
+    "iter": 400,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower_mass_imbalance",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "int64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "lattice",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "float64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "lattice",
+    "timing_block": 25
+  },
+  {
+    "B": 1,
+    "acc": "float32",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "lattice",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "int64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "cube",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "float64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "cube",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "float32",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "cube",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "int64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "float64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "float32",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "int64",
+    "iter": 400,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower_mass_imbalance",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "float64",
+    "iter": 400,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower_mass_imbalance",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "float32",
+    "iter": 400,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower_mass_imbalance",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "int64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "lattice",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "float64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "lattice",
+    "timing_block": 25
+  },
+  {
+    "B": 256,
+    "acc": "float32",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "lattice",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "int64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "cube",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "float64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "cube",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "float32",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "cube",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "int64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "float64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "float32",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "int64",
+    "iter": 400,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower_mass_imbalance",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "float64",
+    "iter": 400,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower_mass_imbalance",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "float32",
+    "iter": 400,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "eight_box_tower_mass_imbalance",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "int64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "lattice",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "float64",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "lattice",
+    "timing_block": 25
+  },
+  {
+    "B": 4096,
+    "acc": "float32",
+    "iter": 200,
+    "reps_repeat": 3,
+    "reps_timing": 5,
+    "rho_mode": "sqrt",
+    "scene": "lattice",
+    "timing_block": 25
+  }
+]

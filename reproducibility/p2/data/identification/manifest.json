@@ -1,0 +1,26 @@
+{
+  "frozen_sources": {
+    "batch_adjoint_gpu.py": "4964b42951a4033bcec748564ce713d7f05631cd47ee2baf527bdd0dd993f04c",
+    "batch_adjoint_gpu_f32.py": "3df31b585ddbf7db65ae3e9537e9674639ef9d4e3ab7dc3e58399cd83ca0121a",
+    "ncp_ref.py": "36fbc0ac8f5e12c7052025e6da44b8a01feb643150cec247ac8a8553ac98600b",
+    "estimator_gpu.py": "eb1f9a51434ac6d023cf4e765fdf02dbca4ca5e07a2d190ea46ad0be6a499632",
+    "talos_ident_gn.py": "84a06ce1fb79268bef71bc98c060c38ef7b79646f8d7c7038031c300db1dab40",
+    "talos_ident_scene.py": "eedf476c88f0a7746d996149ccb24800b73b449e52cad7487e1cae0930d3bfa2"
+  },
+  "inputs": {
+    "identification_sim_win7_B512.npz": "ad65923a85f073db3e4bedd2584687c6192b8957a2f3faf915667bfb6cf06f0c",
+    "identification_sim_B512.npz": "fae57961f5c016111bf3b495640be49657f258b25b389e141460bfd2dd4dc6c9"
+  },
+  "records": [],
+  "scripts": {
+    "estimator_chunk.py": "aa786097a1dca65c9c365a5b9c2775590e5c1318f302d7a40cf271a554cdbbbe",
+    "estimator_common.py": "5e8b3e4a758884834299040d8b9b8e88fcbd69f4601058ba1e001c7c6d99b23f",
+    "estimator_fd.py": "c86fab79c3730a5398889f02a5a37c1ce273d012fbea831dcde2b0f0716ab9b6",
+    "estimator_manifest.py": "259b064c6f1fcc183a62d77c86c77ec76a1ed73eb912b870d54af633a8c69902",
+    "estimator_residual.py": "e7f59622a814bae7dce360ce15ea3f0f23bf5c1b7f4ac0dd615211b2ce6f630c",
+    "estimator_run.py": "6fb759676354f2a91750b5a17dfabc90ff75e4ae0760ef5505f247357271cf85",
+    "estimator_state.py": "d97938c5251a1e9f78083c667b250a72652a6223e63a5d99f09c654069713c8d",
+    "estimator_summary.py": "83cf51e0efef4faffebefd38b68937309533df66001b524fe411db41499648c2"
+  },
+  "note": "The source and script SHA-256 values in this measurement manifest are historical producer hashes before public identifier cleanup. For hashes of delivered source files use release/MANIFEST.json."
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "B": 1,
+    "NV": 1201,
+    "acc": "float64",
+    "bytes_total": 176954908,
+    "fwd_step_ms": 119.46,
+    "grad_ms": 104272.58,
+    "it_tol": null,
+    "n_c": 710,
+    "n_calls": 131,
+    "note": "same 131-call adjoint as the measured int64 row; one direction is 104.3 s > the 90 s run cap; 200 it does not reach 1e-8 (res 2.47e-5)",
+    "res_max_budget": 2.47e-05,
+    "scene": "sphere_packing_200",
+    "status": "infeasible_budget"
+  },
+  {
+    "B": 1,
+    "NV": 1201,
+    "acc": "float32",
+    "bytes_total": 176954908,
+    "fwd_step_ms": 119.46,
+    "grad_ms": 104272.58,
+    "it_tol": null,
+    "n_c": 710,
+    "n_calls": 131,
+    "note": "same 131-call adjoint as the measured int64 row; one direction is 104.3 s > the 90 s run cap; 200 it does not reach 1e-8 (res 2.47e-5)",
+    "res_max_budget": 2.47e-05,
+    "scene": "sphere_packing_200",
+    "status": "infeasible_budget"
+  },
+  {
+    "B": 256,
+    "NV": 1201,
+    "acc": "int64",
+    "bytes_total": 45300456448,
+    "mem_limit": 9000000000,
+    "n_c": 710,
+    "note": "dense per-env G is O((3n_c)^2): 177 MB/env; B=256 needs 45.3 GB, B=4096 needs 725 GB",
+    "scene": "sphere_packing_200",
+    "status": "infeasible_memory"
+  },
+  {
+    "B": 256,
+    "NV": 1201,
+    "acc": "float64",
+    "bytes_total": 45300456448,
+    "mem_limit": 9000000000,
+    "n_c": 710,
+    "note": "dense per-env G is O((3n_c)^2): 177 MB/env; B=256 needs 45.3 GB, B=4096 needs 725 GB",
+    "scene": "sphere_packing_200",
+    "status": "infeasible_memory"
+  },
+  {
+    "B": 256,
+    "NV": 1201,
+    "acc": "float32",
+    "bytes_total": 45300456448,
+    "mem_limit": 9000000000,
+    "n_c": 710,
+    "note": "dense per-env G is O((3n_c)^2): 177 MB/env; B=256 needs 45.3 GB, B=4096 needs 725 GB",
+    "scene": "sphere_packing_200",
+    "status": "infeasible_memory"
+  },
+  {
+    "B": 4096,
+    "NV": 1201,
+    "acc": "int64",
+    "bytes_total": 724807303168,
+    "mem_limit": 9000000000,
+    "n_c": 710,
+    "note": "dense per-env G is O((3n_c)^2): 177 MB/env; B=256 needs 45.3 GB, B=4096 needs 725 GB",
+    "scene": "sphere_packing_200",
+    "status": "infeasible_memory"
+  },
+  {
+    "B": 4096,
+    "NV": 1201,
+    "acc": "float64",
+    "bytes_total": 724807303168,
+    "mem_limit": 9000000000,
+    "n_c": 710,
+    "note": "dense per-env G is O((3n_c)^2): 177 MB/env; B=256 needs 45.3 GB, B=4096 needs 725 GB",
+    "scene": "sphere_packing_200",
+    "status": "infeasible_memory"
+  },
+  {
+    "B": 4096,
+    "NV": 1201,
+    "acc": "float32",
+    "bytes_total": 724807303168,
+    "mem_limit": 9000000000,
+    "n_c": 710,
+    "note": "dense per-env G is O((3n_c)^2): 177 MB/env; B=256 needs 45.3 GB, B=4096 needs 725 GB",
+    "scene": "sphere_packing_200",
+    "status": "infeasible_memory"
+  }
+]

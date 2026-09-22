@@ -1,0 +1,10 @@
+control,quantity,value,note
+box S1 (24 sampled LP radii),spread_rel,6.071996909474244e-10,"24 sampled static LP radii of the four-contact box scene (S1); friction-limited, direction-independent"
+box S1 (24 sampled LP radii),poly_min,4.904999997767242,
+box S1 (24 sampled LP radii),poly_max,4.905000000745557,
+N12 platform (12 dirs),max_relative_error,0.012302390016130304,genuine 12-contact elliptical 3-fold-perturbed ring control; reached T=50 s boundary vs the 16-ray LP radius; a separate control from the box sample and from the N20 exact scalar LP
+N12 platform (12 dirs),median_relative_error,0.012302390016129464,
+N12 platform (12 dirs),lp_radius_ratio,1.019348523123106,
+N20 exact scalar,lp_exact_3d,4.4574,"exact 3D scalar LP control, not a 12-direction sample"
+N20 exact scalar,measured,4.4605,
+N20 exact scalar,rel_error,0.00071274,

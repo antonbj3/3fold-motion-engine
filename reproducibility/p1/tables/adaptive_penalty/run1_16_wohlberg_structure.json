@@ -1,0 +1,20 @@
+{
+  "index": 16,
+  "scene": "quadruped_sliding_stance",
+  "method": "wohlberg_structure",
+  "rho0": 0.30665892369047437,
+  "rho_oracle": 0.9466930819985165,
+  "rho_structure": 0.30665892369047437,
+  "rho_trace_mean": 3.351821816095212,
+  "iterations": 1386,
+  "rho_changes": 10,
+  "rho_final": 0.30665892369047437,
+  "residual": 8.830945696924886e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "3ccbb539b6c26ac7985b03ce839b3376e43ec9507123ae18e8b8eccc78f5cce4",
+  "n_c": 4,
+  "elapsed_seconds": 0.17678392201196402,
+  "command": "archived benchmark invocation: RUN 16 wohlberg_structure",
+  "record_sha256": "aff5cc31bd018c13771a3a9a0e463031b7e14dea2fd4368d60f873dd6b784e0d"
+}

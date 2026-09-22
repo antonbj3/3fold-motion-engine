@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "env": "27",
+      "fd_range": "2.46e-08 – 2.32e-07",
+      "label": "Standard push, converged",
+      "res": 5.379585665821196e-13
+    },
+    {
+      "env": "0",
+      "fd_range": "8.20e+03 – 9.46e+05",
+      "label": "Standard push, not converged",
+      "res": 0.020014471769410007
+    },
+    {
+      "env": "27",
+      "fd_range": "5.13e-04 – 1.35e-02",
+      "label": "Selected excitation, converged",
+      "res": 4.622189783698438e-12
+    },
+    {
+      "env": "116",
+      "fd_range": "2.35e+03 – 2.37e+03",
+      "label": "Selected excitation, not converged",
+      "res": 0.016114821798228762
+    }
+  ]
+}

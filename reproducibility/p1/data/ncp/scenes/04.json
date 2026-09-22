@@ -1,0 +1,126 @@
+{
+  "b": [
+    0.6,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+  ],
+  "bodies": [
+    {
+      "dof": 3,
+      "id": 0,
+      "inv_mass": 0.001,
+      "mass": 1000.0
+    },
+    {
+      "dof": 3,
+      "id": 1,
+      "inv_mass": 1.0,
+      "mass": 1.0
+    },
+    {
+      "dof": 3,
+      "id": 2,
+      "inv_mass": 0.001,
+      "mass": 1000.0
+    }
+  ],
+  "contact_note": null,
+  "contacts": [
+    {
+      "a": 0,
+      "b": -1,
+      "id": 0,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "id": 1,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "id": 2,
+      "mu": 0.5,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t1": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "t2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "dof": 3,
+  "dt": 0.004,
+  "eta": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "index": 4,
+  "model": "body_contacts",
+  "mu": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "n_b": 3,
+  "n_c": 3,
+  "operator": null,
+  "provenance": {
+    "author": "Anton Björkegren",
+    "construction": "point-contact [D ; r x D] Jacobian blocks; scalar inverse masses 1/1000, 1, 1/1000",
+    "dataset": "ncp-contact-scenes",
+    "j_assembly": "J = per-contact block [D ; r x D] (rows n,t1,t2; cols v,omega); M^-1 = block diagonal of per-body inverse mass and inertia; W = G = J M^-1 J^T + diag(eta)",
+    "origin": "three-body point-mass column with mass ratio 1000:1, separating initial velocities",
+    "schema": "contact-scene-v1"
+  },
+  "scene": "three_body_column_separating",
+  "schema": "contact-scene-v1"
+}

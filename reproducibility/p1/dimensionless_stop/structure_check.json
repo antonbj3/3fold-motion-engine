@@ -1,0 +1,184 @@
+{
+  "00": {
+    "degree_ok": false,
+    "max_degree": 4,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 1,
+    "opposite_incidences_ok": true,
+    "scene": "cube",
+    "structural": false,
+    "unique_body_pair_ok": false
+  },
+  "01": {
+    "degree_ok": false,
+    "max_degree": 8,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 8,
+    "opposite_incidences_ok": true,
+    "scene": "eight_box_tower",
+    "structural": false,
+    "unique_body_pair_ok": false
+  },
+  "02": {
+    "degree_ok": true,
+    "max_degree": 2,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 3,
+    "opposite_incidences_ok": true,
+    "scene": "three_body_column_normal",
+    "structural": true,
+    "unique_body_pair_ok": true
+  },
+  "03": {
+    "degree_ok": true,
+    "max_degree": 2,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 3,
+    "opposite_incidences_ok": true,
+    "scene": "three_body_column_tangential_drive",
+    "structural": true,
+    "unique_body_pair_ok": true
+  },
+  "04": {
+    "degree_ok": true,
+    "max_degree": 2,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 3,
+    "opposite_incidences_ok": true,
+    "scene": "three_body_column_separating",
+    "structural": true,
+    "unique_body_pair_ok": true
+  },
+  "05": {
+    "degree_ok": false,
+    "max_degree": 8,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 8,
+    "opposite_incidences_ok": true,
+    "scene": "eight_box_tower_mass_imbalance",
+    "structural": false,
+    "unique_body_pair_ok": false
+  },
+  "06": {
+    "degree_ok": false,
+    "max_degree": 16,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 8,
+    "opposite_incidences_ok": true,
+    "scene": "lattice",
+    "structural": false,
+    "unique_body_pair_ok": false
+  },
+  "07": {
+    "degree_ok": false,
+    "max_degree": 13,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 64,
+    "opposite_incidences_ok": true,
+    "scene": "random_contact_graph_256",
+    "structural": false,
+    "unique_body_pair_ok": false
+  },
+  "08": {
+    "degree_ok": false,
+    "max_degree": 9,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 124,
+    "opposite_incidences_ok": true,
+    "scene": "granular_press_step",
+    "structural": false,
+    "unique_body_pair_ok": false
+  },
+  "09": {
+    "degree_ok": false,
+    "max_degree": 10,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 50,
+    "opposite_incidences_ok": true,
+    "scene": "sphere_packing_50",
+    "structural": false,
+    "unique_body_pair_ok": false
+  },
+  "10": {
+    "degree_ok": false,
+    "max_degree": 10,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 200,
+    "opposite_incidences_ok": true,
+    "scene": "sphere_packing_200",
+    "structural": false,
+    "unique_body_pair_ok": false
+  },
+  "11": {
+    "degree_ok": false,
+    "max_degree": 11,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 800,
+    "opposite_incidences_ok": false,
+    "scene": "sphere_packing_800",
+    "structural": false,
+    "unique_body_pair_ok": false
+  },
+  "12": {
+    "model": "operator",
+    "reason": "operator model has no contact graph",
+    "scene": "dense_random_contact_operator_256",
+    "structural": false
+  },
+  "13": {
+    "degree_ok": true,
+    "max_degree": 2,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 3,
+    "opposite_incidences_ok": true,
+    "scene": "heavy_top_column_tangential_drive",
+    "structural": true,
+    "unique_body_pair_ok": true
+  },
+  "14": {
+    "degree_ok": true,
+    "max_degree": 2,
+    "model": "body_contacts",
+    "n_bodies_with_incidence": 8,
+    "opposite_incidences_ok": true,
+    "scene": "stacked_mass_pairs_cone",
+    "structural": true,
+    "unique_body_pair_ok": true
+  },
+  "15": {
+    "model": "operator",
+    "reason": "operator model has no contact graph",
+    "scene": "quadruped_sticking_stance",
+    "structural": false
+  },
+  "16": {
+    "model": "operator",
+    "reason": "operator model has no contact graph",
+    "scene": "quadruped_sliding_stance",
+    "structural": false
+  },
+  "17": {
+    "model": "operator",
+    "reason": "operator model has no contact graph",
+    "scene": "humanoid",
+    "structural": false
+  },
+  "18": {
+    "model": "operator",
+    "reason": "operator model has no contact graph",
+    "scene": "quadruped_unloading_probe",
+    "structural": false
+  },
+  "19": {
+    "model": "operator",
+    "reason": "operator model has no contact graph",
+    "scene": "batched_quadruped_sticking",
+    "structural": false
+  },
+  "20": {
+    "model": "operator",
+    "reason": "operator model has no contact graph",
+    "scene": "batched_quadruped_sliding",
+    "structural": false
+  }
+}

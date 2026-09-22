@@ -1,0 +1,10 @@
+{
+ "appendix": "H",
+ "checked_cells": 22,
+ "gap_cells": 6,
+ "gaps": [
+  "H: generator r_nat, lost-contact fraction and peak-torque ratio were printed only in the producer's step-2 report; their per-run arrays are not part of the package. Declared gaps (see source_availability.json). The true-parameter torque cost and estimator r_nat are regenerated from the bundled excitation_consistency_{std,win7}.json records."
+ ],
+ "mismatches": [],
+ "ok": true
+}

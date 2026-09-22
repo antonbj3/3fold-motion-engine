@@ -1,0 +1,246 @@
+{
+  "build_regimes": {
+    "per_frame": "all complete paths rebuild capture/state/index for the frame before Q queries (end-to-end per-frame cost)",
+    "reusable": "the accelerator (or grid) is built once and Q query batches reuse it; query-only cost reported separately"
+  },
+  "checks": {
+    "all_paths_agree_box0": true,
+    "gated_beats_celllist_on_win_cells": {
+      "negative_dense_allnear256": -2.5873536953330687,
+      "win_new_frame_sparse1024": -1.6267026063364098
+    },
+    "gated_beats_direct_on_win_cells": {
+      "negative_dense_allnear256": -0.4806837627199405,
+      "win_new_frame_sparse1024": 0.4509564497644276
+    },
+    "gated_beats_sortedkey_on_win_cells": {
+      "negative_dense_allnear256": -2.436779510448283,
+      "win_new_frame_sparse1024": 0.12071922530935819
+    }
+  },
+  "d1_definition": "particle CENTRE in [lo, hi] inclusive (float32 promoted to float64)",
+  "decision_canonical_sha256": "e50554711ce4796b0af72d44f7b0efcd99851174b7c3e02610dd5aba35804e69",
+  "gpu": "shared",
+  "lattice": {
+    "dx": 0.0125,
+    "origin": [
+      0.0,
+      -0.4,
+      -0.05
+    ],
+    "res": 64,
+    "rho": 1600.0
+  },
+  "paths": {
+    "A_gated_amort": "owned capture + owned state + bind_batch (extra P2G + validation + occupancy) + Q gated queries; reuses the producer grid",
+    "A_gated_full": "owned capture + owned state + Q x (bind_batch + query)",
+    "B_celllist": "state copy + histogram/prefix-scan/scatter cell-list build + Q exact range queries on the cell list",
+    "B_sortedkey": "state copy + radix-sort cell-key build (no prefix scan) + Q exact range queries by binary search",
+    "direct": "state copy + Q direct exact box counts (uncharged reference)"
+  },
+  "pinned_inputs": {
+    "box_geometry_families.json": "c6960cfe2f32e72ae08116fc7403c120edca12dc22cf51855145b64b9a16da4d",
+    "owned_keepout_contract.py": "0ee85fb753fe32c61f175502f2af4f7e9192e5c93fb1c29737ff8c29c099e715",
+    "producer_grid_keepout.py": "e0ecabc41a8a12a455761e9075167c64949e1e1bf4150372f0784b66dad98101",
+    "range_reference.py": "5ec17d66f8b2f92937ac6b9945c173dd960534faacce8bf3585809fddffce33f"
+  },
+  "python": "python",
+  "repeats": 5,
+  "scenarios": [
+    {
+      "Q": 4,
+      "agree": {
+        "celllist_eq_np": true,
+        "direct_eq_np": true,
+        "gated_amort_eq_np": true,
+        "gated_full_eq_np": true,
+        "sortedkey_eq_np": true
+      },
+      "all_paths_agree_box0": true,
+      "celllist_complete_s": 0.00735291198361665,
+      "celllist_over_direct": 0.20902387232993622,
+      "celllist_query_only_repeats_s": [
+        0.004323504981584847,
+        0.003749595023691654,
+        0.004101629019714892,
+        0.0034222890390083194,
+        0.0034591950243338943
+      ],
+      "celllist_query_only_s": 0.003749595023691654,
+      "celllist_repeats_s": [
+        0.00735291198361665,
+        0.00713672605343163,
+        0.008615238009952009,
+        0.007188278948888183,
+        0.007801168947480619
+      ],
+      "direct_complete_repeats_s": [
+        0.036084825987927616,
+        0.03420078498311341,
+        0.033899251953698695,
+        0.03624019003473222,
+        0.03517737903166562
+      ],
+      "direct_complete_s": 0.03517737903166562,
+      "dist": "sparse",
+      "frame": "160",
+      "gain_gated_amort_vs_celllist": -1.6267026063364098,
+      "gain_gated_amort_vs_direct": 0.4509564497644276,
+      "gain_gated_amort_vs_sortedkey": 0.12071922530935819,
+      "gated_amort_complete_s": 0.019313913071528077,
+      "gated_amort_over_celllist": 2.62670260633641,
+      "gated_amort_over_direct": 0.5490435502355724,
+      "gated_amort_over_sortedkey": 0.8792807746906418,
+      "gated_amort_repeats_s": [
+        0.02155007398687303,
+        0.019313913071528077,
+        0.01876422797795385,
+        0.018348638899624348,
+        0.01968821103218943
+      ],
+      "gated_full_complete_s": 0.024631157983094454,
+      "gated_full_repeats_s": [
+        0.025071033043786883,
+        0.024565019994042814,
+        0.024631157983094454,
+        0.024676727945916355,
+        0.024596135946922004
+      ],
+      "gated_query_only_over_celllist_query_only": 2.189237492290921,
+      "gated_query_only_over_sortedkey_query_only": 0.41792763319327153,
+      "gated_query_only_repeats_s": [
+        0.008156423922628164,
+        0.008738889009691775,
+        0.009137941990047693,
+        0.008208754006773233,
+        0.007847056025639176
+      ],
+      "gated_query_only_s": 0.008208754006773233,
+      "gpu": "shared",
+      "gpu_mem_used_mib_after": 2306,
+      "gpu_mem_used_mib_before": 2304,
+      "label": "win_new_frame_sparse1024",
+      "n": 161000,
+      "n_exact_boxes": 169,
+      "nb": 1024,
+      "route": "gated",
+      "sortedkey_complete_s": 0.021965580992400646,
+      "sortedkey_over_direct": 0.6244234674967651,
+      "sortedkey_query_only_repeats_s": [
+        0.01718535996042192,
+        0.021926268003880978,
+        0.019645558088086545,
+        0.01751520298421383,
+        0.019641567952930927
+      ],
+      "sortedkey_query_only_s": 0.019641567952930927,
+      "sortedkey_repeats_s": [
+        0.02136973396409303,
+        0.021965580992400646,
+        0.023576450999826193,
+        0.02180342096835375,
+        0.021966316970065236
+      ],
+      "sum_counts_box0": 59115
+    },
+    {
+      "Q": 4,
+      "agree": {
+        "celllist_eq_np": true,
+        "direct_eq_np": true,
+        "gated_amort_eq_np": true,
+        "gated_full_eq_np": true,
+        "sortedkey_eq_np": true
+      },
+      "all_paths_agree_box0": true,
+      "celllist_complete_s": 0.0046470650704577565,
+      "celllist_over_direct": 0.4127509826104465,
+      "celllist_query_only_repeats_s": [
+        0.0009168440010398626,
+        0.0008571450598537922,
+        0.0008399899816140532,
+        0.0008542040595784783,
+        0.0008313560392707586
+      ],
+      "celllist_query_only_s": 0.0008542040595784783,
+      "celllist_repeats_s": [
+        0.004788621095940471,
+        0.0046470650704577565,
+        0.004546629032120109,
+        0.004644277039915323,
+        0.004648436908610165
+      ],
+      "direct_complete_repeats_s": [
+        0.012121691019274294,
+        0.011258761980570853,
+        0.011216505081392825,
+        0.01281985198147595,
+        0.011244300054386258
+      ],
+      "direct_complete_s": 0.011258761980570853,
+      "dist": "allnear",
+      "frame": "160",
+      "gain_gated_amort_vs_celllist": -2.5873536953330687,
+      "gain_gated_amort_vs_direct": -0.4806837627199405,
+      "gain_gated_amort_vs_sortedkey": -2.436779510448283,
+      "gated_amort_complete_s": 0.01667066605295986,
+      "gated_amort_over_celllist": 3.5873536953330687,
+      "gated_amort_over_direct": 1.4806837627199405,
+      "gated_amort_over_sortedkey": 3.436779510448283,
+      "gated_amort_repeats_s": [
+        0.01709852204658091,
+        0.01642334193456918,
+        0.018233818002045155,
+        0.016253810026682913,
+        0.01667066605295986
+      ],
+      "gated_full_complete_s": 0.021861262037418783,
+      "gated_full_repeats_s": [
+        0.021496379049494863,
+        0.02163149300031364,
+        0.021861262037418783,
+        0.02285462897270918,
+        0.021893054945394397
+      ],
+      "gated_query_only_over_celllist_query_only": 6.853042913329327,
+      "gated_query_only_over_sortedkey_query_only": 5.127858739375808,
+      "gated_query_only_repeats_s": [
+        0.006559839006513357,
+        0.005968989920802414,
+        0.005853897077031434,
+        0.0058360249968245625,
+        0.005799343925900757
+      ],
+      "gated_query_only_s": 0.005853897077031434,
+      "gpu": "shared",
+      "gpu_mem_used_mib_after": 2338,
+      "gpu_mem_used_mib_before": 2306,
+      "label": "negative_dense_allnear256",
+      "n": 161000,
+      "n_exact_boxes": 125,
+      "nb": 256,
+      "route": "gated",
+      "sortedkey_complete_s": 0.004850664990954101,
+      "sortedkey_over_direct": 0.4308346689738047,
+      "sortedkey_query_only_repeats_s": [
+        0.0011415870394557714,
+        0.0010762689635157585,
+        0.0015051979571580887,
+        0.0011868230067193508,
+        0.0011069299653172493
+      ],
+      "sortedkey_query_only_s": 0.0011415870394557714,
+      "sortedkey_repeats_s": [
+        0.004842763068154454,
+        0.004858274012804031,
+        0.004771724925376475,
+        0.004976153024472296,
+        0.004850664990954101
+      ],
+      "sum_counts_box0": 1
+    }
+  ],
+  "tag": "q4",
+  "unit_note": "every *_s key is perf_counter seconds; *_ms = *_s*1e3; ratios dimensionless",
+  "record_origin": "matched-baseline measurement"
+}

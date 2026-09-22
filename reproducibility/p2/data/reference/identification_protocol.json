@@ -1,0 +1,59 @@
+{
+  "rows": [
+    {
+      "quantity": "Trajectory population",
+      "unit": "environments",
+      "value": "512"
+    },
+    {
+      "quantity": "Observation window",
+      "unit": "steps",
+      "value": "50"
+    },
+    {
+      "quantity": "GPU chunk",
+      "unit": "environment-steps",
+      "value": "1024"
+    },
+    {
+      "quantity": "Parameter iterations",
+      "unit": "iterations",
+      "value": "8"
+    },
+    {
+      "quantity": "Forward budget",
+      "unit": "iterations",
+      "value": "300"
+    },
+    {
+      "quantity": "Torque noise σ_τ",
+      "unit": "N·m",
+      "value": "1"
+    },
+    {
+      "quantity": "Gaussian median absolute-error factor",
+      "unit": "–",
+      "value": "0.6745"
+    },
+    {
+      "quantity": "Defective-driver integer repetitions",
+      "unit": "runs",
+      "value": "3"
+    },
+    {
+      "quantity": "Defective-driver floating repetitions",
+      "unit": "runs",
+      "value": "5"
+    },
+    {
+      "quantity": "Corrected derivative-check processes",
+      "unit": "processes",
+      "value": "2"
+    },
+    {
+      "quantity": "Corrected derivative-check window",
+      "unit": "steps",
+      "value": "10"
+    }
+  ]
+}

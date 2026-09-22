@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "scene": "eight_box_tower",
+  "method": "wohlberg_mean",
+  "rho0": 7.5,
+  "rho_oracle": 2.3331472395808377e-06,
+  "rho_structure": 0.32895260136140225,
+  "rho_trace_mean": 7.5,
+  "iterations": 13,
+  "rho_changes": 12,
+  "rho_final": 0.0018310546875,
+  "residual": 2.6654262130776374e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "1df8caa8e3d0a0ee97aeb6af1c81d9cd1d4d1d58a5dca339319a6886261d43ea",
+  "n_c": 32,
+  "elapsed_seconds": 0.009130807011388242,
+  "command": "archived benchmark invocation: RUN 1 wohlberg_mean",
+  "record_sha256": "6815545c527d95d6ea8c7176e074f551deb2e2aed76e986ec9d0c9fcb40edd73"
+}

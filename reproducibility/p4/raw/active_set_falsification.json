@@ -1,0 +1,40 @@
+{
+ "kind": "per-set certificate vs measured bracket; falsified when outside",
+ "n": 40,
+ "per_scene": {
+  "scene_1_stack": {
+   "A_sp_m_cert_S0": null,
+   "A_sp_m_cert_u101": null,
+   "A_sp_m_min": null,
+   "B_sp_m_cert_S0": 0.021677749238103002,
+   "B_sp_m_cert_u101": 0.10838874619051501,
+   "B_sp_m_min": -0.6936879756192961,
+   "L_A_distinct": 1.0,
+   "L_B_distinct": 2.0,
+   "m_cert_S0_eq_m_min_count": 4.0,
+   "n": 20.0,
+   "nodes_mean": 8.35
+  },
+  "scene_2_gripper": {
+   "A_sp_m_cert_S0": -0.16446718695368073,
+   "A_sp_m_cert_u101": 0.9905753049090956,
+   "A_sp_m_min": 0.5213117227251324,
+   "B_sp_m_cert_S0": -0.4189545237985971,
+   "B_sp_m_cert_u101": -0.07070327690676503,
+   "B_sp_m_min": -0.0014437231106536918,
+   "L_A_distinct": 13.0,
+   "L_B_distinct": 19.0,
+   "m_cert_S0_eq_m_min_count": 0.0,
+   "n": 20.0,
+   "nodes_mean": 3.15
+  }
+ },
+ "pooled_2scenes": {
+  "A_sp_m_cert_S0": -0.7441782497546112,
+  "A_sp_m_cert_u101": -0.6708438873158648,
+  "A_sp_m_min": -0.46947666968258667,
+  "B_sp_m_cert_S0": -0.4429809444018097,
+  "B_sp_m_cert_u101": -0.43838793659530517,
+  "B_sp_m_min": -0.5359351885982985
+ }
+}

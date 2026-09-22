@@ -1,0 +1,38 @@
+{
+ "events": [
+  {
+   "branch_interval": [
+    0.4900000000000003,
+    0.49500000000000033
+   ],
+   "case": "h = 0.15 m, phi = 0 deg",
+   "kind": "close",
+   "predicted_load": 0.49320925178086744,
+   "status": "confirmed"
+  },
+  {
+   "branch_interval": [
+    0.14500000000000005,
+    0.15000000000000005
+   ],
+   "case": "h = 0.15 m, phi = 270 deg",
+   "kind": "close",
+   "predicted_load": 0.1455177636156032,
+   "status": "confirmed"
+  },
+  {
+   "branch_interval": null,
+   "case": "h = 0.30 m, phi = 15 deg",
+   "kind": "slip",
+   "predicted_load": 0.6512463418837452,
+   "status": "unconfirmed"
+  },
+  {
+   "branch_interval": null,
+   "case": "h = 0.40 m, phi = 15 deg",
+   "kind": "slip",
+   "predicted_load": 0.6233170875288442,
+   "status": "unconfirmed"
+  }
+ ]
+}

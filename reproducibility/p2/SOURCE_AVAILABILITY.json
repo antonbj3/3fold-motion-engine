@@ -1,0 +1,405 @@
+{
+  "claim_dependency": {
+    "AA": "Table AA provenance-count rows.",
+    "D": "Table D lattice/synthetic executed-cost comparison and the abstract crossover claim.",
+    "H": "Table H model-consistency columns (generator residual, lost-contact fraction, peak-torque ratio) and the selected-excitation feasibility claim.",
+    "I": "Table I headline synthetic sweep (the archive row of the same configurations is regenerated).",
+    "T": "Table T selected-trajectory missing-upload control row.",
+    "U": "Table U missing-upload control column and the two residual-outlier rows."
+  },
+  "gaps_by_table": {
+    "AA": 3,
+    "D": 1,
+    "H": 6,
+    "I": 9,
+    "P": 1,
+    "T": 5,
+    "U": 24
+  },
+  "identifier_cleanup_boundary": {
+    "P_row3_digest": "The printed SHA-256 658ffe86a40bb8587e46f3acbb2240b75e2ba0f7b537e328e79722b7437a909d identifies the original producer record, whose sim field used a private input name. The public cleaned record hashes to 83f646c9d4334bbd96d423965d13c74179d4c2e299f3a29fb97710d2bf830b20. No numeric measurement changed; the public digest is a different serialization identity."
+  },
+  "note": "Thirty printed numeric measurements have no bundled original per-run source; eighteen em-dash placeholders are unavailable values. Table P has one historical/public serialization-digest difference. None is filled from the manuscript or expected.json.",
+  "recovered_sources": [
+    {
+      "cells": [
+        "lattice PGS r_nat",
+        "lattice ADMM r_nat"
+      ],
+      "note": "Archived lattice-contact producer stdout (same fixed budgets); timings remain from the L4 record.",
+      "source": "data/reference/lattice_producer_shared.txt",
+      "table": "D"
+    },
+    {
+      "cells": [
+        "Unitree A1 row (four parity errors)"
+      ],
+      "note": "Archived Pinocchio-parity producer stdout.",
+      "source": "data/reference/bilateral_a1_producer.txt",
+      "table": "B"
+    },
+    {
+      "cells": [
+        "CPU-vs-device branch sensitivity range",
+        "verification-pass and wall ranges",
+        "earlier/final solver-module hashes"
+      ],
+      "note": "Archived CPU-reference record and audit record.",
+      "source": "data/accepted_state/branch_reference.json, data/accepted_state/audit.json",
+      "table": "AA"
+    },
+    {
+      "cells": [
+        "true-parameter squared torque cost",
+        "estimator r_nat"
+      ],
+      "note": "Already-bundled records; now generated instead of copied.",
+      "source": "data/reference/excitation_consistency_std.json, data/reference/excitation_consistency_win7.json",
+      "table": "H"
+    }
+  ],
+  "unresolved_cells": [
+    {
+      "col": 1,
+      "manuscript_value": "13",
+      "row": 2,
+      "table": "AA",
+      "table_index": 0
+    },
+    {
+      "col": 1,
+      "manuscript_value": "16",
+      "row": 3,
+      "table": "AA",
+      "table_index": 0
+    },
+    {
+      "col": 1,
+      "manuscript_value": "0",
+      "row": 6,
+      "table": "AA",
+      "table_index": 0
+    },
+    {
+      "col": 7,
+      "manuscript_value": "2.83e-9",
+      "row": 0,
+      "table": "D",
+      "table_index": 0
+    },
+    {
+      "col": 8,
+      "manuscript_value": "4.199e-12",
+      "row": 0,
+      "table": "H",
+      "table_index": 0
+    },
+    {
+      "col": 9,
+      "manuscript_value": "0.0000",
+      "row": 0,
+      "table": "H",
+      "table_index": 0
+    },
+    {
+      "col": 10,
+      "manuscript_value": "1.154",
+      "row": 0,
+      "table": "H",
+      "table_index": 0
+    },
+    {
+      "col": 8,
+      "manuscript_value": "2.161e-08",
+      "row": 1,
+      "table": "H",
+      "table_index": 0
+    },
+    {
+      "col": 9,
+      "manuscript_value": "0.7213",
+      "row": 1,
+      "table": "H",
+      "table_index": 0
+    },
+    {
+      "col": 10,
+      "manuscript_value": "5.284",
+      "row": 1,
+      "table": "H",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "40.45",
+      "row": 0,
+      "table": "I",
+      "table_index": 0
+    },
+    {
+      "col": 4,
+      "manuscript_value": "93.39",
+      "row": 0,
+      "table": "I",
+      "table_index": 0
+    },
+    {
+      "col": 5,
+      "manuscript_value": "0.43",
+      "row": 0,
+      "table": "I",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "72.58",
+      "row": 1,
+      "table": "I",
+      "table_index": 0
+    },
+    {
+      "col": 4,
+      "manuscript_value": "188.86",
+      "row": 1,
+      "table": "I",
+      "table_index": 0
+    },
+    {
+      "col": 5,
+      "manuscript_value": "0.38",
+      "row": 1,
+      "table": "I",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "1139.29",
+      "row": 2,
+      "table": "I",
+      "table_index": 0
+    },
+    {
+      "col": 4,
+      "manuscript_value": "735.70",
+      "row": 2,
+      "table": "I",
+      "table_index": 0
+    },
+    {
+      "col": 5,
+      "manuscript_value": "1.55",
+      "row": 2,
+      "table": "I",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "13.46",
+      "row": 2,
+      "table": "T",
+      "table_index": 0
+    },
+    {
+      "col": 4,
+      "manuscript_value": "3.745",
+      "row": 2,
+      "table": "T",
+      "table_index": 0
+    },
+    {
+      "col": 5,
+      "manuscript_value": "1.518",
+      "row": 2,
+      "table": "T",
+      "table_index": 0
+    },
+    {
+      "col": 6,
+      "manuscript_value": "2.401",
+      "row": 2,
+      "table": "T",
+      "table_index": 0
+    },
+    {
+      "col": 7,
+      "manuscript_value": "0.6335",
+      "row": 2,
+      "table": "T",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "1.6705e-02",
+      "row": 0,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 0,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "4.5614e-01",
+      "row": 1,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "3.1448e-02",
+      "row": 2,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 2,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "9.3655e-01",
+      "row": 3,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "—",
+      "row": 4,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 4,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "—",
+      "row": 5,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 5,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "—",
+      "row": 6,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 6,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "—",
+      "row": 7,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 7,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "—",
+      "row": 8,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 8,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "—",
+      "row": 9,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 9,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 1,
+      "manuscript_value": "—",
+      "row": 10,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "4.092455e+5",
+      "row": 10,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 10,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 1,
+      "manuscript_value": "—",
+      "row": 11,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 2,
+      "manuscript_value": "3.326372e+29",
+      "row": 11,
+      "table": "U",
+      "table_index": 0
+    },
+    {
+      "col": 3,
+      "manuscript_value": "—",
+      "row": 11,
+      "table": "U",
+      "table_index": 0
+    }
+  ],
+  "unresolved_count": 48,
+  "gap_breakdown": {
+    "missing_numeric_measurements": 30,
+    "em_dash_placeholders": 18,
+    "historical_digest_serialization": 1
+  }
+}

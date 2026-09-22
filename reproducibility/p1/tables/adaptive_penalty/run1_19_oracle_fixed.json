@@ -1,0 +1,20 @@
+{
+  "index": 19,
+  "scene": "batched_quadruped_sticking",
+  "method": "oracle_fixed",
+  "rho0": 0.18988633444662106,
+  "rho_oracle": 0.18988633444662106,
+  "rho_structure": 0.32568759734976116,
+  "rho_trace_mean": 3.352803706830278,
+  "iterations": 278,
+  "rho_changes": 0,
+  "rho_final": 0.18988633444662106,
+  "residual": 9.28546154896348e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "8ea0c375b1ed25437655ae82de464ee99d90366b4e1be992992211b52f6e948d",
+  "n_c": 4,
+  "elapsed_seconds": 0.03088503098115325,
+  "command": "archived benchmark invocation: RUN 19 oracle_fixed",
+  "record_sha256": "04b10537ad9550bf6bedc63553710dfa8ced5a35b7491744c0a282e4aaf5c4fd"
+}

@@ -1,0 +1,212 @@
+{
+ "A": {
+  "checked": 18,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "AA": {
+  "checked": 73,
+  "gaps": 3,
+  "mismatches": 0,
+  "notes": [
+   "AA: 'canonical run records equal to per-run records' (13), 'saved parameter arrays equal to the recorded digest' (16) and 'driver scripts in the per-run module provenance' (0) were computed by the producer's audit over per-run records that are not bundled; declared gaps (see source_availability.json). The branch-sensitivity range and the pass/wall ranges are now regenerated from the bundled CPU-reference records and the two solver-module hashes from the bundled audit."
+  ],
+  "ok": true
+ },
+ "AB": {
+  "checked": 25,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "B": {
+  "checked": 21,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "C": {
+  "checked": 90,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "D": {
+  "checked": 18,
+  "gaps": 1,
+  "mismatches": 0,
+  "notes": [
+   "D Synthetic PGS r_nat (2.83e-9): the run that printed it did not archive the residual; the bundled L4 timing record carries only ms. Declared gap (see source_availability.json). The lattice residual is now regenerated from the archived producer stdout data/reference/lattice_producer_shared.txt (shared-GPU run of the same fixed budgets); the timings are the L4 record."
+  ],
+  "ok": true
+ },
+ "E": {
+  "checked": 45,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "F": {
+  "checked": 8,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "G": {
+  "checked": 30,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "H": {
+  "checked": 22,
+  "gaps": 6,
+  "mismatches": 0,
+  "notes": [
+   "H: generator r_nat, lost-contact fraction and peak-torque ratio were printed only in the producer's step-2 report; their per-run arrays are not part of the package. Declared gaps (see source_availability.json). The true-parameter torque cost and estimator r_nat are regenerated from the bundled excitation_consistency_{std,win7}.json records."
+  ],
+  "ok": true
+ },
+ "I": {
+  "checked": 18,
+  "gaps": 9,
+  "mismatches": 0,
+  "notes": [
+   "I: the manuscript's headline sweep (40.45/93.39, 72.58/188.86, 1139.29/735.70 ms) comes from a consolidated cloud-L4 sweep table whose per-run stdout log is not in the package. The archive table (second table below) is the raw log of the same configurations (40.41/93.30, 72.44/188.66, 1137.06/735.02 ms), which the manuscript also states."
+  ],
+  "ok": true
+ },
+ "J": {
+  "checked": 450,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "K": {
+  "checked": 48,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "L": {
+  "checked": 39,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "M": {
+  "checked": 28,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "N": {
+  "checked": 33,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "O": {
+  "checked": 39,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "P": {
+  "checked": 30,
+  "gaps": 1,
+  "mismatches": 0,
+  "notes": [
+   "P: the derivative-check digest is content-addressed over the whole run record, whose `sim` field named an internal input file. Identifier cleanup changed those bytes, so the manuscript digest (658ffe86...) is not regenerable from the cleaned record; declared gap. The cleaned canonical digest is shown."
+  ],
+  "ok": true
+ },
+ "Q": {
+  "checked": 30,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "R": {
+  "checked": 38,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "S": {
+  "checked": 30,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "T": {
+  "checked": 32,
+  "gaps": 5,
+  "mismatches": 0,
+  "notes": [
+   "T: the selected-trajectory missing-upload row was computed in a separate report and its per-run record is not part of the package."
+  ],
+  "ok": true
+ },
+ "U": {
+  "checked": 60,
+  "gaps": 24,
+  "mismatches": 0,
+  "notes": [
+   "U: the missing-upload control column and the two large residual outliers were assembled in a separate report; their per-run arrays are not part of the package."
+  ],
+  "ok": true
+ },
+ "V": {
+  "checked": 32,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "W": {
+  "checked": 20,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "X": {
+  "checked": 35,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "Y": {
+  "checked": 232,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ },
+ "Z": {
+  "checked": 94,
+  "gaps": 0,
+  "mismatches": 0,
+  "notes": [],
+  "ok": true
+ }
+}

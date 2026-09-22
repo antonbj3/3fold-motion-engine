@@ -1,0 +1,10 @@
+{
+ "appendix": "U",
+ "checked_cells": 60,
+ "gap_cells": 24,
+ "gaps": [
+  "U: the missing-upload control column and the two large residual outliers were assembled in a separate report; their per-run arrays are not part of the package."
+ ],
+ "mismatches": [],
+ "ok": true
+}

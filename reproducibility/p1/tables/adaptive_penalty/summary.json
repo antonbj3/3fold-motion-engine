@@ -1,0 +1,46 @@
+{
+  "structure_fixed": {
+    "median_iterations": 354,
+    "median_ratio_to_oracle": 6.233118637024725,
+    "median_ratio_to_structure": 1.0,
+    "total_rho_changes": 0,
+    "converged": 15
+  },
+  "he_mean": {
+    "median_iterations": 464,
+    "median_ratio_to_oracle": 4.2,
+    "median_ratio_to_structure": 0.8022598870056498,
+    "total_rho_changes": 603,
+    "converged": 16
+  },
+  "he_structure": {
+    "median_iterations": 376,
+    "median_ratio_to_oracle": 3.282608695652174,
+    "median_ratio_to_structure": 0.8842315369261478,
+    "total_rho_changes": 368,
+    "converged": 16
+  },
+  "wohlberg_mean": {
+    "median_iterations": 955,
+    "median_ratio_to_oracle": 4.443729903536977,
+    "median_ratio_to_structure": 1.0,
+    "total_rho_changes": 9050,
+    "converged": 14
+  },
+  "wohlberg_structure": {
+    "median_iterations": 513,
+    "median_ratio_to_oracle": 2.590909090909091,
+    "median_ratio_to_structure": 1.0,
+    "total_rho_changes": 593,
+    "converged": 17
+  },
+  "oracle_fixed": {
+    "median_iterations": 278,
+    "converged": 21
+  },
+  "he_mean_beats_structure_paired_median": true,
+  "he_structure_beats_structure_paired_median": true,
+  "max_successful_elapsed_seconds": 24.09400384000037,
+  "bitidentical_pairs": 126,
+  "bitidentity_total": 126
+}

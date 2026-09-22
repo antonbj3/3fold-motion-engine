@@ -1,0 +1,44 @@
+{
+  "appendix": "B",
+  "title": "Bilateral derivative reference (Pinocchio parity)",
+  "manuscript_tables": [
+    [
+      [
+        "Robot",
+        "Velocity DOF [–]",
+        "Contacts [–]",
+        "δv⁺/δτ error [–]",
+        "δλ/δτ error [–]",
+        "δv⁺/δq error [–]",
+        "δλ/δq error [–]"
+      ],
+      [
+        "Unitree A1",
+        "18",
+        "4",
+        "1.22e-13",
+        "3.86e-12",
+        "2.99e-11",
+        "1.62e-10"
+      ],
+      [
+        "ANYmal C",
+        "18",
+        "4",
+        "1.27e-12",
+        "3.51e-13",
+        "7.56e-10",
+        "4.75e-10"
+      ],
+      [
+        "Talos",
+        "38",
+        "2",
+        "1.75e-14",
+        "7.20e-12",
+        "1.09e-09",
+        "5.23e-10"
+      ]
+    ]
+  ]
+}

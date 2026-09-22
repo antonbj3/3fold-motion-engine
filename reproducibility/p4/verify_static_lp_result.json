@@ -1,0 +1,38 @@
+{
+ "all_checks_pass": true,
+ "polygon": {
+  "analytic_max_radial_error_rel": 0.009700556535263635,
+  "circumradius_rel": 1.0097005565352637,
+  "inradius_rel": 0.9902994434647364,
+  "raw_analytic_error_matches": true,
+  "raw_scale_matches": true,
+  "sides": 16,
+  "straddles_circle": true
+ },
+ "scenes": {
+  "box": {
+   "frozen_max_rel_residual": 2.908209250535207e-15,
+   "max_rel_diff_lp_vs_frozen": 7.2983352142828545e-16,
+   "max_rel_residual_lp_vs_enumeration": 7.312254506337043e-16,
+   "n_contacts": 4,
+   "polygon_error_soc_pct": 0.9700556994879544,
+   "residual_order_matches": true
+  },
+  "pallet": {
+   "frozen_max_rel_residual": 1.499866223035558e-12,
+   "max_rel_diff_lp_vs_frozen": 5.3401236456978746e-12,
+   "max_rel_residual_lp_vs_enumeration": 5.390238226545863e-12,
+   "n_contacts": 8,
+   "polygon_error_soc_pct": 0.9700556931214809,
+   "residual_order_matches": true
+  },
+  "stack": {
+   "frozen_max_rel_residual": 3.0722702533668896e-15,
+   "max_rel_diff_lp_vs_frozen": 2.7082698645608378e-14,
+   "max_rel_residual_lp_vs_enumeration": 6.0326099677280585e-15,
+   "n_contacts": 8,
+   "polygon_error_soc_pct": 0.9700556535897689,
+   "residual_order_matches": true
+  }
+ }
+}

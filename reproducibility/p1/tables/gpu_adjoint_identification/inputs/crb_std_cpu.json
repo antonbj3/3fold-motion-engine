@@ -1,0 +1,12 @@
+{
+  "50": {
+    "window": 50,
+    "ncp_res": 1.2825994220588832e-06,
+    "crb_rel_per_sigma_m_p50": 0.057259434430443186,
+    "crb_rel_per_sigma_m_p95": 0.13642757244668266,
+    "crb_rel_per_sigma_I_zz_p50": 1.268415431901091,
+    "crb_rel_per_sigma_I_zz_p95": 3.261810679006845,
+    "crb_rel_per_sigma_mu_p50": 0.05941064222768866,
+    "crb_rel_per_sigma_mu_p95": 0.14809549499164762
+  }
+}

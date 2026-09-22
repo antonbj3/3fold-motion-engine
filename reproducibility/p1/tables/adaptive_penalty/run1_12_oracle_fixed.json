@@ -1,0 +1,21 @@
+{
+  "index": 12,
+  "scene": "dense_random_contact_operator_256",
+  "method": "oracle_fixed",
+  "rho0": 225.368196167039,
+  "rho_oracle": 225.368196167039,
+  "rho_structure": 605.1221333875683,
+  "rho_trace_mean": 224.188832161021,
+  "iterations": 1105,
+  "rho_changes": 0,
+  "iteration_cap": 20000,
+  "rho_final": 225.368196167039,
+  "residual": 9.991044970514285e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "a6fadcca099ce3668bff1c83b2c197a3f82b0fbf570b790c15b3ff7366c745df",
+  "n_c": 256,
+  "elapsed_seconds": 1.3486694920575246,
+  "command": "archived benchmark invocation: RUN 12 oracle_fixed",
+  "record_sha256": "b7fe60ec9c81bcf35e0d162a7e7dd6ef39b36682a7a984ed8294fff689ac9648"
+}

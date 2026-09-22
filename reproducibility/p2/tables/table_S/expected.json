@@ -1,0 +1,56 @@
+{
+  "appendix": "S",
+  "title": "Excitation and local information",
+  "manuscript_tables": [
+    [
+      [
+        "Quantity",
+        "Standard CPU",
+        "Standard GPU, corrected",
+        "Selected CPU",
+        "Selected GPU, corrected",
+        "Unit"
+      ],
+      [
+        "Mass CRB p50",
+        "5.725943e-2",
+        "5.725943e-2",
+        "1.713034e-2",
+        "1.713034e-2",
+        "(N·m)⁻¹"
+      ],
+      [
+        "Friction CRB p50",
+        "5.941064e-2",
+        "5.941064e-2",
+        "3.434491e-2",
+        "3.434491e-2",
+        "(N·m)⁻¹"
+      ],
+      [
+        "Yaw inertia CRB p50",
+        "—",
+        "1.268415",
+        "—",
+        "4.869282e-2",
+        "(N·m)⁻¹"
+      ],
+      [
+        "Mass improvement",
+        "—",
+        "—",
+        "3.343",
+        "3.3426",
+        "ratio"
+      ],
+      [
+        "Friction improvement",
+        "—",
+        "—",
+        "1.730",
+        "1.7298",
+        "ratio"
+      ]
+    ]
+  ]
+}

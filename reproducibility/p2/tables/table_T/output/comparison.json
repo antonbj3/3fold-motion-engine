@@ -1,0 +1,10 @@
+{
+ "appendix": "T",
+ "checked_cells": 32,
+ "gap_cells": 5,
+ "gaps": [
+  "T: the selected-trajectory missing-upload row was computed in a separate report and its per-run record is not part of the package."
+ ],
+ "mismatches": [],
+ "ok": true
+}

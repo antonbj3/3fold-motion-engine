@@ -1,0 +1,142 @@
+{
+  "config": {
+    "sigma": 1.0,
+    "window": 10,
+    "iters": 1,
+    "chunk": 16,
+    "nit": 50,
+    "cg": 4,
+    "grad_cg": 20,
+    "trials": 2,
+    "seed": 4242,
+    "nB": 8,
+    "env_off": 0,
+    "res_tol": 1e-05
+  },
+  "runs": {
+    "a100_smoke_int64_a": {
+      "theta_sha256": "f0941d7b8cc2bd10a7c12a471ec90fb5fba4b2ca1dbd39c1b7a855104f3b3ea6",
+      "gate": "cost",
+      "wall_s": 1.261290363036096,
+      "res_tol": 1e-05,
+      "hist_last": {
+        "it": 0,
+        "t_s": 0.8326594149693847,
+        "accepted": 5,
+        "cost_sum": 2860.167904817448,
+        "res_acc_max": 0.0002394852152768582,
+        "res_acc_p95": 0.00023587317384580968,
+        "res_lastcand_max": 0.0042209002551948606,
+        "cost_recompute_maxdiff": 0.0,
+        "gate_pass": 0,
+        "digest": "2389a1c51776bca1bb9864792eb9a7fe082887da27861509d1f374cde72f3c76",
+        "ms_total": 312.0075030019507,
+        "damp_med": 1.1e-06
+      }
+    },
+    "a100_smoke_int64_b": {
+      "theta_sha256": "f0941d7b8cc2bd10a7c12a471ec90fb5fba4b2ca1dbd39c1b7a855104f3b3ea6",
+      "gate": "cost",
+      "wall_s": 1.2053159390343353,
+      "res_tol": 1e-05,
+      "hist_last": {
+        "it": 0,
+        "t_s": 0.7962654050206766,
+        "accepted": 5,
+        "cost_sum": 2860.167904817448,
+        "res_acc_max": 0.0002394852152768582,
+        "res_acc_p95": 0.00023587317384580968,
+        "res_lastcand_max": 0.0042209002551948606,
+        "cost_recompute_maxdiff": 0.0,
+        "gate_pass": 0,
+        "digest": "2389a1c51776bca1bb9864792eb9a7fe082887da27861509d1f374cde72f3c76",
+        "ms_total": 307.7152039622888,
+        "damp_med": 1.1e-06
+      }
+    },
+    "a100_smoke_int64_gate": {
+      "theta_sha256": "c20072abd9195d100a9db4d0ed131d2aa0a33b8ffc1659160e5a169f9cfb35a6",
+      "gate": "residual",
+      "wall_s": 1.241900403983891,
+      "res_tol": 1e-05,
+      "hist_last": {
+        "it": 0,
+        "t_s": 0.860752145992592,
+        "accepted": 0,
+        "cost_sum": 3220.464056589988,
+        "res_acc_max": 0.00022550346873720373,
+        "res_acc_p95": 0.00022463318083422307,
+        "res_lastcand_max": 0.0042209002551948606,
+        "cost_recompute_maxdiff": 0.0,
+        "gate_pass": 0,
+        "digest": "6228c6f107288217610b8533246a26cfa35c9eeebd595e3046bfb78e7c584438",
+        "ms_total": 328.5722049186006,
+        "damp_med": 9.999999999999999e-05
+      }
+    }
+  },
+  "theta_vs_estimator": {
+    "a100_smoke_int64_a": {
+      "ref": "f0941d7b8cc2bd10a7c12a471ec90fb5fba4b2ca1dbd39c1b7a855104f3b3ea6",
+      "equal": true
+    },
+    "a100_smoke_int64_b": {
+      "ref": "f0941d7b8cc2bd10a7c12a471ec90fb5fba4b2ca1dbd39c1b7a855104f3b3ea6",
+      "equal": true
+    },
+    "a100_smoke_int64_gate": {
+      "ref": "c20072abd9195d100a9db4d0ed131d2aa0a33b8ffc1659160e5a169f9cfb35a6",
+      "equal": true
+    }
+  },
+  "cpu_ref_case_series": {
+    "run": "series_std_int64_p0",
+    "it": 3,
+    "env": 0,
+    "theta": [
+      [
+        9.67531675563945,
+        0.004896200669607772,
+        0.27381245417327515
+      ]
+    ],
+    "logged_res": 0.020014471769410007,
+    "gpu_res": 0.020014471769410007,
+    "gpu_digest": "bb94bbaa54b747ca03e4c650a6394703194b5bea547c56aaf9188e927929e89c",
+    "F": 50,
+    "res_tol": 1e-05,
+    "gs_gpu": [
+      -383.4438235045291,
+      620.6181538890595,
+      -15037.79365334801
+    ],
+    "gs_cpu_rel_err": 4.680744418333614e-13
+  },
+  "cpu_ref_case": {
+    "run": "a100_smoke_int64_gate",
+    "env": 1,
+    "theta": [
+      [
+        5.0,
+        0.08124117569768424,
+        0.4
+      ]
+    ],
+    "logged_res": 0.00022550346873720373,
+    "gpu_res": 0.00022550346873720373,
+    "gpu_digest": "dbaaa3e5e8274b5500f5590b626b07dfd322429594b0a207a9a237b096fdc4c2",
+    "F": 10,
+    "gs_gpu": [
+      0.0936352194977213,
+      0.00767900519944932,
+      4.670284730096608
+    ],
+    "gs_cpu": [
+      0.09363521949661585,
+      0.007679005199453972,
+      4.6702847300986114
+    ],
+    "gs_cpu_rel_err": 4.2903819159694663e-13,
+    "Hs_cpu_rel_err": 7.248403682574732e-14
+  }
+}

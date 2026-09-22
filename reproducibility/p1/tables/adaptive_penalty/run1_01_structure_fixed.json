@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "scene": "eight_box_tower",
+  "method": "structure_fixed",
+  "rho0": 0.32895260136140225,
+  "rho_oracle": 2.3331472395808377e-06,
+  "rho_structure": 0.32895260136140225,
+  "rho_trace_mean": 7.5,
+  "iterations": 48,
+  "rho_changes": 0,
+  "rho_final": 0.32895260136140225,
+  "residual": 9.963245506394713e-11,
+  "converged": true,
+  "status": "converged",
+  "solution_sha256": "1965baa456e1257a817db4401461b5276ad4e08057b6581e198b2a68e7fc741e",
+  "n_c": 32,
+  "elapsed_seconds": 0.007206266047433019,
+  "command": "archived benchmark invocation: RUN 1 structure_fixed",
+  "record_sha256": "c7f97800324815156310da216bf98b1e45d6579eb391c43f783eff3649f0b721"
+}

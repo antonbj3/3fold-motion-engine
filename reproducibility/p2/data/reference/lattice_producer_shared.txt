@@ -1,0 +1,12 @@
+## LatticeWorld N=10000  n_c=40000  n_b=10000  float64  RTX 5070 (SHARED)   (host build 523 ms)
+   PGS     40 sweeps  res=7.778e-05  colours=8     11.21 ms/step  (280.2 us/sweep)
+   PGS    200 sweeps  res=2.481e-08  colours=8     58.30 ms/step  (291.5 us/sweep)
+   PGS   1000 sweeps  res=7.286e-17  colours=8    317.39 ms/step  (317.4 us/sweep)
+   PGS best: 1000 sweeps, res=7.286e-17, 317.39 ms/step
+   estimate: pencil n=60000  mv=204  885.0 ms  (+49 ms setup: batched 6x6 eigh + Jacobi diagonal)
+   lam_min+=2.708197e-01  lam_max=3.141641e+01  rho*=2.9169e+00  med||G_cc||=7.0000e+00  cond=1.16e+02
+   ADMM rho=lam_min+    =2.7082e-01 cg=  8:   25 it  mv=   200  res=2.41e-15      74.2 ms/step  (2.97 ms/it)  
+   ADMM rho=rho*        =2.9169e+00 cg=  8:   75 it  mv=   600  res=2.53e-16     192.2 ms/step  (2.56 ms/it)  
+   ADMM rho=med||G_cc|| =7.0000e+00 cg=  8:  125 it  mv=  1000  res=8.14e-14     313.5 ms/step  (2.51 ms/it)  
+   >>> at PGS's residual 1.00e-12: PGS 317.39 ms/step (1000 sweeps)   ADMM(rho=lam_min+, cg=8) 74.18 ms/step (25 it)   speedup 4.28x
+   >>> estimator cost share: 204 mv vs 200 solve mv = 102.0 %   (885 ms vs 74 ms = 1193 % of one step)

@@ -1,0 +1,63 @@
+{
+  "sphere_packing_50": {
+    "L_Gnn_max_abs": null,
+    "_lap_exact_bit_identical": true,
+    "_lap_exact_rerun_sha256": "41646b5b402c8fae926d8329fc43ab36efb8a176567f59f6677cacbb0d4ba38f",
+    "jacobi3": {
+      "max_iterations": 35,
+      "mean_iterations": 35.0,
+      "median_iterations": 35.0,
+      "seconds": 0.1960275520104915,
+      "sha256": "896b21c8bea9b20b279f1510a510739f9ef07e040f3702a3cadebd9e58c2ba59"
+    },
+    "lambda_max": 4295.653787426067,
+    "lambda_min_plus": 51.26935864977355,
+    "lap-exact": {
+      "max_iterations": 63,
+      "mean_iterations": 62.0,
+      "median_iterations": 62.0,
+      "seconds": 2.6124517370481044,
+      "sha256": "41646b5b402c8fae926d8329fc43ab36efb8a176567f59f6677cacbb0d4ba38f"
+    },
+    "n_c": 176,
+    "none": {
+      "max_iterations": 33,
+      "mean_iterations": 33.0,
+      "median_iterations": 33.0,
+      "seconds": 0.15885214100126177,
+      "sha256": "929c500102cf7ec345d4fb92fef3d043927b3b69ae74a1bf0fbf517c5b85e241"
+    },
+    "rho": 469.2924617579161
+  },
+  "point_chain_b": {
+    "L_Gnn_max_abs": 0.0,
+    "_lap_exact_bit_identical": true,
+    "_lap_exact_rerun_sha256": "808b3b7b7697ea76f8b68f7a4931801d04e81e764731360c5fa6e58f11192bbf",
+    "jacobi3": {
+      "max_iterations": 3,
+      "mean_iterations": 3.0,
+      "median_iterations": 3.0,
+      "seconds": 0.0034026140347123146,
+      "sha256": "e2d2d902b0ee34f58870bb6fc8c26003a4e75be8cca2c1fbbf9b61df5f518e00"
+    },
+    "lambda_max": 2.0010002499999997,
+    "lambda_min_plus": 0.0002927682519584372,
+    "lap-exact": {
+      "max_iterations": 1,
+      "mean_iterations": 1.0,
+      "median_iterations": 1.0,
+      "seconds": 0.002508487901650369,
+      "sha256": "808b3b7b7697ea76f8b68f7a4931801d04e81e764731360c5fa6e58f11192bbf"
+    },
+    "n_c": 3,
+    "none": {
+      "max_iterations": 3,
+      "mean_iterations": 3.0,
+      "median_iterations": 3.0,
+      "seconds": 0.0026472900062799454,
+      "sha256": "aa788ba8fb61aff1b650d054fdf3017e6ddf0c5d2486b8c5d11aa781a90b0c34"
+    },
+    "rho": 0.00242039117780762
+  },
+  "tol": 1e-10
+}
