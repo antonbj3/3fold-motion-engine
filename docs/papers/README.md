@@ -1,4 +1,17 @@
-# Papers — four-paper assembly
+# Papers
+
+## Download the papers
+
+Choose a PDF below. No GitHub account is needed.
+
+| Paper | Topic | PDF |
+| --- | --- | --- |
+| P1 | Contact operators and solver limits | **[Download P1 (PDF)](https://raw.githubusercontent.com/antonbj3/3fold-motion-engine/main/docs/papers/P1.pdf)** |
+| P2 | Deterministic contact sensitivities on GPUs | **[Download P2 (PDF)](https://raw.githubusercontent.com/antonbj3/3fold-motion-engine/main/docs/papers/P2.pdf)** |
+| P3 | Exact particle counting | **[Download P3 (PDF)](https://raw.githubusercontent.com/antonbj3/3fold-motion-engine/main/docs/papers/P3.pdf)** |
+| P4 | Static support boundaries | **[Download P4 (PDF)](https://raw.githubusercontent.com/antonbj3/3fold-motion-engine/main/docs/papers/P4.pdf)** |
+
+## Files and checksums
 
 Four PDFs, one checksum file (`SHA256SUMS`), and self-contained reproduction
 bundles under [`../../reproducibility/`](../../reproducibility/). This index

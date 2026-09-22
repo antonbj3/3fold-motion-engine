@@ -68,6 +68,17 @@ Layers are meant to be replaceable: three of them carry protocols with arrays in
 
 ## Papers
 
+### Download the papers
+
+Choose a PDF below. No GitHub account is needed.
+
+| Paper | Topic | PDF |
+| --- | --- | --- |
+| P1 | Contact operators and solver limits | **[Download P1 (PDF)](https://raw.githubusercontent.com/antonbj3/3fold-motion-engine/main/docs/papers/P1.pdf)** |
+| P2 | Deterministic contact sensitivities on GPUs | **[Download P2 (PDF)](https://raw.githubusercontent.com/antonbj3/3fold-motion-engine/main/docs/papers/P2.pdf)** |
+| P3 | Exact particle counting | **[Download P3 (PDF)](https://raw.githubusercontent.com/antonbj3/3fold-motion-engine/main/docs/papers/P3.pdf)** |
+| P4 | Static support boundaries | **[Download P4 (PDF)](https://raw.githubusercontent.com/antonbj3/3fold-motion-engine/main/docs/papers/P4.pdf)** |
+
 Four measured studies (P1–P3 revision 3; P4 revision 4) with their reproduction bundles: contact-operator
 structure and solver limits (P1), deterministic Coulomb-contact sensitivities on
 GPUs (P2), reusing a solver grid for an exact point-in-box particle count (P3),
