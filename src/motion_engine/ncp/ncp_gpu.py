@@ -303,6 +303,41 @@ class SolveResult:
     history: Optional[dict] = None    # {"iter": [...], "res": [...], "lam": [ (n_c,3) ... ]}
     v_bias: Optional[np.ndarray] = None   # (n_b, 6) velocity after the BIASED pass, before relax.
     #   Soft-step integrates positions with this one and keeps `v` (post-relax) as the body velocity.
+    force_selection: str = "COLORED_PGS_ORDER_WARM_START"
+    contact_model: str = "NCP_RIGID"
+    bias_applied: bool = True
+    contact_info: dict = field(default_factory=lambda: {"status": "UNASSESSED_CONTACT_UNIQUENESS"})
+
+    def diagnose_contacts(self, scene: BlockScene, rcond=1e-12, max_contacts=256):
+        """Opt-in bounded host diagnostic; never form a dense SVD in the GPU loop.
+
+        The supplied scene must be the scene solved for this result. The result
+        is a numerical fixed-branch diagnostic, not a global uniqueness proof.
+        Soft-step and CCP have different residual systems and remain unassessed.
+        """
+        if self.contact_model != "NCP_RIGID":
+            self.contact_info = {"status": "UNASSESSED_CONTACT_MODEL", "scope": self.contact_model}
+        elif scene.n_c > max_contacts:
+            self.contact_info = {"status": "UNASSESSED_SIZE_LIMIT", "max_contacts": max_contacts}
+        else:
+            if self.lam.shape != (scene.n_c, 3):
+                raise ValueError("scene and result contact counts do not agree")
+            from .ncp_ref import contact_diagnostics, classify
+            J = np.zeros((3 * scene.n_c, 6 * scene.n_b))
+            for c, pair in enumerate(scene.body_pairs):
+                for body, block in zip(pair, (scene.Ja[c], scene.Jb[c])):
+                    if body >= 0:
+                        J[3*c:3*c+3, 6*body:6*body+6] += block
+            G, b = scene.delassus(), scene.rhs()
+            if not self.bias_applied:
+                b = b - scene.bias.reshape(-1)
+            lam = self.lam.reshape(-1)
+            labels = classify(lam, G, b, scene.mu)
+            self.contact_info = contact_diagnostics(lam, G, b, scene.mu, labels,
+                                                    rcond=rcond, observable=J.T)
+        self.contact_info["force_selection"] = self.force_selection
+        return self.contact_info
+
 
 
 # ───────────────────────────── warp kernels ─────────────────────────────
@@ -1022,7 +1057,10 @@ class NCPSolverGPU:
         return SolveResult(lam=self.lam.numpy()[:C].astype(np.float64).copy(),
                            v=self.v.numpy().astype(np.float64).copy(),
                            residual=r, iters=iters + int(relax_iters), n_colors=self.n_colors,
-                           cache_hit=hit, ms=dict(self.prof), history=hist, v_bias=v_bias)
+                           cache_hit=hit, ms=dict(self.prof), history=hist, v_bias=v_bias,
+                           contact_model="SOFT_STEP" if soft is not None else
+                                         ("NCP_RIGID" if self.desaxce else "CCP"),
+                           bias_applied=relax_iters <= 0)
 
     def coloring(self):
         """(colour per contact, colour-grouped order, per-colour offset, per-colour count)."""

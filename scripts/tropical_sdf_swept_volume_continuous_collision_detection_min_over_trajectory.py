@@ -59,15 +59,38 @@ def swept_sdf(obstacle_points, q0, q1, T, caps_fn=posed_capsules):
     k_star = np.array([np.argmin(Sk[ti[j], :, j]) for j in range(M)])
     return dict(d_min=d_min, t_star=t_star, k_star=k_star, ts=ts, S=S, K=K, T=T)
 
-def _min_plus_core_timed(caps_per_time, P):
+def _min_plus_core_timed(caps_per_time, P, capsule_fn=None):
     """raw min-plus compute core (no FK posing) — for isolating the O(K·T) cost of the reduction itself, used only in the (d) timing sweep
        (caps_per_time: list of length T, each a list of K (a,b,r) capsules; may be synthetic/tiled to scale K independent of the 5-link robot)."""
+    if capsule_fn is None: capsule_fn = capsule_sdf
     T = len(caps_per_time); K = len(caps_per_time[0]); M = len(P)
     S = np.empty((T, M))
     for i in range(T):
-        Sk = np.stack([capsule_sdf(P, a, b, r) for (a, b, r) in caps_per_time[i]])
+        Sk = np.stack([capsule_fn(P, a, b, r) for (a, b, r) in caps_per_time[i]])
         S[i] = Sk.min(axis=0)
     return S.min(axis=0)
+
+
+def _core_operation_check(capsules, points, cases=((1,1),(3,5),(6,5),(3,10))):
+    """Count actual analytic distance calls; wall-clock fit remains diagnostic.
+
+    Scope: this min-reduction kernel with fixed point vectors, excluding FK,
+    setup and allocation. This does not certify continuous time coverage.
+    """
+    records=[]
+    for T,K in cases:
+        tiled=(capsules*((K//len(capsules))+1))[:K]
+        counts={'capsule_calls':0,'point_distances':0}
+        def counted(P,a,b,r):
+            counts['capsule_calls']+=1
+            counts['point_distances']+=len(P)
+            return capsule_sdf(P,a,b,r)
+        result=_min_plus_core_timed([tiled for _ in range(T)],points,counted)
+        reference=np.stack([capsule_sdf(points,a,b,r) for a,b,r in tiled]).min(axis=0)
+        records.append(dict(T=T,K=K,M=len(points),**counts,
+            valid=counts['capsule_calls']==T*K and counts['point_distances']==T*K*len(points)
+                and np.array_equal(result,reference)))
+    return records
 
 def main():
     print("=" * 128)
@@ -169,9 +192,13 @@ def main():
     cK, r2K = linfit_r2(Ks_time, times_K)
     print("      T-scaling (K=5 fixed): T=%s -> t=%s s" % (Ts_time, np.round(times_T, 4).tolist()))
     print("      K-scaling (T=20 fixed): K=%s -> t=%s s" % (Ks_time, np.round(times_K, 4).tolist()))
-    print("      linear-through-origin fit: R^2(T)=%.4f  R^2(K)=%.4f  (need both >0.90)" % (r2T, r2K))
+    print("      linear-through-origin fit: R^2(T)=%.4f  R^2(K)=%.4f  (diagnostic; no wall-time acceptance gate)" % (r2T, r2K))
     ratios_T = times_T[1:]/times_T[:-1]; ratios_K = times_K[1:]/times_K[:-1]
-    d_ok = (r2T > 0.90) and (r2K > 0.90)
+    timing_diagnostic = (r2T > 0.90) and (r2K > 0.90)
+    operation_records = _core_operation_check(caps0, Pbig)
+    d_ok = bool(operation_records) and all(row['valid'] for row in operation_records)
+    print('      deterministic distance-operation checks:', operation_records)
+    print('      wall-time fit is diagnostic only:', timing_diagnostic)
     print("      doubling ratios T: %s (expect ~2x) ; K: %s (expect ~2x)" % (np.round(ratios_T, 2).tolist(), np.round(ratios_K, 2).tolist()))
 
     print("\n  VERDICT (does the tropical min-plus structure give swept-volume CCD, min over time joining min over capsule, for free & correctly?):")
@@ -185,7 +212,7 @@ def main():
         print("        the miss (d_min=%.4f>0) while T=41 catches it (%.4f<0)." % (d_T2, res41['d_min'].min()))
         print("    (c) the argmin (t*=%.4f interior, capsule*=%d) is the first-contact witness; independently RECOMPUTED capsule_sdf at (t*,k*)" % (t_star, k_star))
         print("        matches swept_sdf's own d_min exactly (%.6f vs %.6f) — the min-plus subgradient bookkeeping is not just trusted, it's verified." % (d_check, res41["d_min"][j_hit]))
-        print("    (d) wall time is linear in T (R^2=%.3f) and linear in K (R^2=%.3f), doubling ratios ~%.1fx/%.1fx — O(K*T), branch-free, as the" % (r2T, r2K, np.median(ratios_T), np.median(ratios_K)))
+        print("    (d) deterministic operation checks pass; timing diagnostics R^2(T)=%.3f, R^2(K)=%.3f, median ratios %.1fx/%.1fx. As the" % (r2T, r2K, np.median(ratios_T), np.median(ratios_K)))
         print("        min-plus/tropical structure predicts: adding a time-sample or a capsule costs one more min-reduction term, nothing more.")
         print("    -> swept-volume CCD is the SAME tropical lattice as cell 496/cell 527 with one more min-axis (TIME); no new primitive, no new failure mode.")
     else:

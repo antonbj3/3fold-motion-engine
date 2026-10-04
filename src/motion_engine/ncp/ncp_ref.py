@@ -30,7 +30,12 @@ References: Le Lidec & Carpentier et al., arXiv:2304.06372 (Alg. 1/2/3/5/6, eq. 
             "Simple", arXiv:2405.17020 / RSS 2024 (ADMM + proximal on the Delassus).
 
 Self-contained: numpy only, except `solve_pyramid_qp(..., method="scipy")` which
-uses scipy.optimize.minimize (SLSQP) as an independent cross-check.
+uses scipy.optimize.minimize (SLSQP) as an independent cross-check. ADMM preserves
+the legacy Cholesky/LU arithmetic by default. Explicit xstep="triangular" factors
+G + rho I with scipy.linalg.cholesky once per rho, keeps the factor in Fortran order
+and solves each step by two BLAS triangular substitutions (dtrsv), with the legacy
+numpy path as fallback when scipy is missing. This opt-in path is numerically close
+but is not bit-identical to the legacy iteration.
 
 Audited numbers this module reproduces (tests/test_ncp_reference.py):
   * complementarity of the ADMM solution on 6 scenes: eps_p = 0, eps_d <= 4.9e-13.
@@ -40,14 +45,18 @@ Audited numbers this module reproduces (tests/test_ncp_reference.py):
     momentum at touchdown.
   * dlam/dmu and dlam/db by the implicit function theorem against central FD: 3.1e-7
     (the FD floor); two independent derivations agree to 3e-16.
-  * ADMM (Simple-style) converges on 6/6 scenes in 64-299 iterations, one Cholesky.
+  * ADMM (Simple-style) converges on 6/6 scenes in 64-299 iterations; Cholesky
+    is rebuilt whenever rho changes (up to 13 factors on those scenes).
   * PGS fails on 4/6: stack-1000 stalls at 1.5e-3, the other three are only slow. Those
     four rows are xfail in the test file with the measured residuals, not removed.
 
 Audit reservations carried as numbers, not adjectives:
-  * a 4-corner coplanar box contact is statically indeterminate: rank J 6/12, lam is not
-    unique and dlam/dmu is undefined; sigma_min(F) = 0 until all four corners slip.
-    `sensitivity` flags this instead of returning a pinv answer.
+  * with four coplanar closed box contacts, the four normal branch rows have
+    rank at most three, including all-slip states. The branch Jacobian is singular.
+    `sensitivity` withholds ambiguous per-contact derivatives by default; an
+    explicit minimum_norm selection returns only compatible linear responses. A readout C is
+    unique on a compatible linearized fiber only if ker(dF/dlam) is in ker(C).
+    Net body impulse is not automatically unique for the full Coulomb NCP.
   * `scene_tripod`'s docstring claim "determinate" is wrong: rank 6/9.
   * boxed-LCP-PGS (the ODE/Bullet fixed point) is not the pyramid-QP optimum: gap 4-51 %.
 """
@@ -58,6 +67,8 @@ import math
 from dataclasses import dataclass, field
 
 import numpy as np
+
+from .contact_rank import rank_factor, guarded_response
 
 __all__ = [
     "Scene",
@@ -73,6 +84,8 @@ __all__ = [
     "solve_pyramid_qp",
     "sensitivity",
     "sensitivity_fd",
+    "contact_diagnostics",
+    "ContactResult",
     "Box",
     "build_scene",
     "simulate",
@@ -432,13 +445,15 @@ def _pgs(G, b, mu, iters, tol, warm, desax):
 
 
 def solve_ncp_pgs(G, b, mu, iters=2000, tol=1e-12, warm=None):
-    """A.1  PGS, exact cone projection + de Saxce.  -> (lam, residual_history, labels)."""
-    return _pgs(G, b, mu, iters, tol, warm, desax=True)
+    """A.1 PGS with de Saxce; tuple-compatible ContactResult has .info and .force_selection."""
+    return ContactResult(_pgs(G, b, mu, iters, tol, warm, desax=True),
+                         G, b, mu, "PGS_ORDER_WARM_START")
 
 
 def solve_convex_pgs(G, b, mu, iters=2000, tol=1e-12, warm=None):
     """A.3  Anitescu / MuJoCo-style convex relaxation (no Gamma)."""
-    return _pgs(G, b, mu, iters, tol, warm, desax=False)
+    return ContactResult(_pgs(G, b, mu, iters, tol, warm, desax=False),
+                         G, b, mu, "PGS_ORDER_WARM_START", model="CCP")
 
 
 # ----------------------------------------------------------------------------
@@ -446,14 +461,18 @@ def solve_convex_pgs(G, b, mu, iters=2000, tol=1e-12, warm=None):
 # ----------------------------------------------------------------------------
 
 
-def _admm_core(G, b, mu, iters, tol, warm, rho, adapt_every, desax):
+def _admm_core(G, b, mu, iters, tol, warm, rho, adapt_every, desax, xstep="legacy",
+               diagnostics=None, physical=None):
     """One ADMM run; see solve_ncp_admm for the algorithm and the warm-start caveat."""
     G = np.asarray(G, dtype=np.float64)
     b = np.asarray(b, dtype=np.float64)
     mu = np.asarray(mu, dtype=np.float64)
     n_c = len(mu)
     n = 3 * n_c
+    diagnostics = {} if diagnostics is None else diagnostics
+    diagnostics.update(status="MAX_ITERATIONS", iterations=0, n_factor=0)
     if n_c == 0:
+        diagnostics["status"] = "CONVERGED"
         return np.zeros(0), np.zeros(0), np.empty(0, dtype="<U5")
     z = np.zeros(n) if warm is None else np.array(warm, dtype=np.float64).copy()
     lam = z.copy()
@@ -468,42 +487,110 @@ def _admm_core(G, b, mu, iters, tol, warm, rho, adapt_every, desax):
     z_prev = z.copy()
     if rho is None:                       # scale-matched init; adapted below
         rho = float(max(np.trace(G) / (3.0 * n_c), 1e-12))
+    # Below this scale adding rho to a singular Delassus no longer reliably
+    # separates its zero modes from assembly/factorization roundoff. This is a
+    # numerical safety floor, not a convergence or physical error certificate.
+    rho_floor = 64.0 * np.finfo(float).eps * float(np.linalg.norm(G, ord=np.inf))
+    if physical is not None:
+        rho = max(rho, rho_floor)
     rho_nat = _rho_of(G, n_c)
-    chol = np.linalg.cholesky(G + rho * np.eye(n))
+    if xstep not in ("legacy", "triangular"):
+        raise ValueError("xstep must be 'legacy' or 'triangular'")
+    try:                                  # opt-in triangular substitution
+        if xstep == "legacy":
+            raise ImportError("legacy arithmetic requested")
+        from scipy.linalg import cholesky as _chol
+        from scipy.linalg.blas import dtrsv as _dtrsv
+
+        def _factor(A):                   # Fortran order: BLAS reads it without a copy
+            return np.asfortranarray(_chol(A, lower=True, check_finite=False))
+
+        def _solve_with(c, rhs):          # L y = rhs, then L^T x = y
+            return _dtrsv(c, _dtrsv(c, rhs, lower=1), lower=1, trans=1)
+    except ImportError:                   # numpy only: same factor, O(n^3) solve
+        def _factor(A):
+            return np.linalg.cholesky(A)
+
+        def _solve_with(c, rhs):
+            return np.linalg.solve(c.T, np.linalg.solve(c, rhs))
+    chol = _factor(G + rho * np.eye(n))
+    diagnostics["n_factor"] += 1
+    if not np.isfinite(chol).all():
+        raise FloatingPointError("non-finite ADMM Cholesky factor")
     hist = []
+    best_r = np.inf
+    stale = 0
 
     def _solve_sys(rhs):
-        y = np.linalg.solve(chol, rhs)
-        return np.linalg.solve(chol.T, y)
+        return _solve_with(chol, rhs)
 
     for k in range(int(iters)):
         u = (G @ z + b).reshape(n_c, 3)
         g = b + (desaxce(u, mu).reshape(-1) if desax else 0.0)
         lam = -_solve_sys(g + gamma - rho * z)
+        if not all(np.isfinite(a).all() for a in (u, g, lam)):
+            diagnostics["status"] = "NUMERICAL_FAILURE"
+            break
         z_prev = z
-        z = proj_cone((lam + gamma / rho).reshape(n_c, 3), mu).reshape(-1)
-        gamma = gamma + rho * (lam - z)
-        r = natural_residual(z, G, b, mu, rho_nat, desax)
+        z_next = proj_cone((lam + gamma / rho).reshape(n_c, 3), mu).reshape(-1)
+        gamma_next = gamma + rho * (lam - z_next)
+        if not np.isfinite(z_next).all() or not np.isfinite(gamma_next).all():
+            diagnostics["status"] = "NUMERICAL_FAILURE"
+            break
+        if physical is None:
+            r = natural_residual(z_next, G, b, mu, rho_nat, desax)
+        else:
+            Gp, bp, dp, rp = physical
+            r = natural_residual(z_next * dp, Gp, bp, mu, rp, desax)
+        if not np.isfinite(r):
+            diagnostics["status"] = "NUMERICAL_FAILURE"
+            break
+        z, gamma = z_next, gamma_next
         hist.append(r)
+        diagnostics["iterations"] = k + 1
         if r < tol:
+            diagnostics["status"] = "CONVERGED"
+            break
+        stale = 0 if r < best_r else stale + 1
+        best_r = min(best_r, r)
+        # An attainable floating-point precision limit must not become NaN
+        # while an unachievable absolute stopping tolerance is pursued.
+        impulse_scale = np.max(np.abs(z if physical is None else z * physical[2]))
+        if stale >= 100 and best_r <= 64.0 * np.finfo(float).eps * max(1.0, impulse_scale):
+            diagnostics["status"] = "PRECISION_LIMIT"
             break
         if adapt_every and (k + 1) % adapt_every == 0:
             pr = float(np.linalg.norm(lam - z))
             dr = max(rho * float(np.linalg.norm(z - z_prev)), 1e-300)
             new_rho = rho
+            if physical is not None:
+                pr *= rho             # compare impulse and velocity in matching units
             if pr > 10.0 * dr:
                 new_rho = rho * 2.0
             elif dr > 10.0 * pr:
                 new_rho = rho / 2.0
+            if new_rho < rho_floor:
+                if physical is None:
+                    diagnostics["status"] = "PRECISION_LIMIT"
+                    break
+                new_rho = rho_floor
             if new_rho != rho:
-                gamma = gamma * (new_rho / rho)
+                if physical is None:
+                    gamma = gamma * (new_rho / rho)  # retain convergent legacy bytes
+                # gamma is the unscaled multiplier in the equilibrated run;
+                # changing the penalty leaves this multiplier invariant.
                 rho = new_rho
-                chol = np.linalg.cholesky(G + rho * np.eye(n))
+                chol = _factor(G + rho * np.eye(n))
+                diagnostics["n_factor"] += 1
+                if not np.isfinite(chol).all():
+                    diagnostics["status"] = "NUMERICAL_FAILURE"
+                    break
+    diagnostics.update(rho=float(rho), rho_floor=float(rho_floor))
     return z, np.array(hist), classify(z, G, b, mu)
 
 
 def solve_ncp_admm(G, b, mu, iters=5000, tol=1e-12, warm=None, rho=None,
-                   adapt_every=25, desax=True, cold_retry=True):
+                   adapt_every=25, desax=True, cold_retry=True, *, xstep="legacy"):
     """A.2  ADMM on   min 1/2 lam^T G lam + (b + Gamma(u))^T lam   s.t. lam in K.
 
     lam <- -(G + rho I)^{-1} (g + gamma - rho z);  z <- proj_K(lam + gamma/rho);
@@ -515,17 +602,94 @@ def solve_ncp_admm(G, b, mu, iters=5000, tol=1e-12, warm=None, rho=None,
     drive this one-loop ADMM into a non-converging regime on stiff scenes (the
     mass-ratio-100 stack diverges within 6 steps), even with a consistent dual
     init.  With cold_retry=True a failed warm solve is redone from zero, so the
-    result is never worse than the cold solve; the returned residual history is
-    the concatenation of both attempts.
+    returned residual history includes both attempts. A failed legacy solve
+    is retried in contact-equilibrated coordinates, with a scale-matched
+    penalty and a roundoff floor. One positive scalar scales all three rows
+    of each contact, preserving the Coulomb cone and de Saxce correction.
+    Every stopping residual is evaluated in the original impulse coordinates.
 
-    Returns (lam, residual_history, labels)."""
-    lam, hist, labels = _admm_core(G, b, mu, iters, tol, warm, rho, adapt_every, desax)
-    if (not cold_retry) or warm is None or len(hist) == 0 or hist[-1] < tol:
-        return lam, hist, labels
-    lam2, hist2, labels2 = _admm_core(G, b, mu, iters, tol, None, rho, adapt_every, desax)
-    if len(hist2) and hist2[-1] < hist[-1]:
-        return lam2, np.concatenate([hist, hist2]), labels2
-    return lam, np.concatenate([hist, hist2]), labels
+    Returns tuple-compatible ContactResult(lam, residual_history, labels).
+    xstep='legacy' preserves the original arithmetic and bytes. Opt-in
+    xstep='triangular' accelerates the x-step when scipy is available; it can
+    change rounding, residual histories and stopping iterations. The numpy
+    fallback remains available when scipy cannot be imported.
+    .solver_status reports CONVERGED, PRECISION_LIMIT, MAX_ITERATIONS or
+    NUMERICAL_FAILURE; a finite impulse does not imply convergence.
+    .solver_diagnostics records all attempts and the returned residual.
+    Invalid/non-finite input raises ValueError; failed finite arithmetic never
+    returns NaN impulses. .info additionally diagnoses local rank on request."""
+    G = np.asarray(G, dtype=np.float64)
+    b = np.asarray(b, dtype=np.float64)
+    mu = np.asarray(mu, dtype=np.float64)
+    n = 3 * len(mu)
+    if G.shape != (n, n) or b.shape != (n,) or mu.ndim != 1:
+        raise ValueError("contact arrays have incompatible shapes")
+    if not all(np.isfinite(a).all() for a in (G, b, mu)) or np.any(mu < 0):
+        raise ValueError("ADMM inputs must be finite with nonnegative friction")
+    if warm is not None:
+        warm = np.asarray(warm, dtype=np.float64)
+        if warm.shape != (n,) or not np.isfinite(warm).all():
+            raise ValueError("ADMM warm start must be a finite impulse vector")
+    if not np.isfinite(tol) or tol <= 0 or int(iters) < 0:
+        raise ValueError("ADMM tolerance must be positive and iteration budget nonnegative")
+    if rho is not None and (not np.isfinite(rho) or rho <= 0):
+        raise ValueError("ADMM rho must be positive and finite")
+    if xstep not in ("legacy", "triangular"):
+        raise ValueError("xstep must be 'legacy' or 'triangular'")
+    attempts = []
+    outputs = []
+
+    def attempt(Ag, ab, aw, arho, selection, physical=None):
+        diag = {"selection": selection}
+        with np.errstate(over="ignore", invalid="ignore", divide="ignore"):
+            try:
+                vals = _admm_core(Ag, ab, mu, iters, tol, aw, arho, adapt_every,
+                                  desax, xstep, diag, physical)
+            except (np.linalg.LinAlgError, FloatingPointError) as exc:
+                z = np.zeros(n) if aw is None else aw.copy()
+                vals = z, np.zeros(0), np.full(len(mu), "open", dtype="<U5")
+                diag.update(status="NUMERICAL_FAILURE", reason=str(exc))
+            lam, hist, labels = vals
+            if physical is not None:
+                lam = lam * physical[2]
+                labels = classify(lam, G, b, mu) if n else labels
+            residual = natural_residual(lam, G, b, mu, desax=desax) if n else 0.0
+        if not np.isfinite(lam).all() or not np.isfinite(residual):
+            raise FloatingPointError("ADMM could not produce a finite residual and impulse")
+        diag["residual"] = residual
+        attempts.append(diag)
+        outputs.append((lam, hist, labels))
+        return residual < tol
+
+    ok = attempt(G, b, warm, rho, "ADMM_WARM_START")
+    if not ok and cold_retry and warm is not None:
+        ok = attempt(G, b, None, rho, "ADMM_COLD_RETRY")
+    # Preserve every successfully converged legacy trajectory. Only a failed
+    # solve changes representation, including calls with cold_retry=False.
+    if not ok and n and int(iters) > 0:
+        norms = np.array([np.linalg.norm(G[i:i+3, i:i+3], 2) for i in range(0, n, 3)])
+        if np.all(norms > 0) and np.isfinite(norms).all():
+            d = np.repeat(1.0 / np.sqrt(norms), 3)
+            Gh = (G * d[:, None]) * d[None, :]
+            bh = b * d
+            physical = G, b, d, _rho_of(G, len(mu))
+            # Automatic rho is dimensionless in these coordinates. An explicit
+            # rho belongs to the legacy attempt; the retry selects its own.
+            ok = attempt(Gh, bh, None, None, "ADMM_EQUILIBRATED_RETRY", physical)
+    pick = min(range(len(attempts)), key=lambda i: attempts[i]["residual"])
+    lam, _, labels = outputs[pick]
+    hist = np.concatenate([o[1] for o in outputs])
+    residual = attempts[pick]["residual"]
+    # The final entry always describes the returned representative, even when
+    # a failed retry was worse. Its separate iteration count excludes this readout.
+    if len(hist) and hist[-1] != residual:
+        hist = np.append(hist, residual)
+    status = "CONVERGED" if residual < tol else attempts[pick]["status"]
+    diag = dict(status=status, residual=residual, selected_attempt=pick, attempts=attempts,
+                iterations=sum(a["iterations"] for a in attempts),
+                n_factor=sum(a["n_factor"] for a in attempts))
+    return ContactResult((lam, hist, labels), G, b, mu, attempts[pick]["selection"],
+                         model="NCP" if desax else "CCP", solver_info=diag)
 
 
 # ----------------------------------------------------------------------------
@@ -619,22 +783,20 @@ def _pyr_residual(lam, G, b, mu, scale):
 # ----------------------------------------------------------------------------
 
 
-def sensitivity(lam, G, b, mu, labels, rcond=1e-12):
-    """d lam / d mu  (3n_c x n_c)  and  d lam / d b  (3n_c x 3n_c) at the fixed
-    active set.  Residual system F(lam; mu, b) = 0, per contact:
-
-        open  : lam_c = 0
-        stick : (G lam + b)_c = 0                       (u_c = 0)
-        slip  : (G lam + b)_n = 0                       (u_n = 0, exact Signorini)
-                lam_t + mu lam_n u_t/||u_t|| = 0        (max dissipation)
-
-    dlam/dp = -(dF/dlam)^{-1} dF/dp.  Returns (dlam_dmu, dlam_db, info)."""
+def _active_system(lam, G, b, mu, labels):
+    """Assemble fixed-branch residual Jacobian and parameter maps."""
     lam = np.asarray(lam, dtype=np.float64)
     G = np.asarray(G, dtype=np.float64)
     b = np.asarray(b, dtype=np.float64)
     mu = np.asarray(mu, dtype=np.float64)
     n_c = len(mu)
     n = 3 * n_c
+    if G.shape != (n, n) or b.shape != (n,) or lam.shape != (n,) or len(labels) != n_c:
+        raise ValueError("contact arrays and labels have incompatible shapes")
+    if any(lab not in ("open", "stick", "slip") for lab in labels):
+        raise ValueError("labels must be open, stick or slip")
+    if not all(np.isfinite(x).all() for x in (lam, G, b, mu)):
+        raise ValueError("contact inputs must be finite")
     u = G @ lam + b
     A = np.zeros((n, n))
     Bmu = np.zeros((n, n_c))
@@ -647,6 +809,8 @@ def sensitivity(lam, G, b, mu, labels, rcond=1e-12):
         lab = labels[c]
         if lab == "open":
             A[i:i + 3, i:i + 3] = np.eye(3)
+            if abs(u[i]) < 1e-9:
+                boundary.append((c, "open_with_zero_normal_velocity"))
         elif lab == "stick":
             A[i:i + 3, :] = G[i:i + 3, :]
             Bb[i:i + 3, i:i + 3] = np.eye(3)
@@ -675,18 +839,124 @@ def sensitivity(lam, G, b, mu, labels, rcond=1e-12):
         if lab != "open" and ln < 1e-9:
             boundary.append((c, "near_zero_normal_impulse"))
 
-    cond = float(np.linalg.cond(A)) if n else 0.0
-    singular = not np.isfinite(cond) or cond > 1.0 / rcond
-    if singular:
-        Ainv = np.linalg.pinv(A, rcond=rcond)
-        dlam_dmu = -Ainv @ Bmu
-        dlam_db = -Ainv @ Bb
-    else:
-        dlam_dmu = -np.linalg.solve(A, Bmu)
-        dlam_db = -np.linalg.solve(A, Bb)
-    info = {"cond": cond, "singular": bool(singular), "boundary": boundary,
-            "labels": list(labels)}
-    return dlam_dmu, dlam_db, info
+    return A, Bmu, Bb, boundary
+
+
+def contact_diagnostics(lam, G, b, mu, labels, rcond=1e-12, observable=None):
+    """Numerical local rank, nullspace and optional invariant observable rows.
+
+    Labels alone do not establish feasibility or differentiability. Boundary
+    diagnostics invalidate differentiability even when the matrix has full rank.
+    """
+    A, Bmu, Bb, boundary = _active_system(lam, G, b, mu, labels)
+    factors = rank_factor(A, rcond)
+    info = factors[3]
+    info.update(boundary=boundary, labels=list(labels), residual_differentiable=not boundary,
+                response_scope="NONSMOOTH_BRANCH" if boundary else
+                    ("LINEARIZED_RESPONSE_ONLY" if info["singular"] else
+                     "IMPLICIT_RESPONSE_UNDER_VALID_BRANCH_ASSUMPTIONS"))
+    if observable is not None:
+        _, check = guarded_response(A, np.zeros((A.shape[0], 0)), factors, observable=observable)
+        info.update(observable_invariant=check["observable_invariant"],
+                    observable_nullspace_residual=check["observable_nullspace_residual"])
+    return info
+
+
+class ContactResult(tuple):
+    """Three-item legacy tuple with an explicit algorithm-selected representative.
+
+    .info performs the dense local rank diagnostic only on request. Iteration
+    order, warm start and stopping tolerance select lam; this is not a proof
+    that a per-contact force distribution is unique. Large callers can consume
+    body motion without paying for a dense sensitivity diagnostic. ADMM also
+    exposes .solver_status and .solver_diagnostics, distinct from the local
+    rank status in .info. Query .info before mutating input or result arrays.
+    """
+    def __new__(cls, values, G, b, mu, selection, model="NCP", solver_info=None):
+        out = super().__new__(cls, values)
+        out.force_selection = selection
+        out.contact_model = model
+        out.solver_diagnostics = solver_info
+        out.solver_status = None if solver_info is None else solver_info["status"]
+        # Keep references to avoid copying a dense Delassus matrix in the hot path.
+        # Callers must query .info before mutating the inputs or result arrays.
+        out._problem = (G, b, mu)
+        out._info = None
+        return out
+
+    def __reduce__(self):
+        G, b, mu = self._problem
+        return (type(self), (tuple(self), G, b, mu, self.force_selection, self.contact_model,
+                             self.solver_diagnostics))
+
+    @property
+    def info(self):
+        if self._info is None:
+            if self.contact_model != "NCP":
+                self._info = {"status": "UNASSESSED_CONTACT_MODEL", "scope": self.contact_model}
+            else:
+                G, b, mu = self._problem
+                self._info = contact_diagnostics(self[0], G, b, mu, self[2])
+            self._info["force_selection"] = self.force_selection
+            if self.solver_diagnostics is not None:
+                self._info["solver_status"] = self.solver_status
+                self._info["solver_diagnostics"] = self.solver_diagnostics
+        return self._info
+
+
+def sensitivity(lam, G, b, mu, labels, rcond=1e-12, *, selection=None,
+                observable=None, db_dparam=None):
+    """Fixed-branch impulse sensitivity with a numerical uniqueness guard.
+
+    open: lam_c=0; stick: u_c=0; slip: u_n=0 and
+    lam_t + mu lam_n u_t/||u_t||=0, with u=G lam+b.
+    Returns (dlam_dmu, dlam_db, info). Ambiguous force derivatives are NaN
+    unless selection='minimum_norm' is explicitly requested. Inconsistent
+    perturbations and nonsmooth branch boundaries remain NaN in either mode.
+    The selection is a linear-response convention, not a physical compliance.
+
+    observable=Q exposes derivatives of Q lam in info only for invariant rows
+    Q N=0 and compatible RHS. db_dparam maps physical parameters to b, e.g.
+    Scene.J maps free body velocity; arbitrary independent corner b changes
+    need not be compatible with a closed redundant contact branch. These are
+    local responses at the supplied impulse representative: d(Q lam)/dmu can
+    depend on that representative even when Q lam itself is invariant.
+    Compatibility alone does not establish a differentiable nonlinear solution
+    branch. Singular observable outputs are formal linearized responses, as
+    reported by info["response_scope"].
+    """
+    A, Bmu, Bb, boundary = _active_system(lam, G, b, mu, labels)
+    if db_dparam is not None:
+        P = np.asarray(db_dparam, dtype=np.float64)
+        if P.ndim != 2 or P.shape[0] != Bb.shape[1] or not np.isfinite(P).all():
+            raise ValueError("db_dparam must be a finite matrix with 3*n_c rows")
+        Bb = Bb @ P
+    factors = rank_factor(A, rcond)
+    dm, im = guarded_response(A, Bmu, factors, selection, observable)
+    db, ib = guarded_response(A, Bb, factors, selection, observable)
+    info = factors[3]
+    info.update(boundary=boundary, labels=list(labels), residual_differentiable=not boundary,
+                response_scope="NONSMOOTH_BRANCH" if boundary else
+                    ("LINEARIZED_RESPONSE_ONLY" if info["singular"] else
+                     "IMPLICIT_RESPONSE_UNDER_VALID_BRANCH_ASSUMPTIONS"),
+                selection=im["selection"], mu_compatible=im["compatible"],
+                b_compatible=ib["compatible"], mu_response_finite=im["response_finite"],
+                b_response_finite=ib["response_finite"], mu_compatibility_residual=im["compatibility_residual"],
+                b_compatibility_residual=ib["compatibility_residual"])
+    if observable is not None:
+        info.update(observable_dmu=im["observable"], observable_db=ib["observable"],
+                    observable_mu_valid=im["observable_valid"], observable_b_valid=ib["observable_valid"],
+                    observable_invariant=im["observable_invariant"],
+                    observable_nullspace_residual=im["observable_nullspace_residual"])
+    if boundary:
+        dm[:] = np.nan
+        db[:] = np.nan
+        if observable is not None:
+            info["observable_dmu"][:] = np.nan
+            info["observable_db"][:] = np.nan
+            info["observable_mu_valid"][:] = False
+            info["observable_b_valid"][:] = False
+    return dm, db, info
 
 
 def sensitivity_fd(G, b, mu, lam_star, h_mu=1e-6, h_b=1e-6, solver=None,

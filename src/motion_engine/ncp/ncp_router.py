@@ -59,31 +59,59 @@ def bilateral_certificate(Geta: np.ndarray, b: np.ndarray, mu: np.ndarray,
                           max_rounds: int = 12, pen_tol: float = 1e-7) -> dict:
     """Solve the closed set bilaterally, dropping lam_n <= 0, and certify interiority.
 
+    Redundant closed forces use a stated Euclidean minimum-norm selection;
+    the certificate proves feasibility of that representative, not uniqueness.
+    An inconsistent least-squares system is never certified.
+
     Returns `is_interior`: every closed contact strictly inside its cone AND no open
     contact penetrating. When true, `lam` is the solution and no cone iteration is needed.
     """
     import scipy.linalg as sla
+    from .contact_rank import rank_factor, guarded_response
     n_c = len(mu)
     Geta = np.asarray(Geta, float)
     b = np.asarray(b, float)
     mu = np.asarray(mu, float)
     closed = np.ones(n_c, bool)
     rounds, L, x, idx = 0, np.zeros((n_c, 3)), None, None
+    rank_info = rank_factor(np.zeros((0, 0)))[3]
+    compatible, stable = True, False
+    selection = "UNIQUE_BILATERAL"
 
     for rounds in range(1, max_rounds + 1):
         idx = np.repeat(np.where(closed)[0] * 3, 3) + np.tile([0, 1, 2], closed.sum())
         if idx.size == 0:
+            x = np.zeros(0)
+            L = np.zeros((n_c, 3))
+            rank_info = rank_factor(np.zeros((0, 0)))[3]
+            compatible, stable = True, True
+            selection = "UNIQUE_BILATERAL"
             break
         A = Geta[np.ix_(idx, idx)]
-        try:
-            c = sla.cho_factor(np.array(A, float, order="F"), lower=True, check_finite=False)
-            x = sla.cho_solve(c, -b[idx], check_finite=False)
-        except np.linalg.LinAlgError:
-            x = np.linalg.lstsq(A, -b[idx], rcond=None)[0]
+        factors = rank_factor(A)
+        rank_info = factors[3]
+        if rank_info["singular"]:
+            response, response_info = guarded_response(A, b[idx, None], factors,
+                                                       selection="minimum_norm")
+            compatible = bool(response_info["compatible"].all())
+            if not compatible:
+                x = None
+                break
+            x = response[:, 0]
+            selection = "MINIMUM_NORM_BILATERAL"
+        else:
+            compatible = True
+            selection = "UNIQUE_BILATERAL"
+            try:
+                c = sla.cho_factor(np.array(A, float, order="F"), lower=True, check_finite=False)
+                x = sla.cho_solve(c, -b[idx], check_finite=False)
+            except np.linalg.LinAlgError:
+                x = np.linalg.solve(A, -b[idx])
         L = np.zeros((n_c, 3))
         L[closed] = x.reshape(-1, 3)
         neg = closed & (L[:, 0] <= 0)
         if not neg.any():
+            stable = True
             break
         closed = closed & ~neg
 
@@ -96,8 +124,17 @@ def bilateral_certificate(Geta: np.ndarray, b: np.ndarray, mu: np.ndarray,
     u_n_open = (Geta @ lam_full + b)[0::3][~closed]
     penetrating_open = bool(np.any(u_n_open < -pen_tol)) if u_n_open.size else False
 
-    return {"n_closed": int(closed.sum()), "n_out": int(out_cone.sum()),
-            "is_interior": bool(out_cone.sum() == 0 and not penetrating_open),
+    N = np.zeros((3 * n_c, rank_info["nullity"]))
+    if idx is not None:
+        N[idx] = rank_info["nullspace"]
+    closed_residual = float(np.max(np.abs((Geta @ lam_full + b)[np.repeat(closed, 3)]))) if closed.any() else 0.0
+    equation_ok = compatible and closed_residual <= pen_tol
+    return {"status": rank_info["status"] if compatible else "INCOMPATIBLE_BILATERAL",
+            "nullspace": N, "force_selection": selection if compatible else None,
+            "rank_cutoff": rank_info["rank_cutoff"], "compatible": compatible,
+            "closed_equation_residual": closed_residual,
+            "n_closed": int(closed.sum()), "n_out": int(out_cone.sum()),
+            "is_interior": bool(stable and equation_ok and out_cone.sum() == 0 and not penetrating_open),
             "rounds": int(rounds), "lam": lam_full, "closed": closed}
 
 

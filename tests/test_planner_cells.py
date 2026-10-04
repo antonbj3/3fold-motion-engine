@@ -70,7 +70,9 @@ def test_stack_is_exercised_on_more_than_one_vendor_description():
     assert fmm.main([]) == 0
     out = json.loads((REPORTS / "fleet_multirobot_movement.json").read_text())
     assert len(out["vendors_exercised"]) >= 2
-    assert all(r["collision_free"] and r["collision_binds"] for r in out["results"] if r.get("planned"))
+    planned = [r for r in out["results"] if r.get("planned")]
+    assert planned, "no planned robot exercised the collision gate"
+    assert all(r["collision_free"] and r["collision_binds"] for r in planned)
 
 
 def test_effort_provenance_guard_never_claims_feasible_on_placeholder_limits():
@@ -79,8 +81,10 @@ def test_effort_provenance_guard_never_claims_feasible_on_placeholder_limits():
     out = json.loads((REPORTS / "fleet_cartesian_industrial.json").read_text())
     assert out["provenance_guard"] and out["placeholder_detected"]
     assert out["fleet_scan"]["placeholder_uniform"] >= 1 and out["fleet_scan"]["missing"] >= 1
-    assert all(r.get("effort_feasible") is True for r in out["pipeline_robots"]
-               if r.get("effort_provenance") == "real" and r.get("collision_free"))
+    real_free = [r for r in out["pipeline_robots"]
+                 if r.get("effort_provenance") == "real" and r.get("collision_free")]
+    assert real_free, "no collision-free robot with real effort limits exercised the guard"
+    assert all(r.get("effort_feasible") is True for r in real_free)
 
 
 def test_false_free_rate_stays_low_on_every_robot_with_meshes():

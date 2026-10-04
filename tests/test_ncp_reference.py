@@ -15,7 +15,7 @@ stack-1000 1.458e-03, K8 5.380e-06. At 20 000 sweeps three of the four are still
 descending (K8 7.72e-11, pushed cube 1.69e-08, stack-100 8.04e-08); only
 stack-1000 is flat (1.46e-03 -> 3.11e-05 -> 3.11e-05), so "slow" is the right word
 for three of them and "stuck" only for stack-1000. ADMM reaches 1e-12 on all six in
-64-299 iterations with one Cholesky of G + rho I.
+64-299 iterations; Cholesky of G + rho I is rebuilt when rho changes.
 """
 
 import math
@@ -203,11 +203,17 @@ def test_ncp_admm_residual(name):
     assert hist[-1] < TOL_SPEC
 
 
-@pytest.mark.parametrize("name", SCENES)
+@pytest.mark.parametrize("name", SCENES + ["__open_contact__"])
 def test_complementarity_per_contact(name):
     """eps_p = dist_K(lam), eps_d = dist_K*(u+Gamma(u)), eps_c = |<lam, u+Gamma(u)>|
     checked per contact on the ADMM solution   [2304.06372 §III-A]."""
-    sc = make_scene(name)
+    if name == "__open_contact__":
+        # Exact separating contact: lambda=0 and positive normal velocity.
+        sc = R.Scene(J=np.eye(3), Minv=np.ones(3),
+                     v_free=np.array([1.,0.,0.]), mu=np.array([.5]),
+                     body_pairs=np.array([[0,-1]]), dt=.01)
+    else:
+        sc = make_scene(name)
     G, b = sc.delassus(), sc.b()
     lam, hist, labels = R.solve_ncp_admm(G, b, sc.mu, ADMM_BUDGET, 1e-13)
     ep, ed, ec = R.complementarity(lam, G, b, sc.mu)
@@ -349,9 +355,11 @@ def test_sensitivity_hyperstatic_is_flagged_not_hidden():
     rank = int(np.linalg.matrix_rank(G, tol=1e-10 * np.abs(G).max()))
     print(f"\n[sens-hyp] pushed cube: n_c={sc.n_c} rank(G)={rank}/{3*sc.n_c} "
           f"labels={list(labels)} cond(dF/dlam)={info['cond']:.3e} "
-          f"singular={info['singular']} -> pseudo-inverse used")
+          f"singular={info['singular']} -> ambiguous derivatives withheld")
     assert rank < 3 * sc.n_c
     assert info["singular"]
+    assert np.isnan(dmu).all() and np.isnan(db).all()
+    assert info["status"] == "REDUNDANT_CONTACTS"
 
 
 def test_sensitivity_slip_direction_formula():
